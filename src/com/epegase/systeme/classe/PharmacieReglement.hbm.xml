@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="PharmacieReglement" table="med_pharmacie_reglement">
+    <id column="phareg_id" name="pharegId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="pharegService" type="string">
+      <column length="121" name="phareg_service">
+        <comment>service</comment>
+      </column>
+    </property>
+    <property name="pharegProduit" type="string">
+      <column length="20" name="phareg_produit">
+        <comment>code produit</comment>
+      </column>
+    </property>
+    <property name="pharegLibelle" type="text">
+      <column name="phareg_libelle">
+        <comment>libelle produit</comment>
+      </column>
+    </property>
+    <property name="pharegPatient" type="double">
+      <column default="0" name="phareg_patient">
+        <comment>part patient</comment>
+      </column>
+    </property>
+    <property name="pharegSociete" type="double">
+      <column default="0" name="phareg_societe">
+        <comment>part societe</comment>
+      </column>
+    </property>
+    <property name="pharegAssurance" type="double">
+      <column default="0" name="phareg_assurance">
+        <comment>part assurance</comment>
+      </column>
+    </property>
+    <property name="pharegComplementaire" type="double">
+      <column default="0" name="phareg_complementaire">
+        <comment>part complementaire</comment>
+      </column>
+    </property>
+    <property name="pharegEtat" type="integer">
+      <column default="0" name="phareg_etat">
+        <comment>0=bon encaissement 1=reglement</comment>
+      </column>
+    </property>
+    <property name="pharegDate" type="date">
+      <column default="null" name="phareg_date">
+        <comment>reglement date</comment>
+      </column>
+    </property>
+    <property name="pharegCaisse" type="string">
+      <column default="0" name="phareg_caisse">
+        <comment>reglement caisse</comment>
+      </column>
+    </property>
+    <property name="pharegIdRecu" type="long">
+      <column default="0" name="phareg_id_recu">
+        <comment>reglement id du recu</comment>
+      </column>
+    </property>
+    <property name="pharegIdBonEncaissement" type="long">
+      <column default="0" name="phareg_id_bon_encaissement">
+        <comment>reglement id du bon encaissemeent</comment>
+      </column>
+    </property>
+    <property name="pharegNumRecu" type="string">
+      <column length="20" name="phareg_num_recu">
+        <comment>reglement num du recu</comment>
+      </column>
+    </property>
+    <property name="pharegNumPieceTiers" type="string">
+      <column length="20" name="phareg_num_piece_tiers">
+        <comment>numero de la piece du tiers</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.PharmacieEntete" column="pha_id" lazy="false" name="pharmacieEntete" not-null="true"/>
+  </class>
+</hibernate-mapping>

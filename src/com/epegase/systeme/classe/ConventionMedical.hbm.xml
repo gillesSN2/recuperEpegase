@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="ConventionMedical" table="med_convention_medical">
+    <id column="cvn_id" name="cvnId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="cvnDateCreat" type="timestamp">
+      <column name="cvn_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="cvnDateModif" type="timestamp">
+      <column name="cvn_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="cvnUserCreat" type="long">
+      <column default="0" length="15" name="cvn_user_creat">
+        <comment>user de creation</comment>
+      </column>
+    </property>
+    <property name="cvnUserModif" type="long">
+      <column default="0" length="15" name="cvn_user_modif">
+        <comment>user de modification</comment>
+      </column>
+    </property>
+    <property name="cvnLettre" type="string">
+      <column length="10" name="cvn_lettre">
+        <comment>code lettre</comment>
+      </column>
+    </property>
+    <property name="cvnProduit" type="string">
+      <column length="20" name="cvn_produit">
+        <comment>code produit</comment>
+      </column>
+    </property>
+    <property name="cvnLibelle" type="string">
+      <column length="100" name="cvn_libelle">
+        <comment>libelle</comment>
+      </column>
+    </property>
+    <property name="cvnValeur" type="double">
+      <column default="0" name="cvn_valeur">
+        <comment>valeur de la lettre produit</comment>
+      </column>
+    </property>
+    <property name="cvnValeurOrigine" type="double">
+      <column default="0" name="cvn_valeur_origine">
+        <comment>valeur de la structure origine</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.Tiers" column="tie_id" lazy="false" name="tiers" not-null="true"/>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="DocumentMediatheque" table="edu_document_mediatheque">
+    <id column="docmed_id" name="docmedId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="docmedDateCreat" type="timestamp">
+      <column name="docmed_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="docmedDateModif" type="timestamp">
+      <column name="docmed_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="docmedUserCreat" type="long">
+      <column default="0" length="15" name="docmed_user_creat">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="docmedUserModif" type="long">
+      <column default="0" length="15" name="docmed_user_modif">
+        <comment>utilisateur de modification</comment>
+      </column>
+    </property>
+    <property name="docmedNum" type="string">
+      <column length="20" name="docmed_num">
+        <comment>numero du document</comment>
+      </column>
+    </property>
+    <property name="docmedAuteur" type="string">
+      <column length="100" name="docmed_auteur">
+        <comment>auteur ou realisateur</comment>
+      </column>
+    </property>
+    <property name="docmedEditeur" type="string">
+      <column length="100" name="docmed_editeur">
+        <comment>editeur</comment>
+      </column>
+    </property>
+    <property name="docmedDistributeur" type="string">
+      <column length="100" name="docmed_distributeur">
+        <comment>distributeur</comment>
+      </column>
+    </property>
+    <property name="docmedPhoto" type="string">
+      <column length="100" name="docmed_photo">
+        <comment>photo pochette</comment>
+      </column>
+    </property>
+    <property name="docmedScan" type="string">
+      <column length="100" name="docmed_scan">
+        <comment>scan document</comment>
+      </column>
+    </property>
+    <property name="docmedTitre" type="string">
+      <column length="100" name="docmed_titre">
+        <comment>titre du document</comment>
+      </column>
+    </property>
+    <property name="docmedCode" type="string">
+      <column length="20" name="docmed_code">
+        <comment>code du document</comment>
+      </column>
+    </property>
+    <property name="docmedClasse" type="string">
+      <column length="100" name="docmed_classe">
+        <comment>classe du document</comment>
+      </column>
+    </property>
+    <property name="docmedDivision" type="string">
+      <column length="100" name="docmed_division">
+        <comment>division du document</comment>
+      </column>
+    </property>
+    <property name="docmedDomaine" type="string">
+      <column length="100" name="docmed_domaine">
+        <comment>domaine du document</comment>
+      </column>
+    </property>
+    <property name="docmedCollection" type="string">
+      <column length="100" name="docmed_collection">
+        <comment>collection</comment>
+      </column>
+    </property>
+    <property name="docmedGenre" type="string">
+      <column length="100" name="docmed_genre">
+        <comment>genre du document</comment>
+      </column>
+    </property>
+    <property name="docmedIssn" type="string">
+      <column length="20" name="docmed_issn">
+        <comment>issn du document</comment>
+      </column>
+    </property>
+    <property name="docmedIsbn" type="string">
+      <column length="20" name="docmed_isbn">
+        <comment>isbn du document</comment>
+      </column>
+    </property>
+    <property name="docmedSalle" type="string">
+      <column length="20" name="docmed_salle">
+        <comment>salle de rangement</comment>
+      </column>
+    </property>
+    <property name="docmedCasier" type="string">
+      <column length="20" name="docmed_casier">
+        <comment>casier de rangement</comment>
+      </column>
+    </property>
+    <property name="docmedLangue" type="string">
+      <column length="20" name="docmed_langue">
+        <comment>langue du document</comment>
+      </column>
+    </property>
+    <property name="docmedPublic" type="string">
+      <column length="100" name="docmed_public">
+        <comment>public vise</comment>
+      </column>
+    </property>
+    <property name="docmedOrigine" type="string">
+      <column length="100" name="docmed_origine">
+        <comment>origine ou source du document</comment>
+      </column>
+    </property>
+    <property name="docmedPays" type="string">
+      <column length="100" name="docmed_pays">
+        <comment>pays du document</comment>
+      </column>
+    </property>
+    <property name="docmedSupport" type="string">
+      <column length="100" name="docmed_support">
+        <comment>support du document</comment>
+      </column>
+    </property>
+    <property name="docmedType" type="string">
+      <column length="100" name="docmed_type">
+        <comment>type du document</comment>
+      </column>
+    </property>
+    <property name="docmedContenant" type="string">
+      <column length="100" name="docmed_contenant">
+        <comment>contenant du document</comment>
+      </column>
+    </property>
+    <property name="docmedAnneeParution" type="string">
+      <column length="4" name="docmed_annee_parution">
+        <comment>annee de parution</comment>
+      </column>
+    </property>
+    <property name="docmedAnneeEdition" type="string">
+      <column length="4" name="docmed_annee_edition">
+        <comment>annee edition</comment>
+      </column>
+    </property>
+    <property name="docmedLieuEdition" type="string">
+      <column length="100" name="docmed_lieu_edition">
+        <comment>lieu edition ou realisation</comment>
+      </column>
+    </property>
+    <property name="docmedAnneePromotion" type="string">
+      <column length="10" name="docmed_annee_promotion">
+        <comment>annee promotion</comment>
+      </column>
+    </property>
+    <property name="docmedAnneeSoutenance" type="string">
+      <column length="10" name="docmed_annee_soutenance">
+        <comment>annee soutenance</comment>
+      </column>
+    </property>
+    <property name="docmedNbExemplaire" type="integer">
+      <column default="0" name="docmed_nb_exemplaire">
+        <comment>nb exemplaire</comment>
+      </column>
+    </property>
+    <property name="docmedExemplaire" type="text">
+      <column name="docmed_exemplaire">
+        <comment>liste des exemplaires num, date achat, prix achat, etat</comment>
+      </column>
+    </property>
+    <property name="docmedNbPage" type="integer">
+      <column default="0" name="docmed_nb_page">
+        <comment>nb page</comment>
+      </column>
+    </property>
+    <property name="docmedNbVolume" type="integer">
+      <column default="0" name="docmed_nb_volume">
+        <comment>nb volume</comment>
+      </column>
+    </property>
+    <property name="docmedDuree" type="string">
+      <column length="10" name="docmed_duree">
+        <comment>duree</comment>
+      </column>
+    </property>
+    <property name="docmedInfo1" type="string">
+      <column length="100" name="docmed_info1">
+        <comment>info 1</comment>
+      </column>
+    </property>
+    <property name="docmedInfo2" type="string">
+      <column length="100" name="docmed_info2">
+        <comment>info 2</comment>
+      </column>
+    </property>
+    <property name="docmedInfo3" type="string">
+      <column length="100" name="docmed_info3">
+        <comment>info 3</comment>
+      </column>
+    </property>
+    <property name="docmedInfo4" type="string">
+      <column length="100" name="docmed_info4">
+        <comment>info 4</comment>
+      </column>
+    </property>
+    <property name="docmedResume" type="text">
+      <column name="docmed_resume">
+        <comment>resume</comment>
+      </column>
+    </property>
+    <property name="docmedCommentaire" type="string">
+      <column length="100" name="docmed_commentaire">
+        <comment>commentaire</comment>
+      </column>
+    </property>
+    <property name="docmedadresseInternet" type="string">
+      <column length="100" name="docmed_adresse_internet">
+        <comment>adresse internet</comment>
+      </column>
+    </property>
+    <property name="docmedadresseYoutube" type="string">
+      <column length="100" name="docmed_adresse_youtube">
+        <comment>adresse internet</comment>
+      </column>
+    </property>
+    <property name="docmedMotsCles" type="string">
+      <column length="100" name="docmed_mots_cles">
+        <comment>adresse internet</comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>

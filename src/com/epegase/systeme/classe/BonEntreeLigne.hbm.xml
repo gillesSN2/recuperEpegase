@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="BonEntreeLigne" table="ach_bon_entree_ligne">
+    <id column="binlig_id" name="binligId" type="long" unsaved-value="null">
+      <generator class="increment"/>
+    </id>
+    <property name="binligCode" type="string">
+      <column length="20" name="binlig_code">
+        <comment>code produit</comment>
+      </column>
+    </property>
+    <property name="binligDepot" type="string">
+      <column length="20" name="binlig_depot">
+        <comment>code depot</comment>
+      </column>
+    </property>
+    <property name="binligFamille" type="string">
+      <column length="121" name="binlig_famille">
+        <comment>famille produit</comment>
+      </column>
+    </property>
+    <property name="binligLibelle" type="text">
+      <column name="binlig_libelle">
+        <comment>libelle produit</comment>
+      </column>
+    </property>
+    <property name="binligReference" type="string">
+      <column length="20" name="binlig_reference">
+        <comment>reference produit</comment>
+      </column>
+    </property>
+    <property name="binligUnite" type="string">
+      <column length="30" name="binlig_unite">
+        <comment>unite produit</comment>
+      </column>
+    </property>
+    <property name="binligCondition" type="string">
+      <column length="121" name="binlig_condition">
+        <comment>conditionnement produit</comment>
+      </column>
+    </property>
+    <property name="binligDescription" type="string">
+      <column length="20" name="binlig_description">
+        <comment>description conditionnement produit</comment>
+      </column>
+    </property>
+    <property name="binligQte" type="float">
+      <column default="0" name="binlig_qte">
+        <comment>quantite</comment>
+      </column>
+    </property>
+    <property name="binligCasier" type="string">
+      <column length="20" name="binlig_casier">
+        <comment>quantite</comment>
+      </column>
+    </property>
+    <property name="binligLong" type="float">
+      <column default="0" name="binlig_long">
+        <comment>longueur</comment>
+      </column>
+    </property>
+    <property name="binligLarg" type="float">
+      <column default="0" name="binlig_larg">
+        <comment>largeur</comment>
+      </column>
+    </property>
+    <property name="binligHaut" type="float">
+      <column default="0" name="binlig_haut">
+        <comment>hauteur</comment>
+      </column>
+    </property>
+    <property name="binligDiam" type="float">
+      <column default="0" name="binlig_diam">
+        <comment>diametre</comment>
+      </column>
+    </property>
+    <property name="binligNb" type="float">
+      <column default="0" name="binlig_nb">
+        <comment>nombre de piece</comment>
+      </column>
+    </property>
+    <property name="binligPoidsNet" type="float">
+      <column default="0" name="binlig_poidsNet">
+        <comment>poids net</comment>
+      </column>
+    </property>
+    <property name="binligPoidsBrut" type="float">
+      <column default="0" name="binlig_poidsBrut">
+        <comment>poids brut</comment>
+      </column>
+    </property>
+    <property name="binligVolume" type="float">
+      <column default="0" name="binlig_volume">
+        <comment>volume</comment>
+      </column>
+    </property>
+    <property name="binligQteUtil" type="float">
+      <column default="0" name="binlig_qte_util">
+        <comment>quantite utilisee (valable pour le stock)</comment>
+      </column>
+    </property>
+    <property name="binligStock" type="integer">
+      <column default="0" name="binlig_stock">
+        <comment>mode gestion en stock</comment>
+      </column>
+    </property>
+    <property name="binligQteStock" type="float">
+      <column default="0" name="binlig_qte_stock">
+        <comment>quantite en stock</comment>
+      </column>
+    </property>
+    <property name="binligPump" type="double">
+      <column default="0" name="binlig_pump">
+        <comment>pump</comment>
+      </column>
+    </property>
+    <property name="binligTotal" type="double">
+      <column default="0" name="binlig_total">
+        <comment>total pump</comment>
+      </column>
+    </property>
+    <property name="binligObs" type="string">
+      <column length="50" name="binlig_obs">
+        <comment>obsrvations</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.BonEntreeEntete" column="bin_id" lazy="false" name="bonEntreeEntete" not-null="true"/>
+  </class>
+</hibernate-mapping>

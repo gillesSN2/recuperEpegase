@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="ConsultationOrdo" table="med_consultation_ordo">
+    <id column="cslord_id" name="cslordId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="cslordProduit" type="string">
+      <column length="20" name="cslord_produit">
+        <comment>code produit</comment>
+      </column>
+    </property>
+    <property name="cslordLibelle" type="text">
+      <column name="cslord_libelle">
+        <comment>libelle produit</comment>
+      </column>
+    </property>
+    <property name="cslordDci" type="text">
+      <column name="cslord_dci">
+        <comment>dci</comment>
+      </column>
+    </property>
+    <property name="cslordForme" type="text">
+      <column name="cslord_forme">
+        <comment>forme</comment>
+      </column>
+    </property>
+    <property name="cslordPoso" type="text">
+      <column name="cslord_poso">
+        <comment>posologie</comment>
+      </column>
+    </property>
+    <property name="cslordObs" type="text">
+      <column name="cslord_obs">
+        <comment>observations</comment>
+      </column>
+    </property>
+    <property name="cslordQte" type="integer">
+      <column default="0" name="cslord_qte">
+        <comment>quantite</comment>
+      </column>
+    </property>
+    <property name="cslordUnite" type="string">
+      <column length="30" name="cslord_unite">
+        <comment>unite</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ConsultationEnteteGene" column="csg_id" lazy="false" name="ConsultationEnteteGene" not-null="true"/>
+  </class>
+</hibernate-mapping>

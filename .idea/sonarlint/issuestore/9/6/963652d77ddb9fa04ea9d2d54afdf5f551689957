@@ -1,0 +1,45 @@
+
+–
+java:S1192"Define a constant instead of duplicating this literal "from CaissesOperations where caiopeInactif=0 order by caiopeCode" 3 times.(şãàÇ
+k
+java:S1192"RDefine a constant instead of duplicating this literal "CaisseCommerciale" 9 times.(ù£¤üÿÿÿÿ
+R
+java:S1155">Use isEmpty() to check whether the collection is empty or not.(¼»ç®
+W
+java:S1155">Use isEmpty() to check whether the collection is empty or not.(Á˜ßıûÿÿÿÿ
+N
+java:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+f
+java:S1450"RRemove the "cat" field and declare it as a local variable in the relevant methods.(³ò¶¬
+g
+java:S1450"SRemove the "code" field and declare it as a local variable in the relevant methods.(²âèú
+k
+java:S1450"RRemove the "nom" field and declare it as a local variable in the relevant methods.(À³õåùÿÿÿÿ
+k
+java:S1450"RRemove the "trf" field and declare it as a local variable in the relevant methods.(êÇ¾“ÿÿÿÿÿ
+f
+java:S1450"SRemove the "type" field and declare it as a local variable in the relevant methods.(¸ÄŞJ
+:
+java:S1172"&Remove these unused method parameters.(òÙ­’
+
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(òÙ­’
+A	java:S108")Either remove or fill this block of code.(©¸™—şÿÿÿÿ
+A	java:S108")Either remove or fill this block of code.(µŸ®€şÿÿÿÿ
+„
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(·çîíùÿÿÿÿ
+
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(ìšşì
+
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(Í‡à—
+„
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(Ÿßçãşÿÿÿÿ
+„
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(íç»©øÿÿÿÿ
+
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(ÖÂèî
+
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(£şà 
+
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(³ŸÎ£
+C
+java:S1481"*Remove this unused "var10" local variable.(¥÷Òÿÿÿÿÿ

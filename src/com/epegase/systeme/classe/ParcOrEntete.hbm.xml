@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="ParcOrEntete" table="prc_parc_or_entete">
+    <id column="prcore_id" name="prcoreId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="prcoreDateCreat" type="timestamp">
+      <column name="prcore_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="prcoreDateModif" type="timestamp">
+      <column name="prcore_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="prcoreIdCreateur" type="long">
+      <column default="0" length="15" name="prcore_id_createur">
+        <comment>id user createur</comment>
+      </column>
+    </property>
+    <property name="prcoreNomCreateur" type="string">
+      <column length="100" name="prcore_nom_createur">
+        <comment>nom du createur</comment>
+      </column>
+    </property>
+    <property name="prcoreIdModif" type="long">
+      <column default="0" length="15" name="prcore_id_modif">
+        <comment>id user de modification</comment>
+      </column>
+    </property>
+    <property name="prcoreNomModif" type="string">
+      <column length="100" name="prcore_nom_modif">
+        <comment>nom user de modification</comment>
+      </column>
+    </property>
+    <property index="true" name="prcoreDate" type="timestamp">
+      <column index="true" name="prcore_date">
+        <comment>date consommation</comment>
+      </column>
+    </property>
+    <property index="true" name="prcoreNum" type="string">
+      <column index="true" length="20" name="prcore_num">
+        <comment>numero bon</comment>
+      </column>
+    </property>
+    <property name="prcoreType" type="integer">
+      <column default="0" name="prcore_type">
+        <comment>type 0=diagnostic 1=maintenance 2=reparation</comment>
+      </column>
+    </property>
+    <property name="prcoreNomReceptionnaire" type="string">
+      <column length="100" name="prcore_nom_receptionnaire">
+        <comment>nom du receptionnaire</comment>
+      </column>
+    </property>
+    <property name="prcoreIdReceptionnaire" type="long">
+      <column default="0" name="prcore_id_receptionnaire">
+        <comment>id du receptionnaire</comment>
+      </column>
+    </property>
+    <property name="prcoreNomChauffeur" type="string">
+      <column length="100" name="prcore_nom_chauffeur">
+        <comment>nom du chauffeur</comment>
+      </column>
+    </property>
+    <property name="prcoreIdChauffeur" type="long">
+      <column default="0" name="prcore_id_chauffeur">
+        <comment>id du chauffeur</comment>
+      </column>
+    </property>
+    <property name="prcoreNomClient" type="string">
+      <column length="100" name="prcore_nom_client">
+        <comment>nom du client ou proprietaire</comment>
+      </column>
+    </property>
+    <property name="prcoreExoTva" type="integer">
+      <column default="0" length="1" name="prcore_exo_tva">
+        <comment>0=avec Tva 1=sans Tva </comment>
+      </column>
+    </property>
+    <property name="prcoreExoDouane" type="integer">
+      <column default="0" length="1" name="prcore_exo_douane">
+        <comment>0=avec Douane 1=sans Douane </comment>
+      </column>
+    </property>
+    <property index="true" name="prcoreCat" type="string">
+      <column index="true" length="50" name="prcore_cat">
+        <comment>categorie du client</comment>
+      </column>
+    </property>
+    <property name="prcoreSerie" type="string">
+      <column length="4" name="prcore_serie">
+        <comment>serie </comment>
+      </column>
+    </property>
+    <property name="prcoreActivite" type="text">
+      <column name="prcore_activite">
+        <comment>code activite</comment>
+      </column>
+    </property>
+    <property name="prcoreSite" type="string">
+      <column length="121" name="prcore_site">
+        <comment>code site</comment>
+      </column>
+    </property>
+    <property name="prcoreDepartement" type="string">
+      <column length="121" name="prcore_departement">
+        <comment>code departement</comment>
+      </column>
+    </property>
+    <property name="prcoreService" type="string">
+      <column length="121" name="prcore_service">
+        <comment>code service</comment>
+      </column>
+    </property>
+    <property name="prcoreRegion" type="string">
+      <column length="121" name="prcore_region">
+        <comment>code region</comment>
+      </column>
+    </property>
+    <property name="prcoreSecteur" type="string">
+      <column length="121" name="prcore_secteur">
+        <comment>code secteur</comment>
+      </column>
+    </property>
+    <property name="prcorePdv" type="string">
+      <column length="121" name="prcore_pdv">
+        <comment>code point de vente</comment>
+      </column>
+    </property>
+    <property name="prcoreAnal2" type="string">
+      <column length="121" name="prcore_anal2">
+        <comment>code analytique 2</comment>
+      </column>
+    </property>
+    <property name="prcoreAnal4" type="string">
+      <column length="121" name="prcore_anal4">
+        <comment>code analytique 4</comment>
+      </column>
+    </property>
+    <property name="prcoreDateImp" type="date">
+      <column name="prcore_date_imp">
+        <comment>date impression</comment>
+      </column>
+    </property>
+    <property name="prcoreModeleImp" type="string">
+      <column length="50" name="prcore_modele_imp">
+        <comment>nom jasper du modele</comment>
+      </column>
+    </property>
+    <property name="prcoreEtatVal" type="integer">
+      <column default="0" length="1" name="prcore_etat_val">
+        <comment>0=sans validation 1=avec validation</comment>
+      </column>
+    </property>
+    <property name="prcoreGele" type="integer">
+      <column default="0" length="1" name="prcore_gele">
+        <comment>0=non gele 1=gele</comment>
+      </column>
+    </property>
+    <property name="prcoreEtat" type="integer">
+      <column default="0" length="1" name="prcore_etat">
+        <comment>0=En cours 1=valide 2=gele 3=annule 4=termine</comment>
+      </column>
+    </property>
+    <property name="prcoreDateValide" type="date">
+      <column name="prcore_date_valide">
+        <comment>date de validation</comment>
+      </column>
+    </property>
+    <property name="prcoreDateAnnule" type="date">
+      <column name="prcore_date_annule">
+        <comment>date annulation</comment>
+      </column>
+    </property>
+    <property name="prcoreMotifAnnule" type="string">
+      <column length="50" name="prcore_motif_annule">
+        <comment>motif annulation</comment>
+      </column>
+    </property>
+    <property name="prcoreCompteur" type="long">
+      <column default="0" name="prcore_compteur">
+        <comment>releve du compteur</comment>
+      </column>
+    </property>
+    <property name="prcoreTypeCompteur" type="integer">
+      <column default="0" name="prcore_type_compteur">
+        <comment>0=distance 1=kilometrique 2=horaire</comment>
+      </column>
+    </property>
+    <property name="prcoreMotifEntree1" type="string">
+      <column length="121" name="prcore_motif_entree_1">
+        <comment>motif entree 1</comment>
+      </column>
+    </property>
+    <property name="prcoreMotifEntree2" type="string">
+      <column length="121" name="prcore_motif_entree_2">
+        <comment>motif entree 2</comment>
+      </column>
+    </property>
+    <property name="prcoreResumeEntree" type="text">
+      <column name="prcore_resume_entree">
+        <comment>resume entree</comment>
+      </column>
+    </property>
+    <property name="prcoreAvantGauche" type="string">
+      <column length="200" name="prcore_avant_gauche">
+        <comment>avant gauche</comment>
+      </column>
+    </property>
+    <property name="prcoreAvantDroit" type="string">
+      <column length="200" name="prcore_avant_droit">
+        <comment>avant droit</comment>
+      </column>
+    </property>
+    <property name="prcoreArriereGauche" type="string">
+      <column length="200" name="prcore_arriere_gauche">
+        <comment>arriere gauche</comment>
+      </column>
+    </property>
+    <property name="prcoreArriereDroit" type="string">
+      <column length="200" name="prcore_arriere_droit">
+        <comment>arriere droit</comment>
+      </column>
+    </property>
+    <property name="prcoreLateralGauche" type="string">
+      <column length="200" name="prcore_lateral_gauche">
+        <comment>lateral gauche</comment>
+      </column>
+    </property>
+    <property name="prcoreLateralDroit" type="string">
+      <column length="200" name="prcore_lateral_droit">
+        <comment>lateral droit</comment>
+      </column>
+    </property>
+    <property name="prcoreNiveauCarburant" type="integer">
+      <column default="0" name="prcore_niveau_carburant">
+        <comment>niveau carburant</comment>
+      </column>
+    </property>
+    <property name="prcoreNumChassis" type="string">
+      <column length="50" name="prcore_num_chassis">
+        <comment>numero de chassis</comment>
+      </column>
+    </property>
+    <property name="prcoreNumMoteur" type="string">
+      <column length="50" name="prcore_num_moteur">
+        <comment>numero de moteur</comment>
+      </column>
+    </property>
+    <property name="prcoreNumSrie" type="string">
+      <column length="50" name="prcore_num_serie">
+        <comment>numero de serie</comment>
+      </column>
+    </property>
+    <property name="prcoreNomFin" type="string">
+      <column length="100" name="prcore_nom_fin">
+        <comment>nom du responsable fin travaux</comment>
+      </column>
+    </property>
+    <property name="prcoreIdFin" type="long">
+      <column default="0" name="prcore_id_fin">
+        <comment>id du reponsable fin de travaux</comment>
+      </column>
+    </property>
+    <property name="prcoreCoutMo" type="double">
+      <column default="0" name="prcore_cout_mo">
+        <comment>cout de la main oeuvre</comment>
+      </column>
+    </property>
+    <property name="prcoreCoutPiece" type="double">
+      <column default="0" name="prcore_cout_piece">
+        <comment>cout des pieces</comment>
+      </column>
+    </property>
+    <property name="prcorePvMo" type="double">
+      <column default="0" name="prcore_pv_mo">
+        <comment>prix vente de la main oeuvre</comment>
+      </column>
+    </property>
+    <property name="prcorePvPiece" type="double">
+      <column default="0" name="prcore_pv_piece">
+        <comment>prix vente des pieces</comment>
+      </column>
+    </property>
+    <property name="prcoreTauxTc" type="float">
+      <column default="0" name="prcore_taux_tc">
+        <comment>taux taxe complementaire</comment>
+      </column>
+    </property>
+    <property name="prcoreTotTc" type="double">
+      <column default="0" name="prcore_tot_tc">
+        <comment>total taxe complementaire</comment>
+      </column>
+    </property>
+    <property name="prcoreControle" type="string">
+      <column length="100" name="prcore_controle">
+        <comment>liste des controle</comment>
+      </column>
+    </property>
+    <property name="prcoreAFaire" type="text">
+      <column name="prcore_a_faire">
+        <comment>travaux à faire</comment>
+      </column>
+    </property>
+    <property name="prcoreAPrevoir" type="text">
+      <column name="prcore_a_prevoir">
+        <comment>travaux à prevoir</comment>
+      </column>
+    </property>
+    <property name="prcoreDateProchaine" type="date">
+      <column name="prcore_date_prochaine">
+        <comment>date prochaine revision</comment>
+      </column>
+    </property>
+    <property name="prcoreRoueSecours" type="boolean">
+      <column default="false" name="prcore_roue_secours">
+        <comment>roue secours</comment>
+      </column>
+    </property>
+    <property name="prcoreCrick" type="boolean">
+      <column default="false" name="prcore_crick">
+        <comment>crick</comment>
+      </column>
+    </property>
+    <property name="prcoreExtincteur" type="boolean">
+      <column default="false" name="prcore_extincteur">
+        <comment>extincteur</comment>
+      </column>
+    </property>
+    <property name="prcoreTrousseSecours" type="boolean">
+      <column default="false" name="prcore_trousse_secours">
+        <comment>trousse de secours</comment>
+      </column>
+    </property>
+    <property name="prcoreGilet" type="boolean">
+      <column default="false" name="prcore_gilet">
+        <comment>gilet</comment>
+      </column>
+    </property>
+    <property name="prcoreTriangle" type="boolean">
+      <column default="false" name="prcore_triangle">
+        <comment>triangle</comment>
+      </column>
+    </property>
+    <property name="prcoreBoiteOutils" type="boolean">
+      <column default="false" name="prcore_boite_outils">
+        <comment>boite a outils</comment>
+      </column>
+    </property>
+    <property name="prcorePapier1" type="boolean">
+      <column default="false" name="prcore_papier1">
+        <comment>carte grise</comment>
+      </column>
+    </property>
+    <property name="prcorePapier2" type="boolean">
+      <column default="false" name="prcore_papier2">
+        <comment>visite technique</comment>
+      </column>
+    </property>
+    <property name="prcorePapier3" type="boolean">
+      <column default="false" name="prcore_papier3">
+        <comment>carte extincteur</comment>
+      </column>
+    </property>
+    <property name="prcorePapier4" type="boolean">
+      <column default="false" name="prcore_papier4">
+        <comment>carte rose</comment>
+      </column>
+    </property>
+    <property name="prcorePapier5" type="boolean">
+      <column default="false" name="prcore_papier5">
+        <comment>vignette</comment>
+      </column>
+    </property>
+    <property name="prcorePapier6" type="boolean">
+      <column default="false" name="prcore_papier6">
+        <comment>assurance</comment>
+      </column>
+    </property>
+    <property name="prcoreRoueSecoursFin" type="boolean">
+      <column default="false" name="prcore_roue_secours_fin">
+        <comment>roue secours</comment>
+      </column>
+    </property>
+    <property name="prcoreCrickFin" type="boolean">
+      <column default="false" name="prcore_crick_fin">
+        <comment>crick</comment>
+      </column>
+    </property>
+    <property name="prcoreExtincteurFin" type="boolean">
+      <column default="false" name="prcore_extincteur_fin">
+        <comment>extincteur</comment>
+      </column>
+    </property>
+    <property name="prcoreTrousseSecoursFin" type="boolean">
+      <column default="false" name="prcore_trousse_secours_fin">
+        <comment>trousse de secours</comment>
+      </column>
+    </property>
+    <property name="prcoreGiletFin" type="boolean">
+      <column default="false" name="prcore_gilet_fin">
+        <comment>gilet</comment>
+      </column>
+    </property>
+    <property name="prcoreTriangleFin" type="boolean">
+      <column default="false" name="prcore_triangle_fin">
+        <comment>triangle</comment>
+      </column>
+    </property>
+    <property name="prcoreBoiteOutilsFin" type="boolean">
+      <column default="false" name="prcore_boite_outilsè_fin">
+        <comment>boite a outils</comment>
+      </column>
+    </property>
+    <property name="prcorePapier1Fin" type="boolean">
+      <column default="false" name="prcore_papier1_fin">
+        <comment>carte grise</comment>
+      </column>
+    </property>
+    <property name="prcorePapier2Fin" type="boolean">
+      <column default="false" name="prcore_papier2_fin">
+        <comment>visite technique</comment>
+      </column>
+    </property>
+    <property name="prcorePapier3Fin" type="boolean">
+      <column default="false" name="prcore_papier3_fin">
+        <comment>carte extincteur</comment>
+      </column>
+    </property>
+    <property name="prcorePapier4Fin" type="boolean">
+      <column default="false" name="prcore_papier4_fin">
+        <comment>carte rose</comment>
+      </column>
+    </property>
+    <property name="prcorePapier5Fin" type="boolean">
+      <column default="false" name="prcore_papier5_fin">
+        <comment>vignette</comment>
+      </column>
+    </property>
+    <property name="prcorePapier6Fin" type="boolean">
+      <column default="false" name="prcore_papier6_fin">
+        <comment>assurance</comment>
+      </column>
+    </property>
+    <property name="prcoreTransmisDevis" type="integer">
+      <column default="0" name="prcore_transmis_devis">
+        <comment>0 = pas transmis 1=transmis par mail 2= transmis par courrier 3= les deux</comment>
+      </column>
+    </property>
+    <property name="prcoreReponseClient" type="integer">
+      <column default="0" name="prcore_reponse_client">
+        <comment>0 = attente 1=refus cher 2= refus long 3= refus mieux 10= acceptation</comment>
+      </column>
+    </property>
+    <property name="prcoreObservationClient" type="text">
+      <column name="prcore_observation_client">
+        <comment>observations client</comment>
+      </column>
+    </property>
+    <property name="prcoreExecution" type="integer">
+      <column default="0" name="prcore_execution">
+        <comment>0 = non 1=attentre piece 2= attente mo 3= en cours 10= termine</comment>
+      </column>
+    </property>
+    <property name="prcoreObservationChef" type="text">
+      <column name="prcore_observation_chef">
+        <comment>observations chef atelier</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ExercicesParc" column="exeprc_id" lazy="false" name="exercicesParc" not-null="true"/>
+    <many-to-one class="com.epegase.systeme.classe.Parc" column="prc_id" lazy="false" name="parc" not-null="true"/>
+    <many-to-one class="com.epegase.systeme.classe.Tiers" column="tie_id" lazy="false" name="tiers" not-null="false"/>
+  </class>
+</hibernate-mapping>

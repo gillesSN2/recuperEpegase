@@ -1,0 +1,18 @@
+
+?	java:S108í")Either remove or fill this block of code.(ê¼Ø‰
+n
+java:S3776¤"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(òä‰şÿÿÿÿ
+N
+java:S1948$"3Make "mesModelesRapport" transient or serializable.(›ÁÑ×ÿÿÿÿÿ
+h
+java:S3776Q"RRefactor this method to reduce its Cognitive Complexity from 35 to the 15 allowed.(¯íç
+D
+java:S1068#"/Remove this unused "objetCompte" private field.(è±‰G
+b
+java:S1192ö"FDefine a constant instead of duplicating this literal "false" 5 times.(‡°Ë®şÿÿÿÿ
+U
+java:S3400„"9Remove this method and declare a constant for this value.(»³Ğãøÿÿÿÿ
+E
+java:S1481ì")Remove this unused "var3" local variable.(Ú’›‰úÿÿÿÿ
+
+java:S1130â"xRemove the declaration of thrown exception 'java.io.FileNotFoundException' which is a subclass of 'java.io.IOException'.(ëŞÆä

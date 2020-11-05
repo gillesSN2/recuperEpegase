@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="ParcLocationEntete" table="prc_parc_location_entete">
+    <id column="prcloc_id" name="prclocId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="prclocDateCreat" type="timestamp">
+      <column name="prcloc_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="prclocDateModif" type="timestamp">
+      <column name="prcloc_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="prclocIdCreateur" type="long">
+      <column default="0" length="15" name="prcloc_id_createur">
+        <comment>id user createur</comment>
+      </column>
+    </property>
+    <property name="prclocNomCreateur" type="string">
+      <column length="100" name="prcloc_nom_createur">
+        <comment>nom du createur</comment>
+      </column>
+    </property>
+    <property name="prclocIdModif" type="long">
+      <column default="0" length="15" name="prcloc_id_modif">
+        <comment>id user de modification</comment>
+      </column>
+    </property>
+    <property name="prclocNomModif" type="string">
+      <column length="100" name="prcloc_nom_modif">
+        <comment>nom user de modification</comment>
+      </column>
+    </property>
+    <property index="true" name="prclocDate" type="timestamp">
+      <column index="true" name="prcloc_date">
+        <comment>date location</comment>
+      </column>
+    </property>
+    <property name="prclocDateDepart" type="timestamp">
+      <column default="null" name="prcloc_date_depart">
+        <comment>date depart</comment>
+      </column>
+    </property>
+    <property name="prclocDateRetour" type="timestamp">
+      <column default="null" name="prcloc_date_retour">
+        <comment>date retour</comment>
+      </column>
+    </property>
+    <property name="prclocDuree" type="double">
+      <column default="0" name="prcloc_duree">
+        <comment>duree en nb jours </comment>
+      </column>
+    </property>
+    <property name="prclocLieuDepart" type="string">
+      <column length="121" name="prcloc_lieu_depart">
+        <comment>lieu de depart</comment>
+      </column>
+    </property>
+    <property name="prclocLieuRetour" type="string">
+      <column length="121" name="prcloc_lieu_retour">
+        <comment>lieu de retour</comment>
+      </column>
+    </property>
+    <property index="true" name="prclocNum" type="string">
+      <column index="true" length="20" name="prcloc_num">
+        <comment>numero bon</comment>
+      </column>
+    </property>
+    <property name="prclocType" type="integer">
+      <column default="0" name="prcloc_type">
+        <comment>type 0=location courte durree 1=location longue duree 2=location speciale</comment>
+      </column>
+    </property>
+    <property name="prclocNomCommercial" type="string">
+      <column length="100" name="prcloc_nom_commercial">
+        <comment>nom du commercial</comment>
+      </column>
+    </property>
+    <property name="prclocIdCommercial" type="long">
+      <column default="0" name="prcloc_id_commercial">
+        <comment>id du commercial</comment>
+      </column>
+    </property>
+    <property name="prclocNomChauffeur" type="string">
+      <column length="100" name="prcloc_nom_chauffeur">
+        <comment>nom du chauffeur</comment>
+      </column>
+    </property>
+    <property name="prclocIdChauffeur" type="long">
+      <column default="0" name="prcloc_id_chauffeur">
+        <comment>id du chauffeur</comment>
+      </column>
+    </property>
+    <property name="prclocNomClient" type="string">
+      <column length="100" name="prcloc_nom_client">
+        <comment>nom du client</comment>
+      </column>
+    </property>
+    <property name="prclocCivilTiers" type="string">
+      <column length="20" name="prcloc_civil_tiers">
+        <comment>civilite du tiers</comment>
+      </column>
+    </property>
+    <property name="prclocExoTva" type="integer">
+      <column default="0" length="1" name="prcloc_exo_tva">
+        <comment>0=avec Tva 1=sans Tva </comment>
+      </column>
+    </property>
+    <property name="prclocExoDouane" type="integer">
+      <column default="0" length="1" name="prcloc_exo_douane">
+        <comment>0=avec Douane 1=sans Douane </comment>
+      </column>
+    </property>
+    <property index="true" name="prclocCat" type="string">
+      <column index="true" length="50" name="prcloc_cat">
+        <comment>categorie du client</comment>
+      </column>
+    </property>
+    <property name="prclocDevise" type="string">
+      <column length="3" name="prcloc_devise">
+        <comment>code devise</comment>
+      </column>
+    </property>
+    <property index="true" name="prclocTypeReg" type="integer">
+      <column default="0" index="true" name="prcloc_type_reg">
+        <comment>0=paiement comptant 1=terme date de facture 2=terme fin de mois 3=arrivee/paye 4=bon encaissement 5=demande credit</comment>
+      </column>
+    </property>
+    <property name="prclocModeReg" type="string">
+      <column length="50" name="prcloc_mode_reg">
+        <comment>mode de reglement xml</comment>
+      </column>
+    </property>
+    <property name="prclocSerie" type="string">
+      <column length="4" name="prcloc_serie">
+        <comment>serie </comment>
+      </column>
+    </property>
+    <property name="prclocActivite" type="text">
+      <column name="prcloc_activite">
+        <comment>code activite</comment>
+      </column>
+    </property>
+    <property name="prclocSite" type="string">
+      <column length="121" name="prcloc_site">
+        <comment>code site</comment>
+      </column>
+    </property>
+    <property name="prclocDepartement" type="string">
+      <column length="121" name="prcloc_departement">
+        <comment>code departement</comment>
+      </column>
+    </property>
+    <property name="prclocService" type="string">
+      <column length="121" name="prcloc_service">
+        <comment>code service</comment>
+      </column>
+    </property>
+    <property name="prclocRegion" type="string">
+      <column length="121" name="prcloc_region">
+        <comment>code region</comment>
+      </column>
+    </property>
+    <property name="prclocSecteur" type="string">
+      <column length="121" name="prcloc_secteur">
+        <comment>code secteur</comment>
+      </column>
+    </property>
+    <property name="prclocPdv" type="string">
+      <column length="121" name="prcloc_pdv">
+        <comment>code point de vente</comment>
+      </column>
+    </property>
+    <property name="prclocAnal2" type="string">
+      <column length="121" name="prcloc_anal2">
+        <comment>code analytique 2</comment>
+      </column>
+    </property>
+    <property name="prclocAnal4" type="string">
+      <column length="121" name="prcloc_anal4">
+        <comment>code analytique 4</comment>
+      </column>
+    </property>
+    <property name="prclocDateImp" type="date">
+      <column name="prcloc_date_imp">
+        <comment>date impression</comment>
+      </column>
+    </property>
+    <property name="prclocModeleImp" type="string">
+      <column length="50" name="prcloc_modele_imp">
+        <comment>nom jasper du modele</comment>
+      </column>
+    </property>
+    <property name="prclocEtatVal" type="integer">
+      <column default="0" length="1" name="prcloc_etat_val">
+        <comment>0=sans validation 1=avec validation</comment>
+      </column>
+    </property>
+    <property name="prclocGele" type="integer">
+      <column default="0" length="1" name="prcloc_gele">
+        <comment>0=non gele 1=gele</comment>
+      </column>
+    </property>
+    <property name="prclocEtat" type="integer">
+      <column default="0" length="1" name="prcloc_etat">
+        <comment>0=En cours 1=valide 2=gele 3=annule 4=termine</comment>
+      </column>
+    </property>
+    <property name="prclocDateValide" type="date">
+      <column name="prcloc_date_valide">
+        <comment>date de validation</comment>
+      </column>
+    </property>
+    <property name="prclocDateAnnule" type="date">
+      <column name="prcloc_date_annule">
+        <comment>date annulation</comment>
+      </column>
+    </property>
+    <property name="prclocMotifAnnule" type="string">
+      <column length="50" name="prcloc_motif_annule">
+        <comment>motif annulation</comment>
+      </column>
+    </property>
+    <property name="prclocCompteur" type="long">
+      <column default="0" name="prcloc_compteur">
+        <comment>releve du compteur</comment>
+      </column>
+    </property>
+    <property name="prclocTypeCompteur" type="integer">
+      <column default="0" name="prcloc_type_compteur">
+        <comment>0=distance 1=kilometrique 2=horaire</comment>
+      </column>
+    </property>
+    <property name="prclocAvantGauche" type="string">
+      <column length="200" name="prcloc_avant_gauche">
+        <comment>avant gauche</comment>
+      </column>
+    </property>
+    <property name="prclocAvantDroit" type="string">
+      <column length="200" name="prcloc_avant_droit">
+        <comment>avant droit</comment>
+      </column>
+    </property>
+    <property name="prclocArriereGauche" type="string">
+      <column length="200" name="prcloc_arriere_gauche">
+        <comment>arriere gauche</comment>
+      </column>
+    </property>
+    <property name="prclocArriereDroit" type="string">
+      <column length="200" name="prcloc_arriere_droit">
+        <comment>arriere droit</comment>
+      </column>
+    </property>
+    <property name="prclocLateralGauche" type="string">
+      <column length="200" name="prcloc_lateral_gauche">
+        <comment>lateral gauche</comment>
+      </column>
+    </property>
+    <property name="prclocLateralDroit" type="string">
+      <column length="200" name="prcloc_lateral_droit">
+        <comment>lateral droit</comment>
+      </column>
+    </property>
+    <property name="prclocInterieur" type="string">
+      <column length="200" name="prcloc_interieur">
+        <comment>interieur</comment>
+      </column>
+    </property>
+    <property name="prclocNiveauCarburant" type="integer">
+      <column default="0" name="prcloc_niveau_carburant">
+        <comment>niveau carburant</comment>
+      </column>
+    </property>
+    <property name="prclocRoueSecours" type="boolean">
+      <column default="false" name="prcloc_roue_secours">
+        <comment>roue secours</comment>
+      </column>
+    </property>
+    <property name="prclocCrick" type="boolean">
+      <column default="false" name="prcloc_crick">
+        <comment>crick</comment>
+      </column>
+    </property>
+    <property name="prclocExtincteur" type="boolean">
+      <column default="false" name="prcloc_extincteur">
+        <comment>extincteur</comment>
+      </column>
+    </property>
+    <property name="prclocTrousseSecours" type="boolean">
+      <column default="false" name="prcloc_trousse_secours">
+        <comment>trousse de secours</comment>
+      </column>
+    </property>
+    <property name="prclocGilet" type="boolean">
+      <column default="false" name="prcloc_gilet">
+        <comment>gilet</comment>
+      </column>
+    </property>
+    <property name="prclocTriangle" type="boolean">
+      <column default="false" name="prcloc_triangle">
+        <comment>triangle</comment>
+      </column>
+    </property>
+    <property name="prclocBoiteOutils" type="boolean">
+      <column default="false" name="prcloc_boite_outils">
+        <comment>boite a outils</comment>
+      </column>
+    </property>
+    <property name="prclocPapier1" type="boolean">
+      <column default="false" name="prcloc_papier1">
+        <comment>carte grise</comment>
+      </column>
+    </property>
+    <property name="prclocPapier2" type="boolean">
+      <column default="false" name="prcloc_papier2">
+        <comment>visite technique</comment>
+      </column>
+    </property>
+    <property name="prclocPapier3" type="boolean">
+      <column default="false" name="prcloc_papier3">
+        <comment>carte extincteur</comment>
+      </column>
+    </property>
+    <property name="prclocPapier4" type="boolean">
+      <column default="false" name="prcloc_papier4">
+        <comment>carte rose</comment>
+      </column>
+    </property>
+    <property name="prclocPapier5" type="boolean">
+      <column default="false" name="prcloc_papier5">
+        <comment>vignette</comment>
+      </column>
+    </property>
+    <property name="prclocPapier6" type="boolean">
+      <column default="false" name="prcloc_papier6">
+        <comment>assurance</comment>
+      </column>
+    </property>
+    <property name="prclocNumChassis" type="string">
+      <column length="50" name="prcloc_num_chassis">
+        <comment>numero de chassis</comment>
+      </column>
+    </property>
+    <property name="prclocNumMoteur" type="string">
+      <column length="50" name="prcloc_num_moteur">
+        <comment>numero de moteur</comment>
+      </column>
+    </property>
+    <property name="prclocCompteurFin" type="long">
+      <column default="0" name="prcloc_compteur_fin">
+        <comment>releve du compteur</comment>
+      </column>
+    </property>
+    <property name="prclocCompteurDistance" type="long">
+      <column default="0" name="prcloc_compteur_distance">
+        <comment>releve du compteur</comment>
+      </column>
+    </property>
+    <property name="prclocNomFin" type="string">
+      <column length="100" name="prcloc_nom_fin">
+        <comment>nom du responsable retour</comment>
+      </column>
+    </property>
+    <property name="prclocIdFin" type="long">
+      <column default="0" name="prcloc_id_fin">
+        <comment>id du reponsable retour</comment>
+      </column>
+    </property>
+    <property name="prclocPu" type="double">
+      <column default="0" name="prcloc_pu">
+        <comment>prix location unitaire</comment>
+      </column>
+    </property>
+    <property name="prclocPv" type="double">
+      <column default="0" name="prcloc_pv">
+        <comment>prix location total</comment>
+      </column>
+    </property>
+    <property name="prclocTotHt" type="double">
+      <column default="0" name="prcloc_tot_ht">
+        <comment>total ht</comment>
+      </column>
+    </property>
+    <property name="prclocTauxRemise" type="float">
+      <column default="0" name="prcloc_taux_remise">
+        <comment>taux remise globale</comment>
+      </column>
+    </property>
+    <property name="prclocTotRemise" type="double">
+      <column default="0" name="prcloc_tot_remise">
+        <comment>total remise</comment>
+      </column>
+    </property>
+    <property name="prclocTotRabais" type="double">
+      <column default="0" name="prcloc_tot_rabais">
+        <comment>total rabais</comment>
+      </column>
+    </property>
+    <property name="prclocTotTva" type="double">
+      <column default="0" name="prcloc_tot_tva">
+        <comment>total tva</comment>
+      </column>
+    </property>
+    <property name="prclocTotTtc" type="double">
+      <column default="0" name="prcloc_tot_ttc">
+        <comment>total ttc</comment>
+      </column>
+    </property>
+    <property name="prclocTauxTc" type="float">
+      <column default="0" name="prcloc_taux_tc">
+        <comment>taux taxe complementaire</comment>
+      </column>
+    </property>
+    <property name="prclocTotTc" type="double">
+      <column default="0" name="prcloc_tot_tc">
+        <comment>total taxe complementaire</comment>
+      </column>
+    </property>
+    <property name="prclocAvantGaucheFin" type="string">
+      <column length="200" name="prcloc_avant_gauche_fin">
+        <comment>avant gauche</comment>
+      </column>
+    </property>
+    <property name="prclocAvantDroitFin" type="string">
+      <column length="200" name="prcloc_avant_droit_fin">
+        <comment>avant droit</comment>
+      </column>
+    </property>
+    <property name="prclocArriereGaucheFin" type="string">
+      <column length="200" name="prcloc_arriere_gauche_fin">
+        <comment>arriere gauche</comment>
+      </column>
+    </property>
+    <property name="prclocArriereDroitFin" type="string">
+      <column length="200" name="prcloc_arriere_droit_fin">
+        <comment>arriere droit</comment>
+      </column>
+    </property>
+    <property name="prclocLateralGaucheFin" type="string">
+      <column length="200" name="prcloc_lateral_gauche_fin">
+        <comment>lateral gauche</comment>
+      </column>
+    </property>
+    <property name="prclocLateralDroitFin" type="string">
+      <column length="200" name="prcloc_lateral_droit_fin">
+        <comment>lateral droit</comment>
+      </column>
+    </property>
+    <property name="prclocInterieurFin" type="string">
+      <column length="200" name="prcloc_interieur_fin">
+        <comment>interieur</comment>
+      </column>
+    </property>
+    <property name="prclocNiveauCarburantFin" type="integer">
+      <column default="0" name="prcloc_niveau_carburant_fin">
+        <comment>niveau carburant</comment>
+      </column>
+    </property>
+    <property name="prclocRoueSecoursFin" type="boolean">
+      <column default="false" name="prcloc_roue_secours_fin">
+        <comment>roue secours</comment>
+      </column>
+    </property>
+    <property name="prclocCrickFin" type="boolean">
+      <column default="false" name="prcloc_crick_fin">
+        <comment>crick</comment>
+      </column>
+    </property>
+    <property name="prclocExtincteurFin" type="boolean">
+      <column default="false" name="prcloc_extincteur_fin">
+        <comment>extincteur</comment>
+      </column>
+    </property>
+    <property name="prclocTrousseSecoursFin" type="boolean">
+      <column default="false" name="prcloc_trousse_secours_fin">
+        <comment>trousse de secours</comment>
+      </column>
+    </property>
+    <property name="prclocGiletFin" type="boolean">
+      <column default="false" name="prcloc_gilet_fin">
+        <comment>gilet</comment>
+      </column>
+    </property>
+    <property name="prclocTriangleFin" type="boolean">
+      <column default="false" name="prcloc_triangle_fin">
+        <comment>triangle</comment>
+      </column>
+    </property>
+    <property name="prclocBoiteOutilsFin" type="boolean">
+      <column default="false" name="prcloc_boite_outilsè_fin">
+        <comment>boite a outils</comment>
+      </column>
+    </property>
+    <property name="prclocPapier1Fin" type="boolean">
+      <column default="false" name="prcloc_papier1_fin">
+        <comment>carte grise</comment>
+      </column>
+    </property>
+    <property name="prclocPapier2Fin" type="boolean">
+      <column default="false" name="prcloc_papier2_fin">
+        <comment>visite technique</comment>
+      </column>
+    </property>
+    <property name="prclocPapier3Fin" type="boolean">
+      <column default="false" name="prcloc_papier3_fin">
+        <comment>carte extincteur</comment>
+      </column>
+    </property>
+    <property name="prclocPapier4Fin" type="boolean">
+      <column default="false" name="prcloc_papier4_fin">
+        <comment>carte rose</comment>
+      </column>
+    </property>
+    <property name="prclocPapier5Fin" type="boolean">
+      <column default="false" name="prcloc_papier5_fin">
+        <comment>vignette</comment>
+      </column>
+    </property>
+    <property name="prclocPapier6Fin" type="boolean">
+      <column default="false" name="prcloc_papier6_fin">
+        <comment>assurance</comment>
+      </column>
+    </property>
+    <property name="prclocDiversTiers" type="integer">
+      <column default="0" name="prcloc_divers_tiers">
+        <comment>0=normal 99= divers</comment>
+      </column>
+    </property>
+    <property name="prclocDiversNom" type="string">
+      <column length="100" name="prcloc_divers_nom">
+        <comment>nom du tiers divers</comment>
+      </column>
+    </property>
+    <property name="prclocDiversAdresse" type="string">
+      <column length="100" name="prcloc_divers_adresse">
+        <comment>adresse du tiers divers</comment>
+      </column>
+    </property>
+    <property name="prclocDiversVille" type="string">
+      <column length="50" name="prcloc_divers_ville">
+        <comment>ville du tiers divers</comment>
+      </column>
+    </property>
+    <property name="prclocDiversTel" type="string">
+      <column length="50" name="prcloc_divers_tel">
+        <comment>telephone du tiers divers</comment>
+      </column>
+    </property>
+    <property name="prclocDiversMail" type="string">
+      <column length="100" name="prcloc_divers_mail">
+        <comment>mail du tiers divers</comment>
+      </column>
+    </property>
+    <property name="prclocSource" type="string">
+      <column length="50" name="prcloc_source">
+        <comment>source du document</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ExercicesParc" column="exeprc_id" lazy="false" name="exercicesParc" not-null="true"/>
+    <many-to-one class="com.epegase.systeme.classe.Parc" column="prc_id" lazy="false" name="parc" not-null="true"/>
+    <many-to-one class="com.epegase.systeme.classe.Tiers" column="tie_id" lazy="false" name="tiers" not-null="false"/>
+  </class>
+</hibernate-mapping>

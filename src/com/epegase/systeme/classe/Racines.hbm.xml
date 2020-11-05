@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="Racines" table="cpt_racines">
+    <id column="rac_id" name="racId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="racFiscalite" type="string">
+      <column length="20" name="rac_fiscalite">
+        <comment>nom fiscalite</comment>
+      </column>
+    </property>
+    <property index="true" name="racCode" type="string">
+      <column index="true" length="10" name="rac_code">
+        <comment>code racine</comment>
+      </column>
+    </property>
+    <property name="racLibelleFr" type="string">
+      <column length="300" name="rac_libelle_fr">
+        <comment>libelle FR</comment>
+      </column>
+    </property>
+    <property name="racLibelleUk" type="string">
+      <column length="300" name="rac_libelle_uk">
+        <comment>libelle UK</comment>
+      </column>
+    </property>
+    <property name="racLibelleSp" type="string">
+      <column length="300" name="rac_libelle_sp">
+        <comment>libelle SP</comment>
+      </column>
+    </property>
+    <property name="racnature" type="string">
+      <column length="100" name="rac_nature">
+        <comment>nature racine</comment>
+      </column>
+    </property>
+    <property index="true" name="racCodenature" type="string">
+      <column index="true" length="10" name="rac_codenature">
+        <comment>code racine</comment>
+      </column>
+    </property>
+    <property name="ractaux" type="float">
+      <column default="0" name="rac_taux_taxe">
+        <comment>taux de taxe</comment>
+      </column>
+    </property>
+    <property name="racUtil" type="string">
+      <column length="1" name="rac_util">
+        <comment>0=pas dernier niveau 1=dernier niveau</comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>

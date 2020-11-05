@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="PatientProt" table="med_patient_prot">
+    <id column="patprt_id" name="patprtId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="patprtDateDebut" type="date">
+      <column default="NULL" name="patprt_date_debut">
+        <comment>date de debut du protocole</comment>
+      </column>
+    </property>
+    <property name="patprtDatefin" type="date">
+      <column default="NULL" name="patptr_date_fin">
+        <comment>date de fin du protocole</comment>
+      </column>
+    </property>
+    <property name="patprtCode" type="string">
+      <column length="20" name="patptr_code">
+        <comment>code du protocole</comment>
+      </column>
+    </property>
+    <property name="patprtLibelle" type="string">
+      <column length="100" name="patptr_libelle">
+        <comment>libelle du protocole</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.Patients" column="pat_id" lazy="false" name="patient" not-null="true"/>
+  </class>
+</hibernate-mapping>

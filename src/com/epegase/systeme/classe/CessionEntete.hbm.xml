@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="CessionEntete" table="ach_cession_entete">
+    <id column="ces_id" name="cesId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="cesDateCreat" type="timestamp">
+      <column name="ces_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="cesDateModif" type="timestamp">
+      <column name="ces_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="cesIdCreateur" type="long">
+      <column default="0" length="15" name="ces_id_createur">
+        <comment>id user createur</comment>
+      </column>
+    </property>
+    <property name="cesNomCreateur" type="string">
+      <column length="100" name="ces_nom_createur">
+        <comment>nom du createur</comment>
+      </column>
+    </property>
+    <property name="cesIdModif" type="long">
+      <column default="0" length="15" name="ces_id_modif">
+        <comment>id user de modification</comment>
+      </column>
+    </property>
+    <property name="cesNomModif" type="string">
+      <column length="100" name="ces_nom_modif">
+        <comment>nom user de modification</comment>
+      </column>
+    </property>
+    <property index="true" name="cesDate" type="timestamp">
+      <column index="true" name="ces_date">
+        <comment>date inventaire</comment>
+      </column>
+    </property>
+    <property index="true" name="cesNum" type="string">
+      <column index="true" length="20" name="ces_num">
+        <comment>numero inventaire</comment>
+      </column>
+    </property>
+    <property index="true" name="cesDepotOrigine" type="string">
+      <column index="true" length="20" name="ces_depot_origine">
+        <comment>depot origine</comment>
+      </column>
+    </property>
+    <property name="cesTypeDepot" type="integer">
+      <column default="0" length="1" name="ces_type_depot">
+        <comment>0=standard fixe 1=standard mobile  2=fictif</comment>
+      </column>
+    </property>
+    <property index="true" name="cesDepotDestination" type="string">
+      <column index="true" length="20" name="ces_depot_destination">
+        <comment>depot destination</comment>
+      </column>
+    </property>
+    <property name="cesSommier" type="string">
+      <column length="20" name="ces_sommier">
+        <comment>code sommier sortie</comment>
+      </column>
+    </property>
+    <property name="cesNomEquipe" type="string">
+      <column length="100" name="ces_nom_equipe">
+        <comment>nom equipe</comment>
+      </column>
+    </property>
+    <property name="cesIdEquipe" type="long">
+      <column default="0" length="15" name="ces_id_equipe">
+        <comment>id equipe</comment>
+      </column>
+    </property>
+    <property name="cesNomResponsable" type="string">
+      <column length="100" name="ces_nom_responsable">
+        <comment>nom du commercial</comment>
+      </column>
+    </property>
+    <property name="cesIdResponsable" type="long">
+      <column default="0" name="ces_id_responsable">
+        <comment>id du commercial</comment>
+      </column>
+    </property>
+    <property name="cesSerie" type="string">
+      <column length="4" name="ces_serie">
+        <comment>serie </comment>
+      </column>
+    </property>
+    <property name="cesObject" type="string">
+      <column length="100" name="ces_object">
+        <comment>objet</comment>
+      </column>
+    </property>
+    <property name="cesTotPump" type="double">
+      <column default="0" name="ces_tot_pump">
+        <comment>total ttc</comment>
+      </column>
+    </property>
+    <property name="cesActivite" type="text">
+      <column name="ces_activite">
+        <comment>code activite</comment>
+      </column>
+    </property>
+    <property name="cesSite" type="string">
+      <column length="121" name="ces_site">
+        <comment>code site</comment>
+      </column>
+    </property>
+    <property name="cesDepartement" type="string">
+      <column length="121" name="ces_departement">
+        <comment>code departement</comment>
+      </column>
+    </property>
+    <property name="cesService" type="string">
+      <column length="121" name="ces_service">
+        <comment>code service</comment>
+      </column>
+    </property>
+    <property name="cesRegion" type="string">
+      <column length="121" name="ces_region">
+        <comment>code region</comment>
+      </column>
+    </property>
+    <property name="cesSecteur" type="string">
+      <column length="121" name="ces_secteur">
+        <comment>code secteur</comment>
+      </column>
+    </property>
+    <property name="cesPdv" type="string">
+      <column length="121" name="ces_pdv">
+        <comment>code point de vente</comment>
+      </column>
+    </property>
+    <property name="cesAnal1" type="string">
+      <column length="121" name="ces_anal1">
+        <comment>code analytique 1 chantier</comment>
+      </column>
+    </property>
+    <property name="cesAnal2" type="string">
+      <column length="121" name="ces_anal2">
+        <comment>code analytique 2 parc</comment>
+      </column>
+    </property>
+    <property name="cesAnal4" type="string">
+      <column length="121" name="ces_anal4">
+        <comment>code analytique 4 dossier</comment>
+      </column>
+    </property>
+    <property name="cesInfo1" type="string">
+      <column length="100" name="ces_info1">
+        <comment>info 1</comment>
+      </column>
+    </property>
+    <property name="cesInfo2" type="string">
+      <column length="100" name="ces_info2">
+        <comment>info 2</comment>
+      </column>
+    </property>
+    <property name="cesInfo3" type="string">
+      <column length="100" name="ces_info3">
+        <comment>info 3</comment>
+      </column>
+    </property>
+    <property name="cesInfo4" type="string">
+      <column length="100" name="ces_info4">
+        <comment>info 4</comment>
+      </column>
+    </property>
+    <property name="cesInfo5" type="string">
+      <column length="100" name="ces_info5">
+        <comment>info 5</comment>
+      </column>
+    </property>
+    <property name="cesInfo6" type="string">
+      <column length="100" name="ces_info6">
+        <comment>info 6</comment>
+      </column>
+    </property>
+    <property name="cesInfo7" type="string">
+      <column length="100" name="ces_info7">
+        <comment>info 7</comment>
+      </column>
+    </property>
+    <property name="cesInfo8" type="string">
+      <column length="100" name="ces_info8">
+        <comment>info 8</comment>
+      </column>
+    </property>
+    <property name="cesInfo9" type="string">
+      <column length="100" name="ces_info9">
+        <comment>info 9</comment>
+      </column>
+    </property>
+    <property name="cesInfo10" type="string">
+      <column length="100" name="ces_info10">
+        <comment>info 10</comment>
+      </column>
+    </property>
+    <property name="cesDateImp" type="date">
+      <column name="ces_date_imp">
+        <comment>date impression</comment>
+      </column>
+    </property>
+    <property name="cesModeleImp" type="string">
+      <column length="50" name="ces_modele_imp">
+        <comment>nom jasper du modele</comment>
+      </column>
+    </property>
+    <property name="cesEtatVal" type="integer">
+      <column default="0" length="1" name="ces_etat_val">
+        <comment>0=sans validation 1=avec validation</comment>
+      </column>
+    </property>
+    <property name="cesGele" type="integer">
+      <column default="0" length="1" name="ces_gele">
+        <comment>0=non gele 1=gele</comment>
+      </column>
+    </property>
+    <property index="true" name="cesEtat" type="integer">
+      <column default="0" index="true" length="1" name="ces_etat">
+        <comment>0=En cours 1=valide 2=gele 3=annule </comment>
+      </column>
+    </property>
+    <property name="cesDateValide" type="date">
+      <column name="ces_date_valide">
+        <comment>date de validation</comment>
+      </column>
+    </property>
+    <property name="cesPosSignature" type="integer">
+      <column default="0" length="1" name="ces_pos_signature">
+        <comment>nb de signature ayant statue</comment>
+      </column>
+    </property>
+    <property name="cesDateAnnule" type="date">
+      <column name="ces_date_annule">
+        <comment>date annulation</comment>
+      </column>
+    </property>
+    <property name="cesMotifAnnule" type="string">
+      <column length="50" name="ces_motif_annule">
+        <comment>motif annulation</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ExercicesAchats" column="exeach_id" lazy="false" name="exercicesAchats" not-null="true"/>
+    <many-to-one class="com.epegase.systeme.classe.Users" column="usr_id" lazy="false" name="users" not-null="false"/>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="Reglements" table="cai_reglements">
+    <id column="rgl_id" name="rglId" type="long">
+      <generator class="increment"/>
+    </id>
+    <property index="true" name="rglCle1" type="string">
+      <column index="true" length="20" name="rgl_cle1">
+        <comment>concatenation rgl_caisse:rgl_periode caisse execution</comment>
+      </column>
+    </property>
+    <property index="true" name="rglCle2" type="string">
+      <column index="true" length="20" name="rgl_cle2">
+        <comment>concatenation rgl_caisse:rgl_dateReg caisse execution</comment>
+      </column>
+    </property>
+    <property index="true" name="rglCle3" type="string">
+      <column index="true" length="20" name="rgl_cle3">
+        <comment>concatenation rgl_code_receptrice:rgl_periode caisse destination</comment>
+      </column>
+    </property>
+    <property index="true" name="rglCle4" type="string">
+      <column index="true" length="20" name="rgl_cle4">
+        <comment>concatenation rgl_code_receptrice:rgl_dateReg caisse destination</comment>
+      </column>
+    </property>
+    <property name="rglPeriode" type="string">
+      <column length="7" name="rgl_periode">
+        <comment>MM:AAAA par rapport a la date de saisie</comment>
+      </column>
+    </property>
+    <property name="rglDateCreation" type="timestamp">
+      <column name="rgl_date_creation">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="rglUserCreat" type="long">
+      <column default="0" length="20" name="rgl_user_creat">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="rglGrp" type="string">
+      <column length="10" name="rgl_grp">
+        <comment>code du groupe ou collaboration du createur</comment>
+      </column>
+    </property>
+    <property name="rglDateModif" type="timestamp">
+      <column name="rgl_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="rglUserModif" type="long">
+      <column default="0" length="15" name="rgl_user_modif">
+        <comment>user de modification</comment>
+      </column>
+    </property>
+    <property name="rglDateReg" type="date">
+      <column name="rgl_date_reg">
+        <comment>date du reglement</comment>
+      </column>
+    </property>
+    <property name="rglDateValeur" type="date">
+      <column name="rgl_date_valeur">
+        <comment>date de valeur du reglement</comment>
+      </column>
+    </property>
+    <property name="rglDateRemise" type="date">
+      <column name="rgl_date_remise">
+        <comment>date de remise de cheque</comment>
+      </column>
+    </property>
+    <property name="rglDateRegQuart" type="date">
+      <column name="rgl_date_reg_quart">
+        <comment>date du reglement du quart</comment>
+      </column>
+    </property>
+    <property name="rglQuart" type="string">
+      <column length="2" name="rgl_quart">
+        <comment>numero du quart</comment>
+      </column>
+    </property>
+    <property name="rglBon" type="string">
+      <column length="20" name="rgl_bon">
+        <comment>numero du bon origine</comment>
+      </column>
+    </property>
+    <property index="true" name="rglIdBon" type="long">
+      <column default="0" index="true" name="rgl_id_bon">
+        <comment>id du bon origine</comment>
+      </column>
+    </property>
+    <property index="true" name="rglIdDocument" type="long">
+      <column default="0" index="true" name="rgl_id_document">
+        <comment>id du document origine</comment>
+      </column>
+    </property>
+    <property name="rglDocument" type="string">
+      <column length="20" name="rgl_document">
+        <comment>numero du document origine</comment>
+      </column>
+    </property>
+    <property name="rglNatureDoc" type="integer">
+      <column default="0" name="rgl_nature_doc">
+        <comment>nature du document origine 10=da 11=cotation 12=bc 13=reception 14=retour 15=facture 16=avoir 17=note debit 18=frais 19=collecte 20=besoin 21=devis 22=BC 23=BL 24=retour 25=facture 26=avoir 27=note debit 28=chargement</comment>
+      </column>
+    </property>
+    <property name="rglSource" type="string">
+      <column length="50" name="rgl_source">
+        <comment>source du document</comment>
+      </column>
+    </property>
+    <property name="rglSerie" type="string">
+      <column length="4" name="rgl_serie">
+        <comment>serie du document</comment>
+      </column>
+    </property>
+    <property name="rglNum" type="string">
+      <column length="20" name="rgl_num">
+        <comment>numero piece du reglement</comment>
+      </column>
+    </property>
+    <property name="rglPj" type="boolean">
+      <column default="false" name="rgl_pj">
+        <comment>true si piece jointe</comment>
+      </column>
+    </property>
+    <property name="rglCodeCaiss" type="string">
+      <column default="null" length="20" name="rgl_code_caisse">
+        <comment>code de la caisse execution</comment>
+      </column>
+    </property>
+    <property name="rglLibCaiss" type="string">
+      <column default="null" length="100" name="rgl_caisse">
+        <comment>libelle de la caisse execution</comment>
+      </column>
+    </property>
+    <property name="rglCodeEmetrice" type="string">
+      <column default="null" length="20" name="rgl_code_emetrice">
+        <comment>code caisse emetrice</comment>
+      </column>
+    </property>
+    <property name="rglLibEmetrice" type="string">
+      <column default="null" length="100" name="rgl_lib_emetrice">
+        <comment>libelle caisse emetrice</comment>
+      </column>
+    </property>
+    <property name="rglCodeReceptrice" type="string">
+      <column default="null" length="20" name="rgl_code_receptrice">
+        <comment>code caisse receptrice</comment>
+      </column>
+    </property>
+    <property name="rglLibReceptrice" type="string">
+      <column default="null" length="100" name="rgl_lib_receptrice">
+        <comment>libelle caisse receptrice</comment>
+      </column>
+    </property>
+    <property name="rglLibelle" type="string">
+      <column length="100" name="rgl_libelle">
+        <comment>libelle du reglement</comment>
+      </column>
+    </property>
+    <property name="rglObjet" type="string">
+      <column length="100" name="rgl_objet">
+        <comment>objet du document</comment>
+      </column>
+    </property>
+    <property name="rglCategorie" type="integer">
+      <column length="4" name="rgl_categorie">
+        <comment>10=fournisseurs 20=clients 30=patients 40=eleves 50=user medical 62=bons de sortie 63=bons entree 64=virement interne 80=salarie 90=solde caisse espece</comment>
+      </column>
+    </property>
+    <property name="rglTypeReg" type="integer">
+      <column default="0" name="rgl_type_reg">
+        <comment>type du reglement</comment>
+      </column>
+    </property>
+    <property name="rglMode" type="string">
+      <column length="20" name="rgl_mode">
+        <comment>mode du reglement fichier typeReglement.xml</comment>
+      </column>
+    </property>
+    <property name="rglDepense" type="double">
+      <column default="0" name="rgl_depense">
+        <comment>montant de la depense</comment>
+      </column>
+    </property>
+    <property name="rglRecette" type="double">
+      <column default="0" name="rgl_recette">
+        <comment>montant de la recette</comment>
+      </column>
+    </property>
+    <property name="rglFrais" type="double">
+      <column default="0" name="rgl_frais">
+        <comment>montant des frais</comment>
+      </column>
+    </property>
+    <property name="rglTimbre" type="double">
+      <column default="0" name="rgl_timbre">
+        <comment>montant du timbre</comment>
+      </column>
+    </property>
+    <property name="rglRendu" type="double">
+      <column default="0" name="rgl_rendu">
+        <comment>montant rendu</comment>
+      </column>
+    </property>
+    <property name="rglDevise" type="string">
+      <column length="3" name="rgl_devise">
+        <comment>devise utilisee</comment>
+      </column>
+    </property>
+    <property name="rglFormatDevise" type="integer">
+      <column default="0" name="rgl_format_devise">
+        <comment>format devise utilisee</comment>
+      </column>
+    </property>
+    <property name="rglNomTiers" type="string">
+      <column length="100" name="rgl_nom_tiers">
+        <comment>nom du tiers fournisseur, client, agent, patient, plan comptable, user</comment>
+      </column>
+    </property>
+    <property name="rglIdTiers" type="long">
+      <column default="0" name="rgl_id_tiers">
+        <comment>id tiers</comment>
+      </column>
+    </property>
+    <property name="rglTypeTiers" type="integer">
+      <column default="0" name="rgl_type_tiers">
+        <comment>type tiers 0=client 1=fournisseur 2=agent 3=plan comptable 4=patient 5=eleve 6=user</comment>
+      </column>
+    </property>
+    <property name="rglIdContact" type="long">
+      <column default="0" name="rgl_id_contact">
+        <comment>id tiers</comment>
+      </column>
+    </property>
+    <property name="rglNomContact" type="string">
+      <column length="100" name="rgl_nom_contact">
+        <comment>nom du contact ou destinataire</comment>
+      </column>
+    </property>
+    <property name="rglDepotTiers" type="integer">
+      <column default="0" name="rgl_depot_tiers">
+        <comment>0=gestion normale 1=depot dans compte tiers 2=ristourne 3=consommation deposit ou ristourne</comment>
+      </column>
+    </property>
+    <property name="rglIdCaissier" type="long">
+      <column default="0" length="20" name="rgl_id_caissier">
+        <comment>id du caissier</comment>
+      </column>
+    </property>
+    <property name="rglNomCaissier" type="string">
+      <column length="100" name="rgl_nom_caissier">
+        <comment>nom du caissier</comment>
+      </column>
+    </property>
+    <property name="rglBudget" type="string">
+      <column length="121" name="rgl_budget">
+        <comment>code du budget</comment>
+      </column>
+    </property>
+    <property name="rglActivite" type="text">
+      <column name="rgl_activite">
+        <comment>code activite</comment>
+      </column>
+    </property>
+    <property name="rglDossier" type="string">
+      <column length="121" name="rgl_dossier">
+        <comment>code dossier</comment>
+      </column>
+    </property>
+    <property name="rglParc" type="text">
+      <column name="rgl_parc">
+        <comment>code parc</comment>
+      </column>
+    </property>
+    <property name="rglSite" type="string">
+      <column length="121" name="rgl_site">
+        <comment>code du site</comment>
+      </column>
+    </property>
+    <property name="rglDepartement" type="string">
+      <column length="121" name="rgl_departement">
+        <comment>code du departement</comment>
+      </column>
+    </property>
+    <property name="rglService" type="string">
+      <column length="121" name="rgl_service">
+        <comment>code du service</comment>
+      </column>
+    </property>
+    <property name="rglRegion" type="string">
+      <column length="121" name="rgl_region">
+        <comment>code region</comment>
+      </column>
+    </property>
+    <property name="rglSecteur" type="string">
+      <column length="121" name="rgl_secteur">
+        <comment>code secteur</comment>
+      </column>
+    </property>
+    <property name="rglPdv" type="string">
+      <column length="121" name="rgl_pdv">
+        <comment>code point de vente</comment>
+      </column>
+    </property>
+    <property name="rglCle1Repartition" type="string">
+      <column length="121" name="rgl_cle1_repartition">
+        <comment>cle 1 de repartition</comment>
+      </column>
+    </property>
+    <property name="rglCle2Repartition" type="string">
+      <column length="121" name="rgl_cle2_repartition">
+        <comment>cle 2 de repartition</comment>
+      </column>
+    </property>
+    <property name="rglModele" type="string">
+      <column length="100" name="rgl_modele">
+        <comment>modele impression</comment>
+      </column>
+    </property>
+    <property name="rglDateImp" type="timestamp">
+      <column name="rgl_date_imp">
+        <comment>date impression</comment>
+      </column>
+    </property>
+    <property name="rglImp" type="integer">
+      <column default="0" length="1" name="rgl_imp">
+        <comment>0=imprimable 1=non imprimable</comment>
+      </column>
+    </property>
+    <property name="rglTrf" type="integer">
+      <column default="0" length="1" name="rgl_trf">
+        <comment>0=transferable 1=non transferable</comment>
+      </column>
+    </property>
+    <property name="rglDateCloture" type="timestamp">
+      <column name="rgl_date_cloture">
+        <comment>date de cloture</comment>
+      </column>
+    </property>
+    <property name="rglDateTransfert" type="timestamp">
+      <column name="rgl_date_transfert">
+        <comment>date de transfert en compta</comment>
+      </column>
+    </property>
+    <property name="rglBanqueTireur" type="string">
+      <column length="50" name="rgl_banque_tireur">
+        <comment>banque du tireur</comment>
+      </column>
+    </property>
+    <property name="rglNumChqBdx" type="string">
+      <column length="50" name="rgl_num_chq_bdx">
+        <comment>numero cheque ou bordereau</comment>
+      </column>
+    </property>
+    <property name="rglOperation" type="string">
+      <column length="20" name="rgl_operation">
+        <comment>code operation</comment>
+      </column>
+    </property>
+    <property name="rglDateMvt1" type="date">
+      <column default="null" name="rgl_date_mvt1">
+        <comment>date mouvement 1 caisse caisse</comment>
+      </column>
+    </property>
+    <property name="rglCaisseMvt1" type="string">
+      <column length="20" name="rgl_caisse_mvt1">
+        <comment>code caisse de transfert caisse caisse</comment>
+      </column>
+    </property>
+    <property name="rglNumMvt1" type="string">
+      <column length="20" name="rgl_num_mvt1">
+        <comment>numero mouvement 1 caisse caisse</comment>
+      </column>
+    </property>
+    <property name="rglDateMvt2" type="date">
+      <column default="null" name="rgl_date_mvt2">
+        <comment>date mouvement 2 caisse banque</comment>
+      </column>
+    </property>
+    <property name="rglBanqueMvt2" type="string">
+      <column length="20" name="rgl_banque_mvt2">
+        <comment>code banque de transfert caisse banque</comment>
+      </column>
+    </property>
+    <property name="rglNumMvt2" type="string">
+      <column length="20" name="rgl_num_mvt2">
+        <comment>numero mouvement 2 caisse banque</comment>
+      </column>
+    </property>
+    <property name="rglB1" type="integer">
+      <column default="0" name="rgl_b1">
+        <comment>nombre billet</comment>
+      </column>
+    </property>
+    <property name="rglB2" type="integer">
+      <column default="0" name="rgl_b2">
+        <comment>nombre billet</comment>
+      </column>
+    </property>
+    <property name="rglB3" type="integer">
+      <column default="0" name="rgl_b3">
+        <comment>nombre billet</comment>
+      </column>
+    </property>
+    <property name="rglB4" type="integer">
+      <column default="0" name="rgl_b4">
+        <comment>nombre billet</comment>
+      </column>
+    </property>
+    <property name="rglB5" type="integer">
+      <column default="0" name="rgl_b5">
+        <comment>nombre billet</comment>
+      </column>
+    </property>
+    <property name="rglB6" type="integer">
+      <column default="0" name="rgl_b6">
+        <comment>nombre billet</comment>
+      </column>
+    </property>
+    <property name="rglB7" type="integer">
+      <column default="0" name="rgl_b7">
+        <comment>nombre billet</comment>
+      </column>
+    </property>
+    <property name="rglB8" type="integer">
+      <column default="0" name="rgl_b8">
+        <comment>nombre billet</comment>
+      </column>
+    </property>
+    <property name="rglB9" type="integer">
+      <column default="0" name="rgl_b9">
+        <comment>nombre billet</comment>
+      </column>
+    </property>
+    <property name="rglB10" type="integer">
+      <column default="0" name="rgl_b10">
+        <comment>nombre billet</comment>
+      </column>
+    </property>
+    <property name="rglP1" type="integer">
+      <column default="0" name="rgl_p1">
+        <comment>nombre billet</comment>
+      </column>
+    </property>
+    <property name="rglP2" type="integer">
+      <column default="0" name="rgl_p2">
+        <comment>nombre billet</comment>
+      </column>
+    </property>
+    <property name="rglP3" type="integer">
+      <column default="0" name="rgl_p3">
+        <comment>nombre billet</comment>
+      </column>
+    </property>
+    <property name="rglP4" type="integer">
+      <column default="0" name="rgl_p4">
+        <comment>nombre billet</comment>
+      </column>
+    </property>
+    <property name="rglP5" type="integer">
+      <column default="0" name="rgl_p5">
+        <comment>nombre billet</comment>
+      </column>
+    </property>
+    <property name="rglP6" type="integer">
+      <column default="0" name="rgl_p6">
+        <comment>nombre billet</comment>
+      </column>
+    </property>
+    <property name="rglP7" type="integer">
+      <column default="0" name="rgl_p7">
+        <comment>nombre billet</comment>
+      </column>
+    </property>
+    <property name="rglP8" type="integer">
+      <column default="0" name="rgl_p8">
+        <comment>nombre billet</comment>
+      </column>
+    </property>
+    <property name="rglP9" type="integer">
+      <column default="0" name="rgl_p9">
+        <comment>nombre billet</comment>
+      </column>
+    </property>
+    <property name="rglP10" type="integer">
+      <column default="0" name="rgl_p10">
+        <comment>nombre billet</comment>
+      </column>
+    </property>
+    <property name="rglNumTrf" type="string">
+      <column length="20" name="rgl_num_trf">
+        <comment>numero de transfert</comment>
+      </column>
+    </property>
+    <property name="rglDateExecBc" type="date">
+      <column default="null" name="rgl_date_exec_bc">
+        <comment>date execution bon caisse</comment>
+      </column>
+    </property>
+    <property name="rglCodeBudgetTreso" type="string">
+      <column length="20" name="rgl_code_budget_treso">
+        <comment>code budget</comment>
+      </column>
+    </property>
+    <property name="rglCodePosteTreso" type="string">
+      <column length="20" name="rgl_code_poste_treso">
+        <comment>code poste</comment>
+      </column>
+    </property>
+    <property name="rglIdResponsable" type="long">
+      <column default="0" name="rgl_id_responsable">
+        <comment>id du responsable origine</comment>
+      </column>
+    </property>
+    <property name="rglNomResponsable" type="string">
+      <column length="100" name="rgl_nom_responsable">
+        <comment>nom du responsable origine</comment>
+      </column>
+    </property>
+    <property name="rglIdCommercial" type="long">
+      <column default="0" name="rgl_id_commercial">
+        <comment>id du commercial origine</comment>
+      </column>
+    </property>
+    <property name="rglNomCommercial" type="string">
+      <column length="100" name="rgl_nom_commercial">
+        <comment>nom du commercial origine</comment>
+      </column>
+    </property>
+    <property name="rglIdEquipe" type="long">
+      <column default="0" name="rgl_id_equipe">
+        <comment>id equipe origine</comment>
+      </column>
+    </property>
+    <property name="rglNomEquipe" type="string">
+      <column length="100" name="rgl_nom_equipe">
+        <comment>nom equipe origine</comment>
+      </column>
+    </property>
+    <property name="rglCommission" type="double">
+      <column default="0" name="rgl_commission">
+        <comment>montant de la commission</comment>
+      </column>
+    </property>
+    <property name="rglDateEncaissement" type="date">
+      <column default="null" name="rgl_date_encaissement">
+        <comment>date encaissement</comment>
+      </column>
+    </property>
+    <property name="rglDateRejet" type="date">
+      <column default="null" name="rgl_date_rejet">
+        <comment>date rejet</comment>
+      </column>
+    </property>
+    <property name="rglActiviteCompte" type="string">
+      <column length="20" name="rgl_activite_compte">
+        <comment>compte lie aux activites</comment>
+      </column>
+    </property>
+    <property name="rglActiviteTaux" type="float">
+      <column default="0" name="rgl_activite_taux">
+        <comment>taux taxe lie aux activites</comment>
+      </column>
+    </property>
+    <property name="rglActiviteExo" type="boolean">
+      <column default="false" name="rgl_activite_exo">
+        <comment>exoneration taxe lie aux activites</comment>
+      </column>
+    </property>
+    <property name="rglInfo1" type="string">
+      <column length="100" name="rgl_info1">
+        <comment>info 1</comment>
+      </column>
+    </property>
+    <property name="rglInfo2" type="string">
+      <column length="100" name="rgl_info2">
+        <comment>info 2</comment>
+      </column>
+    </property>
+    <property name="rglInfo3" type="string">
+      <column length="100" name="rgl_info3">
+        <comment>info 3</comment>
+      </column>
+    </property>
+    <property name="rglInfo4" type="string">
+      <column length="100" name="rgl_info4">
+        <comment>info 4</comment>
+      </column>
+    </property>
+    <property name="rglInfo5" type="string">
+      <column length="100" name="rgl_info5">
+        <comment>info 5</comment>
+      </column>
+    </property>
+    <property name="rglInfo6" type="string">
+      <column length="100" name="rgl_info6">
+        <comment>info 6</comment>
+      </column>
+    </property>
+    <property name="rglInfo7" type="string">
+      <column length="100" name="rgl_info7">
+        <comment>info 7</comment>
+      </column>
+    </property>
+    <property name="rglInfo8" type="string">
+      <column length="100" name="rgl_info8">
+        <comment>info 8</comment>
+      </column>
+    </property>
+    <property name="rglInfo9" type="string">
+      <column length="100" name="rgl_info9">
+        <comment>info 9</comment>
+      </column>
+    </property>
+    <property name="rglInfo10" type="string">
+      <column length="100" name="rgl_info10">
+        <comment>info 10</comment>
+      </column>
+    </property>
+    <property name="rglAnnuler" type="boolean">
+      <column default="false" name="rgl_annuler">
+        <comment>true = recu annule</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ExercicesCaisse" column="execai_id" lazy="false" name="exercicesCaisse" not-null="true"/>
+  </class>
+</hibernate-mapping>

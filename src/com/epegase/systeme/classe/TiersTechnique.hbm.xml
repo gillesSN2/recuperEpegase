@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="TiersTechnique" table="cmm_tiers_technique">
+    <id column="tietec_id" name="tietecId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="tietecDateCreat" type="timestamp">
+      <column name="tietec_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="tietecDateModif" type="timestamp">
+      <column name="tietec_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="tietecUserCreat" type="long">
+      <column default="0" length="15" name="tietec_user_creat">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="tietecUserModif" type="long">
+      <column default="0" length="15" name="tietec_user_modif">
+        <comment>utilisateur de modification</comment>
+      </column>
+    </property>
+    <property name="tietecEtat" type="integer">
+      <column default="0" length="1" name="tietec_etat">
+        <comment>0=actif 1=inactif 2=supprimer</comment>
+      </column>
+    </property>
+    <property name="tietecType" type="integer">
+      <column default="0" name="tietec_type">
+        <comment>0=mot de passe 1=configuration 2=autre</comment>
+      </column>
+    </property>
+    <property name="tietecService" type="string">
+      <column length="100" name="tietec_service">
+        <comment>mot de passe espace client</comment>
+      </column>
+    </property>
+    <property name="tietecLogin" type="string">
+      <column length="100" name="tietec_login">
+        <comment>login</comment>
+      </column>
+    </property>
+    <property name="tietecPw" type="string">
+      <column length="100" name="tietec_ps">
+        <comment>mot de passe</comment>
+      </column>
+    </property>
+    <property name="tietecAdresse" type="string">
+      <column length="100" name="tietec_adresse">
+        <comment>adresse de connexion</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.Tiers" column="tie_id" lazy="false" name="tiers" not-null="true"/>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,39 @@
+
+“
+java:S1130F"xRemove the declaration of thrown exception 'java.io.FileNotFoundException' which is a subclass of 'java.io.IOException'.(•Øµƒýÿÿÿÿ
+g
+java:S1192!"LDefine a constant instead of duplicating this literal "banques.xml" 3 times.(¸›¯Ýüÿÿÿÿ
+J
+java:S3740"/Provide the parametrized type for this generic.(ú„Ü£úÿÿÿÿ
+G
+java:S1948",Make "lesBanques" transient or serializable.(ú„Ü£úÿÿÿÿ
+J
+java:S3740U"/Provide the parametrized type for this generic.(­¢éµþÿÿÿÿ
+J
+java:S3740"/Provide the parametrized type for this generic.(å™âÞûÿÿÿÿ
+E
+java:S3740."/Provide the parametrized type for this generic.(ðÚõ¥
+J
+java:S3740Q"/Provide the parametrized type for this generic.(Áû±®þÿÿÿÿ
+i
+java:S1192!"NDefine a constant instead of duplicating this literal "configuration" 3 times.(¸›¯Ýüÿÿÿÿ
+u
+java:S1450"ZRemove the "objetBanque" field and declare it as a local variable in the relevant methods.(‹÷é£ýÿÿÿÿ
+J
+java:S3740"/Provide the parametrized type for this generic.(å™âÞûÿÿÿÿ
+J
+java:S3740"/Provide the parametrized type for this generic.(ú„Ü£úÿÿÿÿ
+J
+java:S3740-"/Provide the parametrized type for this generic.(ŸåŸ¢ùÿÿÿÿ
+b
+java:S1192!"GDefine a constant instead of duplicating this literal "commun" 3 times.(¸›¯Ýüÿÿÿÿ
+E
+java:S3740M"/Provide the parametrized type for this generic.(Ð³ïÆ
+J
+java:S3740/"/Provide the parametrized type for this generic.(¨àÎ‡ûÿÿÿÿ
+C	java:S108@")Either remove or fill this block of code.(á¥ïñøÿÿÿÿ
+J
+java:S3740Y"/Provide the parametrized type for this generic.(ÊîÇ—øÿÿÿÿ
+L
+java:S1948"1Make "mesBanquesItems" transient or serializable.(å™âÞûÿÿÿÿ
+C	java:S108A")Either remove or fill this block of code.(Ú¥úªÿÿÿÿÿ

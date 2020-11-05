@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="FormulesAchats" table="ach_formules_achats">
+    <id column="forach_id" name="forachId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="forachDateCreation" type="timestamp">
+      <column name="forach_date_creation">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="forachDateModif" type="timestamp">
+      <column name="forach_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="forachUserCreation" type="long">
+      <column default="0" name="forach_user_creation">
+        <comment>user de creation</comment>
+      </column>
+    </property>
+    <property name="forachUserModif" type="long">
+      <column default="0" name="forach_user_modif">
+        <comment>user de modification</comment>
+      </column>
+    </property>
+    <property name="forachLibelleFr" type="text">
+      <column name="forach_libelle_fr">
+        <comment>libelle FR</comment>
+      </column>
+    </property>
+    <property name="forachLibelleUk" type="text">
+      <column name="forach_libelle_uk">
+        <comment>libelle UK</comment>
+      </column>
+    </property>
+    <property name="forachLibelleSp" type="text">
+      <column name="forach_libelle_sp">
+        <comment>libelle SP</comment>
+      </column>
+    </property>
+    <property name="forachDetailFr" type="text">
+      <column name="forach_detail_FR">
+        <comment>detail de la formule FR</comment>
+      </column>
+    </property>
+    <property name="forachDetailUk" type="text">
+      <column name="forach_detail_UK">
+        <comment>detail de la formule UK</comment>
+      </column>
+    </property>
+    <property name="forachDetailSp" type="text">
+      <column name="forach_detail_SP">
+        <comment>detail de la formule SP</comment>
+      </column>
+    </property>
+    <property name="forachInactif" type="int">
+      <column default="0" name="forach_inactif">
+        <comment>0=actif 1=inactif 2=supprimer</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ExercicesAchats" column="exeach_id" lazy="false" name="exercicesAchats" not-null="true"/>
+  </class>
+</hibernate-mapping>

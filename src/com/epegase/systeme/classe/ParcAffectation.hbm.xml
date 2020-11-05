@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="ParcAffectation" table="prc_parc_affectation">
+    <id column="prcaff_id" name="prcaffId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="prcaffDateCreat" type="timestamp">
+      <column name="prcaff_date_creat">
+        <comment>date creation</comment>
+      </column>
+    </property>
+    <property name="prcaffDateModif" type="timestamp">
+      <column name="prcaff_date_modif">
+        <comment>date modification</comment>
+      </column>
+    </property>
+    <property name="prcaffUserCreat" type="long">
+      <column default="0" length="20" name="prcaff_user_creat">
+        <comment>id user de creation</comment>
+      </column>
+    </property>
+    <property name="prcaffUserModif" type="long">
+      <column default="0" length="20" name="prcaff_user_modif">
+        <comment>id user de modification</comment>
+      </column>
+    </property>
+    <property name="prcaffType" type="integer">
+      <column length="1" name="prcaff_type">
+        <comment>0=affectation 1=imputation 2=proprietaire</comment>
+      </column>
+    </property>
+    <property name="prcaffMatSalarie" type="string">
+      <column length="10" name="prcaff_mat_Salarie">
+        <comment>matricule du salarie</comment>
+      </column>
+    </property>
+    <property name="prcaffNomSalarie" type="string">
+      <column length="100" name="prcaff_nom_salarie">
+        <comment>nom du salarie</comment>
+      </column>
+    </property>
+    <property name="prcaffPrenomSalarie" type="string">
+      <column length="100" name="prcaff_prenom_salarie">
+        <comment>prenom du salarie</comment>
+      </column>
+    </property>
+    <property name="prcaffService" type="string">
+      <column length="20" name="prcaff_service">
+        <comment>code service</comment>
+      </column>
+    </property>
+    <property name="prcaffLibService" type="string">
+      <column length="100" name="prcaff_lib_service">
+        <comment>libelle service</comment>
+      </column>
+    </property>
+    <property name="prcaffIdTiers" type="long">
+      <column default="0" name="prcaff_id_tiers">
+        <comment>id du tiers</comment>
+      </column>
+    </property>
+    <property name="prcaffNomTiers" type="string">
+      <column length="100" name="prcaff_nom_tiers">
+        <comment>nom du tiers</comment>
+      </column>
+    </property>
+    <property name="prcaffContactTiers" type="string">
+      <column length="100" name="prcaff_contact_tiers">
+        <comment>contact du tiers</comment>
+      </column>
+    </property>
+    <property name="prcaffTelTiers" type="string">
+      <column length="20" name="prcaff_tel_tiers">
+        <comment>telephone du tiers</comment>
+      </column>
+    </property>
+    <property name="prcaffVilleTiers" type="string">
+      <column length="50" name="prcaff_ville_tiers">
+        <comment>ville du tiers</comment>
+      </column>
+    </property>
+    <property name="prcaffAdresseTiers" type="string">
+      <column length="100" name="prcaff_adresse_tiers">
+        <comment>adresse du tiers</comment>
+      </column>
+    </property>
+    <property name="prcaffDateDebut" type="date">
+      <column name="prcaff_date_debut">
+        <comment>date debut</comment>
+      </column>
+    </property>
+    <property name="prcaffDateFin" type="date">
+      <column name="prcaff_date_fin">
+        <comment>date fin</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.Parc" column="prc_id" fetch="join" lazy="false" name="parc" update="true"/>
+  </class>
+</hibernate-mapping>

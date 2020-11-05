@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="InventaireEntete" table="ach_inventaire_entete">
+    <id column="inv_id" name="invId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="invDateCreat" type="timestamp">
+      <column name="inv_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="invDateModif" type="timestamp">
+      <column name="inv_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="invIdCreateur" type="long">
+      <column default="0" length="15" name="inv_id_createur">
+        <comment>id user createur</comment>
+      </column>
+    </property>
+    <property name="invNomCreateur" type="string">
+      <column length="100" name="inv_nom_createur">
+        <comment>nom du createur</comment>
+      </column>
+    </property>
+    <property name="invIdModif" type="long">
+      <column default="0" length="15" name="inv_id_modif">
+        <comment>id user de modification</comment>
+      </column>
+    </property>
+    <property name="invNomModif" type="string">
+      <column length="100" name="inv_nom_modif">
+        <comment>nom user de modification</comment>
+      </column>
+    </property>
+    <property index="true" name="invDate" type="timestamp">
+      <column index="true" name="inv_date">
+        <comment>date inventaire</comment>
+      </column>
+    </property>
+    <property index="true" name="invNum" type="string">
+      <column index="true" length="20" name="inv_num">
+        <comment>numero inventaire</comment>
+      </column>
+    </property>
+    <property index="true" name="invDepot" type="string">
+      <column index="true" length="20" name="inv_depot">
+        <comment>depot inventorie</comment>
+      </column>
+    </property>
+    <property name="invType" type="integer">
+      <column default="0" name="inv_type">
+        <comment>0=ecrasement 1=correction</comment>
+      </column>
+    </property>
+    <property name="invMode" type="integer">
+      <column default="0" name="inv_mode">
+        <comment>0=normal 1=sur depot 2=sur casier 3=sur famille 4=sur stock negatif</comment>
+      </column>
+    </property>
+    <property name="invModeSpecif" type="string">
+      <column length="100" name="inv_mode_specif">
+        <comment>specification de creation inventaire</comment>
+      </column>
+    </property>
+    <property name="invNomEquipe" type="string">
+      <column length="100" name="inv_nom_equipe">
+        <comment>nom equipe</comment>
+      </column>
+    </property>
+    <property name="invIdEquipe" type="long">
+      <column default="0" length="15" name="inv_id_equipe">
+        <comment>id equipe</comment>
+      </column>
+    </property>
+    <property name="invNomResponsable" type="string">
+      <column length="100" name="inv_nom_responsable">
+        <comment>nom du commercial</comment>
+      </column>
+    </property>
+    <property name="invIdResponsable" type="long">
+      <column default="0" name="inv_id_responsable">
+        <comment>id du commercial</comment>
+      </column>
+    </property>
+    <property name="invSerie" type="string">
+      <column length="4" name="inv_serie">
+        <comment>serie </comment>
+      </column>
+    </property>
+    <property name="invObject" type="string">
+      <column length="100" name="inv_object">
+        <comment>objet</comment>
+      </column>
+    </property>
+    <property name="invTotPump" type="double">
+      <column default="0" name="inv_tot_pump">
+        <comment>total ttc</comment>
+      </column>
+    </property>
+    <property name="invActivite" type="text">
+      <column name="inv_activite">
+        <comment>code activite</comment>
+      </column>
+    </property>
+    <property name="invSite" type="string">
+      <column length="121" name="inv_site">
+        <comment>code site</comment>
+      </column>
+    </property>
+    <property name="invDepartement" type="string">
+      <column length="121" name="inv_departement">
+        <comment>code departement</comment>
+      </column>
+    </property>
+    <property name="invService" type="string">
+      <column length="121" name="inv_service">
+        <comment>code service</comment>
+      </column>
+    </property>
+    <property name="invRegion" type="string">
+      <column length="121" name="inv_region">
+        <comment>code region</comment>
+      </column>
+    </property>
+    <property name="invSecteur" type="string">
+      <column length="121" name="inv_secteur">
+        <comment>code secteur</comment>
+      </column>
+    </property>
+    <property name="invPdv" type="string">
+      <column length="121" name="inv_pdv">
+        <comment>code point de vente</comment>
+      </column>
+    </property>
+    <property name="invAnal2" type="string">
+      <column length="121" name="inv_anal2">
+        <comment>code analytique 2</comment>
+      </column>
+    </property>
+    <property name="invAnal4" type="string">
+      <column length="121" name="inv_anal4">
+        <comment>code analytique 4</comment>
+      </column>
+    </property>
+    <property name="invInfo1" type="string">
+      <column length="100" name="inv_info1">
+        <comment>info 1</comment>
+      </column>
+    </property>
+    <property name="invInfo2" type="string">
+      <column length="100" name="inv_info2">
+        <comment>info 2</comment>
+      </column>
+    </property>
+    <property name="invInfo3" type="string">
+      <column length="100" name="inv_info3">
+        <comment>info 3</comment>
+      </column>
+    </property>
+    <property name="invInfo4" type="string">
+      <column length="100" name="inv_info4">
+        <comment>info 4</comment>
+      </column>
+    </property>
+    <property name="invInfo5" type="string">
+      <column length="100" name="inv_info5">
+        <comment>info 5</comment>
+      </column>
+    </property>
+    <property name="invInfo6" type="string">
+      <column length="100" name="inv_info6">
+        <comment>info 6</comment>
+      </column>
+    </property>
+    <property name="invInfo7" type="string">
+      <column length="100" name="inv_info7">
+        <comment>info 7</comment>
+      </column>
+    </property>
+    <property name="invInfo8" type="string">
+      <column length="100" name="inv_info8">
+        <comment>info 8</comment>
+      </column>
+    </property>
+    <property name="invInfo9" type="string">
+      <column length="100" name="inv_info9">
+        <comment>info 9</comment>
+      </column>
+    </property>
+    <property name="invInfo10" type="string">
+      <column length="100" name="inv_info10">
+        <comment>info 10</comment>
+      </column>
+    </property>
+    <property name="invDateImp" type="date">
+      <column name="inv_date_imp">
+        <comment>date impression</comment>
+      </column>
+    </property>
+    <property name="invModeleImp" type="string">
+      <column length="50" name="inv_modele_imp">
+        <comment>nom jasper du modele</comment>
+      </column>
+    </property>
+    <property name="invEtatVal" type="integer">
+      <column default="0" length="1" name="inv_etat_val">
+        <comment>0=sans validation 1=avec validation</comment>
+      </column>
+    </property>
+    <property name="invGele" type="integer">
+      <column default="0" length="1" name="inv_gele">
+        <comment>0=non gele 1=gele</comment>
+      </column>
+    </property>
+    <property index="true" name="invEtat" type="integer">
+      <column default="0" index="true" length="1" name="inv_etat">
+        <comment>0=En cours 1=valide 2=gele 3=annule</comment>
+      </column>
+    </property>
+    <property name="invDateValide" type="date">
+      <column name="inv_date_valide">
+        <comment>date de validation</comment>
+      </column>
+    </property>
+    <property name="invPosSignature" type="integer">
+      <column default="0" length="1" name="inv_pos_signature">
+        <comment>nb de signature ayant statue</comment>
+      </column>
+    </property>
+    <property name="invDateAnnule" type="date">
+      <column name="inv_date_annule">
+        <comment>date annulation</comment>
+      </column>
+    </property>
+    <property name="invMotifAnnule" type="string">
+      <column length="50" name="inv_motif_annule">
+        <comment>motif annulation</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ExercicesAchats" column="exeach_id" lazy="false" name="exercicesAchats" not-null="true"/>
+    <many-to-one class="com.epegase.systeme.classe.Users" column="usr_id" lazy="false" name="users" not-null="false"/>
+  </class>
+</hibernate-mapping>

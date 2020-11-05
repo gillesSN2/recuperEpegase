@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="CaissesCommerciales" table="cai_caisses_commerciales">
+    <id column="cai_id" name="caiId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="caiDateCreat" type="timestamp">
+      <column name="cai_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="caiDateModif" type="timestamp">
+      <column name="cai_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="caiUserCreat" type="long">
+      <column default="0" length="15" name="cai_user_creat">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="caiUserModif" type="long">
+      <column default="0" length="15" name="cai_user_modif">
+        <comment>utilisateur de modification</comment>
+      </column>
+    </property>
+    <property name="caiCode" type="string">
+      <column length="20" name="cai_code">
+        <comment>code caisse</comment>
+      </column>
+    </property>
+    <property name="caiNom" type="string">
+      <column length="100" name="cai_nom">
+        <comment>nom de la caisse</comment>
+      </column>
+    </property>
+    <property name="caiPrive" type="integer">
+      <column default="0" length="1" name="cai_prive">
+        <comment>0=public 1=prive</comment>
+      </column>
+    </property>
+    <property name="caiInactif" type="integer">
+      <column default="0" length="1" name="cai_inactif">
+        <comment>0=actif 1=inactif 2=supprimer</comment>
+      </column>
+    </property>
+    <property name="caiDateInit" type="date">
+      <column name="cai_date_init">
+        <comment>date initalisation de la caisse</comment>
+      </column>
+    </property>
+    <property name="caiMontantInit" type="double">
+      <column default="0" name="cai_montant_init">
+        <comment>montant initial de la caisse</comment>
+      </column>
+    </property>
+    <property name="caiMontantPlafond" type="double">
+      <column default="0" name="cai_montant_plafond">
+        <comment>montant plafond de la caisse</comment>
+      </column>
+    </property>
+    <property name="caiJrEspece" type="string">
+      <column length="20" name="cai_jr_espece">
+        <comment>code journal espece caisse comptable</comment>
+      </column>
+    </property>
+    <property name="caiNomJrEspece" type="string">
+      <column length="100" name="cai_nom_jr_espece">
+        <comment>nom du journal espece de caisse</comment>
+      </column>
+    </property>
+    <property name="caiJrCheque" type="string">
+      <column length="20" name="cai_jr_cheque">
+        <comment>code journal cheque caisse comptable</comment>
+      </column>
+    </property>
+    <property name="caiJrVirement" type="string">
+      <column length="20" name="cai_jr_virement">
+        <comment>code journal virement caisse comptable</comment>
+      </column>
+    </property>
+    <property name="caiJrTraite" type="string">
+      <column length="20" name="cai_jr_traite">
+        <comment>code journal traite caisse comptable</comment>
+      </column>
+    </property>
+    <property name="caiJrTpe" type="string">
+      <column length="20" name="cai_jr_tpe">
+        <comment>code journal carte bancaire (tpe) caisse comptable</comment>
+      </column>
+    </property>
+    <property name="caiJrTransfert" type="string">
+      <column length="20" name="cai_jr_transfert">
+        <comment>code journal transfert argent caisse comptable</comment>
+      </column>
+    </property>
+    <property name="caiJrePaiement" type="string">
+      <column length="20" name="cai_jr_epaiement">
+        <comment>code journal epaiement caisse comptable</comment>
+      </column>
+    </property>
+    <property name="caiJrCredoc" type="string">
+      <column length="20" name="cai_jr_credoc">
+        <comment>code journal credoc caisse comptable</comment>
+      </column>
+    </property>
+    <property name="caiJrFactor" type="string">
+      <column length="20" name="cai_jr_factor">
+        <comment>code journal factor caisse comptable</comment>
+      </column>
+    </property>
+    <property name="caiJrCompense" type="string">
+      <column length="20" name="cai_jr_compense">
+        <comment>code journal compense caisse comptable</comment>
+      </column>
+    </property>
+    <property name="caiJrTerme" type="string">
+      <column length="20" name="cai_jr_terme">
+        <comment>code journal terme caisse comptable</comment>
+      </column>
+    </property>
+    <property name="caiJrLettreGarantie" type="string">
+      <column length="20" name="cai_jr_lettre_garantie">
+        <comment>code journal lettre de garantie comptable</comment>
+      </column>
+    </property>
+    <property name="caiJrPrelevement" type="string">
+      <column length="20" name="cai_jr_prelevement">
+        <comment>code journal prelevement comptable</comment>
+      </column>
+    </property>
+    <property name="caiJrAlcoin" type="string">
+      <column length="20" name="cai_jr_alcoin">
+        <comment>code journal alcoin comptable</comment>
+      </column>
+    </property>
+    <property name="caiNomJrCheque" type="string">
+      <column length="100" name="cai_nom_jr_cheque">
+        <comment>nom du journal cheque de caisse</comment>
+      </column>
+    </property>
+    <property name="caiNomJrVirement" type="string">
+      <column length="100" name="cai_nom_jr_virement">
+        <comment>nom du journal virement de caisse</comment>
+      </column>
+    </property>
+    <property name="caiNomJrTraite" type="string">
+      <column length="100" name="cai_nom_jr_traite">
+        <comment>nom du journal traite de caisse</comment>
+      </column>
+    </property>
+    <property name="caiNomJrTpe" type="string">
+      <column length="100" name="cai_nom_jr_tpe">
+        <comment>nom du journal tpe de caisse</comment>
+      </column>
+    </property>
+    <property name="caiNomJrTransfert" type="string">
+      <column length="100" name="cai_nom_jr_transfert">
+        <comment>nom du journal transfert de caisse</comment>
+      </column>
+    </property>
+    <property name="caiNomJrePaiement" type="string">
+      <column length="100" name="cai_nom_jr_epaiement">
+        <comment>nom du journal epaiement de caisse</comment>
+      </column>
+    </property>
+    <property name="caiNomJrCredoc" type="string">
+      <column length="100" name="cai_nom_jr_credoc">
+        <comment>nom du journal credoc de caisse</comment>
+      </column>
+    </property>
+    <property name="caiNomJrFactor" type="string">
+      <column length="100" name="cai_nom_jr_factor">
+        <comment>nom du journal factor de caisse</comment>
+      </column>
+    </property>
+    <property name="caiNomJrCompense" type="string">
+      <column length="100" name="cai_nom_jr_compense">
+        <comment>nom du journal compense de caisse</comment>
+      </column>
+    </property>
+    <property name="caiNomJrTerme" type="string">
+      <column length="100" name="cai_nom_jr_terme">
+        <comment>nom du journal terme de caisse</comment>
+      </column>
+    </property>
+    <property name="caiNomJrLettreGarantie" type="string">
+      <column length="100" name="cai_nom_jr_lettre_garantie">
+        <comment>nom du journal lettre de garantie de caisse</comment>
+      </column>
+    </property>
+    <property name="caiNomJrPrelevement" type="string">
+      <column length="100" name="cai_nom_jr_prelevement">
+        <comment>nom du journal prelevement de caisse</comment>
+      </column>
+    </property>
+    <property name="caiNomJrAlcoin" type="string">
+      <column length="100" name="cai_nom_jr_alcoin">
+        <comment>nom du journal alcoin de caisse</comment>
+      </column>
+    </property>
+    <property name="caiCompteVrt" type="string">
+      <column length="20" name="cai_compte_vrt">
+        <comment>compte de virement interne</comment>
+      </column>
+    </property>
+    <property name="caiLibCompteVrt" type="string">
+      <column length="100" name="cai_lib_compte_vrt">
+        <comment>libelle compte de virement interne</comment>
+      </column>
+    </property>
+    <property name="caiCompteEff" type="string">
+      <column length="20" name="cai_compte_eff">
+        <comment>compte des effets a encaisser</comment>
+      </column>
+    </property>
+    <property name="caiLibCompteEff" type="string">
+      <column length="100" name="cai_lib_compte_eff">
+        <comment>libelle compte des effets a encaisser</comment>
+      </column>
+    </property>
+    <property name="caiMode" type="integer">
+      <column default="0" name="cai_mode">
+        <comment>0=mixte 1=depense 2=recette</comment>
+      </column>
+    </property>
+    <property name="caiCodeBanqueDefaut" type="string">
+      <column length="20" name="cai_code_banque_defaut">
+        <comment>code banque par defaut</comment>
+      </column>
+    </property>
+    <property name="caiNomBanqueDefaut" type="string">
+      <column length="100" name="cai_nom_banque_defaut">
+        <comment>nom de la banque par defaut</comment>
+      </column>
+    </property>
+    <property name="caiMontantInitEspece" type="double">
+      <column default="0" name="cai_montant_init_espece">
+        <comment>montant initial de la caisse</comment>
+      </column>
+    </property>
+    <property name="caiMontantInitCheque" type="double">
+      <column default="0" name="cai_montant_init_cheque">
+        <comment>montant initial de la caisse</comment>
+      </column>
+    </property>
+    <property name="caiMontantInitVirement" type="double">
+      <column default="0" name="cai_montant_init_virement">
+        <comment>montant initial de la caisse</comment>
+      </column>
+    </property>
+    <property name="caiMontantInitTraite" type="double">
+      <column default="0" name="cai_montant_init_traite">
+        <comment>montant initial de la caisse</comment>
+      </column>
+    </property>
+    <property name="caiMontantInitTpe" type="double">
+      <column default="0" name="cai_montant_init_tpe">
+        <comment>montant initial de la caisse</comment>
+      </column>
+    </property>
+    <property name="caiMontantInitePaiement" type="double">
+      <column default="0" name="cai_montant_init_epaiement">
+        <comment>montant initial de la caisse</comment>
+      </column>
+    </property>
+    <property name="caiMontantInitTransfert" type="double">
+      <column default="0" name="cai_montant_init_transfert">
+        <comment>montant initial de la caisse</comment>
+      </column>
+    </property>
+    <property name="caiMontantInitCredoc" type="double">
+      <column default="0" name="cai_montant_init_credoc">
+        <comment>montant initial de la caisse</comment>
+      </column>
+    </property>
+    <property name="caiMontantInitFactor" type="double">
+      <column default="0" name="cai_montant_init_factor">
+        <comment>montant initial de la caisse</comment>
+      </column>
+    </property>
+    <property name="caiMontantInitCompense" type="double">
+      <column default="0" name="cai_montant_init_compense">
+        <comment>montant initial de la caisse</comment>
+      </column>
+    </property>
+    <property name="caiMontantInitTerme" type="double">
+      <column default="0" name="cai_montant_init_terme">
+        <comment>montant initial de la caisse</comment>
+      </column>
+    </property>
+    <property name="caiMontantInitLettreGarantie" type="double">
+      <column default="0" name="cai_montant_init_lettre_garantie">
+        <comment>montant initial de la caisse</comment>
+      </column>
+    </property>
+    <property name="caiMontantInitPrelevement" type="double">
+      <column default="0" name="cai_montant_init_prelevement">
+        <comment>montant initial prelevement</comment>
+      </column>
+    </property>
+    <property name="caiMontantInitAlcoin" type="double">
+      <column default="0" name="cai_montant_init_alcoin">
+        <comment>montant initial alcoin</comment>
+      </column>
+    </property>
+    <property name="caiMontantInitPec" type="double">
+      <column default="0" name="cai_montant_init_pec">
+        <comment>montant initial pec</comment>
+      </column>
+    </property>
+    <property name="caiMontantFondCaisse" type="double">
+      <column default="0" name="cai_montant_fond_caisse">
+        <comment>montant fond de caisse minimum</comment>
+      </column>
+    </property>
+    <property name="caiMontantFondCaisseMax" type="double">
+      <column default="0" name="cai_montant_fond_caisse_max">
+        <comment>montant fond de caisse maximum</comment>
+      </column>
+    </property>
+    <property name="caiMontantMaxDepense" type="double">
+      <column default="0" name="cai_montant_max_depense">
+        <comment>montant max en bon de sortie</comment>
+      </column>
+    </property>
+    <property name="caiOperation" type="text">
+      <column length="1000" name="cai_operation">
+        <comment>operations autorisee</comment>
+      </column>
+    </property>
+    <property name="caiJrEspeceST" type="string">
+      <column length="20" name="cai_jr_espece_st">
+        <comment>code journal espece sans timbre caisse comptable</comment>
+      </column>
+    </property>
+    <property name="caiNomJrEspeceST" type="string">
+      <column length="100" name="cai_nom_jr_espece_st">
+        <comment>nom du journal espece sans timbre de caisse</comment>
+      </column>
+    </property>
+    <property name="caiMvtCheBnq" type="integer">
+      <column default="0" name="cai_mvt_chq_bnq">
+        <comment>0=interdit 1=autorise</comment>
+      </column>
+    </property>
+    <property name="caiExportJrEspece" type="boolean">
+      <column default="false" name="cai_export_jr_espece">
+        <comment>export espece</comment>
+      </column>
+    </property>
+    <property name="caiExportJrCheque" type="boolean">
+      <column default="false" name="cai_export_jr_cheque">
+        <comment>export cheque</comment>
+      </column>
+    </property>
+    <property name="caiExportJrVirement" type="boolean">
+      <column default="false" name="cai_export_jr_virement">
+        <comment>export virement</comment>
+      </column>
+    </property>
+    <property name="caiExportJrTraite" type="boolean">
+      <column default="false" name="cai_export_jr_traite">
+        <comment>export traite</comment>
+      </column>
+    </property>
+    <property name="caiExportJrTpe" type="boolean">
+      <column default="false" name="cai_export_jr_tpe">
+        <comment>export tpe</comment>
+      </column>
+    </property>
+    <property name="caiExportJrTrf" type="boolean">
+      <column default="false" name="cai_export_jr_trf">
+        <comment>export transfert</comment>
+      </column>
+    </property>
+    <property name="caiExportJrePaiement" type="boolean">
+      <column default="false" name="cai_export_jr_epaiement">
+        <comment>export epeaiement</comment>
+      </column>
+    </property>
+    <property name="caiExportJrCredoc" type="boolean">
+      <column default="false" name="cai_export_jr_credoc">
+        <comment>export credoc</comment>
+      </column>
+    </property>
+    <property name="caiExportJrFactor" type="boolean">
+      <column default="false" name="cai_export_jr_factor">
+        <comment>export virement</comment>
+      </column>
+    </property>
+    <property name="caiExportJrCompense" type="boolean">
+      <column default="false" name="cai_export_jr_compense">
+        <comment>export compense</comment>
+      </column>
+    </property>
+    <property name="caiExportJrTerme" type="boolean">
+      <column default="false" name="cai_export_jr_terme">
+        <comment>export terme</comment>
+      </column>
+    </property>
+    <property name="caiExportJrLettreGarantie" type="boolean">
+      <column default="false" name="cai_export_jr_lettre_garantie">
+        <comment>export lettre garantie</comment>
+      </column>
+    </property>
+    <property name="caiExportJrPrelevement" type="boolean">
+      <column default="false" name="cai_export_jr_prelevement">
+        <comment>export prelevement</comment>
+      </column>
+    </property>
+    <property name="caiExportJrAlcoin" type="boolean">
+      <column default="false" name="cai_export_jr_alcoin">
+        <comment>export alcoin</comment>
+      </column>
+    </property>
+    <property name="caiProjet" type="string">
+      <column length="121" name="cai_projet">
+        <comment>projet concerne</comment>
+      </column>
+    </property>
+    <property name="caiNegatif" type="integer">
+      <column default="0" name="cai_negatif">
+        <comment>0=autorise 1=interdit</comment>
+      </column>
+    </property>
+    <property name="caiTrfCaisse" type="string">
+      <column length="20" name="cai_trf_caisse">
+        <comment>code caisse pour trf mouvements vers autre caisse</comment>
+      </column>
+    </property>
+    <property name="caiNomTrfCaisse" type="string">
+      <column length="100" name="cai_nom_trf_caisse">
+        <comment>nom de la caisse de trf</comment>
+      </column>
+    </property>
+    <property name="caiExportTrfCaisse" type="boolean">
+      <column default="false" name="cai_export_trf_caisse">
+        <comment>export trf caisse</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ExercicesCaisse" column="execai_id" lazy="false" name="exercicesCaisse" not-null="true"/>
+  </class>
+</hibernate-mapping>

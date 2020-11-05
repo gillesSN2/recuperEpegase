@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO_8859-1"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+
+    <!-- bean contenant la méthode a lancer régulièrement -->
+    <!--bean id="monJob" class="com.epegase.systeme.util.UtilJob">
+        <property name="rechercheJob" ref="rechercheJob"/>
+    </bean-->
+    <!--bean id="importationFichier" class="com.epegase.systeme.util.ImportationFichier"></bean-->
+
+    <!-- encapsulation dans un JobDetail -->
+    <!--bean id="jobDetail"
+       class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject" ref="monJobPojo" />
+        <property name="targetMethod" value="executeJob" />
+    </bean-->
+
+    <!--bean id="exampleJob" class="com.epegase.systeme.util.ExampleBusinessObject"></bean-->
+
+    <!--Trigger simple, démarrage après 10s et se lance toutes les minutes -->
+    <!--bean id="simpleTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+        <property name="jobDetail" ref="jobDetail" />
+        <property name="startDelay" value="1000" />
+        <property name="repeatInterval" value="10800000" />
+    </bean-->
+
+    <!--bean id="cronTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean"-->
+        <!--property name="jobDetail" ref="jobDetail" /-->
+         <!-- run every morning at 6 AM -->
+        <!--property name="cronExpression" value="0 43 13 * * ?" /-->
+    <!--/bean-->
+
+    <!--bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="triggers">
+            <list>
+                <ref bean="cronTrigger" />
+                <ref bean="simpleTrigger" />
+            </list>
+        </property>
+    </bean-->
+
+</beans>

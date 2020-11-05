@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="FeuilleCalculFormule" table="pay_feuille_calcul_formule">
+    <id column="feurubfor_id" name="feurubfor_id" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="feurubforFeuille" type="string">
+      <column length="20" name="feurubfor_feullle">
+        <comment>code feuille</comment>
+      </column>
+    </property>
+    <property name="feurubforCode" type="string">
+      <column length="6" name="feurubfor_code">
+        <comment>code rubrique</comment>
+      </column>
+    </property>
+    <property name="feurubforColonne" type="string">
+      <column length="1" name="feurubfor_colonne">
+        <comment>colonne A,B,C,D ou E</comment>
+      </column>
+    </property>
+    <property name="feurubforFormule" type="string">
+      <column length="200" name="feurubfor_formule">
+        <comment>formule</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.FeuilleCalcul" column="feu_id" lazy="false" name="feuilleCalcul" not-null="true"/>
+    <many-to-one class="com.epegase.systeme.classe.FeuilleCalculRubrique" column="feurub_id" lazy="false" name="feuilleCalculRubrique" not-null="true"/>
+  </class>
+</hibernate-mapping>

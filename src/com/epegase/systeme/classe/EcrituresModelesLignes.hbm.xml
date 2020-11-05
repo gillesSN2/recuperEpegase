@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="EcrituresModelesLignes" table="cpt_ecritures_modeles_lignes">
+    <id column="modlig_id" name="modligId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="modligCompte" type="string">
+      <column length="20" name="modlig_compte">
+        <comment>compte</comment>
+      </column>
+    </property>
+    <property name="modligLibelle" type="string">
+      <column length="100" name="modlig_libelle">
+        <comment>libelle ecriture</comment>
+      </column>
+    </property>
+    <property name="modligSens" type="integer">
+      <column default="0" length="1" name="modlig_sens">
+        <comment>0=debit 1=credit</comment>
+      </column>
+    </property>
+    <property name="modligNature" type="integer">
+      <column default="0" length="1" name="modlig_nature">
+        <comment>0=sans nature 1=compte immobilisation 2=compte amortissement 3=compte dotation 4=compte cession</comment>
+      </column>
+    </property>
+    <property name="modligTaux" type="float">
+      <column default="0" name="modlig_taux">
+        <comment>taux taxe</comment>
+      </column>
+    </property>
+    <property name="modligTc" type="float">
+      <column default="0" name="modlig_tc">
+        <comment>taxe complementaire</comment>
+      </column>
+    </property>
+    <property name="modligCalcul" type="integer">
+      <column default="0" length="1" name="modlig_calcul">
+        <comment>0=montant saisie 1=montant * taux 2=montant / taux 3=total</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.EcrituresModeles" column="mod_id" lazy="false" name="EcrituresModeles" not-null="false"/>
+  </class>
+</hibernate-mapping>

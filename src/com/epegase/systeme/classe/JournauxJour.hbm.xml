@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="JournauxJour" table="cpt_journaux_jour">
+    <id column="joujr_id" name="joujrId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="joujrCode" type="string">
+      <column length="6" name="joujr_code">
+        <comment>code journal</comment>
+      </column>
+    </property>
+    <property name="joujrDate" type="date">
+      <column name="joujr_date">
+        <comment>date du jour</comment>
+      </column>
+    </property>
+    <property name="joujrPeriode" type="string">
+      <column length="7" name="joujr_periode">
+        <comment>periode MMAAAA</comment>
+      </column>
+    </property>
+    <property name="joujrUserIdJournal" type="long">
+      <column default="0" length="15" name="joujr_user_id_journal">
+        <comment>user utilisation journal</comment>
+      </column>
+    </property>
+    <property name="joujrOpenJournal" type="integer">
+      <column default="0" length="1" name="joujr_open_journal">
+        <comment>0=journal ferme 1=journal ouvert</comment>
+      </column>
+    </property>
+    <property name="joujrOpenUserJournal" type="string">
+      <column length="100" name="joujr_open_user_journal">
+        <comment>nom utilisateur en cours</comment>
+      </column>
+    </property>
+    <property name="joujrCle1" type="string">
+      <column length="14" name="joujr_cle1">
+        <comment>= concatenation joujr_code : joujr_periode</comment>
+      </column>
+    </property>
+    <property name="joujrEtat" type="integer">
+      <column default="0" length="1" name="joujr_etat">
+        <comment>0=en cours 1=cloture mensuelle 2=cloture annuelle</comment>
+      </column>
+    </property>
+    <property name="joujrSaisie" type="integer">
+      <column default="0" length="1" name="joujr_saisie">
+        <comment>0=sans ecriture 1=ecriture deja saisie</comment>
+      </column>
+    </property>
+    <property name="joujrReleve" type="double">
+      <column default="0" length="20" name="joujr_releve">
+        <comment>solde du releve de la banque</comment>
+      </column>
+    </property>
+    <property name="joujrReleveAnte" type="double">
+      <column default="0" length="20" name="joujr_releve_Ante">
+        <comment>solde du releve de la banque anterieur A-1</comment>
+      </column>
+    </property>
+    <property name="joujrCorrectif" type="double">
+      <column default="0" length="20" name="joujr_correctif">
+        <comment>correctif du controle final impression</comment>
+      </column>
+    </property>
+    <property name="joujrCorrectifEcran" type="double">
+      <column default="0" length="20" name="joujr_correctif_ecran">
+        <comment>correctif du controle final ecran</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ExercicesComptable" column="execpt_id" name="exercicesComptable" not-null="true"/>
+  </class>
+</hibernate-mapping>

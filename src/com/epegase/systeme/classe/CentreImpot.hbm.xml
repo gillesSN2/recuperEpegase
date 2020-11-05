@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="CentreImpot" table="pay_centre_impot">
+    <id column="cenimp_id" name="cenimpId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="cenimpDateCreation" type="timestamp">
+      <column name="cenimp_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="cenimpDateModif" type="timestamp">
+      <column name="cenimp_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="cenimpUserCreation" type="long">
+      <column default="0" length="15" name="cenimp_user_creat">
+        <comment>user de creation</comment>
+      </column>
+    </property>
+    <property name="cenimpUserModif" type="long">
+      <column default="0" length="15" name="cenimp_user_modif">
+        <comment>user de modification</comment>
+      </column>
+    </property>
+    <property name="cenimpType" type="integer">
+      <column default="0" name="cenimp_type">
+        <comment>0=centre import 1=centre securite sociale</comment>
+      </column>
+    </property>
+    <property name="cenimpCode" type="string">
+      <column length="20" name="cenimp_code">
+        <comment>code du centre</comment>
+      </column>
+    </property>
+    <property name="cenimpNom" type="string">
+      <column length="100" name="cenimp_nom">
+        <comment>nom centre</comment>
+      </column>
+    </property>
+    <property name="cenimpAdresse" type="string">
+      <column length="100" name="cenimp_adresse">
+        <comment>adresse</comment>
+      </column>
+    </property>
+    <property name="cenimpVille" type="string">
+      <column length="100" name="cenimp_ville">
+        <comment>ville</comment>
+      </column>
+    </property>
+    <property name="cenimpBP" type="string">
+      <column length="20" name="cenimp_bp">
+        <comment>boite postale</comment>
+      </column>
+    </property>
+    <property name="cenimpTel1" type="string">
+      <column length="20" name="cenimp_tel1">
+        <comment>telephone 1</comment>
+      </column>
+    </property>
+    <property name="cenimpTel2" type="string">
+      <column length="20" name="cenimp_tel2">
+        <comment>telephone 2</comment>
+      </column>
+    </property>
+    <property name="cenimpFax" type="string">
+      <column length="20" name="cenimp_fax">
+        <comment>fax</comment>
+      </column>
+    </property>
+    <property name="cenimpMail" type="string">
+      <column length="100" name="cenimp_mail">
+        <comment>mail</comment>
+      </column>
+    </property>
+    <property name="cenimpNomResponsable" type="string">
+      <column length="100" name="cenimp_nom_resp">
+        <comment>nom du responsabe</comment>
+      </column>
+    </property>
+    <property name="cenimpNumeroImmatriculation" type="string">
+      <column length="100" name="cenimp_numero_immatriculation">
+        <comment>numero immatriculation </comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>

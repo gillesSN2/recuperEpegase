@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="BienBudgetEntete" table="imm_bien_budget_entete">
+    <id column="biebudent_id" name="biebudentId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="biebudentDateCreat" type="timestamp">
+      <column default="NULL" name="biebudent_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="biebudentDateModif" type="timestamp">
+      <column default="NULL" name="biebudent_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="biebudentUserCreat" type="long">
+      <column default="0" length="15" name="biebudent_user_creat">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="biebudentUserModif" type="long">
+      <column default="0" length="15" name="biebudent_user_modif">
+        <comment>utilisateur de modification</comment>
+      </column>
+    </property>
+    <property name="biebudentNum" type="string">
+      <column length="20" name="biebudent_num">
+        <comment>numero du budget</comment>
+      </column>
+    </property>
+    <property name="biebudentObjet" type="string">
+      <column length="100" name="biebudent_objet">
+        <comment>objet du budget exceptionnel</comment>
+      </column>
+    </property>
+    <property name="biebudentAnnee" type="integer">
+      <column default="0" name="biebudent_annee">
+        <comment>annee date</comment>
+      </column>
+    </property>
+    <property name="biebudentMode" type="integer">
+      <column default="0" name="biebudent_mode">
+        <comment>0=normal 1=exceptionnel</comment>
+      </column>
+    </property>
+    <property name="biebudentDateDebut" type="date">
+      <column default="null" name="biebudent_date_debut">
+        <comment>date debut</comment>
+      </column>
+    </property>
+    <property name="biebudentDateFin" type="date">
+      <column default="null" name="biebudent_date_fin">
+        <comment>date fin</comment>
+      </column>
+    </property>
+    <property name="biebudentResteAnterieur" type="double">
+      <column default="0" name="biebudent_reste_anterieur">
+        <comment>reliquat n-1</comment>
+      </column>
+    </property>
+    <property name="biebudentTotal" type="double">
+      <column default="0" name="biebudent_total">
+        <comment>montant total du budget</comment>
+      </column>
+    </property>
+    <property name="biebudentEtat" type="integer">
+      <column default="0" name="biebudent_etat">
+        <comment>etat du budget 0=encours 1=valide 2=gele 3=annule 4=termine</comment>
+      </column>
+    </property>
+    <property name="biebudentDateApprobation" type="date">
+      <column default="null" name="biebudent_date_approbation">
+        <comment>date approbation</comment>
+      </column>
+    </property>
+    <property name="biebudentDepenses" type="double">
+      <column default="0" name="biebudent_depenses">
+        <comment>total depenses</comment>
+      </column>
+    </property>
+    <property name="biebudentDepensesNonImpute" type="double">
+      <column default="0" name="biebudent_depenses_non_impute">
+        <comment>total depenses non imputees</comment>
+      </column>
+    </property>
+    <property name="biebudentEcart" type="double">
+      <column default="0" name="biebudent_ecart">
+        <comment>ecart</comment>
+      </column>
+    </property>
+    <property name="biebudentRealisation" type="float">
+      <column default="0" name="biebudent_realisation">
+        <comment>% de realisation</comment>
+      </column>
+    </property>
+    <property name="biebudentDateImp" type="date">
+      <column name="biebudent_date_imp">
+        <comment>date impression</comment>
+      </column>
+    </property>
+    <property name="biebudentModeleImp" type="string">
+      <column length="50" name="biebudent_modele_imp">
+        <comment>nom jasper du modele</comment>
+      </column>
+    </property>
+    <property name="biebudentHonoraire" type="double">
+      <column default="0" name="biebudent_honoraire">
+        <comment>honoraire</comment>
+      </column>
+    </property>
+    <property name="biebudentIdCoproprietaire" type="long">
+      <column default="0" name="biebudent_id_coproprietaire">
+        <comment>id coproprietaire</comment>
+      </column>
+    </property>
+    <property name="biebudentNomCoproprietaire" type="string">
+      <column length="100" name="biebudent_nom_coproprietaire">
+        <comment>nom coproprietaire</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.Bien" column="bie_id" lazy="false" name="Bien" not-null="false"/>
+  </class>
+</hibernate-mapping>

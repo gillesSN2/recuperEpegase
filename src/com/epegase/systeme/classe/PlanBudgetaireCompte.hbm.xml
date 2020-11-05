@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="PlanBudgetaireCompte" table="cpt_plan_bugetaire_compte">
+    <id column="plbcpt_id" name="plbcptId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="plbcptCode" type="string">
+      <column length="20" name="plbcpt_code">
+        <comment>code budgetaire</comment>
+      </column>
+    </property>
+    <property name="plbcptNature" type="string">
+      <column length="20" name="plbcpt_nature">
+        <comment>1=vente 2=achat 3=production 4=frais generaux 5=investissement 6=tva 7=impot et taxe 8=frais personnel ou code budget</comment>
+      </column>
+    </property>
+    <property name="plbcptType" type="integer">
+      <column default="0" name="plbcpt_type">
+        <comment>0=plan comptable 1=produit</comment>
+      </column>
+    </property>
+    <property name="plbcptChoixBudget" type="integer">
+      <column default="0" name="plbcpt_choix_budget">
+        <comment>0=sur compta 1=sur achats</comment>
+      </column>
+    </property>
+    <property name="plbcptCompte" type="string">
+      <column length="20" name="plbcpt_compte">
+        <comment>numero de compte</comment>
+      </column>
+    </property>
+    <property name="plbcptLibelleFr" type="string">
+      <column length="100" name="plbcpt_libelle_FR">
+        <comment>libelle compte</comment>
+      </column>
+    </property>
+    <property name="plbcptLibelleUk" type="string">
+      <column length="100" name="plbcpt_libelle_UK">
+        <comment>libelle compte</comment>
+      </column>
+    </property>
+    <property name="plbcptLibelleSp" type="string">
+      <column length="100" name="plbcpt_libelle_SP">
+        <comment>libelle compte</comment>
+      </column>
+    </property>
+    <property name="plbcpt01TotVal" type="double">
+      <column default="0" name="plbcpt_01_tot_val">
+        <comment>valeur initiale</comment>
+      </column>
+    </property>
+    <property name="plbcpt02TotVal" type="double">
+      <column default="0" name="plbcpt_02_tot_val">
+        <comment>valeur reamenagement 2</comment>
+      </column>
+    </property>
+    <property name="plbcpt03TotVal" type="double">
+      <column default="0" name="plbcpt_03_tot_val">
+        <comment>valeur reamenagement 3</comment>
+      </column>
+    </property>
+    <property name="plbcpt04TotVal" type="double">
+      <column default="0" name="plbcpt_04_tot_val">
+        <comment>valeur reamenagement 4</comment>
+      </column>
+    </property>
+    <property name="plbcpt01R1Val" type="double">
+      <column default="0" name="plbcpt_01_r1_val">
+        <comment>janvier reamenagement 1</comment>
+      </column>
+    </property>
+    <property name="plbcpt02R1Val" type="double">
+      <column default="0" name="plbcpt_02_r1_val">
+        <comment>fevrier reamenagement 1</comment>
+      </column>
+    </property>
+    <property name="plbcpt03R1Val" type="double">
+      <column default="0" name="plbcpt_03_r1_val">
+        <comment>mars reamenagement 1</comment>
+      </column>
+    </property>
+    <property name="plbcpt04R1Val" type="double">
+      <column default="0" name="plbcpt_04_r1_val">
+        <comment>avril reamenagement 1</comment>
+      </column>
+    </property>
+    <property name="plbcpt05R1Val" type="double">
+      <column default="0" name="plbcpt_05_r1_val">
+        <comment>mai reamenagement 1</comment>
+      </column>
+    </property>
+    <property name="plbcpt06R1Val" type="double">
+      <column default="0" name="plbcpt_06_r1_val">
+        <comment>juin reamenagement 1</comment>
+      </column>
+    </property>
+    <property name="plbcpt07R1Val" type="double">
+      <column default="0" name="plbcpt_07_r1_val">
+        <comment>juillet reamenagement 1</comment>
+      </column>
+    </property>
+    <property name="plbcpt08R1Val" type="double">
+      <column default="0" name="plbcpt_08_r1_val">
+        <comment>aout reamenagement 1</comment>
+      </column>
+    </property>
+    <property name="plbcpt09R1Val" type="double">
+      <column default="0" name="plbcpt_09_r1_val">
+        <comment>septembre reamenagement 1</comment>
+      </column>
+    </property>
+    <property name="plbcpt10R1Val" type="double">
+      <column default="0" name="plbcpt_10_r1_val">
+        <comment>octobre reamenagement 1</comment>
+      </column>
+    </property>
+    <property name="plbcpt11R1Val" type="double">
+      <column default="0" name="plbcpt_11_r1_val">
+        <comment>novembre reamenagement 1</comment>
+      </column>
+    </property>
+    <property name="plbcpt12R1Val" type="double">
+      <column default="0" name="plbcpt_12_r1_val">
+        <comment>decembre reamenagement 1</comment>
+      </column>
+    </property>
+    <property name="plbcpt01R2Val" type="double">
+      <column default="0" name="plbcpt_01_r2_val">
+        <comment>janvier reamenagement 2</comment>
+      </column>
+    </property>
+    <property name="plbcpt02R2Val" type="double">
+      <column default="0" name="plbcpt_02_r2_val">
+        <comment>fevrier reamenagement 2</comment>
+      </column>
+    </property>
+    <property name="plbcpt03R2Val" type="double">
+      <column default="0" name="plbcpt_03_r2_val">
+        <comment>mars reamenagement 2</comment>
+      </column>
+    </property>
+    <property name="plbcpt04R2Val" type="double">
+      <column default="0" name="plbcpt_04_r2_val">
+        <comment>avril reamenagement 2</comment>
+      </column>
+    </property>
+    <property name="plbcpt05R2Val" type="double">
+      <column default="0" name="plbcpt_05_r2_val">
+        <comment>mai reamenagement 2</comment>
+      </column>
+    </property>
+    <property name="plbcpt06R2Val" type="double">
+      <column default="0" name="plbcpt_06_r2_val">
+        <comment>juin reamenagement 2</comment>
+      </column>
+    </property>
+    <property name="plbcpt07R2Val" type="double">
+      <column default="0" name="plbcpt_07_r2_val">
+        <comment>juillet reamenagement 2</comment>
+      </column>
+    </property>
+    <property name="plbcpt08R2Val" type="double">
+      <column default="0" name="plbcpt_08_r2_val">
+        <comment>aout reamenagement 2</comment>
+      </column>
+    </property>
+    <property name="plbcpt09R2Val" type="double">
+      <column default="0" name="plbcpt_09_r2_val">
+        <comment>septembre reamenagement v</comment>
+      </column>
+    </property>
+    <property name="plbcpt10R2Val" type="double">
+      <column default="0" name="plbcpt_10_r2_val">
+        <comment>octobre reamenagement 2</comment>
+      </column>
+    </property>
+    <property name="plbcpt11R2Val" type="double">
+      <column default="0" name="plbcpt_11_r2_val">
+        <comment>novembre reamenagement 2</comment>
+      </column>
+    </property>
+    <property name="plbcpt12R2Val" type="double">
+      <column default="0" name="plbcpt_12_r2_val">
+        <comment>decembre reamenagement 2</comment>
+      </column>
+    </property>
+    <property name="plbcpt01R3Val" type="double">
+      <column default="0" name="plbcpt_01_r3_val">
+        <comment>janvier reamenagement 3</comment>
+      </column>
+    </property>
+    <property name="plbcpt02R3Val" type="double">
+      <column default="0" name="plbcpt_02_r3_val">
+        <comment>fevrier reamenagement 3</comment>
+      </column>
+    </property>
+    <property name="plbcpt03R3Val" type="double">
+      <column default="0" name="plbcpt_03_r3_val">
+        <comment>mars reamenagement 3</comment>
+      </column>
+    </property>
+    <property name="plbcpt04R3Val" type="double">
+      <column default="0" name="plbcpt_04_r3_val">
+        <comment>avril reamenagement 3</comment>
+      </column>
+    </property>
+    <property name="plbcpt05R3Val" type="double">
+      <column default="0" name="plbcpt_05_r3_val">
+        <comment>mai reamenagement 3</comment>
+      </column>
+    </property>
+    <property name="plbcpt06R3Val" type="double">
+      <column default="0" name="plbcpt_06_r3_val">
+        <comment>juin reamenagement 3</comment>
+      </column>
+    </property>
+    <property name="plbcpt07R3Val" type="double">
+      <column default="0" name="plbcpt_07_r3_val">
+        <comment>juillet reamenagement 3</comment>
+      </column>
+    </property>
+    <property name="plbcpt08R3Val" type="double">
+      <column default="0" name="plbcpt_08_r3_val">
+        <comment>aout reamenagement 3</comment>
+      </column>
+    </property>
+    <property name="plbcpt09R3Val" type="double">
+      <column default="0" name="plbcpt_09_r3_val">
+        <comment>septembre reamenagement 3</comment>
+      </column>
+    </property>
+    <property name="plbcpt10R3Val" type="double">
+      <column default="0" name="plbcpt_10_r3_val">
+        <comment>octobre reamenagement 3</comment>
+      </column>
+    </property>
+    <property name="plbcpt11R3Val" type="double">
+      <column default="0" name="plbcpt_11_r3_val">
+        <comment>novembre reamenagement 3</comment>
+      </column>
+    </property>
+    <property name="plbcpt12R3Val" type="double">
+      <column default="0" name="plbcpt_12_r3_val">
+        <comment>decembre reamenagement 3</comment>
+      </column>
+    </property>
+    <property name="plbcpt01R4Val" type="double">
+      <column default="0" name="plbcpt_01_r4_val">
+        <comment>janvier reamenagement 4</comment>
+      </column>
+    </property>
+    <property name="plbcpt02R4Val" type="double">
+      <column default="0" name="plbcpt_02_r4_val">
+        <comment>fevrier reamenagement 4</comment>
+      </column>
+    </property>
+    <property name="plbcpt03R4Val" type="double">
+      <column default="0" name="plbcpt_03_r4_val">
+        <comment>mars reamenagement 4</comment>
+      </column>
+    </property>
+    <property name="plbcpt04R4Val" type="double">
+      <column default="0" name="plbcpt_04_r4_val">
+        <comment>avril reamenagement 4</comment>
+      </column>
+    </property>
+    <property name="plbcpt05R4Val" type="double">
+      <column default="0" name="plbcpt_05_r4_val">
+        <comment>mai reamenagement 4</comment>
+      </column>
+    </property>
+    <property name="plbcpt06R4Val" type="double">
+      <column default="0" name="plbcpt_06_r4_val">
+        <comment>juin reamenagement 4</comment>
+      </column>
+    </property>
+    <property name="plbcpt07R4Val" type="double">
+      <column default="0" name="plbcpt_07_r4_val">
+        <comment>juillet reamenagement 4</comment>
+      </column>
+    </property>
+    <property name="plbcpt08R4Val" type="double">
+      <column default="0" name="plbcpt_08_r4_val">
+        <comment>aout reamenagement 4</comment>
+      </column>
+    </property>
+    <property name="plbcpt09R4Val" type="double">
+      <column default="0" name="plbcpt_09_r4_val">
+        <comment>septembre reamenagement 4</comment>
+      </column>
+    </property>
+    <property name="plbcpt10R4Val" type="double">
+      <column default="0" name="plbcpt_10_r4_val">
+        <comment>octobre reamenagement 4</comment>
+      </column>
+    </property>
+    <property name="plbcpt11R4Val" type="double">
+      <column default="0" name="plbcpt_11_r4_val">
+        <comment>novembre reamenagement 4</comment>
+      </column>
+    </property>
+    <property name="plbcpt12R4Val" type="double">
+      <column default="0" name="plbcpt_12_r4_val">
+        <comment>decembre reamenagement 4</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.PlansBudgetaires" column="plb_id" name="planbudgetaire" not-null="true"/>
+  </class>
+</hibernate-mapping>

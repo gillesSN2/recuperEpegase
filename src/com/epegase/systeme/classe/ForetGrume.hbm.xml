@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="ForetGrume" table="wod_foret_grume">
+    <id column="gru_id" name="gruId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="gruNumInv" type="string">
+      <column length="20" name="gru_num_inv">
+        <comment>numero inventaire</comment>
+      </column>
+    </property>
+    <property name="gruDateInv" type="date">
+      <column default="null" name="gru_date_inv">
+        <comment>date inventaire</comment>
+      </column>
+    </property>
+    <property name="gruArbre" type="string">
+      <column length="20" name="gru_arbre">
+        <comment>numero arbre en foret</comment>
+      </column>
+    </property>
+    <property name="gruPhoto" type="boolean">
+      <column default="false" name="gru_photo">
+        <comment>photo arbre en foret</comment>
+      </column>
+    </property>
+    <property name="gruEcoCertifie" type="string">
+      <column length="1" name="gru_eco_certifie">
+        <comment>eco certifie</comment>
+      </column>
+    </property>
+    <property name="gruTrace" type="string">
+      <column length="3" name="gru_trace">
+        <comment>trace</comment>
+      </column>
+    </property>
+    <property name="gruRfidInv" type="string">
+      <column length="20" name="gru_rfid_inv">
+        <comment>numero rfif inventaire</comment>
+      </column>
+    </property>
+    <property name="gruEssence" type="string">
+      <column length="10" name="gru_essence">
+        <comment>code essence</comment>
+      </column>
+    </property>
+    <property name="gruChantier" type="string">
+      <column length="10" name="gru_chantier">
+        <comment>code chantier</comment>
+      </column>
+    </property>
+    <property name="gruMarteau" type="string">
+      <column length="10" name="gru_marteau">
+        <comment>marteau</comment>
+      </column>
+    </property>
+    <property name="gruLocX" type="double">
+      <column default="0" name="gru_loc_x">
+        <comment>coordonee X</comment>
+      </column>
+    </property>
+    <property name="gruLocY" type="double">
+      <column default="0" name="gru_loc_y">
+        <comment>coordonnee Y</comment>
+      </column>
+    </property>
+    <property name="gruClasInv" type="string">
+      <column length="4" name="gru_clas_inv">
+        <comment>classement inventaire</comment>
+      </column>
+    </property>
+    <property name="gruDiamBasInv" type="integer">
+      <column default="0" name="gru_diam_bas_inv">
+        <comment>diametre base inventaire</comment>
+      </column>
+    </property>
+    <property name="gruDiamHauInv" type="integer">
+      <column default="0" name="gru_diam_hau_inv">
+        <comment>diametre haut inventaire</comment>
+      </column>
+    </property>
+    <property name="gruDiamMoyInv" type="integer">
+      <column default="0" name="gru_diam_moy_inv">
+        <comment>diametre moyen inventaire</comment>
+      </column>
+    </property>
+    <property name="gruLongInv" type="integer">
+      <column default="0" name="gru_long_inv">
+        <comment>longueur inventaire</comment>
+      </column>
+    </property>
+    <property name="gruCubInv" type="float">
+      <column default="0" name="gru_cub_inv">
+        <comment>cubage inventaire</comment>
+      </column>
+    </property>
+    <property name="gruNumCar" type="string">
+      <column length="20" name="gru_num_car">
+        <comment>numero carnet de chantier</comment>
+      </column>
+    </property>
+    <property name="gruDateCar" type="date">
+      <column default="null" name="gru_date_car">
+        <comment>date carnet de chantier</comment>
+      </column>
+    </property>
+    <property name="gruGrumeCar" type="string">
+      <column length="20" name="gru_grume_car">
+        <comment>numero grume carnet de chantier</comment>
+      </column>
+    </property>
+    <property name="gruClasCar" type="string">
+      <column length="4" name="gru_clas_car">
+        <comment>classement carnet</comment>
+      </column>
+    </property>
+    <property name="gruDiamCar" type="integer">
+      <column default="0" name="gru_diam_car">
+        <comment>diametre carnet de chantier</comment>
+      </column>
+    </property>
+    <property name="gruLongCar" type="integer">
+      <column default="0" name="gru_long_car">
+        <comment>longueur carnet de chantier</comment>
+      </column>
+    </property>
+    <property name="gruCubCar" type="float">
+      <column default="0" name="gru_cub_car">
+        <comment>cubage carnet chantier</comment>
+      </column>
+    </property>
+    <property name="gruDateAbattage" type="date">
+      <column default="null" name="gru_date_abattage">
+        <comment>date abattage</comment>
+      </column>
+    </property>
+    <property name="gruDateEvac" type="date">
+      <column default="null" name="gru_date_evac">
+        <comment>date evacuation</comment>
+      </column>
+    </property>
+    <property name="gruDestCar" type="string">
+      <column length="10" name="gru_dest_car">
+        <comment>code destination grume</comment>
+      </column>
+    </property>
+    <property name="gruNumRup" type="string">
+      <column length="20" name="gru_num_rup">
+        <comment>numero bordereau de rupture</comment>
+      </column>
+    </property>
+    <property name="gruDateRup" type="date">
+      <column default="null" name="gru_date_rup">
+        <comment>date bordereau de rupture</comment>
+      </column>
+    </property>
+    <property name="gruLieuRup" type="string">
+      <column length="20" name="gru_lieu_rup">
+        <comment>lieu de rupture</comment>
+      </column>
+    </property>
+    <property name="gruGrumePlaq" type="string">
+      <column length="20" name="gru_grume_plaq">
+        <comment>numero grume de plaquette</comment>
+      </column>
+    </property>
+    <property name="gruRfidRup" type="string">
+      <column length="20" name="gru_rfid_rup">
+        <comment>numero rfid du billon</comment>
+      </column>
+    </property>
+    <property name="gruDiamRup" type="integer">
+      <column default="0" name="gru_diam_rup">
+        <comment>diametre bordereau rupture</comment>
+      </column>
+    </property>
+    <property name="gruLongRup" type="integer">
+      <column default="0" name="gru_long_rup">
+        <comment>longueur bordereau de rupture</comment>
+      </column>
+    </property>
+    <property name="gruCubRup" type="float">
+      <column default="0" name="gru_cub_rup">
+        <comment>cubage bordereau rupture</comment>
+      </column>
+    </property>
+    <property name="gruObsRup" type="string">
+      <column length="20" name="gru_obs_rup">
+        <comment>observation bordereau rupture</comment>
+      </column>
+    </property>
+    <property name="gruNumRou" type="string">
+      <column length="20" name="gru_num_rou">
+        <comment>numero bordereau de route</comment>
+      </column>
+    </property>
+    <property name="gruDateRou" type="date">
+      <column default="null" name="gru_date_rou">
+        <comment>date bordereau de route</comment>
+      </column>
+    </property>
+    <property name="gruLieuRou" type="string">
+      <column length="20" name="gru_lieu_rou">
+        <comment>lieu de bordereau de route</comment>
+      </column>
+    </property>
+    <property name="gruClasRou" type="string">
+      <column length="4" name="gru_clas_rou">
+        <comment>classement</comment>
+      </column>
+    </property>
+    <property name="gruDiamRou" type="integer">
+      <column default="0" name="gru_diam_rou">
+        <comment>diametre bordereau route</comment>
+      </column>
+    </property>
+    <property name="gruLongRou" type="integer">
+      <column default="0" name="gru_long_rou">
+        <comment>longueur bordereau de route</comment>
+      </column>
+    </property>
+    <property name="gruCubRou" type="float">
+      <column default="0" name="gru_cub_rou">
+        <comment>cubage bordereau route</comment>
+      </column>
+    </property>
+    <property name="gruRefDiamRou" type="integer">
+      <column default="0" name="gru_ref_diam_rou">
+        <comment>refaction sur diametre bordereau route</comment>
+      </column>
+    </property>
+    <property name="gruRefLongRou" type="integer">
+      <column default="0" name="gru_ref_long_rou">
+        <comment>refaction sur longueur bordereau de route</comment>
+      </column>
+    </property>
+    <property name="gruRefCubRou" type="float">
+      <column default="0" name="gru_ref_cub_rou">
+        <comment>cubage apres refaction bordereau route</comment>
+      </column>
+    </property>
+    <property name="gruObsRou" type="string">
+      <column length="20" name="gru_obs_rou">
+        <comment>observation bordereau route</comment>
+      </column>
+    </property>
+    <property name="gruNumExp" type="string">
+      <column length="20" name="gru_num_exp">
+        <comment>numero bordereau expedition</comment>
+      </column>
+    </property>
+    <property name="gruDateExp" type="date">
+      <column default="null" name="gru_date_exp">
+        <comment>date bordereau expedition</comment>
+      </column>
+    </property>
+    <property name="gruLieuExp" type="string">
+      <column length="20" name="gru_lieu_exp">
+        <comment>lieu bordereau expedition</comment>
+      </column>
+    </property>
+    <property name="gruDiamExp" type="integer">
+      <column default="0" name="gru_diam_exp">
+        <comment>diametre bordereau expedition</comment>
+      </column>
+    </property>
+    <property name="gruLongExp" type="integer">
+      <column default="0" name="gru_long_exp">
+        <comment>longueur bordereau expedition</comment>
+      </column>
+    </property>
+    <property name="gruCubExp" type="float">
+      <column default="0" name="gru_cub_exp">
+        <comment>cubage bordereau expedition</comment>
+      </column>
+    </property>
+    <property name="gruObsExp" type="string">
+      <column length="20" name="gru_obs_exp">
+        <comment>observation boedereau expedition</comment>
+      </column>
+    </property>
+    <property name="gruNumNdc" type="string">
+      <column length="20" name="gru_num_ndc">
+        <comment>numero notre de credit</comment>
+      </column>
+    </property>
+    <property name="gruDateNdc" type="date">
+      <column default="null" name="gru_date_ndc">
+        <comment>date note de credit</comment>
+      </column>
+    </property>
+    <property name="gruDiamNdc" type="integer">
+      <column default="0" name="gru_diam_ndc">
+        <comment>diametre note de credit</comment>
+      </column>
+    </property>
+    <property name="gruLongNdc" type="integer">
+      <column default="0" name="gru_long_ndc">
+        <comment>longueur note de credit</comment>
+      </column>
+    </property>
+    <property name="gruRefDiamNdc" type="integer">
+      <column default="0" name="gru_ref_diam_ndc">
+        <comment>refaction sur diametre note de credit</comment>
+      </column>
+    </property>
+    <property name="gruRefLongNdc" type="integer">
+      <column default="0" name="gru_ref_long_ndc">
+        <comment>refaction sur longueur note de credit</comment>
+      </column>
+    </property>
+    <property name="gruCubNdc" type="float">
+      <column default="0" name="gru_cub_ndc">
+        <comment>cubage note de credit</comment>
+      </column>
+    </property>
+    <property name="gruRefCubNdc" type="float">
+      <column default="0" name="gru_ref_cub_ndc">
+        <comment>cubage apres refaction note de credit</comment>
+      </column>
+    </property>
+    <property name="gruPaNdc" type="double">
+      <column default="0" name="gru_pa_ndc">
+        <comment>prix achat m3 note de credit</comment>
+      </column>
+    </property>
+    <property name="gruObsNdc" type="string">
+      <column length="20" name="gru_obs_ndc">
+        <comment>observation note de credit</comment>
+      </column>
+    </property>
+    <property name="gruNumSpe" type="string">
+      <column length="20" name="gru_num_spe">
+        <comment>numero specification</comment>
+      </column>
+    </property>
+    <property name="gruDateSpe" type="date">
+      <column default="null" name="gru_date_spe">
+        <comment>date specification</comment>
+      </column>
+    </property>
+    <property name="gruLieuSpe" type="string">
+      <column length="20" name="gru_lieu_spe">
+        <comment>lieu de spcecification</comment>
+      </column>
+    </property>
+    <property name="gruDiamSpe" type="integer">
+      <column default="0" name="gru_diam_spe">
+        <comment>diametre specification</comment>
+      </column>
+    </property>
+    <property name="gruLongSpe" type="integer">
+      <column default="0" name="gru_long_spe">
+        <comment>longueur specification</comment>
+      </column>
+    </property>
+    <property name="gruCubSpe" type="float">
+      <column default="0" name="gru_cub_spe">
+        <comment>cubage specification</comment>
+      </column>
+    </property>
+    <property name="gruPvSpe" type="double">
+      <column default="0" name="gru_pv_spe">
+        <comment>prix vente m3 specification</comment>
+      </column>
+    </property>
+    <property name="gruObsSpe" type="string">
+      <column length="20" name="gru_obs_spe">
+        <comment>observation specification</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ForetInventaire" column="forinv_id" lazy="false" name="foretInventaire" not-null="false"/>
+    <many-to-one class="com.epegase.systeme.classe.ForetCarnet" column="forcar_id" lazy="false" name="foretCarnet" not-null="false"/>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="TraiteLigne" table="cai_traite_ligne">
+    <id column="trtlig_id" name="trtligId" type="long" unsaved-value="null">
+      <generator class="increment"/>
+    </id>
+    <property name="trtligOrdre" type="integer">
+      <column default="0" name="trtlig_ordre">
+        <comment>numero ordre</comment>
+      </column>
+    </property>
+    <property name="trtligDateTheorique" type="date">
+      <column default="null" name="trtlig_date_theorique">
+        <comment>date theorique</comment>
+      </column>
+    </property>
+    <property name="trtligMontant" type="double">
+      <column default="0" name="trtlig_montant">
+        <comment>montant traite</comment>
+      </column>
+    </property>
+    <property name="trtligCoef" type="float">
+      <column default="0" name="trtlig_coef">
+        <comment>taux devise</comment>
+      </column>
+    </property>
+    <property name="trtligMontantLocal" type="double">
+      <column default="0" name="trtlig_montantLocal">
+        <comment>montant local</comment>
+      </column>
+    </property>
+    <property name="trtligDateDepot" type="date">
+      <column default="null" name="trtlig_date_depot">
+        <comment>date depot</comment>
+      </column>
+    </property>
+    <property name="trtligDateReport" type="date">
+      <column default="null" name="trtlig_date_report">
+        <comment>date report</comment>
+      </column>
+    </property>
+    <property name="trtligTypet" type="integer">
+      <column default="0" name="trtlig_type">
+        <comment>0=a encaisser 1=a escompter</comment>
+      </column>
+    </property>
+    <property name="trtligBordereau" type="string">
+      <column length="20" name="trtlig_bordereau">
+        <comment>numero borderau</comment>
+      </column>
+    </property>
+    <property name="trtligEtat" type="integer">
+      <column default="0" name="trtlig_etat">
+        <comment>0=en cours 1=valider 2=rejeter</comment>
+      </column>
+    </property>
+    <property name="trtligMotif" type="string">
+      <column length="50" name="trtlig_motif">
+        <comment>motif rejet</comment>
+      </column>
+    </property>
+    <property name="trtligDateRetour" type="date">
+      <column default="null" name="trtlig_date_retour">
+        <comment>date retour</comment>
+      </column>
+    </property>
+    <property name="trtligNumAvoir" type="string">
+      <column length="20" name="trtlig_num_avoir">
+        <comment>numero avor fournisseur</comment>
+      </column>
+    </property>
+    <property name="trtligMontantAvoir" type="double">
+      <column default="0" name="trtlig_montant_avoir">
+        <comment>montant avor fournisseur</comment>
+      </column>
+    </property>
+    <property name="trtligMontantAvoirLocal" type="double">
+      <column default="0" name="trtlig_montant_avoir_local">
+        <comment>montant avor fournisseur en devise locale</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.TraiteEntete" column="trt_id" lazy="false" name="traiteEntete" not-null="true"/>
+  </class>
+</hibernate-mapping>

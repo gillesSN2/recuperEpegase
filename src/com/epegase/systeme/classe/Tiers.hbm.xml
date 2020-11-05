@@ -1,0 +1,938 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="Tiers" table="cmm_tiers">
+    <id column="tie_id" name="tieid" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="tiedatecreat" type="timestamp">
+      <column name="tie_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="tiedatemodif" type="timestamp">
+      <column name="tie_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="tieusercreat" type="long">
+      <column default="0" length="15" name="tie_user_creat">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="tieusermodif" type="long">
+      <column default="0" length="15" name="tie_user_modif">
+        <comment>utilisateur de modification</comment>
+      </column>
+    </property>
+    <property name="tieetat" type="integer">
+      <column default="0" length="1" name="tie_etat">
+        <comment>0=actif 1=inactif 2=supprime</comment>
+      </column>
+    </property>
+    <property index="true" name="tieraisonsocialenom" type="string">
+      <column index="true" length="100" name="tie_raison_sociale_nom">
+        <comment>raison social ou nom </comment>
+      </column>
+    </property>
+    <property name="tiesigle" type="string">
+      <column length="100" name="tie_sigle">
+        <comment>sigle</comment>
+      </column>
+    </property>
+    <property name="tieIdStructure" type="long">
+      <column default="0" name="tie_id_structure">
+        <comment>id structure pour espace client</comment>
+      </column>
+    </property>
+    <property index="true" name="tietype" type="string">
+      <column index="true" length="4" name="tie_type">
+        <comment>0=fournisseur 1=suspect 2=prospect 3=client 6=paroissien  99=divers</comment>
+      </column>
+    </property>
+    <property index="true" name="tiegenre" type="string">
+      <column index="true" length="3" name="tie_genre">
+        <comment>lie au fichier xml tiers</comment>
+      </column>
+    </property>
+    <property index="true" name="tiecategorie" type="string">
+      <column index="true" length="40" name="tie_categorie">
+        <comment>categorie du tiers lie au fichier xml</comment>
+      </column>
+    </property>
+    <property name="tiecivilite" type="string">
+      <column length="20" name="tie_civilite">
+        <comment>civilite lie au fichier xml civilite</comment>
+      </column>
+    </property>
+    <property name="tienompays" type="string">
+      <column length="50" name="tie_nom_pays">
+        <comment>nom pays</comment>
+      </column>
+    </property>
+    <property name="tiecodepays" type="string">
+      <column length="4" name="tie_code_pays">
+        <comment>code du pays</comment>
+      </column>
+    </property>
+    <property name="tiedevise" type="string">
+      <column length="3" name="tie_devise">
+        <comment>code devise</comment>
+      </column>
+    </property>
+    <property name="tieFormatDevise" type="integer">
+      <column default="0" length="3" name="tie_format_devise">
+        <comment>format devise</comment>
+      </column>
+    </property>
+    <property name="tielangue" type="string">
+      <column length="20" name="tie_langue">
+        <comment>code langue</comment>
+      </column>
+    </property>
+    <property name="tietypeadresse" type="integer">
+      <column default="0" name="tie_type_adresse">
+        <comment>0=adresse simplifie 1=adresse complete</comment>
+      </column>
+    </property>
+    <property name="tieteldom" type="string">
+      <column length="50" name="tie_tel_dom">
+        <comment>telephone domicile</comment>
+      </column>
+    </property>
+    <property name="tiecel1" type="string">
+      <column length="50" name="tie_cel1">
+        <comment>mobile 1</comment>
+      </column>
+    </property>
+    <property name="tiecel2" type="string">
+      <column length="50" name="tie_cel2">
+        <comment>mobile 2</comment>
+      </column>
+    </property>
+    <property name="tiecel3" type="string">
+      <column length="50" name="tie_cel3">
+        <comment>mobile 3</comment>
+      </column>
+    </property>
+    <property name="tietelvoiture" type="string">
+      <column length="20" name="tie_tel_voiture">
+        <comment>telephone voiture</comment>
+      </column>
+    </property>
+    <property name="tieprenom" type="string">
+      <column length="100" name="tie_prenom">
+        <comment>prenom</comment>
+      </column>
+    </property>
+    <property name="tienomjf" type="string">
+      <column length="100" name="tie_nom_jf">
+        <comment>nom de jeune fille</comment>
+      </column>
+    </property>
+    <property name="tiesurnom" type="string">
+      <column length="50" name="tie_surnom">
+        <comment>surnom</comment>
+      </column>
+    </property>
+    <property name="tiesexe" type="integer">
+      <column default="0" length="1" name="tie_sexe">
+        <comment>0=femme 1=homme</comment>
+      </column>
+    </property>
+    <property name="tiedatenaissance" type="date">
+      <column name="tie_date_naissance">
+        <comment>date de naissance</comment>
+      </column>
+    </property>
+    <property name="tielieunaissance" type="string">
+      <column length="100" name="tie_lieu_naissance">
+        <comment>lieu de naissance</comment>
+      </column>
+    </property>
+    <property index="true" name="tieanniversaire" type="string">
+      <column index="true" length="5" name="tie_anniversaire">
+        <comment>periode anniversaire JJ:MM par rapport a  la date de naissance</comment>
+      </column>
+    </property>
+    <property name="tiedatemariage" type="date">
+      <column name="tie_date_mariage">
+        <comment>date du mariage</comment>
+      </column>
+    </property>
+    <property index="true" name="tieanniversairemariage" type="string">
+      <column index="true" length="5" name="tie_anniversaire_mariage">
+        <comment>periode anniversaire JJ:MM par rapport a  la date du mariage</comment>
+      </column>
+    </property>
+    <property name="tiedatedeces" type="date">
+      <column name="tie_date_deces">
+        <comment>date du mariage</comment>
+      </column>
+    </property>
+    <property index="true" name="tieanniversairedeces" type="string">
+      <column index="true" length="5" name="tie_anniversaire_deces">
+        <comment>periode anniversaire JJ:MM par rapport a  la date du deces</comment>
+      </column>
+    </property>
+    <property name="tieobservations" type="text">
+      <column name="tie_observations">
+        <comment>observations</comment>
+      </column>
+    </property>
+    <property name="tieactivite1" type="string">
+      <column length="100" name="tie_activite1">
+        <comment>activite principale</comment>
+      </column>
+    </property>
+    <property name="tieactivite2" type="string">
+      <column length="100" name="tie_activite2">
+        <comment>activite livre</comment>
+      </column>
+    </property>
+    <property name="tiesource" type="string">
+      <column length="50" name="tie_source">
+        <comment>source du tiers</comment>
+      </column>
+    </property>
+    <property name="tievisibilite" type="integer">
+      <column default="0" length="1" name="tie_visibilite">
+        <comment>0=public 1=collaborateur 2=prive</comment>
+      </column>
+    </property>
+    <property name="tievisibiliteGrp" type="string">
+      <column length="10" name="tie_visibilite_grp">
+        <comment>si collaborateur alors code groupe</comment>
+      </column>
+    </property>
+    <property name="tievisibiliteUser" type="long">
+      <column default="0" name="tie_visibilite_user">
+        <comment>si prive alors code user createur</comment>
+      </column>
+    </property>
+    <property name="tieadresse" type="string">
+      <column length="100" name="tie_adresse">
+        <comment>adresse</comment>
+      </column>
+    </property>
+    <property name="tierue" type="string">
+      <column length="50" name="tie_rue">
+        <comment>no de rue</comment>
+      </column>
+    </property>
+    <property name="tielot" type="string">
+      <column length="50" name="tie_lot">
+        <comment>no de lot</comment>
+      </column>
+    </property>
+    <property name="tieilot" type="string">
+      <column length="50" name="tie_ilot">
+        <comment>no illot</comment>
+      </column>
+    </property>
+    <property name="tiebatiment" type="string">
+      <column length="50" name="tie_batiment">
+        <comment>batiment</comment>
+      </column>
+    </property>
+    <property name="tieporte" type="string">
+      <column length="10" name="tie_porte">
+        <comment>no de porte</comment>
+      </column>
+    </property>
+    <property name="tieetage" type="string">
+      <column length="10" name="tie_etage">
+        <comment>etage</comment>
+      </column>
+    </property>
+    <property name="tieascensseur" type="string">
+      <column length="10" name="tie_ascensseur">
+        <comment>ascenseur</comment>
+      </column>
+    </property>
+    <property name="tiequartier" type="string">
+      <column length="50" name="tie_quartier">
+        <comment>quartier</comment>
+      </column>
+    </property>
+    <property name="tiecommune" type="string">
+      <column length="50" name="tie_commune">
+        <comment>commune</comment>
+      </column>
+    </property>
+    <property name="tiedepart" type="string">
+      <column length="50" name="tie_depart">
+        <comment>departement</comment>
+      </column>
+    </property>
+    <property name="tiezone" type="string">
+      <column length="50" name="tie_zone">
+        <comment>zone</comment>
+      </column>
+    </property>
+    <property name="tiebp" type="string">
+      <column length="20" name="tie_bp">
+        <comment>boite postale</comment>
+      </column>
+    </property>
+    <property name="tiecedex" type="string">
+      <column length="30" name="tie_cedex">
+        <comment>cedex</comment>
+      </column>
+    </property>
+    <property name="tieville" type="string">
+      <column length="50" name="tie_ville">
+        <comment>ville</comment>
+      </column>
+    </property>
+    <property name="tieburtel1" type="string">
+      <column length="50" name="tie_bur_tel1">
+        <comment>telephone bureau 1</comment>
+      </column>
+    </property>
+    <property name="tieburtel2" type="string">
+      <column length="50" name="tie_bur_tel2">
+        <comment>telephone bureau 2</comment>
+      </column>
+    </property>
+    <property name="tieburtel3" type="string">
+      <column length="50" name="tie_bur_tel3">
+        <comment>telephone bureau 3</comment>
+      </column>
+    </property>
+    <property name="tieburfax" type="string">
+      <column length="50" name="tie_bur_fax">
+        <comment>fax du bureau</comment>
+      </column>
+    </property>
+    <property name="tietelex" type="string">
+      <column length="20" name="tie_telex">
+        <comment>telex</comment>
+      </column>
+    </property>
+    <property name="tieyahoo" type="string">
+      <column length="100" name="tie_yahoo">
+        <comment>adresse yahoo</comment>
+      </column>
+    </property>
+    <property name="tiemsn" type="string">
+      <column length="100" name="tie_msn">
+        <comment>adresse msn</comment>
+      </column>
+    </property>
+    <property name="tieskype" type="string">
+      <column length="100" name="tie_skype">
+        <comment>adresse skype</comment>
+      </column>
+    </property>
+    <property name="tieaol" type="string">
+      <column length="100" name="tie_aol">
+        <comment>adresse aol</comment>
+      </column>
+    </property>
+    <property name="tiemail1" type="string">
+      <column length="100" name="tie_mail1">
+        <comment>mail 1</comment>
+      </column>
+    </property>
+    <property name="tiemail2" type="string">
+      <column length="100" name="tie_mail2">
+        <comment>mail 2</comment>
+      </column>
+    </property>
+    <property name="tiemail3" type="string">
+      <column length="100" name="tie_mail3">
+        <comment>mail 3</comment>
+      </column>
+    </property>
+    <property name="tiemail4" type="string">
+      <column length="100" name="tie_mail4">
+        <comment>mail 4</comment>
+      </column>
+    </property>
+    <property name="tiemail5" type="string">
+      <column length="100" name="tie_mail5">
+        <comment>mail 5</comment>
+      </column>
+    </property>
+    <property name="tieweb" type="string">
+      <column length="100" name="tie_web">
+        <comment>adresse web</comment>
+      </column>
+    </property>
+    <property name="tiemodereg" type="string">
+      <column length="100" name="tie_mode_reg">
+        <comment>mode de reglement</comment>
+      </column>
+    </property>
+    <property name="tietypereg" type="integer">
+      <column default="0" name="tie_type_reg">
+        <comment>0=sans calcul 1=paiement comptant 2=terme date de facture 3=terme fin de mois</comment>
+      </column>
+    </property>
+    <property name="tienbecheance" type="integer">
+      <column default="0" length="2" name="tie_nb_echeance">
+        <comment>nombre de jours d  echeance</comment>
+      </column>
+    </property>
+    <property name="tienbarrondi" type="integer">
+      <column default="0" length="2" name="tie_nb_arrondi">
+        <comment>nombre de jours d arrondi</comment>
+      </column>
+    </property>
+    <property name="tiejournalreg" type="string">
+      <column length="10" name="tie_journal_reg">
+        <comment>code journal des reglements</comment>
+      </column>
+    </property>
+    <property name="tieconditionreg" type="string">
+      <column length="100" name="tie_condition_reg">
+        <comment>conditions de reglements</comment>
+      </column>
+    </property>
+    <property name="tieplafond" type="double">
+      <column default="0" name="tie_plafond">
+        <comment>plafond de facturation</comment>
+      </column>
+    </property>
+    <property name="tiedepotavance" type="double">
+      <column default="0" name="tie_depotavance">
+        <comment>compte depot argent</comment>
+      </column>
+    </property>
+    <property name="tiecapatente" type="double">
+      <column default="0" name="tie_capatente">
+        <comment>ca de la patente</comment>
+      </column>
+    </property>
+    <property name="tieplafpatente" type="double">
+      <column default="0" name="tie_plaf_patente">
+        <comment>plafond de la patente</comment>
+      </column>
+    </property>
+    <property name="tiecomptebloque" type="integer">
+      <column default="0" length="1" name="tie_compte_bloque">
+        <comment>0=compte fonctionnel 1=compte bloque</comment>
+      </column>
+    </property>
+    <property name="tiechequeinterdit" type="integer">
+      <column default="0" length="1" name="tie_cheque_interdit">
+        <comment>0=cheque autorise 1=cheque interdit</comment>
+      </column>
+    </property>
+    <property name="tiesurveille" type="integer">
+      <column default="0" length="1" name="tie_surveille">
+        <comment>0=compte sans surveillance 1=compte à surveiller</comment>
+      </column>
+    </property>
+    <property name="tienbincident" type="integer">
+      <column default="0" length="1" name="tie_nb_incident">
+        <comment>nb incident du tiers</comment>
+      </column>
+    </property>
+    <property name="tienomfamille" type="string">
+      <column length="50" name="tie_nom_famille">
+        <comment>nom de la famille du tiers</comment>
+      </column>
+    </property>
+    <property name="tieserie" type="string">
+      <column length="4" name="tie_serie">
+        <comment>code serie </comment>
+      </column>
+    </property>
+    <property name="tieexodouane" type="integer">
+      <column default="0" length="1" name="tie_exo_douane">
+        <comment>0=avec douane 1=exonere de douane</comment>
+      </column>
+    </property>
+    <property name="tieexotva" type="integer">
+      <column default="0" length="1" name="tie_exo_tva">
+        <comment>0=avec tva 1=exonere de tva 2=non assujetti a  la tva</comment>
+      </column>
+    </property>
+    <property name="tietransfertCpte" type="integer">
+      <column default="0" length="1" name="tie_transfert_cpte">
+        <comment>0=transfert en compta 1=non transfere en compta</comment>
+      </column>
+    </property>
+    <property name="tiedepot" type="string">
+      <column length="121" name="tie_depot">
+        <comment>code depot par defaut</comment>
+      </column>
+    </property>
+    <property name="tieescompte" type="float">
+      <column default="0" name="tie_escompte">
+        <comment>taux d  escompte</comment>
+      </column>
+    </property>
+    <property name="tiefacpr" type="integer">
+      <column default="0" length="1" name="tie_fac_pr">
+        <comment>0=facturation au PV 1=facturation au PR avec taxe 2= facturation interne au PR sans taxe</comment>
+      </column>
+    </property>
+    <property name="tienombanque" type="string">
+      <column length="50" name="tie_nom_banque">
+        <comment>nom de la banque</comment>
+      </column>
+    </property>
+    <property name="tieadressebanque" type="string">
+      <column length="200" name="tie_adresse_banque">
+        <comment>adresse de la banque</comment>
+      </column>
+    </property>
+    <property name="tienumbanque" type="string">
+      <column length="6" name="tie_num_banque">
+        <comment>code banque</comment>
+      </column>
+    </property>
+    <property name="tieguichetbanque" type="string">
+      <column length="6" name="tie_guichet_banque">
+        <comment>code guichet</comment>
+      </column>
+    </property>
+    <property name="tiecomptebanque" type="string">
+      <column length="20" name="tie_compte_banque">
+        <comment>numero de compte</comment>
+      </column>
+    </property>
+    <property name="tieclebanque" type="string">
+      <column length="2" name="tie_cle_banque">
+        <comment>cle rib</comment>
+      </column>
+    </property>
+    <property name="tieiban" type="string">
+      <column length="35" name="tie_iban">
+        <comment>code iban</comment>
+      </column>
+    </property>
+    <property name="tieswift" type="string">
+      <column length="20" name="tie_swift">
+        <comment>code swift</comment>
+      </column>
+    </property>
+    <property name="tiecompte0" type="string">
+      <column length="20" name="tie_compte_0">
+        <comment>compte principal</comment>
+      </column>
+    </property>
+    <property name="tiecompte1" type="string">
+      <column length="20" name="tie_compte_1">
+        <comment>compte associe 1  (en attente)</comment>
+      </column>
+    </property>
+    <property name="tiecompte2" type="string">
+      <column length="20" name="tie_compte_2">
+        <comment>compte associe 2 (avance ou acompte)</comment>
+      </column>
+    </property>
+    <property name="tiecompte3" type="string">
+      <column length="20" name="tie_compte_3">
+        <comment>compte asocie 3 (douteux ou litige)</comment>
+      </column>
+    </property>
+    <property name="tiecompte4" type="string">
+      <column length="20" name="tie_compte_4">
+        <comment>compte rattache</comment>
+      </column>
+    </property>
+    <property name="tiecompteSage" type="string">
+      <column length="20" name="tie_compte_sage">
+        <comment>compte SAGE</comment>
+      </column>
+    </property>
+    <property name="tiecompteEtat" type="string">
+      <column length="20" name="tie_compte_etat">
+        <comment>compte etat</comment>
+      </column>
+    </property>
+    <property name="tienoteauto" type="integer">
+      <column default="0" name="tie_note_auto">
+        <comment>note d appreciation automatique /20</comment>
+      </column>
+    </property>
+    <property name="tienoteman" type="string">
+      <column length="20" name="tie_note_man">
+        <comment>appreciation manuelle</comment>
+      </column>
+    </property>
+    <property name="tienouse1" type="string">
+      <column length="20" name="tie_no_use_1">
+        <comment>code identification</comment>
+      </column>
+    </property>
+    <property name="tienouse2" type="string">
+      <column length="20" name="tie_no_use_2">
+        <comment>inutilise 2</comment>
+      </column>
+    </property>
+    <property name="tieepoux" type="string">
+      <column length="50" name="tie_epoux">
+        <comment>nom de l  epouse ou de l  epoux</comment>
+      </column>
+    </property>
+    <property name="tienompere" type="string">
+      <column length="50" name="tie_nom_pere">
+        <comment>nom du pere</comment>
+      </column>
+    </property>
+    <property name="tienommere" type="string">
+      <column length="50" name="tie_nom_mere">
+        <comment>nom de la mere</comment>
+      </column>
+    </property>
+    <property name="tiecinum" type="string">
+      <column length="20" name="tie_ci_num">
+        <comment>N carte d  identite</comment>
+      </column>
+    </property>
+    <property name="tiecidate" type="string">
+      <column length="50" name="tie_ci_date">
+        <comment>date de delivrance de la carte d  identite</comment>
+      </column>
+    </property>
+    <property name="tiecilieu" type="string">
+      <column length="50" name="tie_ci_lieu">
+        <comment>lieu de delivrance de la carte d  identite</comment>
+      </column>
+    </property>
+    <property name="tieprofession" type="string">
+      <column length="50" name="tie_profession">
+        <comment>profession</comment>
+      </column>
+    </property>
+    <property name="tieniveauetude" type="string">
+      <column length="20" name="tie_niveau_etude">
+        <comment>niveau d  etude</comment>
+      </column>
+    </property>
+    <property name="tieemployeur" type="string">
+      <column length="50" name="tie_employeur">
+        <comment>nom de l  employeur</comment>
+      </column>
+    </property>
+    <property name="tieadresseemployeur" type="string">
+      <column length="50" name="tie_adresse_employeur">
+        <comment>adresse de l  employeur</comment>
+      </column>
+    </property>
+    <property name="tiebpemployeur" type="string">
+      <column length="20" name="tie_bp_employeur">
+        <comment>bp de l  employeur</comment>
+      </column>
+    </property>
+    <property name="tievilleemployeur" type="string">
+      <column length="50" name="tie_ville_employeur">
+        <comment>ville de l  employeur</comment>
+      </column>
+    </property>
+    <property name="tietelemployeur" type="string">
+      <column length="50" name="tie_tel_employeur">
+        <comment>telephone de l  employeur</comment>
+      </column>
+    </property>
+    <property name="tienum1" type="string">
+      <column length="20" name="tie_num1"/>
+    </property>
+    <property name="tienum2" type="string">
+      <column length="20" name="tie_num2"/>
+    </property>
+    <property name="tienum3" type="string">
+      <column length="20" name="tie_num3"/>
+    </property>
+    <property name="tienum4" type="string">
+      <column length="20" name="tie_num4"/>
+    </property>
+    <property name="tienum5" type="string">
+      <column length="20" name="tie_num5"/>
+    </property>
+    <property name="tienum6" type="string">
+      <column length="20" name="tie_num6"/>
+    </property>
+    <property name="tienum7" type="string">
+      <column length="20" name="tie_num7"/>
+    </property>
+    <property name="tienum8" type="string">
+      <column length="20" name="tie_num8"/>
+    </property>
+    <property name="tienum9" type="string">
+      <column length="20" name="tie_num9"/>
+    </property>
+    <property name="tienum10" type="string">
+      <column length="20" name="tie_num10"/>
+    </property>
+    <property name="tienum11" type="string">
+      <column length="20" name="tie_num11"/>
+    </property>
+    <property name="tienum12" type="string">
+      <column length="20" name="tie_num12"/>
+    </property>
+    <property name="tienum13" type="string">
+      <column length="20" name="tie_num13"/>
+    </property>
+    <property name="tienum14" type="string">
+      <column length="20" name="tie_num14"/>
+    </property>
+    <property name="tienum15" type="string">
+      <column length="20" name="tie_num15"/>
+    </property>
+    <property name="tienum16" type="string">
+      <column length="20" name="tie_num16"/>
+    </property>
+    <property name="tienum17" type="string">
+      <column length="20" name="tie_num17"/>
+    </property>
+    <property name="tienum18" type="string">
+      <column length="20" name="tie_num18"/>
+    </property>
+    <property name="tienum19" type="string">
+      <column length="20" name="tie_num19"/>
+    </property>
+    <property name="tienum20" type="string">
+      <column length="20" name="tie_num20"/>
+    </property>
+    <property name="tiepdv" type="string">
+      <column length="20" name="tie_pdv"/>
+    </property>
+    <property name="tiesecteur" type="string">
+      <column length="20" name="tie_secteur"/>
+    </property>
+    <property name="tieregion" type="string">
+      <column length="20" name="tie_region"/>
+    </property>
+    <property name="tieassurt1" type="float">
+      <column default="0" name="tie_assurt1"/>
+    </property>
+    <property name="tieassurt2" type="double">
+      <column default="0" name="tie_assurt2"/>
+    </property>
+    <property name="tieassurt3" type="float">
+      <column default="0" name="tie_assurt3"/>
+    </property>
+    <property name="tiebnq1" type="double">
+      <column default="0" name="tie_bnq1"/>
+    </property>
+    <property name="tiebnq2" type="float">
+      <column default="0" name="tie_bnq2"/>
+    </property>
+    <property name="tiebnq3" type="double">
+      <column default="0" name="tie_bnq3"/>
+    </property>
+    <property name="tiebnq4" type="float">
+      <column default="0" name="tie_bnq4"/>
+    </property>
+    <property name="tiebnq5" type="double">
+      <column default="0" name="tie_bnq5"/>
+    </property>
+    <property name="tiebnq6" type="float">
+      <column default="0" name="tie_bnq6"/>
+    </property>
+    <property name="tiebnq7" type="float">
+      <column default="0" name="tie_bnq7"/>
+    </property>
+    <property name="tiePhoto" type="string">
+      <column default="null" length="50" name="tie_photo">
+        <comment>acces photo ou logo</comment>
+      </column>
+    </property>
+    <property name="tieAssujettissement" type="integer">
+      <column default="0" name="tie_assujettissement">
+        <comment>0=sans assujettissement 1=assujeti irpp 2=assujetti is</comment>
+      </column>
+    </property>
+    <property name="tieDeclarationTva" type="integer">
+      <column default="0" name="tie_declaration_tva">
+        <comment>0=sans declaration 1=generation cheque 2=declaration par l agence 3=versement compte proprio</comment>
+      </column>
+    </property>
+    <property name="tiefiscal" type="string">
+      <column length="50" name="tie_fiscal">
+        <comment>zone de declaration fiscale</comment>
+      </column>
+    </property>
+    <property name="tietauxcom" type="float">
+      <column default="0" name="tie_taux_com">
+        <comment>taux de commission pour la facturation</comment>
+      </column>
+    </property>
+    <property name="tiemodecom" type="integer">
+      <column default="0" name="tie_mode_com">
+        <comment>mode de commission 0=rien 1=calul sur brut 2=calul sur net 3=calcul sur net à payer</comment>
+      </column>
+    </property>
+    <property name="tieDteRegement" type="date">
+      <column default="null" name="tie_dte_reglement">
+        <comment>date dernier reglement</comment>
+      </column>
+    </property>
+    <property name="tieDteDocument1" type="timestamp">
+      <column default="null" name="tie_dte_document1">
+        <comment>date dernier devis ou cotation</comment>
+      </column>
+    </property>
+    <property name="tieDteDocument2" type="timestamp">
+      <column default="null" name="tie_dte_document2">
+        <comment>date dernier commande</comment>
+      </column>
+    </property>
+    <property name="tieDteDocument3" type="timestamp">
+      <column default="null" name="tie_dte_document3">
+        <comment>date dernier livraison ou reception</comment>
+      </column>
+    </property>
+    <property name="tieDteDocument4" type="timestamp">
+      <column default="null" name="tie_dte_document4">
+        <comment>date dernier retour</comment>
+      </column>
+    </property>
+    <property name="tieDteDocument5" type="timestamp">
+      <column default="null" name="tie_dte_document5">
+        <comment>date dernier facture</comment>
+      </column>
+    </property>
+    <property name="tieDteDocument6" type="timestamp">
+      <column default="null" name="tie_dte_document6">
+        <comment>date dernier note de debit</comment>
+      </column>
+    </property>
+    <property name="tieDteDocument7" type="timestamp">
+      <column default="null" name="tie_dte_document7">
+        <comment>date dernier avoir</comment>
+      </column>
+    </property>
+    <property name="tiecoefpvmedical" type="float">
+      <column default="0" name="tie_coef_pv_medical">
+        <comment>coefficient de modification des pv en medical (dantec) ou coef taux css (interim)</comment>
+      </column>
+    </property>
+    <property name="tieconventiongele" type="boolean">
+      <column default="false" name="tie_convention_gele">
+        <comment>true si la convention est gelee</comment>
+      </column>
+    </property>
+    <property name="tiemotifgele" type="string">
+      <column length="50" name="tie_motif_gele">
+        <comment>true si la convention est gelee</comment>
+      </column>
+    </property>
+    <property name="tielettregarantie" type="boolean">
+      <column default="false" name="tie_lettre_garantie">
+        <comment>true si les lettres de garanties sont autorisee</comment>
+      </column>
+    </property>
+    <property name="tieidgroupe" type="long">
+      <column default="0" name="tie_id_groupe">
+        <comment>id de la structure du groupe</comment>
+      </column>
+    </property>
+    <property name="tieidold" type="long">
+      <column default="0" name="tie_id_old">
+        <comment>ancien id ou id origine</comment>
+      </column>
+    </property>
+    <property name="tiesitfam" type="integer">
+      <column default="0" name="tie_sit_fam">
+        <comment>situation de famille 0=nr 1=celibataire 2=marie 3=concubin 4=divorce 5=veuf</comment>
+      </column>
+    </property>
+    <property name="tienbcharge" type="integer">
+      <column default="0" name="tie_nb_charge">
+        <comment>nombre de personnes a  charge</comment>
+      </column>
+    </property>
+    <property name="tienbenf" type="integer">
+      <column default="0" name="tie_nb_enf">
+        <comment>nombre d  enfants</comment>
+      </column>
+    </property>
+    <property name="tiehabitation" type="integer">
+      <column default="0" name="tie_habitation">
+        <comment>0=locataire 1=proprietaire 2=famille</comment>
+      </column>
+    </property>
+    <property name="tiedateDemandeOuverture" type="date">
+      <column default="null" name="tie_date_demande_ouverture">
+        <comment>date de demande ouverture de compte</comment>
+      </column>
+    </property>
+    <property name="tiedateDemandeReponse" type="date">
+      <column default="null" name="tie_date_demande_reponse">
+        <comment>date de reponse ouverture de compte</comment>
+      </column>
+    </property>
+    <property name="tiedateDemandeEtat" type="integer">
+      <column default="0" name="tie_date_demande_etat">
+        <comment>etat du compte 0=en cours 1=acceptation 2=refus 3=cloture</comment>
+      </column>
+    </property>
+    <property name="tiedateDemandeType" type="integer">
+      <column default="0" name="tie_date_demande_type">
+        <comment>type de compte 0=urbaine 1=rural</comment>
+      </column>
+    </property>
+    <property name="tiedateDemandeRefus" type="string">
+      <column length="50" name="tie_date_demande_refus">
+        <comment>motif du refus</comment>
+      </column>
+    </property>
+    <property name="tiedateDemandeSignature" type="string">
+      <column length="50" name="tie_date_demande_signature">
+        <comment>signature du compte</comment>
+      </column>
+    </property>
+    <property name="tiepProdExoTva" type="text">
+      <column name="tie_prod_exo_tva">
+        <comment>liste des produit exonere de tva pour le client en cours</comment>
+      </column>
+    </property>
+    <property name="tieX" type="double">
+      <column default="0" name="tie_x">
+        <comment>coordonnees X</comment>
+      </column>
+    </property>
+    <property name="tieY" type="double">
+      <column default="0" name="tie_y">
+        <comment>coordonnees Y</comment>
+      </column>
+    </property>
+    <property name="tiecss" type="integer">
+      <column default="0" name="tie_css">
+        <comment>type de css 0=obligatoire 1=exonere</comment>
+      </column>
+    </property>
+    <property name="tieMontantMini" type="double">
+      <column default="0" name="tie_montant_mini">
+        <comment>montant de facturation minimum (transit)</comment>
+      </column>
+    </property>
+    <property name="tieorigine" type="integer">
+      <column default="0" name="tie_origine">
+        <comment>type de compte 0=local 1=etrancger</comment>
+      </column>
+    </property>
+    <property name="tievehicule" type="integer">
+      <column default="0" name="tie_vehicule">
+        <comment>type de compte 0=sans 1=perso 2=societe</comment>
+      </column>
+    </property>
+    <property name="tiesitbnq" type="integer">
+      <column default="0" name="tie_sit_bnq">
+        <comment>type de compte 0=sans compte 1=compte std 2=micro finance</comment>
+      </column>
+    </property>
+    <property name="tiesitepg" type="integer">
+      <column default="0" name="tie_sit_epg">
+        <comment>type de compte 0=sans epargne 1=placement bnq 2=placement bien immobilier 3=action entreprise</comment>
+      </column>
+    </property>
+    <property name="tierevenu" type="integer">
+      <column default="0" name="tie_revenu">
+        <comment>type de compte 0=sans autre revenu 1=location 2=placement bnq 3=placement action 4=placement crypto 5=activite secondaire</comment>
+      </column>
+    </property>
+    <property name="tieinteret" type="string">
+      <column length="100" name="tie_interet">
+        <comment>centre interet du tier</comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>

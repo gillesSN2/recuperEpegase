@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="DevisEnteteVentes" table="vte_devis_entete">
+    <id column="dvs_id" name="dvsId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="dvsDateCreat" type="timestamp">
+      <column name="dvs_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="dvsDateModif" type="timestamp">
+      <column name="dvs_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="dvsIdCreateur" type="long">
+      <column default="0" length="15" name="dvs_id_createur">
+        <comment>id user createur</comment>
+      </column>
+    </property>
+    <property name="dvsNomCreateur" type="string">
+      <column length="100" name="dvs_nom_createur">
+        <comment>nom du createur</comment>
+      </column>
+    </property>
+    <property name="dvsIdModif" type="long">
+      <column default="0" length="15" name="dvs_id_modif">
+        <comment>id user de modification</comment>
+      </column>
+    </property>
+    <property name="dvsNomModif" type="string">
+      <column length="100" name="dvs_nom_modif">
+        <comment>nom user de modification</comment>
+      </column>
+    </property>
+    <property index="true" name="dvsDate" type="timestamp">
+      <column index="true" name="dvs_date">
+        <comment>date du devis</comment>
+      </column>
+    </property>
+    <property index="true" name="dvsNum" type="string">
+      <column index="true" length="20" name="dvs_num">
+        <comment>numero devis</comment>
+      </column>
+    </property>
+    <property name="dvsNomResponsable" type="string">
+      <column length="100" name="dvs_nom_responsable">
+        <comment>nom du commercial</comment>
+      </column>
+    </property>
+    <property name="dvsNomEquipe" type="string">
+      <column length="100" name="dvs_nom_equipe">
+        <comment>nom equipe</comment>
+      </column>
+    </property>
+    <property name="dvsIdEquipe" type="long">
+      <column default="0" length="15" name="dvs_id_equipe">
+        <comment>id equipe</comment>
+      </column>
+    </property>
+    <property name="dvsIdResponsable" type="long">
+      <column default="0" name="dvs_id_responsable">
+        <comment>id du commercial</comment>
+      </column>
+    </property>
+    <property name="dvsNomCommercial" type="string">
+      <column length="100" name="dvs_nom_commercial">
+        <comment>nom du commercial</comment>
+      </column>
+    </property>
+    <property name="dvsIdCommercial" type="long">
+      <column default="0" length="15" name="dvs_id_commercial">
+        <comment>id du commercial</comment>
+      </column>
+    </property>
+    <property name="dvsNomTiers" type="string">
+      <column length="100" name="dvs_nom_tiers">
+        <comment>nom du client</comment>
+      </column>
+    </property>
+    <property name="dvsCivilTiers" type="string">
+      <column length="20" name="dvs_civil_tiers">
+        <comment>civilite du tiers</comment>
+      </column>
+    </property>
+    <property name="dvsTiersRegroupe" type="string">
+      <column length="50" name="dvs_tiers_regroupe">
+        <comment>regroupement des tiers</comment>
+      </column>
+    </property>
+    <property name="dvsIdContact" type="long">
+      <column default="0" name="dvs_id_contact">
+        <comment>id du contact</comment>
+      </column>
+    </property>
+    <property name="dvsNomContact" type="string">
+      <column length="100" name="dvs_nom_contact">
+        <comment>nom du contact ou destinataire</comment>
+      </column>
+    </property>
+    <property name="dvsCivilContact" type="string">
+      <column length="20" name="dvs_civil_contact">
+        <comment>civilite du contact</comment>
+      </column>
+    </property>
+    <property index="true" name="dvsSerie" type="string">
+      <column index="true" length="4" name="dvs_serie">
+        <comment>serie A, B, C, D ou X</comment>
+      </column>
+    </property>
+    <property name="dvsExoTva" type="integer">
+      <column default="0" length="1" name="dvs_exo_tva">
+        <comment>0=avec tva 1=sans tva </comment>
+      </column>
+    </property>
+    <property name="dvsExoDouane" type="integer">
+      <column default="0" length="1" name="dvs_exo_douane">
+        <comment>0=avec douane 1=sans douane </comment>
+      </column>
+    </property>
+    <property name="dvsSuivi" type="integer">
+      <column default="0" length="1" name="dvs_suivi">
+        <comment>0=suivi standard 1=suivi vip</comment>
+      </column>
+    </property>
+    <property index="true" name="dvsCat" type="string">
+      <column index="true" length="50" name="dvs_cat">
+        <comment>categorie du client</comment>
+      </column>
+    </property>
+    <property name="dvsDevise" type="string">
+      <column length="3" name="dvs_devise">
+        <comment>code devise</comment>
+      </column>
+    </property>
+    <property name="dvsObject" type="string">
+      <column length="100" name="dvs_object">
+        <comment>objet</comment>
+      </column>
+    </property>
+    <property name="dvsObservation" type="string">
+      <column length="100" name="dvs_observation">
+        <comment>observation</comment>
+      </column>
+    </property>
+    <property name="dvsTauxRemise" type="float">
+      <column default="0" name="dvs_taux_remise">
+        <comment>taux remise globale</comment>
+      </column>
+    </property>
+    <property name="dvsTotHt" type="double">
+      <column default="0" name="dvs_tot_ht">
+        <comment>total ht</comment>
+      </column>
+    </property>
+    <property name="dvsTotRemise" type="double">
+      <column default="0" name="dvs_tot_remise">
+        <comment>total remise</comment>
+      </column>
+    </property>
+    <property name="dvsTotRabais" type="double">
+      <column default="0" name="dvs_tot_rabais">
+        <comment>total rabais</comment>
+      </column>
+    </property>
+    <property name="dvsTotTva" type="double">
+      <column default="0" name="dvs_tot_tva">
+        <comment>ttal tva</comment>
+      </column>
+    </property>
+    <property name="dvsTauxTc" type="float">
+      <column default="0" name="dvs_taux_tc">
+        <comment>taux taxe complementaire</comment>
+      </column>
+    </property>
+    <property name="dvsTotTc" type="double">
+      <column default="0" name="dvs_tot_tc">
+        <comment>total taxe complementaire</comment>
+      </column>
+    </property>
+    <property name="dvsTotTtc" type="double">
+      <column default="0" name="dvs_tot_ttc">
+        <comment>total ttc</comment>
+      </column>
+    </property>
+    <property name="dvsTotReglement" type="double">
+      <column default="0" name="dvs_tot_reglement">
+        <comment>total reglement</comment>
+      </column>
+    </property>
+    <property name="dvsSolde" type="integer">
+      <column default="0" length="1" name="dvs_solde">
+        <comment>0=non solde 1=solde</comment>
+      </column>
+    </property>
+    <property name="dvsBanque" type="string">
+      <column length="100" name="dvs_banque">
+        <comment>nom de la banque + numero de compte</comment>
+      </column>
+    </property>
+    <property index="true" name="dvsTypeReg" type="integer">
+      <column default="0" index="true" name="dvs_type_reg">
+        <comment>0=paiement comptant 1=terme date de facture 2=terme fin de mois 3=arrivee/paye 4=bon encaissement 5=demande credit</comment>
+      </column>
+    </property>
+    <property name="dvsModeReg" type="string">
+      <column length="50" name="dvs_mode_reg">
+        <comment>mode de reglement xml</comment>
+      </column>
+    </property>
+    <property name="dvsEcheanceReliquat" type="date">
+      <column default="null" name="dvs_echeance_reliquat">
+        <comment>date echeance reliquat si type reg = 5</comment>
+      </column>
+    </property>
+    <property name="dvsMotifRejetCredit" type="string">
+      <column length="50" name="dvs_motif_rejet_credit">
+        <comment>motif du rejet accord du credit </comment>
+      </column>
+    </property>
+    <property name="dvsNbJourReg" type="integer">
+      <column default="0" length="3" name="dvs_nb_jour_reg">
+        <comment>nombre de jour </comment>
+      </column>
+    </property>
+    <property name="dvsArrondiReg" type="integer">
+      <column default="0" length="3" name="dvs_arrondi_reg">
+        <comment>nombre de jour arrondi</comment>
+      </column>
+    </property>
+    <property name="dvsConditionReg" type="string">
+      <column length="100" name="dvs_condition_reg">
+        <comment>condition de reglement</comment>
+      </column>
+    </property>
+    <property name="dvsDateEcheReg" type="date">
+      <column name="dvs_date_eche_reg">
+        <comment>date echeance de reglement</comment>
+      </column>
+    </property>
+    <property name="dvsJournalReg" type="string">
+      <column length="20" name="dvs_journal_reg">
+        <comment>code journal des reglements</comment>
+      </column>
+    </property>
+    <property name="dvsContener" type="text">
+      <column name="dvs_contener">
+        <comment>numero contener</comment>
+      </column>
+    </property>
+    <property name="dvsActivite" type="text">
+      <column name="dvs_activite">
+        <comment>code activite</comment>
+      </column>
+    </property>
+    <property name="dvsSite" type="string">
+      <column length="121" name="dvs_site">
+        <comment>code site</comment>
+      </column>
+    </property>
+    <property name="dvsDepartement" type="string">
+      <column length="121" name="dvs_departement">
+        <comment>code departement</comment>
+      </column>
+    </property>
+    <property name="dvsService" type="string">
+      <column length="121" name="dvs_service">
+        <comment>code service</comment>
+      </column>
+    </property>
+    <property name="dvsRegion" type="string">
+      <column length="121" name="dvs_region">
+        <comment>code region</comment>
+      </column>
+    </property>
+    <property name="dvsSecteur" type="string">
+      <column length="121" name="dvs_secteur">
+        <comment>code secteur</comment>
+      </column>
+    </property>
+    <property name="dvsPdv" type="string">
+      <column length="121" name="dvs_pdv">
+        <comment>code point de vente</comment>
+      </column>
+    </property>
+    <property name="dvsAnal2" type="string">
+      <column length="121" name="dvs_anal2">
+        <comment>code analytique 2 (parc)</comment>
+      </column>
+    </property>
+    <property name="dvsAnal4" type="string">
+      <column length="121" name="dvs_anal4">
+        <comment>code analytique 4 (dossier)</comment>
+      </column>
+    </property>
+    <property name="dvsAffaire" type="string">
+      <column length="20" name="dvs_affaire">
+        <comment>code affaire</comment>
+      </column>
+    </property>
+    <property name="dvsInfo1" type="string">
+      <column length="100" name="dvs_info1">
+        <comment>info 1</comment>
+      </column>
+    </property>
+    <property name="dvsInfo2" type="string">
+      <column length="100" name="dvs_info2">
+        <comment>info 2</comment>
+      </column>
+    </property>
+    <property name="dvsInfo3" type="string">
+      <column length="100" name="dvs_info3">
+        <comment>info 3</comment>
+      </column>
+    </property>
+    <property name="dvsInfo4" type="string">
+      <column length="100" name="dvs_info4">
+        <comment>info 4</comment>
+      </column>
+    </property>
+    <property name="dvsInfo5" type="string">
+      <column length="100" name="dvs_info5">
+        <comment>info 5</comment>
+      </column>
+    </property>
+    <property name="dvsInfo6" type="string">
+      <column length="100" name="dvs_info6">
+        <comment>info 6</comment>
+      </column>
+    </property>
+    <property name="dvsInfo7" type="string">
+      <column length="100" name="dvs_info7">
+        <comment>info 7</comment>
+      </column>
+    </property>
+    <property name="dvsInfo8" type="string">
+      <column length="100" name="dvs_info8">
+        <comment>info 8</comment>
+      </column>
+    </property>
+    <property name="dvsInfo9" type="string">
+      <column length="100" name="dvs_info9">
+        <comment>info 9</comment>
+      </column>
+    </property>
+    <property name="dvsInfo10" type="string">
+      <column length="100" name="dvs_info10">
+        <comment>info 10</comment>
+      </column>
+    </property>
+    <property name="dvsFormule1" type="string">
+      <column length="100" name="dvs_formule1">
+        <comment>code formule 1</comment>
+      </column>
+    </property>
+    <property name="dvsFormule2" type="string">
+      <column length="250" name="dvs_formule2">
+        <comment>code formule 2</comment>
+      </column>
+    </property>
+    <property name="dvsAnnexe1" type="string">
+      <column length="50" name="dvs_annexe1">
+        <comment>nom jasper du modele annexe 1</comment>
+      </column>
+    </property>
+    <property name="dvsAnnexe2" type="string">
+      <column length="50" name="dvs_annexe2">
+        <comment>nom jasper du modele annexe 2</comment>
+      </column>
+    </property>
+    <property name="dvsContrat" type="string">
+      <column length="20" name="dvs_contrat">
+        <comment>code contrat</comment>
+      </column>
+    </property>
+    <property name="dvsIncoterm" type="string">
+      <column length="20" name="dvs_incoterm">
+        <comment>code incoterm</comment>
+      </column>
+    </property>
+    <property name="dvsLieuLivraison" type="string">
+      <column length="100" name="dvs_lieu_livraison">
+        <comment>lieu de livraison</comment>
+      </column>
+    </property>
+    <property name="dvsDateLivraison" type="date">
+      <column name="dvs_date_livraison">
+        <comment>date de livraison</comment>
+      </column>
+    </property>
+    <property name="dvsDelaisLivraison" type="string">
+      <column length="20" name="dvs_delais_livraison">
+        <comment>delais sur la livraison</comment>
+      </column>
+    </property>
+    <property name="dvsInfoLivraison" type="string">
+      <column length="100" name="dvs_info_livraison">
+        <comment>info sur la livraison</comment>
+      </column>
+    </property>
+    <property name="dvsDateImp" type="timestamp">
+      <column name="dvs_date_imp">
+        <comment>date impression</comment>
+      </column>
+    </property>
+    <property name="dvsModeleImp" type="string">
+      <column length="50" name="dvs_modele_imp">
+        <comment>nom jasper du modele</comment>
+      </column>
+    </property>
+    <property name="dvsGarde" type="string">
+      <column length="50" name="dvs_garde">
+        <comment>nom jasper du modele page de garde</comment>
+      </column>
+    </property>
+    <property name="dvsEtatVal" type="integer">
+      <column default="0" length="1" name="dvs_etat_val">
+        <comment>0=sans validation 1=avec validation</comment>
+      </column>
+    </property>
+    <property name="dvsGele" type="integer">
+      <column default="0" length="1" name="dvs_gele">
+        <comment>0=non gele 1=gele</comment>
+      </column>
+    </property>
+    <property index="true" name="dvsEtat" type="integer">
+      <column default="0" index="true" length="1" name="dvs_etat">
+        <comment>0=En cours 1=valide 2=gele 3=annule 4=transforme partiel 5=transforme total 6=mise en attente</comment>
+      </column>
+    </property>
+    <property name="dvsDateValidite" type="date">
+      <column name="dvs_date_validite">
+        <comment>date de validite</comment>
+      </column>
+    </property>
+    <property name="dvsDateRelance" type="date">
+      <column name="dvs_date_relance">
+        <comment>date de relance</comment>
+      </column>
+    </property>
+    <property name="dvsDateValide" type="timestamp">
+      <column name="dvs_date_valide">
+        <comment>date de validation</comment>
+      </column>
+    </property>
+    <property name="dvsPosSignature" type="integer">
+      <column default="0" length="1" name="dvs_pos_signature">
+        <comment>nb de signature ayant statue</comment>
+      </column>
+    </property>
+    <property name="dvsDateTransforme" type="timestamp">
+      <column name="dvs_date_transforme">
+        <comment>date de transformation</comment>
+      </column>
+    </property>
+    <property name="dvsTypeTransforme" type="integer">
+      <column default="0" name="dvs_type_transforme">
+        <comment>type de transformation</comment>
+      </column>
+    </property>
+    <property name="dvsDateAnnule" type="timestamp">
+      <column name="dvs_date_annule">
+        <comment>date annulation</comment>
+      </column>
+    </property>
+    <property name="dvsMotifAnnule" type="string">
+      <column length="100" name="dvs_motif_annule">
+        <comment>motif annulation</comment>
+      </column>
+    </property>
+    <property name="dvsFactorNom" type="string">
+      <column length="100" name="dvs_factor_nom">
+        <comment>nom du factor</comment>
+      </column>
+    </property>
+    <property name="dvsFactorId" type="long">
+      <column default="0" name="dvs_factor_id">
+        <comment>id du factor</comment>
+      </column>
+    </property>
+    <property name="dvsFactorEtat" type="integer">
+      <column default="0" name="dvs_factor_etat">
+        <comment>0=en cours 1=accepter 2=refuser</comment>
+      </column>
+    </property>
+    <property name="dvsBeneficiaire" type="string">
+      <column length="50" name="dvs_beneficiaire">
+        <comment>beneficiaires</comment>
+      </column>
+    </property>
+    <property name="dvsAccord" type="string">
+      <column length="50" name="dvs_accord">
+        <comment>numero accord</comment>
+      </column>
+    </property>
+    <property name="dvsRegime" type="string">
+      <column length="50" name="dvs_regime">
+        <comment>regime</comment>
+      </column>
+    </property>
+    <property name="dvsBureau" type="string">
+      <column length="50" name="dvs_bureau">
+        <comment>bureau</comment>
+      </column>
+    </property>
+    <property name="dvsPays" type="string">
+      <column length="50" name="dvs_pays">
+        <comment>pays origine</comment>
+      </column>
+    </property>
+    <property name="dvsUtilisation" type="string">
+      <column length="50" name="dvs_utilisation">
+        <comment>utilisation</comment>
+      </column>
+    </property>
+    <property name="dvsFournisseur" type="string">
+      <column length="50" name="dvs_fournisseur">
+        <comment>fournisseur</comment>
+      </column>
+    </property>
+    <property name="dvsDiversTiers" type="integer">
+      <column default="0" name="dvs_divers_tiers">
+        <comment>0=normal 99= divers</comment>
+      </column>
+    </property>
+    <property name="dvsDiversNom" type="string">
+      <column length="100" name="dvs_divers_nom">
+        <comment>nom du tiers divers</comment>
+      </column>
+    </property>
+    <property name="dvsDiversAdresse" type="string">
+      <column length="100" name="dvs_divers_adresse">
+        <comment>adresse du tiers divers</comment>
+      </column>
+    </property>
+    <property name="dvsDiversVille" type="string">
+      <column length="50" name="dvs_divers_ville">
+        <comment>ville du tiers divers</comment>
+      </column>
+    </property>
+    <property name="dvsDiversTel" type="string">
+      <column length="50" name="dvs_divers_tel">
+        <comment>telephone du tiers divers</comment>
+      </column>
+    </property>
+    <property name="dvsDiversMail" type="string">
+      <column length="100" name="dvs_divers_mail">
+        <comment>mail du tiers divers</comment>
+      </column>
+    </property>
+    <property name="dvsSource" type="string">
+      <column length="50" name="dvs_source">
+        <comment>source du document</comment>
+      </column>
+    </property>
+    <property name="dvsModeConclusion" type="integer">
+      <column default="0" length="1" name="dvs_mode_conclusion">
+        <comment>0=accepte 1=refus atre concurrent meme produit 2=refus autre oncurrent meilleur produit 3=annulation devis 4=autre refus</comment>
+      </column>
+    </property>
+    <property name="dvsConclusion" type="string">
+      <column length="50" name="dvs_conclusion">
+        <comment>conclusion suivi</comment>
+      </column>
+    </property>
+    <property name="dvsDateRelance1" type="date">
+      <column default="null" name="dvs_date_relance1">
+        <comment>date de relance 1</comment>
+      </column>
+    </property>
+    <property name="dvsConclusion1" type="string">
+      <column length="50" name="dvs_conclusion1">
+        <comment>conclusion1 suivi</comment>
+      </column>
+    </property>
+    <property name="dvsDateARelance1" type="date">
+      <column default="null" name="dvs_date_a_relance1">
+        <comment>date a relancer 1</comment>
+      </column>
+    </property>
+    <property name="dvsUserRelance1" type="long">
+      <column default="0" name="dvs_user_relance1">
+        <comment>date de relancer 1</comment>
+      </column>
+    </property>
+    <property name="dvsDateRelance2" type="date">
+      <column default="null" name="dvs_date_relance2">
+        <comment>date de relance 2</comment>
+      </column>
+    </property>
+    <property name="dvsConclusion2" type="string">
+      <column length="50" name="dvs_conclusion2">
+        <comment>conclusion2 suivi</comment>
+      </column>
+    </property>
+    <property name="dvsDateARelance2" type="date">
+      <column default="null" name="dvs_date_a_relance2">
+        <comment>date a relancer 2</comment>
+      </column>
+    </property>
+    <property name="dvsUserRelance2" type="long">
+      <column default="0" name="dvs_user_relance2">
+        <comment>date de relancer 2</comment>
+      </column>
+    </property>
+    <property name="dvsDateRelance3" type="date">
+      <column default="null" name="dvs_date_relance3">
+        <comment>date de relance 3</comment>
+      </column>
+    </property>
+    <property name="dvsConclusion3" type="string">
+      <column length="50" name="dvs_conclusion3">
+        <comment>conclusion3 suivi</comment>
+      </column>
+    </property>
+    <property name="dvsDateARelance3" type="date">
+      <column default="null" name="dvs_date_a_relance3">
+        <comment>date a relancer 3</comment>
+      </column>
+    </property>
+    <property name="dvsUserRelance3" type="long">
+      <column default="0" name="dvs_user_relance3">
+        <comment>date de relancer 3</comment>
+      </column>
+    </property>
+    <property name="dvsPoids" type="float">
+      <column default="0" name="dvs_poids">
+        <comment>poids</comment>
+      </column>
+    </property>
+    <property index="true" name="dvsDateEnvoie" type="timestamp">
+      <column index="true" name="dvs_date_envoie">
+        <comment>date envoie au client du devis</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ExercicesVentes" column="exevte_id" lazy="false" name="exerciceventes" not-null="true"/>
+    <many-to-one class="com.epegase.systeme.classe.Tiers" column="tie_id" lazy="false" name="tiers" not-null="true"/>
+    <many-to-one class="com.epegase.systeme.classe.Users" column="usr_id" lazy="false" name="users" not-null="false"/>
+  </class>
+</hibernate-mapping>

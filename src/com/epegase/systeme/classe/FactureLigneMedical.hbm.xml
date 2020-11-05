@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="FactureLigneMedical" table="med_facture_ligne">
+    <id column="faclig_id" name="facligId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="facligOrdre" type="integer">
+      <column default="0" name="faclig_ordre">
+        <comment>ordre des lignes</comment>
+      </column>
+    </property>
+    <property name="facligCode" type="string">
+      <column length="20" name="faclig_code">
+        <comment>code produit</comment>
+      </column>
+    </property>
+    <property name="facligFamille" type="string">
+      <column length="20" name="faclig_famille">
+        <comment>code famille vente</comment>
+      </column>
+    </property>
+    <property name="facligLibelleFamille" type="string">
+      <column length="100" name="faclig_libelle_famille">
+        <comment>libelle famille vente</comment>
+      </column>
+    </property>
+    <property name="facligLibelle" type="text">
+      <column length="500" name="faclig_libelle">
+        <comment>libelle produit</comment>
+      </column>
+    </property>
+    <property name="facligReference" type="string">
+      <column length="20" name="faclig_reference">
+        <comment>reference produit</comment>
+      </column>
+    </property>
+    <property name="facligTaxe" type="string">
+      <column length="20" name="faclig_taxe">
+        <comment>code taxe</comment>
+      </column>
+    </property>
+    <property name="facligTauxTaxe" type="float">
+      <column default="0" name="faclig_taux_taxe">
+        <comment>taux de taxe</comment>
+      </column>
+    </property>
+    <property name="facligPecCnamgs" type="float">
+      <column default="0" name="faclig_pec_cnamgs">
+        <comment>taux de la cnamgs</comment>
+      </column>
+    </property>
+    <property name="facligQte" type="float">
+      <column default="0" name="faclig_qte">
+        <comment>quantite</comment>
+      </column>
+    </property>
+    <property name="facligDevise" type="string">
+      <column length="3" name="faclig_devise">
+        <comment>code devise</comment>
+      </column>
+    </property>
+    <property name="facligPu" type="double">
+      <column default="0" name="faclig_pu">
+        <comment>prix unitaire</comment>
+      </column>
+    </property>
+    <property name="facligTauxRemise" type="float">
+      <column default="0" name="faclig_taux_remise">
+        <comment>taux de remise</comment>
+      </column>
+    </property>
+    <property name="facligRabais" type="double">
+      <column default="0" name="faclig_rabais">
+        <comment>valeur du rabais</comment>
+      </column>
+    </property>
+    <property name="facligPuRem" type="double">
+      <column default="0" name="faclig_pu_rem">
+        <comment>prix unitaire apres remise</comment>
+      </column>
+    </property>
+    <property name="facligPuTtc" type="double">
+      <column default="0" name="faclig_pu_ttc">
+        <comment>prix unitaire TTC avant remise</comment>
+      </column>
+    </property>
+    <property name="facligPuRemTtc" type="double">
+      <column default="0" name="faclig_pu_rem_ttc">
+        <comment>prix unitaire TTC apres remise</comment>
+      </column>
+    </property>
+    <property name="facligPt" type="double">
+      <column default="0" name="faclig_pt">
+        <comment>prix total ht</comment>
+      </column>
+    </property>
+    <property name="facligTva" type="double">
+      <column default="0" name="faclig_tva">
+        <comment>total taxe</comment>
+      </column>
+    </property>
+    <property name="facligTc" type="double">
+      <column default="0" name="faclig_tc">
+        <comment>total taxe complementaire</comment>
+      </column>
+    </property>
+    <property name="facligTtc" type="double">
+      <column default="0" name="faclig_ttc">
+        <comment>total ttc</comment>
+      </column>
+    </property>
+    <property name="facligTtcActe" type="double">
+      <column default="0" name="faclig_ttc_acte">
+        <comment>total ttc acte </comment>
+      </column>
+    </property>
+    <property name="facligTotPatient" type="double">
+      <column default="0" name="faclig_tot_patient">
+        <comment>total part patient</comment>
+      </column>
+    </property>
+    <property name="facligTotReglement" type="double">
+      <column default="0" name="faclig_tot_reglement">
+        <comment>total reglement</comment>
+      </column>
+    </property>
+    <property name="facligDossier" type="string">
+      <column length="20" name="faclig_dossier">
+        <comment>dossier du malade</comment>
+      </column>
+    </property>
+    <property name="facligDossierAssure" type="string">
+      <column length="20" name="faclig_dossier_assure">
+        <comment>dossier assure principal</comment>
+      </column>
+    </property>
+    <property name="facligNom" type="string">
+      <column length="100" name="faclig_nom">
+        <comment>nom du malade</comment>
+      </column>
+    </property>
+    <property name="facligPrenom" type="string">
+      <column length="50" name="faclig_prenom">
+        <comment>prenom du malade</comment>
+      </column>
+    </property>
+    <property name="facligCivilite" type="string">
+      <column length="20" name="faclig_civilite">
+        <comment>civilite du malade</comment>
+      </column>
+    </property>
+    <property name="facligQualite" type="string">
+      <column length="20" name="faclig_qualite">
+        <comment>filiation du malade avec l assure</comment>
+      </column>
+    </property>
+    <property name="facligNumFeuille" type="string">
+      <column length="20" name="faclig_num_feuille">
+        <comment>numero feuille de soins</comment>
+      </column>
+    </property>
+    <property name="facligNumBc" type="string">
+      <column length="20" name="faclig_num_bc">
+        <comment>numero de bc</comment>
+      </column>
+    </property>
+    <property name="facligMatricule" type="string">
+      <column length="20" name="faclig_matricule">
+        <comment>matricule assure</comment>
+      </column>
+    </property>
+    <property name="facligMatriculeAssure" type="string">
+      <column length="20" name="faclig_matricule_assure">
+        <comment>matricule assure principal</comment>
+      </column>
+    </property>
+    <property name="facligNomAssure" type="string">
+      <column length="100" name="faclig_nom_assure">
+        <comment>nom assure</comment>
+      </column>
+    </property>
+    <property name="facligNumConsultation" type="string">
+      <column length="20" name="faclig_num_consultation">
+        <comment>numero de consultation</comment>
+      </column>
+    </property>
+    <property name="facligIdConsultation" type="long">
+      <column default="0" name="faclig_id_consultation">
+        <comment>id de consultation</comment>
+      </column>
+    </property>
+    <property name="facligNumLaboratoire" type="string">
+      <column length="20" name="faclig_num_laboratoire">
+        <comment>numero de laboratoire</comment>
+      </column>
+    </property>
+    <property name="facligIdLaboratoire" type="long">
+      <column default="0" name="faclig_id_laboratoire">
+        <comment>id de laboratoire</comment>
+      </column>
+    </property>
+    <property name="facligNumPharmacie" type="string">
+      <column length="20" name="faclig_num_pharmacie">
+        <comment>numero de pharmacie</comment>
+      </column>
+    </property>
+    <property name="facligIdPharmacie" type="long">
+      <column default="0" name="faclig_id_pharmacie">
+        <comment>id de pharmacie</comment>
+      </column>
+    </property>
+    <property name="facligNumHospitalisation" type="string">
+      <column length="20" name="faclig_num_hospitalisation">
+        <comment>numero hospitalisation</comment>
+      </column>
+    </property>
+    <property name="facligIdHospitalisationSejour" type="long">
+      <column default="0" name="faclig_id_hospitalisation_sejour">
+        <comment>id hospitalisation sejour</comment>
+      </column>
+    </property>
+    <property name="facligIdHospitalisationActe" type="long">
+      <column default="0" name="faclig_id_hospitalisation_acte">
+        <comment>id hospitalisation acte</comment>
+      </column>
+    </property>
+    <property name="facligIdHospitalisationLabo" type="long">
+      <column default="0" name="faclig_id_hospitalisation_labo">
+        <comment>id hospitalisation labo</comment>
+      </column>
+    </property>
+    <property name="facligIdHospitalisationMedic" type="long">
+      <column default="0" name="faclig_id_hospitalisation_medic">
+        <comment>id hospitalisation medic</comment>
+      </column>
+    </property>
+    <property name="facligIdHospitalisationPrest" type="long">
+      <column default="0" name="faclig_id_hospitalisation_prest">
+        <comment>id hospitalisation sejour</comment>
+      </column>
+    </property>
+    <property name="facligDateVisite" type="date">
+      <column default="null" name="faclig_date_visite">
+        <comment>date consultation ou hospitalisation</comment>
+      </column>
+    </property>
+    <property name="facligDateSortie" type="date">
+      <column default="null" name="faclig_date_sortie">
+        <comment>date de sortie</comment>
+      </column>
+    </property>
+    <property name="facligService" type="string">
+      <column length="121" name="faclig_service">
+        <comment>service</comment>
+      </column>
+    </property>
+    <property name="facligMontantPaye" type="double">
+      <column default="0" name="faclig_montant_paye">
+        <comment>montant paye</comment>
+      </column>
+    </property>
+    <property name="facligOrigine" type="integer">
+      <column default="0" name="faclig_origine">
+        <comment>0=consultation 1=pharmacie 2=laboratoire 3=sejour 4=actes 5=laboratoire 6=medicament 7=prestation</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.FactureEnteteMedical" column="fac_id" lazy="false" name="factureEnteteMedical" not-null="true"/>
+  </class>
+</hibernate-mapping>

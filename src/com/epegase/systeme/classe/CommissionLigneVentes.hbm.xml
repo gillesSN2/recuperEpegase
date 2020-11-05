@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="CommissionLigneVentes" table="vte_commission_ligne">
+    <id column="comlig_id" name="comligId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="comligDate" type="timestamp">
+      <column name="comlig_date">
+        <comment>date du document</comment>
+      </column>
+    </property>
+    <property name="comligDateLastReg" type="timestamp">
+      <column name="comlig_date_last_reg">
+        <comment>date du dernier reglement</comment>
+      </column>
+    </property>
+    <property name="comligNbJour" type="long">
+      <column name="comlig_nb_jour">
+        <comment>nb jour</comment>
+      </column>
+    </property>
+    <property name="comligNum" type="string">
+      <column length="20" name="comlig_num">
+        <comment>numero document</comment>
+      </column>
+    </property>
+    <property name="comligNature" type="integer">
+      <column default="0" name="comlig_nature">
+        <comment>nature document</comment>
+      </column>
+    </property>
+    <property name="comligNomResponsable" type="string">
+      <column length="100" name="comlig_nom_responsable">
+        <comment>nom du commercial</comment>
+      </column>
+    </property>
+    <property name="comligIdResponsable" type="long">
+      <column default="0" name="comlig_id_responsable">
+        <comment>id du commercial</comment>
+      </column>
+    </property>
+    <property name="comligNomCommercial" type="string">
+      <column length="100" name="comlig_nom_commercial">
+        <comment>nom du commercial</comment>
+      </column>
+    </property>
+    <property name="comligIdCommercial" type="long">
+      <column default="0" length="15" name="comlig_id_commercial">
+        <comment>id du commercial</comment>
+      </column>
+    </property>
+    <property name="comligNomEquipe" type="string">
+      <column length="100" name="comlig_nom_equipe">
+        <comment>nom du equipe</comment>
+      </column>
+    </property>
+    <property name="comligIdEquipe" type="long">
+      <column default="0" length="15" name="comlig_id_equipe">
+        <comment>id du equipe</comment>
+      </column>
+    </property>
+    <property name="comligNomTiers" type="string">
+      <column length="100" name="comlig_nom_tiers">
+        <comment>nom du client</comment>
+      </column>
+    </property>
+    <property name="comligIdTiers" type="long">
+      <column default="0" length="15" name="comlig_id_tiers">
+        <comment>id du tiers</comment>
+      </column>
+    </property>
+    <property name="comligCivilTiers" type="string">
+      <column length="20" name="comlig_civil_tiers">
+        <comment>civilite du tiers</comment>
+      </column>
+    </property>
+    <property name="comligIdContact" type="long">
+      <column default="0" name="comlig_id_contact">
+        <comment>id du contact</comment>
+      </column>
+    </property>
+    <property name="comligNomContact" type="string">
+      <column length="100" name="comlig_nom_contact">
+        <comment>nom du contact </comment>
+      </column>
+    </property>
+    <property name="comligCivilContact" type="string">
+      <column length="20" name="comlig_civil_contact">
+        <comment>civilite du contact</comment>
+      </column>
+    </property>
+    <property name="comligSerie" type="string">
+      <column length="4" name="comlig_serie">
+        <comment>serie </comment>
+      </column>
+    </property>
+    <property name="comligCat" type="string">
+      <column length="50" name="comlig_cat">
+        <comment>categorie du client</comment>
+      </column>
+    </property>
+    <property name="comligDevise" type="string">
+      <column length="3" name="comlig_devise">
+        <comment>code devise</comment>
+      </column>
+    </property>
+    <property name="comligIdligne" type="long">
+      <column default="0" name="comlig_id_ligne">
+        <comment>id ligne de document</comment>
+      </column>
+    </property>
+    <property name="comligCode" type="string">
+      <column length="20" name="comlig_code">
+        <comment>code produit</comment>
+      </column>
+    </property>
+    <property name="comligService" type="string">
+      <column length="100" name="comlig_service">
+        <comment>libelle service</comment>
+      </column>
+    </property>
+    <property name="comligLibelle" type="string">
+      <column length="100" name="comlig_libelle">
+        <comment>libelle produit</comment>
+      </column>
+    </property>
+    <property name="comligQte" type="float">
+      <column default="0" name="comlig_qte">
+        <comment>total qte produit</comment>
+      </column>
+    </property>
+    <property name="comligTotHt" type="double">
+      <column default="0" name="comlig_tot_ht">
+        <comment>total ht</comment>
+      </column>
+    </property>
+    <property name="comligComUnite" type="double">
+      <column default="0" name="comlig_com_unite">
+        <comment>commission unitaire</comment>
+      </column>
+    </property>
+    <property name="comligComPourcentage" type="float">
+      <column default="0" name="comlig_com_pourcentage">
+        <comment>% de commission</comment>
+      </column>
+    </property>
+    <property name="comligTotCommission" type="double">
+      <column default="0" name="comlig_tot_commission">
+        <comment>total commission theorique</comment>
+      </column>
+    </property>
+    <property name="comligTotCommissionReel" type="double">
+      <column default="0" name="comlig_tot_commission_reel">
+        <comment>total commission reel (si medical uniquement si facture payee par tiers)</comment>
+      </column>
+    </property>
+    <property name="comligPayePatient" type="double">
+      <column default="0" name="comlig_paye_patient">
+        <comment>montant paye par le patient</comment>
+      </column>
+    </property>
+    <property name="comligPayeTier" type="double">
+      <column default="0" name="comlig_paye_tier">
+        <comment>montant paye par le tier</comment>
+      </column>
+    </property>
+    <property name="comligTotVerse" type="double">
+      <column default="0" name="comlig_tot_verse">
+        <comment>total commission verse</comment>
+      </column>
+    </property>
+    <property name="comligIdRecu" type="long">
+      <column default="0" name="comlig_id_recu">
+        <comment>id du reglement</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.CommissionEnteteVentes" column="com_id" lazy="false" name="commissionEnteteVentes" not-null="true"/>
+  </class>
+</hibernate-mapping>

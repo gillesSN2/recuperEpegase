@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="NoteDebitEnteteVentes" table="vte_note_debit_entete">
+    <id column="ndb_id" name="ndbId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="ndbDateCreat" type="timestamp">
+      <column name="ndb_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="ndbDateModif" type="timestamp">
+      <column name="ndb_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="ndbIdCreateur" type="long">
+      <column default="0" length="15" name="ndb_id_createur">
+        <comment>id user createur</comment>
+      </column>
+    </property>
+    <property name="ndbNomCreateur" type="string">
+      <column length="100" name="ndb_nom_createur">
+        <comment>nom du createur</comment>
+      </column>
+    </property>
+    <property name="ndbIdModif" type="long">
+      <column default="0" length="15" name="ndb_id_modif">
+        <comment>id user de modification</comment>
+      </column>
+    </property>
+    <property name="ndbNomModif" type="string">
+      <column length="100" name="ndb_nom_modif">
+        <comment>nom user de modification</comment>
+      </column>
+    </property>
+    <property name="ndbDate" type="timestamp">
+      <column name="ndb_date">
+        <comment>date du devis</comment>
+      </column>
+    </property>
+    <property name="ndbNum" type="string">
+      <column length="20" name="ndb_num">
+        <comment>numero devis</comment>
+      </column>
+    </property>
+    <property name="ndbNomResponsable" type="string">
+      <column length="100" name="ndb_nom_responsable">
+        <comment>nom du commercial</comment>
+      </column>
+    </property>
+    <property name="ndbNomEquipe" type="string">
+      <column length="100" name="ndb_nom_equipe">
+        <comment>nom equipe</comment>
+      </column>
+    </property>
+    <property name="ndbIdEquipe" type="long">
+      <column default="0" length="15" name="ndb_id_equipe">
+        <comment>id equipe</comment>
+      </column>
+    </property>
+    <property name="ndbIdResponsable" type="long">
+      <column default="0" name="ndb_id_responsable">
+        <comment>id du commercial</comment>
+      </column>
+    </property>
+    <property name="ndbNomCommercial" type="string">
+      <column length="100" name="ndb_nom_commercial">
+        <comment>nom du commercial</comment>
+      </column>
+    </property>
+    <property name="ndbIdCommercial" type="long">
+      <column default="0" length="15" name="ndb_id_commercial">
+        <comment>id du commercial</comment>
+      </column>
+    </property>
+    <property name="ndbNomTiers" type="string">
+      <column length="100" name="ndb_nom_tiers">
+        <comment>nom du client</comment>
+      </column>
+    </property>
+    <property name="ndbCivilTiers" type="string">
+      <column length="20" name="ndb_civil_tiers">
+        <comment>civilite du tiers</comment>
+      </column>
+    </property>
+    <property name="ndbTiersRegroupe" type="string">
+      <column length="50" name="ndb_tiers_regroupe">
+        <comment>regroupement des tiers</comment>
+      </column>
+    </property>
+    <property name="ndbIdContact" type="long">
+      <column default="0" name="ndb_id_contact">
+        <comment>id du contact</comment>
+      </column>
+    </property>
+    <property name="ndbNomContact" type="string">
+      <column length="100" name="ndb_nom_contact">
+        <comment>nom du contact </comment>
+      </column>
+    </property>
+    <property name="ndbCivilContact" type="string">
+      <column length="20" name="ndb_civil_contact">
+        <comment>civilite du contact</comment>
+      </column>
+    </property>
+    <property name="ndbSerie" type="string">
+      <column length="4" name="ndb_serie">
+        <comment>serie </comment>
+      </column>
+    </property>
+    <property name="ndbExoTva" type="integer">
+      <column default="0" length="1" name="ndb_exo_tva">
+        <comment>0=avec Tva 1=sans Tva </comment>
+      </column>
+    </property>
+    <property name="ndbExoDouane" type="integer">
+      <column default="0" length="1" name="ndb_exo_douane">
+        <comment>0=avec Douane 1=sans Douane </comment>
+      </column>
+    </property>
+    <property name="ndbCat" type="string">
+      <column length="50" name="ndb_cat">
+        <comment>categorie du client</comment>
+      </column>
+    </property>
+    <property name="ndbDevise" type="string">
+      <column length="3" name="ndb_devise">
+        <comment>code devise</comment>
+      </column>
+    </property>
+    <property name="ndbObject" type="string">
+      <column length="100" name="ndb_object">
+        <comment>objet</comment>
+      </column>
+    </property>
+    <property name="ndbObservation" type="string">
+      <column length="100" name="ndb_observation">
+        <comment>observation</comment>
+      </column>
+    </property>
+    <property name="ndbBudget" type="string">
+      <column length="121" name="ndb_budget">
+        <comment>code budget</comment>
+      </column>
+    </property>
+    <property name="ndbTauxRemise" type="float">
+      <column default="0" name="ndb_taux_remise">
+        <comment>taux remise globale</comment>
+      </column>
+    </property>
+    <property name="ndbTotHt" type="double">
+      <column default="0" name="ndb_tot_ht">
+        <comment>total ht</comment>
+      </column>
+    </property>
+    <property name="ndbTotRemise" type="double">
+      <column default="0" name="ndb_tot_remise">
+        <comment>total remise</comment>
+      </column>
+    </property>
+    <property name="ndbTotRabais" type="double">
+      <column default="0" name="ndb_tot_rabais">
+        <comment>total rabais</comment>
+      </column>
+    </property>
+    <property name="ndbTotTva" type="double">
+      <column default="0" name="ndb_tot_tva">
+        <comment>ttal tva</comment>
+      </column>
+    </property>
+    <property name="ndbTauxTc" type="float">
+      <column default="0" name="ndb_taux_tc">
+        <comment>taux taxe complementaire</comment>
+      </column>
+    </property>
+    <property name="ndbTotTc" type="double">
+      <column default="0" name="ndb_tot_tc">
+        <comment>total taxe complementaire</comment>
+      </column>
+    </property>
+    <property name="ndbTotTtc" type="double">
+      <column default="0" name="ndb_tot_ttc">
+        <comment>total ttc</comment>
+      </column>
+    </property>
+    <property name="ndbTotReglement" type="double">
+      <column default="0" name="ndb_tot_reglement">
+        <comment>total reglement</comment>
+      </column>
+    </property>
+    <property name="ndbTotTimbre" type="double">
+      <column default="0" name="ndb_tot_timbre">
+        <comment>total timbre</comment>
+      </column>
+    </property>
+    <property name="ndbSolde" type="integer">
+      <column default="0" length="1" name="ndb_solde">
+        <comment>0=non solde 1=solde</comment>
+      </column>
+    </property>
+    <property name="ndbBanque" type="string">
+      <column length="100" name="ndb_banque">
+        <comment>nom de la banque + numero de compte</comment>
+      </column>
+    </property>
+    <property name="ndbTypeReg" type="integer">
+      <column default="0" name="ndb_type_reg">
+        <comment>0=paiement comptant 1=terme date de facture 2=terme fin de mois 3=arrivee/paye 4=bon encaissement</comment>
+      </column>
+    </property>
+    <property name="ndbModeReg" type="string">
+      <column length="50" name="ndb_mode_reg">
+        <comment>mode de reglement xml</comment>
+      </column>
+    </property>
+    <property name="ndbEcheanceReliquat" type="date">
+      <column default="null" name="ndb_echeance_reliquat">
+        <comment>date echeance reliquat si type reg = 5</comment>
+      </column>
+    </property>
+    <property name="ndbMotifRejetCredit" type="string">
+      <column length="50" name="ndb_motif_rejet_credit">
+        <comment>motif du rejet accord du credit </comment>
+      </column>
+    </property>
+    <property name="ndbNbJourReg" type="integer">
+      <column default="0" length="3" name="ndb_nb_jour_reg">
+        <comment>nombre de jour </comment>
+      </column>
+    </property>
+    <property name="ndbArrondiReg" type="integer">
+      <column default="0" length="3" name="ndb_arrondi_reg">
+        <comment>nombre de jour arrondi</comment>
+      </column>
+    </property>
+    <property name="ndbConditionReg" type="string">
+      <column length="100" name="ndb_condition_reg">
+        <comment>condition de reglement</comment>
+      </column>
+    </property>
+    <property name="ndbDateEcheReg" type="date">
+      <column name="ndb_date_eche_reg">
+        <comment>date echeance de reglement</comment>
+      </column>
+    </property>
+    <property name="ndbDateLastReg" type="date">
+      <column name="ndb_date_last_reg">
+        <comment>date dernier reglement</comment>
+      </column>
+    </property>
+    <property name="ndbJournalReg" type="string">
+      <column length="20" name="ndb_journal_reg">
+        <comment>code journal des reglements</comment>
+      </column>
+    </property>
+    <property name="ndbContener" type="text">
+      <column name="ndb_contener">
+        <comment>numero contener</comment>
+      </column>
+    </property>
+    <property name="ndbActivite" type="text">
+      <column name="ndb_activite">
+        <comment>code activite</comment>
+      </column>
+    </property>
+    <property name="ndbSite" type="string">
+      <column length="121" name="ndb_site">
+        <comment>code site</comment>
+      </column>
+    </property>
+    <property name="ndbDepartement" type="string">
+      <column length="121" name="ndb_departement">
+        <comment>code departement</comment>
+      </column>
+    </property>
+    <property name="ndbService" type="string">
+      <column length="121" name="ndb_service">
+        <comment>code service</comment>
+      </column>
+    </property>
+    <property name="ndbRegion" type="string">
+      <column length="121" name="ndb_region">
+        <comment>code region</comment>
+      </column>
+    </property>
+    <property name="ndbSecteur" type="string">
+      <column length="121" name="ndb_secteur">
+        <comment>code secteur</comment>
+      </column>
+    </property>
+    <property name="ndbPdv" type="string">
+      <column length="121" name="ndb_pdv">
+        <comment>code point de vente</comment>
+      </column>
+    </property>
+    <property name="ndbAnal2" type="string">
+      <column length="121" name="ndb_anal2">
+        <comment>code analytique 2</comment>
+      </column>
+    </property>
+    <property name="ndbAnal4" type="string">
+      <column length="121" name="ndb_anal4">
+        <comment>code analytique 4</comment>
+      </column>
+    </property>
+    <property name="ndbAffaire" type="string">
+      <column length="20" name="ndb_affaire">
+        <comment>code affaire</comment>
+      </column>
+    </property>
+    <property name="ndbInfo1" type="string">
+      <column length="100" name="ndb_info1">
+        <comment>info 1</comment>
+      </column>
+    </property>
+    <property name="ndbInfo2" type="string">
+      <column length="100" name="ndb_info2">
+        <comment>info 2</comment>
+      </column>
+    </property>
+    <property name="ndbInfo3" type="string">
+      <column length="100" name="ndb_info3">
+        <comment>info 3</comment>
+      </column>
+    </property>
+    <property name="ndbInfo4" type="string">
+      <column length="100" name="ndb_info4">
+        <comment>info 4</comment>
+      </column>
+    </property>
+    <property name="ndbInfo5" type="string">
+      <column length="100" name="ndb_info5">
+        <comment>info 5</comment>
+      </column>
+    </property>
+    <property name="ndbInfo6" type="string">
+      <column length="100" name="ndb_info6">
+        <comment>info 6</comment>
+      </column>
+    </property>
+    <property name="ndbInfo7" type="string">
+      <column length="100" name="ndb_info7">
+        <comment>info 7</comment>
+      </column>
+    </property>
+    <property name="ndbInfo8" type="string">
+      <column length="100" name="ndb_info8">
+        <comment>info 8</comment>
+      </column>
+    </property>
+    <property name="ndbInfo9" type="string">
+      <column length="100" name="ndb_info9">
+        <comment>info 9</comment>
+      </column>
+    </property>
+    <property name="ndbInfo10" type="string">
+      <column length="100" name="ndb_info10">
+        <comment>info 10</comment>
+      </column>
+    </property>
+    <property name="ndbFormule1" type="string">
+      <column length="100" name="ndb_formule1">
+        <comment>code formule 1</comment>
+      </column>
+    </property>
+    <property name="ndbFormule2" type="string">
+      <column length="250" name="ndb_formule2">
+        <comment>code formule 2</comment>
+      </column>
+    </property>
+    <property name="ndbAnnexe1" type="string">
+      <column length="50" name="ndb_annexe1">
+        <comment>nom jasper de anexe 1</comment>
+      </column>
+    </property>
+    <property name="ndbAnnexe2" type="string">
+      <column length="50" name="ndb_annexe2">
+        <comment>nom jasper de anexe 2</comment>
+      </column>
+    </property>
+    <property index="true" name="ndbContrat" type="string">
+      <column index="true" length="20" name="ndb_contrat">
+        <comment>code contrat</comment>
+      </column>
+    </property>
+    <property name="ndbIncoterm" type="string">
+      <column length="20" name="ndb_incoterm">
+        <comment>code incoterm</comment>
+      </column>
+    </property>
+    <property name="ndbLieuLivraison" type="string">
+      <column length="100" name="ndb_lieu_livraison">
+        <comment>lieu de livraison</comment>
+      </column>
+    </property>
+    <property name="ndbDateLivraison" type="date">
+      <column name="ndb_date_livraison">
+        <comment>date de livraison</comment>
+      </column>
+    </property>
+    <property name="ndbInfoLivraison" type="string">
+      <column length="100" name="ndb_info_livraison">
+        <comment>info sur la livraison</comment>
+      </column>
+    </property>
+    <property name="ndbDateImp" type="date">
+      <column name="ndb_date_imp">
+        <comment>date impression</comment>
+      </column>
+    </property>
+    <property name="ndbModeleImp" type="string">
+      <column length="50" name="ndb_modele_imp">
+        <comment>nom jasper du modele</comment>
+      </column>
+    </property>
+    <property name="ndbGarde" type="string">
+      <column length="50" name="ndb_garde">
+        <comment>nom jasper page de garde</comment>
+      </column>
+    </property>
+    <property name="ndbEtatVal" type="integer">
+      <column default="0" length="1" name="ndb_etat_val">
+        <comment>0=sans validation 1=avec validation</comment>
+      </column>
+    </property>
+    <property name="ndbGele" type="integer">
+      <column default="0" length="1" name="ndb_gele">
+        <comment>0=non gele 1=gele</comment>
+      </column>
+    </property>
+    <property name="ndbEtat" type="integer">
+      <column default="0" length="1" name="ndb_etat">
+        <comment>0=En cours 1=valide 2=gele 3=annule 4=transforme</comment>
+      </column>
+    </property>
+    <property name="ndbNumTrf" type="string">
+      <column length="20" name="ndb_num_trf">
+        <comment>numero de transfert</comment>
+      </column>
+    </property>
+    <property name="ndbDateValidite" type="date">
+      <column name="ndb_date_validite">
+        <comment>date de validite</comment>
+      </column>
+    </property>
+    <property name="ndbDateRelance" type="date">
+      <column name="ndb_date_relance">
+        <comment>date de relance</comment>
+      </column>
+    </property>
+    <property name="ndbDateValide" type="date">
+      <column name="ndb_date_valide">
+        <comment>date de validation</comment>
+      </column>
+    </property>
+    <property name="ndbPosSignature" type="integer">
+      <column default="0" length="1" name="ndb_pos_signature">
+        <comment>nb de signature ayant statue</comment>
+      </column>
+    </property>
+    <property name="ndbDateTransforme" type="date">
+      <column name="ndb_date_transforme">
+        <comment>date de transformation</comment>
+      </column>
+    </property>
+    <property name="ndbTypeTransforme" type="integer">
+      <column default="0" name="ndb_type_transforme">
+        <comment>type de transformation</comment>
+      </column>
+    </property>
+    <property name="ndbDateAnnule" type="date">
+      <column name="ndb_date_annule">
+        <comment>date annulation</comment>
+      </column>
+    </property>
+    <property name="ndbMotifAnnule" type="string">
+      <column length="50" name="ndb_motif_annule">
+        <comment>motif annulation</comment>
+      </column>
+    </property>
+    <property name="ndbExo" type="integer">
+      <column default="0" length="1" name="ndb_exo">
+        <comment>0=non exo 1=exoneree</comment>
+      </column>
+    </property>
+    <property name="ndbMotifExo" type="string">
+      <column length="50" name="ndb_motif_exo">
+        <comment>motif exoneration</comment>
+      </column>
+    </property>
+    <property name="ndbNumVisa" type="string">
+      <column length="20" name="ndb_num_visa">
+        <comment>numero du visa</comment>
+      </column>
+    </property>
+    <property name="ndbDateVisa" type="date">
+      <column name="ndb_date_visa">
+        <comment>date du visa</comment>
+      </column>
+    </property>
+    <property name="ndbRangeVisa" type="string">
+      <column length="20" name="ndb_range_visa">
+        <comment>rangement du visa</comment>
+      </column>
+    </property>
+    <property name="ndbDateTransfert" type="date">
+      <column name="ndb_date_transfert">
+        <comment>date transfert en compta</comment>
+      </column>
+    </property>
+    <property name="ndbFactorNom" type="string">
+      <column length="100" name="ndb_factor_nom">
+        <comment>nom du factor</comment>
+      </column>
+    </property>
+    <property name="ndbFactorId" type="long">
+      <column default="0" name="ndb_factor_id">
+        <comment>id du factor</comment>
+      </column>
+    </property>
+    <property name="ndbFactorEtat" type="integer">
+      <column default="0" name="ndb_factor_etat">
+        <comment>0=en cours 1=accepter 2=refuser</comment>
+      </column>
+    </property>
+    <property name="ndbDiversTiers" type="integer">
+      <column default="0" name="ndb_divers_tiers">
+        <comment>0=normal 99= divers</comment>
+      </column>
+    </property>
+    <property name="ndbDiversNom" type="string">
+      <column length="100" name="ndb_divers_nom">
+        <comment>nom du tiers divers</comment>
+      </column>
+    </property>
+    <property name="ndbDiversAdresse" type="string">
+      <column length="100" name="ndb_divers_adresse">
+        <comment>adresse du tiers divers</comment>
+      </column>
+    </property>
+    <property name="ndbDiversVille" type="string">
+      <column length="50" name="ndb_divers_ville">
+        <comment>ville du tiers divers</comment>
+      </column>
+    </property>
+    <property name="ndbDiversTel" type="string">
+      <column length="50" name="ndb_divers_tel">
+        <comment>telephone du tiers divers</comment>
+      </column>
+    </property>
+    <property name="ndbDiversMail" type="string">
+      <column length="100" name="ndb_divers_mail">
+        <comment>mail du tiers divers</comment>
+      </column>
+    </property>
+    <property name="ndbDiversNif" type="string">
+      <column length="20" name="ndb_divers_nif">
+        <comment>nif du tiers divers</comment>
+      </column>
+    </property>
+    <property name="ndbSource" type="string">
+      <column length="50" name="ndb_source">
+        <comment>source du document</comment>
+      </column>
+    </property>
+    <property name="ndbNumClient" type="string">
+      <column length="20" name="ndb_num_client">
+        <comment>numero bc client</comment>
+      </column>
+    </property>
+    <property name="ndbDateClient" type="date">
+      <column default="null" name="ndb_date_client">
+        <comment>date bc client</comment>
+      </column>
+    </property>
+    <property name="ndbPoids" type="float">
+      <column default="0" name="ndb_poids">
+        <comment>poids</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ExercicesVentes" column="exevte_id" lazy="false" name="exerciceventes" not-null="true"/>
+    <many-to-one class="com.epegase.systeme.classe.Tiers" column="tie_id" lazy="false" name="tiers" not-null="true"/>
+    <many-to-one class="com.epegase.systeme.classe.Users" column="usr_id" lazy="false" name="users" not-null="false"/>
+  </class>
+</hibernate-mapping>

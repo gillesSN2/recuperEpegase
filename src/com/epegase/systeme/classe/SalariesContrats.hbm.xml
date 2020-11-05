@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="SalariesContrats" table="pay_salaries_contrats">
+    <id column="salcon_id" name="salconId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="salconDateCreat" type="timestamp">
+      <column name="salcon_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="salconDateModif" type="timestamp">
+      <column name="salcon_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="salconUserCreat" type="long">
+      <column default="0" length="15" name="salcon_user_creat">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="salconUserModif" type="long">
+      <column default="0" length="15" name="salcon_user_modif">
+        <comment>utilisateur de modification</comment>
+      </column>
+    </property>
+    <property name="salconNum" type="string">
+      <column length="20" name="salcon_num">
+        <comment>numero du contrat</comment>
+      </column>
+    </property>
+    <property name="salconType" type="string">
+      <column length="3" name="salcon_type">
+        <comment>nature salarie voir fichier xml</comment>
+      </column>
+    </property>
+    <property name="salconFeuille" type="string">
+      <column length="20" name="salcon_feuille">
+        <comment>numero de feuille de calcul</comment>
+      </column>
+    </property>
+    <property name="salconEtat" type="integer">
+      <column default="0" length="1" name="salcon_etat">
+        <comment>0=actif 1=en conges 2=licencie 3=demissionne 4=decede 5=retraite 6=fin de contrat 7=arret ou suspension 8=mutation 9=gele</comment>
+      </column>
+    </property>
+    <property name="salconEssai" type="integer">
+      <column default="0" length="1" name="salcon_essai">
+        <comment>0=sans periode essai 1=avec periode essai</comment>
+      </column>
+    </property>
+    <property name="salconNbMoisEssai" type="integer">
+      <column default="0" length="1" name="salcon_nb_mois_essai">
+        <comment>nb de mois essai</comment>
+      </column>
+    </property>
+    <property name="salconFonction" type="string">
+      <column length="50" name="salcon_fonction">
+        <comment>fonction</comment>
+      </column>
+    </property>
+    <property name="salconSite" type="string">
+      <column length="20" name="salcon_site">
+        <comment>imputation site</comment>
+      </column>
+    </property>
+    <property name="salconDepartement" type="string">
+      <column length="20" name="salcon_departement">
+        <comment>imputation departement</comment>
+      </column>
+    </property>
+    <property name="salconLocalisation" type="string">
+      <column length="20" name="salcon_localisation">
+        <comment>imputation localisation</comment>
+      </column>
+    </property>
+    <property name="salconService" type="string">
+      <column length="20" name="salcon_service">
+        <comment>imputation service</comment>
+      </column>
+    </property>
+    <property name="salconLibService" type="string">
+      <column length="100" name="salcon_lib_service">
+        <comment>imputation service</comment>
+      </column>
+    </property>
+    <property name="salconDateDebut" type="date">
+      <column default="null" name="salcon_date_debut">
+        <comment>date debut du contrat</comment>
+      </column>
+    </property>
+    <property name="salconLieuTravail" type="string">
+      <column length="50" name="salcon_lieu_travail">
+        <comment>lieu de travail</comment>
+      </column>
+    </property>
+    <property name="salconConvention" type="string">
+      <column length="20" name="salcon_convention">
+        <comment>code convention du salarie</comment>
+      </column>
+    </property>
+    <property name="salconLibConvention" type="string">
+      <column length="50" name="salcon_lib_convention">
+        <comment>libelle convention du salarie</comment>
+      </column>
+    </property>
+    <property name="salconCentresImpots" type="string">
+      <column length="10" name="salcon_centres_impots">
+        <comment>code centres impots xml</comment>
+      </column>
+    </property>
+    <property name="salconLibCentresImpots" type="string">
+      <column length="50" name="salcon_lib_centres_impots">
+        <comment>libelle centres impots xml</comment>
+      </column>
+    </property>
+    <property name="salconCentresSecurite" type="string">
+      <column length="10" name="salcon_centres_securite">
+        <comment>code centres securite sociale xml</comment>
+      </column>
+    </property>
+    <property name="salconLibCentresSecurite" type="string">
+      <column length="50" name="salcon_lib_centres_securite">
+        <comment>libelle centres securite xml</comment>
+      </column>
+    </property>
+    <property name="salconClassement" type="string">
+      <column length="10" name="salcon_classement">
+        <comment>code classement xml</comment>
+      </column>
+    </property>
+    <property name="salconLibClassement" type="string">
+      <column length="50" name="salcon_lib_classement">
+        <comment>libelle classement xml</comment>
+      </column>
+    </property>
+    <property name="salconCodeEmploi" type="string">
+      <column length="10" name="salcon_code_emploi">
+        <comment>code emploi xml</comment>
+      </column>
+    </property>
+    <property name="salconNivEmploi" type="string">
+      <column length="10" name="salcon_niv_emploi">
+        <comment>code niveau emploi xml</comment>
+      </column>
+    </property>
+    <property name="salconLibNivEmploi" type="string">
+      <column length="50" name="salcon_lib_niv_emploi">
+        <comment>libelle niveau emploi xml</comment>
+      </column>
+    </property>
+    <property name="salconGrille" type="string">
+      <column length="20" name="salcon_grille">
+        <comment>code grille convention xml</comment>
+      </column>
+    </property>
+    <property name="salconLibGrille" type="string">
+      <column length="50" name="salcon_lib_grille">
+        <comment>libelle grille convention xml</comment>
+      </column>
+    </property>
+    <property name="salconActivite" type="text">
+      <column name="salcon_activite">
+        <comment>code activite</comment>
+      </column>
+    </property>
+    <property name="salconLibActivite" type="string">
+      <column length="100" name="salcon_lib_activite">
+        <comment>libelle activite</comment>
+      </column>
+    </property>
+    <property name="salconBudget" type="string">
+      <column length="20" name="salcon_budget">
+        <comment>code budget</comment>
+      </column>
+    </property>
+    <property name="salconLibBudget" type="string">
+      <column length="100" name="salcon_lib_budget">
+        <comment>libelle budget</comment>
+      </column>
+    </property>
+    <property name="salconProjet" type="string">
+      <column length="20" name="salcon_projet">
+        <comment>code projet</comment>
+      </column>
+    </property>
+    <property name="salconLibProjet" type="string">
+      <column length="100" name="salcon_lib_projet">
+        <comment>libelle projet</comment>
+      </column>
+    </property>
+    <property name="salconVehicule" type="integer">
+      <column default="0" name="salcon_vehicule">
+        <comment>0=sans 1=vehicule perso 2=vhicule societe</comment>
+      </column>
+    </property>
+    <property name="salconRbmKms" type="double">
+      <column default="0" name="salcon_rmb_kms">
+        <comment>montant de remboursement au kilometre</comment>
+      </column>
+    </property>
+    <property name="salconParc" type="string">
+      <column length="20" name="salcon_parc">
+        <comment>code parc</comment>
+      </column>
+    </property>
+    <property name="salconTexte" type="text">
+      <column name="salcon_text">
+        <comment>texte du contrat</comment>
+      </column>
+    </property>
+    <property name="salconDateEntreeInitial" type="date">
+      <column name="salcon_date_entree_initial">
+        <comment>date entree initial</comment>
+      </column>
+    </property>
+    <property name="salconDateFin" type="date">
+      <column default="null" name="salcon_date_fin">
+        <comment>date fin du contrat</comment>
+      </column>
+    </property>
+    <property name="salconMotifSortie" type="string">
+      <column length="50" name="salcon_motif_sortie">
+        <comment>motif de sortie</comment>
+      </column>
+    </property>
+    <property name="salconDateRemise" type="date">
+      <column default="null" name="salcon_date_remise">
+        <comment>date remise pour signature</comment>
+      </column>
+    </property>
+    <property name="salconDateRetour" type="date">
+      <column default="null" name="salcon_date_retour">
+        <comment>date retour signature</comment>
+      </column>
+    </property>
+    <property name="salconDateConfirmation" type="date">
+      <column default="null" name="salcon_date_confirmation">
+        <comment>date confirmation depart</comment>
+      </column>
+    </property>
+    <property name="salconIdRepresetant" type="long">
+      <column default="0" name="salcon_id_representant">
+        <comment>id du represetant</comment>
+      </column>
+    </property>
+    <property name="salconNomRepresentant" type="string">
+      <column length="100" name="salcon_nom_representant">
+        <comment>nom et prenom du represetant</comment>
+      </column>
+    </property>
+    <property name="salconQualite" type="string">
+      <column length="50" name="salcon_qualite">
+        <comment>qualite du representant</comment>
+      </column>
+    </property>
+    <property name="salconEtatVal" type="integer">
+      <column default="0" length="1" name="salcon_etat_val">
+        <comment>0= sans habilitation 1=avec habilitation</comment>
+      </column>
+    </property>
+    <property name="salconEtatH" type="integer">
+      <column default="0" length="1" name="salcon_etat_h">
+        <comment>0=non valide 1=valide</comment>
+      </column>
+    </property>
+    <property name="salconDateValide" type="timestamp">
+      <column default="null" name="salcon_date_valide">
+        <comment>date de validation</comment>
+      </column>
+    </property>
+    <property name="salconPosSignature" type="integer">
+      <column default="0" length="1" name="salcon_pos_signature">
+        <comment>nb de signature ayant statue</comment>
+      </column>
+    </property>
+    <property name="salconDateImp" type="timestamp">
+      <column default="null" name="salcon_date_imp">
+        <comment>date impression</comment>
+      </column>
+    </property>
+    <property name="salconNbHeureMois" type="float">
+      <column default="0" name="salcon_nb_heure_mois">
+        <comment>nb heure reference mois</comment>
+      </column>
+    </property>
+    <property name="salconBase" type="double">
+      <column default="0" name="salcon_base">
+        <comment>salaire de base</comment>
+      </column>
+    </property>
+    <property name="salconSursalaire" type="double">
+      <column default="0" name="salcon_sursalaire">
+        <comment>sursalaire</comment>
+      </column>
+    </property>
+    <property name="salconForfaitSup" type="double">
+      <column default="0" name="salcon_forfait_sup">
+        <comment>forfait heure supplementaire</comment>
+      </column>
+    </property>
+    <property name="salconPrimeRendement" type="double">
+      <column default="0" name="salcon_prime_rendement">
+        <comment>prime rendement</comment>
+      </column>
+    </property>
+    <property name="salconPrimeResponsabilite" type="double">
+      <column default="0" name="salcon_prime_responsabilite">
+        <comment>prime responsabilite</comment>
+      </column>
+    </property>
+    <property name="salconPrimeExceptionnelle" type="double">
+      <column default="0" name="salcon_prime_exceptionelle">
+        <comment>prime exceptionnelle</comment>
+      </column>
+    </property>
+    <property name="salconPrimeSujetion" type="double">
+      <column default="0" name="salcon_prime_sujetion">
+        <comment>prime sujetion</comment>
+      </column>
+    </property>
+    <property name="salconPrimeFonction" type="double">
+      <column default="0" name="salcon_prime_fonction">
+        <comment>fonction</comment>
+      </column>
+    </property>
+    <property name="salconPrimeTransport" type="double">
+      <column default="0" name="salcon_prime_transport">
+        <comment>transport</comment>
+      </column>
+    </property>
+    <property name="salconPrimeLogement" type="double">
+      <column default="0" name="salcon_prime_logement">
+        <comment>logement</comment>
+      </column>
+    </property>
+    <property name="salconPrimeOutillage" type="double">
+      <column default="0" name="salcon_prime_outillage">
+        <comment>prime outillage</comment>
+      </column>
+    </property>
+    <property name="salconPrimeAstreinte" type="double">
+      <column default="0" name="salcon_prime_astreinte">
+        <comment>prime astreinte</comment>
+      </column>
+    </property>
+    <property name="salconIndemniteCaisse" type="double">
+      <column default="0" name="salcon_indemnite_caisse">
+        <comment>indemnite caisse</comment>
+      </column>
+    </property>
+    <property name="salconIndemniteTransport" type="double">
+      <column default="0" name="salcon_indemnite_transport">
+        <comment>indemnite transport</comment>
+      </column>
+    </property>
+    <property name="salconIndemniteLogement" type="double">
+      <column default="0" name="salcon_indemnite_logement">
+        <comment>indemnite logement</comment>
+      </column>
+    </property>
+    <property name="salconIndemniteDeplacement" type="double">
+      <column default="0" name="salcon_indemnite_deplacement">
+        <comment>indemnite deplacement</comment>
+      </column>
+    </property>
+    <property name="salconIndemniteKilometrique" type="double">
+      <column default="0" name="salcon_indemnite_kilometrique">
+        <comment>indemnite kilometrique</comment>
+      </column>
+    </property>
+    <property name="salconIndemniteSalissure" type="double">
+      <column default="0" name="salcon_indemnite_salissure">
+        <comment>indemnite salissure</comment>
+      </column>
+    </property>
+    <property name="salconIndemniteRepresentation" type="double">
+      <column default="0" name="salcon_indemnite_representation">
+        <comment>indemnite representation</comment>
+      </column>
+    </property>
+    <property name="salconIndemniteDiverse" type="double">
+      <column default="0" name="salcon_indemnite_diverse">
+        <comment>indemnite diverse</comment>
+      </column>
+    </property>
+    <property name="salconIndemniteResponsabilite" type="double">
+      <column default="0" name="salcon_indemnite_responsabilite">
+        <comment>indemnite de responsabilite</comment>
+      </column>
+    </property>
+    <property name="salconIndemniteNourriture" type="double">
+      <column default="0" name="salcon_indemnite_nourriture">
+        <comment>indemnite de nourriture</comment>
+      </column>
+    </property>
+    <property name="salconAvnLogement" type="double">
+      <column default="0" name="salcon_avn_logement">
+        <comment>avn logement</comment>
+      </column>
+    </property>
+    <property name="salconAvnDomesticite" type="double">
+      <column default="0" name="salcon_avn_domesticite">
+        <comment>avn domesticite</comment>
+      </column>
+    </property>
+    <property name="salconAvnTelephone" type="double">
+      <column default="0" name="salcon_avn_telephone">
+        <comment>avn telephone</comment>
+      </column>
+    </property>
+    <property name="salconAvnEau" type="double">
+      <column default="0" name="salcon_avn_eau">
+        <comment>avn eau</comment>
+      </column>
+    </property>
+    <property name="salconAvnElectricite" type="double">
+      <column default="0" name="salcon_avn_electricite">
+        <comment>avn electricite</comment>
+      </column>
+    </property>
+    <property name="salconAvnNourriture" type="double">
+      <column default="0" name="salcon_avn_nourriture">
+        <comment>avn nourriture</comment>
+      </column>
+    </property>
+    <property name="salconAvnVehicule" type="double">
+      <column default="0" name="salcon_avn_vehicule">
+        <comment>avn vehicule</comment>
+      </column>
+    </property>
+    <property name="salconNbJourCp" type="float">
+      <column default="0" length="1" name="salcon_nb_jour_cp">
+        <comment>regime de conges : nb jour de conges</comment>
+      </column>
+    </property>
+    <property name="salconNbJourTr" type="float">
+      <column default="0" length="1" name="salcon_nb_jour_tr">
+        <comment>regime de conges : nb jour de travail</comment>
+      </column>
+    </property>
+    <property name="salconCle1Anal" type="string">
+      <column length="20" name="salcon_cle1_anal">
+        <comment>cle de repartition 1</comment>
+      </column>
+    </property>
+    <property name="salconLibCle1Anal" type="string">
+      <column length="50" name="salcon_lib_cle1_anal">
+        <comment>libelle cle de repartition 1</comment>
+      </column>
+    </property>
+    <property name="salconCle2Anal" type="string">
+      <column length="20" name="salcon_cle2_anal">
+        <comment>cle de repartition 2</comment>
+      </column>
+    </property>
+    <property name="salconLibCle2Anal" type="string">
+      <column length="50" name="salcon_lib_cle2_anal">
+        <comment>libelle cle de repartition 2</comment>
+      </column>
+    </property>
+    <property name="salconIdTiers" type="long">
+      <column default="0" name="salcon_id_tiers">
+        <comment>id du tiers pour interim</comment>
+      </column>
+    </property>
+    <property name="salconNomTiers" type="string">
+      <column length="100" name="salcon_nom_tiers">
+        <comment>nom tiers pour interim</comment>
+      </column>
+    </property>
+    <property name="salconDateAvenantDeb1" type="date">
+      <column default="null" name="salcon_date_avenant_deb1">
+        <comment>date debut avenant 1</comment>
+      </column>
+    </property>
+    <property name="salconDateAvenantFin1" type="date">
+      <column default="null" name="salcon_date_avenant_fin1">
+        <comment>date fin avenant 1</comment>
+      </column>
+    </property>
+    <property name="salconDateAvenantFin2" type="date">
+      <column default="null" name="salcon_date_avenant_fin2">
+        <comment>date fin avenant 2</comment>
+      </column>
+    </property>
+    <property name="salconDateAvenantFin3" type="date">
+      <column default="null" name="salcon_date_avenant_fin3">
+        <comment>date fin avenant 3</comment>
+      </column>
+    </property>
+    <property name="salconDateAvenantFin4" type="date">
+      <column default="null" name="salcon_date_avenant_fin4">
+        <comment>date fin avenant 4</comment>
+      </column>
+    </property>
+    <property name="salconDateAvenantFin5" type="date">
+      <column default="null" name="salcon_date_avenant_fin5">
+        <comment>date fin avenant 5</comment>
+      </column>
+    </property>
+    <property name="salconDateAvenantFin6" type="date">
+      <column default="null" name="salcon_date_avenant_fin6">
+        <comment>date fin avenant 6</comment>
+      </column>
+    </property>
+    <property name="salconDateAvenantFin7" type="date">
+      <column default="null" name="salcon_date_avenant_fin7">
+        <comment>date fin avenant 7</comment>
+      </column>
+    </property>
+    <property name="salconDateAvenantFin8" type="date">
+      <column default="null" name="salcon_date_avenant_fin8">
+        <comment>date fin avenant 8</comment>
+      </column>
+    </property>
+    <property name="salconDateAvenantFin9" type="date">
+      <column default="null" name="salcon_date_avenant_fin9">
+        <comment>date fin avenant 9</comment>
+      </column>
+    </property>
+    <property name="salconDateAvenantFin10" type="date">
+      <column default="null" name="salcon_date_avenant_fin10">
+        <comment>date fin avenant 10</comment>
+      </column>
+    </property>
+    <property name="salconDateAvenantFin11" type="date">
+      <column default="null" name="salcon_date_avenant_fin11">
+        <comment>date fin avenant 11</comment>
+      </column>
+    </property>
+    <property name="salconDateAvenantFin12" type="date">
+      <column default="null" name="salcon_date_avenant_fin12">
+        <comment>date fin avenant 12</comment>
+      </column>
+    </property>
+    <property name="salconDocument" type="string">
+      <column length="100" name="salcon_document">
+        <comment>document rh</comment>
+      </column>
+    </property>
+    <property name="salconTaux" type="float">
+      <column default="0" name="salcon_taux">
+        <comment>taux de salaire si different de 0 alors applique le taux sur toutes les lignes</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.Salaries" column="sal_id" lazy="false" name="Salaries" not-null="true"/>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="CvAgents" table="pay_cv_agents">
+    <id column="cva_id" name="cvaId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="cvaAgent" type="string">
+      <column length="200" name="cva_agent">
+        <comment>nom agent</comment>
+      </column>
+    </property>
+    <property name="cvaAge" type="int">
+      <column default="0" name="cva_age">
+        <comment>age agent</comment>
+      </column>
+    </property>
+    <property name="cvaGenre" type="string">
+      <column length="1" name="cva_genre">
+        <comment>genre agent</comment>
+      </column>
+    </property>
+    <property name="cvaNationalite" type="string">
+      <column length="50" name="cva_nationalite">
+        <comment>nationalite agent</comment>
+      </column>
+    </property>
+    <property name="cvaResidence" type="string">
+      <column length="50" name="cva_residence">
+        <comment>residence agent</comment>
+      </column>
+    </property>
+    <property name="cvaDiplomeMax" type="string">
+      <column length="50" name="cva_diplome_max">
+        <comment>diplome plus fort agent</comment>
+      </column>
+    </property>
+    <property name="cvaCommentaires" type="string">
+      <column length="200" name="cva_commentaires">
+        <comment>commentaire</comment>
+      </column>
+    </property>
+    <property name="cvaNote" type="float">
+      <column default="0" name="cva_note">
+        <comment>note obtenue</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.CvSession" column="cvs_id" lazy="false" name="CvSession" not-null="true"/>
+  </class>
+</hibernate-mapping>

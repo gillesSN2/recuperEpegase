@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="DocumentTraceAchats" table="ach_document_trace_achats">
+    <id column="doctrf_id" name="doctrfId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="doctrfDateCreat" type="timestamp">
+      <column name="doctrf_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="doctrfUserId" type="long">
+      <column default="0" length="15" name="doctrf_user_id">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="doctrfUserNom" type="string">
+      <column length="100" name="doctrf_user_nom">
+        <comment>nom utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="doctrfOrgType" type="integer">
+      <column default="0" name="doctrf_org_type">
+        <comment>type origine</comment>
+      </column>
+    </property>
+    <property name="doctrfOrgNum" type="string">
+      <column length="20" name="doctrf_org_num">
+        <comment>numero origine</comment>
+      </column>
+    </property>
+    <property name="doctrfOrgDate" type="timestamp">
+      <column name="doctrf_org_date">
+        <comment>date origine</comment>
+      </column>
+    </property>
+    <property name="doctrfOrgSerie" type="string">
+      <column length="4" name="doctrf_org_serie">
+        <comment>serie origine</comment>
+      </column>
+    </property>
+    <property index="true" name="doctrfOrgId" type="long">
+      <column default="0" index="true" name="doctrf_org_id">
+        <comment>id origine</comment>
+      </column>
+    </property>
+    <property name="doctrfDstType" type="integer">
+      <column default="0" name="doctrf_dst_type">
+        <comment>type destination</comment>
+      </column>
+    </property>
+    <property name="doctrfDstNum" type="string">
+      <column length="20" name="doctrf_dst_num">
+        <comment>numero destination</comment>
+      </column>
+    </property>
+    <property name="doctrfDstDate" type="timestamp">
+      <column name="doctrf_dst_date">
+        <comment>date destination</comment>
+      </column>
+    </property>
+    <property name="doctrfDstSerie" type="string">
+      <column length="4" name="doctrf_dst_serie">
+        <comment>serie destination</comment>
+      </column>
+    </property>
+    <property index="true" name="doctrfDstId" type="long">
+      <column default="0" index="true" name="doctrf_dst_id">
+        <comment>id destination</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ExercicesAchats" column="exeach_id" lazy="false" name="exercicesAchats" not-null="true"/>
+  </class>
+</hibernate-mapping>

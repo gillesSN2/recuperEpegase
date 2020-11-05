@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="PegEnvoieMail" table="peg_envoie_mail">
+    <id column="pegmai_id" name="pegmaiId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="pegmaiMode" type="integer">
+      <column default="0" name="pegmai_mode">
+        <comment>0=information 1=... </comment>
+      </column>
+    </property>
+    <property name="pegmaiNum" type="long">
+      <column default="0" name="pegmai_num">
+        <comment>mumero mail</comment>
+      </column>
+    </property>
+    <property name="pegmaiDateCreat" type="timestamp">
+      <column name="pegmai_date_creat">
+        <comment>date envoie creation</comment>
+      </column>
+    </property>
+    <property name="pegmaiDateModif" type="timestamp">
+      <column name="pegmai_date_modif">
+        <comment>date envoie modifcation</comment>
+      </column>
+    </property>
+    <property name="pegmaiObjet" type="string">
+      <column length="100" name="pegmai_objet">
+        <comment>objet</comment>
+      </column>
+    </property>
+    <property name="pegmaiDestinataire" type="text">
+      <column name="pegmai_destinataire">
+        <comment>destinataire en CCI</comment>
+      </column>
+    </property>
+    <property name="pegmaiCorps" type="text">
+      <column name="pegmai_corps">
+        <comment>corps du mail</comment>
+      </column>
+    </property>
+    <property name="pegmaiUserCreat" type="string">
+      <column length="100" name="pegmai_user_creat">
+        <comment>user emetteur</comment>
+      </column>
+    </property>
+    <property name="pegmaiIdUserCreat" type="long">
+      <column default="0" name="pegmai_id_user_creat">
+        <comment>id du user emetteur</comment>
+      </column>
+    </property>
+    <property name="pegmaiUserModif" type="string">
+      <column length="100" name="pegmai_user_modif">
+        <comment>user emetteur</comment>
+      </column>
+    </property>
+    <property name="pegmaiIdUserModif" type="long">
+      <column default="0" name="pegmai_id_user_modif">
+        <comment>id du user emetteur</comment>
+      </column>
+    </property>
+    <property name="pegmaiResultat" type="text">
+      <column name="pegmai_resultat">
+        <comment>resultat envoi</comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>

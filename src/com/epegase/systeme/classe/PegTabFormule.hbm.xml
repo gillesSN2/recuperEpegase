@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="PegTabFormule" table="peg_tab_formule">
+    <id column="tabfor_id" name="tabfor_id" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="tabforCol" type="int">
+      <column default="0" name="tabfor_col">
+        <comment>colonne</comment>
+      </column>
+    </property>
+    <property name="tabforZone" type="string">
+      <column length="50" name="tabfor_zone">
+        <comment>zone fiscale</comment>
+      </column>
+    </property>
+    <property name="tabforFormule" type="string">
+      <column length="1000" name="tabfor_formule">
+        <comment>definition de la formule</comment>
+      </column>
+    </property>
+    <property name="tabforSolde" type="int">
+      <column default="0" name="tabfor_solde">
+        <comment>solde</comment>
+      </column>
+    </property>
+    <property name="tabforPeriode" type="int">
+      <column default="0" name="tabfor_periode">
+        <comment>periode prioritaire par rapport à la periode de l'element</comment>
+      </column>
+    </property>
+    <property name="tabforInactif" type="boolean">
+      <column default="false" name="tabfor_inactif">
+        <comment>0=actif 1=inactif</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.PegTabElement" column="tabele_id" lazy="false" name="pegTabElement" not-null="true"/>
+  </class>
+</hibernate-mapping>

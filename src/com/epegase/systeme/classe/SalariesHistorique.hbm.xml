@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="SalariesHistorique" table="pay_salaries_historique">
+    <id column="salhis_id" name="salhisId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="salhisContrat" type="string">
+      <column length="20" name="salhis_contrat">
+        <comment>numero contrat</comment>
+      </column>
+    </property>
+    <property name="salhisCode" type="string">
+      <column length="6" name="salhis_code">
+        <comment>code rubrique</comment>
+      </column>
+    </property>
+    <property name="salhisLibelle" type="string">
+      <column length="100" name="salhis_libelle">
+        <comment>libelle rubrique</comment>
+      </column>
+    </property>
+    <property name="salhisDate" type="date">
+      <column default="null" name="salhis_date">
+        <comment>date historique</comment>
+      </column>
+    </property>
+    <property name="salhisValeurColE" type="double">
+      <column default="0" name="salhis_valeur_colE">
+        <comment>valeur colonne E</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.Salaries" column="sal_id" lazy="false" name="Salaries" not-null="true"/>
+    <many-to-one class="com.epegase.systeme.classe.ExercicesPaye" column="exepay_id" lazy="false" name="ExercicesPaye" not-null="true"/>
+  </class>
+</hibernate-mapping>

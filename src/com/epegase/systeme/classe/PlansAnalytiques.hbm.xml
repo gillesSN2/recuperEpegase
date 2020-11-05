@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="PlansAnalytiques" table="cmm_plan_analytique">
+    <id column="ana_id" name="anaId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="anaDateCreat" type="date">
+      <column default="null" name="ana_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="anaDateModif" type="date">
+      <column default="null" name="ana_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="anaUserCreat" type="long">
+      <column default="0" length="15" name="ana_user_creat">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="anaUserModif" type="long">
+      <column default="0" length="15" name="ana_user_modif">
+        <comment>utilisateur de modification</comment>
+      </column>
+    </property>
+    <property name="anaAnnee" type="string">
+      <column length="4" name="ana_annee">
+        <comment>annee </comment>
+      </column>
+    </property>
+    <property index="true" name="anaNature" type="string">
+      <column index="true" length="2" name="ana_nature">
+        <comment>nature 1=a1 2=a2 3=a3 4=a4 5=lot 6=dossier achat 7=chantier 8=mission/frais 9=cle 10=affaire vente 20=structure</comment>
+      </column>
+    </property>
+    <property name="anaOrdre" type="integer">
+      <column default="0" length="10" name="ana_ordre">
+        <comment>ordre des elements</comment>
+      </column>
+    </property>
+    <property name="anaCode" type="string">
+      <column length="20" name="ana_code">
+        <comment>code analytique 1</comment>
+      </column>
+    </property>
+    <property name="anaCodeComplet" type="string">
+      <column length="20" name="ana_code_complet">
+        <comment>code analytique complet nature et code</comment>
+      </column>
+    </property>
+    <property name="anaAnalytique" type="string">
+      <column length="20" name="ana_analytique">
+        <comment>code analytique pour affaire</comment>
+      </column>
+    </property>
+    <property name="anaIndice" type="string">
+      <column length="3" name="ana_indice">
+        <comment>indice pour code analytique</comment>
+      </column>
+    </property>
+    <property name="anaNomFr" type="string">
+      <column length="100" name="ana_nom_FR">
+        <comment>libelle en FR</comment>
+      </column>
+    </property>
+    <property name="anaNomUk" type="string">
+      <column length="100" name="ana_nom_UK">
+        <comment>libelle en UK</comment>
+      </column>
+    </property>
+    <property name="anaNomSp" type="string">
+      <column length="100" name="ana_nom_SP">
+        <comment>libelle en SP</comment>
+      </column>
+    </property>
+    <property name="anaInactif" type="integer">
+      <column default="0" length="1" name="ana_inactif">
+        <comment>0=actif 1=inactif 2=supprimer 3=cloturer</comment>
+      </column>
+    </property>
+    <property name="anaNatureRepartition" type="integer">
+      <column default="0" length="1" name="ana_nature_repartition">
+        <comment>nature de la repartition</comment>
+      </column>
+    </property>
+    <property name="anaAnneeDebut" type="integer">
+      <column default="0" length="4" name="ana_annee_debut">
+        <comment>annee de debut de validite</comment>
+      </column>
+    </property>
+    <property name="anaAnneeFin" type="integer">
+      <column default="0" name="ana_annee_fin">
+        <comment>annee de fin de validite</comment>
+      </column>
+    </property>
+    <property name="anaTypeDossier" type="string">
+      <column length="30" name="ana_type_dossier">
+        <comment>type de dossier</comment>
+      </column>
+    </property>
+    <property name="anaTypeDevise" type="string">
+      <column length="3" name="ana_type_devise">
+        <comment>devise</comment>
+      </column>
+    </property>
+    <property name="anaTypeTauxDevise" type="float">
+      <column default="0" name="ana_type_taux_devise">
+        <comment>taux de devise</comment>
+      </column>
+    </property>
+    <property name="anaTypeExoTva" type="boolean">
+      <column default="false" name="ana_type_exo_tva">
+        <comment>exoneration de tva</comment>
+      </column>
+    </property>
+    <property name="anaTypeExoDouane" type="boolean">
+      <column default="false" name="ana_type_exo_douane">
+        <comment>exoneration de douane</comment>
+      </column>
+    </property>
+    <property name="anaMissionDebut" type="date">
+      <column default="null" name="ana_mission_debut">
+        <comment>date debut mission</comment>
+      </column>
+    </property>
+    <property name="anaMissionFin" type="date">
+      <column default="null" name="ana_mission_fin">
+        <comment>date fin mission</comment>
+      </column>
+    </property>
+    <property name="anaMissionProprietaire" type="string">
+      <column length="100" name="ana_mission_proprietaire">
+        <comment>nom du proprietaire</comment>
+      </column>
+    </property>
+    <property name="anaMissionLettreCmd" type="string">
+      <column length="50" name="ana_mission_lettre_cmd">
+        <comment>lettre de commande</comment>
+      </column>
+    </property>
+    <property name="anaMissionChef" type="string">
+      <column length="100" name="ana_mission_chef">
+        <comment>nom du chef de chantier</comment>
+      </column>
+    </property>
+    <property name="anaMissionCoutTheorique" type="double">
+      <column default="0" name="ana_mission_cout_theorique">
+        <comment>cout theorique</comment>
+      </column>
+    </property>
+    <property name="anaMissionEtat" type="integer">
+      <column default="0" name="ana_mission_etat">
+        <comment>etat du chantier 0=en cours 1=ferme 2=gele 3=abondonne</comment>
+      </column>
+    </property>
+    <property name="anaTiersCivilite" type="string">
+      <column length="20" name="ana_tiers_civilite">
+        <comment>civilite (suivant fichier xml)</comment>
+      </column>
+    </property>
+    <property name="anaTiersTelephone" type="string">
+      <column length="20" name="ana_tiers_telephone">
+        <comment>telephone destinataire</comment>
+      </column>
+    </property>
+    <property name="anaTiersFax" type="string">
+      <column length="20" name="anaTiers_fax">
+        <comment>fax</comment>
+      </column>
+    </property>
+    <property name="anaTiersAdresse" type="string">
+      <column length="100" name="ana_tiers_adresse">
+        <comment>adresse destinataire</comment>
+      </column>
+    </property>
+    <property name="anaTiersBp" type="string">
+      <column length="100" name="ana_tiers_bp">
+        <comment>boite postale</comment>
+      </column>
+    </property>
+    <property name="anaTiersMail" type="string">
+      <column length="100" name="ana_tiers_mail">
+        <comment>adresse mail</comment>
+      </column>
+    </property>
+    <property name="anaTiersVille" type="string">
+      <column length="100" name="ana_tiers_ville">
+        <comment>ville</comment>
+      </column>
+    </property>
+    <property name="anaTiersPdv" type="string">
+      <column length="20" name="ana_tiers_Pdv">
+        <comment>code point de vente</comment>
+      </column>
+    </property>
+    <property name="anaTiersSecteur" type="string">
+      <column length="20" name="ana_tiers_secteur">
+        <comment>code secteur</comment>
+      </column>
+    </property>
+    <property name="anaTiersRegion" type="string">
+      <column length="20" name="ana_tiers_region">
+        <comment>code region</comment>
+      </column>
+    </property>
+    <property name="anaTiersAppreciation" type="string">
+      <column length="20" name="ana_tiers_appreciaiton">
+        <comment>appreciation</comment>
+      </column>
+    </property>
+    <property name="anaTiersNompays" type="string">
+      <column length="50" name="ana_tiers_nom_pays">
+        <comment>nom pays</comment>
+      </column>
+    </property>
+    <property name="anaTiersdevise" type="string">
+      <column length="3" name="ana_tiers_devise">
+        <comment>code devise</comment>
+      </column>
+    </property>
+    <property name="anaTiersFormatDevise" type="integer">
+      <column default="0" length="3" name="ana_tiers_format_devise">
+        <comment>format devise</comment>
+      </column>
+    </property>
+    <property name="anaTierssource" type="string">
+      <column length="50" name="ana_tiers_source">
+        <comment>source du tiers</comment>
+      </column>
+    </property>
+    <property name="anaTierslangue" type="string">
+      <column length="20" name="ana_tiers_langue">
+        <comment>code langue</comment>
+      </column>
+    </property>
+    <property name="anaTiersObs" type="string">
+      <column length="100" name="ana_tiers_obs">
+        <comment>observations</comment>
+      </column>
+    </property>
+    <property name="anaTiersRegroupe" type="string">
+      <column length="50" name="ana_tiers_regroupe">
+        <comment>regroupement des destinataires</comment>
+      </column>
+    </property>
+    <property name="anaVte" type="boolean">
+      <column default="false" name="ana_vte">
+        <comment>1=autorise dans les ventes</comment>
+      </column>
+    </property>
+    <property name="anaAch" type="boolean">
+      <column default="false" name="ana_ach">
+        <comment>1=autorise dans les achats</comment>
+      </column>
+    </property>
+    <property name="anaPrd" type="boolean">
+      <column default="false" name="ana_prd">
+        <comment>1=autorise dans la production</comment>
+      </column>
+    </property>
+    <property name="anaFrg" type="boolean">
+      <column default="false" name="ana_frg">
+        <comment>1=autorise dans les frais generaux</comment>
+      </column>
+    </property>
+    <property name="anaInv" type="boolean">
+      <column default="false" name="ana_inv">
+        <comment>1=autorise dans les investissements</comment>
+      </column>
+    </property>
+    <property name="anaTva" type="boolean">
+      <column default="false" name="ana_tva">
+        <comment>1=autorise dans la tva</comment>
+      </column>
+    </property>
+    <property name="anaTax" type="boolean">
+      <column default="false" name="ana_tax">
+        <comment>1=autorise dans les impots et taxes</comment>
+      </column>
+    </property>
+    <property name="anaSal" type="boolean">
+      <column default="false" name="ana_sal">
+        <comment>1=autorise dans les salaries</comment>
+      </column>
+    </property>
+    <property name="anaStr" type="boolean">
+      <column default="false" name="ana_str">
+        <comment>cle structure</comment>
+      </column>
+    </property>
+    <property index="true" name="anaIdTiers" type="long">
+      <column default="0" index="true" name="ana_id_tiers">
+        <comment>id du tiers</comment>
+      </column>
+    </property>
+    <property name="anaAffaireService" type="string">
+      <column length="121" name="ana_affaires_service">
+        <comment>service affaire</comment>
+      </column>
+    </property>
+    <property name="anaAffaireEtatVal" type="integer">
+      <column default="0" length="1" name="ana_affaire_etat_val">
+        <comment>0=sans validation 1=avec validation</comment>
+      </column>
+    </property>
+    <property name="anaAffaireGele" type="integer">
+      <column default="0" length="1" name="ana_affaire_gele">
+        <comment>0=non gele 1=gele</comment>
+      </column>
+    </property>
+    <property name="anaAffaireDateValide" type="date">
+      <column name="ana_affaire_date_valide">
+        <comment>date de validation</comment>
+      </column>
+    </property>
+    <property name="anaAffaireEtat" type="integer">
+      <column default="0" name="ana_affaire_etat">
+        <comment>etat affaire 0=en cours 1=validee interne 2=gele 3=annule 4=validee client 5=terminee</comment>
+      </column>
+    </property>
+    <property name="anaAffaireMdeleImp" type="string">
+      <column length="100" name="ana_affaires_modele_imp">
+        <comment>modele impression</comment>
+      </column>
+    </property>
+    <property name="anaAffaireAgent" type="string">
+      <column length="100" name="ana_affaires_agent">
+        <comment>nom agent</comment>
+      </column>
+    </property>
+    <property name="anaAffaireTheo" type="double">
+      <column default="0" name="ana_affaire_theo">
+        <comment>valeur theorique</comment>
+      </column>
+    </property>
+    <property name="anaAffaireReel" type="double">
+      <column default="0" name="ana_affaire_reel">
+        <comment>valeur relle</comment>
+      </column>
+    </property>
+    <property name="anaAffaireMargeTheo" type="double">
+      <column default="0" name="ana_affaire_marge_theo">
+        <comment>marge theorique</comment>
+      </column>
+    </property>
+    <property name="anaAffaireMargeReel" type="double">
+      <column default="0" name="ana_affaire_marge_reel">
+        <comment>marge relle</comment>
+      </column>
+    </property>
+    <property name="anaAffaireContact" type="string">
+      <column length="100" name="ana_affaires_conctact">
+        <comment>nom contact</comment>
+      </column>
+    </property>
+    <property name="anaDateInformation" type="date">
+      <column default="null" name="ana_date_information">
+        <comment>date premiere information</comment>
+      </column>
+    </property>
+    <property name="anaDateRdv" type="date">
+      <column default="null" name="ana_date_rdv">
+        <comment>date premier rendez vous</comment>
+      </column>
+    </property>
+    <property name="anaAffaireCoutTheo" type="double">
+      <column default="0" name="ana_affaires_cout_theo">
+        <comment>cout affaire theorique</comment>
+      </column>
+    </property>
+    <property name="anaAffaireCoutReel" type="double">
+      <column default="0" name="ana_affaires_cout_reel">
+        <comment>cout affaire reel</comment>
+      </column>
+    </property>
+    <property name="anaAffaireNbJourRetard" type="integer">
+      <column default="0" name="ana_affaires_nb_jour_retard">
+        <comment>nb de jour de retard</comment>
+      </column>
+    </property>
+    <property name="anaAffaireMode" type="integer">
+      <column default="0" name="ana_affaires_mode">
+        <comment>0=normal 1=urgent 2=tres urgent 3=appel offre</comment>
+      </column>
+    </property>
+    <property name="anaAffaireIdClient" type="long">
+      <column default="0" name="ana_affaires_id_client">
+        <comment>id du client</comment>
+      </column>
+    </property>
+    <property name="anaAffaireNomClient" type="string">
+      <column length="100" name="ana_affaires_nom_client">
+        <comment>nom du client</comment>
+      </column>
+    </property>
+    <property name="anaAffaireCiviliteClient" type="string">
+      <column length="20" name="ana_affaires_civilite_client">
+        <comment>civilite du client</comment>
+      </column>
+    </property>
+    <property name="anaAffaireCatClient" type="string">
+      <column length="20" name="ana_affaires_cat_client">
+        <comment>famille du client</comment>
+      </column>
+    </property>
+    <property name="anaAffaireExoTva" type="integer">
+      <column default="0" length="1" name="anaAffaire_exo_tva">
+        <comment>0=avec tva 1=sans tva </comment>
+      </column>
+    </property>
+    <property name="anaAffaireExoDouane" type="integer">
+      <column default="0" length="1" name="anaAffaire_exo_douane">
+        <comment>0=avec douane 1=sans 2=reduit </comment>
+      </column>
+    </property>
+    <property name="anaAffaireIdContact" type="long">
+      <column default="0" name="ana_affaires_id_contact">
+        <comment>id du contact</comment>
+      </column>
+    </property>
+    <property name="anaAffaireNomContact" type="string">
+      <column length="100" name="ana_affaires_nom_contact">
+        <comment>nom du contact</comment>
+      </column>
+    </property>
+    <property name="anaAffaireCiviliteContact" type="string">
+      <column length="20" name="ana_affaires_civilite_contact">
+        <comment>civilite du contact</comment>
+      </column>
+    </property>
+    <property name="anaAffaireIdResponsable" type="long">
+      <column default="0" name="ana_affaires_id_responsable">
+        <comment>id du responsable</comment>
+      </column>
+    </property>
+    <property name="anaAffaireNomResponsable" type="string">
+      <column length="100" name="ana_affaires_nom_responsable">
+        <comment>nom du responsable</comment>
+      </column>
+    </property>
+    <property name="anaAffaireCiviliteResponsable" type="string">
+      <column length="20" name="ana_affaires_civilite_responsable">
+        <comment>civilite du responsable</comment>
+      </column>
+    </property>
+    <property name="anaAffaireIdCommercial" type="long">
+      <column default="0" name="ana_affaires_id_commercial">
+        <comment>id du commercial</comment>
+      </column>
+    </property>
+    <property name="anaAffaireNomCommercial" type="string">
+      <column length="100" name="ana_affaires_nom_commercial">
+        <comment>nom du commercial</comment>
+      </column>
+    </property>
+    <property name="anaAffaireCiviliteCommercial" type="string">
+      <column length="20" name="ana_affaires_civilite_commercial">
+        <comment>civilite du commercial</comment>
+      </column>
+    </property>
+    <property name="anaAffaireDateAnnule" type="date">
+      <column default="null" name="ana_affaires_date_annule">
+        <comment>date annuler ou gele</comment>
+      </column>
+    </property>
+    <property name="anaAffaireDateDemande" type="timestamp">
+      <column default="null" name="ana_affaires_date_demande">
+        <comment>date dedmande</comment>
+      </column>
+    </property>
+    <property name="anaAffaireDatelimite" type="date">
+      <column default="null" name="ana_affaires_date_limite">
+        <comment>date limite</comment>
+      </column>
+    </property>
+    <property name="anaAffaireDateCotation" type="date">
+      <column default="null" name="ana_affaires_date_cotation">
+        <comment>date commande</comment>
+      </column>
+    </property>
+    <property name="anaAffaireDatePrp" type="date">
+      <column default="null" name="ana_affaires_date_prp">
+        <comment>date prp</comment>
+      </column>
+    </property>
+    <property name="anaAffaireDateCommande" type="date">
+      <column default="null" name="ana_affaires_date_comande">
+        <comment>date commande</comment>
+      </column>
+    </property>
+    <property name="anaAffaireDateReception" type="date">
+      <column default="null" name="ana_affaires_date_reception">
+        <comment>date recpetion</comment>
+      </column>
+    </property>
+    <property name="anaAffaireDateDevis" type="timestamp">
+      <column default="null" name="ana_affaires_date_devis">
+        <comment>date de devis</comment>
+      </column>
+    </property>
+    <property name="anaAffaireDateDevisEnvoie" type="date">
+      <column name="ana_affaire_date_devis_envoie">
+        <comment>date envoie du devis au client</comment>
+      </column>
+    </property>
+    <property name="anaAffaireDateLivree" type="date">
+      <column default="null" name="ana_affaires_date_livree">
+        <comment>date livraison</comment>
+      </column>
+    </property>
+    <property name="anaAffaireDateFacture" type="date">
+      <column default="null" name="ana_affaires_date_facture">
+        <comment>date facture</comment>
+      </column>
+    </property>
+    <property name="anaLotEtat" type="integer">
+      <column default="0" name="ana_lot_etat">
+        <comment>etat du lot 0=en cours 1=termine 2=gele 3=abondonne</comment>
+      </column>
+    </property>
+    <property name="anaAffaireAvion" type="integer">
+      <column default="0" name="ana_affaire_avion">
+        <comment>0=sans 1=avec</comment>
+      </column>
+    </property>
+    <property name="anaAffaireBateau" type="integer">
+      <column default="0" name="ana_affaire_bateau">
+        <comment>0=sans 1=avec</comment>
+      </column>
+    </property>
+    <property name="anaAffaireExpress" type="integer">
+      <column default="0" name="ana_affaire_express">
+        <comment>0=sans 1=avec</comment>
+      </column>
+    </property>
+    <property name="anaAffaireRoute" type="integer">
+      <column default="0" name="ana_affaire_route">
+        <comment>0=sans 1=avec</comment>
+      </column>
+    </property>
+    <property name="anaAffaireTrain" type="integer">
+      <column default="0" name="ana_affaire_train">
+        <comment>0=sans 1=avec</comment>
+      </column>
+    </property>
+    <property name="anaAffaireReachem1" type="integer">
+      <column default="0" name="ana_affaire_reachem1">
+        <comment>0=sans 1=avec</comment>
+      </column>
+    </property>
+    <property name="anaAffaireReachem2" type="integer">
+      <column default="0" name="ana_affaire_reachem2">
+        <comment>0=sans 1=avec</comment>
+      </column>
+    </property>
+    <property name="anaAffaireReachem3" type="integer">
+      <column default="0" name="ana_affaire_reachem3">
+        <comment>0=sans 1=avec</comment>
+      </column>
+    </property>
+    <property name="anaType" type="integer">
+      <column default="0" name="ana_type">
+        <comment>type</comment>
+      </column>
+    </property>
+    <property name="anaMode" type="integer">
+      <column default="0" name="ana_mode">
+        <comment>mode</comment>
+      </column>
+    </property>
+    <property name="anaUtilisation" type="integer">
+      <column default="0" name="ana_utilisation">
+        <comment>utilisation</comment>
+      </column>
+    </property>
+    <property name="anaMarteau" type="string">
+      <column length="10" name="ana_marteau">
+        <comment>marteau</comment>
+      </column>
+    </property>
+    <property name="anaRegion" type="string">
+      <column length="10" name="ana_region">
+        <comment>region</comment>
+      </column>
+    </property>
+    <property name="anaPermis" type="string">
+      <column length="10" name="ana_permis">
+        <comment>zone permis</comment>
+      </column>
+    </property>
+    <property name="anaProprietaire" type="string">
+      <column length="10" name="ana_proprietaire">
+        <comment>proprietaire</comment>
+      </column>
+    </property>
+    <property name="anaTauxFermageOkm" type="float">
+      <column default="0" name="ana_taux_termage_okm">
+        <comment>taux fermage okm</comment>
+      </column>
+    </property>
+    <property name="anaPrixOkm" type="double">
+      <column default="0" name="ana_prix_okm">
+        <comment>prix m3 okm</comment>
+      </column>
+    </property>
+    <property name="anaTauxFermageBd" type="float">
+      <column default="0" name="ana_taux_termage_bd">
+        <comment>taux fermage bois divers</comment>
+      </column>
+    </property>
+    <property name="anaPrixBd" type="double">
+      <column default="0" name="ana_prix_bd">
+        <comment>prix m3 bois divers</comment>
+      </column>
+    </property>
+    <property name="anaTauxPrecompte" type="float">
+      <column default="0" name="ana_taux_precompte">
+        <comment>taux precompte</comment>
+      </column>
+    </property>
+    <property name="anaTauxFermage" type="float">
+      <column default="0" name="ana_taux_fermage">
+        <comment>taux fermage</comment>
+      </column>
+    </property>
+    <property name="anaTauxRedevance" type="float">
+      <column default="0" name="ana_taux_redevance">
+        <comment>taux redevance</comment>
+      </column>
+    </property>
+    <property name="anaPrixPied" type="double">
+      <column default="0" name="ana_prix_pied">
+        <comment>priox pied</comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>

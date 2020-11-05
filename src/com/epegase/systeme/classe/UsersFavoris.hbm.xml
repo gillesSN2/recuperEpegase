@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="UsersFavoris" table="cmm_users_favoris">
+    <id column="usrfav_id" name="usrfavId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="usrfavDateCreat" type="timestamp">
+      <column name="usrfav_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="usrfavDateModif" type="timestamp">
+      <column name="usrfav_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="usrfavUserCreat" type="long">
+      <column default="0" length="15" name="usrfav_user_creat">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="usrfavUserModif" type="long">
+      <column default="0" length="15" name="usrfav_user_modif">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="usrfavNom" type="string">
+      <column length="50" name="usrfav_nom">
+        <comment>nom</comment>
+      </column>
+    </property>
+    <property name="usrfavUrl" type="text">
+      <column length="1000" name="usrfav_url">
+        <comment>adresse url</comment>
+      </column>
+    </property>
+    <property name="usrfavInactif" type="integer">
+      <column default="0" length="1" name="usrfav_inactif">
+        <comment>0=actif 1=inactif 2=supprimer</comment>
+      </column>
+    </property>
+    <property name="usrfavNature" type="integer">
+      <column default="0" length="1" name="usrfav_nature">
+        <comment>0=flux rss 1=site favori 2=dossier cabinet autorise 3=modele impression 4=process 5=depot</comment>
+      </column>
+    </property>
+    <property name="usrfavLogin" type="string">
+      <column length="50" name="usrfav_login">
+        <comment>login acces ou code process</comment>
+      </column>
+    </property>
+    <property name="usrfavPw" type="string">
+      <column length="50" name="usrfav_pw">
+        <comment>mot de passe</comment>
+      </column>
+    </property>
+    <property name="usrfavMail" type="string">
+      <column length="100" name="usrfav_mail">
+        <comment>mail du compte</comment>
+      </column>
+    </property>
+    <property name="usrfavStructurePeg" type="long">
+      <column default="0" name="usrfav_structure_peg">
+        <comment>id de la strucutre pegase autorisee</comment>
+      </column>
+    </property>
+    <property name="usrfavIdUser" type="long">
+      <column default="0" name="usrfav_id_user">
+        <comment>id du user autorise</comment>
+      </column>
+    </property>
+    <property name="usrfavCiviliteUser" type="string">
+      <column length="50" name="usrfav_civilite_user">
+        <comment>civilite</comment>
+      </column>
+    </property>
+    <property name="usrfavNomUser" type="string">
+      <column length="100" name="usrfav_nom_user">
+        <comment>nom utilisateur</comment>
+      </column>
+    </property>
+    <property name="usrfavPrenomUser" type="string">
+      <column length="50" name="usrfav_prenom_user">
+        <comment>prenom user</comment>
+      </column>
+    </property>
+    <property name="usrfavFonctionUser" type="string">
+      <column length="50" name="usrfav_fonction_user">
+        <comment>fonction user</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.Users" column="usr_id" lazy="false" name="users" not-null="true"/>
+  </class>
+</hibernate-mapping>

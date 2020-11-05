@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="com.epegase.systeme.classe.FamillesParc2" table="prc_familles_parc2">
+    <id column="famprc2_id" name="famprc2Id" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="famprc2DateCreation" type="timestamp">
+      <column name="famprc2_date_creation">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="famprc2DateModif" type="timestamp">
+      <column name="famprc2_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="famprc2UserCreation" type="long">
+      <column default="0" name="famprc2_user_creation">
+        <comment>user de creation</comment>
+      </column>
+    </property>
+    <property name="famprc2UserModif" type="long">
+      <column default="0" name="famprc2_user_modif">
+        <comment>user de modification</comment>
+      </column>
+    </property>
+    <property name="famprc2Code" type="string">
+      <column length="20" name="famprc2_code">
+        <comment>code famille parc</comment>
+      </column>
+    </property>
+    <property name="famprc2LibelleFr" type="string">
+      <column length="100" name="famprc2_libelle_fr">
+        <comment>libelle famille parc en FR</comment>
+      </column>
+    </property>
+    <property name="famprc2LibelleUk" type="string">
+      <column length="100" name="famprc2_libelle_uk">
+        <comment>libelle famille parc en UK</comment>
+      </column>
+    </property>
+    <property name="famprc2LibelleSp" type="string">
+      <column length="100" name="famprc2_libelle_sp">
+        <comment>libelle famille parc en SP</comment>
+      </column>
+    </property>
+    <property name="famprc2Inactif" type="integer">
+      <column default="0" name="famprc2_inactif">
+        <comment>0=actif 1=inactif 2=supprimer</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.FamillesParc1" column="famprc1_id" lazy="false" name="FamillesParc1" not-null="true"/>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="FondationDemande" table="fon_fondation_demande">
+    <id column="fondem_id" name="fondemId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="fondemDateCreat" type="timestamp">
+      <column name="fondem_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="fondemDateModif" type="timestamp">
+      <column name="fondem_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="fondemIdCreateur" type="long">
+      <column default="0" length="15" name="fondem_id_createur">
+        <comment>id user createur</comment>
+      </column>
+    </property>
+    <property name="fondemNomCreateur" type="string">
+      <column length="100" name="fondem_nom_createur">
+        <comment>nom du createur</comment>
+      </column>
+    </property>
+    <property name="fondemIdModif" type="long">
+      <column default="0" length="15" name="fondem_id_modif">
+        <comment>id user de modification</comment>
+      </column>
+    </property>
+    <property name="fondemNomModif" type="string">
+      <column length="100" name="fondem_nom_modif">
+        <comment>nom user de modification</comment>
+      </column>
+    </property>
+    <property index="true" name="fondemDate" type="timestamp">
+      <column index="true" name="fondem_date">
+        <comment>date du devis</comment>
+      </column>
+    </property>
+    <property index="true" name="fondemNum" type="string">
+      <column index="true" length="20" name="fondem_num">
+        <comment>numero demande</comment>
+      </column>
+    </property>
+    <property name="fondemNomResponsable" type="string">
+      <column length="100" name="fondem_nom_responsable">
+        <comment>nom du commercial</comment>
+      </column>
+    </property>
+    <property name="fondemNomEquipe" type="string">
+      <column length="100" name="fondem_nom_equipe">
+        <comment>nom equipe</comment>
+      </column>
+    </property>
+    <property name="fondemIdEquipe" type="long">
+      <column default="0" length="15" name="fondem_id_equipe">
+        <comment>id equipe</comment>
+      </column>
+    </property>
+    <property name="fondemIdResponsable" type="long">
+      <column default="0" name="fondem_id_responsable">
+        <comment>id du commercial</comment>
+      </column>
+    </property>
+    <property name="fondemNomCommercial" type="string">
+      <column length="100" name="fondem_nom_commercial">
+        <comment>nom du commercial</comment>
+      </column>
+    </property>
+    <property name="fondemIdCommercial" type="long">
+      <column default="0" length="15" name="fondem_id_commercial">
+        <comment>id du commercial</comment>
+      </column>
+    </property>
+    <property name="fondemNomTiers" type="string">
+      <column length="100" name="fondem_nom_tiers">
+        <comment>nom du client</comment>
+      </column>
+    </property>
+    <property name="fondemCivilTiers" type="string">
+      <column length="20" name="fondem_civil_tiers">
+        <comment>civilite du tiers</comment>
+      </column>
+    </property>
+    <property name="fondemTiersRegroupe" type="string">
+      <column length="50" name="fondem_tiers_regroupe">
+        <comment>regroupement des tiers</comment>
+      </column>
+    </property>
+    <property name="fondemIdContact" type="long">
+      <column default="0" name="fondem_id_contact">
+        <comment>id du contact</comment>
+      </column>
+    </property>
+    <property name="fondemNomContact" type="string">
+      <column length="100" name="fondem_nom_contact">
+        <comment>nom du contact ou destinataire</comment>
+      </column>
+    </property>
+    <property name="fondemCivilContact" type="string">
+      <column length="20" name="fondem_civil_contact">
+        <comment>civilite du contact</comment>
+      </column>
+    </property>
+    <property index="true" name="fondemSerie" type="string">
+      <column index="true" length="4" name="fondem_serie">
+        <comment>serie A, B, C, D ou X</comment>
+      </column>
+    </property>
+    <property name="fondemExoTva" type="integer">
+      <column default="0" length="1" name="fondem_exo_tva">
+        <comment>0=avec tva 1=sans tva </comment>
+      </column>
+    </property>
+    <property name="fondemType" type="integer">
+      <column default="0" length="1" name="fondem_type">
+        <comment>0=parrainage 1=administratif 2=juridique 3=soins medicaux 4=scolarite 5=formation 6=logement 7=alimentation 9=autre soutien financier</comment>
+      </column>
+    </property>
+    <property name="fondemExoDouane" type="integer">
+      <column default="0" length="1" name="fondem_exo_douane">
+        <comment>0=avec douane 1=sans douane </comment>
+      </column>
+    </property>
+    <property name="fondemSuivi" type="integer">
+      <column default="0" length="1" name="fondem_suivi">
+        <comment>0=suivi standard 1=suivi vip</comment>
+      </column>
+    </property>
+    <property index="true" name="fondemCat" type="string">
+      <column index="true" length="50" name="fondem_cat">
+        <comment>categorie du client</comment>
+      </column>
+    </property>
+    <property name="fondemDevise" type="string">
+      <column length="3" name="fondem_devise">
+        <comment>code devise</comment>
+      </column>
+    </property>
+    <property name="fondemObject" type="string">
+      <column length="100" name="fondem_object">
+        <comment>objet</comment>
+      </column>
+    </property>
+    <property name="fondemDescription" type="text">
+      <column name="fondem_description">
+        <comment>description du demandeur</comment>
+      </column>
+    </property>
+    <property name="fondemObservation" type="text">
+      <column name="fondem_observation">
+        <comment>observation du receveur</comment>
+      </column>
+    </property>
+    <property name="fondemValidation" type="text">
+      <column name="fondem_validation">
+        <comment>observation validation</comment>
+      </column>
+    </property>
+    <property name="fondemTauxRemise" type="float">
+      <column default="0" name="fondem_taux_remise">
+        <comment>taux remise globale</comment>
+      </column>
+    </property>
+    <property name="fondemTotDemande" type="double">
+      <column default="0" name="fondem_tot_demande">
+        <comment>total demande</comment>
+      </column>
+    </property>
+    <property name="fondemTotRemise" type="double">
+      <column default="0" name="fondem_tot_remise">
+        <comment>total remise</comment>
+      </column>
+    </property>
+    <property name="fondemTotRabais" type="double">
+      <column default="0" name="fondem_tot_rabais">
+        <comment>total rabais</comment>
+      </column>
+    </property>
+    <property name="fondemTotAccorde" type="double">
+      <column default="0" name="fondem_tot_accorde">
+        <comment>ttal accorde</comment>
+      </column>
+    </property>
+    <property name="fondemTauxTc" type="float">
+      <column default="0" name="fondem_taux_tc">
+        <comment>taux taxe complementaire</comment>
+      </column>
+    </property>
+    <property name="fondemTotTc" type="double">
+      <column default="0" name="fondem_tot_tc">
+        <comment>total taxe complementaire</comment>
+      </column>
+    </property>
+    <property name="fondemTotDebloque" type="double">
+      <column default="0" name="fondem_tot_debloque">
+        <comment>total debloque</comment>
+      </column>
+    </property>
+    <property name="fondemTotReglement" type="double">
+      <column default="0" name="fondem_tot_reglement">
+        <comment>total reglement</comment>
+      </column>
+    </property>
+    <property name="fondemSolde" type="integer">
+      <column default="0" length="1" name="fondem_solde">
+        <comment>0=non solde 1=solde</comment>
+      </column>
+    </property>
+    <property name="fondemBanque" type="string">
+      <column length="100" name="fondem_banque">
+        <comment>nom de la banque + numero de compte</comment>
+      </column>
+    </property>
+    <property index="true" name="fondemTypeReg" type="integer">
+      <column default="0" index="true" name="fondem_type_reg">
+        <comment>0=paiement comptant 1=terme date de facture 2=terme fin de mois 3=arrivee/paye 4=bon encaissement 5=demande credit</comment>
+      </column>
+    </property>
+    <property name="fondemModeReg" type="string">
+      <column length="50" name="fondem_mode_reg">
+        <comment>mode de reglement xml</comment>
+      </column>
+    </property>
+    <property name="fondemEcheanceReliquat" type="date">
+      <column default="null" name="fondem_echeance_reliquat">
+        <comment>date echeance reliquat si type reg = 5</comment>
+      </column>
+    </property>
+    <property name="fondemMotifRejetCredit" type="string">
+      <column length="50" name="fondem_motif_rejet_credit">
+        <comment>motif du rejet accord du credit </comment>
+      </column>
+    </property>
+    <property name="fondemNbJourReg" type="integer">
+      <column default="0" length="3" name="fondem_nb_jour_reg">
+        <comment>nombre de jour </comment>
+      </column>
+    </property>
+    <property name="fondemArrondiReg" type="integer">
+      <column default="0" length="3" name="fondem_arrondi_reg">
+        <comment>nombre de jour arrondi</comment>
+      </column>
+    </property>
+    <property name="fondemConditionReg" type="string">
+      <column length="100" name="fondem_condition_reg">
+        <comment>condition de reglement</comment>
+      </column>
+    </property>
+    <property name="fondemDateEcheReg" type="date">
+      <column name="fondem_date_eche_reg">
+        <comment>date echeance de reglement</comment>
+      </column>
+    </property>
+    <property name="fondemJournalReg" type="string">
+      <column length="20" name="fondem_journal_reg">
+        <comment>code journal des reglements</comment>
+      </column>
+    </property>
+    <property name="fondemActivite" type="text">
+      <column name="fondem_activite">
+        <comment>code activite</comment>
+      </column>
+    </property>
+    <property name="fondemSite" type="string">
+      <column length="121" name="fondem_site">
+        <comment>code site</comment>
+      </column>
+    </property>
+    <property name="fondemDepartement" type="string">
+      <column length="121" name="fondem_departement">
+        <comment>code departement</comment>
+      </column>
+    </property>
+    <property name="fondemService" type="string">
+      <column length="121" name="fondem_service">
+        <comment>code service</comment>
+      </column>
+    </property>
+    <property name="fondemRegion" type="string">
+      <column length="121" name="fondem_region">
+        <comment>code region</comment>
+      </column>
+    </property>
+    <property name="fondemSecteur" type="string">
+      <column length="121" name="fondem_secteur">
+        <comment>code secteur</comment>
+      </column>
+    </property>
+    <property name="fondemPdv" type="string">
+      <column length="121" name="fondem_pdv">
+        <comment>code point de vente</comment>
+      </column>
+    </property>
+    <property name="fondemAnal2" type="string">
+      <column length="121" name="fondem_anal2">
+        <comment>code analytique 2 (parc)</comment>
+      </column>
+    </property>
+    <property name="fondemAnal4" type="string">
+      <column length="121" name="fondem_anal4">
+        <comment>code analytique 4 (dossier)</comment>
+      </column>
+    </property>
+    <property name="fondemInfo1" type="string">
+      <column length="100" name="fondem_info1">
+        <comment>info 1</comment>
+      </column>
+    </property>
+    <property name="fondemInfo2" type="string">
+      <column length="100" name="fondem_info2">
+        <comment>info 2</comment>
+      </column>
+    </property>
+    <property name="fondemInfo3" type="string">
+      <column length="100" name="fondem_info3">
+        <comment>info 3</comment>
+      </column>
+    </property>
+    <property name="fondemInfo4" type="string">
+      <column length="100" name="fondem_info4">
+        <comment>info 4</comment>
+      </column>
+    </property>
+    <property name="fondemInfo5" type="string">
+      <column length="100" name="fondem_info5">
+        <comment>info 5</comment>
+      </column>
+    </property>
+    <property name="fondemInfo6" type="string">
+      <column length="100" name="fondem_info6">
+        <comment>info 6</comment>
+      </column>
+    </property>
+    <property name="fondemInfo7" type="string">
+      <column length="100" name="fondem_info7">
+        <comment>info 7</comment>
+      </column>
+    </property>
+    <property name="fondemInfo8" type="string">
+      <column length="100" name="fondem_info8">
+        <comment>info 8</comment>
+      </column>
+    </property>
+    <property name="fondemInfo9" type="string">
+      <column length="100" name="fondem_info9">
+        <comment>info 9</comment>
+      </column>
+    </property>
+    <property name="fondemInfo10" type="string">
+      <column length="100" name="fondem_info10">
+        <comment>info 10</comment>
+      </column>
+    </property>
+    <property name="fondemFormule1" type="string">
+      <column length="100" name="fondem_formule1">
+        <comment>code formule 1</comment>
+      </column>
+    </property>
+    <property name="fondemFormule2" type="string">
+      <column length="250" name="fondem_formule2">
+        <comment>code formule 2</comment>
+      </column>
+    </property>
+    <property name="fondemAnnexe1" type="string">
+      <column length="50" name="fondem_annexe1">
+        <comment>nom jasper du modele annexe 1</comment>
+      </column>
+    </property>
+    <property name="fondemAnnexe2" type="string">
+      <column length="50" name="fondem_annexe2">
+        <comment>nom jasper du modele annexe 2</comment>
+      </column>
+    </property>
+    <property name="fondemContrat" type="string">
+      <column length="20" name="fondem_contrat">
+        <comment>code contrat</comment>
+      </column>
+    </property>
+    <property name="fondemDateImp" type="timestamp">
+      <column name="fondem_date_imp">
+        <comment>date impression</comment>
+      </column>
+    </property>
+    <property name="fondemModeleImp" type="string">
+      <column length="50" name="fondem_modele_imp">
+        <comment>nom jasper du modele</comment>
+      </column>
+    </property>
+    <property name="fondemGarde" type="string">
+      <column length="50" name="fondem_garde">
+        <comment>nom jasper du modele page de garde</comment>
+      </column>
+    </property>
+    <property name="fondemEtatVal" type="integer">
+      <column default="0" length="1" name="fondem_etat_val">
+        <comment>0=sans validation 1=avec validation</comment>
+      </column>
+    </property>
+    <property name="fondemGele" type="integer">
+      <column default="0" length="1" name="fondem_gele">
+        <comment>0=non gele 1=gele</comment>
+      </column>
+    </property>
+    <property index="true" name="fondemEtat" type="integer">
+      <column default="0" index="true" length="1" name="fondem_etat">
+        <comment>0=En cours 1=valide 2=gele 3=annule 4=transforme partiel 5=transforme total 6=mise en attente</comment>
+      </column>
+    </property>
+    <property name="fondemDateValidite" type="date">
+      <column name="fondem_date_validite">
+        <comment>date de validite</comment>
+      </column>
+    </property>
+    <property name="fondemDateRelance" type="date">
+      <column name="fondem_date_relance">
+        <comment>date de relance</comment>
+      </column>
+    </property>
+    <property name="fondemDateValide" type="timestamp">
+      <column name="fondem_date_valide">
+        <comment>date de validation</comment>
+      </column>
+    </property>
+    <property name="fondemPosSignature" type="integer">
+      <column default="0" length="1" name="fondem_pos_signature">
+        <comment>nb de signature ayant statue</comment>
+      </column>
+    </property>
+    <property name="fondemDateTransforme" type="timestamp">
+      <column name="fondem_date_transforme">
+        <comment>date de transformation</comment>
+      </column>
+    </property>
+    <property name="fondemTypeTransforme" type="integer">
+      <column default="0" name="fondem_type_transforme">
+        <comment>type de transformation</comment>
+      </column>
+    </property>
+    <property name="fondemDateAnnule" type="timestamp">
+      <column name="fondem_date_annule">
+        <comment>date annulation</comment>
+      </column>
+    </property>
+    <property name="fondemMotifAnnule" type="string">
+      <column length="100" name="fondem_motif_annule">
+        <comment>motif annulation</comment>
+      </column>
+    </property>
+    <property name="fondemFactorNom" type="string">
+      <column length="100" name="fondem_factor_nom">
+        <comment>nom du factor</comment>
+      </column>
+    </property>
+    <property name="fondemFactorId" type="long">
+      <column default="0" name="fondem_factor_id">
+        <comment>id du factor</comment>
+      </column>
+    </property>
+    <property name="fondemFactorEtat" type="integer">
+      <column default="0" name="fondem_factor_etat">
+        <comment>0=en cours 1=accepter 2=refuser</comment>
+      </column>
+    </property>
+    <property name="fondemDiversTiers" type="integer">
+      <column default="0" name="fondem_divers_tiers">
+        <comment>0=normal 99= divers</comment>
+      </column>
+    </property>
+    <property name="fondemDiversNom" type="string">
+      <column length="100" name="fondem_divers_nom">
+        <comment>nom du tiers divers</comment>
+      </column>
+    </property>
+    <property name="fondemDiversAdresse" type="string">
+      <column length="100" name="fondem_divers_adresse">
+        <comment>adresse du tiers divers</comment>
+      </column>
+    </property>
+    <property name="fondemDiversVille" type="string">
+      <column length="50" name="fondem_divers_ville">
+        <comment>ville du tiers divers</comment>
+      </column>
+    </property>
+    <property name="fondemDiversTel" type="string">
+      <column length="50" name="fondem_divers_tel">
+        <comment>telephone du tiers divers</comment>
+      </column>
+    </property>
+    <property name="fondemDiversMail" type="string">
+      <column length="100" name="fondem_divers_mail">
+        <comment>mail du tiers divers</comment>
+      </column>
+    </property>
+    <property name="fondemSource" type="string">
+      <column length="50" name="fondem_source">
+        <comment>source du document</comment>
+      </column>
+    </property>
+    <property name="fondemModeConclusion" type="integer">
+      <column default="0" length="1" name="fondem_mode_conclusion">
+        <comment>0=accepte 1=refus atre concurrent meme produit 2=refus autre oncurrent meilleur produit 3=annulation devis 4=autre refus</comment>
+      </column>
+    </property>
+    <property name="fondemConclusion" type="string">
+      <column length="50" name="fondem_conclusion">
+        <comment>conclusion suivi</comment>
+      </column>
+    </property>
+    <property name="fondemDateRelance1" type="date">
+      <column default="null" name="fondem_date_relance1">
+        <comment>date de relance 1</comment>
+      </column>
+    </property>
+    <property name="fondemConclusion1" type="string">
+      <column length="50" name="fondem_conclusion1">
+        <comment>conclusion1 suivi</comment>
+      </column>
+    </property>
+    <property name="fondemDateARelance1" type="date">
+      <column default="null" name="fondem_date_a_relance1">
+        <comment>date a relancer 1</comment>
+      </column>
+    </property>
+    <property name="fondemUserRelance1" type="long">
+      <column default="0" name="fondem_user_relance1">
+        <comment>date de relancer 1</comment>
+      </column>
+    </property>
+    <property name="fondemDateRelance2" type="date">
+      <column default="null" name="fondem_date_relance2">
+        <comment>date de relance 2</comment>
+      </column>
+    </property>
+    <property name="fondemConclusion2" type="string">
+      <column length="50" name="fondem_conclusion2">
+        <comment>conclusion2 suivi</comment>
+      </column>
+    </property>
+    <property name="fondemDateARelance2" type="date">
+      <column default="null" name="fondem_date_a_relance2">
+        <comment>date a relancer 2</comment>
+      </column>
+    </property>
+    <property name="fondemUserRelance2" type="long">
+      <column default="0" name="fondem_user_relance2">
+        <comment>date de relancer 2</comment>
+      </column>
+    </property>
+    <property name="fondemDateRelance3" type="date">
+      <column default="null" name="fondem_date_relance3">
+        <comment>date de relance 3</comment>
+      </column>
+    </property>
+    <property name="fondemConclusion3" type="string">
+      <column length="50" name="fondem_conclusion3">
+        <comment>conclusion3 suivi</comment>
+      </column>
+    </property>
+    <property name="fondemDateARelance3" type="date">
+      <column default="null" name="fondem_date_a_relance3">
+        <comment>date a relancer 3</comment>
+      </column>
+    </property>
+    <property name="fondemUserRelance3" type="long">
+      <column default="0" name="fondem_user_relance3">
+        <comment>date de relancer 3</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ExercicesVentes" column="exevte_id" lazy="false" name="exerciceventes" not-null="true"/>
+    <many-to-one class="com.epegase.systeme.classe.Tiers" column="tie_id" lazy="false" name="tiers" not-null="true"/>
+    <many-to-one class="com.epegase.systeme.classe.Users" column="usr_id" lazy="false" name="users" not-null="false"/>
+  </class>
+</hibernate-mapping>

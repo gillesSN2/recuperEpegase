@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="DevisEnteteMedical" table="med_devis_entete">
+    <id column="dvs_id" name="dvsId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="dvsDateCreat" type="timestamp">
+      <column name="dvs_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="dvsDateModif" type="timestamp">
+      <column name="dvs_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="dvsIdCreateur" type="long">
+      <column default="0" length="15" name="dvs_id_createur">
+        <comment>id user createur</comment>
+      </column>
+    </property>
+    <property name="dvsNomCreateur" type="string">
+      <column length="100" name="dvs_nom_createur">
+        <comment>nom du createur</comment>
+      </column>
+    </property>
+    <property name="dvsIdModif" type="long">
+      <column default="0" length="15" name="dvs_id_modif">
+        <comment>id user de modification</comment>
+      </column>
+    </property>
+    <property name="dvsNomModif" type="string">
+      <column length="100" name="dvs_nom_modif">
+        <comment>nom user de modification</comment>
+      </column>
+    </property>
+    <property name="dvsNum" type="string">
+      <column length="20" name="dvs_num">
+        <comment>numero</comment>
+      </column>
+    </property>
+    <property name="dvsFeuille" type="string">
+      <column length="20" name="dvs_feuille">
+        <comment>numero feuille</comment>
+      </column>
+    </property>
+    <property index="true" name="dvsDate" type="timestamp">
+      <column default="NULL" index="true" name="dvs_date">
+        <comment>date</comment>
+      </column>
+    </property>
+    <property index="true" name="dvsSerie" type="string">
+      <column index="true" length="4" name="dvs_serie">
+        <comment>serie A, B, C, D ou X</comment>
+      </column>
+    </property>
+    <property name="dvsDateTransfert" type="date">
+      <column default="NULL" name="dvs_date_transfert">
+        <comment>date de transfert en compta</comment>
+      </column>
+    </property>
+    <property name="dvsDateAnnule" type="date">
+      <column name="dvs_date_annule">
+        <comment>date annulation</comment>
+      </column>
+    </property>
+    <property name="dvsMotifAnnule" type="string">
+      <column length="50" name="dvs_motif_annule">
+        <comment>motif annulation</comment>
+      </column>
+    </property>
+    <property name="dvsEcheanceReliquat" type="date">
+      <column default="NULL" name="dvs_echeance_reliquat">
+        <comment>date de paiement du relicat</comment>
+      </column>
+    </property>
+    <property name="dvsNumPieceTiers" type="string">
+      <column length="20" name="dvs_num_piece_tiers">
+        <comment>numero de la piece du tiers</comment>
+      </column>
+    </property>
+    <property name="dvsCloture" type="integer">
+      <column default="0" length="1" name="dvs_cloture">
+        <comment>0=non cloture 1=cloture</comment>
+      </column>
+    </property>
+    <property name="dvsEtatVal" type="integer">
+      <column default="0" length="1" name="dvs_etat_val">
+        <comment>0=sans validation 1=avec validation</comment>
+      </column>
+    </property>
+    <property name="dvsEtat" type="integer">
+      <column default="0" length="1" name="dvs_etat">
+        <comment>0=En cours 1=valide 2=gele 3=annule</comment>
+      </column>
+    </property>
+    <property name="dvsNumHospit" type="string">
+      <column length="20" name="dvs_num_hospit">
+        <comment>numero hospitalisation</comment>
+      </column>
+    </property>
+    <property name="dvsNumRum" type="string">
+      <column length="20" name="dvs_num_rum">
+        <comment>numero hospitalisation</comment>
+      </column>
+    </property>
+    <property name="dvsService" type="string">
+      <column length="121" name="dvs_service">
+        <comment>service demandeur</comment>
+      </column>
+    </property>
+    <property name="dvsProtocole" type="string">
+      <column length="121" name="dvs_protocole">
+        <comment>code protocole</comment>
+      </column>
+    </property>
+    <property name="dvsPathologie" type="string">
+      <column length="121" name="dvs_pathologie">
+        <comment>code pathologie</comment>
+      </column>
+    </property>
+    <property name="dvsEntree" type="string">
+      <column length="121" name="dvs_entree">
+        <comment>motif entree</comment>
+      </column>
+    </property>
+    <property name="dvsPrescripteur" type="string">
+      <column length="100" name="dvs_prescripteur">
+        <comment>nom prescripteur</comment>
+      </column>
+    </property>
+    <property name="dvsIdMedecin" type="long">
+      <column default="0" name="dvs_id_medecin">
+        <comment>id medecin</comment>
+      </column>
+    </property>
+    <property name="dvsMedecin" type="string">
+      <column length="100" name="dvs_medecin">
+        <comment>nom medecin</comment>
+      </column>
+    </property>
+    <property name="dvsNumBc" type="string">
+      <column length="20" name="dvs_num_bc">
+        <comment>numero bon de commande</comment>
+      </column>
+    </property>
+    <property name="dvsNumSecteur" type="string">
+      <column length="20" name="dvs_num_secteur">
+        <comment>secteur agent</comment>
+      </column>
+    </property>
+    <property name="dvsIdPatient" type="long">
+      <column default="0" length="15" name="dvs_id_patient">
+        <comment>id patient</comment>
+      </column>
+    </property>
+    <property name="dvsCivilite" type="string">
+      <column length="20" name="dvs_civilite">
+        <comment>civilite</comment>
+      </column>
+    </property>
+    <property name="dvsNomPatient" type="string">
+      <column length="100" name="dvs_nom_patient">
+        <comment>nom et prenom</comment>
+      </column>
+    </property>
+    <property index="true" name="dvsIdSociete" type="long">
+      <column default="0" index="true" length="15" name="dvs_id_societe">
+        <comment>id societe</comment>
+      </column>
+    </property>
+    <property name="dvsNomSociete" type="string">
+      <column length="100" name="dvs_nom_societe">
+        <comment>nom societe</comment>
+      </column>
+    </property>
+    <property name="dvsMatricule" type="string">
+      <column length="20" name="dvs_matricule">
+        <comment>matricule</comment>
+      </column>
+    </property>
+    <property index="true" name="dvsIdAssurance" type="long">
+      <column default="0" index="true" length="15" name="dvs_id_assurance">
+        <comment>id assurance</comment>
+      </column>
+    </property>
+    <property name="dvsNomAssurance" type="string">
+      <column length="100" name="dvs_nom_assurance">
+        <comment>nom assurance</comment>
+      </column>
+    </property>
+    <property name="dvsContratAssurance" type="string">
+      <column length="20" name="dvs_contrat_assurance">
+        <comment>numero de contrat</comment>
+      </column>
+    </property>
+    <property index="true" name="dvsIdComplementaire" type="long">
+      <column default="0" index="true" length="15" name="dvs_id_complementaire">
+        <comment>id commplementaire</comment>
+      </column>
+    </property>
+    <property name="dvsNomComplemtaire" type="string">
+      <column length="100" name="dvs_nom_complemtaire">
+        <comment>nom complementaire</comment>
+      </column>
+    </property>
+    <property name="dvsContratComplementaire" type="string">
+      <column length="20" name="dvs_contrat_complementaire">
+        <comment>numero de contrat</comment>
+      </column>
+    </property>
+    <property name="dvsIdEmployeur" type="long">
+      <column default="0" name="dvs_id_employeur">
+        <comment>id employeur</comment>
+      </column>
+    </property>
+    <property name="dvsNomEmployeur" type="string">
+      <column length="100" name="dvs_nom_employeur">
+        <comment>nom employeur</comment>
+      </column>
+    </property>
+    <property name="dvsPecCnamgs" type="float">
+      <column default="0" name="dvs_pec_cnamgs">
+        <comment>taux de prise en charge de la cnamgs</comment>
+      </column>
+    </property>
+    <property name="dvsFondCnamgs" type="integer">
+      <column default="0" name="dvs_fond_cnamgs">
+        <comment>0=fond prive + consult 1=fond public + consult 2=fond gef + consult 10=fond prive + examen 11=fond public + examen 12=fond gef + examen</comment>
+      </column>
+    </property>
+    <property name="dvsFam" type="long">
+      <column default="0" name="dvs_fam">
+        <comment>0=non assure -1=cas social -2=etat xx=id patientpec tiers assureur</comment>
+      </column>
+    </property>
+    <property name="dvsComplementaire" type="long">
+      <column default="0" name="dvs_cmplementaire">
+        <comment>0=non assure xx= id pateintpec complementaire</comment>
+      </column>
+    </property>
+    <property name="dvsTotPatient" type="double">
+      <column default="0" name="dvs_tot_patient">
+        <comment>part ht patient</comment>
+      </column>
+    </property>
+    <property name="dvsTotSociete" type="double">
+      <column default="0" name="dvs_tot_societe">
+        <comment>part ht societe</comment>
+      </column>
+    </property>
+    <property name="dvsTotAssurance" type="double">
+      <column default="0" name="dvs_tot_assurance">
+        <comment>part ht assurance</comment>
+      </column>
+    </property>
+    <property name="dvsTotComplmentaire" type="double">
+      <column default="0" name="dvs_tot_complmentaire">
+        <comment>part ht complementaire</comment>
+      </column>
+    </property>
+    <property name="dvsTotTaxePatient" type="double">
+      <column default="0" name="dvs_tot_taxe_patient">
+        <comment>part taxe patient</comment>
+      </column>
+    </property>
+    <property name="dvsTotTaxeSociete" type="double">
+      <column default="0" name="dvs_tot_taxe_societe">
+        <comment>part taxe societe</comment>
+      </column>
+    </property>
+    <property name="dvsTotTaxeAssurance" type="double">
+      <column default="0" name="dvs_tot_taxe_assurance">
+        <comment>part taxe assurance</comment>
+      </column>
+    </property>
+    <property name="dvsTotTaxeComplementaire" type="double">
+      <column default="0" name="dvs_tot_taxe_complementaire">
+        <comment>part taxe complementaire</comment>
+      </column>
+    </property>
+    <property name="dvsTotGeneral" type="double">
+      <column default="0" name="dvs_tot_general">
+        <comment>total general</comment>
+      </column>
+    </property>
+    <property name="dvsTotRabais" type="double">
+      <column default="0" name="dvs_tot_rabais">
+        <comment>total rabais</comment>
+      </column>
+    </property>
+    <property name="dvsTotTaxeGeneral" type="double">
+      <column default="0" name="dvs_tot_taxe_general">
+        <comment>total taxe</comment>
+      </column>
+    </property>
+    <property name="dvsRegPatient" type="double">
+      <column default="0" name="dvs_reg_patient">
+        <comment>reglement patient</comment>
+      </column>
+    </property>
+    <property name="dvsSoldePatient" type="int">
+      <column default="0" name="dvs_solde_patient">
+        <comment>0= non solde 1=solde patient</comment>
+      </column>
+    </property>
+    <property name="dvsRegTiers" type="double">
+      <column default="0" name="dvs_reg_tiers">
+        <comment>reglement tiers</comment>
+      </column>
+    </property>
+    <property name="dvsSoldeTiers" type="int">
+      <column default="0" name="dvs_solde_tiers">
+        <comment>0= non solde 1=solde tiers</comment>
+      </column>
+    </property>
+    <property name="dvsBanque" type="string">
+      <column length="100" name="dvs_banque">
+        <comment>nom de la banque + numero de compte</comment>
+      </column>
+    </property>
+    <property index="true" name="dvsTypeReg" type="integer">
+      <column default="0" index="true" name="dvs_type_reg">
+        <comment>0=paiement comptant 1=terme date de facture 2=terme fin de mois 3=arrivee/paye 4=bon encaissement</comment>
+      </column>
+    </property>
+    <property name="dvsModeReg" type="string">
+      <column length="50" name="dvs_mode_reg">
+        <comment>mode de reglement xml</comment>
+      </column>
+    </property>
+    <property name="dvsNbJourReg" type="integer">
+      <column default="0" length="3" name="dvs_nb_jour_reg">
+        <comment>nombre de jour </comment>
+      </column>
+    </property>
+    <property name="dvsArrondiReg" type="integer">
+      <column default="0" length="3" name="dvs_arrondi_reg">
+        <comment>nombre de jour arrondi</comment>
+      </column>
+    </property>
+    <property name="dvsDateEcheReg" type="date">
+      <column name="dvs_date_eche_reg">
+        <comment>date echeance de reglement</comment>
+      </column>
+    </property>
+    <property name="dvsActivite" type="string">
+      <column length="121" name="dvs_activite">
+        <comment>code activite</comment>
+      </column>
+    </property>
+    <property name="dvsInfo1" type="string">
+      <column length="100" name="dvs_info1">
+        <comment>info 1</comment>
+      </column>
+    </property>
+    <property name="dvsInfo2" type="string">
+      <column length="100" name="dvs_info2">
+        <comment>info 2</comment>
+      </column>
+    </property>
+    <property name="dvsInfo3" type="string">
+      <column length="100" name="dvs_info3">
+        <comment>info 3</comment>
+      </column>
+    </property>
+    <property name="dvsInfo4" type="string">
+      <column length="100" name="dvs_info4">
+        <comment>info 4</comment>
+      </column>
+    </property>
+    <property name="dvsInfo5" type="string">
+      <column length="100" name="dvs_info5">
+        <comment>info 5</comment>
+      </column>
+    </property>
+    <property name="dvsInfo6" type="string">
+      <column length="100" name="dvs_info6">
+        <comment>info 6</comment>
+      </column>
+    </property>
+    <property name="dvsInfo7" type="string">
+      <column length="100" name="dvs_info7">
+        <comment>info 7</comment>
+      </column>
+    </property>
+    <property name="dvsInfo8" type="string">
+      <column length="100" name="dvs_info8">
+        <comment>info 8</comment>
+      </column>
+    </property>
+    <property name="dvsInfo9" type="string">
+      <column length="100" name="dvs_info9">
+        <comment>info 9</comment>
+      </column>
+    </property>
+    <property name="dvsInfo10" type="string">
+      <column length="100" name="dvs_info10">
+        <comment>info 10</comment>
+      </column>
+    </property>
+    <property name="dvsDateImp" type="timestamp">
+      <column name="dvs_date_imp">
+        <comment>date impression</comment>
+      </column>
+    </property>
+    <property name="dvsModeleImp" type="string">
+      <column length="100" name="dvs_modele_imp">
+        <comment>nom jasper du modele</comment>
+      </column>
+    </property>
+    <property name="dvsNomAssurePrincipal" type="string">
+      <column length="100" name="dvs_nom_assure_principal">
+        <comment>nom assure principal</comment>
+      </column>
+    </property>
+    <property name="dvsAyantDroit" type="boolean">
+      <column default="false" name="dvs_ayant_droit">
+        <comment>false = assure prinipal true = ayant droit</comment>
+      </column>
+    </property>
+    <property name="dvsBloqueRefacturation" type="boolean">
+      <column default="false" name="dvs_bloque_refacturation">
+        <comment>false = refacturation autorisee true=refacturation bloquee</comment>
+      </column>
+    </property>
+    <property name="dvsCommentaire" type="text">
+      <column name="dvs_commentaire">
+        <comment>commentaire</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ExercicesVentes" column="exevte_id" lazy="false" name="exerciceventes" not-null="true"/>
+    <many-to-one class="com.epegase.systeme.classe.Patients" column="pat_id" lazy="false" name="Patients" not-null="true"/>
+  </class>
+</hibernate-mapping>

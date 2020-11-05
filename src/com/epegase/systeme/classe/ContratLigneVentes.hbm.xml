@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="ContratLigneVentes" table="vte_contrat_ligne">
+    <id column="crtlig_id" name="crtligId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="crtligOrdre" type="integer">
+      <column default="0" name="crtlig_ordre">
+        <comment>ordre des lignes</comment>
+      </column>
+    </property>
+    <property name="crtligCode" type="string">
+      <column length="20" name="crtlig_code">
+        <comment>code produit</comment>
+      </column>
+    </property>
+    <property name="crtligFamille" type="string">
+      <column length="121" name="crtlig_famille">
+        <comment>famille vente</comment>
+      </column>
+    </property>
+    <property name="crtligLibelle" type="text">
+      <column length="500" name="crtlig_libelle">
+        <comment>libelle produit</comment>
+      </column>
+    </property>
+    <property name="crtligComplement" type="text">
+      <column length="500" name="crtlig_complement">
+        <comment>descriptif complementaire</comment>
+      </column>
+    </property>
+    <property name="crtligReference" type="string">
+      <column length="20" name="crtlig_reference">
+        <comment>reference produit</comment>
+      </column>
+    </property>
+    <property name="crtligTaxe" type="string">
+      <column length="20" name="crtlig_taxe">
+        <comment>code taxe</comment>
+      </column>
+    </property>
+    <property name="crtligTauxTaxe" type="float">
+      <column default="0" name="crtlig_taux_taxe">
+        <comment>taux de taxe</comment>
+      </column>
+    </property>
+    <property name="crtligUnite" type="string">
+      <column length="30" name="crtlig_unite">
+        <comment>unite produit</comment>
+      </column>
+    </property>
+    <property name="crtligCondition" type="string">
+      <column length="121" name="crtlig_condition">
+        <comment>conditionnement produit</comment>
+      </column>
+    </property>
+    <property name="crtligDescription" type="string">
+      <column length="20" name="crtlig_description">
+        <comment>description conditionnement produit</comment>
+      </column>
+    </property>
+    <property name="crtligDepot" type="string">
+      <column length="20" name="crtlig_depot">
+        <comment>code depot</comment>
+      </column>
+    </property>
+    <property name="crtligStock" type="integer">
+      <column default="0" name="crtlig_stock">
+        <comment>mode de gestion stock</comment>
+      </column>
+    </property>
+    <property name="crtligQteStock" type="float">
+      <column default="0" name="crtlig_qte_stock">
+        <comment>quantite en stock</comment>
+      </column>
+    </property>
+    <property name="crtligEchelle" type="integer">
+      <column default="0" name="crtlig_echelle">
+        <comment>echelle de la ligne</comment>
+      </column>
+    </property>
+    <property name="crtligQte" type="float">
+      <column default="0" name="crtlig_qte">
+        <comment>quantite</comment>
+      </column>
+    </property>
+    <property name="crtligLong" type="float">
+      <column default="0" name="crtlig_long">
+        <comment>longueur</comment>
+      </column>
+    </property>
+    <property name="crtligLarg" type="float">
+      <column default="0" name="crtlig_larg">
+        <comment>largeur</comment>
+      </column>
+    </property>
+    <property name="crtligHaut" type="float">
+      <column default="0" name="crtlig_haut">
+        <comment>hauteur</comment>
+      </column>
+    </property>
+    <property name="crtligDiam" type="float">
+      <column default="0" name="crtlig_diam">
+        <comment>diametre</comment>
+      </column>
+    </property>
+    <property name="crtligNb" type="float">
+      <column default="0" name="crtlig_nb">
+        <comment>nombre de piece</comment>
+      </column>
+    </property>
+    <property name="crtligPoidsNet" type="float">
+      <column default="0" name="crtlig_poidsNet">
+        <comment>poids net</comment>
+      </column>
+    </property>
+    <property name="crtligPoidsBrut" type="float">
+      <column default="0" name="crtlig_poidsBrut">
+        <comment>poids brut</comment>
+      </column>
+    </property>
+    <property name="crtligVolume" type="float">
+      <column default="0" name="crtlig_volume">
+        <comment>volume</comment>
+      </column>
+    </property>
+    <property name="crtligQteUtil" type="float">
+      <column default="0" name="crtlig_qte_util">
+        <comment>quantite utilisee (valable pour le stock)</comment>
+      </column>
+    </property>
+    <property name="crtligLot" type="string">
+      <column length="30" name="crtlig_lot">
+        <comment>numero de lot</comment>
+      </column>
+    </property>
+    <property name="crtligNumSerie" type="string">
+      <column length="30" name="crtlig_num_serie">
+        <comment>numero de serie</comment>
+      </column>
+    </property>
+    <property name="crtligDevise" type="string">
+      <column length="3" name="crtlig_devise">
+        <comment>code devise</comment>
+      </column>
+    </property>
+    <property name="crtligPu" type="double">
+      <column default="0" name="crtlig_pu">
+        <comment>prix unitaire</comment>
+      </column>
+    </property>
+    <property name="crtligTauxRemise" type="float">
+      <column default="0" name="crtlig_taux_remise">
+        <comment>taux de remise</comment>
+      </column>
+    </property>
+    <property name="crtligRabais" type="double">
+      <column default="0" name="crtlig_rabais">
+        <comment>valeur du rabais</comment>
+      </column>
+    </property>
+    <property name="crtligPuRem" type="double">
+      <column default="0" name="crtlig_pu_rem">
+        <comment>prix unitaire apres remise</comment>
+      </column>
+    </property>
+    <property name="crtligPuTtc" type="double">
+      <column default="0" name="crtlig_pu_ttc">
+        <comment>prix unitaire TTC avant remise</comment>
+      </column>
+    </property>
+    <property name="crtligPuRemTtc" type="double">
+      <column default="0" name="crtlig_pu_rem_ttc">
+        <comment>prix unitaire TTC apres remise</comment>
+      </column>
+    </property>
+    <property name="crtligPt" type="double">
+      <column default="0" name="crtlig_pt">
+        <comment>prix total ht</comment>
+      </column>
+    </property>
+    <property name="crtligTva" type="double">
+      <column default="0" name="crtlig_tva">
+        <comment>total taxe</comment>
+      </column>
+    </property>
+    <property name="crtligTc" type="double">
+      <column default="0" name="crtlig_tc">
+        <comment>total taxe complementaire</comment>
+      </column>
+    </property>
+    <property name="crtligTtc" type="double">
+      <column default="0" name="crtlig_ttc">
+        <comment>total ttc</comment>
+      </column>
+    </property>
+    <property name="crtligPump" type="double">
+      <column default="0" name="crtlig_pump">
+        <comment>prix unitaire moyen pondere</comment>
+      </column>
+    </property>
+    <property name="crtligEntStock" type="integer">
+      <column default="0" name="crtlig_ent_stock">
+        <comment>si facture directe et stock alors 1 sinon 0</comment>
+      </column>
+    </property>
+    <property name="crtligCommission" type="double">
+      <column default="0" name="crtlig_commission">
+        <comment>total commission</comment>
+      </column>
+    </property>
+    <property name="crtligGroupe" type="string">
+      <column length="20" name="crtlig_groupe">
+        <comment>code du groupe</comment>
+      </column>
+    </property>
+    <property name="crtligModeGroupe" type="integer">
+      <column default="0" name="crtlig_mode_groupe">
+        <comment>0=produit simple 1=groupe visible 2=groupe invisible 3=forfait 4=calcul auto. 5=generique</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ContratEnteteVentes" column="crt_id" lazy="false" name="contratEnteteVentes" not-null="true"/>
+  </class>
+</hibernate-mapping>

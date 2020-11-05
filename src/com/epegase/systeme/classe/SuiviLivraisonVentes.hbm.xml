@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="SuiviLivraisonVentes" table="vte_suivi_livraison_ventes">
+    <id column="suivte_id" name="suivteId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="suivteDateCreation" type="timestamp">
+      <column name="suivte_date_creation">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="suivteDateModif" type="timestamp">
+      <column name="suivte_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="suivteUserCreation" type="long">
+      <column default="0" length="15" name="suivte_user_creation">
+        <comment>user de creation</comment>
+      </column>
+    </property>
+    <property name="suivteUserModif" type="long">
+      <column default="0" length="15" name="suivte_user_modif">
+        <comment>user de modification</comment>
+      </column>
+    </property>
+    <property name="suivteCode" type="string">
+      <column length="20" name="suivte_code">
+        <comment>code du suivi de livraison</comment>
+      </column>
+    </property>
+    <property name="suivteLibelleFr" type="string">
+      <column length="100" name="suivte_libelle_FR">
+        <comment>libelle du suivi de livraison FR</comment>
+      </column>
+    </property>
+    <property name="suivteLibelleUk" type="string">
+      <column length="100" name="suivte_libelle_UK">
+        <comment>libelle du suivi de livraison UK</comment>
+      </column>
+    </property>
+    <property name="suivteLibelleSp" type="string">
+      <column length="100" name="suivte_libelle_SP">
+        <comment>libelle du suivi de livraisison SP</comment>
+      </column>
+    </property>
+    <property name="suivteAerien" type="boolean">
+      <column default="0" length="1" name="suivte_aerien">
+        <comment>0=inactif 1=actif</comment>
+      </column>
+    </property>
+    <property name="suivteMaritime" type="boolean">
+      <column default="0" length="1" name="suivte_maritime">
+        <comment>0=inactif 1=actif</comment>
+      </column>
+    </property>
+    <property name="suivteExpress" type="boolean">
+      <column default="0" length="1" name="suivte_express">
+        <comment>0=inactif 1=actif</comment>
+      </column>
+    </property>
+    <property name="suivteRoute" type="boolean">
+      <column default="0" length="1" name="suivte_route">
+        <comment>0=inactif 1=actif</comment>
+      </column>
+    </property>
+    <property name="suivteAutreTransit" type="boolean">
+      <column default="0" length="1" name="suivte_autre_transit">
+        <comment>0=inactif 1=actif</comment>
+      </column>
+    </property>
+    <property name="suivteInactif" type="integer">
+      <column default="0" length="1" name="suivte_inactif">
+        <comment>0=actif 1=inactif 2=supprimer</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ExercicesVentes" column="exevte_id" lazy="false" name="exerciceventes" not-null="true"/>
+  </class>
+</hibernate-mapping>

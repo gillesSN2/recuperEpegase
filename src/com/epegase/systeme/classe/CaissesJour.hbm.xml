@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="CaissesJour" table="cai_caisses_jour">
+    <id column="caijou_id" name="caijouId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="caijouDateCloture" type="timestamp">
+      <column name="caijou_date_cloture">
+        <comment>date de cloture</comment>
+      </column>
+    </property>
+    <property name="caijouUserIdCloture" type="long">
+      <column default="0" length="15" name="caijou_user_id_cloture">
+        <comment>user utilisation de cloture</comment>
+      </column>
+    </property>
+    <property name="caijouDateTransfert" type="timestamp">
+      <column name="caijou_date_transfert">
+        <comment>date de transfert</comment>
+      </column>
+    </property>
+    <property name="caijouUserIdTransfert" type="long">
+      <column default="0" length="15" name="caijou_user_id_transfert">
+        <comment>user utilisation de transfert</comment>
+      </column>
+    </property>
+    <property name="caijouCode" type="string">
+      <column length="20" name="caijou_code">
+        <comment>code caisse</comment>
+      </column>
+    </property>
+    <property name="caijouPeriode" type="string">
+      <column length="7" name="caijou_periode">
+        <comment>periode MMAAAA</comment>
+      </column>
+    </property>
+    <property name="caijouDate" type="date">
+      <column name="caijou_date">
+        <comment>date du jour</comment>
+      </column>
+    </property>
+    <property name="caijouUserIdCaisse" type="long">
+      <column default="0" length="15" name="caijou_user_id_caisse">
+        <comment>user utilisation caisse</comment>
+      </column>
+    </property>
+    <property name="caijouOpenJournal" type="integer">
+      <column default="0" length="1" name="caijou_open_journal">
+        <comment>0=journal ferme 1=journal ouvert</comment>
+      </column>
+    </property>
+    <property name="caijouOpenUserJournal" type="string">
+      <column default="0" length="100" name="caijou_open_user_journal">
+        <comment>nom utilisateur en cours</comment>
+      </column>
+    </property>
+    <property name="caijouCle1" type="string">
+      <column default="0" length="33" name="caijou_cle1">
+        <comment>= concatenation caijou_code : caijou_periode</comment>
+      </column>
+    </property>
+    <property name="caijouEtat" type="int">
+      <column default="0" length="1" name="caijou_etat">
+        <comment>0=en cours 1=cloture mensuelle</comment>
+      </column>
+    </property>
+    <property name="caijouSoldeEspece" type="double">
+      <column default="0" length="20" name="caijou_solde_espece">
+        <comment>solde de la caisse anterieur</comment>
+      </column>
+    </property>
+    <property name="caijouSoldeCheque" type="double">
+      <column default="0" length="20" name="caijou_solde_cheque">
+        <comment>solde de la caisse anterieur</comment>
+      </column>
+    </property>
+    <property name="caijouSoldeVirement" type="double">
+      <column default="0" length="20" name="caijou_solde_virement">
+        <comment>solde de la caisse anterieur</comment>
+      </column>
+    </property>
+    <property name="caijouSoldeTraite" type="double">
+      <column default="0" length="20" name="caijou_solde_traite">
+        <comment>solde de la caisse anterieur</comment>
+      </column>
+    </property>
+    <property name="caijouSoldeTpe" type="double">
+      <column default="0" length="20" name="caijou_solde_tpe">
+        <comment>solde de la caisse anterieur</comment>
+      </column>
+    </property>
+    <property name="caijouSoldeePaiement" type="double">
+      <column default="0" length="20" name="caijou_solde_epaiement">
+        <comment>solde de la caisse anterieur</comment>
+      </column>
+    </property>
+    <property name="caijouSoldeTransfert" type="double">
+      <column default="0" length="20" name="caijou_solde_transfert">
+        <comment>solde de la caisse anterieur</comment>
+      </column>
+    </property>
+    <property name="caijouSoldeCredoc" type="double">
+      <column default="0" length="20" name="caijou_solde_credoc">
+        <comment>solde de la caisse anterieur</comment>
+      </column>
+    </property>
+    <property name="caijouSoldeFactor" type="double">
+      <column default="0" length="20" name="caijou_solde_factor">
+        <comment>solde de la caisse anterieur</comment>
+      </column>
+    </property>
+    <property name="caijouSoldeCompense" type="double">
+      <column default="0" length="20" name="caijou_solde_compense">
+        <comment>solde de la caisse anterieur</comment>
+      </column>
+    </property>
+    <property name="caijouSoldeTerme" type="double">
+      <column default="0" length="20" name="caijou_solde_terme">
+        <comment>solde de la caisse anterieur</comment>
+      </column>
+    </property>
+    <property name="caijouSoldeLettreGarantie" type="double">
+      <column default="0" length="20" name="caijou_solde_lettre_garantie">
+        <comment>solde de la caisse anterieur</comment>
+      </column>
+    </property>
+    <property name="caijouSoldePrelevement" type="double">
+      <column default="0" length="20" name="caijou_solde_prelevement">
+        <comment>solde prelevement anterieur</comment>
+      </column>
+    </property>
+    <property name="caijouSoldeAlcoin" type="double">
+      <column default="0" length="20" name="caijou_solde_alcoin">
+        <comment>solde alcoin anterieur</comment>
+      </column>
+    </property>
+    <property name="caijouSoldePec" type="double">
+      <column default="0" length="20" name="caijou_solde_pec">
+        <comment>solde pec anterieur</comment>
+      </column>
+    </property>
+    <property name="caijouSoldeBonCaisse" type="double">
+      <column default="0" length="20" name="caijou_solde_bon_caisse">
+        <comment>solde de la caisse anterieur</comment>
+      </column>
+    </property>
+    <property name="caijouB1" type="integer">
+      <column default="0" name="caijou_b1">
+        <comment>nombre billet</comment>
+      </column>
+    </property>
+    <property name="caijouB2" type="integer">
+      <column default="0" name="caijou_b2">
+        <comment>nombre billet</comment>
+      </column>
+    </property>
+    <property name="caijouB3" type="integer">
+      <column default="0" name="caijou_b3">
+        <comment>nombre billet</comment>
+      </column>
+    </property>
+    <property name="caijouB4" type="integer">
+      <column default="0" name="caijou_b4">
+        <comment>nombre billet</comment>
+      </column>
+    </property>
+    <property name="caijouB5" type="integer">
+      <column default="0" name="caijou_b5">
+        <comment>nombre billet</comment>
+      </column>
+    </property>
+    <property name="caijouB6" type="integer">
+      <column default="0" name="caijou_b6">
+        <comment>nombre billet</comment>
+      </column>
+    </property>
+    <property name="caijouB7" type="integer">
+      <column default="0" name="caijou_b7">
+        <comment>nombre billet</comment>
+      </column>
+    </property>
+    <property name="caijouB8" type="integer">
+      <column default="0" name="caijou_b8">
+        <comment>nombre billet</comment>
+      </column>
+    </property>
+    <property name="caijouB9" type="integer">
+      <column default="0" name="caijou_b9">
+        <comment>nombre billet</comment>
+      </column>
+    </property>
+    <property name="caijouB10" type="integer">
+      <column default="0" name="caijou_b10">
+        <comment>nombre billet</comment>
+      </column>
+    </property>
+    <property name="caijouP1" type="integer">
+      <column default="0" name="caijou_p1">
+        <comment>nombre billet</comment>
+      </column>
+    </property>
+    <property name="caijouP2" type="integer">
+      <column default="0" name="caijou_p2">
+        <comment>nombre billet</comment>
+      </column>
+    </property>
+    <property name="caijouP3" type="integer">
+      <column default="0" name="caijou_p3">
+        <comment>nombre billet</comment>
+      </column>
+    </property>
+    <property name="caijouP4" type="integer">
+      <column default="0" name="caijou_p4">
+        <comment>nombre billet</comment>
+      </column>
+    </property>
+    <property name="caijouP5" type="integer">
+      <column default="0" name="caijou_p5">
+        <comment>nombre billet</comment>
+      </column>
+    </property>
+    <property name="caijouP6" type="integer">
+      <column default="0" name="caijou_p6">
+        <comment>nombre billet</comment>
+      </column>
+    </property>
+    <property name="caijouP7" type="integer">
+      <column default="0" name="caijou_p7">
+        <comment>nombre billet</comment>
+      </column>
+    </property>
+    <property name="caijouP8" type="integer">
+      <column default="0" name="caijou_p8">
+        <comment>nombre billet</comment>
+      </column>
+    </property>
+    <property name="caijouP9" type="integer">
+      <column default="0" name="caijou_p9">
+        <comment>nombre billet</comment>
+      </column>
+    </property>
+    <property name="caijouP10" type="integer">
+      <column default="0" name="caijou_p10">
+        <comment>nombre billet</comment>
+      </column>
+    </property>
+    <property name="caijouBon" type="double">
+      <column default="0" name="caijou_bon">
+        <comment>total des bons</comment>
+      </column>
+    </property>
+    <property name="caijouEspeceTheorique" type="double">
+      <column default="0" name="caijou_espece_theorique">
+        <comment>total des espece theorique</comment>
+      </column>
+    </property>
+    <property name="caijouEspeceReel" type="double">
+      <column default="0" name="caijou_espece_reel">
+        <comment>total des espece apres comptage</comment>
+      </column>
+    </property>
+    <property name="caijouTimbre" type="double">
+      <column default="0" name="caijou_timbre">
+        <comment>total des timbres</comment>
+      </column>
+    </property>
+    <property name="caijouAutre" type="double">
+      <column default="0" name="caijou_autre">
+        <comment>total des hors especes</comment>
+      </column>
+    </property>
+    <property name="caijouDevise1" type="double">
+      <column default="0" name="caijou_devise1">
+        <comment>total devise 1</comment>
+      </column>
+    </property>
+    <property name="caijouDevise2" type="double">
+      <column default="0" name="caijou_devise2">
+        <comment>total devise 2</comment>
+      </column>
+    </property>
+    <property name="caijouDevise3" type="double">
+      <column default="0" name="caijou_devise3">
+        <comment>total devise 3</comment>
+      </column>
+    </property>
+    <property name="caijouDevise4" type="double">
+      <column default="0" name="caijou_devise4">
+        <comment>total devise 4</comment>
+      </column>
+    </property>
+    <property name="caijouDevise5" type="double">
+      <column default="0" name="caijou_devise5">
+        <comment>total devise 5</comment>
+      </column>
+    </property>
+    <property name="caijouEcart" type="double">
+      <column default="0" name="caijou_ecart">
+        <comment>ecart</comment>
+      </column>
+    </property>
+    <property name="caijouObservation" type="text">
+      <column length="10000" name="caijou_observation">
+        <comment>observation sur la journee</comment>
+      </column>
+    </property>
+    <property name="caijouControle" type="date">
+      <column default="null" name="caijou_controle">
+        <comment>date de contrle</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ExercicesCaisse" column="execai_id" name="exercicesCaisse" not-null="true"/>
+  </class>
+</hibernate-mapping>

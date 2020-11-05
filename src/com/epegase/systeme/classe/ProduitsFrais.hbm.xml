@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="ProduitsFrais" table="cmm_produits_frais">
+    <id column="profrs_id" name="profrsId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="profrsOrdre" type="integer">
+      <column default="0" length="3" name="profrs_ordre">
+        <comment>ordre des reponses</comment>
+      </column>
+    </property>
+    <property name="profrsFeuille" type="string">
+      <column length="100" name="profrs_feuille">
+        <comment>nom feuille</comment>
+      </column>
+    </property>
+    <property name="profrsNum" type="string">
+      <column length="20" name="profrs_num">
+        <comment>numero de calcul</comment>
+      </column>
+    </property>
+    <property name="profrsType" type="int">
+      <column default="0" name="profrs_type">
+        <comment>type de la feuille 0=sur produit 1=sur cotation 2=sur commande 3=parametre fournisseur</comment>
+      </column>
+    </property>
+    <property name="profrsCategorie" type="int">
+      <column default="0" name="profrs_categorie">
+        <comment>categorie 0=ns 1=douane 2=debours 3=prestation 4=autre</comment>
+      </column>
+    </property>
+    <property name="profrsMode" type="string">
+      <column length="50" name="profrs_mode">
+        <comment>mode importation ex contener, groupage, type de produit</comment>
+      </column>
+    </property>
+    <property name="profrsNature" type="int">
+      <column default="0" name="profrs_nature">
+        <comment>nature importation 0=avion 1=bateau 2=express 3=route</comment>
+      </column>
+    </property>
+    <property name="profrsReponse" type="int">
+      <column default="0" name="profrs_reponse">
+        <comment>reponse 0=ns 1=non 2=oui</comment>
+      </column>
+    </property>
+    <property name="profrsDate" type="date">
+      <column name="profrs_date">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="profrsRubrique" type="string">
+      <column length="50" name="profrs_rubrique">
+        <comment>code rubrique associe</comment>
+      </column>
+    </property>
+    <property name="profrsCode" type="string">
+      <column length="20" name="profrs_code">
+        <comment>reference ligne</comment>
+      </column>
+    </property>
+    <property name="profrsProduit" type="string">
+      <column length="20" name="profrs_produit">
+        <comment>code produit</comment>
+      </column>
+    </property>
+    <property name="profrsIdPro" type="long">
+      <column default="0" name="profrs_id_pro">
+        <comment>id produit</comment>
+      </column>
+    </property>
+    <property name="profrsLibelle" type="string">
+      <column length="100" name="profrs_libelle">
+        <comment>nom item en FR</comment>
+      </column>
+    </property>
+    <property name="profrsAffaire" type="string">
+      <column length="20" name="profrs_affaire">
+        <comment>numero affaire</comment>
+      </column>
+    </property>
+    <property name="profrsCmd" type="string">
+      <column length="20" name="profrs_cmd">
+        <comment>numero commande</comment>
+      </column>
+    </property>
+    <property name="profrsIdCmd" type="long">
+      <column default="0" name="profrs_id_cmd">
+        <comment>id commande</comment>
+      </column>
+    </property>
+    <property name="profrsCot" type="string">
+      <column length="20" name="profrs_cot">
+        <comment>numero cotation</comment>
+      </column>
+    </property>
+    <property name="profrsIdCot" type="long">
+      <column default="0" name="profrs_id_cot">
+        <comment>id cotation</comment>
+      </column>
+    </property>
+    <property name="profrsTranche" type="text">
+      <column name="profrs_tranche">
+        <comment>decoupage en tranche</comment>
+      </column>
+    </property>
+    <property name="profrsTrancheA" type="text">
+      <column name="profrs_trancheA">
+        <comment>decoupage en tranche A</comment>
+      </column>
+    </property>
+    <property name="profrsTrancheB" type="text">
+      <column name="profrs_trancheB">
+        <comment>decoupage en tranche B</comment>
+      </column>
+    </property>
+    <property name="profrsTrancheC" type="text">
+      <column name="profrs_trancheC">
+        <comment>decoupage en tranche C</comment>
+      </column>
+    </property>
+    <property name="profrsTrancheD" type="text">
+      <column name="profrs_trancheD">
+        <comment>decoupage en tranche D</comment>
+      </column>
+    </property>
+    <property name="profrsTrancheE" type="text">
+      <column name="profrs_trancheE">
+        <comment>decoupage en tranche E</comment>
+      </column>
+    </property>
+    <property name="profrsTrancheF" type="text">
+      <column name="profrs_tranchef">
+        <comment>decoupage en tranche F</comment>
+      </column>
+    </property>
+    <property name="profrsFormuleA" type="text">
+      <column name="profrs_formule_a">
+        <comment>formule A</comment>
+      </column>
+    </property>
+    <property name="profrsFormuleB" type="text">
+      <column name="profrs_formule_b">
+        <comment>formule b</comment>
+      </column>
+    </property>
+    <property name="profrsFormuleC" type="text">
+      <column name="profrs_formule_c">
+        <comment>formule c</comment>
+      </column>
+    </property>
+    <property name="profrsFormuleD" type="text">
+      <column name="profrs_formule_d">
+        <comment>formule d</comment>
+      </column>
+    </property>
+    <property name="profrsFormuleE" type="text">
+      <column name="profrs_formule_e">
+        <comment>formule e</comment>
+      </column>
+    </property>
+    <property name="profrsFormuleF" type="text">
+      <column name="profrs_formule_f">
+        <comment>formule f</comment>
+      </column>
+    </property>
+    <property name="profrsValA" type="double">
+      <column default="0" name="profrs_val_a">
+        <comment>valeur A</comment>
+      </column>
+    </property>
+    <property name="profrsValB" type="double">
+      <column default="0" name="profrs_val_b">
+        <comment>valeur B</comment>
+      </column>
+    </property>
+    <property name="profrsValC" type="double">
+      <column default="0" name="profrs_val_c">
+        <comment>valeur C</comment>
+      </column>
+    </property>
+    <property name="profrsValD" type="double">
+      <column default="0" name="profrs_val_d">
+        <comment>valeur D</comment>
+      </column>
+    </property>
+    <property name="profrsValE" type="double">
+      <column default="0" name="profrs_val_e">
+        <comment>valeur E</comment>
+      </column>
+    </property>
+    <property name="profrsValF" type="double">
+      <column default="0" name="profrs_val_f">
+        <comment>valeur F</comment>
+      </column>
+    </property>
+    <property name="profrsValELocal" type="double">
+      <column default="0" name="profrs_val_e_local">
+        <comment>valeur E en devise locale</comment>
+      </column>
+    </property>
+    <property name="profrsColType" type="integer">
+      <column default="false" name="profrs_col_type">
+        <comment>0=standard 1=prc 2=prg</comment>
+      </column>
+    </property>
+    <property name="profrsPA" type="double">
+      <column default="0" name="profrs_pa">
+        <comment>prix achat en devise</comment>
+      </column>
+    </property>
+    <property name="profrsFret" type="double">
+      <column default="0" name="profrs_fret">
+        <comment>fret en devise</comment>
+      </column>
+    </property>
+    <property name="profrsFob" type="double">
+      <column default="0" name="profrs_fob">
+        <comment>fob en devise</comment>
+      </column>
+    </property>
+    <property name="profrsAssurance" type="double">
+      <column default="0" name="profrs_assurance">
+        <comment>assurance locale</comment>
+      </column>
+    </property>
+    <property name="profrsDevise" type="string">
+      <column length="4" name="profrs_devise">
+        <comment>devise</comment>
+      </column>
+    </property>
+    <property name="profrsCoefDevise" type="float">
+      <column default="0" name="profrs_coef_devise">
+        <comment>coefficient devise</comment>
+      </column>
+    </property>
+    <property name="profrsCaf" type="double">
+      <column default="0" name="profrs_caf">
+        <comment>total caf</comment>
+      </column>
+    </property>
+    <property name="profrsExoDouane" type="integer">
+      <column default="0" name="profes_exo_douane">
+        <comment>0=avec douane 1=sans douane</comment>
+      </column>
+    </property>
+    <property name="profrsExoTva" type="integer">
+      <column default="0" name="profrs_exo_tva">
+        <comment>0=avec tva 1=sans tva</comment>
+      </column>
+    </property>
+    <property name="profrsCoefPrp" type="float">
+      <column default="0" name="profrs_coef_prp">
+        <comment>coefficint pr</comment>
+      </column>
+    </property>
+    <property name="profrsDecimalA" type="integer">
+      <column default="0" name="profrs_decimal_a">
+        <comment>nb de decimal</comment>
+      </column>
+    </property>
+    <property name="profrsDecimalB" type="integer">
+      <column default="0" name="profrs_decimal_b">
+        <comment>nb de decimal</comment>
+      </column>
+    </property>
+    <property name="profrsDecimalC" type="integer">
+      <column default="0" name="profrs_decimal_c">
+        <comment>nb de decimal</comment>
+      </column>
+    </property>
+    <property name="profrsDecimalD" type="integer">
+      <column default="0" name="profrs_decimal_d">
+        <comment>nb de decimal</comment>
+      </column>
+    </property>
+    <property name="profrsDecimalE" type="integer">
+      <column default="0" name="profrs_decimal_e">
+        <comment>nb de decimal</comment>
+      </column>
+    </property>
+    <property name="profrsDecimalF" type="integer">
+      <column default="0" name="profrs_decimal_f">
+        <comment>nb de decimal</comment>
+      </column>
+    </property>
+    <property name="profrsIdTransporteur" type="long">
+      <column default="0" name="profrs_id_transporteur">
+        <comment>id transporteur</comment>
+      </column>
+    </property>
+    <property name="profrsNomTransporteur" type="string">
+      <column length="100" name="profrs_nom_transporteur">
+        <comment>nom du transporteur</comment>
+      </column>
+    </property>
+    <property name="profrsIdTransitaire" type="long">
+      <column default="0" name="profrs_id_transitaire">
+        <comment>id transitaire</comment>
+      </column>
+    </property>
+    <property name="profrsNomTransitaire" type="string">
+      <column length="100" name="profrs_nom_transitaire">
+        <comment>nom du transitaire</comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="BulletinMois" table="pay_bulletin_mois">
+    <id column="bulmen_id" name="bulmenId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="bulmenFeuille" type="string">
+      <column length="20" name="bulmen_feuille">
+        <comment>numero feuille</comment>
+      </column>
+    </property>
+    <property name="bulmenPeriode" type="string">
+      <column length="7" name="bulmen_periode">
+        <comment>periode MMAAAA</comment>
+      </column>
+    </property>
+    <property name="bulmenJour" type="date">
+      <column default="null" name="bulmen_jour">
+        <comment>jour</comment>
+      </column>
+    </property>
+    <property name="bulmenCle1" type="string">
+      <column length="18" name="bulmen_cle1">
+        <comment>= concatenation bulmen_feuille : bulmen_periode</comment>
+      </column>
+    </property>
+    <property name="bulmenEtat" type="int">
+      <column default="0" length="1" name="bulmen_etat">
+        <comment>0=en cours 1=saisie mensuelle 2=generation 3=cloture 4=transfert</comment>
+      </column>
+    </property>
+    <property name="bulmenUserIdJournal" type="long">
+      <column default="0" length="15" name="bulmen_user_id_journal">
+        <comment>user utilisation journal</comment>
+      </column>
+    </property>
+    <property name="bulmenOpenJournal" type="integer">
+      <column default="0" length="1" name="bulmen_open_journal">
+        <comment>0=journal ferme 1=journal ouvert</comment>
+      </column>
+    </property>
+    <property name="bulmenOpenUserJournal" type="string">
+      <column length="100" name="bulmen_open_user_journal">
+        <comment>nom utilisateur en cours</comment>
+      </column>
+    </property>
+    <property name="bulmenUserIdGeneration" type="long">
+      <column default="0" length="15" name="bulmen_user_id_generation">
+        <comment>user utilisation journal</comment>
+      </column>
+    </property>
+    <property name="bulmenOpenGeneration" type="integer">
+      <column default="0" length="1" name="bulmen_open_generation">
+        <comment>0=journal ferme 1=journal ouvert</comment>
+      </column>
+    </property>
+    <property name="bulmenOpenUserGeneration" type="string">
+      <column length="100" name="bulmen_open_user_generation">
+        <comment>nom utilisateur en cours</comment>
+      </column>
+    </property>
+    <property name="bulmenModeTravail" type="integer">
+      <column default="0" length="1" name="bulmen_mode_travail">
+        <comment>0=feuilles 1=activites 2=services 3=projets</comment>
+      </column>
+    </property>
+    <property name="bulmenProductionReelle" type="double">
+      <column default="0" length="1" name="bulmen_production_relle">
+        <comment>qte de prodction reelle</comment>
+      </column>
+    </property>
+    <property name="bulmenProductionTheo" type="double">
+      <column default="0" length="1" name="bulmen_production_theo">
+        <comment>qte de prodction theorique</comment>
+      </column>
+    </property>
+    <property name="bulmenNbHeureRelle" type="double">
+      <column default="0" length="1" name="bulmen_nb_heure_relle">
+        <comment>nombre heure reelle du mois</comment>
+      </column>
+    </property>
+    <property name="bulmenLot" type="integer">
+      <column default="0" length="1" name="bulmen_lot">
+        <comment>numero de lot</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ExercicesPaye" column="exepay_id" lazy="false" name="ExercicesPaye" not-null="true"/>
+  </class>
+</hibernate-mapping>

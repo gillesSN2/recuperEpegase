@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="BienPv" table="imm_bien_pv">
+    <id column="biepv_id" name="biepvId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="biepvDateCreat" type="timestamp">
+      <column name="biepv_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="biepvDateModif" type="timestamp">
+      <column name="biepv_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="biepvIdCreateur" type="long">
+      <column default="0" length="15" name="biepv_id_createur">
+        <comment>id user createur</comment>
+      </column>
+    </property>
+    <property name="biepvNomCreateur" type="string">
+      <column length="100" name="biepv_nom_createur">
+        <comment>nom du createur</comment>
+      </column>
+    </property>
+    <property name="biepvIdModif" type="long">
+      <column default="0" length="15" name="biepv_id_modif">
+        <comment>id user de modification</comment>
+      </column>
+    </property>
+    <property name="biepvNomModif" type="string">
+      <column length="100" name="biepv_nom_modif">
+        <comment>nom user de modification</comment>
+      </column>
+    </property>
+    <property name="biepvDate" type="timestamp">
+      <column name="biepv_date">
+        <comment>date facture</comment>
+      </column>
+    </property>
+    <property name="biepvNum" type="string">
+      <column length="20" name="biepv_num">
+        <comment>numero facture</comment>
+      </column>
+    </property>
+    <property name="biepvBien" type="string">
+      <column length="20" name="biepv_bien">
+        <comment>numero du bien</comment>
+      </column>
+    </property>
+    <property name="biepvZone" type="string">
+      <column length="50" name="biepv_zone">
+        <comment>zone fiscal</comment>
+      </column>
+    </property>
+    <property name="biepvNomResponsable" type="string">
+      <column length="100" name="biepv_nom_responsable">
+        <comment>nom du commercial</comment>
+      </column>
+    </property>
+    <property name="biepvIdResponsable" type="long">
+      <column default="0" name="biepv_id_responsable">
+        <comment>id du commercial</comment>
+      </column>
+    </property>
+    <property name="biepvNomCommercial" type="string">
+      <column length="100" name="biepv_nom_commercial">
+        <comment>nom du commercial</comment>
+      </column>
+    </property>
+    <property name="biepvIdCommercial" type="long">
+      <column default="0" length="15" name="biepv_id_commercial">
+        <comment>id du commercial</comment>
+      </column>
+    </property>
+    <property name="biepvSerie" type="string">
+      <column length="4" name="biepv_serie">
+        <comment>serie </comment>
+      </column>
+    </property>
+    <property name="biepvObject" type="string">
+      <column length="100" name="biepv_object">
+        <comment>objet</comment>
+      </column>
+    </property>
+    <property name="biepvObservation" type="string">
+      <column length="100" name="biepv_observation">
+        <comment>observation</comment>
+      </column>
+    </property>
+    <property name="biepvSite" type="string">
+      <column length="121" name="biepv_site">
+        <comment>code site</comment>
+      </column>
+    </property>
+    <property name="biepvDepartement" type="string">
+      <column length="121" name="biepv_departement">
+        <comment>code departement</comment>
+      </column>
+    </property>
+    <property name="biepvService" type="string">
+      <column length="121" name="biepv_service">
+        <comment>code service</comment>
+      </column>
+    </property>
+    <property name="biepvRegion" type="string">
+      <column length="121" name="biepv_region">
+        <comment>code region</comment>
+      </column>
+    </property>
+    <property name="biepvSecteur" type="string">
+      <column length="121" name="biepv_secteur">
+        <comment>code secteur</comment>
+      </column>
+    </property>
+    <property name="biepvPdv" type="string">
+      <column length="121" name="biepv_pdv">
+        <comment>code point de vente</comment>
+      </column>
+    </property>
+    <property name="biepvInfo1" type="string">
+      <column length="100" name="biepv_info1">
+        <comment>info 1</comment>
+      </column>
+    </property>
+    <property name="biepvInfo2" type="string">
+      <column length="100" name="biepv_info2">
+        <comment>info 2</comment>
+      </column>
+    </property>
+    <property name="biepvInfo3" type="string">
+      <column length="100" name="biepv_info3">
+        <comment>info 3</comment>
+      </column>
+    </property>
+    <property name="biepvInfo4" type="string">
+      <column length="100" name="biepv_info4">
+        <comment>info 4</comment>
+      </column>
+    </property>
+    <property name="biepvInfo5" type="string">
+      <column length="100" name="biepv_info5">
+        <comment>info 5</comment>
+      </column>
+    </property>
+    <property name="biepvInfo6" type="string">
+      <column length="100" name="biepv_info6">
+        <comment>info 6</comment>
+      </column>
+    </property>
+    <property name="biepvInfo7" type="string">
+      <column length="100" name="biepv_info7">
+        <comment>info 7</comment>
+      </column>
+    </property>
+    <property name="biepvInfo8" type="string">
+      <column length="100" name="biepv_info8">
+        <comment>info 8</comment>
+      </column>
+    </property>
+    <property name="biepvInfo9" type="string">
+      <column length="100" name="biepv_info9">
+        <comment>info 9</comment>
+      </column>
+    </property>
+    <property name="biepvInfo10" type="string">
+      <column length="100" name="biepv_info10">
+        <comment>info 10</comment>
+      </column>
+    </property>
+    <property name="biepvDateImp" type="date">
+      <column name="biepv_date_imp">
+        <comment>date impression</comment>
+      </column>
+    </property>
+    <property name="biepvModeleImp" type="string">
+      <column length="50" name="biepv_modele_imp">
+        <comment>nom jasper du modele</comment>
+      </column>
+    </property>
+    <property name="biepvEtatVal" type="integer">
+      <column default="0" length="1" name="biepv_etat_val">
+        <comment>0=sans validation 1=avec validation</comment>
+      </column>
+    </property>
+    <property name="biepvGele" type="integer">
+      <column default="0" length="1" name="biepv_gele">
+        <comment>0=non gele 1=gele</comment>
+      </column>
+    </property>
+    <property name="biepvEtat" type="integer">
+      <column default="0" length="1" name="biepv_etat">
+        <comment>0=En cours 1=valide 2=gele 3=annule 4=transforme</comment>
+      </column>
+    </property>
+    <property name="biepvDateValidite" type="date">
+      <column name="biepv_date_validite">
+        <comment>date de validite</comment>
+      </column>
+    </property>
+    <property name="biepvDateRelance" type="date">
+      <column name="biepv_date_relance">
+        <comment>date de relance</comment>
+      </column>
+    </property>
+    <property name="biepvDateValide" type="date">
+      <column name="biepv_date_valide">
+        <comment>date de validation</comment>
+      </column>
+    </property>
+    <property name="biepvDateTransforme" type="date">
+      <column name="biepv_date_transforme">
+        <comment>date de transformation</comment>
+      </column>
+    </property>
+    <property name="biepvTypeTransforme" type="integer">
+      <column default="0" name="biepv_type_transforme">
+        <comment>type de transformation</comment>
+      </column>
+    </property>
+    <property name="biepvDateAnnule" type="date">
+      <column name="biepv_date_annule">
+        <comment>date annulation</comment>
+      </column>
+    </property>
+    <property name="biepvMotifAnnule" type="string">
+      <column length="50" name="biepv_motif_annule">
+        <comment>motif annulation</comment>
+      </column>
+    </property>
+    <property name="biepvProprietaire" type="string">
+      <column length="10" name="biepv_proprietaire">
+        <comment>ref du proprietaire</comment>
+      </column>
+    </property>
+    <property name="biepvNomProprietaire" type="string">
+      <column length="100" name="biepv_nom_proprietaire">
+        <comment>nom du proprietaire</comment>
+      </column>
+    </property>
+    <property name="biepvCivilProprietaire" type="string">
+      <column length="20" name="biepv_civil_proprietaire">
+        <comment>civilite du proprietaire</comment>
+      </column>
+    </property>
+    <property name="biepvIdProprietaire" type="long">
+      <column default="0" name="biepv_id_proprietaire">
+        <comment>id du proprietaire</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ExercicesVentes" column="exevte_id" lazy="false" name="exerciceventes" not-null="false"/>
+    <many-to-one class="com.epegase.systeme.classe.Users" column="usr_id" lazy="false" name="users" not-null="false"/>
+  </class>
+</hibernate-mapping>

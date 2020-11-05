@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="EcrituresNotes" table="cpt_ecritures_notes">
+    <id column="ecrnot_id" name="ecrnotId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="ecrnotDateCreat" type="timestamp">
+      <column default="null" name="ecrnot_date_creat">
+        <comment>date de creation ecriture</comment>
+      </column>
+    </property>
+    <property name="ecrnotDateModif" type="timestamp">
+      <column default="null" name="ecrnot_date_modif">
+        <comment>date de modification ecriture</comment>
+      </column>
+    </property>
+    <property name="ecrnotUserCreat" type="long">
+      <column default="0" length="15" name="ecrnot_user_creat">
+        <comment>utilisateur de creation ecriture</comment>
+      </column>
+    </property>
+    <property name="ecrnotUserModif" type="long">
+      <column default="0" length="15" name="ecrnot_user_modif">
+        <comment>utilisateur de modification ecriture</comment>
+      </column>
+    </property>
+    <property name="ecrnotDate" type="date">
+      <column default="null" name="ecrnot_date">
+        <comment>date note</comment>
+      </column>
+    </property>
+    <property name="ecrnotNum" type="string">
+      <column length="20" name="ecrnot_num">
+        <comment>numero de la note</comment>
+      </column>
+    </property>
+    <property name="ecrnotPeriode" type="string">
+      <column length="7" name="ecrnot_periode">
+        <comment>MM:AAAA par rapport a la date de saisie</comment>
+      </column>
+    </property>
+    <property name="ecrnotAnnee" type="string">
+      <column length="4" name="ecrnot_annee">
+        <comment>partie annee de la date de saisie</comment>
+      </column>
+    </property>
+    <property name="ecrnotMontant" type="double">
+      <column default="0" name="ecrnot_montant">
+        <comment>montant note</comment>
+      </column>
+    </property>
+    <property name="ecrnotLibelle" type="string">
+      <column length="100" name="ecrnot_libelle">
+        <comment>libelle ecriture</comment>
+      </column>
+    </property>
+    <property name="ecrnotPiece" type="string">
+      <column length="30" name="ecrnot_piece">
+        <comment>numero de piece comptable</comment>
+      </column>
+    </property>
+    <property name="ecrnotCategorie" type="integer">
+      <column default="0" length="1" name="ecrnot_categorie">
+        <comment>categorie de note (carburant, amende, taxi...)</comment>
+      </column>
+    </property>
+    <property name="ecrnotEtat" type="integer">
+      <column default="0" length="1" name="ecrnot_etat">
+        <comment>0=en cours 1=traitee</comment>
+      </column>
+    </property>
+    <property name="ecrnotType" type="integer">
+      <column default="0" length="1" name="ecrnot_type">
+        <comment>0=note de frais 1=piece distante</comment>
+      </column>
+    </property>
+    <property name="ecrnotLongitude" type="double">
+      <column default="0" name="ecrnot_longitude">
+        <comment>longitude evenement</comment>
+      </column>
+    </property>
+    <property name="ecrnotLatitude" type="double">
+      <column default="0" name="ecrnot_latitude">
+        <comment>latitude evenement</comment>
+      </column>
+    </property>
+    <property name="ecrnotScanFacture" type="string">
+      <column length="100" name="ecrnot_scan_facture">
+        <comment>scan de la facture</comment>
+      </column>
+    </property>
+    <property name="ecrnotPj" type="boolean">
+      <column default="false" name="ecrnot_pj">
+        <comment>piece jointe = true</comment>
+      </column>
+    </property>
+    <property name="ecrnotDateTransfert" type="date">
+      <column default="null" name="ecrnot_date_transfert">
+        <comment>date traitement comptable</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.Users" column="usr_id" lazy="false" name="users" not-null="false"/>
+  </class>
+</hibernate-mapping>

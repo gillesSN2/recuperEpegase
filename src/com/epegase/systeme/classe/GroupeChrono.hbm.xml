@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="GroupeChrono" table="cmm_groupe_chrono">
+    <id column="grpchr_id" name="grpchrId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="grpchrDateCreat" type="timestamp">
+      <column name="grpchr_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="grpchrDateModif" type="timestamp">
+      <column name="grpchr_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="grpchrUserCreat" type="long">
+      <column default="0" length="15" name="grpchr_user_creat">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="grpchrUserModif" type="long">
+      <column default="0" length="15" name="grpchr_user_modif">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="grpchrSerie" type="string">
+      <column length="30" name="grpchr_serie">
+        <comment>code serie</comment>
+      </column>
+    </property>
+    <property name="grpchrLib" type="string">
+      <column length="100" name="grpchr_lib">
+        <comment>libelle serie</comment>
+      </column>
+    </property>
+    <property name="grpchrNature" type="integer">
+      <column default="0" name="grpchr_nature">
+        <comment>code nature</comment>
+      </column>
+    </property>
+    <property name="grpchrValidation" type="integer">
+      <column default="0" name="grpchr_validation">
+        <comment>0=valide a l impression 1=valide a l enregistrement 2=sur bouton</comment>
+      </column>
+    </property>
+    <property name="grpchrDeValidation" type="integer">
+      <column default="0" name="grpchr_devalidation">
+        <comment>0=devalidation interdite 1=devalidation autorisee</comment>
+      </column>
+    </property>
+    <property name="grpchrDupplication" type="integer">
+      <column default="0" name="grpchr_dupplication">
+        <comment>0=dupplication interdite 1=dupplication autorisee</comment>
+      </column>
+    </property>
+    <property name="grpchrUpdate" type="integer">
+      <column default="0" name="grpchr_update">
+        <comment>mise à jour autorisee 1=mise à jour interdite</comment>
+      </column>
+    </property>
+    <property name="grpchrPrive" type="integer">
+      <column default="0" name="grpchr_prive">
+        <comment>0=public 1=prive</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.Groupe" column="grp_id" lazy="false" name="groupe" not-null="true"/>
+  </class>
+</hibernate-mapping>

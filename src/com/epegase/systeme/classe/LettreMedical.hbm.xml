@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="LettreMedical" table="med_lettre_medical">
+    <id column="let_id" name="letId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="letDateCreat" type="timestamp">
+      <column name="let_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="letDateModif" type="timestamp">
+      <column name="let_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="letUserCreat" type="long">
+      <column default="0" length="15" name="let_user_creat">
+        <comment>user de creation</comment>
+      </column>
+    </property>
+    <property name="letUserModif" type="long">
+      <column default="0" length="15" name="let_user_modif">
+        <comment>user de modification</comment>
+      </column>
+    </property>
+    <property name="letLettre" type="string">
+      <column length="10" name="let_lettre">
+        <comment>code lettre</comment>
+      </column>
+    </property>
+    <property name="letLibelleFr" type="string">
+      <column length="100" name="let_libelle_FR">
+        <comment>libelle FR</comment>
+      </column>
+    </property>
+    <property name="letLibelleUk" type="string">
+      <column length="100" name="let_libelle_UK">
+        <comment>libelle UK</comment>
+      </column>
+    </property>
+    <property name="letLibelleSp" type="string">
+      <column length="100" name="let_libelle_SP">
+        <comment>libelle SP</comment>
+      </column>
+    </property>
+    <property name="letValeur" type="double">
+      <column default="0" name="let_valeur">
+        <comment>valeur de la lettre</comment>
+      </column>
+    </property>
+    <property name="letValeurCnamgs" type="double">
+      <column default="0" name="let_valeur_cnamgs">
+        <comment>valeur de la lettre cnamgs</comment>
+      </column>
+    </property>
+    <property name="letInactif" type="integer">
+      <column default="0" length="1" name="let_inactif">
+        <comment>1=inactif 2=supprimer</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ExercicesVentes" column="exevte_id" lazy="false" name="exerciceventes" not-null="true"/>
+  </class>
+</hibernate-mapping>

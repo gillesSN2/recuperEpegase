@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="ManifestLigneImport" table="prc_manifest_ligne_import">
+    <id column="vtelv_id" name="vtelvId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="vtelvNum" type="string">
+      <column length="20" name="vtelv_num">
+        <comment>numero lettre voiture</comment>
+      </column>
+    </property>
+    <property name="vtelvOrdre" type="integer">
+      <column default="0" name="vtelv_ordre">
+        <comment>ordre</comment>
+      </column>
+    </property>
+    <property name="vtelvRefParc" type="string">
+      <column length="20" name="vtelv_refParc">
+        <comment>reference parc</comment>
+      </column>
+    </property>
+    <property name="vtelvImmaParc" type="string">
+      <column length="100" name="vtelv_immaParc">
+        <comment>immatriculation parc</comment>
+      </column>
+    </property>
+    <property name="vtelvCamion" type="string">
+      <column length="100" name="vtelv_camion">
+        <comment>camion ou tracteur</comment>
+      </column>
+    </property>
+    <property name="vtelvModelCamion" type="string">
+      <column length="100" name="vtelv_modelCamion">
+        <comment>modele camnio</comment>
+      </column>
+    </property>
+    <property name="vtelvImmaCamion" type="string">
+      <column length="100" name="vtelv_immaCamion">
+        <comment>immatriculation camion</comment>
+      </column>
+    </property>
+    <property name="vtelvMatChauffeurExp" type="string">
+      <column length="20" name="vtelv_matChauffeurExp">
+        <comment>matricule du chauffeur depart</comment>
+      </column>
+    </property>
+    <property name="vtelvNomPrenomChauffeurExp" type="string">
+      <column length="200" name="vtelv_nomPrenomChauffeurExp">
+        <comment>nom et prenom du chauffeur depart</comment>
+      </column>
+    </property>
+    <property name="vtelvNumClientExp" type="string">
+      <column length="20" name="vtelv_numClientExp">
+        <comment>numero de compte du client depart</comment>
+      </column>
+    </property>
+    <property name="vtelvIntituleClientExp" type="string">
+      <column length="100" name="vtelv_intituleClientExp">
+        <comment>intitule du client depart</comment>
+      </column>
+    </property>
+    <property name="vtelvMatRespExp" type="string">
+      <column length="50" name="vtelv_matRespExp">
+        <comment>matricule du responsable depart</comment>
+      </column>
+    </property>
+    <property name="vtelvNomPrenomRespExp" type="string">
+      <column length="200" name="vtelv_nomPrenomRespExp">
+        <comment>nom et prenom du resposnable depart</comment>
+      </column>
+    </property>
+    <property name="vtelvDateExp" type="date">
+      <column default="null" name="vtelv_dateExp">
+        <comment>date depart</comment>
+      </column>
+    </property>
+    <property name="vtelvAdresseExp" type="string">
+      <column length="100" name="vtelv_adresseExp">
+        <comment>adresse depart</comment>
+      </column>
+    </property>
+    <property name="vtelvRefLieuExp" type="string">
+      <column length="20" name="vtelv_refLieuExp">
+        <comment>reference lieu depart</comment>
+      </column>
+    </property>
+    <property name="vtelvLibLieuExp" type="string">
+      <column length="100" name="vtelv_libLieuExp">
+        <comment>libelle lieu depart</comment>
+      </column>
+    </property>
+    <property name="vtelvContactExp" type="string">
+      <column length="100" name="vtelv_contactExp">
+        <comment>contact depart</comment>
+      </column>
+    </property>
+    <property name="vtelvMatChauffeurDest" type="string">
+      <column length="20" name="vtelv_matChauffeurDest">
+        <comment>matricule du chauffeur arrivee</comment>
+      </column>
+    </property>
+    <property name="vtelvNomPrenomChauffeurDest" type="string">
+      <column length="200" name="vtelv_nomPrenomChauffeurDest">
+        <comment>nom et prenom du chauffeur arrivee</comment>
+      </column>
+    </property>
+    <property name="vtelvNumClientDest" type="string">
+      <column length="20" name="vtelv_numClientDest">
+        <comment>numero de compte du client arrivee</comment>
+      </column>
+    </property>
+    <property name="vtelvIntituleClientDest" type="string">
+      <column length="100" name="vtelv_intituleClientDest">
+        <comment>intitule du client arrivee</comment>
+      </column>
+    </property>
+    <property name="vtelvMatRespDest" type="string">
+      <column length="50" name="vtelv_matRespDest">
+        <comment>matricule du responsable arrivee</comment>
+      </column>
+    </property>
+    <property name="vtelvNomPrenomRespDest" type="string">
+      <column length="200" name="vtelv_nomPrenomRespDest">
+        <comment>nom et prenom du resposnable arrivee</comment>
+      </column>
+    </property>
+    <property name="vtelvDateDest" type="date">
+      <column default="null" name="vtelv_dateDest">
+        <comment>date arrivee</comment>
+      </column>
+    </property>
+    <property name="vtelvAdresseDest" type="string">
+      <column length="100" name="vtelv_adresseDest">
+        <comment>adresse arrivee</comment>
+      </column>
+    </property>
+    <property name="vtelvRefLieuDest" type="string">
+      <column length="20" name="vtelv_refLieuDest">
+        <comment>reference lieu arrivee</comment>
+      </column>
+    </property>
+    <property name="vtelvLibLieuDest" type="string">
+      <column length="100" name="vtelv_libLieuDest">
+        <comment>libelle lieu arrivee</comment>
+      </column>
+    </property>
+    <property name="vtelvContactDest" type="string">
+      <column length="100" name="vtelv_contactDest">
+        <comment>contact arrivee</comment>
+      </column>
+    </property>
+    <property name="vtelvFinSaisie" type="string">
+      <column length="1" name="vtelv_finSaisie">
+        <comment>fin de saisie</comment>
+      </column>
+    </property>
+    <property name="vtelvDossier" type="string">
+      <column length="20" name="vtelv_dossier">
+        <comment>numero dossier</comment>
+      </column>
+    </property>
+    <property name="vtelvObservation" type="string">
+      <column length="20" name="vtelv_observation">
+        <comment>observation</comment>
+      </column>
+    </property>
+    <property name="vtelvPortPaye" type="string">
+      <column length="1" name="vtelv_portPaye">
+        <comment>port paye (facture pour expediteur)</comment>
+      </column>
+    </property>
+    <property name="vtelvPortDu" type="string">
+      <column length="1" name="vtelv_portDu">
+        <comment>port du (facture pour destinataire)</comment>
+      </column>
+    </property>
+    <property name="vtelvValeurAssuree" type="string">
+      <column default="0" name="vtelv_valeurAssuree">
+        <comment>montant valeur assure</comment>
+      </column>
+    </property>
+    <property name="vtelvPerteVol" type="string">
+      <column length="1" name="vtelv_perteVol">
+        <comment>perte pou vol</comment>
+      </column>
+    </property>
+    <property name="vtelvTousRisques" type="string">
+      <column length="1" name="vtelv_tousRisques">
+        <comment>tous risques</comment>
+      </column>
+    </property>
+    <property name="vtelvTransport" type="string">
+      <column length="100" name="vtelv_transport">
+        <comment>transport</comment>
+      </column>
+    </property>
+    <property name="vtelvTca" type="string">
+      <column length="100" name="vtelv_tca">
+        <comment>tca</comment>
+      </column>
+    </property>
+    <property name="vtelvNumManifest" type="string">
+      <column length="20" name="vtelv_numManifest">
+        <comment>numero manifeste</comment>
+      </column>
+    </property>
+    <property name="vtelvRefTypeColis" type="string">
+      <column length="20" name="vtelv_refTypeColis">
+        <comment>code colis</comment>
+      </column>
+    </property>
+    <property name="vtelvLibTypeColis" type="string">
+      <column length="200" name="vtelv_libTypeColis">
+        <comment>libelle colis</comment>
+      </column>
+    </property>
+    <property name="vtelvNatureColis" type="string">
+      <column length="50" name="vtelv_natureColis">
+        <comment>nature colis</comment>
+      </column>
+    </property>
+    <property name="vtelvNbreColis" type="integer">
+      <column default="0" name="vtelv_nbreColis">
+        <comment>nombre de colis</comment>
+      </column>
+    </property>
+    <property name="vtelvPoids" type="float">
+      <column default="0" name="vtelv_poids">
+        <comment>poids des colis</comment>
+      </column>
+    </property>
+    <property name="vtelvVolume" type="float">
+      <column default="0" name="vtelv_volume">
+        <comment>volume des colis</comment>
+      </column>
+    </property>
+    <property name="vtelvDescription" type="string">
+      <column length="100" name="vtelv_description">
+        <comment>description des colis</comment>
+      </column>
+    </property>
+    <property name="vtelvIntituleClient" type="string">
+      <column length="100" name="vtelv_intituleClient">
+        <comment>intitule client facture</comment>
+      </column>
+    </property>
+    <property name="vtelvNumClient" type="string">
+      <column length="20" name="vtelv_numClient">
+        <comment>numero client facture</comment>
+      </column>
+    </property>
+    <property name="vtelvCompteClient" type="string">
+      <column length="20" name="vtelv_compteClient">
+        <comment>compte client facture</comment>
+      </column>
+    </property>
+    <property name="vtelvDateSaisie" type="timestamp">
+      <column default="null" name="vtelv_dateSaisie">
+        <comment>date de saisie</comment>
+      </column>
+    </property>
+    <property name="vtelvDateModification" type="timestamp">
+      <column default="null" name="vtelv_dateModification">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="vtelvLoginUser" type="string">
+      <column length="20" name="vtelv_loginUser">
+        <comment>matricule user login</comment>
+      </column>
+    </property>
+    <property name="vtelvModelParc" type="string">
+      <column length="100" name="vtelv_modelParc">
+        <comment>compte client facture</comment>
+      </column>
+    </property>
+    <property name="vtelvImmaTc" type="string">
+      <column length="100" name="vtelv_immaTc">
+        <comment>immatriculation TC</comment>
+      </column>
+    </property>
+    <property name="vtelvModelTc" type="string">
+      <column length="100" name="vtelv_modelTc">
+        <comment>modele contener</comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>

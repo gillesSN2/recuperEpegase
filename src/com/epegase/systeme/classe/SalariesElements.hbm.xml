@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="SalariesElements" table="pay_salaries_elements">
+    <id column="salele_id" name="saleleId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="saleleDateCreat" type="timestamp">
+      <column name="salele_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="saleleDateModif" type="timestamp">
+      <column name="salele_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="saleleUserCreat" type="long">
+      <column default="0" length="15" name="salele_user_creat">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="saleleUserModif" type="long">
+      <column default="0" length="15" name="salele_user_modif">
+        <comment>utilisateur de modification</comment>
+      </column>
+    </property>
+    <property name="saleleContrat" type="string">
+      <column length="20" name="salele_contrat">
+        <comment>numero contrat</comment>
+      </column>
+    </property>
+    <property name="salelePeriode" type="string">
+      <column length="10" name="salele_periode">
+        <comment>periode MM:AAAA ou JJ:MM:AAAA</comment>
+      </column>
+    </property>
+    <property name="saleleJour" type="date">
+      <column default="null" name="salele_jour">
+        <comment>journalier</comment>
+      </column>
+    </property>
+    <property name="saleleMatricule" type="string">
+      <column length="10" name="salele_matricule">
+        <comment>matricule</comment>
+      </column>
+    </property>
+    <property name="saleleNature" type="string">
+      <column length="3" name="salele_nature">
+        <comment>voir nature salarie xml</comment>
+      </column>
+    </property>
+    <property name="saleleEtat" type="integer">
+      <column default="0" length="1" name="salele_etat">
+        <comment>0=actif 1=en conges 2=licencie 3=demissionne 4=decede 5=retraite 6=fin de contrat 7=arret ou suspension 8=mutation</comment>
+      </column>
+    </property>
+    <property name="saleleModeSolde" type="integer">
+      <column default="0" length="1" name="salele_mode_solde">
+        <comment>0=les prets sont soldes 1=les prets ne sont pas soldes sur fin contrat</comment>
+      </column>
+    </property>
+    <property name="saleleCivilite" type="string">
+      <column length="20" name="salele_civilite">
+        <comment>civilite (suivant fichier xml)</comment>
+      </column>
+    </property>
+    <property name="saleleFonction" type="string">
+      <column length="50" name="salele_fonction">
+        <comment>fonction</comment>
+      </column>
+    </property>
+    <property name="saleleSite" type="string">
+      <column length="20" name="salele_site">
+        <comment>imputation service</comment>
+      </column>
+    </property>
+    <property name="saleleDepartement" type="string">
+      <column length="20" name="salele_departement">
+        <comment>imputation service</comment>
+      </column>
+    </property>
+    <property name="saleleService" type="string">
+      <column length="20" name="salele_service">
+        <comment>imputation service</comment>
+      </column>
+    </property>
+    <property name="saleleLibService" type="string">
+      <column length="100" name="salele_lib_service">
+        <comment>libelle service</comment>
+      </column>
+    </property>
+    <property name="saleleActivite" type="text">
+      <column name="salele_acticvite">
+        <comment>imputation activite</comment>
+      </column>
+    </property>
+    <property name="saleleLocalisation" type="string">
+      <column length="20" name="salele_localisation">
+        <comment>imputation localisation</comment>
+      </column>
+    </property>
+    <property name="saleleBudget" type="string">
+      <column length="20" name="salele_budget">
+        <comment>imputation budget</comment>
+      </column>
+    </property>
+    <property name="saleleParc" type="string">
+      <column length="20" name="salele_parc">
+        <comment>imputation parc</comment>
+      </column>
+    </property>
+    <property name="saleleGenre" type="integer">
+      <column default="0" length="1" name="salele_genre">
+        <comment>0=femme 1=homme</comment>
+      </column>
+    </property>
+    <property name="saleleSitFamille" type="integer">
+      <column default="0" length="1" name="salele_sit_famille">
+        <comment>0=celibataire 1=marie 2=concubin 3=pacse 4=divorce 5=veuf</comment>
+      </column>
+    </property>
+    <property name="saleleNbEnfant" type="integer">
+      <column default="0" length="1" name="salele_nb_enfant">
+        <comment>nombre enfant</comment>
+      </column>
+    </property>
+    <property name="saleleNbPartFiscal" type="float">
+      <column default="0" length="1" name="salele_nb_part_fiscal">
+        <comment>nombre de parts fiscales</comment>
+      </column>
+    </property>
+    <property name="saleleNbFemme" type="integer">
+      <column default="0" length="1" name="salele_nb_femme">
+        <comment>nombre de femme</comment>
+      </column>
+    </property>
+    <property name="saleleNbPartTrimf" type="float">
+      <column default="0" length="1" name="salele_nb_part_trimf">
+        <comment>nombre de parts trimf</comment>
+      </column>
+    </property>
+    <property name="saleleNbJourCp" type="float">
+      <column default="0" length="1" name="salele_nb_jour_cp">
+        <comment>regime de conges : nb jour de conges</comment>
+      </column>
+    </property>
+    <property name="saleleNbJourTr" type="float">
+      <column default="0" length="1" name="salele_nb_jour_tr">
+        <comment>regime de conges : nb jour de travail</comment>
+      </column>
+    </property>
+    <property name="saleleDateMarie" type="date">
+      <column default="null" name="salele_date_marie">
+        <comment>date mariage</comment>
+      </column>
+    </property>
+    <property name="saleleDateDivorce" type="date">
+      <column default="null" name="salele_date_divorce">
+        <comment>date divorce</comment>
+      </column>
+    </property>
+    <property name="saleleDateVeuf" type="date">
+      <column default="null" name="salele_date_veuf">
+        <comment>date veuf</comment>
+      </column>
+    </property>
+    <property name="saleleDateConcubinage" type="date">
+      <column default="null" name="salele_date_concubinage">
+        <comment>date Concubinage</comment>
+      </column>
+    </property>
+    <property name="saleleDatePacs" type="date">
+      <column default="null" name="salele_date_pacs">
+        <comment>date pacs</comment>
+      </column>
+    </property>
+    <property name="saleleDateEntree" type="date">
+      <column default="null" name="salele_date_entree">
+        <comment>date entree</comment>
+      </column>
+    </property>
+    <property name="saleleDateSortie" type="date">
+      <column default="null" name="salele_date_sortie">
+        <comment>date de sortie</comment>
+      </column>
+    </property>
+    <property name="saleleMotifSortie" type="string">
+      <column length="50" name="salele_motif_sortie">
+        <comment>motif de sortie</comment>
+      </column>
+    </property>
+    <property name="saleleConvention" type="string">
+      <column length="20" name="salele_convention">
+        <comment>code convention du salarie</comment>
+      </column>
+    </property>
+    <property name="saleleLibConvention" type="string">
+      <column length="50" name="salele_lib_convention">
+        <comment>libelle convention du salarie</comment>
+      </column>
+    </property>
+    <property name="saleleCentresImpots" type="string">
+      <column length="10" name="salele_Cod_Centres_Impots">
+        <comment>code centres impots xml</comment>
+      </column>
+    </property>
+    <property name="saleleLibCentresImpots" type="string">
+      <column length="50" name="salele_Lib_Centres_Impots">
+        <comment>libelle centres impots xml</comment>
+      </column>
+    </property>
+    <property name="saleleCentresSecurite" type="string">
+      <column length="10" name="salele_centres_securite">
+        <comment>code centres securite sociale xml</comment>
+      </column>
+    </property>
+    <property name="saleleLibCentresSecurite" type="string">
+      <column length="50" name="salele_lib_centres_securite">
+        <comment>libelle centres securite xml</comment>
+      </column>
+    </property>
+    <property name="saleleClassement" type="string">
+      <column length="10" name="salele_classement">
+        <comment>code classement xml</comment>
+      </column>
+    </property>
+    <property name="saleleLibClassement" type="string">
+      <column length="50" name="salele_lib_classement">
+        <comment>libelle classement xml</comment>
+      </column>
+    </property>
+    <property name="saleleNivEmploi" type="string">
+      <column length="10" name="salele_niv_emploi">
+        <comment>code niveau emploi xml</comment>
+      </column>
+    </property>
+    <property name="saleleLibNivEmploi" type="string">
+      <column length="50" name="salele_lib_niv_emploi">
+        <comment>libelle niveau emploi xml</comment>
+      </column>
+    </property>
+    <property name="saleleGrille" type="string">
+      <column length="20" name="salele_grille">
+        <comment>code grille convention xml</comment>
+      </column>
+    </property>
+    <property name="saleleLibGrille" type="string">
+      <column length="50" name="salele_lib_grille">
+        <comment>libelle grille convention xml</comment>
+      </column>
+    </property>
+    <property name="saleleFeuille" type="string">
+      <column length="20" name="salele_feuille">
+        <comment>numero de feuille de calcul</comment>
+      </column>
+    </property>
+    <property name="saleleCle1Anal" type="string">
+      <column length="121" name="salele_cle1_anal">
+        <comment>cle de repartition 1</comment>
+      </column>
+    </property>
+    <property name="saleleLibCle1Anal" type="string">
+      <column length="121" name="salele_lib_cle1_anal">
+        <comment>libelle cle de repartition 1</comment>
+      </column>
+    </property>
+    <property name="saleleCle2Anal" type="string">
+      <column length="121" name="salele_cle2_anal">
+        <comment>cle de repartition 2</comment>
+      </column>
+    </property>
+    <property name="saleleLibCle2Anal" type="string">
+      <column length="121" name="salele_lib_cle2_anal">
+        <comment>libelle cle de repartition 2</comment>
+      </column>
+    </property>
+    <property name="saleleModeReglement" type="integer">
+      <column default="0" length="1" name="salele_mode_reglement">
+        <comment>0=espece 1=cheque 2=virement 3=bicitel 4=(ferlo) 5=orange money 9=autre</comment>
+      </column>
+    </property>
+    <property name="saleleNumBanque" type="string">
+      <column length="6" name="salele_num_banque">
+        <comment>code banque</comment>
+      </column>
+    </property>
+    <property name="saleleGuichetBanque" type="string">
+      <column length="6" name="salele_guichet_banque">
+        <comment>code guichet</comment>
+      </column>
+    </property>
+    <property name="saleleCompteBanque" type="string">
+      <column length="20" name="salele_compte_banque">
+        <comment>numero de compte</comment>
+      </column>
+    </property>
+    <property name="saleleCleBanque" type="string">
+      <column length="2" name="salele_cle_banque">
+        <comment>cle rib</comment>
+      </column>
+    </property>
+    <property name="saleleIban" type="string">
+      <column length="35" name="salele_iban">
+        <comment>code iban</comment>
+      </column>
+    </property>
+    <property name="saleleSwift" type="string">
+      <column length="20" name="salele_swift">
+        <comment>code swift</comment>
+      </column>
+    </property>
+    <property name="saleleCompteMembre" type="string">
+      <column length="30" name="salele_compte_membre">
+        <comment>numero de compte du membre</comment>
+      </column>
+    </property>
+    <property name="saleleDureeJour" type="integer">
+      <column default="0" name="salele_duree_jour">
+        <comment>0=journee complete 1=demi journee 2=autre</comment>
+      </column>
+    </property>
+    <property name="saleleChefFamille" type="integer">
+      <column default="0" name="salele_chef_famille">
+        <comment>0=pas chef 1= chef</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.Salaries" column="sal_id" lazy="false" name="Salaries" not-null="true"/>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="CampagneParticipantVentes" table="vte_campagne_participant">
+    <id column="campar_id" name="camparId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="camparDateCreat" type="timestamp">
+      <column name="campar_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="camparDateModif" type="timestamp">
+      <column name="campar_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="camparIdCreateur" type="long">
+      <column default="0" length="15" name="campar_id_createur">
+        <comment>id user createur</comment>
+      </column>
+    </property>
+    <property name="camparNomCreateur" type="string">
+      <column length="100" name="campar_nom_createur">
+        <comment>nom du createur</comment>
+      </column>
+    </property>
+    <property name="camparIdModif" type="long">
+      <column default="0" length="15" name="campar_id_modif">
+        <comment>id user de modification</comment>
+      </column>
+    </property>
+    <property name="camparNomModif" type="string">
+      <column length="100" name="campar_nom_modif">
+        <comment>nom user de modification</comment>
+      </column>
+    </property>
+    <property name="camparDate" type="timestamp">
+      <column name="campar_date">
+        <comment>date evenement</comment>
+      </column>
+    </property>
+    <property name="camparCommentaire" type="text">
+      <column name="campar_commentaire">
+        <comment>commentaire du contact</comment>
+      </column>
+    </property>
+    <property name="camparAction" type="text">
+      <column name="campar_action">
+        <comment>action a faire</comment>
+      </column>
+    </property>
+    <property name="camparCadeau" type="text">
+      <column name="campar_cadeau">
+        <comment>cadeau au contact</comment>
+      </column>
+    </property>
+    <property name="camparNomTiers" type="string">
+      <column length="100" name="campar_nom_tiers">
+        <comment>nom tiers</comment>
+      </column>
+    </property>
+    <property index="true" name="camparIdTiers" type="long">
+      <column default="0" index="true" name="campar_id_tiers">
+        <comment>id du tiers</comment>
+      </column>
+    </property>
+    <property name="camparNomCommercial" type="string">
+      <column length="100" name="campar_nom_commercial">
+        <comment>nom commercial qui a invite</comment>
+      </column>
+    </property>
+    <property index="true" name="camparIdCommercial" type="long">
+      <column default="0" index="true" name="campar_id_commercial">
+        <comment>id du commercial</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.CampagneEnteteVentes" column="cam_id" lazy="false" name="campagneEnteteVentes" not-null="true"/>
+    <many-to-one class="com.epegase.systeme.classe.Contacts" column="con_id" lazy="false" name="contacts" not-null="false"/>
+  </class>
+</hibernate-mapping>

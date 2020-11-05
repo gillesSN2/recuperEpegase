@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="AvoirLigneAchats" table="ach_avoir_ligne">
+    <id column="avflig_id" name="avfligId" type="long" unsaved-value="null">
+      <generator class="increment"/>
+    </id>
+    <property name="avfligIdNdf" type="long">
+      <column default="0" length="15" name="avflig_id_Ndf">
+        <comment>id de la ligne de note de debit</comment>
+      </column>
+    </property>
+    <property name="avfligIdFcf" type="long">
+      <column default="0" length="15" name="avflig_id_fcf">
+        <comment>id de la ligne de facture</comment>
+      </column>
+    </property>
+    <property name="avfligCode" type="string">
+      <column length="20" name="avflig_code">
+        <comment>code produit</comment>
+      </column>
+    </property>
+    <property name="avfligFamille" type="string">
+      <column length="121" name="avflig_famille">
+        <comment>famille vente</comment>
+      </column>
+    </property>
+    <property name="avfligLibelle" type="text">
+      <column name="avflig_libelle">
+        <comment>libelle produit</comment>
+      </column>
+    </property>
+    <property name="avfligLibelleFournisseur" type="string">
+      <column length="100" name="avflig_libelle_fournisseur">
+        <comment>libelle produit</comment>
+      </column>
+    </property>
+    <property name="avfligComplement" type="text">
+      <column length="500" name="avflig_complement">
+        <comment>descriptif complementaire</comment>
+      </column>
+    </property>
+    <property name="avfligReference" type="string">
+      <column length="20" name="avflig_reference">
+        <comment>reference produit</comment>
+      </column>
+    </property>
+    <property name="avfligTaxe" type="string">
+      <column length="20" name="avflig_taxe">
+        <comment>code taxe</comment>
+      </column>
+    </property>
+    <property name="avfligTauxTaxe" type="float">
+      <column default="0" name="avflig_taux_taxe">
+        <comment>taux de taxe</comment>
+      </column>
+    </property>
+    <property name="avfligUnite" type="string">
+      <column length="30" name="avflig_unite">
+        <comment>unite produit</comment>
+      </column>
+    </property>
+    <property name="avfligCondition" type="string">
+      <column length="121" name="avflig_condition">
+        <comment>conditionnement produit</comment>
+      </column>
+    </property>
+    <property name="avfligDescription" type="string">
+      <column length="20" name="avflig_description">
+        <comment>description conditionnement produit</comment>
+      </column>
+    </property>
+    <property name="avfligOrdre" type="integer">
+      <column default="0" name="avflig_ordre">
+        <comment>ordre de la ligne</comment>
+      </column>
+    </property>
+    <property name="avfligEchelle" type="integer">
+      <column default="0" name="avflig_echelle">
+        <comment>echelle de la ligne</comment>
+      </column>
+    </property>
+    <property name="avfligQte" type="float">
+      <column default="0" name="avflig_qte">
+        <comment>quantite</comment>
+      </column>
+    </property>
+    <property name="avfligLong" type="float">
+      <column default="0" name="avflig_long">
+        <comment>longueur</comment>
+      </column>
+    </property>
+    <property name="avfligLarg" type="float">
+      <column default="0" name="avflig_larg">
+        <comment>largeur</comment>
+      </column>
+    </property>
+    <property name="avfligHaut" type="float">
+      <column default="0" name="avflig_haut">
+        <comment>hauteur</comment>
+      </column>
+    </property>
+    <property name="avfligDiam" type="float">
+      <column default="0" name="avflig_diam">
+        <comment>diametre</comment>
+      </column>
+    </property>
+    <property name="avfligNb" type="float">
+      <column default="0" name="avflig_nb">
+        <comment>nombre de piece</comment>
+      </column>
+    </property>
+    <property name="avfligPoidsNet" type="float">
+      <column default="0" name="avflig_poidsNet">
+        <comment>poids net</comment>
+      </column>
+    </property>
+    <property name="avfligPoidsBrut" type="float">
+      <column default="0" name="avflig_poidsBrut">
+        <comment>poids brut</comment>
+      </column>
+    </property>
+    <property name="avfligVolume" type="float">
+      <column default="0" name="avflig_volume">
+        <comment>volume</comment>
+      </column>
+    </property>
+    <property name="avfligQteUtil" type="float">
+      <column default="0" name="avflig_qte_util">
+        <comment>quantite utilisee (valable pour le stock)</comment>
+      </column>
+    </property>
+    <property name="avfligDevise" type="string">
+      <column length="3" name="avflig_devise">
+        <comment>code devise</comment>
+      </column>
+    </property>
+    <property name="avfligPu" type="double">
+      <column default="0" name="avflig_pu">
+        <comment>prix unitaire</comment>
+      </column>
+    </property>
+    <property name="avfligTauxRemise" type="float">
+      <column default="0" name="avflig_taux_remise">
+        <comment>taux de remise</comment>
+      </column>
+    </property>
+    <property name="avfligRabais" type="double">
+      <column default="0" name="avflig_rabais">
+        <comment>valeur du rabais</comment>
+      </column>
+    </property>
+    <property name="avfligPuRem" type="double">
+      <column default="0" name="avflig_pu_rem">
+        <comment>prix unitaire apres remise</comment>
+      </column>
+    </property>
+    <property name="avfligPt" type="double">
+      <column default="0" name="avflig_pt">
+        <comment>prix total ht</comment>
+      </column>
+    </property>
+    <property name="avfligTva" type="double">
+      <column default="0" name="avflig_tva">
+        <comment>total taxe</comment>
+      </column>
+    </property>
+    <property name="avfligTc" type="double">
+      <column default="0" name="avflig_tc">
+        <comment>total taxe complementaire</comment>
+      </column>
+    </property>
+    <property name="avfligTtc" type="double">
+      <column default="0" name="avflig_ttc">
+        <comment>total ttc</comment>
+      </column>
+    </property>
+    <property name="avfligPr" type="double">
+      <column default="0" name="avflig_pr">
+        <comment>prix de revient</comment>
+      </column>
+    </property>
+    <property name="avfligPump" type="double">
+      <column default="0" name="avflig_pump">
+        <comment>prix unitaire moyen pondere</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.AvoirEnteteAchats" column="avf_id" lazy="false" name="avoirEnteteAchats" not-null="true"/>
+  </class>
+</hibernate-mapping>

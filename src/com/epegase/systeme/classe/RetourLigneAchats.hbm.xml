@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="RetourLigneAchats" table="ach_retour_ligne">
+    <id column="brflig_id" name="brfligId" type="long" unsaved-value="null">
+      <generator class="increment"/>
+    </id>
+    <property name="brfligIdDa" type="long">
+      <column default="0" length="15" name="brflig_id_da">
+        <comment>id de la ligne de da</comment>
+      </column>
+    </property>
+    <property name="brfligIdCot" type="long">
+      <column default="0" length="15" name="brflig_id_cot">
+        <comment>id de la ligne de cotation</comment>
+      </column>
+    </property>
+    <property name="brfligIdCmd" type="long">
+      <column default="0" length="15" name="brflig_id_cmd">
+        <comment>id de la ligne de commande</comment>
+      </column>
+    </property>
+    <property name="brfligIdRec" type="long">
+      <column default="0" length="15" name="brflig_id_rec">
+        <comment>id de la ligne de reception</comment>
+      </column>
+    </property>
+    <property name="brfligCode" type="string">
+      <column length="20" name="brflig_code">
+        <comment>code produit</comment>
+      </column>
+    </property>
+    <property name="brfligFamille" type="string">
+      <column length="121" name="brflig_famille">
+        <comment>famille vente</comment>
+      </column>
+    </property>
+    <property name="brfligLibelle" type="text">
+      <column name="brflig_libelle">
+        <comment>libelle produit</comment>
+      </column>
+    </property>
+    <property name="brfligLibelleFournisseur" type="string">
+      <column length="100" name="brflig_libelle_fournisseur">
+        <comment>libelle produit</comment>
+      </column>
+    </property>
+    <property name="brfligComplement" type="text">
+      <column length="500" name="brflig_complement">
+        <comment>descriptif complementaire</comment>
+      </column>
+    </property>
+    <property name="brfligReference" type="string">
+      <column length="20" name="brflig_reference">
+        <comment>reference produit</comment>
+      </column>
+    </property>
+    <property name="brfligTaxe" type="string">
+      <column length="20" name="brflig_taxe">
+        <comment>code taxe</comment>
+      </column>
+    </property>
+    <property name="brfligTauxTaxe" type="float">
+      <column default="0" name="brflig_taux_taxe">
+        <comment>taux de taxe</comment>
+      </column>
+    </property>
+    <property name="brfligUnite" type="string">
+      <column length="30" name="brflig_unite">
+        <comment>unite produit</comment>
+      </column>
+    </property>
+    <property name="brfligStock" type="integer">
+      <column default="0" name="brflig_stock">
+        <comment>mode de gestion de stock</comment>
+      </column>
+    </property>
+    <property name="brfligCondition" type="string">
+      <column length="121" name="brflig_condition">
+        <comment>conditionnement produit</comment>
+      </column>
+    </property>
+    <property name="brfligDescription" type="string">
+      <column length="20" name="brflig_description">
+        <comment>description conditionnement produit</comment>
+      </column>
+    </property>
+    <property name="brfligEchelle" type="integer">
+      <column default="0" name="brflig_echelle">
+        <comment>echelle de la ligne</comment>
+      </column>
+    </property>
+    <property name="brfligQte" type="float">
+      <column default="0" name="brflig_qte">
+        <comment>quantite</comment>
+      </column>
+    </property>
+    <property name="brfligLong" type="float">
+      <column default="0" name="brflig_long">
+        <comment>longueur</comment>
+      </column>
+    </property>
+    <property name="brfligLarg" type="float">
+      <column default="0" name="brflig_larg">
+        <comment>largeur</comment>
+      </column>
+    </property>
+    <property name="brfligHaut" type="float">
+      <column default="0" name="brflig_haut">
+        <comment>hauteur</comment>
+      </column>
+    </property>
+    <property name="brfligDiam" type="float">
+      <column default="0" name="brflig_diam">
+        <comment>diametre</comment>
+      </column>
+    </property>
+    <property name="brfligNb" type="float">
+      <column default="0" name="brflig_nb">
+        <comment>nombre de piece</comment>
+      </column>
+    </property>
+    <property name="brfligPoidsNet" type="float">
+      <column default="0" name="brflig_poidsNet">
+        <comment>poids net</comment>
+      </column>
+    </property>
+    <property name="brfligPoidsBrut" type="float">
+      <column default="0" name="brflig_poidsBrut">
+        <comment>poids brut</comment>
+      </column>
+    </property>
+    <property name="brfligVolume" type="float">
+      <column default="0" name="brflig_volume">
+        <comment>volume</comment>
+      </column>
+    </property>
+    <property name="brfligQteUtil" type="float">
+      <column default="0" name="brflig_qte_util">
+        <comment>quantite utilisee (valable pour le stock)</comment>
+      </column>
+    </property>
+    <property name="brfligDepot" type="string">
+      <column length="20" name="brflig_depot">
+        <comment>code depot</comment>
+      </column>
+    </property>
+    <property name="brfligQteStock" type="float">
+      <column default="0" name="brflig_qte_stock">
+        <comment>quantite en stock du depot</comment>
+      </column>
+    </property>
+    <property name="brfligDevise" type="string">
+      <column length="3" name="brflig_devise">
+        <comment>code devise</comment>
+      </column>
+    </property>
+    <property name="brfligPu" type="double">
+      <column default="0" name="brflig_pu">
+        <comment>prix unitaire</comment>
+      </column>
+    </property>
+    <property name="brfligTauxRemise" type="float">
+      <column default="0" name="brflig_taux_remise">
+        <comment>taux de remise</comment>
+      </column>
+    </property>
+    <property name="brfligRabais" type="double">
+      <column default="0" name="brflig_rabais">
+        <comment>valeur du rabais</comment>
+      </column>
+    </property>
+    <property name="brfligPuRem" type="double">
+      <column default="0" name="brflig_pu_rem">
+        <comment>prix unitaire apres remise</comment>
+      </column>
+    </property>
+    <property name="brfligPt" type="double">
+      <column default="0" name="brflig_pt">
+        <comment>prix total ht</comment>
+      </column>
+    </property>
+    <property name="brfligTva" type="double">
+      <column default="0" name="brflig_tva">
+        <comment>total taxe</comment>
+      </column>
+    </property>
+    <property name="brfligTc" type="double">
+      <column default="0" name="brflig_tc">
+        <comment>total taxe complementaire</comment>
+      </column>
+    </property>
+    <property name="brfligTtc" type="double">
+      <column default="0" name="brflig_ttc">
+        <comment>total ttc</comment>
+      </column>
+    </property>
+    <property name="brfligPr" type="double">
+      <column default="0" name="brflig_pr">
+        <comment>prix de revient</comment>
+      </column>
+    </property>
+    <property name="brfligPump" type="double">
+      <column default="0" name="brflig_pump">
+        <comment>prix unitaire moyen pondere</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.RetourEnteteAchats" column="brf_id" lazy="false" name="retourEnteteAchats" not-null="true"/>
+  </class>
+</hibernate-mapping>

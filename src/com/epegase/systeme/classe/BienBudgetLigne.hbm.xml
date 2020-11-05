@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="BienBudgetLigne" table="imm_bien_budget_ligne">
+    <id column="biebudlig_id" name="biebudligId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="biebudligCode" type="string">
+      <column length="20" name="biebudlig_code">
+        <comment>code du poste budgetaire</comment>
+      </column>
+    </property>
+    <property name="biebudligLibelle" type="string">
+      <column length="100" name="biebudlig_libelle">
+        <comment>libelle du poste budgetaire</comment>
+      </column>
+    </property>
+    <property name="biebudligResteAnterieur" type="double">
+      <column default="0" name="biebudlig_reste_anterieur">
+        <comment>reste anterieur n-1</comment>
+      </column>
+    </property>
+    <property name="biebudligMontant" type="double">
+      <column default="0" name="biebudlig_montant">
+        <comment>montant du poste</comment>
+      </column>
+    </property>
+    <property name="biebudligDepenses" type="double">
+      <column default="0" name="biebudlig_depenses">
+        <comment>total depenses</comment>
+      </column>
+    </property>
+    <property name="biebudligDepensesNonImpute" type="double">
+      <column default="0" name="biebudlig_depenses_non_impute">
+        <comment>total depenses non imputees</comment>
+      </column>
+    </property>
+    <property name="biebudligEcart" type="double">
+      <column default="0" name="biebudlig_ecart">
+        <comment>ecart</comment>
+      </column>
+    </property>
+    <property name="biebudligRealisation" type="float">
+      <column default="0" name="biebudlig_realisation">
+        <comment>% de realisation</comment>
+      </column>
+    </property>
+    <property name="biebudligType" type="integer">
+      <column default="0" name="biebudlig_type">
+        <comment>0=facture/travaux 1=facture/directe 2=paye 9=mixte</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.BienBudgetEntete" column="biebud_id" lazy="false" name="BienBudgetEntete" not-null="false"/>
+  </class>
+</hibernate-mapping>

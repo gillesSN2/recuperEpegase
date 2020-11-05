@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="PegEvolution" table="peg_evolution">
+    <id column="pegevo_id" name="pegevoId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="pegevoMode" type="integer">
+      <column default="0" name="pegevo_mode">
+        <comment>0=evolution 1=informations </comment>
+      </column>
+    </property>
+    <property name="pegevoType" type="integer">
+      <column default="0" name="pegevo_type">
+        <comment>0=nouvelle fonction 1=modification fonction 2=correction fonction</comment>
+      </column>
+    </property>
+    <property name="pegevoVersion" type="string">
+      <column length="20" name="pegevo_version">
+        <comment>module concerne</comment>
+      </column>
+    </property>
+    <property name="pegevoDate" type="date">
+      <column name="pegevo_date">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="pegevoModule" type="string">
+      <column length="50" name="pegevo_module">
+        <comment>module concerne</comment>
+      </column>
+    </property>
+    <property name="pegevoEcran" type="string">
+      <column length="100" name="pegevo_ecran">
+        <comment>ecran concerne</comment>
+      </column>
+    </property>
+    <property name="pegevoModele" type="string">
+      <column length="100" name="pegevo_modele">
+        <comment>modele concerne</comment>
+      </column>
+    </property>
+    <property name="pegevoObject" type="string">
+      <column length="100" name="pegevo_objet">
+        <comment>objet de la demande</comment>
+      </column>
+    </property>
+    <property name="pegevoDetail" type="text">
+      <column name="pegevo_detail">
+        <comment>descriptif de la correction</comment>
+      </column>
+    </property>
+    <property name="pegevoNomDeveloppeur" type="string">
+      <column length="100" name="pegevo_nom_developpeur">
+        <comment>nom developpeur</comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>

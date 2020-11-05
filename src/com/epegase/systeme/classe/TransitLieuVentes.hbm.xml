@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="TransitLieuVentes" table="prc_transit_lieu_ventes">
+    <id column="tralie_id" name="tralieId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="tralieDateCreation" type="timestamp">
+      <column name="tralie_date_creation">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="tralieDateModif" type="timestamp">
+      <column name="tralie_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="tralieUserCreation" type="long">
+      <column default="0" length="15" name="tralie_user_creation">
+        <comment>user de creation</comment>
+      </column>
+    </property>
+    <property name="tralieUserModif" type="long">
+      <column default="0" length="15" name="tralie_user_modif">
+        <comment>user de modification</comment>
+      </column>
+    </property>
+    <property name="tralieCode" type="string">
+      <column length="20" name="tralie_code">
+        <comment>code</comment>
+      </column>
+    </property>
+    <property name="tralieLibelleFr" type="string">
+      <column length="100" name="tralie_libelle_FR">
+        <comment>libelle de la formule FR</comment>
+      </column>
+    </property>
+    <property name="tralieLibelleUk" type="string">
+      <column length="100" name="tralie_libelle_UK">
+        <comment>libelle de la formule UK</comment>
+      </column>
+    </property>
+    <property name="tralieLibelleSp" type="string">
+      <column length="100" name="tralie_libelle_SP">
+        <comment>libelle de la formule SP</comment>
+      </column>
+    </property>
+    <property name="tralieInactif" type="integer">
+      <column default="0" length="1" name="tralie_inactif">
+        <comment>0=actif 1=inactif 2=supprimer</comment>
+      </column>
+    </property>
+    <property name="traliePort" type="string">
+      <column length="20" name="tralie_port">
+        <comment>code du port</comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>

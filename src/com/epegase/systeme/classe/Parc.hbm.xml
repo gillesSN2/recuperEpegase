@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="Parc" table="cmm_parc">
+    <id column="prc_id" name="prcId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="prcDateCreat" type="timestamp">
+      <column name="prc_date_creat">
+        <comment>date creation</comment>
+      </column>
+    </property>
+    <property name="prcDateModif" type="timestamp">
+      <column name="prc_date_modif">
+        <comment>date modification</comment>
+      </column>
+    </property>
+    <property name="prcUserCreat" type="long">
+      <column default="0" length="20" name="prc_user_creat">
+        <comment>id user de creation</comment>
+      </column>
+    </property>
+    <property name="prcUserModif" type="long">
+      <column default="0" length="20" name="prc_user_modif">
+        <comment>id user de modification</comment>
+      </column>
+    </property>
+    <property index="true" name="prcImmatriculation" type="string">
+      <column index="true" length="20" name="prc_immatriculation">
+        <comment>immatriculation</comment>
+      </column>
+    </property>
+    <property index="true" name="prcBalise" type="string">
+      <column index="true" length="20" name="prc_balise">
+        <comment>code balise</comment>
+      </column>
+    </property>
+    <property name="prcNomFr" type="string">
+      <column length="100" name="prc_nom_FR">
+        <comment>libelle du parc en francais</comment>
+      </column>
+    </property>
+    <property name="prcNomUk" type="string">
+      <column length="100" name="prc_nom_UK">
+        <comment>libelle du parc en anglais</comment>
+      </column>
+    </property>
+    <property name="prcNomSp" type="string">
+      <column length="100" name="prc_nom_SP">
+        <comment>libelle du parc en espagnol</comment>
+      </column>
+    </property>
+    <property name="prcInactif" type="integer">
+      <column default="0" length="1" name="prc_inactif">
+        <comment>0=actif 1=inactif</comment>
+      </column>
+    </property>
+    <property name="prcImmobilisation" type="long">
+      <column length="20" name="prc_immobilisation">
+        <comment>code immobilisation comptable</comment>
+      </column>
+    </property>
+    <property name="prcIdImmobilisation" type="long">
+      <column default="0" name="prc_id_immobilisation">
+        <comment>id immobilisation comptable</comment>
+      </column>
+    </property>
+    <property name="prcPhoto" type="string">
+      <column length="100" name="prc_photo">
+        <comment>nom de la photo</comment>
+      </column>
+    </property>
+    <property name="prcPhotoTaille" type="integer">
+      <column default="0" name="prc_photo_taille">
+        <comment>taille de la photo</comment>
+      </column>
+    </property>
+    <property name="prcNature" type="integer">
+      <column default="0" length="2" name="prc_nature">
+        <comment>voir fichier xml</comment>
+      </column>
+    </property>
+    <property name="prcLibNature" type="string">
+      <column length="50" name="prc_lib_nature">
+        <comment>libelle nature</comment>
+      </column>
+    </property>
+    <property name="prcFamille" type="string">
+      <column length="20" name="prc_famille">
+        <comment>code famille</comment>
+      </column>
+    </property>
+    <property name="prcLibFamille" type="string">
+      <column length="50" name="prc_lib_famille">
+        <comment>libelle famille</comment>
+      </column>
+    </property>
+    <property name="prcSousFamille" type="string">
+      <column length="20" name="prc_sous_famille">
+        <comment>code sous famille</comment>
+      </column>
+    </property>
+    <property name="prcLibSousFamille" type="string">
+      <column length="50" name="prc_lib_sous_famille">
+        <comment>libelle sous famille</comment>
+      </column>
+    </property>
+    <property name="prcMarque" type="string">
+      <column length="50" name="prc_marque">
+        <comment>marque</comment>
+      </column>
+    </property>
+    <property name="prcChassis" type="string">
+      <column length="20" name="prc_chassis">
+        <comment>numero chassis ou de serie</comment>
+      </column>
+    </property>
+    <property name="prcMoteur" type="string">
+      <column length="20" name="prc_moteur">
+        <comment>numero moteur</comment>
+      </column>
+    </property>
+    <property name="prcArrangement" type="string">
+      <column length="20" name="prc_arrangement">
+        <comment>numero arrangement</comment>
+      </column>
+    </property>
+    <property name="prcDateAchat" type="date">
+      <column name="prc_date_achat">
+        <comment>date achat</comment>
+      </column>
+    </property>
+    <property index="true" name="prcAnniversaire" type="string">
+      <column index="true" length="5" name="prc_anniversaire">
+        <comment>periode anniversaire JJ:MM par rapport a la date achat</comment>
+      </column>
+    </property>
+    <property name="prcAnneeFab" type="int">
+      <column default="0" name="prc_annee_fab">
+        <comment>annee fabrication</comment>
+      </column>
+    </property>
+    <property name="prcPrixAchat" type="double">
+      <column default="0" name="prc_prix_achat">
+        <comment>prix achat</comment>
+      </column>
+    </property>
+    <property name="prcPrixRevient" type="double">
+      <column default="0" name="prc_prix_revient">
+        <comment>prix revient</comment>
+      </column>
+    </property>
+    <property name="prcPrixVente" type="double">
+      <column default="0" name="prc_prix_vente">
+        <comment>prix vente ou location</comment>
+      </column>
+    </property>
+    <property name="prcDateMeS" type="date">
+      <column name="prc_date_mes">
+        <comment>date mise en service</comment>
+      </column>
+    </property>
+    <property name="prcPrixArgus" type="double">
+      <column default="0" name="prc_prix_argus">
+        <comment>prix argus</comment>
+      </column>
+    </property>
+    <property name="prcDateSortie" type="date">
+      <column name="prc_date_sortie">
+        <comment>date de sortie</comment>
+      </column>
+    </property>
+    <property name="prcPrixCession" type="double">
+      <column default="0" name="prc_prix_cession">
+        <comment>prix cession</comment>
+      </column>
+    </property>
+    <property name="prcEtat" type="integer">
+      <column default="0" length="1" name="prc_etat">
+        <comment>0=en cours 1=cession 2=rebut </comment>
+      </column>
+    </property>
+    <property name="prcFonction" type="integer">
+      <column default="0" length="1" name="prc_fonction">
+        <comment>0=en arret 1=en fonction 2=en panne </comment>
+      </column>
+    </property>
+    <property name="prcLieu" type="string">
+      <column length="50" name="prc_lieu">
+        <comment>nom lieu actuel (mission ou garage)</comment>
+      </column>
+    </property>
+    <property name="prcPanne" type="string">
+      <column length="50" name="prc_panne">
+        <comment>description panne (si panne)</comment>
+      </column>
+    </property>
+    <property name="prcOrigine" type="integer">
+      <column default="0" length="1" name="prc_origine">
+        <comment>0=interne 1=externe 2=fabrique</comment>
+      </column>
+    </property>
+    <property name="prcPuisFiscale" type="float">
+      <column default="0" name="prc_puis_fiscale">
+        <comment>puissance fiscale</comment>
+      </column>
+    </property>
+    <property name="prcPuisChev" type="float">
+      <column default="0" name="prc_puis_chev">
+        <comment>puissance en chevaux</comment>
+      </column>
+    </property>
+    <property name="prcConsommation" type="float">
+      <column default="0" name="prc_consommation">
+        <comment>consommation moyenne au 100 km</comment>
+      </column>
+    </property>
+    <property name="prcCote" type="float">
+      <column default="0" name="prc_cote">
+        <comment>consommation litre par km</comment>
+      </column>
+    </property>
+    <property name="prcCompteur" type="integer">
+      <column default="0" length="1" name="prc_compteur">
+        <comment>0=distance 1=kilometrique 2=horaire</comment>
+      </column>
+    </property>
+    <property name="prcAlimentation" type="integer">
+      <column default="0" length="1" name="prc_alimentation">
+        <comment>0=essence 1=gazoil 2=gpl 3=electique 4=hybride 5=kerosene 6=solaire</comment>
+      </column>
+    </property>
+    <property name="prcAmpere" type="float">
+      <column default="0" name="prc_ampere">
+        <comment>amperage</comment>
+      </column>
+    </property>
+    <property name="prcVolt" type="float">
+      <column default="0" name="prc_volt">
+        <comment>voltage</comment>
+      </column>
+    </property>
+    <property name="prcEssence" type="integer">
+      <column default="0" name="prc_essence">
+        <comment>0=ordinaire 1=super 98 2=super 99 3=jet a1</comment>
+      </column>
+    </property>
+    <property name="prcMatSalarie" type="string">
+      <column length="10" name="prc_mat_salarie">
+        <comment>matricule salarie</comment>
+      </column>
+    </property>
+    <property name="prcNomSalarie" type="string">
+      <column length="100" name="prc_nom_salarie">
+        <comment>nom salarie</comment>
+      </column>
+    </property>
+    <property name="prcPrenomSalarie" type="string">
+      <column length="50" name="prc_prenom_salarie">
+        <comment>prenom salarie</comment>
+      </column>
+    </property>
+    <property name="prcService" type="string">
+      <column length="20" name="prc_service">
+        <comment>code service</comment>
+      </column>
+    </property>
+    <property name="prcLibService" type="string">
+      <column length="100" name="prc_lib_service">
+        <comment>libelle service</comment>
+      </column>
+    </property>
+    <property name="prcAlerte" type="integer">
+      <column default="0" length="1" name="prc_alerte">
+        <comment>0=sans alerte 1=alerte par mail</comment>
+      </column>
+    </property>
+    <property name="prcMailAlerte" type="string">
+      <column length="100" name="prc_mail_alerte">
+        <comment>mail pour alerte</comment>
+      </column>
+    </property>
+    <property name="prcIdTiers" type="long">
+      <column default="0" name="prc_id_tiers">
+        <comment>id tiers si garage</comment>
+      </column>
+    </property>
+    <property name="prcNomTiers" type="string">
+      <column length="100" name="prc_nom_tiers">
+        <comment>raison sociale tiers si garage</comment>
+      </column>
+    </property>
+    <property name="prcAdresse" type="string">
+      <column length="100" name="prc_adresse">
+        <comment>adresse du tiers</comment>
+      </column>
+    </property>
+    <property name="prcTel" type="string">
+      <column length="100" name="prc_tel">
+        <comment>telephone du tiers</comment>
+      </column>
+    </property>
+    <property name="prcVille" type="string">
+      <column length="100" name="prc_ville">
+        <comment>ville du tiers</comment>
+      </column>
+    </property>
+    <property name="prcContact" type="string">
+      <column length="100" name="prc_contact">
+        <comment>contact du tiers</comment>
+      </column>
+    </property>
+    <property name="prcModele" type="string">
+      <column length="50" name="prc_modele">
+        <comment>modele</comment>
+      </column>
+    </property>
+    <property name="prcNumSerie" type="string">
+      <column length="50" name="prc_num_serie">
+        <comment>serie</comment>
+      </column>
+    </property>
+    <property name="prcProcesseur" type="string">
+      <column length="50" name="prc_processeur">
+        <comment>processeur</comment>
+      </column>
+    </property>
+    <property name="prcOs" type="string">
+      <column length="50" name="prc_os">
+        <comment>os</comment>
+      </column>
+    </property>
+    <property name="prcMemoire" type="string">
+      <column length="50" name="prc_memoire">
+        <comment>memoire</comment>
+      </column>
+    </property>
+    <property name="prcDd" type="string">
+      <column length="50" name="prc_dd">
+        <comment>disque dur</comment>
+      </column>
+    </property>
+    <property name="prcTypeImprimante" type="string">
+      <column length="15" name="prc_type_imprimante">
+        <comment>type imprimnte</comment>
+      </column>
+    </property>
+    <property name="prcCartouche" type="string">
+      <column length="50" name="prc_cartouche">
+        <comment>modele cartouche imprimante</comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>

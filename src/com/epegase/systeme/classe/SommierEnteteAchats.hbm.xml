@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="SommierEnteteAchats" table="ach_sommier_entete">
+    <id column="som_id" name="somId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="somDateCreat" type="timestamp">
+      <column name="som_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="somDateModif" type="timestamp">
+      <column name="som_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="somIdCreateur" type="long">
+      <column default="0" length="15" name="som_id_createur">
+        <comment>id user createur</comment>
+      </column>
+    </property>
+    <property name="somNomCreateur" type="string">
+      <column length="100" name="som_nom_createur">
+        <comment>nom du createur</comment>
+      </column>
+    </property>
+    <property name="somIdModif" type="long">
+      <column default="0" length="15" name="som_id_modif">
+        <comment>id user de modification</comment>
+      </column>
+    </property>
+    <property name="somNomModif" type="string">
+      <column length="100" name="som_nom_modif">
+        <comment>nom user de modification</comment>
+      </column>
+    </property>
+    <property index="true" name="somDate" type="timestamp">
+      <column index="true" name="som_date">
+        <comment>date sommier</comment>
+      </column>
+    </property>
+    <property name="somDateExpiration" type="timestamp">
+      <column name="som_date_expiration">
+        <comment>date expiration du sommier</comment>
+      </column>
+    </property>
+    <property name="somDateProrogation" type="timestamp">
+      <column name="som_date_prorogation">
+        <comment>date prorogation du sommier</comment>
+      </column>
+    </property>
+    <property index="true" name="somNum" type="string">
+      <column index="true" length="20" name="som_num">
+        <comment>numero sommier</comment>
+      </column>
+    </property>
+    <property name="somType" type="integer">
+      <column default="0" name="som_type">
+        <comment>type 0=entree, 1=sortie</comment>
+      </column>
+    </property>
+    <property name="somNomResponsable" type="string">
+      <column length="100" name="som_nom_responsable">
+        <comment>nom du commercial</comment>
+      </column>
+    </property>
+    <property name="somIdResponsable" type="long">
+      <column default="0" name="som_id_responsable">
+        <comment>id du commercial</comment>
+      </column>
+    </property>
+    <property name="somDossierTransit" type="string">
+      <column length="20" name="som_dossier_transit">
+        <comment>numero dossier transit</comment>
+      </column>
+    </property>
+    <property name="somReception" type="string">
+      <column length="20" name="som_reception">
+        <comment>numero reception</comment>
+      </column>
+    </property>
+    <property name="somCession" type="string">
+      <column length="20" name="som_cession">
+        <comment>numero cession</comment>
+      </column>
+    </property>
+    <property name="somDateImp" type="date">
+      <column name="som_date_imp">
+        <comment>date impression</comment>
+      </column>
+    </property>
+    <property name="somModeleImp" type="string">
+      <column length="50" name="som_modele_imp">
+        <comment>modele impression</comment>
+      </column>
+    </property>
+    <property index="true" name="somEtat" type="integer">
+      <column default="0" index="true" length="1" name="som_etat">
+        <comment>0=En cours 1=cloture</comment>
+      </column>
+    </property>
+    <property name="somRegime" type="string">
+      <column length="50" name="som_regime">
+        <comment>regime de sortie</comment>
+      </column>
+    </property>
+    <property name="somNomTiers" type="string">
+      <column length="100" name="som_nom_tiers">
+        <comment>nom du tiers</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ExercicesAchats" column="exeach_id" lazy="false" name="exercicesAchats" not-null="true"/>
+    <many-to-one class="com.epegase.systeme.classe.Users" column="usr_id" lazy="false" name="users" not-null="false"/>
+  </class>
+</hibernate-mapping>

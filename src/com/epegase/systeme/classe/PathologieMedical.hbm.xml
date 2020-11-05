@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="PathologieMedical" table="med_pathologie">
+    <id column="phl_id" name="phlId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="phlUserCreation" type="long">
+      <column default="0" length="15" name="phl_user_creat">
+        <comment>user de creation</comment>
+      </column>
+    </property>
+    <property name="phlUserModif" type="long">
+      <column default="0" length="15" name="phl_user_modif">
+        <comment>user de modification</comment>
+      </column>
+    </property>
+    <property name="phlDateCreation" type="timestamp">
+      <column name="phl_date_creat">
+        <comment>dat de ceration</comment>
+      </column>
+    </property>
+    <property name="phlDateModif" type="timestamp">
+      <column name="phl_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="phlCode" type="string">
+      <column length="20" name="phl_code">
+        <comment>code du protocole</comment>
+      </column>
+    </property>
+    <property name="phlLibelle" type="string">
+      <column length="100" name="phl_libelle">
+        <comment>libelle du protocole</comment>
+      </column>
+    </property>
+    <property name="phlInactif" type="integer">
+      <column default="0" length="1" name="phl_inactif">
+        <comment>0=actif 1=inactif 2=supprimer</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ExercicesVentes" column="exevte_id" lazy="false" name="exerciceventes" not-null="true"/>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="ProduitsActe" table="cmm_produits_acte">
+    <id column="proact_id" name="proactId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="proactHierarchie" type="text">
+      <column length="10000" name="proact_hierarchie">
+        <comment>hierarchie</comment>
+      </column>
+    </property>
+    <property name="proactRang" type="text">
+      <column length="10000" name="proact_rang">
+        <comment>rang</comment>
+      </column>
+    </property>
+    <property name="proactPosition" type="text">
+      <column length="10000" name="proact_position">
+        <comment>position</comment>
+      </column>
+    </property>
+    <property name="proactY" type="text">
+      <column length="10000" name="proact_y">
+        <comment>y</comment>
+      </column>
+    </property>
+    <property name="proactIcr" type="text">
+      <column length="10000" name="proactIcr">
+        <comment>icr</comment>
+      </column>
+    </property>
+    <property name="proactPara" type="text">
+      <column length="10000" name="proact_para">
+        <comment>para</comment>
+      </column>
+    </property>
+    <property name="proactA" type="text">
+      <column length="10000" name="proact_a">
+        <comment>A</comment>
+      </column>
+    </property>
+    <property name="proactB" type="text">
+      <column length="10000" name="proact_b">
+        <comment>B</comment>
+      </column>
+    </property>
+    <property name="proactCc" type="text">
+      <column length="10000" name="proact_cc">
+        <comment>CC</comment>
+      </column>
+    </property>
+    <property name="proactScore" type="text">
+      <column length="10000" name="proact_scrore">
+        <comment>score</comment>
+      </column>
+    </property>
+    <property name="proactObservations" type="text">
+      <column length="5000" name="proact_observations">
+        <comment>observation</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.Produits" column="pro_id" lazy="false" name="produits" not-null="true"/>
+  </class>
+</hibernate-mapping>

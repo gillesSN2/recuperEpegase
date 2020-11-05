@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="Caracteristique" table="prc_caracteristique">
+    <id column="car_id" name="carId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="carDateCreat" type="timestamp">
+      <column name="car_date_creat">
+        <comment>date creation</comment>
+      </column>
+    </property>
+    <property name="carDateModif" type="timestamp">
+      <column name="car_date_modif">
+        <comment>date modification</comment>
+      </column>
+    </property>
+    <property name="carUserCreat" type="long">
+      <column default="0" length="20" name="car_user_creat">
+        <comment>id user de creation</comment>
+      </column>
+    </property>
+    <property name="carUserModif" type="long">
+      <column default="0" length="20" name="car_user_modif">
+        <comment>id user de modification</comment>
+      </column>
+    </property>
+    <property name="carNature" type="int">
+      <column default="0" name="car_nature">
+        <comment>code nature</comment>
+      </column>
+    </property>
+    <property name="carLibNature" type="string">
+      <column length="100" name="car_lib_nature">
+        <comment>libelle nature</comment>
+      </column>
+    </property>
+    <property name="carFamille" type="string">
+      <column length="20" name="car_famille">
+        <comment>code famille</comment>
+      </column>
+    </property>
+    <property name="carLibFamille" type="string">
+      <column length="100" name="car_lib_famille">
+        <comment>libelle famille</comment>
+      </column>
+    </property>
+    <property name="carSousFamille" type="string">
+      <column length="20" name="car_sous_famille">
+        <comment>code famille</comment>
+      </column>
+    </property>
+    <property name="carLibSousFamille" type="string">
+      <column length="100" name="car_lib_sous_famille">
+        <comment>libelle famille</comment>
+      </column>
+    </property>
+    <property name="carInactif" type="int">
+      <column default="0" length="1" name="car_inactif">
+        <comment>0=actif 1=inactif</comment>
+      </column>
+    </property>
+    <property name="carOrgane" type="int">
+      <column default="0" length="1" name="car_organe">
+        <comment>0=nr 1=mecanique 2=hydraulique 3=elctrique 4=pneumatique 5=equipement 9=autre</comment>
+      </column>
+    </property>
+    <property name="carInventaire" type="int">
+      <column default="0" length="1" name="car_inventaire">
+        <comment>0=document administratif 1=document technique 2=outils 3=consommable 4=piece 5=accessoire 9=autre</comment>
+      </column>
+    </property>
+    <property name="carType" type="int">
+      <column default="0" length="1" name="car_type">
+        <comment>0=caracteristique 1=inventaire</comment>
+      </column>
+    </property>
+    <property name="carLibelle" type="string">
+      <column length="100" name="car_libelle">
+        <comment>libelle caracteristique</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.FamillesParc1" column="famprc1_id" lazy="false" name="FamillesParc1" not-null="true"/>
+  </class>
+</hibernate-mapping>

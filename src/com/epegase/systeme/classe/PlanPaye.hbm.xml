@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="PlanPaye" table="pay_plan_paye">
+    <id column="plp_id" name="plpId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="plpDateCreat" type="timestamp">
+      <column name="plp_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="plpDateModif" type="timestamp">
+      <column name="plp_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="plpUserCreat" type="long">
+      <column default="0" length="15" name="plp_user_creat">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="plpUserModif" type="long">
+      <column default="0" length="15" name="plp_user_modif">
+        <comment>utilisateur de modification</comment>
+      </column>
+    </property>
+    <property index="true" name="plpCode" type="string">
+      <column index="true" length="6" name="plp_code">
+        <comment>numero de code</comment>
+      </column>
+    </property>
+    <property name="plpCodeLie" type="string">
+      <column length="6" name="plp_codeLie">
+        <comment>numero de code lie</comment>
+      </column>
+    </property>
+    <property name="plpCodeSage" type="string">
+      <column length="6" name="plp_code_sage">
+        <comment>numero de code sage</comment>
+      </column>
+    </property>
+    <property name="plpLibelleFR" type="string">
+      <column length="100" name="plp_libelle_FR">
+        <comment>libelle du rubrique en FR</comment>
+      </column>
+    </property>
+    <property name="plpCommentaire" type="string">
+      <column length="100" name="plp_commentaire">
+        <comment>commentaire</comment>
+      </column>
+    </property>
+    <property name="plpLibelleUK" type="string">
+      <column length="100" name="plp_libelle_UK">
+        <comment>libelle du rubrique en UK</comment>
+      </column>
+    </property>
+    <property name="plpLibelleSP" type="string">
+      <column length="100" name="plp_libelle_SP">
+        <comment>libelle du rubrique en SP</comment>
+      </column>
+    </property>
+    <property index="true" name="plpNature" type="integer">
+      <column default="0" index="true" length="1" name="plp_nature">
+        <comment>code nature</comment>
+      </column>
+    </property>
+    <property name="plpLibelleNatureFR" type="string">
+      <column length="100" name="plp_libelle_nature_FR">
+        <comment>libelle nature en FR</comment>
+      </column>
+    </property>
+    <property name="plpSens" type="integer">
+      <column default="0" length="1" name="plp_sens">
+        <comment>0=+ 1=- 2=calcul 3=resultat</comment>
+      </column>
+    </property>
+    <property name="plpOption" type="integer">
+      <column default="0" length="1" name="plp_option">
+        <comment>0=sans 1=fiche preparatoire 2=modification mensuelle</comment>
+      </column>
+    </property>
+    <property name="plpProrataTemporis" type="integer">
+      <column default="0" length="1" name="plp_prorata_temporis">
+        <comment>0=sans 1=resultat au prorata temporis</comment>
+      </column>
+    </property>
+    <property name="plpGroupe" type="integer">
+      <column default="0" length="1" name="plp_groupe">
+        <comment>0=groupe 1=compte+classement 2=compte+matricule 3=Compte+National/Non National 4=Compte+National/Non National+Classement 5= 6= 7=Compte+Feuille de calcul 8=Compte+centre impot 9=Compte+Code service</comment>
+      </column>
+    </property>
+    <property name="plpGroupeCp" type="integer">
+      <column default="0" length="1" name="plp_groupe_cp">
+        <comment>0=groupe 1=compte+classement 2=compte+matricule 3=Compte+National/Non National 4=Compte+National/Non National+Classement 5= 6= 7=Compte+Feuille de calcul 8=Compte+centre impot 9=Compte+Code service</comment>
+      </column>
+    </property>
+    <property name="plpInactif" type="integer">
+      <column default="0" length="1" name="plp_inactif">
+        <comment>0=actif 1=inactif</comment>
+      </column>
+    </property>
+    <property name="plpCompteNormal" type="string">
+      <column length="20" name="plp_compte_normal">
+        <comment>compte normal</comment>
+      </column>
+    </property>
+    <property name="plpComptePrestataire" type="string">
+      <column length="20" name="plp_compte_prestataire">
+        <comment>compte prestataire</comment>
+      </column>
+    </property>
+    <property name="plpCpNormal" type="string">
+      <column length="20" name="plp_cp_normal">
+        <comment>contre partie normal</comment>
+      </column>
+    </property>
+    <property name="plpCpPrestataire" type="string">
+      <column length="20" name="plp_cp_prestataire">
+        <comment>contre partie prestataire</comment>
+      </column>
+    </property>
+    <property name="plpAnalytique" type="integer">
+      <column default="0" length="1" name="plp_analytique">
+        <comment>0=sans analytique 1=avec imputation analytique</comment>
+      </column>
+    </property>
+    <property name="plpRan" type="integer">
+      <column default="0" length="1" name="plp_ran">
+        <comment>0=sans ran 1=avec ran</comment>
+      </column>
+    </property>
+    <property name="plpProtege" type="integer">
+      <column default="0" length="1" name="plp_protege">
+        <comment>0=sans protection 1=avec protection</comment>
+      </column>
+    </property>
+    <property name="plpBaseFiscale" type="boolean">
+      <column default="false" name="plp_base_fiscale">
+        <comment>true = integre dans la base fiscale</comment>
+      </column>
+    </property>
+    <property name="plpBaseSociale" type="boolean">
+      <column default="false" name="plp_base_sociale">
+        <comment>true = integre dans la base sociale</comment>
+      </column>
+    </property>
+    <property name="plpBaseAutre" type="boolean">
+      <column default="false" name="plp_base_autre">
+        <comment>true = integre dans la base referencee</comment>
+      </column>
+    </property>
+    <property name="plpBasePatronale" type="boolean">
+      <column default="false" name="plp_base_patronale">
+        <comment>true = integre dans la base patronale</comment>
+      </column>
+    </property>
+    <property name="plpBaseConges" type="boolean">
+      <column default="false" name="plp_base_conges">
+        <comment>true = integre dans la base conges</comment>
+      </column>
+    </property>
+    <property name="plpTauxFiscale" type="float">
+      <column default="0" name="plp_taux_fiscale">
+        <comment>taux integre dans la base fiscale</comment>
+      </column>
+    </property>
+    <property name="plpTauxSociale" type="float">
+      <column default="0" name="plp_taux_sociale">
+        <comment>taux integre dans la base sociale</comment>
+      </column>
+    </property>
+    <property name="plpTauxPatronal" type="float">
+      <column default="0" name="plp_taux_patronal">
+        <comment>taux integre dans la base patronale</comment>
+      </column>
+    </property>
+    <property name="plpFormuleFiscale" type="text">
+      <column length="1000" name="plp_formule_fiscale">
+        <comment>formule integre dans la base fiscale</comment>
+      </column>
+    </property>
+    <property name="plpFormuleSociale" type="text">
+      <column length="1000" name="plp_formule_sociale">
+        <comment>formule integre dans la base sociale</comment>
+      </column>
+    </property>
+    <property name="plpFormulePatronale" type="text">
+      <column length="1000" name="plp_formule_patronale">
+        <comment>formule integre dans la base patronale</comment>
+      </column>
+    </property>
+    <property name="plpFacture" type="boolean">
+      <column default="false" name="plp_facture">
+        <comment>true = integre dans la facture interim</comment>
+      </column>
+    </property>
+    <property name="plpCalculBase" type="text">
+      <column name="plp_calcul_base">
+        <comment>definition des calculs des bases</comment>
+      </column>
+    </property>
+    <property name="plpActivite" type="string">
+      <column length="20" name="plp_activite">
+        <comment>axe activite force</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ExercicesPaye" column="exepay_id" lazy="false" name="exercicesPaye" not-null="true"/>
+  </class>
+</hibernate-mapping>

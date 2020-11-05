@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="Mails" table="cmm_mails">
+    <id column="mai_id" name="maiId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="maiDateCreation" type="timestamp">
+      <column name="mai_date_creation">
+        <comment>date de creation ou date envoi</comment>
+      </column>
+    </property>
+    <property name="maiUserCreation" type="long">
+      <column default="0" name="mai_user_creation">
+        <comment>user de creation</comment>
+      </column>
+    </property>
+    <property name="maiDateModif" type="timestamp">
+      <column name="mai_date_modif">
+        <comment>date de modification ou date reception</comment>
+      </column>
+    </property>
+    <property name="maiDateTransfert" type="timestamp">
+      <column default="null" name="mai_date_transfert">
+        <comment>date de transfert en compta</comment>
+      </column>
+    </property>
+    <property name="maiUserModif" type="long">
+      <column default="0" name="mai_user_modif">
+        <comment>user de modification</comment>
+      </column>
+    </property>
+    <property name="maiNum" type="string">
+      <column length="50" name="mai_num">
+        <comment>numero chrono du mail</comment>
+      </column>
+    </property>
+    <property name="maiType" type="integer">
+      <column default="0" name="mai_type">
+        <comment>type 0=mail 1=courrier</comment>
+      </column>
+    </property>
+    <property name="maiSens" type="integer">
+      <column default="0" name="mai_sens">
+        <comment>sens du mail 0=mail envoye 1=mail recu 2=brouillon 3=courrier envoye 4=courrier recu 5=corbeille 6=spam</comment>
+      </column>
+    </property>
+    <property name="maiSensOld" type="integer">
+      <column default="0" name="mai_sens_old">
+        <comment>sens du mail avant suppression</comment>
+      </column>
+    </property>
+    <property name="maiStr" type="long">
+      <column default="0" name="mai_str">
+        <comment>id structure</comment>
+      </column>
+    </property>
+    <property name="maiGrp" type="string">
+      <column length="20" name="mai_grp">
+        <comment>code groupe</comment>
+      </column>
+    </property>
+    <property name="maiUsr" type="long">
+      <column default="0" name="mai_usr">
+        <comment>id user</comment>
+      </column>
+    </property>
+    <property name="maiNosRef" type="text">
+      <column name="mai_nos_ref">
+        <comment>nos references</comment>
+      </column>
+    </property>
+    <property name="maiVosRef" type="text">
+      <column name="mai_vos_ref">
+        <comment>vos references</comment>
+      </column>
+    </property>
+    <property name="maiPriorite" type="integer">
+      <column default="0" name="mai_priorite">
+        <comment>type 0=standard 1=important 2=prioritaire 3=projet 4=reunion</comment>
+      </column>
+    </property>
+    <property name="maiModele" type="string">
+      <column length="20" name="mai_modele">
+        <comment>modele</comment>
+      </column>
+    </property>
+    <property name="maiObjet" type="text">
+      <column name="mai_objet">
+        <comment>objet</comment>
+      </column>
+    </property>
+    <property name="maiCodeNature" type="string">
+      <column length="50" name="mai_code_nature">
+        <comment>code nature du courrier</comment>
+      </column>
+    </property>
+    <property name="maiNature" type="string">
+      <column length="50" name="mai_nature">
+        <comment>nature du courrier</comment>
+      </column>
+    </property>
+    <property name="maiScanCourrier" type="string">
+      <column length="50" name="mai_scan_currier">
+        <comment>scan du courrier</comment>
+      </column>
+    </property>
+    <property name="maiEmetteur" type="text">
+      <column name="mai_emetteur">
+        <comment>emetteur</comment>
+      </column>
+    </property>
+    <property name="maiTiersId" type="long">
+      <column default="0" name="mai_tiers_id">
+        <comment>id du tiers </comment>
+      </column>
+    </property>
+    <property name="maiTiersRs" type="string">
+      <column length="100" name="mai_tiers_rs">
+        <comment>raison sociale ou nom et prenom du tiers</comment>
+      </column>
+    </property>
+    <property name="maiTiersDivers" type="string">
+      <column length="100" name="mai_tiers_divers">
+        <comment>nom du tiers dvers</comment>
+      </column>
+    </property>
+    <property name="maiPatientId" type="long">
+      <column default="0" name="mai_patient_id">
+        <comment>id du patient</comment>
+      </column>
+    </property>
+    <property name="maiPatientNom" type="string">
+      <column length="100" name="mai_patient_nom">
+        <comment>nom prenom patient</comment>
+      </column>
+    </property>
+    <property name="maiAgentId" type="long">
+      <column default="0" name="mai_agent_id">
+        <comment>id agent</comment>
+      </column>
+    </property>
+    <property name="maiAgentNom" type="string">
+      <column length="100" name="mai_agent_nom">
+        <comment>nom prenom agent</comment>
+      </column>
+    </property>
+    <property name="maiSalarieId" type="long">
+      <column default="0" name="mai_salarie_id">
+        <comment>id du salarie</comment>
+      </column>
+    </property>
+    <property name="maiSalarieNom" type="string">
+      <column length="100" name="mai_salarie_nom">
+        <comment>nom prenom salarie</comment>
+      </column>
+    </property>
+    <property name="maiDestinataire" type="text">
+      <column name="mai_destinataire">
+        <comment>destinataire unique ou multiple</comment>
+      </column>
+    </property>
+    <property name="maiCc" type="text">
+      <column name="mai_cc">
+        <comment>copie a </comment>
+      </column>
+    </property>
+    <property name="maiCci" type="text">
+      <column name="mai_cci">
+        <comment>copie cachee a </comment>
+      </column>
+    </property>
+    <property name="maiActivite" type="string">
+      <column length="121" name="mai_activite">
+        <comment>activite commerciale</comment>
+      </column>
+    </property>
+    <property name="maiService" type="string">
+      <column length="121" name="mai_service">
+        <comment>service</comment>
+      </column>
+    </property>
+    <property name="maiPj" type="int">
+      <column default="0" length="1" name="mai_pj">
+        <comment>0=sans pj 1=avec pj </comment>
+      </column>
+    </property>
+    <property name="maiCorps" type="text">
+      <column name="mai_corps">
+        <comment>corps du mail </comment>
+      </column>
+    </property>
+    <property name="MaiStatut" type="text">
+      <column name="mai_statut">
+        <comment>si vide envoi ok sinon message erreur</comment>
+      </column>
+    </property>
+    <property name="MaiErreur" type="boolean">
+      <column default="false" name="mai_erreur">
+        <comment>true si envoie en erreur</comment>
+      </column>
+    </property>
+    <property name="MaiTaille" type="integer">
+      <column default="0" name="mai_taille">
+        <comment>taille</comment>
+      </column>
+    </property>
+    <property name="MaiListeStructure" type="text">
+      <column name="mai_liste_structure">
+        <comment>liste des structures concernees</comment>
+      </column>
+    </property>
+    <property name="MaiListeIdUser" type="text">
+      <column name="mai_liste_id_user">
+        <comment>liste des users concernes</comment>
+      </column>
+    </property>
+    <property name="MaiListeNomUser" type="text">
+      <column name="mai_liste_nom_user">
+        <comment>liste des users concernes</comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,196 @@
+
+R
+java:S1155">Use isEmpty() to check whether the collection is empty or not.(Ëíª—
+C
+java:S3740"/Provide the parametrized type for this generic.(˜ñóÔ
+@
+java:S1948",Make "mesFormats" transient or serializable.(°óÂ
+H
+java:S3740"/Provide the parametrized type for this generic.(Ç¯ˆëøÿÿÿÿ
+a	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ó€ÙÈ
+H
+java:S1874"/Remove this use of "getYear"; it is deprecated.(š¤¼¦üÿÿÿÿ
+C
+java:S3740"/Provide the parametrized type for this generic.(…‹°Ä
+F
+java:S1948"2Make "lesPeriodesItems" transient or serializable.(åÈ›ä
+H
+java:S3740"/Provide the parametrized type for this generic.(‹œè…üÿÿÿÿ
+R
+java:S1155">Use isEmpty() to check whether the collection is empty or not.(Ëíª—
+C
+java:S3740"/Provide the parametrized type for this generic.(àÖÕ
+W
+java:S1155">Use isEmpty() to check whether the collection is empty or not.(”Ôøõşÿÿÿÿ
+p
+java:S1450"\Remove the "var_structure" field and declare it as a local variable in the relevant methods.(·ê
+C
+java:S3740"/Provide the parametrized type for this generic.(û¸Ä
+C
+java:S3740"/Provide the parametrized type for this generic.(şî›Ö
+C
+java:S3740"/Provide the parametrized type for this generic.(şî›Ö
+C
+java:S3740"/Provide the parametrized type for this generic.(åÈ›ä
+R
+java:S1155">Use isEmpty() to check whether the collection is empty or not.(Ó¼’â
+H
+java:S3740"/Provide the parametrized type for this generic.(ôğ¬¯ûÿÿÿÿ
+f
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(ë‡‹
+k	java:S116"XRename this field "var_structure" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·ê
+C
+java:S1874"/Remove this use of "getYear"; it is deprecated.(Ø¼†Ò
+R
+java:S1155">Use isEmpty() to check whether the collection is empty or not.(Ó¼’â
+D
+java:S1948"+Make "chronoTmp" transient or serializable.(õô‚ƒøÿÿÿÿ
+C
+java:S3740"/Provide the parametrized type for this generic.(ó§‡Ñ
+C
+java:S3740"/Provide the parametrized type for this generic.(°óÂ
+C
+java:S3740"/Provide the parametrized type for this generic.(×şşà
+H
+java:S3740"/Provide the parametrized type for this generic.(õô‚ƒøÿÿÿÿ
+C
+java:S3740"/Provide the parametrized type for this generic.(ó§‡Ñ
+H
+java:S3740"/Provide the parametrized type for this generic.(ñŞ™ÿÿÿÿÿ
+C
+java:S1874"/Remove this use of "getYear"; it is deprecated.(Ø¼†Ò
+R
+java:S1155">Use isEmpty() to check whether the collection is empty or not.(ŞŞÙ—
+C
+java:S1948"/Make "lesStructures" transient or serializable.(ó§‡Ñ
+W
+java:S1155">Use isEmpty() to check whether the collection is empty or not.(ï‹²ùÿÿÿÿ
+H
+java:S3740"/Provide the parametrized type for this generic.(Áé¿İüÿÿÿÿ
+l	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(ˆÕÃ†
+a	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›—ÀÄ
+C
+java:S1874"/Remove this use of "getYear"; it is deprecated.(Ø¼†Ò
+C
+java:S3740"/Provide the parametrized type for this generic.(Áô÷ò
+k
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 33 to the 15 allowed.(ô£´ıÿÿÿÿÿ
+H
+java:S3740"/Provide the parametrized type for this generic.(ò‡ÿˆùÿÿÿÿ
+H
+java:S3740"/Provide the parametrized type for this generic.(üôÕõúÿÿÿÿ
+H
+java:S3740"/Provide the parametrized type for this generic.(Íÿ™ûÿÿÿÿ
+|
+java:S4165"hRemove this useless assignment; "var_valide" already holds the assigned value along all execution paths.(È…Ü¿
+H
+java:S3740"/Provide the parametrized type for this generic.(õô‚ƒøÿÿÿÿ
+C
+java:S3740"/Provide the parametrized type for this generic.(şî›Ö
+H
+java:S3740"/Provide the parametrized type for this generic.(™¸ë«ıÿÿÿÿ
+|
+java:S4165"hRemove this useless assignment; "var_valide" already holds the assigned value along all execution paths.(È…Ü¿
+C
+java:S3740"/Provide the parametrized type for this generic.(şî›Ö
+H
+java:S3740"/Provide the parametrized type for this generic.(Ç¯ˆëøÿÿÿÿ
+H
+java:S3740"/Provide the parametrized type for this generic.(öò¾ìüÿÿÿÿ
+W
+java:S1155">Use isEmpty() to check whether the collection is empty or not.(ï‹²ùÿÿÿÿ
+W
+java:S1155">Use isEmpty() to check whether the collection is empty or not.(¹Ççöüÿÿÿÿ
+M
+java:S1948"4Make "mesStructuresItems" transient or serializable.(ôğ¬¯ûÿÿÿÿ
+C
+java:S1874"/Remove this use of "getYear"; it is deprecated.(Ø¼†Ò
+W
+java:S1155">Use isEmpty() to check whether the collection is empty or not.(ÆÊĞÄùÿÿÿÿ
+C
+java:S3740"/Provide the parametrized type for this generic.(—Ş£ê
+C
+java:S3740"/Provide the parametrized type for this generic.(—Ş£ê
+H
+java:S3740"/Provide the parametrized type for this generic.(ôğ¬¯ûÿÿÿÿ
+C
+java:S3740"/Provide the parametrized type for this generic.(ˆÂ€æ
+R
+java:S1155">Use isEmpty() to check whether the collection is empty or not.(ŞŞÙ—
+W
+java:S1155">Use isEmpty() to check whether the collection is empty or not.(”Ôøõşÿÿÿÿ
+H
+java:S3740"/Provide the parametrized type for this generic.(®šæçÿÿÿÿÿ
+C
+java:S3740"/Provide the parametrized type for this generic.(°óÂ
+g	java:S116"URename this field "var_valide" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ²½q
+E
+java:S1068"1Remove this unused "var_structure" private field.(·ê
+C
+java:S3740"/Provide the parametrized type for this generic.(şî›Ö
+H
+java:S3740"/Provide the parametrized type for this generic.(ò‡ÿˆùÿÿÿÿ
+e
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 75 to the 15 allowed.(Ğèƒj
+C
+java:S1948"*Make "mesModes" transient or serializable.(®šæçÿÿÿÿÿ
+W
+java:S1155">Use isEmpty() to check whether the collection is empty or not.(ï‹²ùÿÿÿÿ
+C
+java:S3740"/Provide the parametrized type for this generic.(—Ş£ê
+H
+java:S3740"/Provide the parametrized type for this generic.(Íÿ™ûÿÿÿÿ
+H
+java:S3740"/Provide the parametrized type for this generic.(Íÿ™ûÿÿÿÿ
+f	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚Àıÿÿÿÿ
+H
+java:S3740"/Provide the parametrized type for this generic.(Íÿ™ûÿÿÿÿ
+E
+java:S1948",Make "chronoList" transient or serializable.(Ç¯ˆëøÿÿÿÿ
+H
+java:S3740"/Provide the parametrized type for this generic.(®šæçÿÿÿÿÿ
+f
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 33 to the 15 allowed.(Ó¼ìÆ
+C
+java:S3740"/Provide the parametrized type for this generic.(—Ş£ê
+W
+java:S1155">Use isEmpty() to check whether the collection is empty or not.(¹Ççöüÿÿÿÿ
+H
+java:S3740"/Provide the parametrized type for this generic.(ßáóùıÿÿÿÿ
+C
+java:S3740"/Provide the parametrized type for this generic.(úÃÁ˜
+C
+java:S3740"/Provide the parametrized type for this generic.(åÈ›ä
+W
+java:S1155">Use isEmpty() to check whether the collection is empty or not.(äôĞıÿÿÿÿ
+l	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(ˆÕÃ†
+f
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 75 to the 15 allowed.(óÏñ¨
+J
+java:S3740"/Provide the parametrized type for this generic.(†ßàİ8çË†¹.
+J
+java:S3740"/Provide the parametrized type for this generic.(†ßàİ8çË†¹.
+J
+java:S3740"/Provide the parametrized type for this generic.(ÃÈŞ–8çË†¹.
+O
+java:S3740"/Provide the parametrized type for this generic.(ÛÕ¡€ûÿÿÿÿ8çË†¹.
+‹
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(ô£´ıÿÿÿÿÿ8çË†¹.
+†
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(Ó¼ìÆ8çË†¹.
+‹
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(êÅÊÿûÿÿÿÿ8çË†¹.
+†
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(İ…–ı8çË†¹.
+†
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(ë•ãë8çË†¹.
+†
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(ÛÀÂö8çË†¹.
+†
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(æáÓ8çË†¹.
+†
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(ë‡‹8çË†¹.
+…
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(Ğèƒj8çË†¹.
+†
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(óÏñ¨8çË†¹.

@@ -1,0 +1,477 @@
+
+B
+java:S1481")Remove this unused "var8" local variable.(À¬‚úÿÿÿÿ
+”
+java:S1130"{Remove the declaration of thrown exception 'java.lang.ClassNotFoundException' which is a subclass of 'java.lang.Exception'.(€ÆòÍûÿÿÿÿ
+k
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(İˆüşüÿÿÿÿ
+R
+java:S1155">Use isEmpty() to check whether the collection is empty or not.(®» 
+’
+java:S1130"yRemove the declaration of thrown exception 'java.net.MalformedURLException' which is a subclass of 'java.io.IOException'.(®®»ÿÿÿÿÿ
+]
+java:S2583"DChange this condition so that it does not always evaluate to "false"(€¶£Ùûÿÿÿÿ
+a	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇÓé„
+b
+java:S1871"NThis branch's code block is the same as the block for the branch on line 1218.(Åö…
+b
+java:S1871"NThis branch's code block is the same as the block for the branch on line 1218.(¥À×Ä
+>
+java:S1481"*Remove this unused "var14" local variable.(¡Ãş
+W
+java:S1155">Use isEmpty() to check whether the collection is empty or not.(İ·¸ëøÿÿÿÿ
+H
+java:S3740"/Provide the parametrized type for this generic.(÷óá¯şÿÿÿÿ
+a	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰Êñ
+<
+java:S1481")Remove this unused "var9" local variable.(•Ó"
+>
+java:S1481"*Remove this unused "var14" local variable.(¡Ãş
+V
+java:S1126"BReplace this if-then-else statement by a single method invocation.(©©´‹
+f	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(à–Êÿÿÿÿÿ
+>
+java:S1481"*Remove this unused "var14" local variable.(¡Ãş
+N	java:S899";Do something with the "boolean" value returned by "delete".(§Îè“
+r	java:S116"ZRename this field "var_showBarProg" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…·Ù·ûÿÿÿÿ
+J
+java:S1948"7Make "mesJournauxComptables" transient or serializable.(‘¿²
+‡
+java:S1130"nRemove the declaration of thrown exception 'java.io.IOException' which is a subclass of 'java.lang.Exception'.(®Ò€—úÿÿÿÿ
+V
+java:S1126"BReplace this if-then-else statement by a single method invocation.(Ñ†’õ
+f
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 94 to the 15 allowed.(ÙÛØò
+U
+java:S1126"BReplace this if-then-else statement by a single method invocation.(¯ÚL
+„
+java:S1130"pRemove the declaration of thrown exception 'java.sql.SQLException' which is a subclass of 'java.lang.Exception'.(Ö™Øè
+l
+java:S3776"SRefactor this method to reduce its Cognitive Complexity from 156 to the 15 allowed.(€ÆòÍûÿÿÿÿ
+=
+java:S1481")Remove this unused "var6" local variable.(¥ò’ƒ
+f
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 41 to the 15 allowed.(Ğ½‡ï
+]
+java:S2583"DChange this condition so that it does not always evaluate to "false"(€¶£Ùûÿÿÿÿ
+B
+java:S1481")Remove this unused "var8" local variable.(À¬‚úÿÿÿÿ
+
+java:S1130"yRemove the declaration of thrown exception 'java.net.MalformedURLException' which is a subclass of 'java.io.IOException'.(´û„
+k
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 37 to the 15 allowed.(›—åûÿÿÿÿ
+k
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(õıøûÿÿÿÿ
+‰
+java:S1130"pRemove the declaration of thrown exception 'java.sql.SQLException' which is a subclass of 'java.lang.Exception'.(µÒı‚şÿÿÿÿ
+k
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 32 to the 15 allowed.(¸Ë®İøÿÿÿÿ
+Œ
+java:S1130"yRemove the declaration of thrown exception 'java.net.MalformedURLException' which is a subclass of 'java.io.IOException'.(­šöj
+q
+java:S1450"XRemove the "espionDao" field and declare it as a local variable in the relevant methods.(´ÚúÚùÿÿÿÿ
+q
+java:S1130"XRemove the redundant 'java.lang.ClassNotFoundException' thrown exception declaration(s).(ÄíîÄşÿÿÿÿ
+B
+java:S1481")Remove this unused "var8" local variable.(À¬‚úÿÿÿÿ
+
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(Ğ›ÄŒ
+‡
+java:S1130"nRemove the declaration of thrown exception 'java.io.IOException' which is a subclass of 'java.lang.Exception'.(µÒı‚şÿÿÿÿ
+f
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 35 to the 15 allowed.(ıçÄ
+„
+java:S1130"pRemove the declaration of thrown exception 'java.sql.SQLException' which is a subclass of 'java.lang.Exception'.(å¡Î›
+f	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ê” ìûÿÿÿÿ
+‚
+java:S1130"nRemove the declaration of thrown exception 'java.io.IOException' which is a subclass of 'java.lang.Exception'.(­ºç
+K
+java:S1948"2Make "lesStructuresPeg" transient or serializable.(¶Øõøÿÿÿÿ
+g
+java:S1871"NThis branch's code block is the same as the block for the branch on line 1218.(èĞÂÉÿÿÿÿÿ
+k
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(±¨åÉıÿÿÿÿ
+
+java:S1130"yRemove the declaration of thrown exception 'java.net.MalformedURLException' which is a subclass of 'java.io.IOException'.(Ö™Øè
+‡
+java:S1130"nRemove the declaration of thrown exception 'java.io.IOException' which is a subclass of 'java.lang.Exception'.(€ÆòÍûÿÿÿÿ
+n
+java:S1450"ZRemove the "optionParcs" field and declare it as a local variable in the relevant methods.(µœıû
+H
+java:S3740"/Provide the parametrized type for this generic.(²Ú üÿÿÿÿ
+f
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 34 to the 15 allowed.(ìÉü”
+B
+java:S1481")Remove this unused "var3" local variable.(ë÷È£øÿÿÿÿ
+g
+java:S1871"NThis branch's code block is the same as the block for the branch on line 7243.(‹±öüÿÿÿÿ
+Ÿ
+java:S1845"…Rename method "setMenuadministration" to prevent any misunderstanding/clash with method "setMenuAdministration" defined on line 7762.(Ø‰¨Ãúÿÿÿÿ
+b
+java:S1871"NThis branch's code block is the same as the block for the branch on line 1218.(Îÿ”÷
+’
+java:S1130"yRemove the declaration of thrown exception 'java.net.MalformedURLException' which is a subclass of 'java.io.IOException'.(ÄíîÄşÿÿÿÿ
+‚
+java:S1130"nRemove the declaration of thrown exception 'java.io.IOException' which is a subclass of 'java.lang.Exception'.(å¡Î›
+s	java:S116"[Rename this field "var_currentValue" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(º”Úãúÿÿÿÿ
+a	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãŒ„—
+C
+java:S3740"/Provide the parametrized type for this generic.(­çï¯
+g
+java:S1871"NThis branch's code block is the same as the block for the branch on line 1218.(Õâ—üÿÿÿÿ
+f
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(Ûà¼™
+>
+java:S1481"*Remove this unused "var14" local variable.(¡Ãş
+A	java:S108")Either remove or fill this block of code.(òÇÊÿÿÿÿÿ
+f
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 33 to the 15 allowed.(ÀĞáÛ
+C
+java:S3740"/Provide the parametrized type for this generic.(şî›Ö
+Ÿ
+java:S1845"…Rename method "getMenuadministration" to prevent any misunderstanding/clash with method "getMenuAdministration" defined on line 7758.(»ŒÒñüÿÿÿÿ
+C
+java:S3740"/Provide the parametrized type for this generic.(Šì°İ
+H
+java:S3740"/Provide the parametrized type for this generic.(Íÿ™ûÿÿÿÿ
+V
+java:S1126"BReplace this if-then-else statement by a single method invocation.(Ñ†’õ
+k
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 42 to the 15 allowed.(Ë÷Êšüÿÿÿÿ
+
+java:S1130"yRemove the declaration of thrown exception 'java.net.MalformedURLException' which is a subclass of 'java.io.IOException'.(å¡Î›
+n
+java:S1450"ZRemove the "optionTiers" field and declare it as a local variable in the relevant methods.(ã²µ™
+A	java:S108")Either remove or fill this block of code.(òÇÊÿÿÿÿÿ
+B
+java:S3740"/Provide the parametrized type for this generic.(‘¿²
+™
+java:S1862"„This branch can not be reached because the condition duplicates a previous condition in the same sequence of "if/else if" statements(›¿¦—
+
+java:S1845"|Rename field "menuadministration" to prevent any misunderstanding/clash with field "menuAdministration" defined on line 247.(Äøş3
+k
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 49 to the 15 allowed.(¿á¢«ùÿÿÿÿ
+‰
+java:S1130"pRemove the declaration of thrown exception 'java.sql.SQLException' which is a subclass of 'java.lang.Exception'.(®®»ÿÿÿÿÿ
+V
+java:S1126"BReplace this if-then-else statement by a single method invocation.(©©´‹
+k
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 38 to the 15 allowed.(‹üÃşÿÿÿÿ
+
+java:S1130"nRemove the declaration of thrown exception 'java.io.IOException' which is a subclass of 'java.lang.Exception'.(­šöj
+’
+java:S1130"yRemove the declaration of thrown exception 'java.net.MalformedURLException' which is a subclass of 'java.io.IOException'.(®Ò€—úÿÿÿÿ
+B
+java:S3740"/Provide the parametrized type for this generic.(‘¿²
+g
+java:S3776"SRefactor this method to reduce its Cognitive Complexity from 107 to the 15 allowed.(İæ
+B
+java:S3740"/Provide the parametrized type for this generic.(ÎÔµ1
+H
+java:S3740"/Provide the parametrized type for this generic.(¶ÏÕ²şÿÿÿÿ
+k
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 73 to the 15 allowed.(ÄíîÄşÿÿÿÿ
+g
+java:S1871"NThis branch's code block is the same as the block for the branch on line 1218.(®ªÖÎûÿÿÿÿ
+„
+java:S1130"pRemove the declaration of thrown exception 'java.sql.SQLException' which is a subclass of 'java.lang.Exception'.(­ºç
+C
+java:S3740"/Provide the parametrized type for this generic.(©ŠÎ»
+]
+java:S2583"DChange this condition so that it does not always evaluate to "false"(€¶£Ùûÿÿÿÿ
+f
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(‹îªÀ
+‰
+java:S1130"pRemove the declaration of thrown exception 'java.sql.SQLException' which is a subclass of 'java.lang.Exception'.(şÓ¹›ÿÿÿÿÿ
+C
+java:S3740"/Provide the parametrized type for this generic.(­çï¯
+<
+java:S1481")Remove this unused "var9" local variable.(•Ó"
+i
+java:S1130"PRemove the redundant 'java.text.ParseException' thrown exception declaration(s).(İˆüşüÿÿÿÿ
+t
+java:S1450"[Remove the "optionStocks" field and declare it as a local variable in the relevant methods.(‹ ºúúÿÿÿÿ
+i
+java:S1130"PRemove the redundant 'java.text.ParseException' thrown exception declaration(s).(ÄíîÄşÿÿÿÿ
+k
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 42 to the 15 allowed.(¹ãÂ†üÿÿÿÿ
+f
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(ĞÃ°´
+’
+java:S1130"yRemove the declaration of thrown exception 'java.net.MalformedURLException' which is a subclass of 'java.io.IOException'.(şÓ¹›ÿÿÿÿÿ
+f
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 63 to the 15 allowed.(ì‡™œ
+k
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 37 to the 15 allowed.(ÅÍ•ùÿÿÿÿ
+b
+java:S1871"NThis branch's code block is the same as the block for the branch on line 7740.(åÃ™ş
+o
+java:S1450"[Remove the "optionAchats" field and declare it as a local variable in the relevant methods.(åã™¾
+f
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 36 to the 15 allowed.(Ü‹Šá
+>
+java:S1481"*Remove this unused "var14" local variable.(¡Ãş
+D
+java:S1068"+Remove this unused "userDao" private field.(­¶úÿÿÿÿ
+<
+java:S1481")Remove this unused "var9" local variable.(•Ó"
+<
+java:S1481")Remove this unused "var9" local variable.(•Ó"
+H
+java:S3740"/Provide the parametrized type for this generic.(ŸÙŒ¶ÿÿÿÿÿ
+
+java:S1130"yRemove the declaration of thrown exception 'java.net.MalformedURLException' which is a subclass of 'java.io.IOException'.(­ºç
+<
+java:S1481")Remove this unused "var9" local variable.(•Ó"
+]
+java:S2583"DChange this condition so that it does not always evaluate to "false"(€¶£Ùûÿÿÿÿ
+V
+java:S1126"BReplace this if-then-else statement by a single method invocation.(Ñ†’õ
+k
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(ğÛúøÿÿÿÿ
+k
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 38 to the 15 allowed.(ú»¥¥ûÿÿÿÿ
+B
+java:S3740"/Provide the parametrized type for this generic.(ÎÔµ1
+k
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(ÄÇ°¹ûÿÿÿÿ
+ƒ
+java:S1130"pRemove the declaration of thrown exception 'java.sql.SQLException' which is a subclass of 'java.lang.Exception'.(­šöj
+H
+java:S3740"/Provide the parametrized type for this generic.(Íÿ™ûÿÿÿÿ
+C
+java:S3740"/Provide the parametrized type for this generic.(şî›Ö
+F
+java:S1948"2Make "mesPeriodesItems" transient or serializable.(­çï¯
+f	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±ß úÿÿÿÿ
+‡
+java:S1130"nRemove the declaration of thrown exception 'java.io.IOException' which is a subclass of 'java.lang.Exception'.(şÓ¹›ÿÿÿÿÿ
+B
+java:S1481")Remove this unused "var3" local variable.(ë÷È£øÿÿÿÿ
+>
+java:S1481"*Remove this unused "var10" local variable.(œ·ñ˜
+e
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(–‡~
+C
+java:S1068"*Remove this unused "balDao" private field.(ù¦¯Âûÿÿÿÿ
+a
+java:S1871"NThis branch's code block is the same as the block for the branch on line 1218.(éû·X
+<
+java:S1481")Remove this unused "var9" local variable.(•Ó"
+g
+java:S1871"NThis branch's code block is the same as the block for the branch on line 1218.(ş–°ùÿÿÿÿ
+b
+java:S1871"NThis branch's code block is the same as the block for the branch on line 1218.(¢šÄ·
+f
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(ÆØ‡
+B
+java:S3740"/Provide the parametrized type for this generic.(Û“ûQ
+l
+java:S3776"SRefactor this method to reduce its Cognitive Complexity from 229 to the 15 allowed.(û´™óùÿÿÿÿ
+’
+java:S1130"yRemove the declaration of thrown exception 'java.net.MalformedURLException' which is a subclass of 'java.io.IOException'.(µÒı‚şÿÿÿÿ
+<
+java:S1481")Remove this unused "var9" local variable.(•Ó"
+C
+java:S3740"/Provide the parametrized type for this generic.(«û†¶
+H
+java:S3740"/Provide the parametrized type for this generic.(¶Øõøÿÿÿÿ
+o
+java:S1450"VRemove the "userDao" field and declare it as a local variable in the relevant methods.(­¶úÿÿÿÿ
+D
+java:S1172"+Remove this unused method parameter "var1".(ÄíîÄşÿÿÿÿ
+‡
+java:S1130"nRemove the declaration of thrown exception 'java.io.IOException' which is a subclass of 'java.lang.Exception'.(®®»ÿÿÿÿÿ
+j	java:S116"RRename this field "CodeMod" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿÈ·øÿÿÿÿ
+‰
+java:S1130"pRemove the declaration of thrown exception 'java.sql.SQLException' which is a subclass of 'java.lang.Exception'.(®Ò€—úÿÿÿÿ
+f	java:S116"SRename this field "var_info" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯ßï•
+k
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(òä‰şÿÿÿÿ
+k
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 36 to the 15 allowed.(Ğà•ıÿÿÿÿ
+‰
+java:S1130"pRemove the declaration of thrown exception 'java.sql.SQLException' which is a subclass of 'java.lang.Exception'.(€ÆòÍûÿÿÿÿ
+l
+java:S1450"XRemove the "utilPrint" field and declare it as a local variable in the relevant methods.(˜çùï
+f	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•Äè¹úÿÿÿÿ
+]
+java:S2583"DChange this condition so that it does not always evaluate to "false"(€¶£Ùûÿÿÿÿ
+a	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ó”¥ë
+‚
+java:S1130"nRemove the declaration of thrown exception 'java.io.IOException' which is a subclass of 'java.lang.Exception'.(Ö™Øè
+J
+java:S3740"/Provide the parametrized type for this generic.(“©›ñ8ÑÊ†¹.
+O
+java:S3740"/Provide the parametrized type for this generic.(Ó»ˆ…şÿÿÿÿ8ÑÊ†¹.
+O
+java:S3740"/Provide the parametrized type for this generic.(÷Ş°êıÿÿÿÿ8ÑÊ†¹.
+O
+java:S3740"/Provide the parametrized type for this generic.(‹ê¡ıøÿÿÿÿ8ÑÊ†¹.
+O
+java:S3740"/Provide the parametrized type for this generic.(­ş²ıÿÿÿÿ8ÑÊ†¹.
+J
+java:S3740"/Provide the parametrized type for this generic.(¤Å«ã8ÒÊ†¹.
+J
+java:S3740"/Provide the parametrized type for this generic.(ÏÂÀ½8ÒÊ†¹.
+I
+java:S3740"/Provide the parametrized type for this generic.(á“V8ÒÊ†¹.
+J
+java:S3740"/Provide the parametrized type for this generic.(“Áú8ÒÊ†¹.
+J
+java:S3740"/Provide the parametrized type for this generic.(Ï…ÁÈ8ÒÊ†¹.
+e	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(€ÆòÍûÿÿÿÿ8ÒÊ†¹.
+Y
+java:S1155">Use isEmpty() to check whether the collection is empty or not.(ÌÕà³8ÒÊ†¹.
+†
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(ıçÄ8ÒÊ†¹.
+‹
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(ÄíîÄşÿÿÿÿ8ÒÊ†¹.
+‹
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(£ºÄÎûÿÿÿÿ8ÒÊ†¹.
+‹
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(©²ÿüÿÿÿÿ8ÒÊ†¹.
+‹
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(İ•Æîøÿÿÿÿ8ÒÊ†¹.
+†
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(±Áü 8ÒÊ†¹.
+‹
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(Šá¾Ğûÿÿÿÿ8ÒÊ†¹.
+†
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(šúáÚ8ÒÊ†¹.
+‹
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(£íè²ûÿÿÿÿ8ÒÊ†¹.
+†
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(€È­8ÒÊ†¹.
+‹
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(’Ê€‹úÿÿÿÿ8ÒÊ†¹.
+†
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(Šä»“8ÒÊ†¹.
+†
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(­óÑê8ÒÊ†¹.
+‹
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(ü¤ÌÂşÿÿÿÿ8ÒÊ†¹.
+†
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(ÆØ‡8ÒÊ†¹.
+†
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(´û„8ÒÊ†¹.
+†
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(óŞÊÜ8ÒÊ†¹.
+Š
+java:S1130"oRemove the declaration of thrown exception 'org.jdom.JDOMException', as it cannot be thrown from method's body.(ä¯Æİ8ÒÊ†¹.
+‡
+java:S1130"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(ä¯Æİ8ÒÊ†¹.
+†
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(ä¯Æİ8ÒÊ†¹.
+†
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(Ü›è€8ÒÊ†¹.
+
+java:S1130"oRemove the declaration of thrown exception 'org.jdom.JDOMException', as it cannot be thrown from method's body.(ºáÄ¡ıÿÿÿÿ8ÒÊ†¹.
+Œ
+java:S1130"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(ºáÄ¡ıÿÿÿÿ8ÒÊ†¹.
+‹
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(ºáÄ¡ıÿÿÿÿ8ÒÊ†¹.
+Š
+java:S1130"oRemove the declaration of thrown exception 'org.jdom.JDOMException', as it cannot be thrown from method's body.(¸Îì8ÒÊ†¹.
+‡
+java:S1130"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(¸Îì8ÒÊ†¹.
+†
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(¸Îì8ÒÊ†¹.
+Š
+java:S1130"oRemove the declaration of thrown exception 'org.jdom.JDOMException', as it cannot be thrown from method's body.(«İ˜î8ÒÊ†¹.
+‡
+java:S1130"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(«İ˜î8ÒÊ†¹.
+†
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(«İ˜î8ÒÊ†¹.
+
+java:S1130"oRemove the declaration of thrown exception 'org.jdom.JDOMException', as it cannot be thrown from method's body.(èÍïıÿÿÿÿ8ÒÊ†¹.
+Œ
+java:S1130"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(èÍïıÿÿÿÿ8ÒÊ†¹.
+‹
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(èÍïıÿÿÿÿ8ÒÊ†¹.
+†
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(ùŸ˜¬8ÒÊ†¹.
+‹
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(ÍåàËşÿÿÿÿ8ÒÊ†¹.
+†
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(ëóŒ8ÒÊ†¹.
+†
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(‰…µ³8ÒÊ†¹.
+‹
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(Ï³§·úÿÿÿÿ8ÒÊ†¹.
+‹
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(ğí”Áüÿÿÿÿ8ÒÊ†¹.
+†
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(‚¹úø8ÒÊ†¹.
+†
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(ÙÛØò8ÒÊ†¹.
+†
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(ÀĞáÛ8ÒÊ†¹.
+†
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(Ûà¼™8ÒÊ†¹.
+‹
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(¡‚ÒÅøÿÿÿÿ8ÒÊ†¹.
+†
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(ì‡™œ8ÒÊ†¹.
+‹
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(ø§Äñùÿÿÿÿ8ÒÊ†¹.
+†
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(İæ8ÒÊ†¹.
+‹
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(ˆöÅ”ıÿÿÿÿ8ÒÊ†¹.
+…
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(¤›±8ÒÊ†¹.
+‹
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(¿´‘Ùşÿÿÿÿ8ÒÊ†¹.
+‹
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(İˆüşüÿÿÿÿ8ÒÊ†¹.
+†
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(·±¿Œ8ÒÊ†¹.
+†
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(šìŠØ8ÒÊ†¹.
+‹
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(¸Ë®İøÿÿÿÿ8ÒÊ†¹.
+‹
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(‹üÃşÿÿÿÿ8ÒÊ†¹.
+‹
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(Ø¶™Åúÿÿÿÿ8ÒÊ†¹.
+‹
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(¿á¢«ùÿÿÿÿ8ÒÊ†¹.
+‹
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(ğé¹»üÿÿÿÿ8ÒÊ†¹.
+‹
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(Ë÷Êšüÿÿÿÿ8ÒÊ†¹.
+†
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(Åô­8ÒÊ†¹.
+‹
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(şÎœŒøÿÿÿÿ8ÒÊ†¹.
+‹
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(Î”‚¯ıÿÿÿÿ8ÒÊ†¹.
+‹
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(ÄÇ°¹ûÿÿÿÿ8ÒÊ†¹.
+‹
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(ìëÒóúÿÿÿÿ8ÒÊ†¹.
+†
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(‹îªÀ8ÒÊ†¹.
+‹
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(Ôş÷Êÿÿÿÿÿ8ÒÊ†¹.
+‹
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(Ö¯ßªıÿÿÿÿ8ÒÊ†¹.
+
+java:S1130"‚Remove the declaration of thrown exception 'net.sf.jasperreports.engine.JRException' which is a subclass of 'java.lang.Exception'.(å¡Î›8ÒÊ†¹.
+
+java:S1130"‚Remove the declaration of thrown exception 'net.sf.jasperreports.engine.JRException' which is a subclass of 'java.lang.Exception'.(­ºç8ÒÊ†¹.
+£
+java:S1130"‚Remove the declaration of thrown exception 'net.sf.jasperreports.engine.JRException' which is a subclass of 'java.lang.Exception'.(®Ò€—úÿÿÿÿ8ÒÊ†¹.
+£
+java:S1130"‚Remove the declaration of thrown exception 'net.sf.jasperreports.engine.JRException' which is a subclass of 'java.lang.Exception'.(şÓ¹›ÿÿÿÿÿ8ÒÊ†¹.
+
+java:S1130"‚Remove the declaration of thrown exception 'net.sf.jasperreports.engine.JRException' which is a subclass of 'java.lang.Exception'.(Ö™Øè8ÒÊ†¹.
+£
+java:S1130"‚Remove the declaration of thrown exception 'net.sf.jasperreports.engine.JRException' which is a subclass of 'java.lang.Exception'.(®®»ÿÿÿÿÿ8ÒÊ†¹.
+£
+java:S1130"‚Remove the declaration of thrown exception 'net.sf.jasperreports.engine.JRException' which is a subclass of 'java.lang.Exception'.(µÒı‚şÿÿÿÿ8ÒÊ†¹.
+
+java:S1130"‚Remove the declaration of thrown exception 'net.sf.jasperreports.engine.JRException' which is a subclass of 'java.lang.Exception'.(­šöj8ÒÊ†¹.
+£
+java:S1130"‚Remove the declaration of thrown exception 'net.sf.jasperreports.engine.JRException' which is a subclass of 'java.lang.Exception'.(€ÆòÍûÿÿÿÿ8ÒÊ†¹.

@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="FactureInterneEnteteVentes" table="vte_facture_interne_entete">
+    <id column="fit_id" name="fitId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="fitDateCreat" type="timestamp">
+      <column name="fit_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="fitDateModif" type="timestamp">
+      <column name="fit_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="fitIdCreateur" type="long">
+      <column default="0" length="15" name="fit_id_createur">
+        <comment>id user createur</comment>
+      </column>
+    </property>
+    <property name="fitNomCreateur" type="string">
+      <column length="100" name="fit_nom_createur">
+        <comment>nom du createur</comment>
+      </column>
+    </property>
+    <property name="fitIdModif" type="long">
+      <column default="0" length="15" name="fit_id_modif">
+        <comment>id user de modification</comment>
+      </column>
+    </property>
+    <property name="fitNomModif" type="string">
+      <column length="100" name="fit_nom_modif">
+        <comment>nom user de modification</comment>
+      </column>
+    </property>
+    <property name="fitDate" type="timestamp">
+      <column name="fit_date">
+        <comment>date du devis</comment>
+      </column>
+    </property>
+    <property name="fitNum" type="string">
+      <column length="20" name="fit_num">
+        <comment>numero devis</comment>
+      </column>
+    </property>
+    <property name="fitNumBl" type="string">
+      <column length="20" name="fit_num_bl">
+        <comment>numero dernier bl</comment>
+      </column>
+    </property>
+    <property name="fitNomResponsable" type="string">
+      <column length="100" name="fit_nom_responsable">
+        <comment>nom du commercial</comment>
+      </column>
+    </property>
+    <property name="fitNomEquipe" type="string">
+      <column length="100" name="fit_nom_equipe">
+        <comment>nom equipe</comment>
+      </column>
+    </property>
+    <property name="fitIdEquipe" type="long">
+      <column default="0" length="15" name="fit_id_equipe">
+        <comment>id equipe</comment>
+      </column>
+    </property>
+    <property name="fitIdResponsable" type="long">
+      <column default="0" name="fit_id_responsable">
+        <comment>id du commercial</comment>
+      </column>
+    </property>
+    <property name="fitNomCommercial" type="string">
+      <column length="100" name="fit_nom_commercial">
+        <comment>nom du commercial</comment>
+      </column>
+    </property>
+    <property name="fitIdCommercial" type="long">
+      <column default="0" length="15" name="fit_id_commercial">
+        <comment>id du commercial</comment>
+      </column>
+    </property>
+    <property name="fitNomTiers" type="string">
+      <column length="100" name="fit_nom_tiers">
+        <comment>nom du client</comment>
+      </column>
+    </property>
+    <property name="fitCivilTiers" type="string">
+      <column length="20" name="fit_civil_tiers">
+        <comment>civilite du tiers</comment>
+      </column>
+    </property>
+    <property name="fitTiersRegroupe" type="string">
+      <column length="50" name="fit_tiers_regroupe">
+        <comment>regroupement des tiers</comment>
+      </column>
+    </property>
+    <property name="fitIdContact" type="long">
+      <column default="0" name="fit_id_contact">
+        <comment>id du contact</comment>
+      </column>
+    </property>
+    <property name="fitNomContact" type="string">
+      <column length="100" name="fit_nom_contact">
+        <comment>nom du contact </comment>
+      </column>
+    </property>
+    <property name="fitCivilContact" type="string">
+      <column length="20" name="fit_civil_contact">
+        <comment>civilite du contact</comment>
+      </column>
+    </property>
+    <property name="fitSerie" type="string">
+      <column length="4" name="fit_serie">
+        <comment>serie </comment>
+      </column>
+    </property>
+    <property name="fitExoTva" type="integer">
+      <column default="0" length="1" name="fit_exo_tva">
+        <comment>0=avec Tva 1=sans Tva </comment>
+      </column>
+    </property>
+    <property name="fitExoDouane" type="integer">
+      <column default="0" length="1" name="fit_exo_douane">
+        <comment>0=avec Douane 1=sans Douane </comment>
+      </column>
+    </property>
+    <property name="fitCat" type="string">
+      <column length="50" name="fit_cat">
+        <comment>categorie du client</comment>
+      </column>
+    </property>
+    <property name="fitDevise" type="string">
+      <column length="3" name="fit_devise">
+        <comment>code devise</comment>
+      </column>
+    </property>
+    <property name="fitObject" type="string">
+      <column length="100" name="fit_object">
+        <comment>objet</comment>
+      </column>
+    </property>
+    <property name="fitObservation" type="string">
+      <column length="100" name="fit_observation">
+        <comment>observation</comment>
+      </column>
+    </property>
+    <property name="fitBudget" type="string">
+      <column length="121" name="fit_budget">
+        <comment>code budget</comment>
+      </column>
+    </property>
+    <property name="fitTauxRemise" type="float">
+      <column default="0" name="fit_taux_remise">
+        <comment>taux remise globale</comment>
+      </column>
+    </property>
+    <property name="fitTotHt" type="double">
+      <column default="0" name="fit_tot_ht">
+        <comment>total ht</comment>
+      </column>
+    </property>
+    <property name="fitTotRemise" type="double">
+      <column default="0" name="fit_tot_remise">
+        <comment>total remise</comment>
+      </column>
+    </property>
+    <property name="fitTotRabais" type="double">
+      <column default="0" name="fit_tot_rabais">
+        <comment>total rabais</comment>
+      </column>
+    </property>
+    <property name="fitTotTva" type="double">
+      <column default="0" name="fit_tot_tva">
+        <comment>ttal tva</comment>
+      </column>
+    </property>
+    <property name="fitTauxTc" type="float">
+      <column default="0" name="fit_taux_tc">
+        <comment>taux taxe complementaire</comment>
+      </column>
+    </property>
+    <property name="fitTotTc" type="double">
+      <column default="0" name="fit_tot_tc">
+        <comment>total taxe complementaire</comment>
+      </column>
+    </property>
+    <property name="fitTotTtc" type="double">
+      <column default="0" name="fit_tot_ttc">
+        <comment>total ttc</comment>
+      </column>
+    </property>
+    <property name="fitTotReglement" type="double">
+      <column default="0" name="fit_tot_reglement">
+        <comment>total reglement</comment>
+      </column>
+    </property>
+    <property name="fitTotTimbre" type="double">
+      <column default="0" name="fit_tot_timbre">
+        <comment>total timbre</comment>
+      </column>
+    </property>
+    <property name="fitSolde" type="integer">
+      <column default="0" length="1" name="fit_solde">
+        <comment>0=non solde 1=solde</comment>
+      </column>
+    </property>
+    <property name="fitBanque" type="string">
+      <column length="100" name="fit_banque">
+        <comment>nom de la banque + numero de compte</comment>
+      </column>
+    </property>
+    <property name="fitTypeReg" type="integer">
+      <column default="0" name="fit_type_reg">
+        <comment>0=paiement comptant 1=terme date de facture 2=terme fin de mois 3=arrivee/paye 4=bon encaissement</comment>
+      </column>
+    </property>
+    <property name="fitModeReg" type="string">
+      <column length="50" name="fit_mode_reg">
+        <comment>mode de reglement xml</comment>
+      </column>
+    </property>
+    <property name="fitEcheanceReliquat" type="date">
+      <column default="null" name="fit_echeance_reliquat">
+        <comment>date echeance reliquat si type reg = 5</comment>
+      </column>
+    </property>
+    <property name="fitMotifRejetCredit" type="string">
+      <column length="50" name="fit_motif_rejet_credit">
+        <comment>motif du rejet accord du credit </comment>
+      </column>
+    </property>
+    <property name="fitNbJourReg" type="integer">
+      <column default="0" length="3" name="fit_nb_jour_reg">
+        <comment>nombre de jour </comment>
+      </column>
+    </property>
+    <property name="fitArrondiReg" type="integer">
+      <column default="0" length="3" name="fit_arrondi_reg">
+        <comment>nombre de jour arrondi</comment>
+      </column>
+    </property>
+    <property name="fitConditionReg" type="string">
+      <column length="100" name="fit_condition_reg">
+        <comment>condition de reglement</comment>
+      </column>
+    </property>
+    <property name="fitDateEcheReg" type="date">
+      <column name="fit_date_eche_reg">
+        <comment>date echeance de reglement</comment>
+      </column>
+    </property>
+    <property name="fitDateLastReg" type="date">
+      <column name="fit_date_last_reg">
+        <comment>date dernier reglement</comment>
+      </column>
+    </property>
+    <property name="fitJournalReg" type="string">
+      <column length="20" name="fit_journal_reg">
+        <comment>code journal des reglements</comment>
+      </column>
+    </property>
+    <property name="fitContener" type="text">
+      <column name="fit_contener">
+        <comment>numero contener</comment>
+      </column>
+    </property>
+    <property name="fitActivite" type="text">
+      <column name="fit_activite">
+        <comment>code activite</comment>
+      </column>
+    </property>
+    <property name="fitSite" type="string">
+      <column length="121" name="fit_site">
+        <comment>code site</comment>
+      </column>
+    </property>
+    <property name="fitDepartement" type="string">
+      <column length="121" name="fit_departement">
+        <comment>code departement</comment>
+      </column>
+    </property>
+    <property name="fitService" type="string">
+      <column length="121" name="fit_service">
+        <comment>code service</comment>
+      </column>
+    </property>
+    <property name="fitRegion" type="string">
+      <column length="121" name="fit_region">
+        <comment>code region</comment>
+      </column>
+    </property>
+    <property name="fitSecteur" type="string">
+      <column length="121" name="fit_secteur">
+        <comment>code secteur</comment>
+      </column>
+    </property>
+    <property name="fitPdv" type="string">
+      <column length="121" name="fit_pdv">
+        <comment>code point de vente</comment>
+      </column>
+    </property>
+    <property name="fitAnal2" type="string">
+      <column length="121" name="fit_anal2">
+        <comment>code analytique 2</comment>
+      </column>
+    </property>
+    <property name="fitAnal4" type="string">
+      <column length="121" name="fit_anal4">
+        <comment>code analytique 4</comment>
+      </column>
+    </property>
+    <property name="fitInfo1" type="string">
+      <column length="100" name="fit_info1">
+        <comment>info 1</comment>
+      </column>
+    </property>
+    <property name="fitInfo2" type="string">
+      <column length="100" name="fit_info2">
+        <comment>info 2</comment>
+      </column>
+    </property>
+    <property name="fitInfo3" type="string">
+      <column length="100" name="fit_info3">
+        <comment>info 3</comment>
+      </column>
+    </property>
+    <property name="fitInfo4" type="string">
+      <column length="100" name="fit_info4">
+        <comment>info 4</comment>
+      </column>
+    </property>
+    <property name="fitInfo5" type="string">
+      <column length="100" name="fit_info5">
+        <comment>info 5</comment>
+      </column>
+    </property>
+    <property name="fitInfo6" type="string">
+      <column length="100" name="fit_info6">
+        <comment>info 6</comment>
+      </column>
+    </property>
+    <property name="fitInfo7" type="string">
+      <column length="100" name="fit_info7">
+        <comment>info 7</comment>
+      </column>
+    </property>
+    <property name="fitInfo8" type="string">
+      <column length="100" name="fit_info8">
+        <comment>info 8</comment>
+      </column>
+    </property>
+    <property name="fitInfo9" type="string">
+      <column length="100" name="fit_info9">
+        <comment>info 9</comment>
+      </column>
+    </property>
+    <property name="fitInfo10" type="string">
+      <column length="100" name="fit_info10">
+        <comment>info 10</comment>
+      </column>
+    </property>
+    <property name="fitFormule1" type="string">
+      <column length="100" name="fit_formule1">
+        <comment>code formule 1</comment>
+      </column>
+    </property>
+    <property name="fitFormule2" type="string">
+      <column length="250" name="fit_formule2">
+        <comment>code formule 2</comment>
+      </column>
+    </property>
+    <property name="fitAnnexe1" type="string">
+      <column length="50" name="fit_annexe1">
+        <comment>nom jasper de anexe 1</comment>
+      </column>
+    </property>
+    <property name="fitAnnexe2" type="string">
+      <column length="50" name="fit_annexe2">
+        <comment>nom jasper de anexe 2</comment>
+      </column>
+    </property>
+    <property index="true" name="fitContrat" type="string">
+      <column index="true" length="20" name="fit_contrat">
+        <comment>code contrat</comment>
+      </column>
+    </property>
+    <property name="fitIncoterm" type="string">
+      <column length="20" name="fit_incoterm">
+        <comment>code incoterm</comment>
+      </column>
+    </property>
+    <property name="fitLieuLivraison" type="string">
+      <column length="100" name="fit_lieu_livraison">
+        <comment>lieu de livraison</comment>
+      </column>
+    </property>
+    <property name="fitDateLivraison" type="date">
+      <column name="fit_date_livraison">
+        <comment>date de livraison</comment>
+      </column>
+    </property>
+    <property name="fitInfoLivraison" type="string">
+      <column length="100" name="fit_info_livraison">
+        <comment>info sur la livraison</comment>
+      </column>
+    </property>
+    <property name="fitDateImp" type="date">
+      <column name="fit_date_imp">
+        <comment>date impression</comment>
+      </column>
+    </property>
+    <property name="fitModeleImp" type="string">
+      <column length="50" name="fit_modele_imp">
+        <comment>nom jasper du modele</comment>
+      </column>
+    </property>
+    <property name="fitGarde" type="string">
+      <column length="50" name="fit_garde">
+        <comment>nom jasper page de garde</comment>
+      </column>
+    </property>
+    <property name="fitEtatVal" type="integer">
+      <column default="0" length="1" name="fit_etat_val">
+        <comment>0=sans validation 1=avec validation</comment>
+      </column>
+    </property>
+    <property name="fitGele" type="integer">
+      <column default="0" length="1" name="fit_gele">
+        <comment>0=non gele 1=gele</comment>
+      </column>
+    </property>
+    <property name="fitEtat" type="integer">
+      <column default="0" length="1" name="fit_etat">
+        <comment>0=En cours 1=valide 2=gele 3=annule 4=transforme</comment>
+      </column>
+    </property>
+    <property name="fitNumTrf" type="string">
+      <column length="20" name="fit_num_trf">
+        <comment>numero de transfert</comment>
+      </column>
+    </property>
+    <property name="fitDateValidite" type="date">
+      <column name="fit_date_validite">
+        <comment>date de validite</comment>
+      </column>
+    </property>
+    <property name="fitDateRelance" type="date">
+      <column name="fit_date_relance">
+        <comment>date de relance</comment>
+      </column>
+    </property>
+    <property name="fitDateValide" type="date">
+      <column name="fit_date_valide">
+        <comment>date de validation</comment>
+      </column>
+    </property>
+    <property name="fitDateTransforme" type="date">
+      <column name="fit_date_transforme">
+        <comment>date de transformation</comment>
+      </column>
+    </property>
+    <property name="fitTypeTransforme" type="integer">
+      <column default="0" name="fit_type_transforme">
+        <comment>type de transformation</comment>
+      </column>
+    </property>
+    <property name="fitDateAnnule" type="date">
+      <column name="fit_date_annule">
+        <comment>date annulation</comment>
+      </column>
+    </property>
+    <property name="fitMotifAnnule" type="string">
+      <column length="50" name="fit_motif_annule">
+        <comment>motif annulation</comment>
+      </column>
+    </property>
+    <property name="fitExo" type="integer">
+      <column default="0" length="1" name="fit_exo">
+        <comment>0=non exo 1=exoneree</comment>
+      </column>
+    </property>
+    <property name="fitMotifExo" type="string">
+      <column length="50" name="fit_motif_exo">
+        <comment>motif exoneration</comment>
+      </column>
+    </property>
+    <property name="fitNumVisa" type="string">
+      <column length="20" name="fit_num_visa">
+        <comment>numero du visa</comment>
+      </column>
+    </property>
+    <property name="fitDateVisa" type="date">
+      <column name="fit_date_visa">
+        <comment>date du visa</comment>
+      </column>
+    </property>
+    <property name="fitRangeVisa" type="string">
+      <column length="20" name="fit_range_visa">
+        <comment>rangement du visa</comment>
+      </column>
+    </property>
+    <property name="fitDateTransfert" type="date">
+      <column name="fit_date_transfert">
+        <comment>date transfert en compta</comment>
+      </column>
+    </property>
+    <property name="fitFactorNom" type="string">
+      <column length="100" name="fit_factor_nom">
+        <comment>nom du factor</comment>
+      </column>
+    </property>
+    <property name="fitFactorId" type="long">
+      <column default="0" name="fit_factor_id">
+        <comment>id du factor</comment>
+      </column>
+    </property>
+    <property name="fitFactorEtat" type="integer">
+      <column default="0" name="fit_factor_etat">
+        <comment>0=en cours 1=accepter 2=refuser</comment>
+      </column>
+    </property>
+    <property name="fitDiversTiers" type="integer">
+      <column default="0" name="fit_divers_tiers">
+        <comment>0=normal 99= divers</comment>
+      </column>
+    </property>
+    <property name="fitDiversNom" type="string">
+      <column length="100" name="fit_divers_nom">
+        <comment>nom du tiers divers</comment>
+      </column>
+    </property>
+    <property name="fitDiversAdresse" type="string">
+      <column length="100" name="fit_divers_adresse">
+        <comment>adresse du tiers divers</comment>
+      </column>
+    </property>
+    <property name="fitDiversVille" type="string">
+      <column length="50" name="fit_divers_ville">
+        <comment>ville du tiers divers</comment>
+      </column>
+    </property>
+    <property name="fitDiversTel" type="string">
+      <column length="50" name="fit_divers_tel">
+        <comment>telephone du tiers divers</comment>
+      </column>
+    </property>
+    <property name="fitDiversMail" type="string">
+      <column length="100" name="fit_divers_mail">
+        <comment>mail du tiers divers</comment>
+      </column>
+    </property>
+    <property name="fitDiversNif" type="string">
+      <column length="20" name="fit_divers_nif">
+        <comment>nif du tiers divers</comment>
+      </column>
+    </property>
+    <property name="fitSource" type="string">
+      <column length="50" name="fit_source">
+        <comment>source du document</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ExercicesVentes" column="exevte_id" lazy="false" name="exerciceventes" not-null="true"/>
+    <many-to-one class="com.epegase.systeme.classe.Tiers" column="tie_id" lazy="false" name="tiers" not-null="true"/>
+    <many-to-one class="com.epegase.systeme.classe.Users" column="usr_id" lazy="false" name="users" not-null="false"/>
+  </class>
+</hibernate-mapping>

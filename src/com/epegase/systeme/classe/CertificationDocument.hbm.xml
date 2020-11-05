@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="CertificationDocument" table="cmm_certification_document">
+    <id column="cer_id" name="cerId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="cerDateCreat" type="timestamp">
+      <column name="cer_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="cerUserCreat" type="long">
+      <column default="0" length="15" name="cer_user_creat">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="cerNature" type="integer">
+      <column default="0" name="cer_nature">
+        <comment>nature du document</comment>
+      </column>
+    </property>
+    <property name="cerNum" type="string">
+      <column length="20" name="cer_num">
+        <comment>numero du document</comment>
+      </column>
+    </property>
+    <property name="cerNomRapport" type="string">
+      <column length="100" name="cer_nom_rapport">
+        <comment>nom du rapport</comment>
+      </column>
+    </property>
+    <property name="cerQte" type="integer">
+      <column default="0" name="cer_qte">
+        <comment>qte operation</comment>
+      </column>
+    </property>
+    <property name="cerTypeTiers" type="integer">
+      <column default="0" name="cer_type_tiers">
+        <comment>type du tiers  0=tiers 1=agents 2=salaries 4=patients 5=eleves 90=achats sms 99=sms initial</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.Users" column="usr_id" lazy="false" name="users" not-null="true"/>
+  </class>
+</hibernate-mapping>

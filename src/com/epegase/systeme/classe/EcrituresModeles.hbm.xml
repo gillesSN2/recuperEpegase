@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="EcrituresModeles" table="cpt_ecritures_modeles">
+    <id column="mod_id" name="modId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="modDateCreat" type="timestamp">
+      <column default="null" name="mod_date_creat">
+        <comment>date de creation ecriture</comment>
+      </column>
+    </property>
+    <property name="modDateModif" type="timestamp">
+      <column default="null" name="mod_date_modif">
+        <comment>date de modification ecriture</comment>
+      </column>
+    </property>
+    <property name="modUserCreat" type="long">
+      <column default="0" length="15" name="mod_user_creat">
+        <comment>utilisateur de creation ecriture</comment>
+      </column>
+    </property>
+    <property name="modUserModif" type="long">
+      <column default="0" length="15" name="mod_user_modif">
+        <comment>utilisateur de modification ecriture</comment>
+      </column>
+    </property>
+    <property name="modType" type="integer">
+      <column default="0" name="mod_type">
+        <comment>0=modele ecriture 1=amortissement 2=notes externes</comment>
+      </column>
+    </property>
+    <property name="modCode" type="string">
+      <column length="20" name="mod_code">
+        <comment>numero du modele</comment>
+      </column>
+    </property>
+    <property name="modLibelle" type="string">
+      <column length="100" name="mod_libelle">
+        <comment>libelle ecriture</comment>
+      </column>
+    </property>
+    <property name="modInactif" type="boolean">
+      <column default="false" name="mod_inactif">
+        <comment>false=actif true=inactif</comment>
+      </column>
+    </property>
+    <property name="modNature" type="integer">
+      <column default="0" name="mod_nature">
+        <comment>nature des notes externes</comment>
+      </column>
+    </property>
+    <property name="modJournal" type="string">
+      <column length="20" name="mod_journal">
+        <comment>code journal</comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>

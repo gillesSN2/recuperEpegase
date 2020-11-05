@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="PatientAnt" table="med_patient_ant">
+    <id column="patant_id" name="patantId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="patantDateCreat" type="date">
+      <column default="NULL" name="patant_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="patantDateModif" type="date">
+      <column default="NULL" name="patant_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="patantUserCreat" type="long">
+      <column default="0" name="patant_user_creat">
+        <comment>user de creation</comment>
+      </column>
+    </property>
+    <property name="patantUserModif" type="long">
+      <column default="0" name="patant_user_modif">
+        <comment>user de modification</comment>
+      </column>
+    </property>
+    <property name="patantMedecin" type="string">
+      <column length="50" name="patant_medecin">
+        <comment>nom du medecin qui note</comment>
+      </column>
+    </property>
+    <property name="patantDate" type="date">
+      <column default="NULL" name="patant_date">
+        <comment>date de l antecedent</comment>
+      </column>
+    </property>
+    <property name="patantCode" type="string">
+      <column length="20" name="patant_code">
+        <comment>code famille antecedent</comment>
+      </column>
+    </property>
+    <property name="patantFamille" type="string">
+      <column length="100" name="patant_famille">
+        <comment>famille antecedent</comment>
+      </column>
+    </property>
+    <property name="patantEtat" type="string">
+      <column length="20" name="patant_etat">
+        <comment>etat antecedent</comment>
+      </column>
+    </property>
+    <property name="patantObservation" type="text">
+      <column length="10000" name="patant_observation">
+        <comment>observation antecedent</comment>
+      </column>
+    </property>
+    <property name="patantNumConsultGene" type="string">
+      <column length="20" name="patant_num_consult_gene">
+        <comment>numero consultation general</comment>
+      </column>
+    </property>
+    <property name="patantNumConsultSpe" type="string">
+      <column length="20" name="patant_num_consult_Spe">
+        <comment>numero consultation specialisee</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.Patients" column="pat_id" lazy="false" name="patient" not-null="true"/>
+  </class>
+</hibernate-mapping>

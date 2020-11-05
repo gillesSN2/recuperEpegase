@@ -1,0 +1,243 @@
+
+D
+java:S1948i".Make "mesClesItems" transient or serializable.(ºööó
+‡
+java:S1130Ú"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(ş”¬øûÿÿÿÿ
+F
+java:S1874†"/Remove this use of "getYear"; it is deprecated.(ßÃÑÿ
+s
+java:S1192á"WDefine a constant instead of duplicating this literal "/caisse/TraiteInit.jsp" 3 times.(¨Òºüÿÿÿÿ
+F
+java:S1948s"0Make "mesdevisesItem" transient or serializable.(îÆî„
+‚
+java:S1130©"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(˜¤ã£
+‡
+java:S1130ş"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(–İ­µüÿÿÿÿ
+M
+java:S1948Ÿ"1Make "laColonne2Items" transient or serializable.(ŒĞ«¦ûÿÿÿÿ
+g
+java:S1192ß"KDefine a constant instead of duplicating this literal "structure" 15 times.(Ë‡¤ëıÿÿÿÿ
+F
+java:S1874Ş"/Remove this use of "getYear"; it is deprecated.(ßÃÑÿ
+H
+java:S1948"1Make "laColonne1Items" transient or serializable.(éí¹ß
+‚
+java:S1130ğ"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(¾Õ•ú
+‡
+java:S1130™"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(¾Ù­Îøÿÿÿÿ
+m
+java:S1192Â	"QDefine a constant instead of duplicating this literal "documentsTraites" 3 times.(àÀêœøÿÿÿÿ
+Z
+java:S1155ğ">Use isEmpty() to check whether the collection is empty or not.(İ·¸ëøÿÿÿÿ
+Z
+java:S1155ô">Use isEmpty() to check whether the collection is empty or not.(İ·¸ëøÿÿÿÿ
+E
+java:S1948l"/Make "mesSitesItems" transient or serializable.(ãµì´
+K
+java:S1948p"0Make "mesServiceItem" transient or serializable.(²ƒÀúÿÿÿÿ
+i	java:S100©"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚Àıÿÿÿÿ
+I
+java:S1948x"4Make "mesSeriesUsersItem" transient or serializable.(ìÊŠg
+r	java:S116£"WRename this field "var_colonne3" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼”Ÿ‡üÿÿÿÿ
+c
+java:S1192“	"LDefine a constant instead of duplicating this literal "impression" 13 times.(Ùù‘­
+d
+java:S1192¾"HDefine a constant instead of duplicating this literal "traite2" 3 times.(ëÕ¼Æüÿÿÿÿ
+I
+java:S1948›"2Make "mesPeriodesItems" transient or serializable.(­çï¯
+‚
+java:S1130½"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(ôñ‚
+‡
+java:S1130ª"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(÷ˆˆıÿÿÿÿ
+‡
+java:S1130â"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(×ı¦µÿÿÿÿÿ
+R
+java:S1948{"7Make "modeleImpressionItems" transient or serializable.(Ù÷ú­úÿÿÿÿ
+F
+java:S1874Ò"/Remove this use of "getYear"; it is deprecated.(ßÃÑÿ
+‡
+java:S1130‘"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(¶ÈÅ‚øÿÿÿÿ
+@
+java:S1481ó")Remove this unused "var4" local variable.(æöµ½
+V
+java:S1068Š":Remove this unused "caissesCommercialesDao" private field.(ğíÁöùÿÿÿÿ
+G
+java:S1172ß"+Remove this unused method parameter "var1".( ã°ûÿÿÿÿ
+Q
+java:S1948z"6Make "listeImpressionItems" transient or serializable.(ÌƒÙ‰úÿÿÿÿ
+^
+java:S1192¥"HDefine a constant instead of duplicating this literal "traite1" 3 times.(ìĞ}
+U
+java:S1155‚	">Use isEmpty() to check whether the collection is empty or not.(ŞŞÙ—
+F
+java:S1874ú"/Remove this use of "getYear"; it is deprecated.(ßÃÑÿ
+q
+java:S1450"URemove the "chrono" field and declare it as a local variable in the relevant methods.(ó‚˜èûÿÿÿÿ
+F
+java:S1874ò"/Remove this use of "getYear"; it is deprecated.(ßÃÑÿ
+N
+java:S2589É	"7Remove this expression which always evaluates to "true"(¦¸«³
+F
+java:S1874"/Remove this use of "getYear"; it is deprecated.(ßÃÑÿ
+~
+java:S1450`"cRemove the "lireLesoptionsCompta" field and declare it as a local variable in the relevant methods.(²ğØòıÿÿÿÿ
+F
+java:S1874±"/Remove this use of "getYear"; it is deprecated.(ßÃÑÿ
+‡
+java:S1130¦"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(¸Òˆ—şÿÿÿÿ
+J
+java:S1948o"/Make "mesParcsItems" transient or serializable.(´ØÔùÿÿÿÿ
+‡
+java:S1130‘"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(ËİşÅøÿÿÿÿ
+F
+java:S1874¶"/Remove this use of "getYear"; it is deprecated.(ßÃÑÿ
+m	java:S116¢"WRename this field "var_colonne2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’ˆã
+Z
+java:S1155ç	">Use isEmpty() to check whether the collection is empty or not.(İ·¸ëøÿÿÿÿ
+‡
+java:S1130û"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(ôÜıûÿÿÿÿ
+S
+java:S1948w"8Make "mesBanquesCaissesItems" transient or serializable.(ì¤Î“ûÿÿÿÿ
+L
+java:S1948m"1Make "mesRegionsItems" transient or serializable.(µõê£üÿÿÿÿ
+H
+java:S1948n"2Make "mesDossiersItems" transient or serializable.(ÌÜÊ
+‚
+java:S1130Œ"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(í‘Ùó
+F
+java:S1874Ê"/Remove this use of "getYear"; it is deprecated.(ßÃÑÿ
+‚
+java:S1130™"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(Ã”Õ–
+‚
+java:S1130ë"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(¯£ŒÓ
+L
+java:S1068£"0Remove this unused "var_colonne3" private field.(¼”Ÿ‡üÿÿÿÿ
+J
+java:S1948y"4Make "mesOperationsItems" transient or serializable.(Ì¼Àï
+x
+java:S1450_"cRemove the "lireLesoptionsVentes" field and declare it as a local variable in the relevant methods.(ŸÕ
+K
+java:S1948}"0Make "mesSourceItems" transient or serializable.(™Œç¼úÿÿÿÿ
+i
+java:S3776	"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(çÜêÒ
+‡
+java:S1130¸"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(Œº‹ûÿÿÿÿ
+V
+java:S1948v";Make "mesBanquesRecepteursItems" transient or serializable.(øˆôĞÿÿÿÿÿ
+n
+java:S3776¿	"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(ÜÙãŞùÿÿÿÿ
+Q
+java:S1948¥"5Make "lesModelesAutorises" transient or serializable.(•€úÁıÿÿÿÿ
+‚
+java:S1130"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(ÆºÀ¯
+‹
+java:S1130ª"oRemove the declaration of thrown exception 'org.jdom.JDOMException', as it cannot be thrown from method's body.(÷ˆˆıÿÿÿÿ
+‡
+java:S1130Ğ"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(×ÒÏ˜ıÿÿÿÿ
+‚
+java:S1130ö"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(œ£ñ
+u
+java:S1192Ä"YDefine a constant instead of duplicating this literal "/caisse/ErreurAcces.jsp" 24 times.(´±³µıÿÿÿÿ
+F
+java:S1874£"/Remove this use of "getYear"; it is deprecated.(ßÃÑÿ
+I
+java:S1948j"3Make "mesActivitesItems" transient or serializable.(à¯ä
+†
+java:S1130¿"oRemove the declaration of thrown exception 'org.jdom.JDOMException', as it cannot be thrown from method's body.(ƒÄŸˆ
+m	java:S116¡"WRename this field "var_colonne1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§ÇÙÉ
+q
+java:S1192¥"ZDefine a constant instead of duplicating this literal "/caisse/BonSortieInit.jsp" 3 times.(¹Öšß
+^
+java:S1192“	"GDefine a constant instead of duplicating this literal "liste" 10 times.(Ùù‘­
+U
+java:S1948u":Make "mesBanquesEmetteursItems" transient or serializable.(¡ŸßÜÿÿÿÿÿ
+‡
+java:S1130Æ"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(·šğøşÿÿÿÿ
+T
+java:S1858ó	"="get" returns a string, there's no need to call "toString()".(Šè›ß
+G
+java:S1068¡"0Remove this unused "var_colonne1" private field.(§ÇÙÉ
+·
+java:S1192Å"ŸDefine a constant instead of duplicating this literal "Vous avez le droit d'accÃ©der Ã  cette fonction, mais la pÃ©riode du chrono n'existe pas....." 13 times.(—É‡è
+B
+java:S1948~"-Make "listCaisses" transient or serializable.(ä¨V
+
+java:S1450Š"eRemove the "caissesCommercialesDao" field and declare it as a local variable in the relevant methods.(ğíÁöùÿÿÿÿ
+‚
+java:S1130Å"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(¸’Üú
+€
+java:S1450¤"dRemove the "lectureModeleAutorise" field and declare it as a local variable in the relevant methods.(ó½€áúÿÿÿÿ
+S
+java:S1948r"=Make "mesTypeReglementsClientItem" transient or serializable.(‘ôÃ
+‡
+java:S1130Á"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(úé÷Ÿüÿÿÿÿ
+‡
+java:S1130Ú"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(ú®šÎşÿÿÿÿ
+L
+java:S1948t"1Make "mesBanquesItems" transient or serializable.(¯†ôÔÿÿÿÿÿ
+‡
+java:S1130Î
+"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(Ó©Ëˆøÿÿÿÿ
+i	java:S100É"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•Äè¹úÿÿÿÿ
+o
+java:S3776£"SRefactor this method to reduce its Cognitive Complexity from 108 to the 15 allowed.(ÕòìÓüÿÿÿÿ
+F
+java:S1874¾"/Remove this use of "getYear"; it is deprecated.(ßÃÑÿ
+
+java:S1130‹"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(É…Ék
+‡
+java:S1130£"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(ÕòìÓüÿÿÿÿ
+‘
+java:S1130û"uRemove the declaration of thrown exception 'javax.naming.NamingException', as it cannot be thrown from method's body.(ôÜıûÿÿÿÿ
+‡
+java:S1130Ä"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(ãöËùÿÿÿÿ
+Z
+java:S1155ñ	">Use isEmpty() to check whether the collection is empty or not.(½­ÖØúÿÿÿÿ
+F
+java:S1874¢"/Remove this use of "getYear"; it is deprecated.(ßÃÑÿ
+‡
+java:S1130«"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(¸ôÃÃûÿÿÿÿ
+ä
+java:S1192É"ÇDefine a constant instead of duplicating this literal "Vous n'avez pas le droit d'accÃ©der Ã  cette page car l'utilisateur en cours n'a pas de sÃ©rie affectÃ©e Ã  la fonction en cours....." 11 times.(ÏØÒ¢ÿÿÿÿÿ
+e
+java:S1192ß"IDefine a constant instead of duplicating this literal "caisses" 15 times.(Ë‡¤ëıÿÿÿÿ
+j
+java:S1192ä"NDefine a constant instead of duplicating this literal "configuration" 3 times.(Àé¹Ãøÿÿÿÿ
+‡
+java:S1130Õ"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(§œİ†üÿÿÿÿ
+F
+java:S1874æ"/Remove this use of "getYear"; it is deprecated.(ßÃÑÿ
+‡
+java:S1130Õ"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(¤ŒäÒşÿÿÿÿ
+‡
+java:S1130ò"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(¼¾©…øÿÿÿÿ
+e
+java:S1192ß"IDefine a constant instead of duplicating this literal "clients" 15 times.(Ë‡¤ëıÿÿÿÿ
+L
+java:S1948k"1Make "mesBudgetsItems" transient or serializable.(ˆ¡íãøÿÿÿÿ
+‚
+java:S1130Ë"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(›Í¥›
+G
+java:S1068¢"0Remove this unused "var_colonne2" private field.(’ˆã
+‚
+java:S1130’"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(û®ã‘
+‚
+java:S1130¿"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(ƒÄŸˆ
+i
+java:S1192»"MDefine a constant instead of duplicating this literal "SuiviCaisse" 12 times.(ÀÆ÷Øøÿÿÿÿ
+d
+java:S1192×"HDefine a constant instead of duplicating this literal "traite3" 3 times.(¡æşÿÿÿÿ
+‚
+java:S1130â	"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(¤õ´Ÿ
+‡
+java:S1130ú"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(ª„œãùÿÿÿÿ
+‡
+java:S1130£"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(õ ˜òÿÿÿÿÿ
+M
+java:S1948 "1Make "laColonne3Items" transient or serializable.(Æ´Çùÿÿÿÿ
+M
+java:S1948q"7Make "mesTypeReglementsItem" transient or serializable.(Ş¡Û
+L
+java:S1948|"6Make "mesResponsablesItems" transient or serializable.(ÕŠ¨¢
+‡
+java:S1130ì"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(¸§Ä¸ıÿÿÿÿ

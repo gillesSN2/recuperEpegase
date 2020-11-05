@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="CommandeEnteteAchats" table="ach_commande_entete">
+    <id column="cmd_id" name="cmdId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="cmdDateCreat" type="timestamp">
+      <column name="cmd_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="cmdDateModif" type="timestamp">
+      <column name="cmd_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="cmdIdCreateur" type="long">
+      <column default="0" length="15" name="cmd_id_createur">
+        <comment>id user createur</comment>
+      </column>
+    </property>
+    <property name="cmdNomCreateur" type="string">
+      <column length="100" name="cmd_nom_createur">
+        <comment>nom du createur</comment>
+      </column>
+    </property>
+    <property name="cmdIdModif" type="long">
+      <column default="0" length="15" name="cmd_id_modif">
+        <comment>id user de modification</comment>
+      </column>
+    </property>
+    <property name="cmdNomModif" type="string">
+      <column length="100" name="cmd_nom_modif">
+        <comment>nom user de modification</comment>
+      </column>
+    </property>
+    <property name="cmdMaj" type="integer">
+      <column default="0" name="cmd_maj">
+        <comment>0=ferme 1=ouvert</comment>
+      </column>
+    </property>
+    <property index="true" name="cmdDate" type="timestamp">
+      <column index="true" name="cmd_date">
+        <comment>date du commande</comment>
+      </column>
+    </property>
+    <property index="true" name="cmdNum" type="string">
+      <column index="true" length="20" name="cmd_num">
+        <comment>numero commande</comment>
+      </column>
+    </property>
+    <property index="true" name="cmdValo" type="string">
+      <column index="true" length="20" name="cmd_valo">
+        <comment>numero de valorisation</comment>
+      </column>
+    </property>
+    <property name="cmdNomResponsable" type="string">
+      <column length="100" name="cmd_nom_responsable">
+        <comment>nom du responsable</comment>
+      </column>
+    </property>
+    <property name="cmdIdResponsable" type="long">
+      <column default="0" name="cmd_id_responsable">
+        <comment>id du responsable</comment>
+      </column>
+    </property>
+    <property name="cmdNomCommercial" type="string">
+      <column length="100" name="cmd_nom_commercial">
+        <comment>nom du commercial</comment>
+      </column>
+    </property>
+    <property name="cmdIdCommercial" type="long">
+      <column default="0" name="cmd_id_commercial">
+        <comment>id du commercial</comment>
+      </column>
+    </property>
+    <property name="cmdNomTiers" type="string">
+      <column length="100" name="cmd_nom_tiers">
+        <comment>nom du fournisseur</comment>
+      </column>
+    </property>
+    <property name="cmdCivilTiers" type="string">
+      <column length="20" name="cmd_civil_tiers">
+        <comment>civilite du tiers</comment>
+      </column>
+    </property>
+    <property name="cmdIdContact" type="long">
+      <column default="0" name="cmd_id_contact">
+        <comment>id du contact</comment>
+      </column>
+    </property>
+    <property name="cmdNomContact" type="string">
+      <column length="100" name="cmd_nom_contact">
+        <comment>nom du contact </comment>
+      </column>
+    </property>
+    <property name="cmdCivilContact" type="string">
+      <column length="20" name="cmd_civil_contact">
+        <comment>civilite du contact</comment>
+      </column>
+    </property>
+    <property name="cmdSerie" type="string">
+      <column length="4" name="cmd_serie">
+        <comment>serie </comment>
+      </column>
+    </property>
+    <property name="cmdExoTva" type="integer">
+      <column default="0" length="1" name="cmd_exo_tva">
+        <comment>0=avec Tva 1=sans Tva </comment>
+      </column>
+    </property>
+    <property name="cmdExoDouane" type="integer">
+      <column default="0" length="1" name="cmd_exo_douane">
+        <comment>0=avec Douane 1=sans Douane </comment>
+      </column>
+    </property>
+    <property index="true" name="cmdCat" type="string">
+      <column index="true" length="50" name="cmd_cat">
+        <comment>categorie du fournisseur</comment>
+      </column>
+    </property>
+    <property name="cmdDevise" type="string">
+      <column length="3" name="cmd_devise">
+        <comment>code devise</comment>
+      </column>
+    </property>
+    <property name="cmdCoefDevise" type="float">
+      <column default="0" name="cmd_coef_devise">
+        <comment>coefficient devise</comment>
+      </column>
+    </property>
+    <property name="cmdObject" type="string">
+      <column length="100" name="cmd_object">
+        <comment>objet</comment>
+      </column>
+    </property>
+    <property name="cmdObservation" type="string">
+      <column length="100" name="cmd_observation">
+        <comment>observation</comment>
+      </column>
+    </property>
+    <property name="cmdBudgetProjet" type="string">
+      <column length="20" name="cmd_budget_projet">
+        <comment>code budget projet</comment>
+      </column>
+    </property>
+    <property name="cmdBudgetEntite" type="string">
+      <column length="20" name="cmd_budget_entite">
+        <comment>code budget entite</comment>
+      </column>
+    </property>
+    <property name="cmdBudgetPoste" type="string">
+      <column length="20" name="cmd_budget_poste">
+        <comment>code budget poste</comment>
+      </column>
+    </property>
+    <property name="cmdTotCertificat" type="double">
+      <column default="0" name="cmd_tot_certificat">
+        <comment>total certificat origine</comment>
+      </column>
+    </property>
+    <property name="cmdTotCertificatConformite" type="double">
+      <column default="0" name="cmd_tot_certificat_conformite">
+        <comment>total certificat conformite</comment>
+      </column>
+    </property>
+    <property name="cmdTotFraisAdm" type="double">
+      <column default="0" name="cmd_frais_adm">
+        <comment>total frais administratif</comment>
+      </column>
+    </property>
+    <property name="cmdTotHt" type="double">
+      <column default="0" name="cmd_tot_ht">
+        <comment>total ht</comment>
+      </column>
+    </property>
+    <property name="cmdTotRemise" type="double">
+      <column default="0" name="cmd_tot_remise">
+        <comment>total remise</comment>
+      </column>
+    </property>
+    <property name="cmdTotRabais" type="double">
+      <column default="0" name="cmd_tot_rabais">
+        <comment>total rabais</comment>
+      </column>
+    </property>
+    <property name="cmdTotTva" type="double">
+      <column default="0" name="cmd_tot_tva">
+        <comment>ttal tva</comment>
+      </column>
+    </property>
+    <property name="cmdTotTc" type="double">
+      <column default="0" name="cmd_tot_tc">
+        <comment>total taxe complementaire</comment>
+      </column>
+    </property>
+    <property name="cmdTotTtc" type="double">
+      <column default="0" name="cmd_tot_ttc">
+        <comment>total ttc</comment>
+      </column>
+    </property>
+    <property name="cmdTotReglement" type="double">
+      <column default="0" name="cmd_tot_reglement">
+        <comment>total reglement</comment>
+      </column>
+    </property>
+    <property name="cmdTotHtLocal" type="double">
+      <column default="0" name="cmd_tot_ht_local">
+        <comment>total ht local</comment>
+      </column>
+    </property>
+    <property name="cmdTotTvaLocal" type="double">
+      <column default="0" name="cmd_tot_tva_local">
+        <comment>total tva local</comment>
+      </column>
+    </property>
+    <property name="cmdTotTtcLocal" type="double">
+      <column default="0" name="cmd_tot_ttc_local">
+        <comment>total ttc local</comment>
+      </column>
+    </property>
+    <property name="cmdTotRemiseLocal" type="double">
+      <column default="0" name="cmd_tot_remise_local">
+        <comment>total remise local</comment>
+      </column>
+    </property>
+    <property name="cmdTotRabaisLocal" type="double">
+      <column default="0" name="cmd_tot_rabais_local">
+        <comment>total rabais local</comment>
+      </column>
+    </property>
+    <property name="cmdTotFret" type="double">
+      <column default="0" name="cmd_tot_fret">
+        <comment>total fret si CFR</comment>
+      </column>
+    </property>
+    <property name="cmdTotFretLocal" type="double">
+      <column default="0" name="cmd_tot_fretLocal">
+        <comment>total fret si CFR</comment>
+      </column>
+    </property>
+    <property name="cmdTotFret2" type="double">
+      <column default="0" name="cmd_tot_fret2">
+        <comment>total fret si CPT</comment>
+      </column>
+    </property>
+    <property name="cmdTotFret2Local" type="double">
+      <column default="0" name="cmd_tot_fret2Local">
+        <comment>total fret si CPT</comment>
+      </column>
+    </property>
+    <property name="cmdTotAssurance" type="double">
+      <column default="0" name="cmd_tot_assurance">
+        <comment>total assurance si CFR</comment>
+      </column>
+    </property>
+    <property name="cmdTotAssuranceLocal" type="double">
+      <column default="0" name="cmd_tot_assuranceLocal">
+        <comment>total assurance si CFR</comment>
+      </column>
+    </property>
+    <property name="cmdTotPoidsBrut" type="float">
+      <column default="0" name="cmd_tot_poids_brut">
+        <comment>total poids brut</comment>
+      </column>
+    </property>
+    <property name="cmdTotQte" type="float">
+      <column default="0" name="cmd_tot_qte">
+        <comment>total qte</comment>
+      </column>
+    </property>
+    <property name="cmdBudgetDispo" type="double">
+      <column default="0" name="cmd_budget_dispo">
+        <comment>budget annuel dispo</comment>
+      </column>
+    </property>
+    <property name="cmdBudgetTreso" type="double">
+      <column default="0" name="cmd_budget_treso">
+        <comment>budget annuel treso</comment>
+      </column>
+    </property>
+    <property name="cmdBudgetDispoMois" type="double">
+      <column default="0" name="cmd_budget_dispo_mois">
+        <comment>budget mensuel dispo</comment>
+      </column>
+    </property>
+    <property name="cmdBudgetTresoMois" type="double">
+      <column default="0" name="cmd_budget_treso_mois">
+        <comment>budget mensuel treso</comment>
+      </column>
+    </property>
+    <property name="cmdTotTimbre" type="double">
+      <column default="0" name="cmd_tot_timbre">
+        <comment>total timbre</comment>
+      </column>
+    </property>
+    <property name="cmdSolde" type="integer">
+      <column default="0" length="1" name="cmd_solde">
+        <comment>0=non solde 1=solde</comment>
+      </column>
+    </property>
+    <property name="cmdBanque" type="string">
+      <column length="100" name="cmd_banque">
+        <comment>nom de la banque  + numero de compte</comment>
+      </column>
+    </property>
+    <property index="true" name="cmdTypeReg" type="integer">
+      <column default="0" index="true" name="cmd_type_reg">
+        <comment>0=paiement comptant 1=terme date de facture 2=terme fin de mois 3=arrivee/payee 4=bon encaissement</comment>
+      </column>
+    </property>
+    <property name="cmdModeReg" type="string">
+      <column length="50" name="cmd_mode_reg">
+        <comment>mode de reglement xml</comment>
+      </column>
+    </property>
+    <property name="cmdNbJourReg" type="integer">
+      <column default="0" length="3" name="cmd_nb_jour_reg">
+        <comment>nombre de jour </comment>
+      </column>
+    </property>
+    <property name="cmdArrondiReg" type="integer">
+      <column default="0" length="3" name="cmd_arrondi_reg">
+        <comment>nombre de jour arrondi</comment>
+      </column>
+    </property>
+    <property name="cmdConditionReg" type="string">
+      <column length="100" name="cmd_condition_reg">
+        <comment>condition de reglement</comment>
+      </column>
+    </property>
+    <property index="true" name="cmdDateEcheReg" type="date">
+      <column index="true" name="cmd_date_eche_reg">
+        <comment>date echeance de reglement</comment>
+      </column>
+    </property>
+    <property name="cmdDateLastReg" type="date">
+      <column name="cmd_date_last_reg">
+        <comment>date dernier reglement</comment>
+      </column>
+    </property>
+    <property name="cmdJournalReg" type="string">
+      <column length="20" name="cmd_journal_reg">
+        <comment>code journal des reglements</comment>
+      </column>
+    </property>
+    <property name="cmdActivite" type="text">
+      <column name="cmd_activite">
+        <comment>code activite</comment>
+      </column>
+    </property>
+    <property name="cmdSite" type="string">
+      <column length="121" name="cmd_site">
+        <comment>code site</comment>
+      </column>
+    </property>
+    <property name="cmdDepartement" type="string">
+      <column length="121" name="cmd_departement">
+        <comment>code departement</comment>
+      </column>
+    </property>
+    <property name="cmdService" type="string">
+      <column length="121" name="cmd_service">
+        <comment>code service</comment>
+      </column>
+    </property>
+    <property name="cmdRegion" type="string">
+      <column length="121" name="cmd_region">
+        <comment>code region</comment>
+      </column>
+    </property>
+    <property name="cmdSecteur" type="string">
+      <column length="121" name="cmd_secteur">
+        <comment>code secteur</comment>
+      </column>
+    </property>
+    <property name="cmdPdv" type="string">
+      <column length="121" name="cmd_pdv">
+        <comment>code point de vente</comment>
+      </column>
+    </property>
+    <property name="cmdAnal1" type="string">
+      <column length="121" name="cmd_anal1">
+        <comment>code analytique 1 (chantier)</comment>
+      </column>
+    </property>
+    <property name="cmdAnal2" type="string">
+      <column length="121" name="cmd_anal2">
+        <comment>code analytique 2 (parc)</comment>
+      </column>
+    </property>
+    <property name="cmdAnal4" type="string">
+      <column length="20" name="cmd_anal4">
+        <comment>code analytique 4 (dossier)</comment>
+      </column>
+    </property>
+    <property name="cmdAffaire" type="string">
+      <column length="20" name="cmd_affaire">
+        <comment>code affaire</comment>
+      </column>
+    </property>
+    <property name="cmdInfo1" type="string">
+      <column length="100" name="cmd_info1">
+        <comment>info 1</comment>
+      </column>
+    </property>
+    <property name="cmdInfo2" type="string">
+      <column length="100" name="cmd_info2">
+        <comment>info 2</comment>
+      </column>
+    </property>
+    <property name="cmdInfo3" type="string">
+      <column length="100" name="cmd_info3">
+        <comment>info 3</comment>
+      </column>
+    </property>
+    <property name="cmdInfo4" type="string">
+      <column length="100" name="cmd_info4">
+        <comment>info 4</comment>
+      </column>
+    </property>
+    <property name="cmdInfo5" type="string">
+      <column length="100" name="cmd_info5">
+        <comment>info 5</comment>
+      </column>
+    </property>
+    <property name="cmdInfo6" type="string">
+      <column length="100" name="cmd_info6">
+        <comment>info 6</comment>
+      </column>
+    </property>
+    <property name="cmdInfo7" type="string">
+      <column length="100" name="cmd_info7">
+        <comment>info 7</comment>
+      </column>
+    </property>
+    <property name="cmdInfo8" type="string">
+      <column length="100" name="cmd_info8">
+        <comment>info 8</comment>
+      </column>
+    </property>
+    <property name="cmdInfo9" type="string">
+      <column length="100" name="cmd_info9">
+        <comment>info 9</comment>
+      </column>
+    </property>
+    <property name="cmdInfo10" type="string">
+      <column length="100" name="cmd_info10">
+        <comment>info 10</comment>
+      </column>
+    </property>
+    <property name="cmdFormule1" type="string">
+      <column length="100" name="cmd_formule1">
+        <comment>code formule 1</comment>
+      </column>
+    </property>
+    <property name="cmdFormule2" type="string">
+      <column length="250" name="cmd_formule2">
+        <comment>code formule 2</comment>
+      </column>
+    </property>
+    <property name="cmdAnnexe1" type="string">
+      <column length="50" name="cmd_annexe1">
+        <comment>nom jasper annexe 1</comment>
+      </column>
+    </property>
+    <property name="cmdAnnexe2" type="string">
+      <column length="50" name="cmd_annexe2">
+        <comment>nom jasper annexe 2</comment>
+      </column>
+    </property>
+    <property name="cmdContrat" type="string">
+      <column length="20" name="cmd_contrat">
+        <comment>code contrat</comment>
+      </column>
+    </property>
+    <property name="cmdIncoterm" type="string">
+      <column length="20" name="cmd_incoterm">
+        <comment>code incoterm</comment>
+      </column>
+    </property>
+    <property name="cmdLieuLivraison" type="string">
+      <column length="100" name="cmd_lieu_livraison">
+        <comment>lieu de livraison</comment>
+      </column>
+    </property>
+    <property name="cmdDateLivraison" type="date">
+      <column name="cmd_date_livraison">
+        <comment>date de livraison</comment>
+      </column>
+    </property>
+    <property name="cmdInfoLivraison" type="string">
+      <column length="100" name="cmd_info_livraison">
+        <comment>info sur la livraison</comment>
+      </column>
+    </property>
+    <property name="cmdDateImp" type="date">
+      <column name="cmd_date_imp">
+        <comment>date impression</comment>
+      </column>
+    </property>
+    <property name="cmdModeleImp" type="string">
+      <column length="50" name="cmd_modele_imp">
+        <comment>nom jasper du modele</comment>
+      </column>
+    </property>
+    <property name="cmdEtatVal" type="integer">
+      <column default="0" length="1" name="cmd_etat_val">
+        <comment>0=sans validation 1=avec validation</comment>
+      </column>
+    </property>
+    <property name="cmdGele" type="integer">
+      <column default="0" length="1" name="cmd_gele">
+        <comment>0=non gele 1=gele</comment>
+      </column>
+    </property>
+    <property index="true" name="cmdEtat" type="integer">
+      <column default="0" index="true" length="1" name="cmd_etat">
+        <comment>0=En cours 1=valide 2=gele 3=annule 4=transforme partiel 5=transforme total</comment>
+      </column>
+    </property>
+    <property name="cmdDateValidite" type="date">
+      <column name="cmd_date_validite">
+        <comment>date de validite</comment>
+      </column>
+    </property>
+    <property name="cmdDateRelance" type="date">
+      <column name="cmd_date_relance">
+        <comment>date de relance</comment>
+      </column>
+    </property>
+    <property name="cmdDateValide" type="date">
+      <column name="cmd_date_valide">
+        <comment>date de validation</comment>
+      </column>
+    </property>
+    <property name="cmdPosSignature" type="integer">
+      <column default="0" length="1" name="cmd_pos_signature">
+        <comment>nb de signature ayant statue</comment>
+      </column>
+    </property>
+    <property name="cmdDateTransforme" type="date">
+      <column name="cmd_date_transforme">
+        <comment>date de transformation</comment>
+      </column>
+    </property>
+    <property name="cmdDateFacture" type="date">
+      <column name="cmd_date_facture">
+        <comment>date de facturation fournisseur</comment>
+      </column>
+    </property>
+    <property name="cmdNumProforma" type="string">
+      <column length="20" name="cmd_num_proforma">
+        <comment>numero de proforma fournisseur</comment>
+      </column>
+    </property>
+    <property name="cmdTypeTransforme" type="integer">
+      <column default="0" name="cmd_type_transforme">
+        <comment>type de transformation</comment>
+      </column>
+    </property>
+    <property name="cmdDateAnnule" type="date">
+      <column name="cmd_date_annule">
+        <comment>date annulation</comment>
+      </column>
+    </property>
+    <property name="cmdMotifAnnule" type="string">
+      <column length="50" name="cmd_motif_annule">
+        <comment>motif annulation</comment>
+      </column>
+    </property>
+    <property name="cmdFactorNom" type="string">
+      <column length="100" name="cmd_factor_nom">
+        <comment>nom du factor</comment>
+      </column>
+    </property>
+    <property name="cmdFactorId" type="long">
+      <column default="0" name="cmd_factor_id">
+        <comment>id du factor</comment>
+      </column>
+    </property>
+    <property name="cmdFactorEtat" type="integer">
+      <column default="0" name="cmd_factor_etat">
+        <comment>0=en cours 1=accepter 2=refuser</comment>
+      </column>
+    </property>
+    <property name="cmdPriorite" type="integer">
+      <column default="0" name="cmd_priorite">
+        <comment>0=basse 1=normal 2=urgent 3=prioritaire</comment>
+      </column>
+    </property>
+    <property name="cmdIntOut" type="integer">
+      <column default="0" name="cmd_in_out">
+        <comment>0=realisation interne 1=realisation externe</comment>
+      </column>
+    </property>
+    <property name="cmdCommentaire" type="string">
+      <column length="200" name="cmd_commentaire">
+        <comment>commentaire sur la production</comment>
+      </column>
+    </property>
+    <property name="cmdProduction" type="string">
+      <column length="20" name="cmd_production">
+        <comment>numero de production</comment>
+      </column>
+    </property>
+    <property name="cmdPreparateur" type="string">
+      <column length="100" name="cmd_preparateur">
+        <comment>preparateur</comment>
+      </column>
+    </property>
+    <property name="cmdDiversTiers" type="integer">
+      <column default="0" name="cmd_divers_tiers">
+        <comment>0=normal 99= divers</comment>
+      </column>
+    </property>
+    <property name="cmdDiversNom" type="string">
+      <column length="100" name="cmd_divers_nom">
+        <comment>nom du tiers divers</comment>
+      </column>
+    </property>
+    <property name="cmdDiversAdresse" type="string">
+      <column length="100" name="cmd_divers_adresse">
+        <comment>adresse du tiers divers</comment>
+      </column>
+    </property>
+    <property name="cmdDiversVille" type="string">
+      <column length="50" name="cmd_divers_ville">
+        <comment>ville du tiers divers</comment>
+      </column>
+    </property>
+    <property name="cmdDiversTel" type="string">
+      <column length="50" name="cmd_divers_tel">
+        <comment>telephone du tiers divers</comment>
+      </column>
+    </property>
+    <property name="cmdDiversMail" type="string">
+      <column length="100" name="cmd_divers_mail">
+        <comment>mail du tiers divers</comment>
+      </column>
+    </property>
+    <property name="cmdTracking" type="string">
+      <column length="30" name="cmd_tracking">
+        <comment>code tracking</comment>
+      </column>
+    </property>
+    <property name="cmdDateDepartUsine" type="date">
+      <column default="null" name="cmd_date_depart_usine">
+        <comment>date depart usine</comment>
+      </column>
+    </property>
+    <property name="cmdDateArriveeTransit" type="date">
+      <column default="null" name="cmd_date_arrivee_transit">
+        <comment>date arrivee transitaire</comment>
+      </column>
+    </property>
+    <property name="cmdDateEmbarquementTheo" type="date">
+      <column default="null" name="cmd_date_embarquement_theo">
+        <comment>date embarquement theorique</comment>
+      </column>
+    </property>
+    <property name="cmdDateEmbarquementReel" type="date">
+      <column default="null" name="cmd_date_embarquement_reel">
+        <comment>date embarquement reel</comment>
+      </column>
+    </property>
+    <property name="cmdDateArriveePortTheo" type="date">
+      <column default="null" name="cmd_date_arrivee_port_theo">
+        <comment>date arrivee port theorique</comment>
+      </column>
+    </property>
+    <property name="cmdDateArriveePortReel" type="date">
+      <column default="null" name="cmd_date_arrivee_port_reel">
+        <comment>date arrivee port reel</comment>
+      </column>
+    </property>
+    <property name="cmdDateLivreDepot" type="date">
+      <column default="null" name="cmd_date_livre_depot">
+        <comment>date livraion dans nos entrepots</comment>
+      </column>
+    </property>
+    <property name="cmdMoyenPaiement" type="string">
+      <column length="30" name="cmd_moyen_paiement">
+        <comment>moyen de paiement</comment>
+      </column>
+    </property>
+    <property name="cmdObsPaiement" type="string">
+      <column length="50" name="cmd_obs_paiement">
+        <comment>observation sur le paiement</comment>
+      </column>
+    </property>
+    <property name="cmdDatePaiement" type="date">
+      <column default="null" name="cmd_date_paiement">
+        <comment>date paiement</comment>
+      </column>
+    </property>
+    <property name="cmdMode" type="integer">
+      <column default="0" name="cmd_mode">
+        <comment>0=maritime 1=avion 2=express 3=route</comment>
+      </column>
+    </property>
+    <property name="cmdProchaineAction" type="text">
+      <column name="cmd_prochaine_action">
+        <comment>prochaine action</comment>
+      </column>
+    </property>
+    <property name="cmdValorisation" type="integer">
+      <column default="0" name="cmd_valorisation">
+        <comment>0=coef 1 1=fret</comment>
+      </column>
+    </property>
+    <property name="cmdReferencefournisseur" type="string">
+      <column length="20" name="cmd_reference_fournisseur">
+        <comment>reference commande fourisseur</comment>
+      </column>
+    </property>
+    <property name="cmdTypeContener" type="string">
+      <column length="20" name="cmd_type_contener">
+        <comment>type de contener</comment>
+      </column>
+    </property>
+    <property name="cmdNbContener" type="integer">
+      <column default="0" name="cmd_nb_contener">
+        <comment>nombre de contener</comment>
+      </column>
+    </property>
+    <property name="cmdDateFdi" type="timestamp">
+      <column default="null" name="cmd_date_fdi">
+        <comment>date demande fiche d importation</comment>
+      </column>
+    </property>
+    <property name="cmdNomTiersFdi" type="string">
+      <column length="100" name="cmd_nom_tiers_fdi">
+        <comment>tiers pour la demande fiche d importation</comment>
+      </column>
+    </property>
+    <property name="cmdNumFacture" type="string">
+      <column length="20" name="cmd_num_facture">
+        <comment>numero facture fournisseur</comment>
+      </column>
+    </property>
+    <property name="cmdEnvoiFdi" type="timestamp">
+      <column default="null" name="cmd_envoi_fdi">
+        <comment>date envoi de la demande fiche d importation au fournisseur</comment>
+      </column>
+    </property>
+    <property name="cmdDateDocOriginaux" type="timestamp">
+      <column default="null" name="cmd_date_doc_originaux">
+        <comment>date de reception des documents originaux</comment>
+      </column>
+    </property>
+    <property name="cmdDateAssurance" type="timestamp">
+      <column default="null" name="cmd_date_assurance">
+        <comment>date de demande d assurance</comment>
+      </column>
+    </property>
+    <property name="cmdDateRfcv" type="timestamp">
+      <column default="null" name="cmd_date_rfcv">
+        <comment>date demande de la conformite des valeurs</comment>
+      </column>
+    </property>
+    <property name="cmdDateDocTransit" type="timestamp">
+      <column default="null" name="cmd_date_doc_transit">
+        <comment>date de remise des doc chez le transitaire</comment>
+      </column>
+    </property>
+    <property name="cmdDateStock" type="timestamp">
+      <column default="null" name="cmd_date_stock">
+        <comment>date de mise en stock</comment>
+      </column>
+    </property>
+    <property name="cmdDateDocCaution" type="timestamp">
+      <column default="null" name="cmd_date_doc_caution">
+        <comment>date de retour des doc pour caution</comment>
+      </column>
+    </property>
+    <property name="cmdModelePr" type="string">
+      <column length="50" name="cmd_modele_pr">
+        <comment>modele de pr</comment>
+      </column>
+    </property>
+    <property name="cmdSource" type="string">
+      <column length="50" name="cmd_source">
+        <comment>source du document</comment>
+      </column>
+    </property>
+    <property name="cmdPhase" type="integer">
+      <column default="0" name="cmd_phase">
+        <comment>0=terrassement 1=fondation 2=gros oeuvre 3=finitions</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ExercicesAchats" column="exeach_id" lazy="false" name="exercicesAchats" not-null="true"/>
+    <many-to-one class="com.epegase.systeme.classe.Tiers" column="tie_id" lazy="false" name="tiers" not-null="true"/>
+    <many-to-one class="com.epegase.systeme.classe.Users" column="usr_id" lazy="false" name="users" not-null="false"/>
+  </class>
+</hibernate-mapping>

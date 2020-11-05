@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="ExercicesAchats" table="ach_exercices_achats">
+    <id column="exeach_id" name="exeachId" type="long" unsaved-value="null">
+      <generator class="assigned"/>
+    </id>
+    <property name="exeachDateCreat" type="timestamp">
+      <column name="exeach_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="exeachDateModif" type="timestamp">
+      <column name="exeach_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="exeachDateCloture" type="timestamp">
+      <column name="exeach_date_cloture">
+        <comment>date de cloture</comment>
+      </column>
+    </property>
+    <property name="exeachUserCreat" type="long">
+      <column default="0" name="exeach_user_creat">
+        <comment>user de creation</comment>
+      </column>
+    </property>
+    <property name="exeachUserCloture" type="long">
+      <column default="0" name="exeach_user_cloture">
+        <comment>user de cloture</comment>
+      </column>
+    </property>
+    <property name="exeachUserModif" type="long">
+      <column default="0" name="exeach_user_modif">
+        <comment>user de modification</comment>
+      </column>
+    </property>
+    <property name="exeachDateDebut" type="date">
+      <column name="exeach_date_debut">
+        <comment>date debut exercice</comment>
+      </column>
+    </property>
+    <property name="exeachDateFin" type="date">
+      <column name="exeach_date_fin">
+        <comment>date fin exercice</comment>
+      </column>
+    </property>
+    <property name="exeachEtat" type="integer">
+      <column default="0" name="exeach_etat">
+        <comment>etat 0=en cours 1=cloture</comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>

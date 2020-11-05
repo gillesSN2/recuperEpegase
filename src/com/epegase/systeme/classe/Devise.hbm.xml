@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="Devise" table="cmm_devise">
+    <id column="dev_id" name="devId" type="integer" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="devCode" type="string">
+      <column length="4" name="dev_code">
+        <comment>code devise</comment>
+      </column>
+    </property>
+    <property name="devLibelle" type="string">
+      <column length="50" name="dev_libelle">
+        <comment>libelle devise</comment>
+      </column>
+    </property>
+    <property name="devFormat" type="string">
+      <column length="10" name="dev_format">
+        <comment>format devise</comment>
+      </column>
+    </property>
+    <property name="devTaux1" type="float">
+      <column default="0" name="dev_taux1">
+        <comment>taux 1</comment>
+      </column>
+    </property>
+    <property name="devTaux2" type="float">
+      <column default="0" name="dev_taux2">
+        <comment>taux 2</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.Structure" column="str_id" lazy="false" name="structure"/>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="TaxesVentes" table="vte_taxes_ventes">
+    <id column="taxvte_id" name="taxvteId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="taxvteDateCreation" type="timestamp">
+      <column name="taxvte_date_creation">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="taxvteDateModif" type="timestamp">
+      <column name="taxvte_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="taxvteUserCreation" type="long">
+      <column default="0" length="15" name="taxvte_user_creation">
+        <comment>user de creation</comment>
+      </column>
+    </property>
+    <property name="taxvteUserModif" type="long">
+      <column default="0" length="15" name="taxvte_user_modif">
+        <comment>user de modification</comment>
+      </column>
+    </property>
+    <property name="taxvteCode" type="string">
+      <column length="20" name="taxvte_code">
+        <comment>code de la taxe</comment>
+      </column>
+    </property>
+    <property name="taxvteLibelleFr" type="string">
+      <column length="100" name="taxvte_libelle_FR">
+        <comment>libelle de la taxe FR</comment>
+      </column>
+    </property>
+    <property name="taxvteLibelleUk" type="string">
+      <column length="100" name="taxvte_libelle_UK">
+        <comment>libelle de la taxe UK</comment>
+      </column>
+    </property>
+    <property name="taxvteLibelleSp" type="string">
+      <column length="100" name="taxvte_libelle_SP">
+        <comment>libelle de la taxe SP</comment>
+      </column>
+    </property>
+    <property name="taxvteTaux" type="float">
+      <column default="0" name="taxvte_taux">
+        <comment>taux de la taxe</comment>
+      </column>
+    </property>
+    <property name="taxvteCompte" type="string">
+      <column length="121" name="taxvte_compte">
+        <comment>numero de compte</comment>
+      </column>
+    </property>
+    <property name="taxvteType" type="integer">
+      <column default="0" length="1" name="taxvte_type">
+        <comment>0=tva sur biens 1=tva sur prestations 2=brs sur prestations</comment>
+      </column>
+    </property>
+    <property name="taxvteTimbre" type="integer">
+      <column default="0" length="1" name="taxvte_timbre">
+        <comment>0=sans timbre 1=timbre paye par le client 2=timbre non paye par le client</comment>
+      </column>
+    </property>
+    <property name="taxvteTc" type="integer">
+      <column default="0" length="1" name="taxvte_tc">
+        <comment>0=sans taxe complementaire 1=CA 2=TE 3=TOM 4=taxe enrefistrement 5=IRPP 6=AIRSI 7=CSS 99=</comment>
+      </column>
+    </property>
+    <property name="taxvteInactif" type="integer">
+      <column default="0" length="1" name="taxvte_inactif">
+        <comment>1=inactif 2=supprimer</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ExercicesVentes" column="exevte_id" lazy="false" name="exerciceventes" not-null="true"/>
+  </class>
+</hibernate-mapping>

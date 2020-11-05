@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceConfig
+               ConnectionTimeout="1000"
+               CacheEnabled="true"
+               CacheUri="ehcache.xml"
+               CacheExpirationDuration="600" ServiceAvailabilityCheck="true"
+               ServiceAvailabilityCheck="true"
+               CacheProviderClass="com.sdl.web.client.cache.GeneralCacheProvider" CacheConnectionTimeout="10000">
+</ServiceConfig>

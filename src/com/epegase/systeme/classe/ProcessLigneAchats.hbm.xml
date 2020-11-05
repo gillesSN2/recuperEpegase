@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="ProcessLigneAchats" table="ach_process_ligne">
+    <id column="proceslig_id" name="procesligId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="procesligType" type="integer">
+      <column default="0" name="proceslig_type">
+        <comment>1=intrant 2=sous produits 3=dechets 4=taches 5=produits generes</comment>
+      </column>
+    </property>
+    <property name="procesligOrdre" type="integer">
+      <column default="0" name="proceslig_ordre">
+        <comment>ordre des lignes</comment>
+      </column>
+    </property>
+    <property name="procesligCode" type="string">
+      <column length="20" name="proceslig_code">
+        <comment>code produit</comment>
+      </column>
+    </property>
+    <property name="procesligLibClient" type="text">
+      <column length="500" name="proceslig_lib_client">
+        <comment>libelle client</comment>
+      </column>
+    </property>
+    <property name="procesligLibTech" type="string">
+      <column length="100" name="proceslig_lib_tech">
+        <comment>libelle technique</comment>
+      </column>
+    </property>
+    <property name="procesligDepot" type="string">
+      <column length="121" name="proceslig_depot">
+        <comment>depot de stockage</comment>
+      </column>
+    </property>
+    <property name="procesligUnite" type="string">
+      <column length="30" name="proceslig_unite">
+        <comment>unite</comment>
+      </column>
+    </property>
+    <property name="procesligQte" type="double">
+      <column default="0" name="proceslig_qte">
+        <comment>quantite reelle</comment>
+      </column>
+    </property>
+    <property name="procesligQteSur" type="double">
+      <column default="0" name="proceslig_qte_sur">
+        <comment>quantite surconsommation</comment>
+      </column>
+    </property>
+    <property name="procesligPrht" type="double">
+      <column default="0" name="proceslig_prht">
+        <comment>cout horaire agent</comment>
+      </column>
+    </property>
+    <property name="procesligPvht" type="double">
+      <column default="0" name="proceslig_pvht">
+        <comment>prix vente horaire agent</comment>
+      </column>
+    </property>
+    <property name="procesligJj" type="integer">
+      <column default="0" length="15" name="proceslig_jj">
+        <comment>nombre de jour</comment>
+      </column>
+    </property>
+    <property name="procesligHh" type="integer">
+      <column default="0" length="15" name="proceslig_hh">
+        <comment>nombre heures</comment>
+      </column>
+    </property>
+    <property name="procesligMm" type="integer">
+      <column default="0" length="15" name="proceslig_mm">
+        <comment>nombre de minutes</comment>
+      </column>
+    </property>
+    <property name="procesligSs" type="integer">
+      <column default="0" length="15" name="proceslig_ss">
+        <comment>nombre de seconde</comment>
+      </column>
+    </property>
+    <property name="procesligMetier" type="text">
+      <column name="proceslig_metier">
+        <comment>type de metier concerne</comment>
+      </column>
+    </property>
+    <property name="procesligMateriel" type="text">
+      <column name="proceslig_materiel">
+        <comment>type de materiel concerne</comment>
+      </column>
+    </property>
+    <property name="procesligInterChange" type="boolean">
+      <column default="false" name="proceslig_inter_change">
+        <comment>flase =non utilisee true = interchangeable</comment>
+      </column>
+    </property>
+    <property name="procesligProduitInterchangeable" type="text">
+      <column name="proceslig_produit_interchangeable">
+        <comment>liste des produits interchangeables</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ProcessEnteteAchats" column="proces_id" lazy="false" name="processEnteteAchats" not-null="true"/>
+  </class>
+</hibernate-mapping>

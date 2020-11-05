@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="Sms" table="cmm_sms">
+    <id column="sms_id" name="smsId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="smsDate" type="timestamp">
+      <column name="sms_date">
+        <comment>date envoi sms</comment>
+      </column>
+    </property>
+    <property name="smsNum" type="string">
+      <column length="20" name="sms_num">
+        <comment>numero campagne sms</comment>
+      </column>
+    </property>
+    <property name="smsTexte" type="string">
+      <column length="160" name="sms_texte">
+        <comment>texte du sms</comment>
+      </column>
+    </property>
+    <property name="smsStatus" type="string">
+      <column length="50" name="sms_status">
+        <comment>status du sms</comment>
+      </column>
+    </property>
+    <property name="smsMobile" type="string">
+      <column length="20" name="sms_mobile">
+        <comment>mobile du contact</comment>
+      </column>
+    </property>
+    <property name="smsNomContact" type="string">
+      <column length="100" name="sms_nom_contact">
+        <comment>nom du contact</comment>
+      </column>
+    </property>
+    <property name="smsCiviliteContact" type="string">
+      <column length="20" name="sms_civilite_contzct">
+        <comment>civilite du contact</comment>
+      </column>
+    </property>
+    <property name="smsIdContact" type="long">
+      <column default="0" length="15" name="sms_id_contact">
+        <comment>id du contact</comment>
+      </column>
+    </property>
+    <property name="smsTypeTiers" type="integer">
+      <column default="0" name="sms_type_tiers">
+        <comment>type du tiers  0=tiers 1=agents 2=salaries 4=patients 5=eleves 90=achats sms 99=sms initial</comment>
+      </column>
+    </property>
+    <property name="smsNomTiers" type="string">
+      <column length="100" name="sms_nom_tiers">
+        <comment>nom du tiers</comment>
+      </column>
+    </property>
+    <property name="smsIdTiers" type="long">
+      <column default="0" length="15" name="sms_id_tiers">
+        <comment>id du tiers</comment>
+      </column>
+    </property>
+    <property name="smsQte" type="integer">
+      <column default="0" name="sms_qte">
+        <comment>qte operation</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.Users" column="usr_id" lazy="false" name="users" not-null="false"/>
+  </class>
+</hibernate-mapping>

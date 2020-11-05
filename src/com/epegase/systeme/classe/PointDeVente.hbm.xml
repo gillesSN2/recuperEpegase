@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="PointDeVente" table="cmm_point_de_vente">
+    <id column="pdv_id" name="pdvId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="pdvDateCreat" type="timestamp">
+      <column name="pdv_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="pdvDateModif" type="timestamp">
+      <column name="pdv_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="pdvUserCreat" type="long">
+      <column default="0" length="15" name="pdv_user_creat">
+        <comment>utilisateur de modification</comment>
+      </column>
+    </property>
+    <property name="pdvUserModif" type="long">
+      <column default="0" length="15" name="pdv_user_modif">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="pdvCode" type="string">
+      <column length="20" name="pdv_code">
+        <comment>code de pdv</comment>
+      </column>
+    </property>
+    <property name="pdvNomFr" type="string">
+      <column length="100" name="pdv_nom_FR">
+        <comment>nom du pdv en FR</comment>
+      </column>
+    </property>
+    <property name="pdvNomUk" type="string">
+      <column length="100" name="pdv_nom_UK">
+        <comment>nom du pdv en UK</comment>
+      </column>
+    </property>
+    <property name="pdvNomSp" type="string">
+      <column length="100" name="pdv_nom_SP">
+        <comment>nom du pdv en SP</comment>
+      </column>
+    </property>
+    <property name="pdvInactif" type="integer">
+      <column default="0" length="1" name="pdv_inactif">
+        <comment>0=actif 1=inactif</comment>
+      </column>
+    </property>
+    <property name="pdvPourcentage" type="float">
+      <column default="0" name="pdv_pourcentage">
+        <comment>% de repartition par rapport au secteur</comment>
+      </column>
+    </property>
+    <property name="pdvIdResponsable" type="long">
+      <column default="0" name="pdv_id_responsable">
+        <comment>id responsable</comment>
+      </column>
+    </property>
+    <property name="pdvNomResponsable" type="string">
+      <column length="100" name="pdv_nom_responsable">
+        <comment>nom responsable</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.Region" column="reg_id" lazy="false" name="region" not-null="true"/>
+    <many-to-one class="com.epegase.systeme.classe.Secteur" column="sec_id" lazy="false" name="secteur" not-null="true"/>
+  </class>
+</hibernate-mapping>

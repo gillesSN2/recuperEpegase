@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="MailsLu" table="cmm_mails_lu">
+    <id column="mailu_id" name="mailuId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="malluDateLecture" type="timestamp">
+      <column name="mallu_date_lecture">
+        <comment>date de lecture</comment>
+      </column>
+    </property>
+    <property name="malluNote" type="string">
+      <column length="50" name="mallu_note">
+        <comment>anotation user</comment>
+      </column>
+    </property>
+    <property name="malluUser" type="string">
+      <column length="100" name="mallu_user">
+        <comment>nom et prenom user</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.Users" column="usr_id" lazy="false" name="users" not-null="true"/>
+    <many-to-one class="com.epegase.systeme.classe.Mails" column="mai_id" lazy="false" name="mails" not-null="true"/>
+  </class>
+</hibernate-mapping>

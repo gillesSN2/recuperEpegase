@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="DocumentTraceVentes" table="vte_document_trace_ventes">
+    <id column="doctra_id" name="doctraId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="doctraDateCreat" type="timestamp">
+      <column name="doctra_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="doctraUserId" type="long">
+      <column default="0" length="15" name="doctra_user_id">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="doctraUserNom" type="string">
+      <column length="100" name="doctra_user_nom">
+        <comment>nom utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="doctraOrgType" type="integer">
+      <column default="0" name="doctra_org_type">
+        <comment>type origine</comment>
+      </column>
+    </property>
+    <property name="doctraOrgNum" type="string">
+      <column length="20" name="doctra_org_num">
+        <comment>numero origine</comment>
+      </column>
+    </property>
+    <property name="doctraOrgDate" type="timestamp">
+      <column name="doctra_org_date">
+        <comment>date origine</comment>
+      </column>
+    </property>
+    <property name="doctraOrgSerie" type="string">
+      <column length="4" name="doctra_org_serie">
+        <comment>serie origine</comment>
+      </column>
+    </property>
+    <property index="true" name="doctraOrgId" type="long">
+      <column default="0" index="true" name="doctra_org_id">
+        <comment>id origine</comment>
+      </column>
+    </property>
+    <property name="doctraDstType" type="integer">
+      <column default="0" name="doctra_dst_type">
+        <comment>type destination</comment>
+      </column>
+    </property>
+    <property name="doctraDstNum" type="string">
+      <column length="20" name="doctra_dst_num">
+        <comment>numero destination</comment>
+      </column>
+    </property>
+    <property name="doctraDstDate" type="timestamp">
+      <column name="doctra_dst_date">
+        <comment>date destination</comment>
+      </column>
+    </property>
+    <property name="doctraDstSerie" type="string">
+      <column length="4" name="doctra_dst_serie">
+        <comment>serie destination</comment>
+      </column>
+    </property>
+    <property index="true" name="doctraDstId" type="long">
+      <column default="0" index="true" name="doctra_dst_id">
+        <comment>id destination</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ExercicesVentes" column="exevte_id" lazy="false" name="exerciceventes" not-null="true"/>
+  </class>
+</hibernate-mapping>

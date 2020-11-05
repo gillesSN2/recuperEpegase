@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="PegTicket" table="peg_ticket">
+    <id column="pegtic_id" name="pegticId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="pegticMode" type="integer">
+      <column default="0" name="pegtic_mode">
+        <comment>0=intervention sur site 1=intervention par web </comment>
+      </column>
+    </property>
+    <property name="pegticType" type="integer">
+      <column default="0" name="pegtic_type">
+        <comment>0=nouvelle fonction 1=modification fonction 2=rapport bug 3=formation</comment>
+      </column>
+    </property>
+    <property name="pegticEtat" type="integer">
+      <column default="0" name="pegtic_etat">
+        <comment>0=ouvert 1=reporter 2=suspendu 3=cloture succes 4=cloture echec</comment>
+      </column>
+    </property>
+    <property name="pegticDate" type="timestamp">
+      <column name="pegtic_date">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="pegticIdStructure" type="long">
+      <column default="0" name="pegtic_id_structure">
+        <comment>id de la structure</comment>
+      </column>
+    </property>
+    <property name="pegticNomStructure" type="string">
+      <column length="200" name="pegtic_nom_structure">
+        <comment>nom de la structure</comment>
+      </column>
+    </property>
+    <property name="pegticIdUser" type="long">
+      <column default="0" name="pegtic_id_user">
+        <comment>id user demandeur</comment>
+      </column>
+    </property>
+    <property name="pegticNomUser" type="string">
+      <column length="100" name="pegtic_nom_user">
+        <comment>nom user demandeur</comment>
+      </column>
+    </property>
+    <property name="pegticMailUser" type="string">
+      <column length="100" name="pegtic_mail_user">
+        <comment>mail user demandeur</comment>
+      </column>
+    </property>
+    <property name="pegticModule" type="string">
+      <column length="50" name="pegtic_module">
+        <comment>module concerne</comment>
+      </column>
+    </property>
+    <property name="pegticSousModule" type="string">
+      <column length="100" name="pegtic_sous_module">
+        <comment>sous module concerne</comment>
+      </column>
+    </property>
+    <property name="pegticEcran" type="string">
+      <column length="100" name="pegtic_ecran">
+        <comment>ecran concerne</comment>
+      </column>
+    </property>
+    <property name="pegticModele" type="string">
+      <column length="100" name="pegtic_modele">
+        <comment>modele concerne</comment>
+      </column>
+    </property>
+    <property name="pegticObject" type="string">
+      <column length="100" name="pegtic_objet">
+        <comment>objet de la demande</comment>
+      </column>
+    </property>
+    <property name="pegticProbleme" type="text">
+      <column name="pegtic_probleme">
+        <comment>descriptif du probleme</comment>
+      </column>
+    </property>
+    <property name="pegticSuggestion" type="text">
+      <column name="pegtic_suggestion">
+        <comment>descriptif de la suggestion</comment>
+      </column>
+    </property>
+    <property name="pegticIdIntervenant" type="long">
+      <column default="0" name="pegtic_id_intervenant">
+        <comment>id intervenant</comment>
+      </column>
+    </property>
+    <property name="pegticNomIntervenant" type="string">
+      <column length="100" name="pegtic_nom_intervenant">
+        <comment>nom intervenant</comment>
+      </column>
+    </property>
+    <property name="pegticMailIntervenant" type="string">
+      <column length="100" name="pegtic_mail_intervenant">
+        <comment>mail intervenant</comment>
+      </column>
+    </property>
+    <property name="pegticDateReponse" type="timestamp">
+      <column name="pegtic_date_reponse">
+        <comment>date de reponse</comment>
+      </column>
+    </property>
+    <property name="pegticReponse" type="text">
+      <column name="pegtic_reponse">
+        <comment>reponse intervenant</comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>

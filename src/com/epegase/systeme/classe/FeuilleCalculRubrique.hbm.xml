@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="FeuilleCalculRubrique" table="pay_feuille_calcul_rubrique">
+    <id column="feurub_id" name="feurub_id" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="feurubActif" type="boolean">
+      <column default="false" name="feurub_actif">
+        <comment>rubrique active</comment>
+      </column>
+    </property>
+    <property name="feurubFeuille" type="string">
+      <column length="20" name="feurub_feuille">
+        <comment>code feuille</comment>
+      </column>
+    </property>
+    <property name="feurubCode" type="string">
+      <column length="6" name="feurub_code">
+        <comment>code rubrique</comment>
+      </column>
+    </property>
+    <property name="feurubColA" type="boolean">
+      <column default="false" name="feurub_colA">
+        <comment>colonne A active</comment>
+      </column>
+    </property>
+    <property name="feurubColB" type="boolean">
+      <column default="false" name="feurub_colB">
+        <comment>colonne B active</comment>
+      </column>
+    </property>
+    <property name="feurubColC" type="boolean">
+      <column default="false" name="feurub_colC">
+        <comment>colonne C active</comment>
+      </column>
+    </property>
+    <property name="feurubColD" type="boolean">
+      <column default="false" name="feurub_colD">
+        <comment>colonne D active</comment>
+      </column>
+    </property>
+    <property name="feurubColE" type="boolean">
+      <column default="false" name="feurub_colE">
+        <comment>colonne E active</comment>
+      </column>
+    </property>
+    <property name="feurubColARaz" type="boolean">
+      <column default="false" name="feurub_colA_raz">
+        <comment>colonne A raz</comment>
+      </column>
+    </property>
+    <property name="feurubColBRaz" type="boolean">
+      <column default="false" name="feurub_colB_raz">
+        <comment>colonne B raz</comment>
+      </column>
+    </property>
+    <property name="feurubColCRaz" type="boolean">
+      <column default="false" name="feurub_colC_raz">
+        <comment>colonne C raz</comment>
+      </column>
+    </property>
+    <property name="feurubColDRaz" type="boolean">
+      <column default="false" name="feurub_colD_raz">
+        <comment>colonne D raz</comment>
+      </column>
+    </property>
+    <property name="feurubColERaz" type="boolean">
+      <column default="false" name="feurub_colE_raz">
+        <comment>colonne E raz</comment>
+      </column>
+    </property>
+    <property name="feurubCompte" type="string">
+      <column length="20" name="feurub_compte">
+        <comment>compte</comment>
+      </column>
+    </property>
+    <property name="feurubVariableA" type="boolean">
+      <column default="false" name="feurub_variableA">
+        <comment>variable salarie colonne A</comment>
+      </column>
+    </property>
+    <property name="feurubVariableB" type="boolean">
+      <column default="false" name="feurub_variableB">
+        <comment>variable salarie colonne B</comment>
+      </column>
+    </property>
+    <property name="feurubVariableC" type="boolean">
+      <column default="false" name="feurub_variableC">
+        <comment>variable salarie colonne C</comment>
+      </column>
+    </property>
+    <property name="feurubVariableD" type="boolean">
+      <column default="false" name="feurub_variableD">
+        <comment>variable salarie colonne D</comment>
+      </column>
+    </property>
+    <property name="feurubVariableE" type="boolean">
+      <column default="false" name="feurub_variableE">
+        <comment>variable salarie colonne E</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.FeuilleCalcul" column="feu_id" lazy="false" name="feuilleCalcul" not-null="true"/>
+    <many-to-one class="com.epegase.systeme.classe.PlanPaye" column="plpId" lazy="false" name="planPaye" not-null="true"/>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="ProductTarif" table="jos_vm_product_price">
+    <id column="product_price_id" name="productPriceId" type="long" unsaved-value="null">
+      <generator class="increment"/>
+    </id>
+    <property name="productPrice" type="double">
+      <column name="product_price">
+        <comment>prix de vente</comment>
+      </column>
+    </property>
+    <property name="productCurrency" type="string">
+      <column name="product_currency">
+        <comment> devise du produit</comment>
+      </column>
+    </property>
+    <property name="productPriceVdate" type="int">
+      <column name="product_price_vdate">
+        <comment>Date de validite</comment>
+      </column>
+    </property>
+    <property name="productPriceEdate" type="int">
+      <column name="product_price_edate">
+        <comment/>
+      </column>
+    </property>
+    <property name="cdate" type="int">
+      <column length="11" name="cdate">
+        <comment/>
+      </column>
+    </property>
+    <property length="11" name="mdate" type="int">
+      <column name="mdate">
+        <comment/>
+      </column>
+    </property>
+    <property name="shopperGroupId" type="long">
+      <column length="20" name="shopper_group_id">
+        <comment/>
+      </column>
+    </property>
+    <property name="priceQuantityStart" type="int">
+      <column default="0" length="11" name="price_quantity_start" not-null="true">
+        <comment/>
+      </column>
+    </property>
+    <property name="priceQuantityEnd" type="int">
+      <column length="1" name="price_quantity_end">
+        <comment/>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.Product" column="product_id" lazy="false" name="product" not-null="true"/>
+  </class>
+</hibernate-mapping>

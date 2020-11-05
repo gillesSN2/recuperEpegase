@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="LocalisationSalarie" table="pay_localisation_salarie">
+    <id column="locsal_id" name="locsalId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="locsalDateCreat" type="timestamp">
+      <column name="locsal_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="locsalDateModif" type="timestamp">
+      <column name="locsal_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="locsalUserCreat" type="long">
+      <column default="0" length="15" name="locsal_user_creat">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="locsalUserModif" type="long">
+      <column default="0" length="15" name="locsal_user_modif">
+        <comment>utilisateur de modification</comment>
+      </column>
+    </property>
+    <property name="locsalNomFr" type="string">
+      <column length="20" name="locsal_nom_FR">
+        <comment>localisation en FR</comment>
+      </column>
+    </property>
+    <property name="locsalNomUk" type="string">
+      <column length="20" name="locsal_nom_UK">
+        <comment>localisation en UK</comment>
+      </column>
+    </property>
+    <property name="locsalNomSp" type="string">
+      <column length="20" name="locsal_nom_SP">
+        <comment>localisation en SP</comment>
+      </column>
+    </property>
+    <property name="locsalInactif" type="integer">
+      <column default="0" length="1" name="locsal_inactif">
+        <comment>0=actif 1=inactif 2=supprimer</comment>
+      </column>
+    </property>
+    <property name="locsalLongitude" type="long">
+      <column default="0" length="1" name="locsal_longitude">
+        <comment>longitude</comment>
+      </column>
+    </property>
+    <property name="locsalLatitude" type="long">
+      <column default="0" length="1" name="locsal_latitude">
+        <comment>latitude</comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="Bal" table="cmm_bal">
+    <id column="bal_id" name="balid" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="baldatecreat" type="timestamp">
+      <column default="NULL" name="bal_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="baldatemodif" type="timestamp">
+      <column default="NULL" name="bal_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="balusercreat" type="long">
+      <column default="0" length="15" name="bal_user_creat">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="balusermodif" type="long">
+      <column default="0" length="15" name="bal_user_modif">
+        <comment>utilisateur de modification</comment>
+      </column>
+    </property>
+    <property name="balnomcompte" type="string">
+      <column length="100" name="bal_nom_compte">
+        <comment>nom du compte</comment>
+      </column>
+    </property>
+    <property name="balinactif" type="integer">
+      <column default="0" length="1" name="bal_inactif">
+        <comment>0=actif 1=inactif</comment>
+      </column>
+    </property>
+    <property name="baladressemail" type="string">
+      <column length="100" name="bal_adresse_mail">
+        <comment>adresse mail</comment>
+      </column>
+    </property>
+    <property name="baladressemailreponse" type="string">
+      <column length="100" name="bal_adresse_mail_reponse">
+        <comment>adresse mail  pour la reponse</comment>
+      </column>
+    </property>
+    <property name="balpw" type="string">
+      <column length="50" name="bal_pw">
+        <comment>mot de passe</comment>
+      </column>
+    </property>
+    <property name="balssl" type="integer">
+      <column default="0" length="1" name="bal_ssl">
+        <comment>0=connexion sans ssl 1=connexion avec ssl</comment>
+      </column>
+    </property>
+    <property name="balpopserveur" type="string">
+      <column length="100" name="bal_pop_serveur">
+        <comment>nom du serveur pop</comment>
+      </column>
+    </property>
+    <property name="balpopport" type="integer">
+      <column default="0" length="11" name="bal_pop_port">
+        <comment>no du port pop</comment>
+      </column>
+    </property>
+    <property name="balpopauthentification" type="integer">
+      <column default="0" length="1" name="bal_pop_authentification">
+        <comment>0=automatique 1=AUTHCRAM-MDS 2=AUTHLOGIN 3=text plain 4=aucune</comment>
+      </column>
+    </property>
+    <property name="balpopexemplaire" type="integer">
+      <column default="0" length="1" name="bal_pop_exemplaire">
+        <comment>0=laisse un exemplaire dans le serveur 1=enleve du serveur</comment>
+      </column>
+    </property>
+    <property name="balimapserveur" type="string">
+      <column length="100" name="bal_iamp_serveur">
+        <comment>nom du serveur iamp</comment>
+      </column>
+    </property>
+    <property name="balimapport" type="integer">
+      <column default="0" length="11" name="bal_imap_port">
+        <comment>no du port imap</comment>
+      </column>
+    </property>
+    <property name="balsmtpserveur" type="string">
+      <column length="100" name="bal_smtp_serveur">
+        <comment>nom du serveur smtp</comment>
+      </column>
+    </property>
+    <property name="balsmtpport" type="integer">
+      <column default="0" length="11" name="bal_smtp_port">
+        <comment>no port smtp</comment>
+      </column>
+    </property>
+    <property name="balsmtauthentification" type="integer">
+      <column default="0" length="11" name="bal_smtp_authentification">
+        <comment>0=sans authentification 1=avec authentification</comment>
+      </column>
+    </property>
+    <property name="balSignature" type="text">
+      <column length="50000" name="bal_signature">
+        <comment>signature</comment>
+      </column>
+    </property>
+    <property name="balUser" type="long">
+      <column default="0" name="bal_user">
+        <comment>id du user</comment>
+      </column>
+    </property>
+    <property name="balGroupe" type="string">
+      <column length="20" name="bal_groupe">
+        <comment>code du groupe</comment>
+      </column>
+    </property>
+    <property name="balStructure" type="long">
+      <column default="0" name="bal_structure">
+        <comment>id structure</comment>
+      </column>
+    </property>
+    <property name="balDefaut" type="boolean">
+      <column default="false" name="bal_defaut">
+        <comment>bal par defaut</comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>

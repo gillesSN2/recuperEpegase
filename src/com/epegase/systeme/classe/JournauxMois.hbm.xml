@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="JournauxMois" table="cpt_journaux_mois">
+    <id column="joumen_id" name="joumenId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="joumenCode" type="string">
+      <column length="6" name="joumen_code">
+        <comment>code journal</comment>
+      </column>
+    </property>
+    <property name="joumenPeriode" type="string">
+      <column length="7" name="joumen_periode">
+        <comment>periode MMAAAA</comment>
+      </column>
+    </property>
+    <property name="joumenUserIdJournal" type="long">
+      <column default="0" length="15" name="joumen_user_id_journal">
+        <comment>user utilisation journal</comment>
+      </column>
+    </property>
+    <property name="joumenOpenJournal" type="integer">
+      <column default="0" length="1" name="joumen_open_journal">
+        <comment>0=journal ferme 1=journal ouvert</comment>
+      </column>
+    </property>
+    <property name="joumenOpenUserJournal" type="string">
+      <column length="100" name="joumen_open_user_journal">
+        <comment>nom utilisateur en cours</comment>
+      </column>
+    </property>
+    <property name="joumenCle1" type="string">
+      <column length="14" name="joumen_cle1">
+        <comment>= concatenation joumen_code : joumen_periode</comment>
+      </column>
+    </property>
+    <property name="joumenEtat" type="integer">
+      <column default="0" length="1" name="joumen_etat">
+        <comment>0=en cours 1=cloture mensuelle 2=cloture annuelle</comment>
+      </column>
+    </property>
+    <property name="joumenSaisie" type="integer">
+      <column default="0" length="1" name="joumen_saisie">
+        <comment>0=sans ecriture 1=ecriture deja saisie</comment>
+      </column>
+    </property>
+    <property name="joumenReleve" type="double">
+      <column default="0" length="20" name="joumen_releve">
+        <comment>solde du releve de la banque</comment>
+      </column>
+    </property>
+    <property name="joumenReleveAnte" type="double">
+      <column default="0" length="20" name="joumen_releve_Ante">
+        <comment>solde du releve de la banque anterieur A-1</comment>
+      </column>
+    </property>
+    <property name="joumenCorrectif" type="double">
+      <column default="0" length="20" name="joumen_correctif">
+        <comment>correctif du controle final impression</comment>
+      </column>
+    </property>
+    <property name="joumenCorrectifEcran" type="double">
+      <column default="0" length="20" name="joumen_correctif_ecran">
+        <comment>correctif du controle final ecran</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ExercicesComptable" column="execpt_id" name="exercicesComptable" not-null="true"/>
+  </class>
+</hibernate-mapping>

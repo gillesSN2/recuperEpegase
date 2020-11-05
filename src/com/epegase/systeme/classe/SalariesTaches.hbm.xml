@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="SalariesTaches" table="pay_salaries_taches">
+    <id column="saltac_id" name="saltacId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="saltacDateCreat" type="timestamp">
+      <column name="saltac_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="saltacDateModif" type="timestamp">
+      <column name="saltac_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="saltacUserCreat" type="long">
+      <column default="0" length="15" name="saltac_user_creat">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="saltacUserModif" type="long">
+      <column default="0" length="15" name="saltac_user_modif">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="saltacMission" type="string">
+      <column length="121" name="saltac_mission">
+        <comment>mission</comment>
+      </column>
+    </property>
+    <property name="saltacCode" type="string">
+      <column length="20" name="saltac_code">
+        <comment>code tache</comment>
+      </column>
+    </property>
+    <property name="saltacLib" type="string">
+      <column length="100" name="saltac_lib">
+        <comment>libelle tache</comment>
+      </column>
+    </property>
+    <property name="saltacInactif" type="integer">
+      <column default="0" length="1" name="saltac_inactif">
+        <comment>0=actif 1=inactif 2=supprimer</comment>
+      </column>
+    </property>
+    <property name="saltacValPr" type="float">
+      <column default="0" length="15" name="saltac_val_pr">
+        <comment>prix de revient de la tache</comment>
+      </column>
+    </property>
+    <property name="saltacValPv" type="float">
+      <column default="0" length="15" name="saltac_val_pv">
+        <comment>prix de vente de la tache</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.Salaries" column="sal_id" lazy="false" name="salaries" not-null="true"/>
+  </class>
+</hibernate-mapping>

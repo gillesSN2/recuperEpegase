@@ -1,0 +1,447 @@
+
+f
+java:S1192ê"ODefine a constant instead of duplicating this literal "BonEntreeCaiss" 4 times.(Íœ¶
+_
+java:S1192Ğ"HDefine a constant instead of duplicating this literal "clients" 5 times.(©º»¬
+f
+java:S1192ù"ODefine a constant instead of duplicating this literal "Plan comptable" 3 times.(şÖ¤Æ
+_
+java:S1192Ğ"HDefine a constant instead of duplicating this literal "caisses" 5 times.(©º»¬
+a
+java:S1192Ğ"JDefine a constant instead of duplicating this literal "structure" 8 times.(©º»¬
+]
+java:S1192Ô"GDefine a constant instead of duplicating this literal "40300" 10 times.(Ó›„
+]
+java:S1192ö"FDefine a constant instead of duplicating this literal "Agent" 3 times.(ãäÔµ
+b
+java:S1192Ğ"KDefine a constant instead of duplicating this literal "impression" 5 times.(©º»¬
+b
+java:S1192ô"LDefine a constant instead of duplicating this literal "Fournisseur" 3 times.(”ê‡2
+a	java:S112Ø"FDefine and throw a dedicated exception instead of using a generic one.(›­‹çşÿÿÿÿ
+a	java:S112Ì"FDefine and throw a dedicated exception instead of using a generic one.(‘œÕÛüÿÿÿÿ
+3
+java:S1643¾"Use a StringBuilder instead.(ğ´ı›
+U
+java:S1155Æ">Use isEmpty() to check whether the collection is empty or not.(ĞÔÌÇ
+U
+java:S1155ì">Use isEmpty() to check whether the collection is empty or not.(‚Ïîö
+U
+java:S1155ê">Use isEmpty() to check whether the collection is empty or not.(ŞŞÙ—
+Z
+java:S1155ˆ">Use isEmpty() to check whether the collection is empty or not.(äôĞıÿÿÿÿ
+Z
+java:S1155">Use isEmpty() to check whether the collection is empty or not.(äôĞıÿÿÿÿ
+Z
+java:S1155³">Use isEmpty() to check whether the collection is empty or not.(äôĞıÿÿÿÿ
+Z
+java:S1155È">Use isEmpty() to check whether the collection is empty or not.(äôĞıÿÿÿÿ
+Z
+java:S1155ö">Use isEmpty() to check whether the collection is empty or not.(õÛ†üÿÿÿÿ
+Z
+java:S1155•">Use isEmpty() to check whether the collection is empty or not.(äôĞıÿÿÿÿ
+Z
+java:S1155·">Use isEmpty() to check whether the collection is empty or not.(®ĞÅ˜üÿÿÿÿ
+U
+java:S1155­	">Use isEmpty() to check whether the collection is empty or not.(È¿ºÆ
+Z
+java:S1155
+">Use isEmpty() to check whether the collection is empty or not.(®ĞÅ˜üÿÿÿÿ
+h
+java:S2259å"LA "NullPointerException" could be thrown; "bonEntreeCaiss" is nullable here.(›È«Íøÿÿÿÿ
+N
+java:S2589À
+"7Remove this expression which always evaluates to "true"(™¸ÉÖ
+N
+java:S2589Œ"7Remove this expression which always evaluates to "true"(Îâ­º
+x
+java:S1488¢"\Immediately return this expression instead of assigning it to the temporary variable "var3".(§Èûüÿÿÿÿ
+x
+java:S1488§"\Immediately return this expression instead of assigning it to the temporary variable "var2".( µÑÚüÿÿÿÿ
+r
+java:S1488Ã"\Immediately return this expression instead of assigning it to the temporary variable "var2".(¨ à0
+x
+java:S1488È"\Immediately return this expression instead of assigning it to the temporary variable "var2".(ÄŒÈ³üÿÿÿÿ
+J
+java:S1121·	".Extract the assignment out of this expression.(ß¿úáıÿÿÿÿ
+D
+java:S1121¼	".Extract the assignment out of this expression.(›ĞŸ
+r
+java:S1450Ä"[Remove the "parapheurDao" field and declare it as a local variable in the relevant methods.(¡‡‹‡
+{
+java:S1450h"`Remove the "var_caisse_privee" field and declare it as a local variable in the relevant methods.(Á¦Èùÿÿÿÿ
+
+java:S1186¤"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(üòù¬øÿÿÿÿ
+j	java:S116Q"URename this field "var_action" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹Áªô
+t	java:S116R"ZRename this field "var_memo_action" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„ë³ıÿÿÿÿ
+j	java:S116\"URename this field "var_nb_max" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã…ÄŸ
+v	java:S116h"\Rename this field "var_caisse_privee" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Á¦Èùÿÿÿÿ
+x	java:S116i"^Rename this field "var_caisse_publique" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñİÿøÿÿÿÿ
+u	java:S116j"[Rename this field "var_liste_groupe" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢ĞèÛüÿÿÿÿ
+o	java:S116m"URename this field "var_compte" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ì£‚Êúÿÿÿÿ
+m	java:S116n"XRename this field "var_nomBanque" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ï„´
+t	java:S116o"ZRename this field "var_nomBanquier" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(îÈœÚûÿÿÿÿ
+v	java:S116p"\Rename this field "var_adresseBanque" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡Öñ¿úÿÿÿÿ
+t	java:S116q"ZRename this field "var_villeBanque" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û’ì–ÿÿÿÿÿ
+u	java:S116r"[Rename this field "var_adresseTiers" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Òı…úÿÿÿÿÿ
+q	java:S116s"WRename this field "var_nomTiers" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æ¦ç…ùÿÿÿÿ
+w	java:S116t"bRename this field "var_fonctionResponsable" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷‘‡”
+p	java:S116u"[Rename this field "var_nom_createur" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§³º²
+y	java:S116‚"cRename this field "var_affiche_beneficiaire" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾Ù«
+s	java:S116ƒ"]Rename this field "var_affiche_banque" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á‰Êé
+x	java:S116„"]Rename this field "var_affiche_valide" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³Ø¯øÿÿÿÿ
+w	java:S116…"\Rename this field "var_modeReglement" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Îåá¦ùÿÿÿÿ
+r	java:S116†"\Rename this field "var_affiche_depot" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óØÛ€
+o	java:S116‡"TRename this field "var_depot" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–÷Ñªşÿÿÿÿ
+s	java:S116"]Rename this field "var_acc_descriptif" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´é±ı
+m	java:S116"RRename this field "var_ajt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨ìÈùÿÿÿÿ
+h	java:S116"RRename this field "var_mod" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŒŞ†ª
+m	java:S116‘"RRename this field "var_sup" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶èÀœúÿÿÿÿ
+h	java:S116’"RRename this field "var_imp" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘ßÇ¤
+n	java:S116™"SRename this field "var_site" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Èã¸¿ûÿÿÿÿ
+p	java:S116š"ZRename this field "var_departement" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜‡êê
+q	java:S116›"VRename this field "var_service" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€¿ŸĞüÿÿÿÿ
+p	java:S116œ"URename this field "var_region" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’êãÔøÿÿÿÿ
+l	java:S116"VRename this field "var_secteur" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰ş”¯
+h	java:S116"RRename this field "var_pdv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³åí’
+r	java:S116Ÿ"WRename this field "var_activite" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§œİùÿÿÿÿ
+l	java:S116 "VRename this field "var_dossier" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬ÛË«
+i	java:S116¡"SRename this field "var_parc" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èÁ´Ö
+h	java:S116¢"RRename this field "var_cle" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„ãˆ‚
+j	java:S116£"URename this field "var_budget" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êË·
+o	java:S116¤"YRename this field "var_imputation" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•…ºü
+m	java:S116©"WRename this field "var_colonne1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§ÇÙÉ
+m	java:S116ª"WRename this field "var_colonne2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’ˆã
+r	java:S116«"WRename this field "var_colonne3" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼”Ÿ‡üÿÿÿÿ
+v	java:S116´"[Rename this field "var_choix_modele" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ü¿®úÿÿÿÿ
+o	java:S116É"YRename this field "var_posteTreso" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦×³°
+G
+java:S1948[",Make "mesOnglets" transient or serializable.(À ÉÔúÿÿÿÿ
+E
+java:S1948_"*Make "lesUsers" transient or serializable.(Ğ–ö¯üÿÿÿÿ
+N
+java:S1948h"3Make "var_caisse_privee" transient or serializable.(Á¦Èùÿÿÿÿ
+P
+java:S1948i"5Make "var_caisse_publique" transient or serializable.(Ñİÿøÿÿÿÿ
+M
+java:S1948j"2Make "var_liste_groupe" transient or serializable.(¢ĞèÛüÿÿÿÿ
+N
+java:S1948k"9Make "mesCaissesRecettesItems" transient or serializable.(Å’Ñ"
+A
+java:S1948w"+Make "extDTable" transient or serializable.(ÂËãå
+I
+java:S1948y"3Make "lesBonEntreeCaiss" transient or serializable.(ä¤‚¡
+B
+java:S1948}"-Make "listCaisses" transient or serializable.(ä¨V
+M
+java:S1948~"7Make "listCaissesAutorisees" transient or serializable.(ÑÅíù
+E
+java:S1948".Make "mesTypeTiers" transient or serializable.(Õã‘Ü
+N
+java:S1948•"2Make "mesSecteursItems" transient or serializable.(¸¿°øùÿÿÿÿ
+I
+java:S1948–"-Make "mesPdvItems" transient or serializable.(¶³ı¯øÿÿÿÿ
+L
+java:S1948—"6Make "mesDepartementsItems" transient or serializable.(òšÓ|
+I
+java:S1948˜"2Make "mesServicesItems" transient or serializable.(›úù¤
+H
+java:S1948¦"1Make "laColonne1Items" transient or serializable.(õè×
+G
+java:S1948§"1Make "laColonne2Items" transient or serializable.(—ÓÌ
+M
+java:S1948¨"1Make "laColonne3Items" transient or serializable.(àòçíøÿÿÿÿ
+T
+java:S1948­"8Make "lesDecoupagesActivites" transient or serializable.(ãºñàıÿÿÿÿ
+H
+java:S1948¹"1Make "mesModesleRecus" transient or serializable.(Œ²š©
+R
+java:S1948È"6Make "lesPostesBudgetaires" transient or serializable.(Ü˜Ü‹ÿÿÿÿÿ
+i	java:S100Ë"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚Àıÿÿÿÿ
+i
+java:S3776Õ"RRefactor this method to reduce its Cognitive Complexity from 74 to the 15 allowed.(‹µØ
+‚
+java:S1130Õ"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(‹µØ
+d
+java:S1871ä"MThis branch's code block is the same as the block for the branch on line 340.(¸¹¶”
+c
+java:S1871Ö"MThis branch's code block is the same as the block for the branch on line 340.(Œƒ’)
+d
+java:S1871Ü"MThis branch's code block is the same as the block for the branch on line 340.(Œê³Ä
+d
+java:S1871Ş"MThis branch's code block is the same as the block for the branch on line 340.(­Ùó«
+i
+java:S1871Ú"MThis branch's code block is the same as the block for the branch on line 340.(Í•†Šüÿÿÿÿ
+d
+java:S1871æ"MThis branch's code block is the same as the block for the branch on line 340.(¾ôæ
+d
+java:S1871â"MThis branch's code block is the same as the block for the branch on line 340.(óÈÑõ
+i
+java:S1871à"MThis branch's code block is the same as the block for the branch on line 340.(£Šãİûÿÿÿÿ
+d
+java:S1871Ø"MThis branch's code block is the same as the block for the branch on line 340.(é²¨œ
+‡
+java:S1130€"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(³çïÿÿÿÿÿ
+h
+java:S3776§"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(ğšl
+‡
+java:S1130ü"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(²çÜşÿÿÿÿ
+‚
+java:S1130’"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(İÛàö
+‚
+java:S1130§"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(†ØÚõ
+‡
+java:S1130½"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(ò¨ñİùÿÿÿÿ
+i
+java:S3776Ò"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(Ÿ„‚
+‚
+java:S1130Ò"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(Ÿ„‚
+K
+java:S1874Ö"/Remove this use of "getDate"; it is deprecated.(§¸Ö¸ùÿÿÿÿ
+F
+java:S1874×"/Remove this use of "getDate"; it is deprecated.(ş‹Àá
+F
+java:S1874Ù"/Remove this use of "getDate"; it is deprecated.(Ê†á­
+G
+java:S1874İ"0Remove this use of "getMonth"; it is deprecated.(Ìô§
+G
+java:S1874Ş"0Remove this use of "getMonth"; it is deprecated.(şÿ¬œ
+L
+java:S1874à"0Remove this use of "getMonth"; it is deprecated.(Ù•®àıÿÿÿÿ
+F
+java:S1874ã"/Remove this use of "getYear"; it is deprecated.(¾æ³Ì
+F
+java:S1874æ"/Remove this use of "getDate"; it is deprecated.(ÜÌ‰Ù
+K
+java:S1874ç"/Remove this use of "getDate"; it is deprecated.(Œ¾°ßùÿÿÿÿ
+K
+java:S1874é"/Remove this use of "getDate"; it is deprecated.(‰¿´ıÿÿÿÿ
+G
+java:S1874í"0Remove this use of "getMonth"; it is deprecated.(¶¾äÔ
+L
+java:S1874î"0Remove this use of "getMonth"; it is deprecated.(ã©÷Ùıÿÿÿÿ
+L
+java:S1874ğ"0Remove this use of "getMonth"; it is deprecated.(¢Òã«ıÿÿÿÿ
+K
+java:S1874ó"/Remove this use of "getYear"; it is deprecated.( »ºûÿÿÿÿ
+n
+java:S3776ˆ"RRefactor this method to reduce its Cognitive Complexity from 42 to the 15 allowed.(ÅÇ‰ıÿÿÿÿ
+‡
+java:S1130ˆ"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(ÅÇ‰ıÿÿÿÿ
+D	java:S108À")Either remove or fill this block of code.(µÉ„ãøÿÿÿÿ
+‚
+java:S1130Ñ"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(Âùò‚
+‚
+java:S1130Ü"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(Ï¦¥æ
+n
+java:S3776ÿ"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(Šè¬€üÿÿÿÿ
+‡
+java:S1130è"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(ß Üúÿÿÿÿ
+‡
+java:S1130Š"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(¶ñËèúÿÿÿÿ
+‡
+java:S1130¬"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(é˜°ùÿÿÿÿ
+‚
+java:S1130Á"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(‘ÜÀŒ
+n
+java:S3776Ø"RRefactor this method to reduce its Cognitive Complexity from 55 to the 15 allowed.(›­‹çşÿÿÿÿ
+—
+java:S1130Ø"{Remove the declaration of thrown exception 'org.hibernate.HibernateException' which is a subclass of 'java.lang.Exception'.(›­‹çşÿÿÿÿ
+“
+java:S1130Ø"wRemove the declaration of thrown exception 'javax.naming.NamingException' which is a subclass of 'java.lang.Exception'.(›­‹çşÿÿÿÿ
+‡
+java:S1130ö"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(ê²£ùÿÿÿÿ
+n
+java:S3776 	"RRefactor this method to reduce its Cognitive Complexity from 57 to the 15 allowed.(‚ûúüûÿÿÿÿ
+‡
+java:S1130·
+"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(–ÛÍ“ûÿÿÿÿ
+‚
+java:S1130Æ
+"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(ä›êò
+n
+java:S3776Ë
+"RRefactor this method to reduce its Cognitive Complexity from 34 to the 15 allowed.(ª£Àóÿÿÿÿÿ
+‡
+java:S1130Ë
+"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(ª£Àóÿÿÿÿÿ
+e
+java:S1871ì
+"NThis branch's code block is the same as the block for the branch on line 1371.(µÓˆ„
+j
+java:S1871å
+"NThis branch's code block is the same as the block for the branch on line 1371.(ØŸïŸıÿÿÿÿ
+e
+java:S1871Ô
+"NThis branch's code block is the same as the block for the branch on line 1357.( ’Â›
+‡
+java:S1130ƒ"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(÷†²‚şÿÿÿÿ
+‡
+java:S1130’"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(„ÄÇøÿÿÿÿ
+d	java:S100Ñ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Â…´“
+‚
+java:S1130Ú"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(áâÉì
+‡
+java:S1130è"pRemove the declaration of thrown exception 'java.sql.SQLException' which is a subclass of 'java.lang.Exception'.(å¡Î›
+š
+java:S1130è"‚Remove the declaration of thrown exception 'net.sf.jasperreports.engine.JRException' which is a subclass of 'java.lang.Exception'.(å¡Î›
+…
+java:S1130è"nRemove the declaration of thrown exception 'java.io.IOException' which is a subclass of 'java.lang.Exception'.(å¡Î›
+
+java:S1130è"yRemove the declaration of thrown exception 'java.net.MalformedURLException' which is a subclass of 'java.io.IOException'.(å¡Î›
+‡
+java:S1130í"pRemove the declaration of thrown exception 'java.sql.SQLException' which is a subclass of 'java.lang.Exception'.(­ºç
+š
+java:S1130í"‚Remove the declaration of thrown exception 'net.sf.jasperreports.engine.JRException' which is a subclass of 'java.lang.Exception'.(­ºç
+…
+java:S1130í"nRemove the declaration of thrown exception 'java.io.IOException' which is a subclass of 'java.lang.Exception'.(­ºç
+
+java:S1130í"yRemove the declaration of thrown exception 'java.net.MalformedURLException' which is a subclass of 'java.io.IOException'.(­ºç
+Œ
+java:S1130ò"pRemove the declaration of thrown exception 'java.sql.SQLException' which is a subclass of 'java.lang.Exception'.(®Ò€—úÿÿÿÿ
+Ÿ
+java:S1130ò"‚Remove the declaration of thrown exception 'net.sf.jasperreports.engine.JRException' which is a subclass of 'java.lang.Exception'.(®Ò€—úÿÿÿÿ
+Š
+java:S1130ò"nRemove the declaration of thrown exception 'java.io.IOException' which is a subclass of 'java.lang.Exception'.(®Ò€—úÿÿÿÿ
+•
+java:S1130ò"yRemove the declaration of thrown exception 'java.net.MalformedURLException' which is a subclass of 'java.io.IOException'.(®Ò€—úÿÿÿÿ
+Œ
+java:S1130÷"pRemove the declaration of thrown exception 'java.sql.SQLException' which is a subclass of 'java.lang.Exception'.(şÓ¹›ÿÿÿÿÿ
+Ÿ
+java:S1130÷"‚Remove the declaration of thrown exception 'net.sf.jasperreports.engine.JRException' which is a subclass of 'java.lang.Exception'.(şÓ¹›ÿÿÿÿÿ
+Š
+java:S1130÷"nRemove the declaration of thrown exception 'java.io.IOException' which is a subclass of 'java.lang.Exception'.(şÓ¹›ÿÿÿÿÿ
+•
+java:S1130÷"yRemove the declaration of thrown exception 'java.net.MalformedURLException' which is a subclass of 'java.io.IOException'.(şÓ¹›ÿÿÿÿÿ
+‡
+java:S1130ü"pRemove the declaration of thrown exception 'java.sql.SQLException' which is a subclass of 'java.lang.Exception'.(Ö™Øè
+š
+java:S1130ü"‚Remove the declaration of thrown exception 'net.sf.jasperreports.engine.JRException' which is a subclass of 'java.lang.Exception'.(Ö™Øè
+…
+java:S1130ü"nRemove the declaration of thrown exception 'java.io.IOException' which is a subclass of 'java.lang.Exception'.(Ö™Øè
+
+java:S1130ü"yRemove the declaration of thrown exception 'java.net.MalformedURLException' which is a subclass of 'java.io.IOException'.(Ö™Øè
+Œ
+java:S1130"pRemove the declaration of thrown exception 'java.sql.SQLException' which is a subclass of 'java.lang.Exception'.(®®»ÿÿÿÿÿ
+Ÿ
+java:S1130"‚Remove the declaration of thrown exception 'net.sf.jasperreports.engine.JRException' which is a subclass of 'java.lang.Exception'.(®®»ÿÿÿÿÿ
+Š
+java:S1130"nRemove the declaration of thrown exception 'java.io.IOException' which is a subclass of 'java.lang.Exception'.(®®»ÿÿÿÿÿ
+•
+java:S1130"yRemove the declaration of thrown exception 'java.net.MalformedURLException' which is a subclass of 'java.io.IOException'.(®®»ÿÿÿÿÿ
+Œ
+java:S1130†"pRemove the declaration of thrown exception 'java.sql.SQLException' which is a subclass of 'java.lang.Exception'.(µÒı‚şÿÿÿÿ
+Ÿ
+java:S1130†"‚Remove the declaration of thrown exception 'net.sf.jasperreports.engine.JRException' which is a subclass of 'java.lang.Exception'.(µÒı‚şÿÿÿÿ
+Š
+java:S1130†"nRemove the declaration of thrown exception 'java.io.IOException' which is a subclass of 'java.lang.Exception'.(µÒı‚şÿÿÿÿ
+•
+java:S1130†"yRemove the declaration of thrown exception 'java.net.MalformedURLException' which is a subclass of 'java.io.IOException'.(µÒı‚şÿÿÿÿ
+†
+java:S1130‹"pRemove the declaration of thrown exception 'java.sql.SQLException' which is a subclass of 'java.lang.Exception'.(­šöj
+™
+java:S1130‹"‚Remove the declaration of thrown exception 'net.sf.jasperreports.engine.JRException' which is a subclass of 'java.lang.Exception'.(­šöj
+„
+java:S1130‹"nRemove the declaration of thrown exception 'java.io.IOException' which is a subclass of 'java.lang.Exception'.(­šöj
+
+java:S1130‹"yRemove the declaration of thrown exception 'java.net.MalformedURLException' which is a subclass of 'java.io.IOException'.(­šöj
+‡
+java:S1130"pRemove the declaration of thrown exception 'java.sql.SQLException' which is a subclass of 'java.lang.Exception'.(úŸÿ
+š
+java:S1130"‚Remove the declaration of thrown exception 'net.sf.jasperreports.engine.JRException' which is a subclass of 'java.lang.Exception'.(úŸÿ
+…
+java:S1130"nRemove the declaration of thrown exception 'java.io.IOException' which is a subclass of 'java.lang.Exception'.(úŸÿ
+
+java:S1130"yRemove the declaration of thrown exception 'java.net.MalformedURLException' which is a subclass of 'java.io.IOException'.(úŸÿ
+d	java:S100˜"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ìéèò
+G
+java:S1172¡"+Remove this unused method parameter "var1".(ˆ×“£ıÿÿÿÿ
+G
+java:S1172¦"+Remove this unused method parameter "var1".(şôÈòúÿÿÿÿ
+‡
+java:S1130«"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(Öªƒğøÿÿÿÿ
+‘
+java:S1130«"uRemove the declaration of thrown exception 'javax.naming.NamingException', as it cannot be thrown from method's body.(Öªƒğøÿÿÿÿ
+G
+java:S1172Ç"+Remove this unused method parameter "var1".(Œ…úÿÿÿÿ
+‡
+java:S1130Ç"kRemove the declaration of thrown exception 'org.hibernate.HibernateException' which is a runtime exception.(Œ…úÿÿÿÿ
+‘
+java:S1130Ç"uRemove the declaration of thrown exception 'javax.naming.NamingException', as it cannot be thrown from method's body.(Œ…úÿÿÿÿ
+n
+java:S3776Ì"RRefactor this method to reduce its Cognitive Complexity from 51 to the 15 allowed.(‘œÕÛüÿÿÿÿ
+Œ
+java:S1130Ì"pRemove the declaration of thrown exception 'java.sql.SQLException' which is a subclass of 'java.lang.Exception'.(‘œÕÛüÿÿÿÿ
+Ÿ
+java:S1130Ì"‚Remove the declaration of thrown exception 'net.sf.jasperreports.engine.JRException' which is a subclass of 'java.lang.Exception'.(‘œÕÛüÿÿÿÿ
+Š
+java:S1130Ì"nRemove the declaration of thrown exception 'java.io.IOException' which is a subclass of 'java.lang.Exception'.(‘œÕÛüÿÿÿÿ
+—
+java:S1130Ì"{Remove the declaration of thrown exception 'java.lang.ClassNotFoundException' which is a subclass of 'java.lang.Exception'.(‘œÕÛüÿÿÿÿ
+d	java:S100ı"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãç÷ƒ
+i	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïÚšçüÿÿÿÿ
+c	java:S100…"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶ııD
+i	java:S100‰"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üº–Áøÿÿÿÿ
+d	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ß½õ
+i	java:S100‘"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñ¸…úÿÿÿÿ
+i	java:S100•"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æÒ½èüÿÿÿÿ
+i	java:S100™"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ç½Šûùÿÿÿÿ
+i	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šçİ¶úÿÿÿÿ
+i	java:S100¡"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ò´êøÿÿÿÿ
+i	java:S100µ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´Á€ıÿÿÿÿ
+c	java:S100¹"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëã”
+i	java:S100ı"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™é¢ùÿÿÿÿ
+d	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÓÆŠÓ
+d	java:S100…"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä›Ó¨
+d	java:S100‰"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­Üò
+d	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŞÑüÒ
+d	java:S100‘"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–ÚÚà
+i	java:S100Õ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÜÄ…ìüÿÿÿÿ
+i	java:S100Ù"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±ğÔ´ùÿÿÿÿ
+d	java:S100å"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰°§
+i	java:S100é"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É¼¹²ùÿÿÿÿ
+i	java:S100í"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å£­»üÿÿÿÿ
+d	java:S100ñ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(â¸šß
+d	java:S100…"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óİÍ 
+c	java:S100‰"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ì–Ì
+d	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹¾‰
+d	java:S100¡"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Õıò­
+d	java:S100Í"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áßÍ
+d	java:S100Ñ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆÒ
+d	java:S100Õ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»ÖÀÇ
+d	java:S100Ù"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶ª²
+i	java:S100İ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íÀÓ¢úÿÿÿÿ
+i	java:S100á"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ü¯Ó’úÿÿÿÿ
+i	java:S100å"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òÌ—¾ÿÿÿÿÿ
+c	java:S100é"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿·Ñ
+i	java:S100í"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬ä×„úÿÿÿÿ
+i	java:S100ñ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­Üáÿÿÿÿÿ
+i	java:S100õ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø‰¨µÿÿÿÿÿ
+i	java:S100ù"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÖµÓîùÿÿÿÿ
+d	java:S100ı"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àËì
+i	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôıØìûÿÿÿÿ
+i	java:S100…"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(À¸òûÿÿÿÿ
+d	java:S100‰"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æ‘ÂÓ
+d	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£¹²ÿ
+i	java:S100‘"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—ÒûÕÿÿÿÿÿ
+i	java:S100•"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•ß®îüÿÿÿÿ
+d	java:S100™"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Á¬à
+d	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾İÛ¢
+i	java:S100‘"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«±ùŠşÿÿÿÿ
+d	java:S100•"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£Îè•
+c	java:S100™"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦Îú#
+i	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒû§Áùÿÿÿÿ
+d	java:S100¡"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ïïğ
+i	java:S100Õ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Å‘±Ÿûÿÿÿÿ
+d	java:S100Ù"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©óå»
+i	java:S100¥"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ı±Ëùùÿÿÿÿ
+d	java:S100©"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å
+i	java:S100µ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Í±ÜÒûÿÿÿÿ
+d	java:S100¹"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÑÍú¯
+E
+java:S1481Û")Remove this unused "var5" local variable.(ç¼­ëıÿÿÿÿ
+A
+java:S1068±"+Remove this unused "requete" private field.(œÖğK
+F
+java:S1068²"*Remove this unused "filtre" private field.(™³—×üÿÿÿÿ
+G
+java:S1068Ä"0Remove this unused "parapheurDao" private field.(¡‡‹‡

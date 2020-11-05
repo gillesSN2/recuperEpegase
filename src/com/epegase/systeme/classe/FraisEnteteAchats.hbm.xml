@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="FraisEnteteAchats" table="ach_frais_entete">
+    <id column="fsf_id" name="fsfId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="fsfDateCreat" type="timestamp">
+      <column name="fsf_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="fsfDateModif" type="timestamp">
+      <column name="fsf_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="fsfIdCreateur" type="long">
+      <column default="0" length="15" name="fsf_id_createur">
+        <comment>id user createur</comment>
+      </column>
+    </property>
+    <property name="fsfNomCreateur" type="string">
+      <column length="50" name="fsf_nom_createur">
+        <comment>nom du createur</comment>
+      </column>
+    </property>
+    <property name="fsfIdModif" type="long">
+      <column default="0" length="15" name="fsf_id_modif">
+        <comment>id user de modification</comment>
+      </column>
+    </property>
+    <property name="fsfNomModif" type="string">
+      <column length="50" name="fsf_nom_modif">
+        <comment>nom user de modification</comment>
+      </column>
+    </property>
+    <property index="true" name="fsfDate" type="timestamp">
+      <column index="true" name="fsf_date">
+        <comment>date du reception</comment>
+      </column>
+    </property>
+    <property index="true" name="fsfNum" type="string">
+      <column index="true" length="20" name="fsf_num">
+        <comment>numero frais</comment>
+      </column>
+    </property>
+    <property index="true" name="fsfValo" type="string">
+      <column index="true" length="20" name="fsf_valo">
+        <comment>numero valorisation</comment>
+      </column>
+    </property>
+    <property name="fsfTypeValo" type="integer">
+      <column default="0" name="fsf_type_valo">
+        <comment>0=non utilise 1=utilise sur achat 2=utilise sur reexpedition</comment>
+      </column>
+    </property>
+    <property name="fsfNomResponsable" type="string">
+      <column length="50" name="fsf_nom_responsable">
+        <comment>nom du commercial</comment>
+      </column>
+    </property>
+    <property name="fsfIdResponsable" type="long">
+      <column default="0" name="fsf_id_responsable">
+        <comment>id du commercial</comment>
+      </column>
+    </property>
+    <property name="fsfNomTiers" type="string">
+      <column length="100" name="fsf_nom_tiers">
+        <comment>nom du fournisseur</comment>
+      </column>
+    </property>
+    <property name="fsfCivilTiers" type="string">
+      <column length="20" name="fsf_civil_tiers">
+        <comment>civilite du tiers</comment>
+      </column>
+    </property>
+    <property name="fsfIdContact" type="long">
+      <column default="0" name="fsf_id_contact">
+        <comment>id du contact</comment>
+      </column>
+    </property>
+    <property name="fsfNomContact" type="string">
+      <column length="50" name="fsf_nom_contact">
+        <comment>nom du contact </comment>
+      </column>
+    </property>
+    <property name="fsfCivilContact" type="string">
+      <column length="20" name="fsf_civil_contact">
+        <comment>civilite du contact</comment>
+      </column>
+    </property>
+    <property name="fsfSerie" type="string">
+      <column length="4" name="fsf_serie">
+        <comment>serie </comment>
+      </column>
+    </property>
+    <property name="fsfExoTva" type="integer">
+      <column default="0" length="1" name="fsf_exo_tva">
+        <comment>0=avec Tva 1=sans Tva </comment>
+      </column>
+    </property>
+    <property name="fsfExoDouane" type="integer">
+      <column default="0" length="1" name="fsf_exo_douane">
+        <comment>0=avec Douane 1=sans Douane </comment>
+      </column>
+    </property>
+    <property index="true" name="fsfCat" type="string">
+      <column index="true" length="50" name="fsf_cat">
+        <comment>categorie du fournisseur</comment>
+      </column>
+    </property>
+    <property name="fsfDevise" type="string">
+      <column length="3" name="fsf_devise">
+        <comment>code devise</comment>
+      </column>
+    </property>
+    <property name="fsfCoefDevise" type="float">
+      <column default="0" name="fsf_coef_devise">
+        <comment>coef devise</comment>
+      </column>
+    </property>
+    <property name="fsfObject" type="string">
+      <column length="200" name="fsf_object">
+        <comment>objet date de facture</comment>
+      </column>
+    </property>
+    <property name="fsfDateFacture" type="date">
+      <column name="fsf_date_fature">
+        <comment>date de facture</comment>
+      </column>
+    </property>
+    <property name="fsfObservation" type="string">
+      <column length="100" name="fsf_observation">
+        <comment>observation</comment>
+      </column>
+    </property>
+    <property name="fsfBudget" type="string">
+      <column length="121" name="fsf_budget">
+        <comment>code budget</comment>
+      </column>
+    </property>
+    <property name="fsfBudgetDispo" type="double">
+      <column default="0" name="fsf_budget_dispo">
+        <comment>montant disponible sur budget</comment>
+      </column>
+    </property>
+    <property name="fsfBudgetTreso" type="double">
+      <column default="0" name="fsf_budget_treso">
+        <comment>montant disponible sur treso</comment>
+      </column>
+    </property>
+    <property name="fsfBudgetDispoMois" type="double">
+      <column default="0" name="fsf_budget_dispo_mois">
+        <comment>budget mensuel dispo</comment>
+      </column>
+    </property>
+    <property name="fsfBudgetTresoMois" type="double">
+      <column default="0" name="fsf_budget_treso_mois">
+        <comment>budget mensuel treso</comment>
+      </column>
+    </property>
+    <property name="fsfTotHt" type="double">
+      <column default="0" name="fsf_tot_ht">
+        <comment>total ht</comment>
+      </column>
+    </property>
+    <property name="fsfTotRemise" type="double">
+      <column default="0" name="fsf_tot_remise">
+        <comment>total remise</comment>
+      </column>
+    </property>
+    <property name="fsfTotRabais" type="double">
+      <column default="0" name="fsf_tot_rabais">
+        <comment>total rabais</comment>
+      </column>
+    </property>
+    <property name="fsfTotTva" type="double">
+      <column default="0" name="fsf_tot_tva">
+        <comment>total tva</comment>
+      </column>
+    </property>
+    <property name="fsfTotTvaDouane" type="double">
+      <column default="0" name="fsf_tot_tva_douane">
+        <comment>total tva douane</comment>
+      </column>
+    </property>
+    <property name="fsfTotTc" type="double">
+      <column default="0" name="fsf_tot_tc">
+        <comment>total taxe complementaire</comment>
+      </column>
+    </property>
+    <property name="fsfTotTtc" type="double">
+      <column default="0" name="fsf_tot_ttc">
+        <comment>total ttc</comment>
+      </column>
+    </property>
+    <property name="fsfTotReglement" type="double">
+      <column default="0" name="fsf_tot_reglement">
+        <comment>total reglement</comment>
+      </column>
+    </property>
+    <property name="fsfTotTimbre" type="double">
+      <column default="0" name="fsf_tot_timbre">
+        <comment>total timbre</comment>
+      </column>
+    </property>
+    <property name="fsfSolde" type="integer">
+      <column default="0" length="1" name="fsf_solde">
+        <comment>0=non solde 1=solde</comment>
+      </column>
+    </property>
+    <property name="fsfBanque" type="string">
+      <column length="100" name="fsf_banque">
+        <comment>nom de la banque  + numero de compte</comment>
+      </column>
+    </property>
+    <property index="true" name="fsfTypeReg" type="integer">
+      <column default="0" index="true" name="fsf_type_reg">
+        <comment>0=paiement comptant 1=terme date de facture 2=terme fin de mois 3=arrivee/payee 4=bon encaissement</comment>
+      </column>
+    </property>
+    <property name="fsfModeReg" type="string">
+      <column length="50" name="fsf_mode_reg">
+        <comment>mode de reglement xml</comment>
+      </column>
+    </property>
+    <property name="fsfNbJourReg" type="integer">
+      <column default="0" length="3" name="fsf_nb_jour_reg">
+        <comment>nombre de jour </comment>
+      </column>
+    </property>
+    <property name="fsfArrondiReg" type="integer">
+      <column default="0" length="3" name="fsf_arrondi_reg">
+        <comment>nombre de jour arrondi</comment>
+      </column>
+    </property>
+    <property name="fsfConditionReg" type="string">
+      <column length="50" name="fsf_condition_reg">
+        <comment>condition de reglement</comment>
+      </column>
+    </property>
+    <property name="fsfDateEcheReg" type="date">
+      <column name="fsf_date_eche_reg">
+        <comment>date echeance de reglement</comment>
+      </column>
+    </property>
+    <property name="fsfJournalReg" type="string">
+      <column length="20" name="fsf_journal_reg">
+        <comment>code journal des reglements</comment>
+      </column>
+    </property>
+    <property name="fsfDateLastReg" type="date">
+      <column name="fsf_date_last_reg">
+        <comment>date dernier reglement</comment>
+      </column>
+    </property>
+    <property name="fsfActivite" type="text">
+      <column name="fsf_activite">
+        <comment>code activite</comment>
+      </column>
+    </property>
+    <property name="fsfSite" type="string">
+      <column length="121" name="fsf_site">
+        <comment>code site</comment>
+      </column>
+    </property>
+    <property name="fsfDepartement" type="string">
+      <column length="121" name="fsf_departement">
+        <comment>code departement</comment>
+      </column>
+    </property>
+    <property name="fsfService" type="string">
+      <column length="121" name="fsf_service">
+        <comment>code service</comment>
+      </column>
+    </property>
+    <property name="fsfRegion" type="string">
+      <column length="121" name="fsf_region">
+        <comment>code region</comment>
+      </column>
+    </property>
+    <property name="fsfSecteur" type="string">
+      <column length="121" name="fsf_secteur">
+        <comment>code secteur</comment>
+      </column>
+    </property>
+    <property name="fsfPdv" type="string">
+      <column length="121" name="fsf_pdv">
+        <comment>code point de vente</comment>
+      </column>
+    </property>
+    <property name="fsfAnal2" type="string">
+      <column length="121" name="fsf_anal2">
+        <comment>code analytique 2</comment>
+      </column>
+    </property>
+    <property name="fsfAffaire" type="string">
+      <column length="20" name="fsf_affaire">
+        <comment>code affaire</comment>
+      </column>
+    </property>
+    <property name="fsfAnal4" type="string">
+      <column length="20" name="fsf_anal4">
+        <comment>code analytique 4</comment>
+      </column>
+    </property>
+    <property name="fsfInfo1" type="string">
+      <column length="100" name="fsf_info1">
+        <comment>info 1</comment>
+      </column>
+    </property>
+    <property name="fsfInfo2" type="string">
+      <column length="100" name="fsf_info2">
+        <comment>info 2</comment>
+      </column>
+    </property>
+    <property name="fsfInfo3" type="string">
+      <column length="100" name="fsf_info3">
+        <comment>info 3</comment>
+      </column>
+    </property>
+    <property name="fsfInfo4" type="string">
+      <column length="100" name="fsf_info4">
+        <comment>info 4</comment>
+      </column>
+    </property>
+    <property name="fsfInfo5" type="string">
+      <column length="100" name="fsf_info5">
+        <comment>info 5</comment>
+      </column>
+    </property>
+    <property name="fsfInfo6" type="string">
+      <column length="100" name="fsf_info6">
+        <comment>info 6</comment>
+      </column>
+    </property>
+    <property name="fsfInfo7" type="string">
+      <column length="100" name="fsf_info7">
+        <comment>info 7</comment>
+      </column>
+    </property>
+    <property name="fsfInfo8" type="string">
+      <column length="100" name="fsf_info8">
+        <comment>info 8</comment>
+      </column>
+    </property>
+    <property name="fsfInfo9" type="string">
+      <column length="100" name="fsf_info9">
+        <comment>info 9</comment>
+      </column>
+    </property>
+    <property name="fsfInfo10" type="string">
+      <column length="100" name="fsf_info10">
+        <comment>info 10</comment>
+      </column>
+    </property>
+    <property name="fsfFormule1" type="string">
+      <column length="100" name="fsf_formule1">
+        <comment>code formule 1</comment>
+      </column>
+    </property>
+    <property name="fsfFormule2" type="string">
+      <column length="250" name="fsf_formule2">
+        <comment>code formule 2</comment>
+      </column>
+    </property>
+    <property name="fsfAnnexe1" type="string">
+      <column length="100" name="fsf_annexe1">
+        <comment>nom jasper anexe 1</comment>
+      </column>
+    </property>
+    <property name="fsfAnnexe2" type="string">
+      <column length="100" name="fsf_annexe2">
+        <comment>nom jasper anexe 2</comment>
+      </column>
+    </property>
+    <property name="fsfContrat" type="string">
+      <column length="20" name="fsf_contrat">
+        <comment>code contrat</comment>
+      </column>
+    </property>
+    <property name="fsfNumFour" type="string">
+      <column length="20" name="fsf_num_four">
+        <comment>numero facture fournisseur</comment>
+      </column>
+    </property>
+    <property name="fsfNumDoc" type="string">
+      <column length="24" name="fsf_num_doc">
+        <comment>numero commande ou reception si frais direct</comment>
+      </column>
+    </property>
+    <property name="fsfDateImp" type="date">
+      <column name="fsf_date_imp">
+        <comment>date impression</comment>
+      </column>
+    </property>
+    <property name="fsfModeleImp" type="string">
+      <column length="100" name="fsf_modele_imp">
+        <comment>nom jasper du modele</comment>
+      </column>
+    </property>
+    <property name="fsfEtatVal" type="integer">
+      <column default="0" length="1" name="fsf_etat_val">
+        <comment>0=sans validation 1=avecc validation</comment>
+      </column>
+    </property>
+    <property name="fsfGele" type="integer">
+      <column default="0" length="1" name="fsf_gele">
+        <comment>0=non gele 1=gele</comment>
+      </column>
+    </property>
+    <property name="fsfEtat" type="integer">
+      <column default="0" length="1" name="fsf_etat">
+        <comment>0=En cours 1=valide 2=gele 3=annule 4=transforme</comment>
+      </column>
+    </property>
+    <property name="fsfNumTrf" type="string">
+      <column length="20" name="fsf_num_trf">
+        <comment>numero de transfert</comment>
+      </column>
+    </property>
+    <property name="fsfDateValidite" type="date">
+      <column name="fsf_date_validite">
+        <comment>date de validite</comment>
+      </column>
+    </property>
+    <property name="fsfDateRelance" type="date">
+      <column name="fsf_date_relance">
+        <comment>date de relance</comment>
+      </column>
+    </property>
+    <property name="fsfDateValide" type="date">
+      <column name="fsf_date_valide">
+        <comment>date de validation</comment>
+      </column>
+    </property>
+    <property name="fsfPosSignature" type="integer">
+      <column default="0" length="1" name="fsf_pos_signature">
+        <comment>nb de signature ayant statue</comment>
+      </column>
+    </property>
+    <property name="fsfDateTransforme" type="date">
+      <column name="fsf_date_transforme">
+        <comment>date de transformation</comment>
+      </column>
+    </property>
+    <property name="fsfTypeTransforme" type="integer">
+      <column default="0" name="fsf_type_transforme">
+        <comment>type de transformation</comment>
+      </column>
+    </property>
+    <property name="fsfDateAnnule" type="date">
+      <column name="fsf_date_annule">
+        <comment>date annulation</comment>
+      </column>
+    </property>
+    <property name="fsfMotifAnnule" type="string">
+      <column length="50" name="fsf_motif_annule">
+        <comment>motif annulation</comment>
+      </column>
+    </property>
+    <property name="fsfFactorNom" type="string">
+      <column length="100" name="fsf_factor_nom">
+        <comment>nom du factor</comment>
+      </column>
+    </property>
+    <property name="fsfFactorId" type="long">
+      <column default="0" name="fsf_factor_id">
+        <comment>id du factor</comment>
+      </column>
+    </property>
+    <property name="fsfFactorEtat" type="integer">
+      <column default="0" name="fsf_factor_etat">
+        <comment>0=en cours 1=accepter 2=refuser</comment>
+      </column>
+    </property>
+    <property name="fsfDateTransfert" type="date">
+      <column name="fsf_date_transfert">
+        <comment>date transfert en compta</comment>
+      </column>
+    </property>
+    <property name="fsfDiversTiers" type="integer">
+      <column default="0" name="fsf_divers_tiers">
+        <comment>0=normal 99= divers</comment>
+      </column>
+    </property>
+    <property name="fsfDiversNom" type="string">
+      <column length="100" name="fsf_divers_nom">
+        <comment>nom du tiers divers</comment>
+      </column>
+    </property>
+    <property name="fsfDiversAdresse" type="string">
+      <column length="100" name="fsf_divers_adresse">
+        <comment>adresse du tiers divers</comment>
+      </column>
+    </property>
+    <property name="fsfDiversVille" type="string">
+      <column length="50" name="fsf_divers_ville">
+        <comment>ville du tiers divers</comment>
+      </column>
+    </property>
+    <property name="fsfDiversTel" type="string">
+      <column length="50" name="fsf_divers_tel">
+        <comment>telephone du tiers divers</comment>
+      </column>
+    </property>
+    <property name="fsfDiversMail" type="string">
+      <column length="100" name="fsf_divers_mail">
+        <comment>mail du tiers divers</comment>
+      </column>
+    </property>
+    <property name="fsfSource" type="string">
+      <column length="50" name="fsf_source">
+        <comment>source du document</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ExercicesAchats" column="exeach_id" lazy="false" name="exercicesAchats" not-null="true"/>
+    <many-to-one class="com.epegase.systeme.classe.Tiers" column="tie_id" lazy="false" name="tiers" not-null="true"/>
+    <many-to-one class="com.epegase.systeme.classe.Users" column="usr_id" lazy="false" name="users" not-null="false"/>
+  </class>
+</hibernate-mapping>

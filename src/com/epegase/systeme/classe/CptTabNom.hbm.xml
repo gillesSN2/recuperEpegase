@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="CptTabNom" table="cpt_tab_nom">
+    <id column="tablis_id" name="tablis_id" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="tablisZone" type="string">
+      <column length="50" name="tablis_zone">
+        <comment>zone fiscale du tableau</comment>
+      </column>
+    </property>
+    <property name="tablisNum" type="int">
+      <column default="0" name="tablis_num">
+        <comment>numero ordre</comment>
+      </column>
+    </property>
+    <property name="tablisCode" type="string">
+      <column length="20" name="tablis_code">
+        <comment>code du tableau</comment>
+      </column>
+    </property>
+    <property name="tablisLibFR" type="string">
+      <column length="200" name="tablis_lib_FR">
+        <comment>nom du tableau en fr</comment>
+      </column>
+    </property>
+    <property name="tablisLibUK" type="string">
+      <column length="200" name="tablis_lib_UK">
+        <comment>nom du tableau en uk</comment>
+      </column>
+    </property>
+    <property name="tablisLibSP" type="string">
+      <column length="200" name="tablis_lib_SP">
+        <comment>nom du tableau en sp</comment>
+      </column>
+    </property>
+    <property name="tablisModele" type="string">
+      <column length="100" name="tablis_modele">
+        <comment>modele impression</comment>
+      </column>
+    </property>
+    <property name="tablisAnalytique" type="text">
+      <column length="1000" name="tablis_analytique">
+        <comment>filtre analytique</comment>
+      </column>
+    </property>
+    <property name="tablisSauf" type="text">
+      <column length="1000" name="tablis_sauf">
+        <comment>sauf analytique</comment>
+      </column>
+    </property>
+    <property name="tablisNbCol" type="integer">
+      <column default="0" length="2" name="tablis_nb_col">
+        <comment>nombre de colonne du tableau max 20</comment>
+      </column>
+    </property>
+    <property name="tablisType" type="integer">
+      <column default="0" length="1" name="tablis_type">
+        <comment>0=etats financiers 1=rapport de synthese 2=fiche societe 3=activite societe 4=actionnaires 10=bilan social</comment>
+      </column>
+    </property>
+    <property name="tablisModif" type="integer">
+      <column default="0" length="1" name="tablis_modif">
+        <comment>0=modifiable par le client 1=non modifiable par le client</comment>
+      </column>
+    </property>
+    <property name="tablisCategorie" type="integer">
+      <column default="0" length="1" name="tablis_categorie">
+        <comment>0=tout 4=compta 5=paye 6=achat 8=ventes 90= treso</comment>
+      </column>
+    </property>
+    <property name="tablisInactif" type="integer">
+      <column default="0" name="tablis_inactif">
+        <comment>0=actif 1=inactif</comment>
+      </column>
+    </property>
+    <property name="tablisAnn01" type="integer">
+      <column default="0" length="1" name="tablis_ann_01">
+        <comment>annee de la colonne 1 0=N 1=N-1 2=N-2 3=N-3 4=N-4</comment>
+      </column>
+    </property>
+    <property name="tablisAnn02" type="integer">
+      <column default="0" length="1" name="tablis_ann_02">
+        <comment>annee de la colonne 2 0=N 1=N-1 2=N-2 3=N-3 4=N-4</comment>
+      </column>
+    </property>
+    <property name="tablisAnn03" type="integer">
+      <column default="0" length="1" name="tablis_ann_03">
+        <comment>annee de la colonne 3 0=N 1=N-1 2=N-2 3=N-3 4=N-4</comment>
+      </column>
+    </property>
+    <property name="tablisAnn04" type="integer">
+      <column default="0" length="1" name="tablis_ann_04">
+        <comment>annee de la colonne 4 0=N 1=N-1 2=N-2 3=N-3 4=N-4</comment>
+      </column>
+    </property>
+    <property name="tablisAnn05" type="integer">
+      <column default="0" length="1" name="tablis_ann_05">
+        <comment>annee de la colonne 5 0=N 1=N-1 2=N-2 3=N-3 4=N-4</comment>
+      </column>
+    </property>
+    <property name="tablisAnn06" type="integer">
+      <column default="0" length="1" name="tablis_ann_06">
+        <comment>annee de la colonne 6 0=N 1=N-1 2=N-2 3=N-3 4=N-4</comment>
+      </column>
+    </property>
+    <property name="tablisAnn07" type="integer">
+      <column default="0" length="1" name="tablis_ann_07">
+        <comment>annee de la colonne 7 0=N 1=N-1 2=N-2 3=N-3 4=N-4</comment>
+      </column>
+    </property>
+    <property name="tablisAnn08" type="integer">
+      <column default="0" length="1" name="tablis_ann_08">
+        <comment>annee de la colonne 8 0=N 1=N-1 2=N-2 3=N-3 4=N-4</comment>
+      </column>
+    </property>
+    <property name="tablisAnn09" type="integer">
+      <column default="0" length="1" name="tablis_ann_09">
+        <comment>annee de la colonne 9 0=N 1=N-1 2=N-2 3=N-3 4=N-4</comment>
+      </column>
+    </property>
+    <property name="tablisAnn10" type="integer">
+      <column default="0" length="1" name="tablis_ann_10">
+        <comment>annee de la colonne 10 0=N 1=N-1 2=N-2 3=N-3 4=N-4</comment>
+      </column>
+    </property>
+    <property name="tablisAnn11" type="integer">
+      <column default="0" length="1" name="tablis_ann_11">
+        <comment>annee de la colonne 11 0=N 1=N-1 2=N-2 3=N-3 4=N-4</comment>
+      </column>
+    </property>
+    <property name="tablisAnn12" type="integer">
+      <column default="0" length="1" name="tablis_ann_12">
+        <comment>annee de la colonne 12 0=N 1=N-1 2=N-2 3=N-3 4=N-4</comment>
+      </column>
+    </property>
+    <property name="tablisAnn13" type="integer">
+      <column default="0" length="1" name="tablis_ann_13">
+        <comment>annee de la colonne 13 0=N 1=N-1 2=N-2 3=N-3 4=N-4</comment>
+      </column>
+    </property>
+    <property name="tablisAnn14" type="integer">
+      <column default="0" length="1" name="tablis_ann_14">
+        <comment>annee de la colonne 14 0=N 1=N-1 2=N-2 3=N-3 4=N-4</comment>
+      </column>
+    </property>
+    <property name="tablisAnn15" type="integer">
+      <column default="0" length="1" name="tablis_ann_15">
+        <comment>annee de la colonne 15 0=N 1=N-1 2=N-2 3=N-3 4=N-4</comment>
+      </column>
+    </property>
+    <property name="tablisAnn16" type="integer">
+      <column default="0" length="1" name="tablis_ann_16">
+        <comment>annee de la colonne 16 0=N 1=N-1 2=N-2 3=N-3 4=N-4</comment>
+      </column>
+    </property>
+    <property name="tablisAnn17" type="integer">
+      <column default="0" length="1" name="tablis_ann_17">
+        <comment>annee de la colonne 17 0=N 1=N-1 2=N-2 3=N-3 4=N-4</comment>
+      </column>
+    </property>
+    <property name="tablisAnn18" type="integer">
+      <column default="0" length="1" name="tablis_ann_18">
+        <comment>annee de la colonne 18 0=N 1=N-1 2=N-2 3=N-3 4=N-4</comment>
+      </column>
+    </property>
+    <property name="tablisAnn19" type="integer">
+      <column default="0" length="1" name="tablis_ann_19">
+        <comment>annee de la colonne 19 0=N 1=N-1 2=N-2 3=N-3 4=N-4</comment>
+      </column>
+    </property>
+    <property name="tablisAnn20" type="integer">
+      <column default="0" length="1" name="tablis_ann_20">
+        <comment>annee de la colonne 20 0=N 1=N-1 2=N-2 3=N-3 4=N-4</comment>
+      </column>
+    </property>
+    <property name="tablisNom01" type="string">
+      <column length="30" name="tablis_nom_01">
+        <comment>nom de la colonne 1</comment>
+      </column>
+    </property>
+    <property name="tablisNom02" type="string">
+      <column length="30" name="tablis_nom_02">
+        <comment>nom de la colonne 2</comment>
+      </column>
+    </property>
+    <property name="tablisNom03" type="string">
+      <column length="30" name="tablis_nom_03">
+        <comment>nom de la colonne 3</comment>
+      </column>
+    </property>
+    <property name="tablisNom04" type="string">
+      <column length="30" name="tablis_nom_04">
+        <comment>nom de la colonne 4</comment>
+      </column>
+    </property>
+    <property name="tablisNom05" type="string">
+      <column length="30" name="tablis_nom_05">
+        <comment>nom de la colonne 5</comment>
+      </column>
+    </property>
+    <property name="tablisNom06" type="string">
+      <column length="30" name="tablis_nom_06">
+        <comment>nom de la colonne 6</comment>
+      </column>
+    </property>
+    <property name="tablisNom07" type="string">
+      <column length="30" name="tablis_nom_07">
+        <comment>nom de la colonne 7</comment>
+      </column>
+    </property>
+    <property name="tablisNom08" type="string">
+      <column length="30" name="tablis_nom_08">
+        <comment>nom de la colonne 8</comment>
+      </column>
+    </property>
+    <property name="tablisNom09" type="string">
+      <column length="30" name="tablis_nom_09">
+        <comment>nom de la colonne 9</comment>
+      </column>
+    </property>
+    <property name="tablisNom10" type="string">
+      <column length="30" name="tablis_nom_10">
+        <comment>nom de la colonne 10</comment>
+      </column>
+    </property>
+    <property name="tablisNom11" type="string">
+      <column length="30" name="tablis_nom_11">
+        <comment>nom de la colonne 11</comment>
+      </column>
+    </property>
+    <property name="tablisNom12" type="string">
+      <column length="30" name="tablis_nom_12">
+        <comment>nom de la colonne 12</comment>
+      </column>
+    </property>
+    <property name="tablisNom13" type="string">
+      <column length="30" name="tablis_nom_13">
+        <comment>nom de la colonne 13</comment>
+      </column>
+    </property>
+    <property name="tablisNom14" type="string">
+      <column length="30" name="tablis_nom_14">
+        <comment>nom de la colonne 14</comment>
+      </column>
+    </property>
+    <property name="tablisNom15" type="string">
+      <column length="30" name="tablis_nom_15">
+        <comment>nom de la colonne 15</comment>
+      </column>
+    </property>
+    <property name="tablisNom16" type="string">
+      <column length="30" name="tablis_nom_16">
+        <comment>nom de la colonne 16</comment>
+      </column>
+    </property>
+    <property name="tablisNom17" type="string">
+      <column length="30" name="tablis_nom_17">
+        <comment>nom de la colonne 17</comment>
+      </column>
+    </property>
+    <property name="tablisNom18" type="string">
+      <column length="30" name="tablis_nom_18">
+        <comment>nom de la colonne 18</comment>
+      </column>
+    </property>
+    <property name="tablisNom19" type="string">
+      <column length="30" name="tablis_nom_19">
+        <comment>nom de la colonne 19</comment>
+      </column>
+    </property>
+    <property name="tablisNom20" type="string">
+      <column length="30" name="tablis_nom_20">
+        <comment>nom de la colonne 20</comment>
+      </column>
+    </property>
+    <property length="20" name="tablisOldId" type="long">
+      <column default="0" name="tablis_old_id">
+        <comment>l ancien id de tabnom</comment>
+      </column>
+    </property>
+    <property name="tablisTypeCol01" type="integer">
+      <column default="0" length="1" name="tablis_type_col01">
+        <comment>type de la colonne 01</comment>
+      </column>
+    </property>
+    <property name="tablisTypeCol02" type="integer">
+      <column default="0" length="1" name="tablis_type_col02">
+        <comment>type de la colonne 02</comment>
+      </column>
+    </property>
+    <property name="tablisTypeCol03" type="integer">
+      <column default="0" length="1" name="tablis_type_col03">
+        <comment>type de la colonne 03</comment>
+      </column>
+    </property>
+    <property name="tablisTypeCol04" type="integer">
+      <column default="0" length="1" name="tablis_type_col04">
+        <comment>type de la colonne 04</comment>
+      </column>
+    </property>
+    <property name="tablisTypeCol05" type="integer">
+      <column default="0" length="1" name="tablis_type_col05">
+        <comment>type de la colonne 05</comment>
+      </column>
+    </property>
+    <property name="tablisTypeCol06" type="integer">
+      <column default="0" length="1" name="tablis_type_col06">
+        <comment>type de la colonne 06</comment>
+      </column>
+    </property>
+    <property name="tablisTypeCol07" type="integer">
+      <column default="0" length="1" name="tablis_type_col07">
+        <comment>type de la colonne 07</comment>
+      </column>
+    </property>
+    <property name="tablisTypeCol08" type="integer">
+      <column default="0" length="1" name="tablis_type_col08">
+        <comment>type de la colonne 08</comment>
+      </column>
+    </property>
+    <property name="tablisTypeCol09" type="integer">
+      <column default="0" length="1" name="tablis_type_col09">
+        <comment>type de la colonne 09</comment>
+      </column>
+    </property>
+    <property name="tablisTypeCol10" type="integer">
+      <column default="0" length="1" name="tablis_type_col10">
+        <comment>type de la colonne 10</comment>
+      </column>
+    </property>
+    <property name="tablisTypeCol11" type="integer">
+      <column default="0" length="1" name="tablis_type_col11">
+        <comment>type de la colonne 11</comment>
+      </column>
+    </property>
+    <property name="tablisTypeCol12" type="integer">
+      <column default="0" length="1" name="tablis_type_col12">
+        <comment>type de la colonne 12</comment>
+      </column>
+    </property>
+    <property name="tablisTypeCol13" type="integer">
+      <column default="0" length="1" name="tablis_type_col13">
+        <comment>type de la colonne 13</comment>
+      </column>
+    </property>
+    <property name="tablisTypeCol14" type="integer">
+      <column default="0" length="1" name="tablis_type_col14">
+        <comment>type de la colonne 14</comment>
+      </column>
+    </property>
+    <property name="tablisTypeCol15" type="integer">
+      <column default="0" length="1" name="tablis_type_col15">
+        <comment>type de la colonne 15</comment>
+      </column>
+    </property>
+    <property name="tablisTypeCol16" type="integer">
+      <column default="0" length="1" name="tablis_type_col16">
+        <comment>type de la colonne 16</comment>
+      </column>
+    </property>
+    <property name="tablisTypeCol17" type="integer">
+      <column default="0" length="1" name="tablis_type_col17">
+        <comment>type de la colonne 17</comment>
+      </column>
+    </property>
+    <property name="tablisTypeCol18" type="integer">
+      <column default="0" length="1" name="tablis_type_col18">
+        <comment>type de la colonne 18</comment>
+      </column>
+    </property>
+    <property name="tablisTypeCol19" type="integer">
+      <column default="0" length="1" name="tablis_type_col19">
+        <comment>type de la colonne 19</comment>
+      </column>
+    </property>
+    <property name="tablisTypeCol20" type="integer">
+      <column default="0" length="1" name="tablis_type_col20">
+        <comment>type de la colonne 20</comment>
+      </column>
+    </property>
+    <property name="tablisAnneeAnte" type="integer">
+      <column default="0" length="1" name="tablis_annee_ante">
+        <comment>0=sans n-1 1=avec n-1</comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>

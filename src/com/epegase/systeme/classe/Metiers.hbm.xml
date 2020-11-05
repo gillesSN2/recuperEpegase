@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="Metiers" table="cmm_metiers">
+    <id column="met_id" name="metId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="metDateCreat" type="timestamp">
+      <column name="met_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="metDateModif" type="timestamp">
+      <column name="met_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="metUserCreat" type="long">
+      <column default="0" length="15" name="met_user_creat">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="metUserModif" type="long">
+      <column default="0" length="15" name="met_user_modif">
+        <comment>utilisateur de modification</comment>
+      </column>
+    </property>
+    <property name="metNomFr" type="string">
+      <column length="100" name="met_nom_FR">
+        <comment>nom activite en FR</comment>
+      </column>
+    </property>
+    <property name="metNomUk" type="string">
+      <column length="100" name="met_nom_UK">
+        <comment>nom activite en UK</comment>
+      </column>
+    </property>
+    <property name="metNomSp" type="string">
+      <column length="100" name="met_nom_SP">
+        <comment>nom activite en SP</comment>
+      </column>
+    </property>
+    <property name="metInactif" type="integer">
+      <column default="0" length="1" name="met_inactif">
+        <comment>0=actif 1=inactif 2=supprimer</comment>
+      </column>
+    </property>
+    <property name="metType" type="integer">
+      <column default="0" length="1" name="met_type">
+        <comment>0=personne physique 1=personne morale</comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>

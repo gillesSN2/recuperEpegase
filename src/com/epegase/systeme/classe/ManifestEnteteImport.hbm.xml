@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="ManifestEnteteImport" table="prc_manifest_entete_import">
+    <id column="vteman_id" name="vtemanId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="vtemanTypeTransport" type="string">
+      <column length="20" name="vteman_typeTransport">
+        <comment>nature transport</comment>
+      </column>
+    </property>
+    <property name="vtemanNum" type="string">
+      <column length="20" name="vteman_num">
+        <comment>numero manisfest</comment>
+      </column>
+    </property>
+    <property name="vtemanRefNavire" type="string">
+      <column length="50" name="vteman_refNavire">
+        <comment>reference navire</comment>
+      </column>
+    </property>
+    <property name="vtemanLibNavire" type="string">
+      <column length="200" name="vteman_libNavire">
+        <comment>libelle navire</comment>
+      </column>
+    </property>
+    <property name="vtemanRefPortDep" type="string">
+      <column length="50" name="vteman_refPortDep">
+        <comment>reference port depart</comment>
+      </column>
+    </property>
+    <property name="vtemanLibPortDep" type="string">
+      <column length="200" name="vteman_libPortDep">
+        <comment>libelle port depart</comment>
+      </column>
+    </property>
+    <property name="vtemanRefPortArr" type="string">
+      <column length="50" name="vteman_refPortArr">
+        <comment>reference port arrivee</comment>
+      </column>
+    </property>
+    <property name="vtemanLibPortArr" type="string">
+      <column length="200" name="vteman_libPortArr">
+        <comment>libelle port arrivee</comment>
+      </column>
+    </property>
+    <property name="vtemanDateDep" type="date">
+      <column default="null" name="vteman_dateDep">
+        <comment>date de depart</comment>
+      </column>
+    </property>
+    <property name="vtemanDateArr" type="date">
+      <column default="null" name="vteman_dateArr">
+        <comment>date arrivee</comment>
+      </column>
+    </property>
+    <property name="vtemanRefLieuDep" type="string">
+      <column length="50" name="vteman_refLieuDep">
+        <comment>reference lieu de depart</comment>
+      </column>
+    </property>
+    <property name="vtemanLibLieuDep" type="string">
+      <column length="200" name="vteman_libLieuDep">
+        <comment>libelle lieu depart</comment>
+      </column>
+    </property>
+    <property name="vtemanRefLieuArr" type="string">
+      <column length="50" name="vteman_refLieuArr">
+        <comment>reference lieu arrivee</comment>
+      </column>
+    </property>
+    <property name="vtemanLibLieuArr" type="string">
+      <column length="200" name="vteman_libLieuArr">
+        <comment>libelle lieu arrivee</comment>
+      </column>
+    </property>
+    <property name="vtemanNumBl" type="string">
+      <column length="50" name="vteman_numBl">
+        <comment>numero bl</comment>
+      </column>
+    </property>
+    <property name="vtemanLoginUser" type="string">
+      <column length="20" name="vteman_loginUser">
+        <comment>matricule responsable</comment>
+      </column>
+    </property>
+    <property name="vtemanDateSaisie" type="timestamp">
+      <column default="null" name="vteman_dateSaisie">
+        <comment>date de saisie</comment>
+      </column>
+    </property>
+    <property name="vtemanDateModification" type="timestamp">
+      <column default="null" name="vteman_dateModification">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="vtemanEtat" type="integer">
+      <column default="0" name="vteman_etat">
+        <comment>0=En cours 1=valide 2=gele 3=annule 4=facture</comment>
+      </column>
+    </property>
+    <property name="vtemanObjet" type="string">
+      <column length="50" name="vteman_objet">
+        <comment>objet</comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>

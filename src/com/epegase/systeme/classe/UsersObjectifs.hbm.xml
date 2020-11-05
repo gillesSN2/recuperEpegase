@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="UsersObjectifs" table="cmm_users_objectifs">
+    <id column="usrobj_id" name="usrobjId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="usrobjDateCreat" type="timestamp">
+      <column name="usrobj_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="usrobjDateModif" type="timestamp">
+      <column name="usrobj_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="usrobjUserCreat" type="long">
+      <column default="0" length="15" name="usrobj_user_creat">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="usrobjUserModif" type="long">
+      <column default="0" length="15" name="usrobj_user_modif">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="usrobjNature" type="integer">
+      <column default="0" length="1" name="usrobj_nature">
+        <comment>0=devis 1=bc 2=bl 3=br 4=facture 5=ndb 6=avoir 10=rdv</comment>
+      </column>
+    </property>
+    <property name="usrobjAnnee" type="string">
+      <column length="4" name="usrobj_annee">
+        <comment>anne objectif</comment>
+      </column>
+    </property>
+    <property name="usrobjCaTotal" type="double">
+      <column default="0" name="usrobj_ca_total">
+        <comment>objectif total</comment>
+      </column>
+    </property>
+    <property name="usrobjCa01" type="double">
+      <column default="0" name="usrobj_ca_01">
+        <comment>objectif janvier</comment>
+      </column>
+    </property>
+    <property name="usrobjCa02" type="double">
+      <column default="0" name="usrobj_ca_02">
+        <comment>objectif fevrier</comment>
+      </column>
+    </property>
+    <property name="usrobjCa03" type="double">
+      <column default="0" name="usrobj_ca_03">
+        <comment>objectif mars</comment>
+      </column>
+    </property>
+    <property name="usrobjCa04" type="double">
+      <column default="0" name="usrobj_ca_04">
+        <comment>objectif avril</comment>
+      </column>
+    </property>
+    <property name="usrobjCa05" type="double">
+      <column default="0" name="usrobj_ca_05">
+        <comment>objectif mai</comment>
+      </column>
+    </property>
+    <property name="usrobjCa06" type="double">
+      <column default="0" name="usrobj_ca_06">
+        <comment>objectif juin</comment>
+      </column>
+    </property>
+    <property name="usrobjCa07" type="double">
+      <column default="0" name="usrobj_ca_07">
+        <comment>objectif juillet</comment>
+      </column>
+    </property>
+    <property name="usrobjCa08" type="double">
+      <column default="0" name="usrobj_ca_08">
+        <comment>objectif aout</comment>
+      </column>
+    </property>
+    <property name="usrobjCa09" type="double">
+      <column default="0" name="usrobj_ca_09">
+        <comment>objectif septembre</comment>
+      </column>
+    </property>
+    <property name="usrobjCa10" type="double">
+      <column default="0" name="usrobj_ca_10">
+        <comment>objectif octobre</comment>
+      </column>
+    </property>
+    <property name="usrobjCa11" type="double">
+      <column default="0" name="usrobj_ca_11">
+        <comment>objectif novembre</comment>
+      </column>
+    </property>
+    <property name="usrobjCa12" type="double">
+      <column default="0" name="usrobj_ca_12">
+        <comment>objectif decembre</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.Users" column="usr_id" lazy="false" name="users" not-null="true"/>
+  </class>
+</hibernate-mapping>

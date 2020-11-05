@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="ManifestProduit" table="prc_manifest_produit">
+    <id column="vteprd_id" name="vteprdId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="vteprdNum" type="string">
+      <column length="20" name="vteprd_num">
+        <comment>numero lettre voiture</comment>
+      </column>
+    </property>
+    <property name="vteprdOrdre" type="integer">
+      <column default="0" name="vteprd_ordre">
+        <comment>ordre</comment>
+      </column>
+    </property>
+    <property name="vteprdNumManifest" type="string">
+      <column length="20" name="vteprd_numManifest">
+        <comment>numero manifeste</comment>
+      </column>
+    </property>
+    <property name="vteprdModeFactureDetail" type="integer">
+      <column default="0" name="vteprd_mode_facture_detail">
+        <comment>0=non facture 1=facture groupage 2=facture colis 3=facture TC 4=facture traction</comment>
+      </column>
+    </property>
+    <property name="vteprdImmaTc1" type="string">
+      <column length="50" name="vteprd_immaTc1">
+        <comment>immatriculation TC</comment>
+      </column>
+    </property>
+    <property name="vteprdModelTc1" type="integer">
+      <column default="0" name="vteprd_modelTc1">
+        <comment>modele contener 0=nd 1=20 2=40</comment>
+      </column>
+    </property>
+    <property name="vteprdPlombTc1" type="string">
+      <column length="50" name="vteprd_plombTc1">
+        <comment>numero de plonb</comment>
+      </column>
+    </property>
+    <property name="vteprdImmaTc2" type="string">
+      <column length="50" name="vteprd_immaTc2">
+        <comment>immatriculation TC</comment>
+      </column>
+    </property>
+    <property name="vteprdModelTc2" type="integer">
+      <column default="0" name="vteprd_modelTc2">
+        <comment>modele contener 0=nd 1=20 2=40</comment>
+      </column>
+    </property>
+    <property name="vteprdPlombTc2" type="string">
+      <column length="50" name="vteprd_plombTc2">
+        <comment>numero de plonb</comment>
+      </column>
+    </property>
+    <property name="vteprdRefTypeColis" type="string">
+      <column length="20" name="vteprd_refTypeColis">
+        <comment>code colis</comment>
+      </column>
+    </property>
+    <property name="vteprdLibTypeColis" type="string">
+      <column length="200" name="vteprd_libTypeColis">
+        <comment>libelle colis</comment>
+      </column>
+    </property>
+    <property name="vteprdNatureColis" type="string">
+      <column length="50" name="vteprd_natureColis">
+        <comment>nature colis</comment>
+      </column>
+    </property>
+    <property name="vteprdNbreColis" type="integer">
+      <column default="0" name="vteprd_nbreColis">
+        <comment>nombre de colis</comment>
+      </column>
+    </property>
+    <property name="vteprdPoids" type="float">
+      <column default="0" name="vteprd_poids">
+        <comment>poids des colis</comment>
+      </column>
+    </property>
+    <property name="vteprdVolume" type="float">
+      <column default="0" name="vteprd_volume">
+        <comment>volume des colis</comment>
+      </column>
+    </property>
+    <property name="vteprdDescription" type="string">
+      <column length="100" name="vteprd_description">
+        <comment>description des colis</comment>
+      </column>
+    </property>
+    <property name="vteprdPu" type="double">
+      <column default="0" name="vteprd_pu">
+        <comment>prix unitaire de la ligne</comment>
+      </column>
+    </property>
+    <property name="vteprdRemise" type="float">
+      <column default="0" name="vteprd_remise">
+        <comment>% remise</comment>
+      </column>
+    </property>
+    <property name="vteprdPuRem" type="double">
+      <column default="0" name="vteprd_pu_rem">
+        <comment>prix unitaire remise de la ligne</comment>
+      </column>
+    </property>
+    <property name="vteprdTotalHt" type="double">
+      <column default="0" name="vteprd_total_ht">
+        <comment>valeur ht de la ligne</comment>
+      </column>
+    </property>
+    <property name="vteprdCodeTva" type="string">
+      <column length="4" name="vteprd_code_tva">
+        <comment>code tva de la ligne</comment>
+      </column>
+    </property>
+    <property name="vteprdTauxTva" type="float">
+      <column default="0" name="vteprd_taux_tva">
+        <comment>taux tva de la ligne</comment>
+      </column>
+    </property>
+    <property name="vteprdTotalTva" type="double">
+      <column default="0" name="vteprd_total_tva">
+        <comment>total tva de la ligne</comment>
+      </column>
+    </property>
+    <property name="vteprdTotalTtc" type="double">
+      <column default="0" name="vteprd_total_ttc">
+        <comment>total ttc de la ligne</comment>
+      </column>
+    </property>
+    <property name="vteprdTauxTc" type="float">
+      <column default="0" name="vteprd_taux_tc">
+        <comment>taux tc de la ligne</comment>
+      </column>
+    </property>
+    <property name="vteprdTc" type="double">
+      <column default="0" name="vteprd_tc">
+        <comment>valeur tc de la ligne</comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>

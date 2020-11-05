@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="RapportMedical" table="med_rapport_medical">
+    <id column="rapmed_id" name="rapmedId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="rapmedDateCreat" type="timestamp">
+      <column name="rapmed_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="rapmedDateModif" type="timestamp">
+      <column name="rapmed_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="rapmedUserCreat" type="long">
+      <column default="0" length="15" name="rapmed_user_creat">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="rapmedNomCreateur" type="string">
+      <column length="100" name="rapmed_nom_createur">
+        <comment>nom du creation</comment>
+      </column>
+    </property>
+    <property name="rapmedUserModif" type="long">
+      <column default="0" length="15" name="rapmed_user_modif">
+        <comment>utilisateur de modification</comment>
+      </column>
+    </property>
+    <property name="rapmedNomModif" type="string">
+      <column length="100" name="rapmed_nom_modif">
+        <comment>nom du modification</comment>
+      </column>
+    </property>
+    <property name="rapmedDate" type="date">
+      <column name="rapmed_date">
+        <comment>date du rapport</comment>
+      </column>
+    </property>
+    <property name="rapmedNum" type="string">
+      <column length="20" name="rapmed_num">
+        <comment>numero rapport</comment>
+      </column>
+    </property>
+    <property name="rapmedPeriode" type="string">
+      <column length="7" name="rapmed_periode">
+        <comment>periode mm:aaaa</comment>
+      </column>
+    </property>
+    <property name="rapmedService" type="string">
+      <column length="121" name="rapmed_service">
+        <comment>service ou site</comment>
+      </column>
+    </property>
+    <property name="rapmedNomMedecin" type="string">
+      <column length="100" name="rapmed_nom_medecin">
+        <comment>nom du medecin du rapport</comment>
+      </column>
+    </property>
+    <property name="rapmedIdMedecin" type="long">
+      <column default="0" name="rapmed_id_medecin">
+        <comment>id medecin</comment>
+      </column>
+    </property>
+    <property name="rapmedEtat" type="integer">
+      <column default="0" length="1" name="rapmed_etat">
+        <comment>0=en cours 1=valider</comment>
+      </column>
+    </property>
+    <property name="rapmedRapport" type="text">
+      <column name="rapmed_rapport">
+        <comment>texte du rapport</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ExercicesVentes" column="exevte_id" lazy="false" name="exerciceventes" not-null="true"/>
+  </class>
+</hibernate-mapping>

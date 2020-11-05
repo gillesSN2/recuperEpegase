@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="ProduitsFourchette" table="cmm_produits_fourchette">
+    <id column="profch_id" name="profchId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="profchCode" type="string">
+      <column length="20" name="profch_code">
+        <comment>code produit</comment>
+      </column>
+    </property>
+    <property name="profchSexe" type="integer">
+      <column default="0" length="1" name="profch_sexe">
+        <comment>0=femme 1=homme 2=tout</comment>
+      </column>
+    </property>
+    <property name="profchAge" type="integer">
+      <column default="0" length="1" name="profch_age">
+        <comment>0=sans filtre 1=age en annee 2=age en mois 3=age en jour</comment>
+      </column>
+    </property>
+    <property name="profchAgeDebut" type="float">
+      <column default="0" name="profch_age_debut">
+        <comment>fourchette age debut</comment>
+      </column>
+    </property>
+    <property name="profchAgeFin" type="float">
+      <column default="0" name="profch_age_fin">
+        <comment>fourchette age fin</comment>
+      </column>
+    </property>
+    <property name="profchFmini" type="float">
+      <column default="0" name="profch_fmini">
+        <comment>fourchette minimale</comment>
+      </column>
+    </property>
+    <property name="profchFmaxi" type="float">
+      <column default="0" name="profch_fmaxi">
+        <comment>fourchette maximale</comment>
+      </column>
+    </property>
+    <property name="profchLmini" type="float">
+      <column default="0" name="profch_lmini">
+        <comment>limite minimale</comment>
+      </column>
+    </property>
+    <property name="profchLmaxi" type="float">
+      <column default="0" name="profch_lmaxi">
+        <comment>limite maximale</comment>
+      </column>
+    </property>
+    <property name="profchNorme" type="text">
+      <column length="5000" name="profch_norme">
+        <comment>normes dynamiques</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ProduitsLaboratoire" column="prolab_id" lazy="false" name="ProduitsLaboratoire" not-null="false"/>
+    <many-to-one class="com.epegase.systeme.classe.ProduitsDetail" column="prodet_id" lazy="false" name="ProduitsDetail" not-null="false"/>
+  </class>
+</hibernate-mapping>

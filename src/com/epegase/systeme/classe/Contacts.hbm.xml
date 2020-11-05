@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="Contacts" table="cmm_contacts">
+    <id column="con_id" name="conid" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="condatecreat" type="timestamp">
+      <column name="con_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="condatemodif" type="timestamp">
+      <column name="con_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="conusercreat" type="long">
+      <column default="0" length="15" name="con_user_creat">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="conusermodif" type="long">
+      <column default="0" length="15" name="con_user_modif">
+        <comment>utilisateur de modification</comment>
+      </column>
+    </property>
+    <property name="conetat" type="integer">
+      <column default="0" length="1" name="con_etat">
+        <comment>0=actif 1=inactif 2=supprimer</comment>
+      </column>
+    </property>
+    <property name="connom" type="string">
+      <column length="100" name="con_nom">
+        <comment>nom</comment>
+      </column>
+    </property>
+    <property name="conprenom" type="string">
+      <column length="50" name="con_prenom">
+        <comment>prenom</comment>
+      </column>
+    </property>
+    <property name="conpatronyme" type="string">
+      <column length="100" name="con_patronyme">
+        <comment>nom prenom</comment>
+      </column>
+    </property>
+    <property name="conPwEspaceClient" type="string">
+      <column length="50" name="con_pw_espace_client">
+        <comment>mot de passe espace client</comment>
+      </column>
+    </property>
+    <property name="concivilite" type="string">
+      <column length="20" name="con_civilite">
+        <comment>civilite (suivant fichier xml)</comment>
+      </column>
+    </property>
+    <property name="connompays" type="string">
+      <column length="50" name="con_nom_pays">
+        <comment>pays</comment>
+      </column>
+    </property>
+    <property name="conlangue" type="string">
+      <column length="20" name="con_langue">
+        <comment>code de la langue</comment>
+      </column>
+    </property>
+    <property name="confonction" type="string">
+      <column length="50" name="con_fonction">
+        <comment>fonction ou qualite du contact</comment>
+      </column>
+    </property>
+    <property name="conservice" type="string">
+      <column length="50" name="con_service">
+        <comment>imputation service</comment>
+      </column>
+    </property>
+    <property name="condatenaissance" type="date">
+      <column name="con_date_naissance">
+        <comment>date de naissance</comment>
+      </column>
+    </property>
+    <property name="conanniversaire" type="string">
+      <column length="5" name="con_anniversaire">
+        <comment>periode anniversaire JJ:MM par rapport a  la date d  anniversaire</comment>
+      </column>
+    </property>
+    <property name="contelbur" type="string">
+      <column length="50" name="con_tel_bur">
+        <comment>telephone domicile</comment>
+      </column>
+    </property>
+    <property name="conteldom" type="string">
+      <column length="50" name="con_tel_dom">
+        <comment>telephone domicile</comment>
+      </column>
+    </property>
+    <property name="concel1" type="string">
+      <column length="50" name="con_cel1">
+        <comment>mobile 1</comment>
+      </column>
+    </property>
+    <property name="concel2" type="string">
+      <column length="50" name="con_cel2">
+        <comment>mobile 2</comment>
+      </column>
+    </property>
+    <property name="concel3" type="string">
+      <column length="50" name="con_cel3">
+        <comment>mobile 3</comment>
+      </column>
+    </property>
+    <property name="confax" type="string">
+      <column length="50" name="con_fax">
+        <comment>fax</comment>
+      </column>
+    </property>
+    <property name="conadresse" type="string">
+      <column length="100" name="con_adresse">
+        <comment>adresse</comment>
+      </column>
+    </property>
+    <property name="conrue" type="string">
+      <column length="50" name="con_rue">
+        <comment>no rue</comment>
+      </column>
+    </property>
+    <property name="conlot" type="string">
+      <column length="50" name="con_lot">
+        <comment>no de lot</comment>
+      </column>
+    </property>
+    <property name="conilot" type="string">
+      <column length="50" name="con_ilot">
+        <comment>no ilot</comment>
+      </column>
+    </property>
+    <property name="conbatiment" type="string">
+      <column length="50" name="con_batiment">
+        <comment>batiment</comment>
+      </column>
+    </property>
+    <property name="conporte" type="string">
+      <column length="10" name="con_porte">
+        <comment>no porte</comment>
+      </column>
+    </property>
+    <property name="conescalier" type="string">
+      <column length="10" name="con_escalier">
+        <comment>escalier</comment>
+      </column>
+    </property>
+    <property name="conascensseur" type="string">
+      <column length="10" name="con_ascensseur">
+        <comment>ascenseur</comment>
+      </column>
+    </property>
+    <property name="conquartier" type="string">
+      <column length="50" name="con_quartier">
+        <comment>quantier</comment>
+      </column>
+    </property>
+    <property name="concommune" type="string">
+      <column length="30" name="con_commune">
+        <comment>commune</comment>
+      </column>
+    </property>
+    <property name="condeparte" type="string">
+      <column length="30" name="con_departe">
+        <comment>departement</comment>
+      </column>
+    </property>
+    <property name="conzone" type="string">
+      <column length="30" name="con_zone">
+        <comment>zone </comment>
+      </column>
+    </property>
+    <property name="conbp" type="string">
+      <column length="20" name="con_bp">
+        <comment>boite postale</comment>
+      </column>
+    </property>
+    <property name="concedex" type="string">
+      <column length="20" name="con_cedex">
+        <comment>cedex</comment>
+      </column>
+    </property>
+    <property name="conville" type="string">
+      <column length="50" name="con_ville">
+        <comment>ville</comment>
+      </column>
+    </property>
+    <property name="conyahoo" type="string">
+      <column length="100" name="con_yahoo">
+        <comment>adresse yahoo</comment>
+      </column>
+    </property>
+    <property name="conmsn" type="string">
+      <column length="100" name="con_msn">
+        <comment>adresse msn</comment>
+      </column>
+    </property>
+    <property name="conskype" type="string">
+      <column length="100" name="con_skype">
+        <comment>adresse skype</comment>
+      </column>
+    </property>
+    <property name="conaol" type="string">
+      <column length="100" name="con_aol">
+        <comment>adresse aol</comment>
+      </column>
+    </property>
+    <property name="conmail1" type="string">
+      <column length="100" name="con_mail1">
+        <comment>mail 1</comment>
+      </column>
+    </property>
+    <property name="conmail2" type="string">
+      <column length="100" name="con_mail2">
+        <comment>mail 2</comment>
+      </column>
+    </property>
+    <property name="conmail3" type="string">
+      <column length="100" name="con_mail3">
+        <comment>mail 3</comment>
+      </column>
+    </property>
+    <property name="conmail4" type="string">
+      <column length="100" name="con_mail4">
+        <comment>mail 4</comment>
+      </column>
+    </property>
+    <property name="conmail5" type="string">
+      <column length="100" name="con_mail5">
+        <comment>mail 5</comment>
+      </column>
+    </property>
+    <property name="conblog" type="string">
+      <column length="100" name="con_blog">
+        <comment>blog</comment>
+      </column>
+    </property>
+    <property name="conweb" type="string">
+      <column length="100" name="con_web">
+        <comment>adresse web</comment>
+      </column>
+    </property>
+    <property name="conobservation" type="string">
+      <column length="80" name="con_observation">
+        <comment>observation</comment>
+      </column>
+    </property>
+    <property name="conappreciation" type="string">
+      <column length="20" name="con_appreciation">
+        <comment>appreciation</comment>
+      </column>
+    </property>
+    <property name="connumbanque" type="string">
+      <column length="6" name="con_num_banque">
+        <comment>code banque</comment>
+      </column>
+    </property>
+    <property name="conguichetbanque" type="string">
+      <column length="6" name="con_guichet_banque">
+        <comment>code guichet</comment>
+      </column>
+    </property>
+    <property name="concomptebanque" type="string">
+      <column length="20" name="con_compte_banque">
+        <comment>numero de compte</comment>
+      </column>
+    </property>
+    <property name="conclebanque" type="string">
+      <column length="2" name="con_cle_banque">
+        <comment>cle rib</comment>
+      </column>
+    </property>
+    <property name="conrefbanque" type="string">
+      <column length="10" name="con_ref_banque">
+        <comment>ref donne par la banque au client</comment>
+      </column>
+    </property>
+    <property name="coniban" type="string">
+      <column length="35" name="con_iban">
+        <comment>code iban</comment>
+      </column>
+    </property>
+    <property name="conswift" type="string">
+      <column length="20" name="con_swift">
+        <comment>code swift</comment>
+      </column>
+    </property>
+    <property name="conJournal" type="string">
+      <column length="121" name="con_journal">
+        <comment>code journal de la banque</comment>
+      </column>
+    </property>
+    <property name="conType" type="integer">
+      <column default="0" name="con_type">
+        <comment>0=contact standard 1=procuration 2=dispositions testamentaires</comment>
+      </column>
+    </property>
+    <property name="conCiNum" type="string">
+      <column length="30" name="con_ci_num">
+        <comment>numero de ci</comment>
+      </column>
+    </property>
+    <property name="conCiPar" type="string">
+      <column length="30" name="con_ci_par">
+        <comment>delivre par</comment>
+      </column>
+    </property>
+    <property name="conCiDateDebut" type="date">
+      <column length="30" name="con_ci_date_debut">
+        <comment>date de delivrance ci</comment>
+      </column>
+    </property>
+    <property name="conCiDateFin" type="date">
+      <column length="30" name="con_ci_date_fin">
+        <comment>date expiration ci</comment>
+      </column>
+    </property>
+    <property name="conPhoto" type="string">
+      <column length="30" name="con_photo">
+        <comment>photo</comment>
+      </column>
+    </property>
+    <property name="conSignature" type="string">
+      <column length="30" name="con_signature">
+        <comment>signature</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.Tiers" column="tie_id" lazy="false" name="tiers" not-null="true"/>
+  </class>
+</hibernate-mapping>

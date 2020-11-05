@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="RetourLigneVentes" table="vte_bretour_ligne">
+    <id column="brtlig_id" name="brtligId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="brtligOrdre" type="integer">
+      <column default="0" name="brtlig_ordre">
+        <comment>ordre des lignes</comment>
+      </column>
+    </property>
+    <property name="brtligIdBlv" type="long">
+      <column default="0" length="15" name="brtlig_id_blv">
+        <comment>id de la ligne livraison</comment>
+      </column>
+    </property>
+    <property name="brtligCode" type="string">
+      <column length="20" name="brtlig_code">
+        <comment>code produit</comment>
+      </column>
+    </property>
+    <property name="brtligFamille" type="string">
+      <column length="121" name="brtlig_famille">
+        <comment>famille vente</comment>
+      </column>
+    </property>
+    <property name="brtligLibelle" type="text">
+      <column length="500" name="brtlig_libelle">
+        <comment>libelle produit</comment>
+      </column>
+    </property>
+    <property name="brtligComplement" type="text">
+      <column length="500" name="brtlig_complement">
+        <comment>descriptif complementaire</comment>
+      </column>
+    </property>
+    <property name="brtligReference" type="string">
+      <column length="20" name="brtlig_reference">
+        <comment>reference produit</comment>
+      </column>
+    </property>
+    <property name="brtligTaxe" type="string">
+      <column length="20" name="brtlig_taxe">
+        <comment>code taxe</comment>
+      </column>
+    </property>
+    <property name="brtligTauxTaxe" type="float">
+      <column default="0" name="brtlig_taux_taxe">
+        <comment>taux de taxe</comment>
+      </column>
+    </property>
+    <property name="brtligUnite" type="string">
+      <column length="30" name="brtlig_unite">
+        <comment>unite produit</comment>
+      </column>
+    </property>
+    <property name="brtligCondition" type="string">
+      <column length="121" name="brtlig_condition">
+        <comment>conditionnement produit</comment>
+      </column>
+    </property>
+    <property name="brtligDescription" type="string">
+      <column length="20" name="brtlig_description">
+        <comment>description conditionnement produit</comment>
+      </column>
+    </property>
+    <property name="brtligDepot" type="string">
+      <column length="20" name="brtlig_depot">
+        <comment>code depot</comment>
+      </column>
+    </property>
+    <property name="brtligStock" type="integer">
+      <column default="0" name="brtlig_stock">
+        <comment>mode gestion en stock</comment>
+      </column>
+    </property>
+    <property name="brtligQteStock" type="float">
+      <column default="0" name="brtlig_qte_stock">
+        <comment>quantite en stock</comment>
+      </column>
+    </property>
+    <property name="brtligEchelle" type="integer">
+      <column default="0" name="brtlig_echelle">
+        <comment>echelle de la ligne</comment>
+      </column>
+    </property>
+    <property name="brtligQte" type="float">
+      <column default="0" name="brtlig_qte">
+        <comment>quantite</comment>
+      </column>
+    </property>
+    <property name="brtligLong" type="float">
+      <column default="0" name="brtlig_long">
+        <comment>longueur</comment>
+      </column>
+    </property>
+    <property name="brtligLarg" type="float">
+      <column default="0" name="brtlig_larg">
+        <comment>largeur</comment>
+      </column>
+    </property>
+    <property name="brtligHaut" type="float">
+      <column default="0" name="brtlig_haut">
+        <comment>hauteur</comment>
+      </column>
+    </property>
+    <property name="brtligDiam" type="float">
+      <column default="0" name="brtlig_diam">
+        <comment>diametre</comment>
+      </column>
+    </property>
+    <property name="brtligNb" type="float">
+      <column default="0" name="brtlig_nb">
+        <comment>nombre de piece</comment>
+      </column>
+    </property>
+    <property name="brtligPoidsNet" type="float">
+      <column default="0" name="brtlig_poidsNet">
+        <comment>poids net</comment>
+      </column>
+    </property>
+    <property name="brtligPoidsBrut" type="float">
+      <column default="0" name="brtlig_poidsBrut">
+        <comment>poids brut</comment>
+      </column>
+    </property>
+    <property name="brtligVolume" type="float">
+      <column default="0" name="brtlig_volume">
+        <comment>volume</comment>
+      </column>
+    </property>
+    <property name="brtligQteUtil" type="float">
+      <column default="0" name="brtlig_qte_util">
+        <comment>quantite utilisee (valable pour le stock)</comment>
+      </column>
+    </property>
+    <property name="brtligLot" type="string">
+      <column length="30" name="brtlig_lot">
+        <comment>numero de lot</comment>
+      </column>
+    </property>
+    <property name="brtligNumSerie" type="string">
+      <column length="30" name="brtlig_num_serie">
+        <comment>numero de serie</comment>
+      </column>
+    </property>
+    <property name="brtligDevise" type="string">
+      <column length="3" name="brtlig_devise">
+        <comment>code devise</comment>
+      </column>
+    </property>
+    <property name="brtligPu" type="double">
+      <column default="0" name="brtlig_pu">
+        <comment>prix unitaire</comment>
+      </column>
+    </property>
+    <property name="brtligTauxRemise" type="float">
+      <column default="0" name="brtlig_taux_remise">
+        <comment>taux de remise</comment>
+      </column>
+    </property>
+    <property name="brtligRabais" type="double">
+      <column default="0" name="brtlig_rabais">
+        <comment>valeur du rabais</comment>
+      </column>
+    </property>
+    <property name="brtligPuRem" type="double">
+      <column default="0" name="brtlig_pu_rem">
+        <comment>prix unitaire apres remise</comment>
+      </column>
+    </property>
+    <property name="brtligPuTtc" type="double">
+      <column default="0" name="brtlig_pu_ttc">
+        <comment>prix unitaire avant remise</comment>
+      </column>
+    </property>
+    <property name="brtligPuRemTtc" type="double">
+      <column default="0" name="brtlig_pu_rem_ttc">
+        <comment>prix unitaire apres remise</comment>
+      </column>
+    </property>
+    <property name="brtligPt" type="double">
+      <column default="0" name="brtlig_pt">
+        <comment>prix total ht</comment>
+      </column>
+    </property>
+    <property name="brtligTva" type="double">
+      <column default="0" name="brtlig_tva">
+        <comment>total taxe</comment>
+      </column>
+    </property>
+    <property name="brtligTc" type="double">
+      <column default="0" name="brtlig_tc">
+        <comment>total taxe complementaire</comment>
+      </column>
+    </property>
+    <property name="brtligTtc" type="double">
+      <column default="0" name="brtlig_ttc">
+        <comment>total ttc</comment>
+      </column>
+    </property>
+    <property name="brtligPump" type="double">
+      <column default="0" name="brtlig_pump">
+        <comment>prix unitaire moyen pondere</comment>
+      </column>
+    </property>
+    <property name="brtligGroupe" type="string">
+      <column length="20" name="brtlig_groupe">
+        <comment>code du groupe</comment>
+      </column>
+    </property>
+    <property name="brtligModeGroupe" type="integer">
+      <column default="0" name="brtlig_mode_groupe">
+        <comment>0=produit simple 1=groupe visible 2=groupe invisible 3=forfait 4=calcul auto. 5=generique</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.RetourEnteteVentes" column="brt_id" lazy="false" name="retourEnteteVentes" not-null="true"/>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="FraisTheoAchats" table="ach_frais_theo_achats">
+    <id column="fst_id" name="fstId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="fstDateCreat" type="timestamp">
+      <column name="fst_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="fstDateModif" type="timestamp">
+      <column name="fst_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="fstUserCreat" type="long">
+      <column default="0" length="15" name="fst_user_creat">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="fstUserModif" type="long">
+      <column default="0" length="15" name="fst_user_modif">
+        <comment>utilisateur de modification</comment>
+      </column>
+    </property>
+    <property name="fstFeuille" type="string">
+      <column length="100" name="fst_feuille">
+        <comment>nom de la feuille</comment>
+      </column>
+    </property>
+    <property name="fstType" type="int">
+      <column default="0" name="fst_type">
+        <comment>type de la feuille 0=sur produit 1=sur cotation 2=sur commande 3=parametre fournisseur</comment>
+      </column>
+    </property>
+    <property name="fstCategorie" type="int">
+      <column default="0" name="fst_categorie">
+        <comment>categorie 0=ns 1=douane 2=debours 3=prestation 4=autre</comment>
+      </column>
+    </property>
+    <property name="fstMode" type="string">
+      <column length="50" name="fst_mode">
+        <comment>mode importation ex contener, groupage, type de produit</comment>
+      </column>
+    </property>
+    <property name="fstNature" type="int">
+      <column default="0" name="fst_nature">
+        <comment>nature importation 0=avion 1=bateau 2=express 3=route</comment>
+      </column>
+    </property>
+    <property name="fstReponse" type="int">
+      <column default="0" name="fst_reponse">
+        <comment>reponse 0=ns 1=non 2=oui</comment>
+      </column>
+    </property>
+    <property name="fstIdTiers" type="long">
+      <column default="0" name="fst_id_tiers">
+        <comment>id du tiers</comment>
+      </column>
+    </property>
+    <property name="fstRubrique" type="string">
+      <column length="50" name="fst_rubrique">
+        <comment>code rubrique associe</comment>
+      </column>
+    </property>
+    <property name="fstDevise" type="string">
+      <column length="4" name="fst_devise">
+        <comment>code de la devise</comment>
+      </column>
+    </property>
+    <property name="fstCode" type="string">
+      <column length="20" name="fst_code">
+        <comment>code frais</comment>
+      </column>
+    </property>
+    <property name="fstNomFr" type="string">
+      <column length="100" name="fst_nom_FR">
+        <comment>nom frais en FR</comment>
+      </column>
+    </property>
+    <property name="fstNomUk" type="string">
+      <column length="100" name="fst_nom_UK">
+        <comment>nom frais en UK</comment>
+      </column>
+    </property>
+    <property name="fstNomSp" type="string">
+      <column length="100" name="fst_nom_SP">
+        <comment>nom frais en SP</comment>
+      </column>
+    </property>
+    <property name="fstInactif" type="integer">
+      <column default="0" length="1" name="fst_inactif">
+        <comment>0=actif 1=inactif 2=supprimer</comment>
+      </column>
+    </property>
+    <property name="fstTranche" type="text">
+      <column length="10000" name="fst_tranche">
+        <comment>decoupage par tranche </comment>
+      </column>
+    </property>
+    <property name="fstFormuleA" type="text">
+      <column length="10000" name="fst_formule_a">
+        <comment>formule colA</comment>
+      </column>
+    </property>
+    <property name="fstFormuleB" type="text">
+      <column length="10000" name="fst_formule_b">
+        <comment>formule colB</comment>
+      </column>
+    </property>
+    <property name="fstFormuleC" type="text">
+      <column length="10000" name="fst_formule_c">
+        <comment>formule colC</comment>
+      </column>
+    </property>
+    <property name="fstFormuleD" type="text">
+      <column length="10000" name="fst_formule_d">
+        <comment>formule colD</comment>
+      </column>
+    </property>
+    <property name="fstFormuleE" type="text">
+      <column length="10000" name="fst_formule_e">
+        <comment>formule colE</comment>
+      </column>
+    </property>
+    <property name="fstFormuleF" type="text">
+      <column length="10000" name="fst_formule_f">
+        <comment>formule colF</comment>
+      </column>
+    </property>
+    <property name="fstTrancheA" type="text">
+      <column length="10000" name="fst_tranche_a">
+        <comment>tranche colA</comment>
+      </column>
+    </property>
+    <property name="fstTrancheB" type="text">
+      <column length="10000" name="fst_tranche_b">
+        <comment>tranche colB</comment>
+      </column>
+    </property>
+    <property name="fstTrancheC" type="text">
+      <column length="10000" name="fst_tranche_c">
+        <comment>tranche colC</comment>
+      </column>
+    </property>
+    <property name="fstTrancheD" type="text">
+      <column length="10000" name="fst_tranche_d">
+        <comment>tranche colD</comment>
+      </column>
+    </property>
+    <property name="fstTrancheE" type="text">
+      <column length="10000" name="fst_tranche_e">
+        <comment>tranche colE</comment>
+      </column>
+    </property>
+    <property name="fstTrancheF" type="text">
+      <column length="10000" name="fst_tranche_f">
+        <comment>tranche colF</comment>
+      </column>
+    </property>
+    <property name="fstOrdre" type="integer">
+      <column default="0" name="fst_ordre">
+        <comment>ordre de la ligne</comment>
+      </column>
+    </property>
+    <property name="fstColType" type="integer">
+      <column default="false" name="fst_col_type">
+        <comment>0=ligne calcul 1=??? 2=??? 3=ligne configuration</comment>
+      </column>
+    </property>
+    <property name="fstDecimalA" type="integer">
+      <column default="0" name="fst_decimal_a">
+        <comment>nb de decimal</comment>
+      </column>
+    </property>
+    <property name="fstDecimalB" type="integer">
+      <column default="0" name="fst_decimal_b">
+        <comment>nb de decimal</comment>
+      </column>
+    </property>
+    <property name="fstDecimalC" type="integer">
+      <column default="0" name="fst_decimal_c">
+        <comment>nb de decimal</comment>
+      </column>
+    </property>
+    <property name="fstDecimalD" type="integer">
+      <column default="0" name="fst_decimal_d">
+        <comment>nb de decimal</comment>
+      </column>
+    </property>
+    <property name="fstDecimalE" type="integer">
+      <column default="0" name="fst_decimal_e">
+        <comment>nb de decimal</comment>
+      </column>
+    </property>
+    <property name="fstDecimalF" type="integer">
+      <column default="0" name="fst_decimal_f">
+        <comment>nb de decimal</comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>

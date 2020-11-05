@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="Site" table="cmm_site">
+    <id column="sit_id" name="sitId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="sitDateCreat" type="timestamp">
+      <column name="sit_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="sitDateModif" type="timestamp">
+      <column name="sit_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="sitUserCreat" type="long">
+      <column default="0" length="15" name="sit_user_creat">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="sitUserModif" type="long">
+      <column default="0" length="15" name="sit_user_modif">
+        <comment>utilisateur de modification</comment>
+      </column>
+    </property>
+    <property name="sitCode" type="string">
+      <column length="20" name="sit_code">
+        <comment>code du site</comment>
+      </column>
+    </property>
+    <property name="sitNomFr" type="string">
+      <column length="100" name="sit_nom_FR">
+        <comment>nom du site en FR</comment>
+      </column>
+    </property>
+    <property name="sitNomUk" type="string">
+      <column length="100" name="sit_nom_UK">
+        <comment>nom du site en UK</comment>
+      </column>
+    </property>
+    <property name="sitNomSp" type="string">
+      <column length="100" name="sit_nom_SP">
+        <comment>nom du site en SP</comment>
+      </column>
+    </property>
+    <property name="sitInactif" type="integer">
+      <column default="0" length="1" name="sit_inactif">
+        <comment>1=inactif</comment>
+      </column>
+    </property>
+    <property name="sitIdResponsable" type="long">
+      <column default="0" name="sit_id_responsable">
+        <comment>id responsable</comment>
+      </column>
+    </property>
+    <property name="sitNomResponsable" type="string">
+      <column length="100" name="sit_nom_responsable">
+        <comment>nom responsable</comment>
+      </column>
+    </property>
+    <property name="sitIdClient" type="long">
+      <column default="0" name="sit_id_client">
+        <comment>id client pour interim</comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>

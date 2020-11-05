@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="LivraisonLigneVentes" table="vte_blivraison_ligne">
+    <id column="blvlig_id" name="blvligId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="blvligOrdre" type="integer">
+      <column default="0" name="blvlig_ordre">
+        <comment>ordre des lignes</comment>
+      </column>
+    </property>
+    <property name="blvligIdDvs" type="long">
+      <column default="0" length="15" name="blvlig_id_dvs">
+        <comment>id de la ligne devis</comment>
+      </column>
+    </property>
+    <property name="blvligIdBcm" type="long">
+      <column default="0" length="15" name="blvlig_id_bcm">
+        <comment>id de la ligne commande</comment>
+      </column>
+    </property>
+    <property name="blvligCode" type="string">
+      <column length="20" name="blvlig_code">
+        <comment>code produit</comment>
+      </column>
+    </property>
+    <property name="blvligProcess" type="integer">
+      <column default="0" name="blvlig_process">
+        <comment>0= produit sans process 1=produit avec process</comment>
+      </column>
+    </property>
+    <property name="blvligFamille" type="string">
+      <column length="121" name="blvlig_famille">
+        <comment>famille vente</comment>
+      </column>
+    </property>
+    <property name="blvligLibelle" type="text">
+      <column name="blvlig_libelle">
+        <comment>libelle produit</comment>
+      </column>
+    </property>
+    <property name="blvligComplement" type="text">
+      <column length="500" name="blvlig_complement">
+        <comment>descriptif complementaire</comment>
+      </column>
+    </property>
+    <property name="blvligGenerique" type="integer">
+      <column default="0" name="blvlig_generique">
+        <comment>generique</comment>
+      </column>
+    </property>
+    <property name="blvligReference" type="string">
+      <column length="20" name="blvlig_reference">
+        <comment>reference produit</comment>
+      </column>
+    </property>
+    <property name="blvligTaxe" type="string">
+      <column length="20" name="blvlig_taxe">
+        <comment>code taxe</comment>
+      </column>
+    </property>
+    <property name="blvligTauxTaxe" type="float">
+      <column default="0" name="blvlig_taux_taxe">
+        <comment>taux de taxe</comment>
+      </column>
+    </property>
+    <property name="blvligUnite" type="string">
+      <column length="30" name="blvlig_unite">
+        <comment>unite produit</comment>
+      </column>
+    </property>
+    <property name="blvligCondition" type="string">
+      <column length="121" name="blvlig_condition">
+        <comment>conditionnement produit</comment>
+      </column>
+    </property>
+    <property name="blvligDescription" type="string">
+      <column length="20" name="blvlig_description">
+        <comment>description conditionnement produit</comment>
+      </column>
+    </property>
+    <property name="blvligDepot" type="string">
+      <column length="20" name="blvlig_depot">
+        <comment>code depot</comment>
+      </column>
+    </property>
+    <property name="blvligDepotCmd" type="string">
+      <column length="20" name="blvlig_depot_cmd">
+        <comment>code depot de la commande</comment>
+      </column>
+    </property>
+    <property name="blvligQteStock" type="float">
+      <column default="0" name="blvlig_qte_stock">
+        <comment>quantite validee pour maj stock</comment>
+      </column>
+    </property>
+    <property name="blvligStock" type="integer">
+      <column default="0" name="blvlig_stock">
+        <comment>mode de gestion de stock</comment>
+      </column>
+    </property>
+    <property name="blvligEchelle" type="integer">
+      <column default="0" name="blvlig_echelle">
+        <comment>echelle de la ligne</comment>
+      </column>
+    </property>
+    <property name="blvligQte" type="float">
+      <column default="0" name="blvlig_qte">
+        <comment>quantite</comment>
+      </column>
+    </property>
+    <property name="blvligLong" type="float">
+      <column default="0" name="blvlig_long">
+        <comment>longueur</comment>
+      </column>
+    </property>
+    <property name="blvligLarg" type="float">
+      <column default="0" name="blvlig_larg">
+        <comment>largeur</comment>
+      </column>
+    </property>
+    <property name="blvligHaut" type="float">
+      <column default="0" name="blvlig_haut">
+        <comment>hauteur</comment>
+      </column>
+    </property>
+    <property name="blvligDiam" type="float">
+      <column default="0" name="blvlig_diam">
+        <comment>diametre</comment>
+      </column>
+    </property>
+    <property name="blvligNb" type="float">
+      <column default="0" name="blvlig_nb">
+        <comment>nombre de piece</comment>
+      </column>
+    </property>
+    <property name="blvligPoidsNet" type="float">
+      <column default="0" name="blvlig_poidsNet">
+        <comment>poids net</comment>
+      </column>
+    </property>
+    <property name="blvligPoidsBrut" type="float">
+      <column default="0" name="blvlig_poidsBrut">
+        <comment>poids brut</comment>
+      </column>
+    </property>
+    <property name="blvligVolume" type="float">
+      <column default="0" name="blvlig_volume">
+        <comment>volume</comment>
+      </column>
+    </property>
+    <property name="blvligQteUtil" type="float">
+      <column default="0" name="blvlig_qte_util">
+        <comment>quantite utilisee (valable pour le stock)</comment>
+      </column>
+    </property>
+    <property name="blvligQteUtilStock" type="float">
+      <column default="0" name="blvlig_qte_util_stock">
+        <comment>quantite utilisee (valable pour le stock apres validation)</comment>
+      </column>
+    </property>
+    <property name="blvligLot" type="string">
+      <column length="30" name="blvlig_lot">
+        <comment>numero de lot</comment>
+      </column>
+    </property>
+    <property name="blvligNumSerie" type="string">
+      <column length="30" name="blvlig_num_serie">
+        <comment>numero de serie</comment>
+      </column>
+    </property>
+    <property name="blvligDevise" type="string">
+      <column length="3" name="blvlig_devise">
+        <comment>code devise</comment>
+      </column>
+    </property>
+    <property name="blvligPu" type="double">
+      <column default="0" name="blvlig_pu">
+        <comment>prix unitaire</comment>
+      </column>
+    </property>
+    <property name="blvligTauxRemise" type="float">
+      <column default="0" name="blvlig_taux_remise">
+        <comment>taux de remise</comment>
+      </column>
+    </property>
+    <property name="blvligRabais" type="double">
+      <column default="0" name="blvlig_rabais">
+        <comment>valeur du rabais</comment>
+      </column>
+    </property>
+    <property name="blvligPuRem" type="double">
+      <column default="0" name="blvlig_pu_rem">
+        <comment>prix unitaire apres remise</comment>
+      </column>
+    </property>
+    <property name="blvligPuTtc" type="double">
+      <column default="0" name="blvlig_pu_ttc">
+        <comment>prix unitaire Ttc avant remise</comment>
+      </column>
+    </property>
+    <property name="blvligPuRemTtc" type="double">
+      <column default="0" name="blvlig_pu_rem_ttc">
+        <comment>prix unitaire Ttc apres remise</comment>
+      </column>
+    </property>
+    <property name="blvligPt" type="double">
+      <column default="0" name="blvlig_pt">
+        <comment>prix total ht</comment>
+      </column>
+    </property>
+    <property name="blvligTva" type="double">
+      <column default="0" name="blvlig_tva">
+        <comment>total taxe</comment>
+      </column>
+    </property>
+    <property name="blvligTc" type="double">
+      <column default="0" name="blvlig_tc">
+        <comment>total taxe complementaire</comment>
+      </column>
+    </property>
+    <property name="blvligTtc" type="double">
+      <column default="0" name="blvlig_ttc">
+        <comment>total ttc</comment>
+      </column>
+    </property>
+    <property name="blvligPump" type="double">
+      <column default="0" name="blvlig_pump">
+        <comment>prix unitaire moyen pondere</comment>
+      </column>
+    </property>
+    <property name="blvligGroupe" type="string">
+      <column length="20" name="blvlig_groupe">
+        <comment>code du groupe</comment>
+      </column>
+    </property>
+    <property name="blvligModeGroupe" type="integer">
+      <column default="0" name="blvlig_mode_groupe">
+        <comment>0=produit simple 1=groupe visible 2=groupe invisible 3=forfait 4=calcul auto. 5=generique</comment>
+      </column>
+    </property>
+    <property name="blvligEntStock" type="integer">
+      <column default="0" name="blvlig_ent_stock">
+        <comment>0=decremente le stock 1=ne decremente pas le stock</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.LivraisonEnteteVentes" column="blv_id" lazy="false" name="livraisonEnteteVentes" not-null="true"/>
+  </class>
+</hibernate-mapping>

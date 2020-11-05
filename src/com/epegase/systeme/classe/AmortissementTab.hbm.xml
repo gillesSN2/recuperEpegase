@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="AmortissementTab" table="cpt_amortissements_tab">
+    <id column="amotab_id" name="amotabId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="amotabDateDeb" type="date">
+      <column default="NULL" name="amotab_date_deb">
+        <comment>date debut periode</comment>
+      </column>
+    </property>
+    <property name="amotabDateFin" type="date">
+      <column default="NULL" name="amotab_date_fin">
+        <comment>date fin periode</comment>
+      </column>
+    </property>
+    <property name="amotabMontant" type="double">
+      <column default="0" name="amotab_montant">
+        <comment>montant amortissement</comment>
+      </column>
+    </property>
+    <property name="amotabDateTrf" type="date">
+      <column default="NULL" name="amotab_date_trf">
+        <comment>date transfert en compta</comment>
+      </column>
+    </property>
+    <property name="amotabDateSortie" type="date">
+      <column default="NULL" name="amotab_date_sortie">
+        <comment>date de sortie</comment>
+      </column>
+    </property>
+    <property name="amotabValeur" type="double">
+      <column default="0" name="amotab_valeur">
+        <comment>valeur transferee</comment>
+      </column>
+    </property>
+    <property name="amotabValeurCession" type="double">
+      <column default="0" name="amotab_valeur_cession">
+        <comment>valeur cesssion</comment>
+      </column>
+    </property>
+    <property name="amotabVnc" type="double">
+      <column default="0" name="amotab_vnc">
+        <comment>valeur vnc</comment>
+      </column>
+    </property>
+    <property name="amotabSite" type="string">
+      <column length="20" name="amotab_site">
+        <comment>imputation site</comment>
+      </column>
+    </property>
+    <property name="amotabLibSite" type="string">
+      <column length="100" name="amotab_lib_site">
+        <comment>libelle site</comment>
+      </column>
+    </property>
+    <property name="amotabDepartement" type="string">
+      <column length="20" name="amotab_departement">
+        <comment>imputation departement</comment>
+      </column>
+    </property>
+    <property name="amotabLibDepartement" type="string">
+      <column length="100" name="amotab_lib_departement">
+        <comment>libelle departement</comment>
+      </column>
+    </property>
+    <property name="amotabService" type="string">
+      <column length="20" name="amotab_service">
+        <comment>imputation service</comment>
+      </column>
+    </property>
+    <property name="amotabLibService" type="string">
+      <column length="100" name="amotab_lib_service">
+        <comment>libelle service</comment>
+      </column>
+    </property>
+    <property name="amotabRegion" type="string">
+      <column length="20" name="amotab_region">
+        <comment>imputation region</comment>
+      </column>
+    </property>
+    <property name="amotabLibRegion" type="string">
+      <column length="100" name="amotab_lib_region">
+        <comment>libelle region</comment>
+      </column>
+    </property>
+    <property name="amotabSecteur" type="string">
+      <column length="20" name="amotab_secteur">
+        <comment>imputation secteur</comment>
+      </column>
+    </property>
+    <property name="amotabLibSecteur" type="string">
+      <column length="100" name="amotab_lib_secteur">
+        <comment>libelle secteur</comment>
+      </column>
+    </property>
+    <property name="amotabPdv" type="string">
+      <column length="20" name="amotab_pdv">
+        <comment>imputation point de vente</comment>
+      </column>
+    </property>
+    <property name="amotabLibPdv" type="string">
+      <column length="100" name="amotab_lib_pdv">
+        <comment>libelle pdv</comment>
+      </column>
+    </property>
+    <property name="amotabAnal1" type="string">
+      <column length="20" name="amotab_anal1">
+        <comment>imputation analytique 1</comment>
+      </column>
+    </property>
+    <property name="amotabLibAnal1" type="string">
+      <column length="100" name="amotab_lib_anal1">
+        <comment>libelle anal1</comment>
+      </column>
+    </property>
+    <property name="amotabAnal2" type="string">
+      <column length="20" name="amotab_anal2">
+        <comment>imputation analytique 2</comment>
+      </column>
+    </property>
+    <property name="amotabLibAnal2" type="string">
+      <column length="100" name="amotab_lib_anal2">
+        <comment>libelle anal2</comment>
+      </column>
+    </property>
+    <property name="amotabAnal3" type="string">
+      <column length="20" name="amotab_anal3">
+        <comment>imputation analytique 3</comment>
+      </column>
+    </property>
+    <property name="amotabLibAnal3" type="string">
+      <column length="100" name="amotab_lib_anal3">
+        <comment>libelle anal3</comment>
+      </column>
+    </property>
+    <property name="amotabAnal4" type="string">
+      <column length="20" name="amotab_anal4">
+        <comment>imputation analytique 4</comment>
+      </column>
+    </property>
+    <property name="amotabLibAnal4" type="string">
+      <column length="100" name="amotab_lib_anal4">
+        <comment>libelle anal4</comment>
+      </column>
+    </property>
+    <property name="amotabActivite" type="string">
+      <column length="20" name="amotab_activite">
+        <comment>code activite</comment>
+      </column>
+    </property>
+    <property name="amotabLibActivite" type="string">
+      <column length="100" name="amotab_lib_activite">
+        <comment>libelle activite</comment>
+      </column>
+    </property>
+    <property name="amotabProjet" type="string">
+      <column length="20" name="amotab_projet">
+        <comment>code projet</comment>
+      </column>
+    </property>
+    <property name="amotabLibProjet" type="string">
+      <column length="100" name="amotab_lib_projet">
+        <comment>libelle projet</comment>
+      </column>
+    </property>
+    <property name="amotabBudget" type="string">
+      <column length="20" name="amotab_budget">
+        <comment>imputation budgetaire</comment>
+      </column>
+    </property>
+    <property name="amotabLibBudget" type="string">
+      <column length="100" name="amotab_lib_budget">
+        <comment>libelle budget</comment>
+      </column>
+    </property>
+    <property name="amotabMontantForce" type="integer">
+      <column default="0" name="amotab_montant_force">
+        <comment>0=montant calcule 1=montant force</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.Amortissements" column="amo_id" lazy="false" name="amortissements" not-null="true"/>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+    <display-name>ePegase</display-name>
+
+    <!--servlet-mapping>
+        <servlet-name>dispatcher</servlet-name>
+        <url-pattern>*.htm</url-pattern>
+    </servlet-mapping-->
+    <session-config>
+        <session-timeout>120</session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+
+    <!-- TEST JNDI -->
+    <login-config>
+        <auth-method>FORM</auth-method>
+        <realm-name/>
+        <form-login-config>
+            <form-login-page>/index.jsp</form-login-page>
+            <form-error-page>/erreurIdentification.jsp</form-error-page>
+        </form-login-config>
+    </login-config>
+
+    <resource-ref id="ResourceRef_1223362716559">
+        <description>
+        </description>
+        <res-ref-name>jdbc/myds</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Application</res-auth>
+        <res-sharing-scope>Shareable</res-sharing-scope>
+    </resource-ref>
+    <!-- FIN TEST JND -->
+
+   <!-- debut listener -->
+    <listener>
+        <listener-class>com.sun.faces.config.ConfigureListener</listener-class>
+    </listener>
+    <listener>
+        <listener-class>
+             com.sun.appserv.web.taglibs.cache.CacheSessionListener
+        </listener-class>
+    </listener>
+    <!--listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener-->
+    <!-- fin listener -->
+
+    <!-- debut servlet -->
+    <!--servlet>
+        <servlet-name>dispatcher</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet-->
+
+    <servlet>
+        <servlet-name>Faces Servlet</servlet-name>
+        <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Faces Servlet</servlet-name>
+        <url-pattern>*.jsf</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Rcfaces Framework Contents</servlet-name>
+        <servlet-class>org.rcfaces.renderkit.html.internal.resource.ResourcesServlet</servlet-class>
+        <init-param>
+            <param-name>org.rcfaces.renderkit.html.javascript.sets.CORE</param-name>
+            <param-value>basicComponent,message,extraButton,tree,dataGrid</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet>
+        <servlet-name>Rcfaces Application Contents</servlet-name>
+        <servlet-class>org.rcfaces.core.internal.contentStorage.ContentStorageServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <!--servlet-mapping>
+        <servlet-name>Rcfaces Framework Contents</servlet-name>
+        <url-pattern>/rcfaces/*</url-pattern>
+    </servlet-mapping-->
+
+    <!--servlet-mapping>
+        <servlet-name>Rcfaces Application Contents</servlet-name>
+        <url-pattern>/rc-content/*</url-pattern>
+    </servlet-mapping-->
+
+    <!--servlet-mapping>
+        <servlet-name>Faces Servlet</servlet-name>
+        <url-pattern>/faces/*</url-pattern>
+    </servlet-mapping-->
+
+    <servlet-mapping>
+        <servlet-name>Faces Servlet</servlet-name>
+        <url-pattern>*.faces</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>jsp</servlet-name>
+        <servlet-class>org.apache.jasper.servlet.JspServlet</servlet-class>
+        <init-param>
+            <param-name>httpMethods</param-name>
+            <param-value>GET, HEAD, POST</param-value>
+        </init-param>
+        <init-param>
+            <param-name>fork</param-name>
+            <param-value>false</param-value>
+        </init-param>
+        <init-param>
+            <param-name>mappedfile</param-name>
+            <param-value>false</param-value>
+        </init-param>
+        <init-param>
+            <param-name>developments</param-name>
+            <param-value>false</param-value>
+        </init-param>
+        <init-param>
+            <param-name>genStrAsCharArray</param-name>
+            <param-value>true</param-value>
+        </init-param>
+        <init-param>
+            <param-name>trimSpaces</param-name>
+            <param-value>true</param-value>
+        </init-param>
+        <init-param>
+            <param-name>reloading</param-name>
+            <param-value>false</param-value>
+        </init-param>
+        <init-param>
+            <param-name>xpoweredBy</param-name>
+            <param-value>true</param-value>
+        </init-param>
+        <init-param>
+            <param-name>enablePooling</param-name>
+            <param-value>true</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+
+    <servlet>
+        <servlet-name>imageServlet</servlet-name>
+        <servlet-class>com.epegase.systeme.control.ImageServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>imageServlet</servlet-name>
+        <url-pattern>/imageServlet/*</url-pattern>
+    </servlet-mapping>
+
+
+    <!--servlet-mapping>
+        <servlet-name>paiementCashBox</servlet-name>
+        <url-pattern>/paiementCashBox</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>paiementCashBox</servlet-name>
+        <servlet-class>com.epegase.systeme.control.PaiementCashBox</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>paiementCashBox</servlet-name>
+        <url-pattern>/paiementCashBox</url-pattern>
+    </servlet-mapping-->
+    <!-- fin servlet -->
+
+
+
+    <context-param>
+        <param-name>javax.faces.DATETIMECONVERTER_DEFAULT_TIMEZONE_IS_SYSTEM_TIMEZONE</param-name>
+        <param-value>true</param-value>
+    </context-param>
+    <context-param>
+        <param-name>facelets.DEVELOPMENT</param-name>
+        <param-value>false</param-value>
+    </context-param>
+    <!-- 0=developpement -1=production-->
+    <context-param>
+        <param-name>facelets.REFRESH_PERIOD</param-name>
+        <param-value>-1</param-value>
+    </context-param>
+    <context-param>
+        <param-name>facelets.SKIP_COMMENTS</param-name>
+        <param-value>true</param-value>
+    </context-param>
+    <!-- taille du buffer de sortie en octets-->
+    <context-param>
+        <param-name>facelets.BUFFER_SIZE</param-name>
+        <param-value>100000</param-value>
+    </context-param>
+    <context-param>
+        <param-name>org.richfaces.LoadStyleStrategy</param-name>
+        <param-value>ALL</param-value>
+    </context-param>
+    <context-param>
+        <param-name>org.richfaces.LoadScriptStrategy</param-name>
+        <param-value>ALL</param-value>
+    </context-param>
+
+    <!-- gesre les saisie texte à vide -->
+    <context-param>
+        <param-name>javax.faces.INTERPRET_EMPTY_STRING_SUBMITTED_VALUES_AS_NULL</param-name>
+        <param-value>true</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>com.sun.faces.verifyObjects</param-name>
+        <param-value>false</param-value>
+    </context-param>
+    <context-param>
+        <param-name>com.sun.faces.validateXml</param-name>
+        <param-value>false</param-value>
+    </context-param>
+    <context-param>
+        <param-name>javax.faces.CONFIG_FILES</param-name>
+        <param-value>/WEB-INF/faces-config.xml</param-value>
+    </context-param>
+    <context-param>
+        <param-name>javax.faces.STATE_SAVING_METHOD</param-name>
+        <param-value>client</param-value>
+    </context-param>
+    <context-param>
+        <param-name>javax.faces.PROJECT_STAGE</param-name>
+        <param-value>Production</param-value>
+    </context-param>
+    <context-param>
+        <param-name>javax.faces.FACELETS_SKIP_COMMENTS</param-name>
+        <param-value>true</param-value>
+    </context-param>
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>/WEB-INF/applicationContext.xml</param-value>
+    </context-param>
+    <context-param>
+        <param-name>org.richfaces.CONTROL_SKINNING</param-name>
+        <param-value>enable</param-value>
+    </context-param>
+    <context-param>
+        <param-name>org.richfaces.CONTROL_SKINNING_CLASSES</param-name>
+        <param-value>enable</param-value>
+    </context-param>
+    <context-param>
+        <param-name>org.richfaces.SKIN</param-name>
+        <!--param-value>DEFAULT</param-value-->
+        <!--param-value>NULL</param-value-->
+        <param-value>plain</param-value>
+        <!--param-value>emeraldTown</param-value-->
+        <!--param-value>blueSky</param-value-->
+        <!--param-value>wine</param-value-->
+        <!--param-value>japanCherry</param-value-->
+        <!--param-value>ruby</param-value-->
+        <!--param-value>classic</param-value-->
+        <!--param-value>deepMarine</param-value-->
+    </context-param>
+    <context-param>
+        <param-name>com.sun.faces.enableRestoreView11Compatibility</param-name>
+        <param-value>true</param-value>
+    </context-param>
+    <context-param>
+        <param-name>com.ibm.ws.jsf.disableEnqueuedMessagesWarning</param-name>
+        <param-value>true</param-value>
+    </context-param>
+    <context-param>
+        <param-name>com.ibm.ws.jsf.JSP_UPDATE_CHECK</param-name>
+        <param-value>true</param-value>
+    </context-param>
+    <context-param>
+        <param-name>org.apache.myfaces.PRETTY_HTML</param-name>
+        <param-value>false</param-value>
+    </context-param>
+    <context-param>
+        <param-name>org.apache.myfaces.compressViewState</param-name>
+        <param-value>true</param-value>
+    </context-param>
+    <context-param>
+        <param-name>org.apache.myfaces.compressJavaScript</param-name>
+        <param-value>true</param-value>
+    </context-param>
+    <context-param>
+        <param-name>org.apache.myfaces.DETECT_JAVASCRIPT</param-name>
+        <param-value>false</param-value>
+    </context-param>
+    <context-param>
+        <param-name>org.apache.myfaces.ALLOW_JAVASCRIPT</param-name>
+        <param-value>true</param-value>
+    </context-param>
+    <context-param>
+        <param-name>org.apache.myfaces.READONLY_AS_DISABLED_FOR_SELECTS</param-name>
+        <param-value>false</param-value>
+    </context-param>
+    <context-param>
+        <param-name>org.apache.myfaces.AUTO_SCROLL</param-name>
+        <param-value>true</param-value>
+    </context-param>
+    <context-param>
+        <param-name>org.apache.myfaces.ADD_RESOURCE_CLASS</param-name>
+        <param-value>org.apache.myfaces.renderkit.html.util.DefaultAddResource</param-value>
+    </context-param>
+    <context-param>
+        <param-name>org.apache.myfaces.RESOURCE_VIRTUAL_PATH</param-name>
+        <param-value>/faces/myFacesExtensionResource</param-value>
+    </context-param>
+    <context-param>
+        <param-name>org.apache.myfaces.CHECK_EXTENSIONS_FILTER</param-name>
+        <param-value>true</param-value>
+    </context-param>
+    <context-param>
+        <param-name>org.ajax4jsf.handleViewExpiredOnClient</param-name>
+        <param-value>true</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>javax faces CONFIG FILES</param-name>
+        <param-value>/WEB-INF/faces-config.xml</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>com.sun.faces.enableRestoreView11Compatibility</param-name>
+        <param-value>true</param-value>
+    </context-param>
+    <context-param>
+        <param-name>com.sun.faces.numberOfViewsInSession</param-name>
+        <param-value>500</param-value>
+    </context-param>
+    <!--context-param>// valable sur si javax.faces.STATE_SAVING_METHOD = server
+        <param-name>com.sun.faces.numberOfLogicalViews</param-name>
+        <param-value>500</param-value>
+    </context-param-->
+
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>/WEB-INF/applicationContext.xml</param-value>
+    </context-param>
+    <filter>
+        <display-name>RichFaces Filter</display-name>
+        <filter-name>richfaces</filter-name>
+        <filter-class>org.ajax4jsf.Filter</filter-class>
+        <init-param>
+            <param-name>createTempFiles</param-name>
+            <param-value>true</param-value>
+        </init-param>
+        <init-param>
+            <param-name>maxRequestSize</param-name>
+            <param-value>100000000</param-value>
+        </init-param>
+    </filter>
+
+     <!--context-param>
+        <param-name>org.ajax4jsf.VIEW_HANDLERS</param-name>
+        <param-value>com.sun.facelets.FaceletViewHandler</param-value>
+    </context-param-->
+    <!--filter>
+        <display-name>Ajax4jsf Filter</display-name>
+        <filter-name>ajax4jsf</filter-name>
+        <filter-class>org.ajax4jsf.Filter</filter-class>
+        <init-param>
+            <param-name>createTempFiles</param-name>
+            <param-value>true</param-value>
+        </init-param>
+        <init-param>
+            <param-name>maxRequestSize</param-name>
+            <param-value>100000000</param-value>
+        </init-param>
+    </filter-->
+
+    <filter-mapping>
+        <filter-name>richfaces</filter-name>
+        <servlet-name>Faces Servlet</servlet-name>
+        <dispatcher>REQUEST</dispatcher>
+        <dispatcher>FORWARD</dispatcher>
+        <dispatcher>INCLUDE</dispatcher>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>MyFacesExtensionsFilter</filter-name>
+        <filter-class>org.apache.myfaces.webapp.filter.ExtensionsFilter</filter-class>
+        <init-param>
+            <param-name>uploadMaxFileSize</param-name>
+            <param-value>10000m</param-value>
+        </init-param>
+    </filter>
+
+    <filter>
+        <filter-name>GzipFilter</filter-name>
+        <filter-class>com.epegase.systeme.control.GZipServletFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>GzipFilter</filter-name>
+        <url-pattern>*.js</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>GzipFilter</filter-name>
+        <url-pattern>*.css</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>GzipFilter</filter-name>
+        <url-pattern>*.html</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>GzipFilter</filter-name>
+        <url-pattern>*.jsp</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>GzipFilter</filter-name>
+        <url-pattern>*.xml</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>GzipFilter</filter-name>
+        <url-pattern>/</url-pattern>
+    </filter-mapping>
+
+    <!-- extension mapping for adding <script/>, <link/>, and other resource tags to JSF-pages  -->
+    <filter-mapping>
+        <filter-name>MyFacesExtensionsFilter</filter-name>
+        <servlet-name>Faces Servlet</servlet-name>
+    </filter-mapping>
+
+    <!-- extension mapping for serving page-independent resources (javascript, stylesheets, images, etc.)  -->
+    <filter-mapping>
+        <filter-name>MyFacesExtensionsFilter</filter-name>
+        <url-pattern>/faces/myFacesExtensionResource/*</url-pattern>
+    </filter-mapping>
+
+
+    <!-- gestion des erreurs -->
+    <error-page>
+        <exception-type>javax.faces.application.ViewExpiredException</exception-type><!--la session a expire -->
+        <location>/WEB-INF/erreurExpiration.jsp</location>
+    </error-page>
+    <error-page>
+        <exception-type>javax.faces.FacesException.org.hibernate.exception</exception-type><!--exception faces -->
+        <location>/WEB-INF/erreurExpiration.jsp</location>
+    </error-page>
+    <error-page>
+        <exception-type>java.lang.Throwable</exception-type>
+        <location>/WEB-INF/erreurSysteme.jsp</location>
+    </error-page>
+    <error-page>
+        <exception-type>java.lang.Exception</exception-type><!-- erreur java-->
+        <location>/WEB-INF/erreurSysteme.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>400</error-code><!--La syntaxe de la requête est erronée-->
+        <location>/WEB-INF/erreurSysteme.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>401</error-code><!--Une authentification est nécessaire pour accéder à la ressource-->
+        <location>/WEB-INF/erreurSysteme.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>402</error-code><!--Paiement requis pour accéder à la ressource (non utilisé)-->
+        <location>/WEB-INF/erreurSysteme.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>403</error-code><!--Le serveur a compris la requête, mais refuse de l'exécuter-->
+        <location>/WEB-INF/erreurSysteme.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>404</error-code><!--Ressource non trouvée-->
+        <location>/WEB-INF/erreurSysteme.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>405</error-code><!--Méthode de requête non autorisée-->
+        <location>/WEB-INF/erreurSysteme.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>406</error-code><!--Toutes les réponses possibles seront refusées.-->
+        <location>/WEB-INF/erreurSysteme.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>407</error-code><!--Accès à la ressource autorisé par identification avec le proxy.-->
+        <location>/WEB-INF/erreurSysteme.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>408</error-code><!--Temps d’attente d’une réponse du serveur écoulé-->
+        <location>/WEB-INF/erreurSysteme.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>409</error-code><!--La requête ne peut être traitée à l’état actuel-->
+        <location>/WEB-INF/erreurSysteme.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>410</error-code><!--La ressource est indisponible et aucune adresse de redirection n’est connue-->
+        <location>/WEB-INF/erreurSysteme.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>411</error-code><!--La longueur de la requête n’a pas été précisée-->
+        <location>/WEB-INF/erreurSysteme.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>412</error-code><!--Préconditions envoyées par la requête non-vérifiées-->
+        <location>/WEB-INF/erreurSysteme.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>413</error-code><!--Traitement abandonné dû à une requête trop importante-->
+        <location>/WEB-INF/erreurSysteme.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>414</error-code><!-- URI trop longue-->
+        <location>/WEB-INF/erreurSysteme.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>415</error-code><!--Format de requête non-supportée pour une méthode et une ressource données-->
+        <location>/WEB-INF/erreurSysteme.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>416</error-code><!--Champs d’en-tête de requête « range » incorrect.-->
+        <location>/WEB-INF/erreurSysteme.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>500</error-code><!--Erreur interne du serveur-->
+        <location>/WEB-INF/erreurSysteme.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>501</error-code><!--Fonctionnalité réclamée non supportée par le serveur-->
+        <location>/WEB-INF/erreurSysteme.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>502</error-code><!--Mauvaise réponse envoyée à un serveur intermédiaire par un autre serveur.-->
+        <location>/WEB-INF/erreurSysteme.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>503</error-code><!--Service temporairement indisponible ou en maintenance-->
+        <location>/WEB-INF/erreurSysteme.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>504</error-code><!--Temps d’attente d’une réponse d’un serveur à un serveur intermédiaire écoulé-->
+        <location>/WEB-INF/erreurSysteme.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>505</error-code><!--Version HTTP non gérée par le serveur-->
+        <location>/WEB-INF/erreurSysteme.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>506</error-code><!--Erreur de négociation transparent content negociation-->
+        <location>/WEB-INF/erreurSysteme.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>507</error-code><!--Espace insuffisant pour modifier les propriétés ou construire la collection-->
+        <location>/WEB-INF/erreurSysteme.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>508</error-code><!--Boucle dans une mise en relation de ressources-->
+        <location>/WEB-INF/erreurSysteme.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>509</error-code><!--Utilisé par de nombreux serveurs pour indiquer un dépassement de quota.-->
+        <location>/WEB-INF/erreurSysteme.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>510</error-code><!-- la requête ne respecte pas la politique d'accès aux ressources HTTP étendues.-->
+        <location>/WEB-INF/erreurSysteme.jsp</location>
+    </error-page>
+    <!-- fin gestion des erreurs- -->
+
+</web-app>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="Departement" table="cmm_departement">
+    <id column="dep_id" name="depId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="depDateCreat" type="timestamp">
+      <column name="dep_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="depDateModif" type="timestamp">
+      <column name="dep_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="depUserCreat" type="long">
+      <column default="0" length="15" name="dep_user_creat">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="depUserModif" type="long">
+      <column default="0" length="15" name="dep_user_modif">
+        <comment>utilisateur de modification</comment>
+      </column>
+    </property>
+    <property name="depCode" type="string">
+      <column length="20" name="dep_code">
+        <comment>code departement</comment>
+      </column>
+    </property>
+    <property name="depNomFr" type="string">
+      <column length="100" name="dep_nom_FR">
+        <comment>nom departement en FR</comment>
+      </column>
+    </property>
+    <property name="depNomUk" type="string">
+      <column length="100" name="dep_nom_UK">
+        <comment>nom departement en UK</comment>
+      </column>
+    </property>
+    <property name="depNomSp" type="string">
+      <column length="100" name="dep_nom_SP">
+        <comment>nom departement en SP</comment>
+      </column>
+    </property>
+    <property name="depInactif" type="integer">
+      <column default="0" length="1" name="dep_inactif">
+        <comment>0=actif 1=inactif 2=supprimer</comment>
+      </column>
+    </property>
+    <property name="depPourcentage" type="float">
+      <column default="0" name="dep_pourcentage">
+        <comment>% de repartition par rapport au site</comment>
+      </column>
+    </property>
+    <property name="depIdResponsable" type="long">
+      <column default="0" name="dep_id_responsable">
+        <comment>id responsable</comment>
+      </column>
+    </property>
+    <property name="depNomResponsable" type="string">
+      <column length="100" name="dep_nom_responsable">
+        <comment>nom responsable</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.Site" column="sit_id" lazy="false" name="site" not-null="true"/>
+  </class>
+</hibernate-mapping>

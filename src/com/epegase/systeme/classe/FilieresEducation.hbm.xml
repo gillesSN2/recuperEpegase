@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="FilieresEducation" table="edu_filieres_education">
+    <id column="fil_id" name="filId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property index="true" name="filDateCreat" type="timestamp">
+      <column default="NULL" index="true" name="fil_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="filDateModif" type="timestamp">
+      <column default="NULL" name="fil_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="filUserCreat" type="long">
+      <column default="0" length="15" name="fil_user_creat">
+        <comment>user de creation</comment>
+      </column>
+    </property>
+    <property name="filUserModif" type="long">
+      <column default="0" length="15" name="fil_user_modif">
+        <comment>user de modification</comment>
+      </column>
+    </property>
+    <property name="filEtat" type="integer">
+      <column default="0" length="1" name="fil_etat">
+        <comment>0=actif 1=inactif 2=supprime</comment>
+      </column>
+    </property>
+    <property index="true" name="filCode" type="string">
+      <column index="true" length="20" name="fil_code">
+        <comment>code classe ou filiere</comment>
+      </column>
+    </property>
+    <property index="true" name="filLibelle" type="string">
+      <column index="true" length="100" name="fil_libelle">
+        <comment>libelle classe ou filiere</comment>
+      </column>
+    </property>
+    <property name="filType" type="integer">
+      <column default="0" length="1" name="fil_type">
+        <comment>0=maternelle 1=elementaire 2=college 3=lycee 4=universite 5=centre de formation 6=cours du soir</comment>
+      </column>
+    </property>
+    <property name="filMode" type="integer">
+      <column default="0" length="1" name="fil_mode">
+        <comment>0=appreciation 1=moyenne 2=ue</comment>
+      </column>
+    </property>
+    <property name="filSalle" type="string">
+      <column length="20" name="fil_salle">
+        <comment>salle affectee</comment>
+      </column>
+    </property>
+    <property name="filMoisDebut" type="string">
+      <column length="2" name="fil_mois_debut">
+        <comment>mois debut</comment>
+      </column>
+    </property>
+    <property name="filMoisFin" type="string">
+      <column length="2" name="fil_mois_fin">
+        <comment>mois fin</comment>
+      </column>
+    </property>
+    <property name="filnbMois" type="integer">
+      <column default="0" name="fil_nb_mois">
+        <comment>nb de mois de facturation</comment>
+      </column>
+    </property>
+    <property name="filnbTrimestre" type="integer">
+      <column default="0" name="fil_nb_trimestre">
+        <comment>nb de trimestre de facturation</comment>
+      </column>
+    </property>
+    <property name="filnbSemestre" type="integer">
+      <column default="0" name="fil_nb_semestre">
+        <comment>nb de semestre de facturation</comment>
+      </column>
+    </property>
+    <property name="filDescription" type="text">
+      <column name="fil_description">
+        <comment>description du cursus</comment>
+      </column>
+    </property>
+    <property name="filTarifDossier" type="double">
+      <column default="0" name="fil_tarif_dossier">
+        <comment>tarif dossier</comment>
+      </column>
+    </property>
+    <property name="filTarifInscription" type="double">
+      <column default="0" name="fil_tarif_inscription">
+        <comment>tarif inscription</comment>
+      </column>
+    </property>
+    <property name="filTarifReinscription" type="double">
+      <column default="0" name="fil_tarif_reinscription">
+        <comment>tarif re-inscription</comment>
+      </column>
+    </property>
+    <property name="filTarifScolarite" type="double">
+      <column default="0" name="fil_tarif_scolarite">
+        <comment>tarif scolarite</comment>
+      </column>
+    </property>
+    <property name="filTarifTransport" type="double">
+      <column default="0" name="fil_tarif_transport">
+        <comment>tarif transport</comment>
+      </column>
+    </property>
+    <property name="filTarifCantine" type="double">
+      <column default="0" name="fil_tarif_cantine">
+        <comment>tarif cantine</comment>
+      </column>
+    </property>
+    <property name="filTarifTenue" type="double">
+      <column default="0" name="fil_tarif_tenue">
+        <comment>tarif tenue</comment>
+      </column>
+    </property>
+    <property name="filTarifDivers" type="double">
+      <column default="0" name="fil_tarif_divers">
+        <comment>tarif divers</comment>
+      </column>
+    </property>
+    <property name="filTarifExamens" type="double">
+      <column default="0" name="fil_tarif_examens">
+        <comment>tarif examens</comment>
+      </column>
+    </property>
+    <property name="filTarifAssociation" type="double">
+      <column default="0" name="fil_tarif_association">
+        <comment>tarif association etudiant</comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>

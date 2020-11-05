@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="BsoTabElement" table="pay_tab_element">
+    <id column="tabele_id" name="tabele_id" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="tabeleZone" type="string">
+      <column length="50" name="tabele_zone">
+        <comment>zone fiscale du tableau</comment>
+      </column>
+    </property>
+    <property name="tabeleReference" type="string">
+      <column length="20" name="tabele_reference">
+        <comment>reference de la ligne</comment>
+      </column>
+    </property>
+    <property name="tabeleLibFR" type="string">
+      <column length="200" name="tabele_lib_FR">
+        <comment>nom element en fr</comment>
+      </column>
+    </property>
+    <property name="tabeleLibUK" type="string">
+      <column length="200" name="tabele_lib_UK">
+        <comment>nom element en uk</comment>
+      </column>
+    </property>
+    <property name="tabeleLibSP" type="string">
+      <column length="200" name="tabele_lib_SP">
+        <comment>nom element en sp</comment>
+      </column>
+    </property>
+    <property name="tabeleNum" type="integer">
+      <column default="0" length="4" name="tabele_num">
+        <comment>numero de la ligne</comment>
+      </column>
+    </property>
+    <property name="tabeleType" type="integer">
+      <column default="0" length="1" name="tabele_type">
+        <comment>0=titre principal 1=titre secondaire 2=sous titre 3=calcul/saisie 4=total sous titre 5=total secondaire 6=total principal</comment>
+      </column>
+    </property>
+    <property name="tabeleMode" type="integer">
+      <column default="0" length="1" name="tabele_mode">
+        <comment>0=resultat normal 1=resultat intermediaire</comment>
+      </column>
+    </property>
+    <property name="tabelePrint" type="integer">
+      <column default="0" length="1" name="tabele_print">
+        <comment>0=imprimable 1=non imprimable</comment>
+      </column>
+    </property>
+    <property name="tabeleNature" type="integer">
+      <column default="0" length="1" name="tabele_nature">
+        <comment>0=defaut 1=monnaie 2=% 3=quantite</comment>
+      </column>
+    </property>
+    <property length="20" name="tablisOldId" type="long">
+      <column default="0" name="tablis_old_id">
+        <comment>l ancien cle etrangere de pegTabNom</comment>
+      </column>
+    </property>
+    <property length="20" name="tabeleOldId" type="long">
+      <column default="0" name="tabele_old_id">
+        <comment>l ancien id de l element</comment>
+      </column>
+    </property>
+    <property name="tabeleInactif" type="boolean">
+      <column default="false" name="tabele_inactif">
+        <comment>0=actif 1=inactif</comment>
+      </column>
+    </property>
+    <property name="tabeleTypeCol01" type="integer">
+      <column default="0" length="1" name="tabele_type_col01">
+        <comment>type de la colonne 01</comment>
+      </column>
+    </property>
+    <property name="tabeleTypeCol02" type="integer">
+      <column default="0" length="1" name="tabele_type_col02">
+        <comment>type de la colonne 02</comment>
+      </column>
+    </property>
+    <property name="tabeleTypeCol03" type="integer">
+      <column default="0" length="1" name="tabele_type_col03">
+        <comment>type de la colonne 03</comment>
+      </column>
+    </property>
+    <property name="tabeleTypeCol04" type="integer">
+      <column default="0" length="1" name="tabele_type_col04">
+        <comment>type de la colonne 04</comment>
+      </column>
+    </property>
+    <property name="tabeleTypeCol05" type="integer">
+      <column default="0" length="1" name="tabele_type_col05">
+        <comment>type de la colonne 05</comment>
+      </column>
+    </property>
+    <property name="tabeleTypeCol06" type="integer">
+      <column default="0" length="1" name="tabele_type_col06">
+        <comment>type de la colonne 06</comment>
+      </column>
+    </property>
+    <property name="tabeleTypeCol07" type="integer">
+      <column default="0" length="1" name="tabele_type_col07">
+        <comment>type de la colonne 07</comment>
+      </column>
+    </property>
+    <property name="tabeleTypeCol08" type="integer">
+      <column default="0" length="1" name="tabele_type_col08">
+        <comment>type de la colonne 08</comment>
+      </column>
+    </property>
+    <property name="tabeleTypeCol09" type="integer">
+      <column default="0" length="1" name="tabele_type_col09">
+        <comment>type de la colonne 09</comment>
+      </column>
+    </property>
+    <property name="tabeleTypeCol10" type="integer">
+      <column default="0" length="1" name="tabele_type_col10">
+        <comment>type de la colonne 10</comment>
+      </column>
+    </property>
+    <property name="tabeleTypeCol11" type="integer">
+      <column default="0" length="1" name="tabele_type_col11">
+        <comment>type de la colonne 11</comment>
+      </column>
+    </property>
+    <property name="tabeleTypeCol12" type="integer">
+      <column default="0" length="1" name="tabele_type_col12">
+        <comment>type de la colonne 12</comment>
+      </column>
+    </property>
+    <property name="tabeleTypeCol13" type="integer">
+      <column default="0" length="1" name="tabele_type_col13">
+        <comment>type de la colonne 13</comment>
+      </column>
+    </property>
+    <property name="tabeleTypeCol14" type="integer">
+      <column default="0" length="1" name="tabele_type_col14">
+        <comment>type de la colonne 14</comment>
+      </column>
+    </property>
+    <property name="tabeleTypeCol15" type="integer">
+      <column default="0" length="1" name="tabele_type_col15">
+        <comment>type de la colonne 15</comment>
+      </column>
+    </property>
+    <property name="tabeleTypeCol16" type="integer">
+      <column default="0" length="1" name="tabele_type_col16">
+        <comment>type de la colonne 16</comment>
+      </column>
+    </property>
+    <property name="tabeleTypeCol17" type="integer">
+      <column default="0" length="1" name="tabele_type_col17">
+        <comment>type de la colonne 17</comment>
+      </column>
+    </property>
+    <property name="tabeleTypeCol18" type="integer">
+      <column default="0" length="1" name="tabele_type_col18">
+        <comment>type de la colonne 18</comment>
+      </column>
+    </property>
+    <property name="tabeleTypeCol19" type="integer">
+      <column default="0" length="1" name="tabele_type_col19">
+        <comment>type de la colonne 19</comment>
+      </column>
+    </property>
+    <property name="tabeleTypeCol20" type="integer">
+      <column default="0" length="1" name="tabele_type_col20">
+        <comment>type de la colonne 20</comment>
+      </column>
+    </property>
+    <property name="tabeleFormatCel01" type="integer">
+      <column default="0" length="1" name="tabele_format_cel01">
+        <comment>format 0=monnaie 1=% 2=quantite</comment>
+      </column>
+    </property>
+    <property name="tabeleFormatCel02" type="integer">
+      <column default="0" length="1" name="tabele_format_cel02">
+        <comment>format 0=monnaie 1=% 2=quantite</comment>
+      </column>
+    </property>
+    <property name="tabeleFormatCel03" type="integer">
+      <column default="0" length="1" name="tabele_format_cel03">
+        <comment>format 0=monnaie 1=% 2=quantite</comment>
+      </column>
+    </property>
+    <property name="tabeleFormatCel04" type="integer">
+      <column default="0" length="1" name="tabele_format_cel04">
+        <comment>format de la colonne 04</comment>
+      </column>
+    </property>
+    <property name="tabeleFormatCel05" type="integer">
+      <column default="0" length="1" name="tabele_format_cel05">
+        <comment>format de la colonne 05</comment>
+      </column>
+    </property>
+    <property name="tabeleFormatCel06" type="integer">
+      <column default="0" length="1" name="tabele_format_cel06">
+        <comment>format de la colonne 06</comment>
+      </column>
+    </property>
+    <property name="tabeleFormatCel07" type="integer">
+      <column default="0" length="1" name="tabele_format_cel07">
+        <comment>format de la colonne 07</comment>
+      </column>
+    </property>
+    <property name="tabeleFormatCel08" type="integer">
+      <column default="0" length="1" name="tabele_format_cel08">
+        <comment>format de la colonne 08</comment>
+      </column>
+    </property>
+    <property name="tabeleFormatCel09" type="integer">
+      <column default="0" length="1" name="tabele_format_cel09">
+        <comment>format de la colonne 09</comment>
+      </column>
+    </property>
+    <property name="tabeleFormatCel10" type="integer">
+      <column default="0" length="1" name="tabele_format_cel10">
+        <comment>format de la colonne 10</comment>
+      </column>
+    </property>
+    <property name="tabeleFormatCel11" type="integer">
+      <column default="0" length="1" name="tabele_format_cel11">
+        <comment>format de la colonne 11</comment>
+      </column>
+    </property>
+    <property name="tabeleFormatCel12" type="integer">
+      <column default="0" length="1" name="tabele_format_cel12">
+        <comment>format de la colonne 12</comment>
+      </column>
+    </property>
+    <property name="tabeleFormatCel13" type="integer">
+      <column default="0" length="1" name="tabele_format_cel13">
+        <comment>format de la colonne 13</comment>
+      </column>
+    </property>
+    <property name="tabeleFormatCel14" type="integer">
+      <column default="0" length="1" name="tabele_format_cel14">
+        <comment>format de la colonne 14</comment>
+      </column>
+    </property>
+    <property name="tabeleFormatCel15" type="integer">
+      <column default="0" length="1" name="tabele_format_cel15">
+        <comment>format de la colonne 15</comment>
+      </column>
+    </property>
+    <property name="tabeleFormatCel16" type="integer">
+      <column default="0" length="1" name="tabele_format_cel16">
+        <comment>format de la colonne 16</comment>
+      </column>
+    </property>
+    <property name="tabeleFormatCel17" type="integer">
+      <column default="0" length="1" name="tabele_format_cel17">
+        <comment>format de la colonne 17</comment>
+      </column>
+    </property>
+    <property name="tabeleFormatCel18" type="integer">
+      <column default="0" length="1" name="tabele_format_cel18">
+        <comment>format de la colonne 18</comment>
+      </column>
+    </property>
+    <property name="tabeleFormatCel19" type="integer">
+      <column default="0" length="1" name="tabele_format_cel19">
+        <comment>format de la colonne 19</comment>
+      </column>
+    </property>
+    <property name="tabeleFormatCel20" type="integer">
+      <column default="0" length="1" name="tabele_format_cel20">
+        <comment>format de la colonne 20</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.BsoTabNom" column="tablis_id" lazy="false" name="bsoTabNom" not-null="true"/>
+  </class>
+</hibernate-mapping>

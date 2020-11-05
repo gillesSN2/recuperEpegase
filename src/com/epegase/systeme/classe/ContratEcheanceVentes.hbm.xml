@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="ContratEcheanceVentes" table="vte_contrat_echeance">
+    <id column="crtech_id" name="crtechId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="crtechDateTheo" type="date">
+      <column default="null" name="crtech_date_theo">
+        <comment>date echeance theorique</comment>
+      </column>
+    </property>
+    <property name="crtechMontantTheo" type="double">
+      <column default="0" name="crtech_montant_theo">
+        <comment>montant theorique</comment>
+      </column>
+    </property>
+    <property name="crtechDateReel" type="date">
+      <column default="null" name="crtech_date_reel">
+        <comment>date echeance theorique</comment>
+      </column>
+    </property>
+    <property name="crtechMontantReel" type="double">
+      <column default="0" name="crtech_montant_reel">
+        <comment>montant reel</comment>
+      </column>
+    </property>
+    <property name="crtechMode" type="integer">
+      <column length="1" name="crtech_mode">
+        <comment>mode de paiement</comment>
+      </column>
+    </property>
+    <property name="crtechCaisse" type="string">
+      <column length="20" name="crtech_caisse">
+        <comment>code caisse ou banque</comment>
+      </column>
+    </property>
+    <property name="crtechLibelle" type="string">
+      <column length="100" name="crtech_libelle">
+        <comment>libelle caisse ou banque</comment>
+      </column>
+    </property>
+    <property name="crtechIdCaissier" type="long">
+      <column default="0" name="crtech_id_caissier">
+        <comment>mode de paiement</comment>
+      </column>
+    </property>
+    <property name="crtechNomCaissier" type="string">
+      <column length="100" name="crtech_nom_caissier">
+        <comment>nom du caissier</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ContratEnteteVentes" column="crt_id" lazy="false" name="contratEnteteVentes" not-null="true"/>
+  </class>
+</hibernate-mapping>

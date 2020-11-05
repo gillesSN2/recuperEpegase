@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="ConsultationLabo" table="med_consultation_labo">
+    <id column="csllab_id" name="csllabId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="csllabProduit" type="string">
+      <column length="20" name="csllab_produit">
+        <comment>code produit</comment>
+      </column>
+    </property>
+    <property name="csllabLibelle" type="string">
+      <column length="100" name="csllab_libelle">
+        <comment>libelle produit</comment>
+      </column>
+    </property>
+    <property name="csllabObs" type="string">
+      <column length="500" name="csllab_obs">
+        <comment>observations</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ConsultationEnteteGene" column="csg_id" lazy="false" name="ConsultationEnteteGene" not-null="true"/>
+  </class>
+</hibernate-mapping>

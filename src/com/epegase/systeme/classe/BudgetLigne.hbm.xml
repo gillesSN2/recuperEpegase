@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="BudgetLigne" table="cpt_budget_ligne">
+    <id column="budlig_id" name="budlig_id" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="budligCode" type="string">
+      <column length="20" name="budlig_code">
+        <comment>code budget</comment>
+      </column>
+    </property>
+    <property name="budligAxe" type="int">
+      <column default="0" length="15" name="budlig_axe">
+        <comment>nature axe analytique</comment>
+      </column>
+    </property>
+    <property name="budligUtil" type="integer">
+      <column default="0" length="2" name="budlig_util">
+        <comment>defini le dernier budget utilise de 1 a  4</comment>
+      </column>
+    </property>
+    <property name="budligMontantSaisie" type="double">
+      <column default="0" length="15" name="budlig_montant_saisie">
+        <comment>mntant saisie</comment>
+      </column>
+    </property>
+    <property name="budligQteSaisie" type="float">
+      <column default="0" length="15" name="budlig_qte_saisie">
+        <comment>qte saisie</comment>
+      </column>
+    </property>
+    <property name="budligPourcentSaisie" type="float">
+      <column default="0" length="15" name="budlig_pourcent_saisie">
+        <comment>pourcentage saisie</comment>
+      </column>
+    </property>
+    <property name="budligActivite" type="string">
+      <column length="20" name="budlig_activite">
+        <comment>code activite</comment>
+      </column>
+    </property>
+    <property name="budligLibActivite" type="string">
+      <column length="100" name="budlig_lib_activite">
+        <comment>lib activite</comment>
+      </column>
+    </property>
+    <property name="budligAnal1" type="string">
+      <column length="20" name="budlig_anal1">
+        <comment>code anal1</comment>
+      </column>
+    </property>
+    <property name="budligLibAnal1" type="string">
+      <column length="100" name="budlig_lib_anal1">
+        <comment>lib anal1</comment>
+      </column>
+    </property>
+    <property name="budligAnal2" type="string">
+      <column length="20" name="budlig_anal2">
+        <comment>code anal1</comment>
+      </column>
+    </property>
+    <property name="budligLibAnal2" type="string">
+      <column length="100" name="budlig_lib_anal2">
+        <comment>lib anal1</comment>
+      </column>
+    </property>
+    <property name="budligAnal3" type="string">
+      <column length="20" name="budlig_anal3">
+        <comment>code anal3</comment>
+      </column>
+    </property>
+    <property name="budligLibAnal3" type="string">
+      <column length="100" name="budlig_lib_anal3">
+        <comment>lib anal3</comment>
+      </column>
+    </property>
+    <property name="budligAnal4" type="string">
+      <column length="20" name="budlig_anal4">
+        <comment>code anal1</comment>
+      </column>
+    </property>
+    <property name="budligLibAnal4" type="string">
+      <column length="100" name="budlig_lib_anal4">
+        <comment>lib anal1</comment>
+      </column>
+    </property>
+    <property name="budligSite" type="string">
+      <column length="20" name="budlig_site">
+        <comment>code site</comment>
+      </column>
+    </property>
+    <property name="budligSiteLib" type="string">
+      <column length="50" name="budlig_site_lib">
+        <comment>libelle site</comment>
+      </column>
+    </property>
+    <property name="budligDepartement" type="string">
+      <column length="20" name="budlig_departement">
+        <comment>code departement</comment>
+      </column>
+    </property>
+    <property name="budligDepartementLib" type="string">
+      <column length="50" name="budlig_departement_lib">
+        <comment>libelle departement</comment>
+      </column>
+    </property>
+    <property name="budligService" type="string">
+      <column length="20" name="budlig_service">
+        <comment>code service</comment>
+      </column>
+    </property>
+    <property name="budligServiceLib" type="string">
+      <column length="50" name="budlig_service_lib">
+        <comment>libelle service</comment>
+      </column>
+    </property>
+    <property name="budligRegion" type="string">
+      <column length="20" name="budlig_region">
+        <comment>code region</comment>
+      </column>
+    </property>
+    <property name="budligRegionLib" type="string">
+      <column length="50" name="budlig_region_lib">
+        <comment>libelle region</comment>
+      </column>
+    </property>
+    <property name="budligSecteur" type="string">
+      <column length="20" name="budlig_secteur">
+        <comment>code secteur</comment>
+      </column>
+    </property>
+    <property name="budligSecteurLib" type="string">
+      <column length="50" name="budlig_secteur_lib">
+        <comment>libelle secteur</comment>
+      </column>
+    </property>
+    <property name="budligPdv" type="string">
+      <column length="20" name="budlig_pdv">
+        <comment>code pdv</comment>
+      </column>
+    </property>
+    <property name="budligPdvLib" type="string">
+      <column length="50" name="budlig_pdv_lib">
+        <comment>libelle pdv</comment>
+      </column>
+    </property>
+    <property name="budligLigne" type="string">
+      <column length="20" name="budlig_ligne">
+        <comment>code ligne</comment>
+      </column>
+    </property>
+    <property name="budligLigneLib" type="string">
+      <column length="50" name="budlig_ligne_lib">
+        <comment>libelle ligne</comment>
+      </column>
+    </property>
+    <property name="budligAtelier" type="string">
+      <column length="20" name="budlig_atelier">
+        <comment>code atelier</comment>
+      </column>
+    </property>
+    <property name="budligAtelierLib" type="string">
+      <column length="50" name="budlig_atelier_lib">
+        <comment>libelle atelier</comment>
+      </column>
+    </property>
+    <property name="budligAgent" type="string">
+      <column length="20" name="budlig_agent">
+        <comment>code agent</comment>
+      </column>
+    </property>
+    <property name="budligAgentLib" type="string">
+      <column length="50" name="budlig_agent_lib">
+        <comment>libelle agent</comment>
+      </column>
+    </property>
+    <property name="budligStr" type="string">
+      <column length="20" name="budlig_str">
+        <comment>code structure</comment>
+      </column>
+    </property>
+    <property name="budligStrLib" type="string">
+      <column length="50" name="budlig_str_lib">
+        <comment>libelle structure</comment>
+      </column>
+    </property>
+    <property name="budligStrCle" type="string">
+      <column length="20" name="budlig_str_cle">
+        <comment>cle structure</comment>
+      </column>
+    </property>
+    <property name="budligRepCle" type="string">
+      <column length="20" name="budlig_rep_cle">
+        <comment>code cle repartition</comment>
+      </column>
+    </property>
+    <property name="budligTypeCle" type="integer">
+      <column default="0" name="budlig_type_cle">
+        <comment>type de cle de repartition</comment>
+      </column>
+    </property>
+    <property name="budligProjet" type="string">
+      <column length="20" name="budlig_projet">
+        <comment>code projet</comment>
+      </column>
+    </property>
+    <property name="budligProjetLib" type="string">
+      <column length="50" name="budlig_projet_lib">
+        <comment>libelle projet</comment>
+      </column>
+    </property>
+    <property name="budligEntite" type="string">
+      <column length="20" name="budlig_entite">
+        <comment>code entite</comment>
+      </column>
+    </property>
+    <property name="budligEntiteLib" type="string">
+      <column length="50" name="budlig_entite_lib">
+        <comment>libelle entite</comment>
+      </column>
+    </property>
+    <property name="budligPoste" type="string">
+      <column length="20" name="budlig_poste">
+        <comment>code poste</comment>
+      </column>
+    </property>
+    <property name="budligPosteLib" type="string">
+      <column length="50" name="budlig_poste_lib">
+        <comment>libelle poste</comment>
+      </column>
+    </property>
+    <property name="budlig01TotVal" type="double">
+      <column default="0" name="budlig_01_tot_val">
+        <comment>valeur initiale</comment>
+      </column>
+    </property>
+    <property name="budlig02TotVal" type="double">
+      <column default="0" name="budlig_02_tot_val">
+        <comment>valeur reamenagement 2</comment>
+      </column>
+    </property>
+    <property name="budlig03TotVal" type="double">
+      <column default="0" name="budlig_03_tot_val">
+        <comment>valeur reamenagement 3</comment>
+      </column>
+    </property>
+    <property name="budlig04TotVal" type="double">
+      <column default="0" name="budlig_04_tot_val">
+        <comment>valeur reamenagement 4</comment>
+      </column>
+    </property>
+    <property name="budlig01R1Val" type="double">
+      <column default="0" name="budlig_01_r1_val">
+        <comment>janvier reamenagement 1</comment>
+      </column>
+    </property>
+    <property name="budlig02R1Val" type="double">
+      <column default="0" name="budlig_02_r1_val">
+        <comment>fevrier reamenagement 1</comment>
+      </column>
+    </property>
+    <property name="budlig03R1Val" type="double">
+      <column default="0" name="budlig_03_r1_val">
+        <comment>mars reamenagement 1</comment>
+      </column>
+    </property>
+    <property name="budlig04R1Val" type="double">
+      <column default="0" name="budlig_04_r1_val">
+        <comment>avril reamenagement 1</comment>
+      </column>
+    </property>
+    <property name="budlig05R1Val" type="double">
+      <column default="0" name="budlig_05_r1_val">
+        <comment>mai reamenagement 1</comment>
+      </column>
+    </property>
+    <property name="budlig06R1Val" type="double">
+      <column default="0" name="budlig_06_r1_val">
+        <comment>juin reamenagement 1</comment>
+      </column>
+    </property>
+    <property name="budlig07R1Val" type="double">
+      <column default="0" name="budlig_07_r1_val">
+        <comment>juillet reamenagement 1</comment>
+      </column>
+    </property>
+    <property name="budlig08R1Val" type="double">
+      <column default="0" name="budlig_08_r1_val">
+        <comment>aout reamenagement 1</comment>
+      </column>
+    </property>
+    <property name="budlig09R1Val" type="double">
+      <column default="0" name="budlig_09_r1_val">
+        <comment>septembre reamenagement 1</comment>
+      </column>
+    </property>
+    <property name="budlig10R1Val" type="double">
+      <column default="0" name="budlig_10_r1_val">
+        <comment>octobre reamenagement 1</comment>
+      </column>
+    </property>
+    <property name="budlig11R1Val" type="double">
+      <column default="0" name="budlig_11_r1_val">
+        <comment>novembre reamenagement 1</comment>
+      </column>
+    </property>
+    <property name="budlig12R1Val" type="double">
+      <column default="0" name="budlig_12_r1_val">
+        <comment>decembre reamenagement 1</comment>
+      </column>
+    </property>
+    <property name="budlig01R2Val" type="double">
+      <column default="0" name="budlig_01_r2_val">
+        <comment>janvier reamenagement 2</comment>
+      </column>
+    </property>
+    <property name="budlig02R2Val" type="double">
+      <column default="0" name="budlig_02_r2_val">
+        <comment>fevrier reamenagement 2</comment>
+      </column>
+    </property>
+    <property name="budlig03R2Val" type="double">
+      <column default="0" name="budlig_03_r2_val">
+        <comment>mars reamenagement 2</comment>
+      </column>
+    </property>
+    <property name="budlig04R2Val" type="double">
+      <column default="0" name="budlig_04_r2_val">
+        <comment>avril reamenagement 2</comment>
+      </column>
+    </property>
+    <property name="budlig05R2Val" type="double">
+      <column default="0" name="budlig_05_r2_val">
+        <comment>mai reamenagement 2</comment>
+      </column>
+    </property>
+    <property name="budlig06R2Val" type="double">
+      <column default="0" name="budlig_06_r2_val">
+        <comment>juin reamenagement 2</comment>
+      </column>
+    </property>
+    <property name="budlig07R2Val" type="double">
+      <column default="0" name="budlig_07_r2_val">
+        <comment>juillet reamenagement 2</comment>
+      </column>
+    </property>
+    <property name="budlig08R2Val" type="double">
+      <column default="0" name="budlig_08_r2_val">
+        <comment>aout reamenagement 2</comment>
+      </column>
+    </property>
+    <property name="budlig09R2Val" type="double">
+      <column default="0" name="budlig_09_r2_val">
+        <comment>septembre reamenagement v</comment>
+      </column>
+    </property>
+    <property name="budlig10R2Val" type="double">
+      <column default="0" name="budlig_10_r2_val">
+        <comment>octobre reamenagement 2</comment>
+      </column>
+    </property>
+    <property name="budlig11R2Val" type="double">
+      <column default="0" name="budlig_11_r2_val">
+        <comment>novembre reamenagement 2</comment>
+      </column>
+    </property>
+    <property name="budlig12R2Val" type="double">
+      <column default="0" name="budlig_12_r2_val">
+        <comment>decembre reamenagement 2</comment>
+      </column>
+    </property>
+    <property name="budlig01R3Val" type="double">
+      <column default="0" name="budlig_01_r3_val">
+        <comment>janvier reamenagement 3</comment>
+      </column>
+    </property>
+    <property name="budlig02R3Val" type="double">
+      <column default="0" name="budlig_02_r3_val">
+        <comment>fevrier reamenagement 3</comment>
+      </column>
+    </property>
+    <property name="budlig03R3Val" type="double">
+      <column default="0" name="budlig_03_r3_val">
+        <comment>mars reamenagement 3</comment>
+      </column>
+    </property>
+    <property name="budlig04R3Val" type="double">
+      <column default="0" name="budlig_04_r3_val">
+        <comment>avril reamenagement 3</comment>
+      </column>
+    </property>
+    <property name="budlig05R3Val" type="double">
+      <column default="0" name="budlig_05_r3_val">
+        <comment>mai reamenagement 3</comment>
+      </column>
+    </property>
+    <property name="budlig06R3Val" type="double">
+      <column default="0" name="budlig_06_r3_val">
+        <comment>juin reamenagement 3</comment>
+      </column>
+    </property>
+    <property name="budlig07R3Val" type="double">
+      <column default="0" name="budlig_07_r3_val">
+        <comment>juillet reamenagement 3</comment>
+      </column>
+    </property>
+    <property name="budlig08R3Val" type="double">
+      <column default="0" name="budlig_08_r3_val">
+        <comment>aout reamenagement 3</comment>
+      </column>
+    </property>
+    <property name="budlig09R3Val" type="double">
+      <column default="0" name="budlig_09_r3_val">
+        <comment>septembre reamenagement 3</comment>
+      </column>
+    </property>
+    <property name="budlig10R3Val" type="double">
+      <column default="0" name="budlig_10_r3_val">
+        <comment>octobre reamenagement 3</comment>
+      </column>
+    </property>
+    <property name="budlig11R3Val" type="double">
+      <column default="0" name="budlig_11_r3_val">
+        <comment>novembre reamenagement 3</comment>
+      </column>
+    </property>
+    <property name="budlig12R3Val" type="double">
+      <column default="0" name="budlig_12_r3_val">
+        <comment>decembre reamenagement 3</comment>
+      </column>
+    </property>
+    <property name="budlig01R4Val" type="double">
+      <column default="0" name="budlig_01_r4_val">
+        <comment>janvier reamenagement 4</comment>
+      </column>
+    </property>
+    <property name="budlig02R4Val" type="double">
+      <column default="0" name="budlig_02_r4_val">
+        <comment>fevrier reamenagement 4</comment>
+      </column>
+    </property>
+    <property name="budlig03R4Val" type="double">
+      <column default="0" name="budlig_03_r4_val">
+        <comment>mars reamenagement 4</comment>
+      </column>
+    </property>
+    <property name="budlig04R4Val" type="double">
+      <column default="0" name="budlig_04_r4_val">
+        <comment>avril reamenagement 4</comment>
+      </column>
+    </property>
+    <property name="budlig05R4Val" type="double">
+      <column default="0" name="budlig_05_r4_val">
+        <comment>mai reamenagement 4</comment>
+      </column>
+    </property>
+    <property name="budlig06R4Val" type="double">
+      <column default="0" name="budlig_06_r4_val">
+        <comment>juin reamenagement 4</comment>
+      </column>
+    </property>
+    <property name="budlig07R4Val" type="double">
+      <column default="0" name="budlig_07_r4_val">
+        <comment>juillet reamenagement 4</comment>
+      </column>
+    </property>
+    <property name="budlig08R4Val" type="double">
+      <column default="0" name="budlig_08_r4_val">
+        <comment>aout reamenagement 4</comment>
+      </column>
+    </property>
+    <property name="budlig09R4Val" type="double">
+      <column default="0" name="budlig_09_r4_val">
+        <comment>septembre reamenagement 4</comment>
+      </column>
+    </property>
+    <property name="budlig10R4Val" type="double">
+      <column default="0" name="budlig_10_r4_val">
+        <comment>octobre reamenagement 4</comment>
+      </column>
+    </property>
+    <property name="budlig11R4Val" type="double">
+      <column default="0" name="budlig_11_r4_val">
+        <comment>novembre reamenagement 4</comment>
+      </column>
+    </property>
+    <property name="budlig12R4Val" type="double">
+      <column default="0" name="budlig_12_r4_val">
+        <comment>decembre reamenagement 4</comment>
+      </column>
+    </property>
+    <property name="budlig01TotQte" type="float">
+      <column default="0" name="budlig_01_tot_qte">
+        <comment>quantite initiale</comment>
+      </column>
+    </property>
+    <property name="budlig02TotQte" type="float">
+      <column default="0" name="budlig_02_tot_qte">
+        <comment>quantite reamenagement 2</comment>
+      </column>
+    </property>
+    <property name="budlig03TotQte" type="float">
+      <column default="0" name="budlig_03_tot_qte">
+        <comment>quantite reamenagement 3</comment>
+      </column>
+    </property>
+    <property name="budlig04TotQte" type="float">
+      <column default="0" name="budlig_04_tot_qte">
+        <comment>quantite reamenagement 4</comment>
+      </column>
+    </property>
+    <property name="budlig01R1Qte" type="float">
+      <column default="0" name="budlig_01_r1_qte">
+        <comment>janvier reamenagement 1</comment>
+      </column>
+    </property>
+    <property name="budlig02R1Qte" type="float">
+      <column default="0" name="budlig_02_r1_qte">
+        <comment>fevrier reamenagement 1</comment>
+      </column>
+    </property>
+    <property name="budlig03R1Qte" type="float">
+      <column default="0" name="budlig_03_r1_qte">
+        <comment>mars reamenagement 1</comment>
+      </column>
+    </property>
+    <property name="budlig04R1Qte" type="float">
+      <column default="0" name="budlig_04_r1_qte">
+        <comment>avril reamenagement 1</comment>
+      </column>
+    </property>
+    <property name="budlig05R1Qte" type="float">
+      <column default="0" name="budlig_05_r1_qte">
+        <comment>mai reamenagement 1</comment>
+      </column>
+    </property>
+    <property name="budlig06R1Qte" type="float">
+      <column default="0" name="budlig_06_r1_qte">
+        <comment>juin reamenagement 1</comment>
+      </column>
+    </property>
+    <property name="budlig07R1Qte" type="float">
+      <column default="0" name="budlig_07_r1_qte">
+        <comment>juillet reamenagement 1</comment>
+      </column>
+    </property>
+    <property name="budlig08R1Qte" type="float">
+      <column default="0" name="budlig_08_r1_qte">
+        <comment>aout reamenagement 1</comment>
+      </column>
+    </property>
+    <property name="budlig09R1Qte" type="float">
+      <column default="0" name="budlig_09_r1_qte">
+        <comment>septembre reamenagement 1</comment>
+      </column>
+    </property>
+    <property name="budlig10R1Qte" type="float">
+      <column default="0" name="budlig_10_r1_qte">
+        <comment>octobre reamenagement 1</comment>
+      </column>
+    </property>
+    <property name="budlig11R1Qte" type="float">
+      <column default="0" name="budlig_11_r1_qte">
+        <comment>novembre reamenagement 1</comment>
+      </column>
+    </property>
+    <property name="budlig12R1Qte" type="float">
+      <column default="0" name="budlig_12_r1_qte">
+        <comment>decembre reamenagement 1</comment>
+      </column>
+    </property>
+    <property name="budlig01R2Qte" type="float">
+      <column default="0" name="budlig_01_r2_qte">
+        <comment>janvier reamenagement 2</comment>
+      </column>
+    </property>
+    <property name="budlig02R2Qte" type="float">
+      <column default="0" name="budlig_02_r2_qte">
+        <comment>fevrier reamenagement 2</comment>
+      </column>
+    </property>
+    <property name="budlig03R2Qte" type="float">
+      <column default="0" name="budlig_03_r2_qte">
+        <comment>mars reamenagement 2</comment>
+      </column>
+    </property>
+    <property name="budlig04R2Qte" type="float">
+      <column default="0" name="budlig_04_r2_qte">
+        <comment>avril reamenagement 2</comment>
+      </column>
+    </property>
+    <property name="budlig05R2Qte" type="float">
+      <column default="0" name="budlig_05_r2_qte">
+        <comment>mai reamenagement 2</comment>
+      </column>
+    </property>
+    <property name="budlig06R2Qte" type="float">
+      <column default="0" name="budlig_06_r2_qte">
+        <comment>juin reamenagement 2</comment>
+      </column>
+    </property>
+    <property name="budlig07R2Qte" type="float">
+      <column default="0" name="budlig_07_r2_qte">
+        <comment>juillet reamenagement 2</comment>
+      </column>
+    </property>
+    <property name="budlig08R2Qte" type="float">
+      <column default="0" name="budlig_08_r2_qte">
+        <comment>aout reamenagement 2</comment>
+      </column>
+    </property>
+    <property name="budlig09R2Qte" type="float">
+      <column default="0" name="budlig_09_r2_qte">
+        <comment>septembre reamenagement 2</comment>
+      </column>
+    </property>
+    <property name="budlig10R2Qte" type="float">
+      <column default="0" name="budlig_10_r2_qte">
+        <comment>octobre reamenagement 2</comment>
+      </column>
+    </property>
+    <property name="budlig11R2Qte" type="float">
+      <column default="0" name="budlig_11_r2_qte">
+        <comment>novembre reamenagement 2</comment>
+      </column>
+    </property>
+    <property name="budlig12R2Qte" type="float">
+      <column default="0" name="budlig_12_r2_qte">
+        <comment>decembre reamenagement 2</comment>
+      </column>
+    </property>
+    <property name="budlig01R3Qte" type="float">
+      <column default="0" name="budlig_01_r3_qte">
+        <comment>janvier reamenagement 3</comment>
+      </column>
+    </property>
+    <property name="budlig02R3Qte" type="float">
+      <column default="0" name="budlig_02_r3_qte">
+        <comment>fevrier reamenagement 3</comment>
+      </column>
+    </property>
+    <property name="budlig03R3Qte" type="float">
+      <column default="0" name="budlig_03_r3_qte">
+        <comment>mars reamenagement 3</comment>
+      </column>
+    </property>
+    <property name="budlig04R3Qte" type="float">
+      <column default="0" name="budlig_04_r3_qte">
+        <comment>avril reamenagement 3</comment>
+      </column>
+    </property>
+    <property name="budlig05R3Qte" type="float">
+      <column default="0" name="budlig_05_r3_qte">
+        <comment>mai reamenagement 3</comment>
+      </column>
+    </property>
+    <property name="budlig06R3Qte" type="float">
+      <column default="0" name="budlig_06_r3_qte">
+        <comment>juin reamenagement 3</comment>
+      </column>
+    </property>
+    <property name="budlig07R3Qte" type="float">
+      <column default="0" name="budlig_07_r3_qte">
+        <comment>juillet reamenagement 3</comment>
+      </column>
+    </property>
+    <property name="budlig08R3Qte" type="float">
+      <column default="0" name="budlig_08_r3_qte">
+        <comment>aout reamenagement 3</comment>
+      </column>
+    </property>
+    <property name="budlig09R3Qte" type="float">
+      <column default="0" name="budlig_09_r3_qte">
+        <comment>septembre reamenagement 3</comment>
+      </column>
+    </property>
+    <property name="budlig10R3Qte" type="float">
+      <column default="0" name="budlig_10_r3_qte">
+        <comment>octobre reamenagement 3</comment>
+      </column>
+    </property>
+    <property name="budlig11R3Qte" type="float">
+      <column default="0" name="budlig_11_r3_qte">
+        <comment>novembre reamenagement 3</comment>
+      </column>
+    </property>
+    <property name="budlig12R3Qte" type="float">
+      <column default="0" name="budlig_12_r3_qte">
+        <comment>decembre reamenagement 3</comment>
+      </column>
+    </property>
+    <property name="budlig01R4Qte" type="float">
+      <column default="0" name="budlig_01_r4_qte">
+        <comment>janvier reamenagement 4</comment>
+      </column>
+    </property>
+    <property name="budlig02R4Qte" type="float">
+      <column default="0" name="budlig_02_r4_qte">
+        <comment>fevrier reamenagement 4</comment>
+      </column>
+    </property>
+    <property name="budlig03R4Qte" type="float">
+      <column default="0" name="budlig_03_r4_qte">
+        <comment>mars reamenagement 4</comment>
+      </column>
+    </property>
+    <property name="budlig04R4Qte" type="float">
+      <column default="0" name="budlig_04_r4_qte">
+        <comment>avril reamenagement 4</comment>
+      </column>
+    </property>
+    <property name="budlig05R4Qte" type="float">
+      <column default="0" name="budlig_05_r4_qte">
+        <comment>mai reamenagement 4</comment>
+      </column>
+    </property>
+    <property name="budlig06R4Qte" type="float">
+      <column default="0" name="budlig_06_r4_qte">
+        <comment>juin reamenagement 4</comment>
+      </column>
+    </property>
+    <property name="budlig07R4Qte" type="float">
+      <column default="0" name="budlig_07_r4_qte">
+        <comment>juillet reamenagement 4</comment>
+      </column>
+    </property>
+    <property name="budlig08R4Qte" type="float">
+      <column default="0" name="budlig_08_r4_qte">
+        <comment>aout reamenagement 4</comment>
+      </column>
+    </property>
+    <property name="budlig09R4Qte" type="float">
+      <column default="0" name="budlig_09_r4_qte">
+        <comment>septembre reamenagement 4</comment>
+      </column>
+    </property>
+    <property name="budlig10R4Qte" type="float">
+      <column default="0" name="budlig_10_r4_qte">
+        <comment>octobre reamenagement 4</comment>
+      </column>
+    </property>
+    <property name="budlig11R4Qte" type="float">
+      <column default="0" name="budlig_11_r4_qte">
+        <comment>novembre reamenagement 4</comment>
+      </column>
+    </property>
+    <property name="budlig12R4Qte" type="float">
+      <column default="0" name="budlig_12_r4_qte">
+        <comment>decembre reamenagement 4</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.Budget" column="bud_id" lazy="false" name="budget" not-null="true"/>
+  </class>
+</hibernate-mapping>

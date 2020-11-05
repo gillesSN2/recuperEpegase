@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="PegScripts" table="peg_scripts">
+    <id column="scr_id" name="scrId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="scrDateCreat" type="timestamp">
+      <column name="scr_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="scrDateModif" type="timestamp">
+      <column name="scr_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="scrUserCreat" type="long">
+      <column default="0" length="15" name="scr_user_creat">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="scrUserModif" type="long">
+      <column default="0" length="15" name="scr_user_modif">
+        <comment>utilisateur de modification</comment>
+      </column>
+    </property>
+    <property name="scrType" type="integer">
+      <column default="0" name="scr_type">
+        <comment>1=update bd epegase 2=backup bd epegase 3=update bd local 4=backup bd local 5=backup bd ftp 6=backup str epegase 7=backup str local 8=bckup str ftp 9=methode</comment>
+      </column>
+    </property>
+    <property name="scrLibelle" type="string">
+      <column length="100" name="scr_libelle">
+        <comment>libelle du script</comment>
+      </column>
+    </property>
+    <property name="scrDescription" type="string">
+      <column length="100" name="scr_description">
+        <comment>chemin dossier origine</comment>
+      </column>
+    </property>
+    <property name="scrInactif" type="integer">
+      <column default="0" length="1" name="scr_inactif">
+        <comment>0=actif 1=inactif 2=supprimer</comment>
+      </column>
+    </property>
+    <property name="scrLundi" type="boolean">
+      <column default="false" name="scr_lundi">
+        <comment>1=lundi</comment>
+      </column>
+    </property>
+    <property name="scrMardi" type="boolean">
+      <column default="false" name="scr_mardi">
+        <comment>1=mardi</comment>
+      </column>
+    </property>
+    <property name="scrMercredi" type="boolean">
+      <column default="false" name="scr_mercredi">
+        <comment>1=mercredi</comment>
+      </column>
+    </property>
+    <property name="scrJeudi" type="boolean">
+      <column default="false" name="scr_jeudi">
+        <comment>1=jeudi</comment>
+      </column>
+    </property>
+    <property name="scrVendredi" type="boolean">
+      <column default="false" name="scr_vendredi">
+        <comment>1=vendredi</comment>
+      </column>
+    </property>
+    <property name="scrSamedi" type="boolean">
+      <column default="false" name="scr_samedi">
+        <comment>1=samedi</comment>
+      </column>
+    </property>
+    <property name="scrDimanche" type="boolean">
+      <column default="false" name="scr_dimanche">
+        <comment>1=dimanche</comment>
+      </column>
+    </property>
+    <property name="scrDateDebut" type="date">
+      <column default="false" name="scr_date_debut">
+        <comment>date de debut</comment>
+      </column>
+    </property>
+    <property name="scrDateFin" type="date">
+      <column default="false" name="scr_date_fin">
+        <comment>date de fin</comment>
+      </column>
+    </property>
+    <property name="scrHeureLundi" type="string">
+      <column length="2" name="scr_heure_lundi">
+        <comment>heure</comment>
+      </column>
+    </property>
+    <property name="scrMinuteLundi" type="string">
+      <column length="2" name="scr_minute_lundi">
+        <comment>minute</comment>
+      </column>
+    </property>
+    <property name="scrHeureMardi" type="string">
+      <column length="2" name="scr_heure_mardi">
+        <comment>heure</comment>
+      </column>
+    </property>
+    <property name="scrMinuteMardi" type="string">
+      <column length="2" name="scr_minute_mardi">
+        <comment>minute</comment>
+      </column>
+    </property>
+    <property name="scrHeureMercredi" type="string">
+      <column length="2" name="scr_heure_mercredi">
+        <comment>heure</comment>
+      </column>
+    </property>
+    <property name="scrMinuteMercredi" type="string">
+      <column length="2" name="scr_minute_mercredi">
+        <comment>minute</comment>
+      </column>
+    </property>
+    <property name="scrHeureJeudi" type="string">
+      <column length="2" name="scr_heure_jeudi">
+        <comment>heure</comment>
+      </column>
+    </property>
+    <property name="scrMinuteJeudi" type="string">
+      <column length="2" name="scr_minute_jeudi">
+        <comment>minute</comment>
+      </column>
+    </property>
+    <property name="scrHeureVendredi" type="string">
+      <column length="2" name="scr_heure_vendredi">
+        <comment>heure</comment>
+      </column>
+    </property>
+    <property name="scrMinuteVendredi" type="string">
+      <column length="2" name="scr_minute_vendredi">
+        <comment>minute</comment>
+      </column>
+    </property>
+    <property name="scrHeureSamedi" type="string">
+      <column length="2" name="scr_heure_samedi">
+        <comment>heure</comment>
+      </column>
+    </property>
+    <property name="scrMinuteSamedi" type="string">
+      <column length="2" name="scr_minute_samedi">
+        <comment>minute</comment>
+      </column>
+    </property>
+    <property name="scrHeureDimanche" type="string">
+      <column length="2" name="scr_heure_dimanche">
+        <comment>heure</comment>
+      </column>
+    </property>
+    <property name="scrMinuteDimanche" type="string">
+      <column length="2" name="scr_minute_dimanche">
+        <comment>minute</comment>
+      </column>
+    </property>
+    <property name="scrMail" type="text">
+      <column length="1000" name="scr_mail">
+        <comment>mail envoie du resultat</comment>
+      </column>
+    </property>
+    <property name="scrMethode" type="string">
+      <column length="255" name="scr_methode">
+        <comment>methode a executer</comment>
+      </column>
+    </property>
+    <property name="scrParametreChemin" type="string">
+      <column length="255" name="scr_parametre_chemin">
+        <comment>parametre : chemin</comment>
+      </column>
+    </property>
+    <property name="scrUrl" type="string">
+      <column length="255" name="scr_url">
+        <comment>url</comment>
+      </column>
+    </property>
+    <property name="scrLogin" type="string">
+      <column length="255" name="scr_login">
+        <comment>login</comment>
+      </column>
+    </property>
+    <property name="scrPw" type="string">
+      <column length="255" name="scr_pw">
+        <comment>pw</comment>
+      </column>
+    </property>
+    <property name="scrIdStructure" type="long">
+      <column default="0" name="scr_id_structure">
+        <comment>id struture concernee</comment>
+      </column>
+    </property>
+    <property name="scrNomStructure" type="string">
+      <column length="200" name="scr_nom_structure">
+        <comment>nom structure</comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>

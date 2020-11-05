@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="FamillesProduitsAchats" table="ach_familles_produits_achats">
+    <id column="famach_id" name="famachId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="famachDateCreation" type="timestamp">
+      <column name="famach_date_creation">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="famachDateModif" type="timestamp">
+      <column name="famach_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="famachUserCreation" type="long">
+      <column default="0" length="15" name="famach_user_creation">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="famachUserModif" type="long">
+      <column default="0" length="15" name="famach_user_modif">
+        <comment>utilisateur de modification</comment>
+      </column>
+    </property>
+    <property name="famachCode" type="string">
+      <column length="20" name="famach_code">
+        <comment>code famille</comment>
+      </column>
+    </property>
+    <property name="famachOrigine" type="string">
+      <column length="20" name="famach_origine">
+        <comment>code famille origine (parent)</comment>
+      </column>
+    </property>
+    <property name="famachLibelleFr" type="string">
+      <column length="100" name="famach_libelle_fr">
+        <comment>nom du suivi en FR</comment>
+      </column>
+    </property>
+    <property name="famachLibelleUk" type="string">
+      <column length="100" name="famach_libelle_uk">
+        <comment>nom du suivi en UK</comment>
+      </column>
+    </property>
+    <property name="famachLibelleSp" type="string">
+      <column length="100" name="famach_libelle_sp">
+        <comment>nom du suivi en SP</comment>
+      </column>
+    </property>
+    <property name="famachTaxe" type="string">
+      <column length="20" name="famach_taxe">
+        <comment>code taxe achat</comment>
+      </column>
+    </property>
+    <property name="famachDouane" type="string">
+      <column length="20" name="famach_douane">
+        <comment>code douane</comment>
+      </column>
+    </property>
+    <property name="famachCompteLocal" type="string">
+      <column length="121" name="famach_compte_local">
+        <comment>compte local</comment>
+      </column>
+    </property>
+    <property name="famachCompteZone" type="string">
+      <column length="121" name="famach_compte_zone">
+        <comment>compte dans la zone</comment>
+      </column>
+    </property>
+    <property name="famachCompteExterieur" type="string">
+      <column length="121" name="famach_compte_exterieur">
+        <comment>compte exterieur</comment>
+      </column>
+    </property>
+    <property name="famachCompteStock" type="string">
+      <column length="121" name="famach_compte_stock">
+        <comment>compte stock</comment>
+      </column>
+    </property>
+    <property name="famachCompteCharge" type="string">
+      <column length="121" name="famach_compte_charge">
+        <comment>compte charge</comment>
+      </column>
+    </property>
+    <property name="famachCompteEncours" type="string">
+      <column length="121" name="famach_compte_encours">
+        <comment>compte acht en cours</comment>
+      </column>
+    </property>
+    <property name="famachStock" type="integer">
+      <column default="0" name="famach_stock">
+        <comment>0=sans stock 1=simple 2=lifo 3=fifo 4=peremption 5=serialise 6=consigne 7=debours</comment>
+      </column>
+    </property>
+    <property name="famachCat" type="integer">
+      <column default="0" name="famach_cat">
+        <comment>0=standard 1=production 2=consommable 3=services 4=immobilisation 90=famille</comment>
+      </column>
+    </property>
+    <property name="famachNature" type="string">
+      <column length="4" name="famach_nature">
+        <comment>position du fichier xml</comment>
+      </column>
+    </property>
+    <property name="famachLibNature" type="string">
+      <column length="50" name="famach_lib_nature">
+        <comment>libelle nature</comment>
+      </column>
+    </property>
+    <property name="famachInactif" type="int">
+      <column default="0" name="famach_inactif">
+        <comment>0=actif 1=inactif 2=supprimer</comment>
+      </column>
+    </property>
+    <property name="famachAnal2" type="string">
+      <column length="121" name="famach_anal2">
+        <comment>analytique 2</comment>
+      </column>
+    </property>
+    <property name="famachAnal4" type="string">
+      <column length="121" name="famach_anal4">
+        <comment>analytique 4</comment>
+      </column>
+    </property>
+    <property name="famachBudget" type="string">
+      <column length="121" name="famach_budget">
+        <comment>budget</comment>
+      </column>
+    </property>
+    <property name="famachActivite" type="text">
+      <column name="famach_activite">
+        <comment>activite</comment>
+      </column>
+    </property>
+    <property name="famachDepotAch" type="string">
+      <column length="121" name="famach_depot_ach">
+        <comment>code depot achat</comment>
+      </column>
+    </property>
+    <property name="famachDepotPrd" type="string">
+      <column length="121" name="famach_depot_prd">
+        <comment>code depot production</comment>
+      </column>
+    </property>
+    <property name="famachService" type="string">
+      <column length="121" name="famach_service">
+        <comment>code service achat</comment>
+      </column>
+    </property>
+    <property name="famachCle1" type="string">
+      <column length="121" name="famach_cle1">
+        <comment>cle 1 de repartition</comment>
+      </column>
+    </property>
+    <property name="famachCle2" type="string">
+      <column length="121" name="famach_cle2">
+        <comment>cle 2 de repartition</comment>
+      </column>
+    </property>
+    <property name="famachMarque" type="string">
+      <column length="50" name="famach_marque">
+        <comment>marque</comment>
+      </column>
+    </property>
+    <property name="famachUnite" type="string">
+      <column length="50" name="famach_unite">
+        <comment>unite de stockage</comment>
+      </column>
+    </property>
+    <property name="famachEchelle" type="integer">
+      <column default="0" name="famach_echelle">
+        <comment>valeur unite de stockage</comment>
+      </column>
+    </property>
+    <property name="famachCondition1" type="string">
+      <column length="50" name="famach_condition1">
+        <comment>conditionnement 1</comment>
+      </column>
+    </property>
+    <property name="famachCondition2" type="string">
+      <column length="50" name="famach_condition2">
+        <comment>conditionnement 2</comment>
+      </column>
+    </property>
+    <property name="famachCondition3" type="string">
+      <column length="50" name="famach_condition3">
+        <comment>conditionnement 3</comment>
+      </column>
+    </property>
+    <property name="famachCondition4" type="string">
+      <column length="50" name="famach_condition4">
+        <comment>conditionnement 4</comment>
+      </column>
+    </property>
+    <property name="famachCondition5" type="string">
+      <column length="50" name="famach_condition5">
+        <comment>conditionnement 5</comment>
+      </column>
+    </property>
+    <property name="famachCoefValDefaut" type="float">
+      <column default="0" name="famach_coef_val_defaut">
+        <comment>coefficient valorisation par defaut</comment>
+      </column>
+    </property>
+    <property name="famachCoefPrg" type="float">
+      <column default="0" name="famach_coef_prg">
+        <comment>coefficient de prg</comment>
+      </column>
+    </property>
+    <property name="famachCoefFictif" type="float">
+      <column default="0" name="famach_coef_fictif">
+        <comment>coefficient entrepot fictif</comment>
+      </column>
+    </property>
+    <property name="famachLieeVte" type="boolean">
+      <column default="false" name="famach_liee_vte">
+        <comment>famille liee avec les ventes</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ExercicesAchats" column="exeach_id" lazy="false" name="exercicesAchats" not-null="true"/>
+  </class>
+</hibernate-mapping>

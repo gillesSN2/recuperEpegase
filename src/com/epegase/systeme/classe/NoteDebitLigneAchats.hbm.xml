@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="NoteDebitLigneAchats" table="ach_note_debit_ligne">
+    <id column="ndflig_id" name="ndfligId" type="long" unsaved-value="null">
+      <generator class="increment"/>
+    </id>
+    <property name="ndfligCode" type="string">
+      <column length="20" name="ndflig_code">
+        <comment>code produit</comment>
+      </column>
+    </property>
+    <property name="ndfligFamille" type="string">
+      <column length="121" name="ndflig_famille">
+        <comment>famille vente</comment>
+      </column>
+    </property>
+    <property name="ndfligLibelle" type="text">
+      <column name="ndflig_libelle">
+        <comment>libelle produit</comment>
+      </column>
+    </property>
+    <property name="ndfligLibelleFournisseur" type="string">
+      <column length="100" name="ndflig_libelle_fournisseur">
+        <comment>libelle produit</comment>
+      </column>
+    </property>
+    <property name="ndfligComplement" type="text">
+      <column length="500" name="ndflig_complement">
+        <comment>descriptif complementaire</comment>
+      </column>
+    </property>
+    <property name="ndfligReference" type="string">
+      <column length="20" name="ndflig_reference">
+        <comment>reference produit</comment>
+      </column>
+    </property>
+    <property name="ndfligTaxe" type="string">
+      <column length="20" name="ndflig_taxe">
+        <comment>code taxe</comment>
+      </column>
+    </property>
+    <property name="ndfligTauxTaxe" type="float">
+      <column default="0" name="ndflig_taux_taxe">
+        <comment>taux de taxe</comment>
+      </column>
+    </property>
+    <property name="ndfligUnite" type="string">
+      <column length="30" name="ndflig_unite">
+        <comment>unite produit</comment>
+      </column>
+    </property>
+    <property name="ndfligCondition" type="string">
+      <column length="121" name="ndflig_condition">
+        <comment>conditionnement produit</comment>
+      </column>
+    </property>
+    <property name="ndfligDescription" type="string">
+      <column length="20" name="ndflig_description">
+        <comment>description conditionnement produit</comment>
+      </column>
+    </property>
+    <property name="ndfligEchelle" type="integer">
+      <column default="0" name="ndflig_echelle">
+        <comment>echelle de la ligne</comment>
+      </column>
+    </property>
+    <property name="ndfligQte" type="float">
+      <column default="0" name="ndflig_qte">
+        <comment>quantite</comment>
+      </column>
+    </property>
+    <property name="ndfligLong" type="float">
+      <column default="0" name="ndflig_long">
+        <comment>longueur</comment>
+      </column>
+    </property>
+    <property name="ndfligLarg" type="float">
+      <column default="0" name="ndflig_larg">
+        <comment>largeur</comment>
+      </column>
+    </property>
+    <property name="ndfligHaut" type="float">
+      <column default="0" name="ndflig_haut">
+        <comment>hauteur</comment>
+      </column>
+    </property>
+    <property name="ndfligDiam" type="float">
+      <column default="0" name="ndflig_diam">
+        <comment>diametre</comment>
+      </column>
+    </property>
+    <property name="ndfligNb" type="float">
+      <column default="0" name="ndflig_nb">
+        <comment>nombre de piece</comment>
+      </column>
+    </property>
+    <property name="ndfligPoidsNet" type="float">
+      <column default="0" name="ndflig_poidsNet">
+        <comment>poids net</comment>
+      </column>
+    </property>
+    <property name="ndfligPoidsBrut" type="float">
+      <column default="0" name="ndflig_poidsBrut">
+        <comment>poids brut</comment>
+      </column>
+    </property>
+    <property name="ndfligVolume" type="float">
+      <column default="0" name="ndflig_volume">
+        <comment>volume</comment>
+      </column>
+    </property>
+    <property name="ndfligQteUtil" type="float">
+      <column default="0" name="ndflig_qte_util">
+        <comment>quantite utilisee (valable pour le stock)</comment>
+      </column>
+    </property>
+    <property name="ndfligDevise" type="string">
+      <column length="3" name="ndflig_devise">
+        <comment>code devise</comment>
+      </column>
+    </property>
+    <property name="ndfligPu" type="double">
+      <column default="0" name="ndflig_pu">
+        <comment>prix unitaire</comment>
+      </column>
+    </property>
+    <property name="ndfligTauxRemise" type="float">
+      <column default="0" name="ndflig_taux_remise">
+        <comment>taux de remise</comment>
+      </column>
+    </property>
+    <property name="ndfligRabais" type="double">
+      <column default="0" name="ndflig_rabais">
+        <comment>valeur du rabais</comment>
+      </column>
+    </property>
+    <property name="ndfligPuRem" type="double">
+      <column default="0" name="ndflig_pu_rem">
+        <comment>prix unitaire apres remise</comment>
+      </column>
+    </property>
+    <property name="ndfligPr" type="double">
+      <column default="0" name="ndflig_pr">
+        <comment>prix revient</comment>
+      </column>
+    </property>
+    <property name="ndfligPt" type="double">
+      <column default="0" name="ndflig_pt">
+        <comment>prix total ht</comment>
+      </column>
+    </property>
+    <property name="ndfligTva" type="double">
+      <column default="0" name="ndflig_tva">
+        <comment>total taxe</comment>
+      </column>
+    </property>
+    <property name="ndfligTc" type="double">
+      <column default="0" name="ndflig_tc">
+        <comment>total taxe complementaire</comment>
+      </column>
+    </property>
+    <property name="ndfligTtc" type="double">
+      <column default="0" name="ndflig_ttc">
+        <comment>total ttc</comment>
+      </column>
+    </property>
+    <property name="ndfligPump" type="double">
+      <column default="0" name="ndflig_pump">
+        <comment>pump</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.NoteDebitEnteteAchats" column="ndf_id" lazy="false" name="noteDebitEnteteAchats" not-null="true"/>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="ChargementFrais" table="vte_chargement_frais">
+    <id column="chafra_id" name="chafraId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="chafraCode" type="string">
+      <column length="20" name="chafra_code">
+        <comment>code produit</comment>
+      </column>
+    </property>
+    <property name="chafraFamille" type="string">
+      <column length="20" name="chafra_famille">
+        <comment>famille vente</comment>
+      </column>
+    </property>
+    <property name="chafraLibelle" type="string">
+      <column length="100" name="chafra_libelle">
+        <comment>libelle produit</comment>
+      </column>
+    </property>
+    <property name="chafraPiece" type="string">
+      <column length="20" name="chafra_piece">
+        <comment>num de piece</comment>
+      </column>
+    </property>
+    <property name="chafraDescription" type="string">
+      <column length="100" name="chafra_description">
+        <comment>description du frais</comment>
+      </column>
+    </property>
+    <property name="chafraMontant" type="double">
+      <column default="0" name="chafra_montant">
+        <comment>montant du frais</comment>
+      </column>
+    </property>
+    <property name="chafraDate" type="date">
+      <column default="0" name="chafra_date">
+        <comment>date du frais</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ChargementEntete" column="chamob_id" lazy="false" name="ChargementEntete" not-null="true"/>
+  </class>
+</hibernate-mapping>

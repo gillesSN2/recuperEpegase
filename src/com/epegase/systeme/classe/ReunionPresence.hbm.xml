@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="ReunionPresence" table="cmm_reunion_presence">
+    <id column="reupre_id" name="reupreId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="reupreNum" type="string">
+      <column length="20" name="reupre_num">
+        <comment>numero de reunion</comment>
+      </column>
+    </property>
+    <property index="true" name="reupreIdUser" type="long">
+      <column default="0" index="true" name="reupre_id_user">
+        <comment>id du user</comment>
+      </column>
+    </property>
+    <property name="reupreNomUser" type="string">
+      <column length="100" name="reupre_nom_user">
+        <comment>nom du user</comment>
+      </column>
+    </property>
+    <property name="reuprePrenomUser" type="string">
+      <column length="50" name="reupre_prenom_user">
+        <comment>prenom du user</comment>
+      </column>
+    </property>
+    <property name="reupreCiviliteUser" type="string">
+      <column length="20" name="reupre_civilite_user">
+        <comment>civilite du user</comment>
+      </column>
+    </property>
+    <property name="reupreSansStatut" type="boolean">
+      <column default="0" name="reupre_sans_statut">
+        <comment>sans statut</comment>
+      </column>
+    </property>
+    <property name="reupreConvoquer" type="boolean">
+      <column default="0" name="reupre_convoquer">
+        <comment>convocation</comment>
+      </column>
+    </property>
+    <property name="reuprePresent" type="boolean">
+      <column default="0" name="reupre_present">
+        <comment>present</comment>
+      </column>
+    </property>
+    <property name="reupreAbsentAutorise" type="boolean">
+      <column default="0" name="reupre_absent_autorise">
+        <comment>absence autorisee</comment>
+      </column>
+    </property>
+    <property name="reupreAbsentInterdit" type="boolean">
+      <column default="0" name="reupre_absent_interdit">
+        <comment>absence interdite</comment>
+      </column>
+    </property>
+    <property name="reupreMotif" type="string">
+      <column length="20" name="reupre_motif">
+        <comment>motif absence</comment>
+      </column>
+    </property>
+    <property name="reupreCaDevis" type="double">
+      <column default="0" name="reupre_ca_devis">
+        <comment>ca sur devis</comment>
+      </column>
+    </property>
+    <property name="reupreObjectifDevis" type="double">
+      <column default="0" name="reupre_objectif_devis">
+        <comment>objectif sur devis</comment>
+      </column>
+    </property>
+    <property name="reupreNbDocDevis" type="integer">
+      <column default="0" name="reupre_nbdoc_devis">
+        <comment>nb document sur devis</comment>
+      </column>
+    </property>
+    <property name="reupreCaTrfDevis" type="double">
+      <column default="0" name="reupre_catrf_devis">
+        <comment>ca transforme sur devis</comment>
+      </column>
+    </property>
+    <property name="reupreNbTrfDevis" type="integer">
+      <column default="0" name="reupre_nbtrf_devis">
+        <comment>nb document transforme sur devis</comment>
+      </column>
+    </property>
+    <property name="reupreNbJourDevis" type="integer">
+      <column default="0" name="reupre_nbjour_devis">
+        <comment>nb de jour sur devis</comment>
+      </column>
+    </property>
+    <property name="reupreCaJourDevis" type="double">
+      <column default="0" name="reupre_cajour_devis">
+        <comment>ca par jour sur devis</comment>
+      </column>
+    </property>
+    <property name="reupreNbClientDevis" type="integer">
+      <column default="0" name="reupre_nbclient_devis">
+        <comment>nb de client sur devis</comment>
+      </column>
+    </property>
+    <property name="reupreCaClientDevis" type="double">
+      <column default="0" name="reupre_caclient_devis">
+        <comment>ca par client sur devis</comment>
+      </column>
+    </property>
+    <property name="reupreSansSourceDevis" type="integer">
+      <column default="0" name="reupre_sans_source_devis">
+        <comment>devis sans source</comment>
+      </column>
+    </property>
+    <property name="reupreCaBc" type="double">
+      <column default="0" name="reupre_ca_bc">
+        <comment>ca sur cmd</comment>
+      </column>
+    </property>
+    <property name="reupreObjectifBc" type="double">
+      <column default="0" name="reupre_objectif_bc">
+        <comment>objectif sur cmd</comment>
+      </column>
+    </property>
+    <property name="reupreNbDocBc" type="integer">
+      <column default="0" name="reupre_nbdoc_bc">
+        <comment>nb document sur cmd</comment>
+      </column>
+    </property>
+    <property name="reupreCaTrfBc" type="double">
+      <column default="0" name="reupre_catrf_bc">
+        <comment>ca transforme sur cmd</comment>
+      </column>
+    </property>
+    <property name="reupreNbTrfBc" type="integer">
+      <column default="0" name="reupre_nbtrf_bc">
+        <comment>nb document transforme sur cmd</comment>
+      </column>
+    </property>
+    <property name="reupreNbJourBc" type="integer">
+      <column default="0" name="reupre_nbjour_bc">
+        <comment>nb de jour sur cmd</comment>
+      </column>
+    </property>
+    <property name="reupreCaJourBc" type="double">
+      <column default="0" name="reupre_cajour_bc">
+        <comment>ca par jour sur cmd</comment>
+      </column>
+    </property>
+    <property name="reupreNbClientBc" type="integer">
+      <column default="0" name="reupre_nbclient_bc">
+        <comment>nb de client sur cmd</comment>
+      </column>
+    </property>
+    <property name="reupreCaClientBc" type="double">
+      <column default="0" name="reupre_caclient_bc">
+        <comment>ca par client sur cmd</comment>
+      </column>
+    </property>
+    <property name="reupreSansSourceBc" type="integer">
+      <column default="0" name="reupre_sans_source_bc">
+        <comment>bc sans source</comment>
+      </column>
+    </property>
+    <property name="reupreCaBl" type="double">
+      <column default="0" name="reupre_ca_bl">
+        <comment>ca sur bl</comment>
+      </column>
+    </property>
+    <property name="reupreObjectifBl" type="double">
+      <column default="0" name="reupre_objectif_bl">
+        <comment>objectif sur bl</comment>
+      </column>
+    </property>
+    <property name="reupreNbDocBl" type="integer">
+      <column default="0" name="reupre_nbdoc_bl">
+        <comment>nb document sur bl</comment>
+      </column>
+    </property>
+    <property name="reupreCaTrfBl" type="double">
+      <column default="0" name="reupre_catrf_bl">
+        <comment>ca transforme sur bl</comment>
+      </column>
+    </property>
+    <property name="reupreNbTrfBl" type="integer">
+      <column default="0" name="reupre_nbtrf_bl">
+        <comment>nb document transforme sur bl</comment>
+      </column>
+    </property>
+    <property name="reupreNbJourBl" type="integer">
+      <column default="0" name="reupre_nbjour_bl">
+        <comment>nb de jour sur bl</comment>
+      </column>
+    </property>
+    <property name="reupreCaJourBl" type="double">
+      <column default="0" name="reupre_cajour_bl">
+        <comment>ca par jour sur bl</comment>
+      </column>
+    </property>
+    <property name="reupreNbClientBl" type="integer">
+      <column default="0" name="reupre_nbclient_bl">
+        <comment>nb de client sur bl</comment>
+      </column>
+    </property>
+    <property name="reupreCaClientBl" type="double">
+      <column default="0" name="reupre_caclient_bl">
+        <comment>ca par client sur bl</comment>
+      </column>
+    </property>
+    <property name="reupreSansSourceBl" type="integer">
+      <column default="0" name="reupre_sans_source_bl">
+        <comment>bl sans source</comment>
+      </column>
+    </property>
+    <property name="reupreCaBr" type="double">
+      <column default="0" name="reupre_ca_br">
+        <comment>ca sur br</comment>
+      </column>
+    </property>
+    <property name="reupreObjectifBr" type="double">
+      <column default="0" name="reupre_objectif_br">
+        <comment>objectif sur br</comment>
+      </column>
+    </property>
+    <property name="reupreNbDocBr" type="integer">
+      <column default="0" name="reupre_nbdoc_br">
+        <comment>nb document sur br</comment>
+      </column>
+    </property>
+    <property name="reupreCaTrfBr" type="double">
+      <column default="0" name="reupre_catrf_br">
+        <comment>ca transforme sur br</comment>
+      </column>
+    </property>
+    <property name="reupreNbTrfBr" type="integer">
+      <column default="0" name="reupre_nbtrf_br">
+        <comment>nb document transforme sur br</comment>
+      </column>
+    </property>
+    <property name="reupreNbJourBr" type="integer">
+      <column default="0" name="reupre_nbjour_br">
+        <comment>nb de jour sur br</comment>
+      </column>
+    </property>
+    <property name="reupreCaJourBr" type="double">
+      <column default="0" name="reupre_cajour_br">
+        <comment>ca par jour sur br</comment>
+      </column>
+    </property>
+    <property name="reupreNbClientBr" type="integer">
+      <column default="0" name="reupre_nbclient_br">
+        <comment>nb de client sur br</comment>
+      </column>
+    </property>
+    <property name="reupreCaClientBr" type="double">
+      <column default="0" name="reupre_caclient_br">
+        <comment>ca par client sur br</comment>
+      </column>
+    </property>
+    <property name="reupreSansSourceBr" type="integer">
+      <column default="0" name="reupre_sans_source_br">
+        <comment>br sans source</comment>
+      </column>
+    </property>
+    <property name="reupreCaFa" type="double">
+      <column default="0" name="reupre_ca_fa">
+        <comment>ca sur facture</comment>
+      </column>
+    </property>
+    <property name="reupreObjectifFa" type="double">
+      <column default="0" name="reupre_objectif_fa">
+        <comment>objectif sur facture</comment>
+      </column>
+    </property>
+    <property name="reupreNbDocFa" type="integer">
+      <column default="0" name="reupre_nbdoc_fa">
+        <comment>nb document sur facture</comment>
+      </column>
+    </property>
+    <property name="reupreCaTrfFa" type="double">
+      <column default="0" name="reupre_catrf_fa">
+        <comment>ca transforme sur facture</comment>
+      </column>
+    </property>
+    <property name="reupreNbTrfFa" type="integer">
+      <column default="0" name="reupre_nbtrf_fa">
+        <comment>nb document transforme sur facture</comment>
+      </column>
+    </property>
+    <property name="reupreNbJourFa" type="integer">
+      <column default="0" name="reupre_nbjour_fa">
+        <comment>nb de jour sur facture</comment>
+      </column>
+    </property>
+    <property name="reupreCaJourFa" type="double">
+      <column default="0" name="reupre_cajour_fa">
+        <comment>ca par jour sur facture</comment>
+      </column>
+    </property>
+    <property name="reupreNbClientFa" type="integer">
+      <column default="0" name="reupre_nbclient_fa">
+        <comment>nb de client sur facture</comment>
+      </column>
+    </property>
+    <property name="reupreCaClientFa" type="double">
+      <column default="0" name="reupre_caclient_fa">
+        <comment>ca par client sur facture</comment>
+      </column>
+    </property>
+    <property name="reupreSansSourceFa" type="integer">
+      <column default="0" name="reupre_sans_source_Fa">
+        <comment>facture sans source</comment>
+      </column>
+    </property>
+    <property name="reupreCaNd" type="double">
+      <column default="0" name="reupre_ca_nd">
+        <comment>ca sur note debit</comment>
+      </column>
+    </property>
+    <property name="reupreObjectifNd" type="double">
+      <column default="0" name="reupre_objectif_nd">
+        <comment>objectif sur note debit</comment>
+      </column>
+    </property>
+    <property name="reupreNbDocNd" type="integer">
+      <column default="0" name="reupre_nbdoc_nd">
+        <comment>nb document sur note debit</comment>
+      </column>
+    </property>
+    <property name="reupreCaTrfNd" type="double">
+      <column default="0" name="reupre_catrf_nd">
+        <comment>ca transforme sur note debit</comment>
+      </column>
+    </property>
+    <property name="reupreNbTrfNd" type="integer">
+      <column default="0" name="reupre_nbtrf_nd">
+        <comment>nb document transforme sur note debit</comment>
+      </column>
+    </property>
+    <property name="reupreNbJourNd" type="integer">
+      <column default="0" name="reupre_nbjour_nd">
+        <comment>nb de jour sur note debit</comment>
+      </column>
+    </property>
+    <property name="reupreCaJourNd" type="double">
+      <column default="0" name="reupre_cajour_nd">
+        <comment>ca par jour sur note debit</comment>
+      </column>
+    </property>
+    <property name="reupreNbClientNd" type="integer">
+      <column default="0" name="reupre_nbclient_nd">
+        <comment>nb de client sur note debit</comment>
+      </column>
+    </property>
+    <property name="reupreCaClientNd" type="double">
+      <column default="0" name="reupre_caclient_nd">
+        <comment>ca par client sur note debit</comment>
+      </column>
+    </property>
+    <property name="reupreSansSourceNd" type="integer">
+      <column default="0" name="reupre_sans_source_Nd">
+        <comment>note de debit sans source</comment>
+      </column>
+    </property>
+    <property name="reupreCaAv" type="double">
+      <column default="0" name="reupre_ca_av">
+        <comment>ca sur avoir</comment>
+      </column>
+    </property>
+    <property name="reupreObjectifAv" type="double">
+      <column default="0" name="reupre_objectif_av">
+        <comment>objectif sur avoir</comment>
+      </column>
+    </property>
+    <property name="reupreNbDocAv" type="integer">
+      <column default="0" name="reupre_nbdoc_av">
+        <comment>nb document sur avoir</comment>
+      </column>
+    </property>
+    <property name="reupreCaTrfAv" type="double">
+      <column default="0" name="reupre_catrf_av">
+        <comment>ca transforme sur avoir</comment>
+      </column>
+    </property>
+    <property name="reupreNbTrfAv" type="integer">
+      <column default="0" name="reupre_nbtrf_av">
+        <comment>nb document transforme sur avoir</comment>
+      </column>
+    </property>
+    <property name="reupreNbJourAv" type="integer">
+      <column default="0" name="reupre_nbjour_av">
+        <comment>nb de jour sur avoir</comment>
+      </column>
+    </property>
+    <property name="reupreCaJourAv" type="double">
+      <column default="0" name="reupre_cajour_av">
+        <comment>ca par jour sur avoir</comment>
+      </column>
+    </property>
+    <property name="reupreNbClientAv" type="integer">
+      <column default="0" name="reupre_nbclient_av">
+        <comment>nb de client sur avoir</comment>
+      </column>
+    </property>
+    <property name="reupreCaClientAv" type="double">
+      <column default="0" name="reupre_caclient_av">
+        <comment>ca par client sur avoir</comment>
+      </column>
+    </property>
+    <property name="reupreSansSourceAv" type="integer">
+      <column default="0" name="reupre_sans_source_Av">
+        <comment>avoir sans source</comment>
+      </column>
+    </property>
+    <property name="reupreNbRdv" type="integer">
+      <column default="0" name="reupre_nb_rdv">
+        <comment>nb de rdv</comment>
+      </column>
+    </property>
+    <property name="reupreObjectifRdv" type="integer">
+      <column default="0" name="reupre_objectif_rdv">
+        <comment>objectif de rdv</comment>
+      </column>
+    </property>
+    <property name="reupreNbRdvFait" type="integer">
+      <column default="0" name="reupre_nb_rdv_fait">
+        <comment>nb de rdv fait</comment>
+      </column>
+    </property>
+    <property name="reupreNbRdvNonFait" type="integer">
+      <column default="0" name="reupre_nb_rdv_non_fait">
+        <comment>nb de rdv non fait</comment>
+      </column>
+    </property>
+    <property name="reupreNbRdvReport" type="integer">
+      <column default="0" name="reupre_nb_rdv_reporte">
+        <comment>nb de rdv reporte</comment>
+      </column>
+    </property>
+    <property name="reupreNbRdvAnnule" type="integer">
+      <column default="0" name="reupre_nb_rdv_annule">
+        <comment>nb de rdv annule</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ReunionEntete" column="reu_id" lazy="false" name="reunionEntete" not-null="true"/>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="PlanningAvicultureAchats" table="ach_planning_aviculture_achats">
+    <id column="ppa_id" name="ppaId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="ppaDateCreat" type="timestamp">
+      <column name="ppa_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="ppaDateModif" type="timestamp">
+      <column name="ppa_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="ppaUserCreat" type="long">
+      <column default="0" length="15" name="ppa_user_creat">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="ppaUserModif" type="long">
+      <column default="0" length="15" name="ppa_user_modif">
+        <comment>utilisateur de modification</comment>
+      </column>
+    </property>
+    <property name="ppaFeuille" type="string">
+      <column length="50" name="ppa_feuille">
+        <comment>nom de la feuille</comment>
+      </column>
+    </property>
+    <property name="ppaCode" type="string">
+      <column length="20" name="ppa_code">
+        <comment>code planning</comment>
+      </column>
+    </property>
+    <property name="ppaJour" type="integer">
+      <column default="0" name="ppa_jour">
+        <comment>jour</comment>
+      </column>
+    </property>
+    <property name="ppaInactif" type="integer">
+      <column default="0" length="1" name="ppa_inactif">
+        <comment>0=actif 1=inactif 2=supprimer</comment>
+      </column>
+    </property>
+    <property name="ppaOrdre" type="integer">
+      <column default="0" name="ppa_ordre">
+        <comment>ordre de la ligne</comment>
+      </column>
+    </property>
+    <property name="ppaNbJour" type="integer">
+      <column default="0" name="ppa_nb_jour">
+        <comment>nombre de jour therorique</comment>
+      </column>
+    </property>
+    <property name="ppaNbMortalite" type="integer">
+      <column default="0" name="ppa_nb_mortalite">
+        <comment>nombre de mortalite</comment>
+      </column>
+    </property>
+    <property name="ppaPoids" type="float">
+      <column default="0" name="ppa_poids">
+        <comment>poids moyen</comment>
+      </column>
+    </property>
+    <property name="ppaTemperature" type="string">
+      <column length="20" name="ppa_temperature">
+        <comment>temperature</comment>
+      </column>
+    </property>
+    <property name="ppaHumidite" type="string">
+      <column length="20" name="ppa_humidite">
+        <comment>humidite</comment>
+      </column>
+    </property>
+    <property name="ppaQteEau" type="float">
+      <column default="0" name="ppa_qte_eau">
+        <comment>quantite eau</comment>
+      </column>
+    </property>
+    <property name="ppaQteAliment" type="float">
+      <column default="0" name="ppa_qte_aliment">
+        <comment>qte aliment</comment>
+      </column>
+    </property>
+    <property name="ppaAction1" type="string">
+      <column length="121" name="ppa_action1">
+        <comment>action 1</comment>
+      </column>
+    </property>
+    <property name="ppaAction2" type="string">
+      <column length="121" name="ppa_action2">
+        <comment>action 2</comment>
+      </column>
+    </property>
+    <property name="ppaAction3" type="string">
+      <column length="121" name="ppa_action3">
+        <comment>action 3</comment>
+      </column>
+    </property>
+    <property name="ppaTraitement1" type="string">
+      <column length="121" name="ppa_traitement1">
+        <comment>traitement 1</comment>
+      </column>
+    </property>
+    <property name="ppaTraitement2" type="string">
+      <column length="121" name="ppa_traitement2">
+        <comment>traitement 2</comment>
+      </column>
+    </property>
+    <property name="ppaTraitement3" type="string">
+      <column length="121" name="ppa_traitement3">
+        <comment>traitement 3</comment>
+      </column>
+    </property>
+    <property name="ppaVaccin1" type="string">
+      <column length="121" name="ppa_vaccin1">
+        <comment>vaccin 1</comment>
+      </column>
+    </property>
+    <property name="ppaVaccin2" type="string">
+      <column length="121" name="ppa_vaccin2">
+        <comment>vaccin 2</comment>
+      </column>
+    </property>
+    <property name="ppaVaccin3" type="string">
+      <column length="121" name="ppa_vaccin3">
+        <comment>vaccin 3</comment>
+      </column>
+    </property>
+    <property name="ppaObservation" type="text">
+      <column name="ppa_observation">
+        <comment>observations</comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>

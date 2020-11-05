@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="Patients" table="med_patients">
+    <id column="pat_id" name="patId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property index="true" name="patDateCreat" type="timestamp">
+      <column default="NULL" index="true" name="pat_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="patDateModif" type="timestamp">
+      <column default="NULL" name="pat_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="patUserCreat" type="long">
+      <column default="0" length="15" name="pat_user_creat">
+        <comment>user de creation</comment>
+      </column>
+    </property>
+    <property name="patUserModif" type="long">
+      <column default="0" length="15" name="pat_user_modif">
+        <comment>user de modification</comment>
+      </column>
+    </property>
+    <property name="patEtat" type="integer">
+      <column default="0" length="1" name="pat_etat">
+        <comment>0=actif 1=inactif 2=supprime</comment>
+      </column>
+    </property>
+    <property name="patPourcentCasSocial" type="float">
+      <column default="0" length="5" name="pat_pourcent_cas_social">
+        <comment>pourcentage du cas social</comment>
+      </column>
+    </property>
+    <property name="patNumContrat" type="string">
+      <column length="20" name="pat_num_contrat">
+        <comment>numero de contrat</comment>
+      </column>
+    </property>
+    <property name="patImmatriculation" type="string">
+      <column length="20" name="pat_immatriculation">
+        <comment>numero immatriculation assurance</comment>
+      </column>
+    </property>
+    <property index="true" name="patDossier" type="string">
+      <column index="true" length="20" name="pat_dossier">
+        <comment>numero dossier</comment>
+      </column>
+    </property>
+    <property index="true" name="patNom" type="string">
+      <column index="true" length="100" name="pat_nom">
+        <comment>nom du patient</comment>
+      </column>
+    </property>
+    <property name="patPrenom" type="string">
+      <column length="100" name="pat_prenom">
+        <comment>prenom</comment>
+      </column>
+    </property>
+    <property name="patNomJf" type="string">
+      <column length="100" name="pat_nom_jf">
+        <comment>nom de jeune fille</comment>
+      </column>
+    </property>
+    <property name="patSurnom" type="string">
+      <column length="50" name="pat_surnom">
+        <comment>surnom</comment>
+      </column>
+    </property>
+    <property name="patPec" type="string">
+      <column length="20" name="pat_pec">
+        <comment>prise en charge du patient lie au fichier xml (1= assure 2= non assure 3=cas social)</comment>
+      </column>
+    </property>
+    <property name="patSociete" type="string">
+      <column length="100" name="pat_societe">
+        <comment>societe prise en charge</comment>
+      </column>
+    </property>
+    <property name="patIdSociete" type="long">
+      <column default="0" name="pat_id_societe">
+        <comment>id societe prise en charge</comment>
+      </column>
+    </property>
+    <property name="patAssurance" type="string">
+      <column length="100" name="pat_assurance">
+        <comment>assurance prise en charge</comment>
+      </column>
+    </property>
+    <property name="patIdAssurance" type="long">
+      <column default="0" name="pat_id_assurance">
+        <comment>id assurance prise en charge</comment>
+      </column>
+    </property>
+    <property name="patComplementaire" type="string">
+      <column length="100" name="pat_complementaire">
+        <comment>complementaire prise en charge</comment>
+      </column>
+    </property>
+    <property name="patIdComplementaire" type="long">
+      <column default="0" name="pat_id_complementaire">
+        <comment>id complementaire prise en charge</comment>
+      </column>
+    </property>
+    <property name="patPecComplementaire" type="long">
+      <column default="0" name="pat_pec_complementaire">
+        <comment>id pec complementaire</comment>
+      </column>
+    </property>
+    <property name="patIdCouvertPar" type="long">
+      <column default="0" name="pat_id_couvert_par">
+        <comment>id assure principal</comment>
+      </column>
+    </property>
+    <property name="patCi" type="string">
+      <column length="20" name="pat_ci">
+        <comment>numero de cate d identite</comment>
+      </column>
+    </property>
+    <property name="patPassport" type="string">
+      <column length="20" name="pat_passport">
+        <comment>numero de passport</comment>
+      </column>
+    </property>
+    <property name="patSecu" type="string">
+      <column length="20" name="pat_secu">
+        <comment>numero de securite sociale</comment>
+      </column>
+    </property>
+    <property name="patCnamgs" type="string">
+      <column length="20" name="pat_cnamgs">
+        <comment>numero de cnamgs</comment>
+      </column>
+    </property>
+    <property name="patCouvert" type="string">
+      <column length="50" name="pat_couvert">
+        <comment>couvert par</comment>
+      </column>
+    </property>
+    <property name="patCivilite" type="string">
+      <column length="20" name="pat_civilite">
+        <comment>civilite</comment>
+      </column>
+    </property>
+    <property name="patLangueParle" type="string">
+      <column length="20" name="pat_langue_parle">
+        <comment>langue parlee</comment>
+      </column>
+    </property>
+    <property name="patTelDom" type="string">
+      <column length="20" name="pat_tel_dom">
+        <comment>telephone domicile</comment>
+      </column>
+    </property>
+    <property name="patCel1" type="string">
+      <column length="20" name="pat_cel1">
+        <comment>cellulaire 1</comment>
+      </column>
+    </property>
+    <property name="patCel2" type="string">
+      <column length="20" name="pat_cel2">
+        <comment>cellulaire 2</comment>
+      </column>
+    </property>
+    <property name="patCel3" type="string">
+      <column length="20" name="pat_cel3">
+        <comment>cellulaire 3</comment>
+      </column>
+    </property>
+    <property name="patTelVoiture" type="string">
+      <column length="20" name="pat_tel_voiture">
+        <comment>telephone voiture</comment>
+      </column>
+    </property>
+    <property name="patSexe" type="integer">
+      <column default="0" length="1" name="pat_sexe">
+        <comment>0=femme 1=homme</comment>
+      </column>
+    </property>
+    <property name="patDateNaissance" type="date">
+      <column default="NULL" name="pat_date_naissance">
+        <comment>date de naissance</comment>
+      </column>
+    </property>
+    <property name="patDateEmbauche" type="date">
+      <column default="NULL" name="pat_date_embauche">
+        <comment>date embauche</comment>
+      </column>
+    </property>
+    <property name="patLieuNaissance" type="string">
+      <column length="100" name="pat_lieu_naissance">
+        <comment>lieu de naissance</comment>
+      </column>
+    </property>
+    <property name="patPaysNaissance" type="string">
+      <column length="50" name="pat_pays_naissance">
+        <comment>pays de naissance</comment>
+      </column>
+    </property>
+    <property name="patObservations" type="string">
+      <column length="100" name="pat_observations">
+        <comment>observations</comment>
+      </column>
+    </property>
+    <property name="patAdresse" type="string">
+      <column length="100" name="pat_adresse">
+        <comment>adresse actuelle</comment>
+      </column>
+    </property>
+    <property name="patRue" type="string">
+      <column length="10" name="pat_rue">
+        <comment>numero rue</comment>
+      </column>
+    </property>
+    <property name="patLot" type="string">
+      <column length="50" name="pat_lot">
+        <comment>numero lot - equipe</comment>
+      </column>
+    </property>
+    <property name="patIlot" type="string">
+      <column length="10" name="pat_ilot">
+        <comment>numero illot</comment>
+      </column>
+    </property>
+    <property name="patBatiment" type="string">
+      <column name="pat_batiment">
+        <comment>numero batiment</comment>
+      </column>
+    </property>
+    <property name="patPorte" type="string">
+      <column length="10" name="pat_porte">
+        <comment>numero porte</comment>
+      </column>
+    </property>
+    <property name="patEtage" type="string">
+      <column length="10" name="pat_etage">
+        <comment>numero etage</comment>
+      </column>
+    </property>
+    <property name="patAscensseur" type="string">
+      <column length="10" name="pat_ascensseur">
+        <comment>ascenseur</comment>
+      </column>
+    </property>
+    <property name="patQuartier" type="string">
+      <column length="50" name="pat_quartier">
+        <comment>quartier</comment>
+      </column>
+    </property>
+    <property name="patCommune" type="string">
+      <column length="50" name="pat_commune">
+        <comment>commune - site</comment>
+      </column>
+    </property>
+    <property name="patDepart" type="string">
+      <column length="50" name="pat_depart">
+        <comment>departement</comment>
+      </column>
+    </property>
+    <property name="patZone" type="string">
+      <column length="50" name="pat_zone">
+        <comment>zone - service</comment>
+      </column>
+    </property>
+    <property name="patBp" type="string">
+      <column length="20" name="pat_bp">
+        <comment>boite poste</comment>
+      </column>
+    </property>
+    <property name="patCedex" type="string">
+      <column length="20" name="pat_cedex">
+        <comment>cedex</comment>
+      </column>
+    </property>
+    <property name="patVille" type="string">
+      <column length="50" name="pat_ville">
+        <comment>ville</comment>
+      </column>
+    </property>
+    <property name="patPays" type="string">
+      <column length="50" name="pat_pays">
+        <comment>pays</comment>
+      </column>
+    </property>
+    <property name="patBurTel1" type="string">
+      <column length="20" name="pat_bur_tel1">
+        <comment>telephne bureau</comment>
+      </column>
+    </property>
+    <property name="patBurTel2" type="string">
+      <column length="20" name="pat_bur_tel2">
+        <comment>telephne bureau</comment>
+      </column>
+    </property>
+    <property name="patBurFax" type="string">
+      <column length="20" name="pat_bur_fax">
+        <comment>fax </comment>
+      </column>
+    </property>
+    <property name="patYahoo" type="string">
+      <column length="100" name="pat_yahoo">
+        <comment>adresse yahoo</comment>
+      </column>
+    </property>
+    <property name="patMsn" type="string">
+      <column length="100" name="pat_msn">
+        <comment>adresse msn</comment>
+      </column>
+    </property>
+    <property name="patSkype" type="string">
+      <column length="100" name="pat_skype">
+        <comment>adresse skype</comment>
+      </column>
+    </property>
+    <property name="patMail1" type="string">
+      <column length="100" name="pat_mail1">
+        <comment>mail 1</comment>
+      </column>
+    </property>
+    <property name="patNomFamille" type="integer">
+      <column default="0" name="pat_nom_famille">
+        <comment>famille patient</comment>
+      </column>
+    </property>
+    <property name="patSerie" type="string">
+      <column length="4" name="pat_serie">
+        <comment>serie</comment>
+      </column>
+    </property>
+    <property name="patNomBanque" type="string">
+      <column length="100" name="pat_nom_banque">
+        <comment>nom banque</comment>
+      </column>
+    </property>
+    <property name="patAdresseBanque" type="string">
+      <column length="100" name="pat_adresse_banque">
+        <comment>adresse banque</comment>
+      </column>
+    </property>
+    <property name="patNumBanque" type="string">
+      <column length="5" name="pat_num_banque">
+        <comment>numero banque</comment>
+      </column>
+    </property>
+    <property name="patGuichetBanque" type="string">
+      <column length="5" name="pat_guichet_banque">
+        <comment>numero guichet</comment>
+      </column>
+    </property>
+    <property name="patCompteBanque" type="string">
+      <column length="20" name="pat_compte_banque">
+        <comment>numero compte</comment>
+      </column>
+    </property>
+    <property name="patCleBanque" type="string">
+      <column length="2" name="pat_cle_banque">
+        <comment>rib</comment>
+      </column>
+    </property>
+    <property name="patIban" type="string">
+      <column length="35" name="pat_iban">
+        <comment>iban</comment>
+      </column>
+    </property>
+    <property name="patSwift" type="string">
+      <column length="20" name="pat_swift">
+        <comment>swift</comment>
+      </column>
+    </property>
+    <property name="patCompte" type="string">
+      <column length="20" name="pat_compte">
+        <comment>compte comptable</comment>
+      </column>
+    </property>
+    <property name="patDatePrelev1" type="date">
+      <column default="NULL" name="pat_date_prelev_1">
+        <comment>date prelevement 1</comment>
+      </column>
+    </property>
+    <property name="patGroupe1" type="string">
+      <column length="3" name="pat_groupe_1">
+        <comment>groupe</comment>
+      </column>
+    </property>
+    <property name="patRhesus1" type="string">
+      <column length="1" name="pat_rhesus_1">
+        <comment>rhesus</comment>
+      </column>
+    </property>
+    <property name="patD1" type="integer">
+      <column default="0" length="1" name="pat_d_1">
+        <comment>d</comment>
+      </column>
+    </property>
+    <property name="patC1" type="integer">
+      <column default="0" length="1" name="pat_c_1">
+        <comment>c</comment>
+      </column>
+    </property>
+    <property name="patCc1" type="integer">
+      <column default="0" length="1" name="pat_cc_1">
+        <comment>cc</comment>
+      </column>
+    </property>
+    <property name="patE1" type="integer">
+      <column default="0" length="1" name="pat_e_1">
+        <comment>e</comment>
+      </column>
+    </property>
+    <property name="patEe1" type="integer">
+      <column default="0" length="1" name="pat_ee_1">
+        <comment>ee</comment>
+      </column>
+    </property>
+    <property name="patCde1" type="integer">
+      <column default="0" length="1" name="pat_cde_1">
+        <comment>cde</comment>
+      </column>
+    </property>
+    <property name="patK1" type="integer">
+      <column default="0" length="1" name="pat_k_1">
+        <comment>k</comment>
+      </column>
+    </property>
+    <property name="patDatePrelev2" type="date">
+      <column default="NULL" name="pat_date_prelev_2">
+        <comment>date prelevement </comment>
+      </column>
+    </property>
+    <property name="patGroupe2" type="string">
+      <column length="3" name="pat_groupe_2">
+        <comment>groupe 2</comment>
+      </column>
+    </property>
+    <property name="patRhesus2" type="string">
+      <column length="1" name="pat_rhesus_2">
+        <comment>rhesus</comment>
+      </column>
+    </property>
+    <property name="patD2" type="integer">
+      <column default="0" length="1" name="pat_d_2">
+        <comment>d</comment>
+      </column>
+    </property>
+    <property name="patC2" type="integer">
+      <column default="0" length="1" name="pat_c_2">
+        <comment>c</comment>
+      </column>
+    </property>
+    <property name="patCc2" type="integer">
+      <column default="0" length="1" name="pat_cc_2">
+        <comment>cc</comment>
+      </column>
+    </property>
+    <property name="patE2" type="integer">
+      <column default="0" length="1" name="pat_e_2">
+        <comment>e</comment>
+      </column>
+    </property>
+    <property name="patEe2" type="integer">
+      <column default="0" length="1" name="pat_ee_2">
+        <comment>ee</comment>
+      </column>
+    </property>
+    <property name="patCde2" type="integer">
+      <column default="0" length="1" name="pat_cde_2">
+        <comment>cde</comment>
+      </column>
+    </property>
+    <property name="patK2" type="integer">
+      <column default="0" length="1" name="pat_k_2">
+        <comment>k</comment>
+      </column>
+    </property>
+    <property name="patSitFam" type="integer">
+      <column default="0" length="1" name="pat_sit_fam">
+        <comment>situation de famille</comment>
+      </column>
+    </property>
+    <property name="patHabitat" type="integer">
+      <column default="0" length="1" name="pat_habitat">
+        <comment>habitat </comment>
+      </column>
+    </property>
+    <property name="patNbEnfant" type="integer">
+      <column default="0" length="2" name="pat_nb_enfant">
+        <comment>nombre enfants</comment>
+      </column>
+    </property>
+    <property name="patSecteurActivite" type="string">
+      <column length="100" name="pat_secteur_activite">
+        <comment>secteur activite</comment>
+      </column>
+    </property>
+    <property name="patProfession" type="string">
+      <column length="100" name="pat_profession">
+        <comment>profession</comment>
+      </column>
+    </property>
+    <property name="patProfObs" type="string">
+      <column length="100" name="pat_prof_obs">
+        <comment>observation sur la profession</comment>
+      </column>
+    </property>
+    <property name="patNomPere" type="string">
+      <column length="100" name="pat_nom_pere">
+        <comment>nom du pere</comment>
+      </column>
+    </property>
+    <property name="patNomMere" type="string">
+      <column length="100" name="pat_nom_mere">
+        <comment>nom de la mere</comment>
+      </column>
+    </property>
+    <property name="patReligion" type="string">
+      <column length="20" name="pat_religion">
+        <comment>relgion</comment>
+      </column>
+    </property>
+    <property name="patModereg" type="string">
+      <column length="50" name="pat_mode_reg">
+        <comment>mode de reglement</comment>
+      </column>
+    </property>
+    <property name="patTypereg" type="integer">
+      <column default="0" length="1" name="pat_type_reg">
+        <comment>0=sans calcul 1=paiement comptant 2=terme date de facture 3=terme fin de mois</comment>
+      </column>
+    </property>
+    <property name="patNbecheance" type="integer">
+      <column default="0" length="2" name="pat_nb_echeance">
+        <comment>nombre de jours d  echeance</comment>
+      </column>
+    </property>
+    <property name="patNbarrondi" type="integer">
+      <column default="0" length="2" name="pat_nb_arrondi">
+        <comment>nombre de jours d arrondi</comment>
+      </column>
+    </property>
+    <property name="patConditionreg" type="string">
+      <column length="100" name="pat_condition_reg">
+        <comment>conditions de reglements</comment>
+      </column>
+    </property>
+    <property name="patPhoto" type="string">
+      <column default="null" length="100" name="pat_photo">
+        <comment>acces photo ou logo</comment>
+      </column>
+    </property>
+    <property name="patQualite" type="string">
+      <column length="20" name="pat_qualite">
+        <comment>qualite ayant droit</comment>
+      </column>
+    </property>
+    <property name="patIdUserPaiement" type="long">
+      <column default="0" name="pat_id_user_paiement">
+        <comment>id du user qui supporte le paiement</comment>
+      </column>
+    </property>
+    <property name="patSalariePaiement" type="string">
+      <column length="20" name="pat_salarie_paiement">
+        <comment>matricule du salarie qui supporte le paiement</comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>

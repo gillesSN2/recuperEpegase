@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="ElevesAppels" table="edu_eleves_appels">
+    <id column="eleapp_id" name="eleappId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="eleappDateCreat" type="timestamp">
+      <column name="eleapp_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="eleappDateModif" type="timestamp">
+      <column name="eleapp_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="eleappIdCreateur" type="long">
+      <column default="0" length="15" name="eleapp_id_createur">
+        <comment>id user createur</comment>
+      </column>
+    </property>
+    <property name="eleappIdModif" type="long">
+      <column default="0" length="15" name="eleapp_id_modif">
+        <comment>id user de modification</comment>
+      </column>
+    </property>
+    <property name="eleappAnnee" type="string">
+      <column length="9" name="eleapp_annee">
+        <comment>annee scolaire AAAA/AAAA</comment>
+      </column>
+    </property>
+    <property name="eleappDate" type="date">
+      <column default="null" name="eleapp_date">
+        <comment>date appel</comment>
+      </column>
+    </property>
+    <property name="eleappNum" type="string">
+      <column length="20" name="eleapp_num">
+        <comment>numero appel</comment>
+      </column>
+    </property>
+    <property name="eleappMatiere" type="string">
+      <column length="20" name="eleapp_matiere">
+        <comment>code matiere</comment>
+      </column>
+    </property>
+    <property name="eleappFiliere" type="string">
+      <column length="20" name="eleapp_filiere">
+        <comment>code classe ou filiere</comment>
+      </column>
+    </property>
+    <property name="eleappType" type="integer">
+      <column default="0" name="eleapp_type">
+        <comment>0=present 1=ne fait pas parti du groupe 2=retard justifie 3=retard non justfie 4=absence justifiee 5=abscence non justfiee 6=absence pur exclusion</comment>
+      </column>
+    </property>
+    <property name="eleappEtatVal" type="integer">
+      <column default="0" length="1" name="eleapp_etat_val">
+        <comment>0=sans validation 1=avec validation</comment>
+      </column>
+    </property>
+    <property name="eleappEtat" type="integer">
+      <column default="0" length="1" name="eleapp_etat">
+        <comment>0=En cours 1=valide 2=annule</comment>
+      </column>
+    </property>
+    <property name="eleappDateValide" type="date">
+      <column name="eleapp_date_valide">
+        <comment>date de validation</comment>
+      </column>
+    </property>
+    <property name="eleappNomProfesseur" type="string">
+      <column length="100" name="eleapp_nom_professeur">
+        <comment>nom du professeur</comment>
+      </column>
+    </property>
+    <property name="eleappIdProfesseur" type="long">
+      <column default="0" name="eleapp_id_professeur">
+        <comment>id du professeur</comment>
+      </column>
+    </property>
+    <property name="eleappObservation" type="string">
+      <column length="100" name="eleapp_observation">
+        <comment>observation du professeur</comment>
+      </column>
+    </property>
+    <property name="eleappScan" type="string">
+      <column length="100" name="eleapp_scan">
+        <comment>scan justficatif</comment>
+      </column>
+    </property>
+    <property name="eleappDateAnnule" type="timestamp">
+      <column default="null" name="eleapp_date_annule">
+        <comment>date annulation</comment>
+      </column>
+    </property>
+    <property name="eleappMotifAnnule" type="string">
+      <column length="50" name="eleapp_motif_annule">
+        <comment>motif annulation</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.Eleves" column="ele_id" lazy="false" name="eleves" not-null="true"/>
+    <many-to-one class="com.epegase.systeme.classe.ExercicesVentes" column="exevte_id" lazy="false" name="exercicesVentes" not-null="true"/>
+    <many-to-one class="com.epegase.systeme.classe.FilieresEducation" column="fil_id" lazy="false" name="filieresEducation" not-null="true"/>
+    <many-to-one class="com.epegase.systeme.classe.FilieresMatieres" column="filmat_id" lazy="false" name="filieresMatieres" not-null="true"/>
+  </class>
+</hibernate-mapping>

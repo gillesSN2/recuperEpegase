@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="Activites" table="cmm_activites">
+    <id column="act_id" name="actId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="actDateCreat" type="timestamp">
+      <column name="act_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="actDateModif" type="timestamp">
+      <column name="act_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="actUserCreat" type="long">
+      <column default="0" length="15" name="act_user_creat">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="actUserModif" type="long">
+      <column default="0" length="15" name="act_user_modif">
+        <comment>utilisateur de modification</comment>
+      </column>
+    </property>
+    <property name="actCode" type="string">
+      <column length="20" name="act_code">
+        <comment>code activite</comment>
+      </column>
+    </property>
+    <property name="actNomFr" type="string">
+      <column length="100" name="act_nom_FR">
+        <comment>nom activite en FR</comment>
+      </column>
+    </property>
+    <property name="actNomUk" type="string">
+      <column length="100" name="act_nom_UK">
+        <comment>nom activite en UK</comment>
+      </column>
+    </property>
+    <property name="actNomSp" type="string">
+      <column length="100" name="act_nom_SP">
+        <comment>nom activite en SP</comment>
+      </column>
+    </property>
+    <property name="actInactif" type="integer">
+      <column default="0" length="1" name="act_inactif">
+        <comment>0=actif 1=inactif 2=supprimer</comment>
+      </column>
+    </property>
+    <property name="actAnneeDebut" type="integer">
+      <column default="0" length="4" name="act_annee_debut">
+        <comment>annee de debut de validite</comment>
+      </column>
+    </property>
+    <property name="actAnneeFin" type="integer">
+      <column default="0" length="4" name="act_annee_fin">
+        <comment>annee de fin de validite</comment>
+      </column>
+    </property>
+    <property name="actVte" type="boolean">
+      <column default="false" name="act_vte">
+        <comment>1=autorise dans les ventes</comment>
+      </column>
+    </property>
+    <property name="actAch" type="boolean">
+      <column default="false" name="act_ach">
+        <comment>1=autorise dans les achats</comment>
+      </column>
+    </property>
+    <property name="actPrd" type="boolean">
+      <column default="false" name="act_prd">
+        <comment>1=autorise dans la production</comment>
+      </column>
+    </property>
+    <property name="actFrg" type="boolean">
+      <column default="false" name="act_frg">
+        <comment>1=autorise dans les frais generaux</comment>
+      </column>
+    </property>
+    <property name="actInv" type="boolean">
+      <column default="false" name="act_inv">
+        <comment>1=autorise dans les investissements</comment>
+      </column>
+    </property>
+    <property name="actTva" type="boolean">
+      <column default="false" name="act_tva">
+        <comment>1=autorise dans la tva</comment>
+      </column>
+    </property>
+    <property name="actTax" type="boolean">
+      <column default="false" name="act_tax">
+        <comment>1=autorise dans les impots et taxes</comment>
+      </column>
+    </property>
+    <property name="actSal" type="boolean">
+      <column default="false" name="act_sal">
+        <comment>1=autorise dans les salaries</comment>
+      </column>
+    </property>
+    <property name="actOptions" type="integer">
+      <column default="0" name="act_options">
+        <comment>0=sans option 1=num contrat 2=num dossier 3=num or</comment>
+      </column>
+    </property>
+    <property name="actIdResponsable" type="long">
+      <column default="0" name="act_id_responsable">
+        <comment>id responsable</comment>
+      </column>
+    </property>
+    <property name="actNomResponsable" type="string">
+      <column length="100" name="act_nom_responsable">
+        <comment>nom responsable</comment>
+      </column>
+    </property>
+    <property name="actRegroupement" type="string">
+      <column length="20" name="act_regroupement">
+        <comment>code de regroupement</comment>
+      </column>
+    </property>
+    <property index="true" name="actColonne" type="string">
+      <column index="true" length="20" name="act_colonne">
+        <comment>code colonne</comment>
+      </column>
+    </property>
+    <property name="actCompteTaxe" type="string">
+      <column length="20" name="act_compte_taxe">
+        <comment>compta txe</comment>
+      </column>
+    </property>
+    <property name="actTauxTaxe" type="float">
+      <column default="0" name="act_taux_taxe">
+        <comment>taux de taxe</comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>

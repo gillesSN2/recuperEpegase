@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="DepotAchats" table="ach_depot">
+    <id column="dpo_id" name="dpoId" type="long" unsaved-value="null">
+      <generator class="increment"/>
+    </id>
+    <property name="dpoDateCreation" type="timestamp">
+      <column name="dpo_date_creation">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="dpoDateModif" type="timestamp">
+      <column name="dpo_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="dpoUserCreation" type="long">
+      <column default="0" length="15" name="dpo_user_creation">
+        <comment>user de creation</comment>
+      </column>
+    </property>
+    <property name="dpoUserModif" type="long">
+      <column default="0" length="15" name="dpo_user_modif">
+        <comment>user de modification</comment>
+      </column>
+    </property>
+    <property name="dpoCode" type="string">
+      <column length="10" name="dpo_code">
+        <comment>code du depot</comment>
+      </column>
+    </property>
+    <property name="dpoLibelle" type="string">
+      <column length="100" name="dpo_libelle">
+        <comment>libelle du depot</comment>
+      </column>
+    </property>
+    <property name="dpoService" type="text">
+      <column name="dpo_service">
+        <comment>service concerne</comment>
+      </column>
+    </property>
+    <property name="dpoDepartement" type="text">
+      <column name="dpo_departement">
+        <comment>departement concerne</comment>
+      </column>
+    </property>
+    <property name="dpoSite" type="text">
+      <column name="dpo_site">
+        <comment>site concerne</comment>
+      </column>
+    </property>
+    <property name="dpoType" type="integer">
+      <column default="0" length="1" name="dpo_type">
+        <comment>0=standard fixe 1=standard mobile  2=fictif</comment>
+      </column>
+    </property>
+    <property name="dpoQteMin" type="float">
+      <column default="0" name="dpo_qte_min">
+        <comment>quantite minimale</comment>
+      </column>
+    </property>
+    <property name="dpoQteMax" type="float">
+      <column default="0" name="dpo_qte_max">
+        <comment>quantite maximale</comment>
+      </column>
+    </property>
+    <property name="dpoDefautIn" type="integer">
+      <column default="0" length="1" name="dpo_defaut_in">
+        <comment>1=defaut en entree</comment>
+      </column>
+    </property>
+    <property name="dpoDefautOut" type="integer">
+      <column default="0" length="1" name="dpo_defaut_out">
+        <comment>1=defaut en sortie</comment>
+      </column>
+    </property>
+    <property name="dpoInactif" type="integer">
+      <column default="0" length="1" name="dpo_inactif">
+        <comment>0=actif 1=inactif</comment>
+      </column>
+    </property>
+    <property name="dpoReception" type="integer">
+      <column default="0" length="1" name="dpo_reception">
+        <comment>0=sans reception 1=avec reception</comment>
+      </column>
+    </property>
+    <property name="dpoRetourAch" type="integer">
+      <column default="0" length="1" name="dpo_retour_ach">
+        <comment>0=sans retout achat 1=avec retour achat</comment>
+      </column>
+    </property>
+    <property name="dpoLivraison" type="integer">
+      <column default="0" length="1" name="dpo_livraison">
+        <comment>0=sans bon livraison 1=avec bon livraison</comment>
+      </column>
+    </property>
+    <property name="dpoPharmacie" type="integer">
+      <column default="0" length="1" name="dpo_pharmacie">
+        <comment>0=sans pharmacie 1=avec pharmacie</comment>
+      </column>
+    </property>
+    <property name="dpoCarburant" type="integer">
+      <column default="0" length="1" name="dpo_carburant">
+        <comment>0=sans carburant 1=avec carburant</comment>
+      </column>
+    </property>
+    <property name="dpoRetourVent" type="integer">
+      <column default="0" length="1" name="dpo_retour_vent">
+        <comment>0=sans retour  1=avec retour</comment>
+      </column>
+    </property>
+    <property name="dpoReachmin" type="integer">
+      <column default="0" length="1" name="dpo_reachmin">
+        <comment>0=sans reacheminement 1=avec reacheminement</comment>
+      </column>
+    </property>
+    <property name="dpoFabrication" type="integer">
+      <column default="0" length="1" name="dpo_fabrication">
+        <comment>0=sans production 1=avec production</comment>
+      </column>
+    </property>
+    <property name="dpoCession" type="integer">
+      <column default="0" length="1" name="dpo_cession">
+        <comment>0=sans cession 1=avec cession</comment>
+      </column>
+    </property>
+    <property name="dpoBonSortie" type="integer">
+      <column default="0" length="1" name="dpo_bon_sortie">
+        <comment>0=sans bon de sortie 1=avec bon de sortie</comment>
+      </column>
+    </property>
+    <property name="dpoBonEntree" type="integer">
+      <column default="0" length="1" name="dpo_bon_entree">
+        <comment>0=sans bon entree 1=avec bon entree</comment>
+      </column>
+    </property>
+    <property name="dpoInventaire" type="integer">
+      <column default="0" length="1" name="dpo_inventaire">
+        <comment>0=sans inventaire 1=avec inventaire</comment>
+      </column>
+    </property>
+    <property name="dpoMobileVent" type="integer">
+      <column default="0" length="1" name="dpo_mobile_vent">
+        <comment>0=sans depot mobile 1=avec depot mobile</comment>
+      </column>
+    </property>
+    <property name="dpoCollecteAch" type="integer">
+      <column default="0" length="1" name="dpo_collecte_ach">
+        <comment>0=sans collecte 1=avec collecte</comment>
+      </column>
+    </property>
+    <property name="dpoAdresse" type="string">
+      <column length="100" name="dpo_adresse">
+        <comment>adresse du depot</comment>
+      </column>
+    </property>
+    <property name="dpoResponsable" type="string">
+      <column length="100" name="dpo_responsable">
+        <comment>nom du responsable</comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="DevisLigneMedical" table="med_devis_ligne">
+    <id column="dvslig_id" name="dvsligId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="dvsligLaboratoire" type="string">
+      <column length="121" name="dvslig_laboratoire">
+        <comment>laboratoire</comment>
+      </column>
+    </property>
+    <property name="dvsligProduit" type="string">
+      <column length="20" name="dvslig_produit">
+        <comment>code produit</comment>
+      </column>
+    </property>
+    <property name="dvsligLibelle" type="text">
+      <column name="dvslig_libelle">
+        <comment>libelle produit</comment>
+      </column>
+    </property>
+    <property name="dvsligFamille" type="string">
+      <column length="121" name="dvslig_famille">
+        <comment>famille produit</comment>
+      </column>
+    </property>
+    <property name="dvsligLettre" type="string">
+      <column length="10" name="dvslig_lettre">
+        <comment>code lettre</comment>
+      </column>
+    </property>
+    <property name="dvsligNb" type="float">
+      <column default="0" name="dvslig_nb">
+        <comment>nombre lettre</comment>
+      </column>
+    </property>
+    <property name="dvsligNbCnamgs" type="float">
+      <column default="0" name="dvslig_nb_cnamgs">
+        <comment>nombre lettre cnamgs</comment>
+      </column>
+    </property>
+    <property name="dvsligValeur" type="double">
+      <column default="0" name="dvslig_valeur">
+        <comment>valeur lettre</comment>
+      </column>
+    </property>
+    <property name="dvsligValeurCnamgs" type="double">
+      <column default="0" name="dvslig_valeur_cnqmgs">
+        <comment>valeur lettre cnamgs</comment>
+      </column>
+    </property>
+    <property name="dvsligCoef" type="float">
+      <column default="0" name="dvslig_coef">
+        <comment>coefficient</comment>
+      </column>
+    </property>
+    <property name="dvsligPu" type="double">
+      <column default="0" name="dvslig_pu">
+        <comment>prix unitaire</comment>
+      </column>
+    </property>
+    <property name="dvsligPuCnamgs" type="double">
+      <column default="0" name="dvslig_pu_cnamgs">
+        <comment>prix unitaire cnamgs</comment>
+      </column>
+    </property>
+    <property name="dvsligPuAssurance" type="double">
+      <column default="0" name="dvslig_pu_assurance">
+        <comment>prix unitaire assurance</comment>
+      </column>
+    </property>
+    <property name="dvsligCodeTva" type="string">
+      <column length="20" name="dvslig_code_tva">
+        <comment>code de tva</comment>
+      </column>
+    </property>
+    <property name="dvsligTauxTva" type="float">
+      <column default="0" name="dvslig_taux_tva">
+        <comment>taux de tva</comment>
+      </column>
+    </property>
+    <property name="dvsligRemise" type="float">
+      <column default="0" name="dvslig_remise">
+        <comment>%remise</comment>
+      </column>
+    </property>
+    <property name="dvsligRabais" type="double">
+      <column default="0" name="dvslig_rabais">
+        <comment>rabais</comment>
+      </column>
+    </property>
+    <property name="dvsligPuRem" type="double">
+      <column default="0" name="dvslig_pu_rem">
+        <comment>prix apres remise</comment>
+      </column>
+    </property>
+    <property name="dvsligQte" type="float">
+      <column default="0" name="dvslig_qte">
+        <comment>quantite</comment>
+      </column>
+    </property>
+    <property name="dvsligPatientHt" type="double">
+      <column default="0" name="dvslig_patient_ht">
+        <comment>part ht patient</comment>
+      </column>
+    </property>
+    <property name="dvsligPatientTaxe" type="double">
+      <column default="0" name="dvslig_patient_taxe">
+        <comment>part taxe patient</comment>
+      </column>
+    </property>
+    <property name="dvsligSocieteHt" type="double">
+      <column default="0" name="dvslig_societe_ht">
+        <comment>part ht societe</comment>
+      </column>
+    </property>
+    <property name="dvsligSocieteTaxe" type="double">
+      <column default="0" name="dvslig_societe_taxe">
+        <comment>part taxe societe</comment>
+      </column>
+    </property>
+    <property name="dvsligAssuranceHt" type="double">
+      <column default="0" name="dvslig_assurance_ht">
+        <comment>part ht assurance</comment>
+      </column>
+    </property>
+    <property name="dvsligAssuranceTaxe" type="double">
+      <column default="0" name="dvslig_assurance_taxe">
+        <comment>part taxe assurance</comment>
+      </column>
+    </property>
+    <property name="dvsligComplementaireHt" type="double">
+      <column default="0" name="dvslig_complementaire_ht">
+        <comment>part ht comllementaire</comment>
+      </column>
+    </property>
+    <property name="dvsligComplementaireTaxe" type="double">
+      <column default="0" name="dvslig_complementaire_taxe">
+        <comment>part taxe complementaire</comment>
+      </column>
+    </property>
+    <property name="dvsligTotal" type="double">
+      <column default="0" name="dvslig_total">
+        <comment>total ht</comment>
+      </column>
+    </property>
+    <property name="dvsligTaxe" type="double">
+      <column default="0" name="dvslig_taxe">
+        <comment>total taxe</comment>
+      </column>
+    </property>
+    <property name="dvsligEtat" type="integer">
+      <column default="0" name="dvslig_etat">
+        <comment>etat examen 0=en cours 1=effectue 2=gele 3=annule 4=cloture</comment>
+      </column>
+    </property>
+    <property name="dvsligRegPatient" type="double">
+      <column default="0" name="dvslig_reg_patient">
+        <comment>reglement patient</comment>
+      </column>
+    </property>
+    <property name="dvsligRegTiers" type="double">
+      <column default="0" name="dvslig_reg_tiers">
+        <comment>reglement tous tiers</comment>
+      </column>
+    </property>
+    <property name="dvsligCommentaire" type="text">
+      <column name="dvslig_commentaire">
+        <comment>commentaire</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.DevisEnteteMedical" column="dvs_id" lazy="false" name="devisEnteteMedical" not-null="true"/>
+  </class>
+</hibernate-mapping>

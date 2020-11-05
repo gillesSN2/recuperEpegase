@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="CleAnalytique" table="cmm_cle_analytique">
+    <id column="cleana_id" name="cleanaId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="cleanaDate" type="date">
+      <column default="null" name="cleana_date">
+        <comment>code cle</comment>
+      </column>
+    </property>
+    <property name="cleanaCode" type="string">
+      <column length="20" name="cleana_code">
+        <comment>code cle</comment>
+      </column>
+    </property>
+    <property name="cleanaLibelle" type="string">
+      <column length="100" name="cleana_libelle">
+        <comment>libelle cle</comment>
+      </column>
+    </property>
+    <property name="cleanaTaux" type="float">
+      <column default="0" name="cleana_taux">
+        <comment>taux cle</comment>
+      </column>
+    </property>
+    <property name="cleanaValeur" type="double">
+      <column default="0" name="cleana_valeur">
+        <comment>valeur cle</comment>
+      </column>
+    </property>
+    <property name="cleanaNature" type="integer">
+      <column default="0" name="cleana_nature">
+        <comment>nature origine cle</comment>
+      </column>
+    </property>
+    <property name="cleanaIdDocument" type="long">
+      <column default="0" name="cleana_id_document">
+        <comment>id document origine cle</comment>
+      </column>
+    </property>
+    <property name="cleanaNumDocument" type="string">
+      <column length="20" name="cleana_num_document">
+        <comment>numero document origine cle</comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>

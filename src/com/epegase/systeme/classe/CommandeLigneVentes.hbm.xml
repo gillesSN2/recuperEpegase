@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="CommandeLigneVentes" table="vte_bcommande_ligne">
+    <id column="bcmlig_id" name="bcmligId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="bcmligOrdre" type="integer">
+      <column default="0" name="bcmlig_ordre">
+        <comment>ordre des lignes</comment>
+      </column>
+    </property>
+    <property name="bcmligIdDvs" type="long">
+      <column default="0" length="15" name="bcmlig_id_dvs">
+        <comment>id de la ligne devis</comment>
+      </column>
+    </property>
+    <property name="bcmligCode" type="string">
+      <column length="20" name="bcmlig_code">
+        <comment>code produit</comment>
+      </column>
+    </property>
+    <property name="bcmligProcess" type="integer">
+      <column default="0" name="bcmlig_process">
+        <comment>0= produit sans process 1=produit avec process</comment>
+      </column>
+    </property>
+    <property name="bcmligFamille" type="string">
+      <column length="121" name="bcmlig_famille">
+        <comment>famille vente</comment>
+      </column>
+    </property>
+    <property name="bcmligLibelle" type="text">
+      <column length="500" name="bcmlig_libelle">
+        <comment>libelle produit</comment>
+      </column>
+    </property>
+    <property name="bcmligComplement" type="text">
+      <column length="500" name="bcmlig_complement">
+        <comment>descriptif complementaire</comment>
+      </column>
+    </property>
+    <property name="bcmligReference" type="string">
+      <column length="20" name="bcmlig_reference">
+        <comment>reference produit</comment>
+      </column>
+    </property>
+    <property name="bcmligTaxe" type="string">
+      <column length="20" name="bcmlig_taxe">
+        <comment>code taxe</comment>
+      </column>
+    </property>
+    <property name="bcmligTauxTaxe" type="float">
+      <column default="0" name="bcmlig_taux_taxe">
+        <comment>taux de taxe</comment>
+      </column>
+    </property>
+    <property name="bcmligUnite" type="string">
+      <column length="30" name="bcmlig_unite">
+        <comment>unite produit</comment>
+      </column>
+    </property>
+    <property name="bcmligCondition" type="string">
+      <column length="121" name="bcmlig_condition">
+        <comment>conditionnement produit</comment>
+      </column>
+    </property>
+    <property name="bcmligDescription" type="string">
+      <column length="20" name="bcmlig_description">
+        <comment>description conditionnement produit</comment>
+      </column>
+    </property>
+    <property name="bcmligEchelle" type="integer">
+      <column default="0" name="bcmlig_echelle">
+        <comment>echelle de la ligne</comment>
+      </column>
+    </property>
+    <property name="bcmligQte" type="float">
+      <column default="0" name="bcmlig_qte">
+        <comment>quantite</comment>
+      </column>
+    </property>
+    <property name="bcmligLong" type="float">
+      <column default="0" name="bcmlig_long">
+        <comment>longueur</comment>
+      </column>
+    </property>
+    <property name="bcmligLarg" type="float">
+      <column default="0" name="bcmlig_larg">
+        <comment>largeur</comment>
+      </column>
+    </property>
+    <property name="bcmligHaut" type="float">
+      <column default="0" name="bcmlig_haut">
+        <comment>hauteur</comment>
+      </column>
+    </property>
+    <property name="bcmligDiam" type="float">
+      <column default="0" name="bcmlig_diam">
+        <comment>diametre</comment>
+      </column>
+    </property>
+    <property name="bcmligNb" type="float">
+      <column default="0" name="bcmlig_nb">
+        <comment>nombre de piece</comment>
+      </column>
+    </property>
+    <property name="bcmligPoidsNet" type="float">
+      <column default="0" name="bcmlig_poidsNet">
+        <comment>poids net</comment>
+      </column>
+    </property>
+    <property name="bcmligPoidsBrut" type="float">
+      <column default="0" name="bcmlig_poidsBrut">
+        <comment>poids brut</comment>
+      </column>
+    </property>
+    <property name="bcmligVolume" type="float">
+      <column default="0" name="bcmlig_volume">
+        <comment>volume</comment>
+      </column>
+    </property>
+    <property name="bcmligDepot" type="string">
+      <column length="20" name="bcmlig_depot">
+        <comment>depot utilise</comment>
+      </column>
+    </property>
+    <property name="bcmligStock" type="integer">
+      <column default="0" name="bcmlig_stock">
+        <comment>mode gestion stock</comment>
+      </column>
+    </property>
+    <property name="bcmligQteUtil" type="float">
+      <column default="0" name="bcmlig_qte_util">
+        <comment>quantite utilisee (valable pour le stock)</comment>
+      </column>
+    </property>
+    <property name="bcmligQteStock" type="float">
+      <column default="0" name="bcmlig_qte_stock">
+        <comment>quantite en stock</comment>
+      </column>
+    </property>
+    <property name="bcmligDevise" type="string">
+      <column length="3" name="bcmlig_devise">
+        <comment>code devise</comment>
+      </column>
+    </property>
+    <property name="bcmligPu" type="double">
+      <column default="0" name="bcmlig_pu">
+        <comment>prix unitaire</comment>
+      </column>
+    </property>
+    <property name="bcmligTauxRemise" type="float">
+      <column default="0" name="bcmlig_taux_remise">
+        <comment>taux de remise</comment>
+      </column>
+    </property>
+    <property name="bcmligRabais" type="double">
+      <column default="0" name="bcmlig_rabais">
+        <comment>valeur du rabais</comment>
+      </column>
+    </property>
+    <property name="bcmligPuRem" type="double">
+      <column default="0" name="bcmlig_pu_rem">
+        <comment>prix unitaire apres remise</comment>
+      </column>
+    </property>
+    <property name="bcmligPuTtc" type="double">
+      <column default="0" name="bcmlig_pu_ttc">
+        <comment>prix unitaire Ttc avant remise</comment>
+      </column>
+    </property>
+    <property name="bcmligPuRemTtc" type="double">
+      <column default="0" name="bcmlig_pu_rem_ttc">
+        <comment>prix unitaire Ttc apres remise</comment>
+      </column>
+    </property>
+    <property name="bcmligPt" type="double">
+      <column default="0" name="bcmlig_pt">
+        <comment>prix total ht</comment>
+      </column>
+    </property>
+    <property name="bcmligTva" type="double">
+      <column default="0" name="bcmlig_tva">
+        <comment>total taxe</comment>
+      </column>
+    </property>
+    <property name="bcmligTc" type="double">
+      <column default="0" name="bcmlig_tc">
+        <comment>total taxe complementaire</comment>
+      </column>
+    </property>
+    <property name="bcmligTtc" type="double">
+      <column default="0" name="bcmlig_ttc">
+        <comment>total ttc</comment>
+      </column>
+    </property>
+    <property name="bcmligPump" type="double">
+      <column default="0" name="bcmlig_pump">
+        <comment>pump</comment>
+      </column>
+    </property>
+    <property name="bcmligQteLivree" type="float">
+      <column default="0" name="bcmlig_qte_livree">
+        <comment>quantite livree</comment>
+      </column>
+    </property>
+    <property name="bcmligGroupe" type="string">
+      <column length="20" name="bcmlig_groupe">
+        <comment>code du groupe</comment>
+      </column>
+    </property>
+    <property name="bcmligModeGroupe" type="integer">
+      <column default="0" name="bcmlig_mode_groupe">
+        <comment>0=produit simple 1=groupe visible 2=groupe invisible 3=forfait 4=calcul auto. 5=generique</comment>
+      </column>
+    </property>
+    <property name="bcmligEntStock" type="integer">
+      <column default="0" name="bcmlig_ent_stock">
+        <comment>0=ne decremente pas le stock 1=decremente le stock</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.CommandeEnteteVentes" column="bcm_id" lazy="false" name="commandeEnteteVentes" not-null="true"/>
+  </class>
+</hibernate-mapping>

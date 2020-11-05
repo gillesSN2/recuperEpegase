@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="DossierTiersMF" table="mcf_dossier">
+    <id column="dos_id" name="dosId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property column="dos_date_demande" name="dosDateDemande" type="date"/>
+    <property column="dos_date_reception" name="dosDateReception" type="date"/>
+    <property column="dos_date_acceptation" name="dosDateAcceptation" type="date"/>
+    <property column="dos_date_refus" name="dosDateRefus" type="date"/>
+    <property column="dos_motif_refus" name="dosMotifRefus" type="string"/>
+    <property column="dos_type" name="dosType" type="integer"/>
+    <property column="dos_date_cloture" name="dosDateCloture" type="date"/>
+    <property column="dos_motif_cloture" name="dosMotifCloture" type="string"/>
+    <many-to-one class="com.epegase.systeme.classe.Tiers" column="tie_id" lazy="false" name="tiers" not-null="true"/>
+  </class>
+</hibernate-mapping>

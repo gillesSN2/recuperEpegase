@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="Amortissements" table="cpt_amortissements">
+    <id column="amo_id" name="amoId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="amoOldId" type="long">
+      <column default="0" name="amo_old_id">
+        <comment>memorisation ancien id</comment>
+      </column>
+    </property>
+    <property name="amoIdReception" type="long">
+      <column default="0" name="amo_id_reception">
+        <comment>id de la ligne de reception</comment>
+      </column>
+    </property>
+    <property name="amoDateCreat" type="timestamp">
+      <column default="NULL" name="amo_date_creat">
+        <comment>date de creation d un amortissement</comment>
+      </column>
+    </property>
+    <property name="amoDateModif" type="timestamp">
+      <column default="NULL" name="amo_date_modif">
+        <comment>date de modification d un amortissement</comment>
+      </column>
+    </property>
+    <property name="amoUserCreat" type="long">
+      <column default="0" length="15" name="amo_user_creat">
+        <comment>utilisateur de creation d un amortissement</comment>
+      </column>
+    </property>
+    <property name="amoUserModif" type="long">
+      <column default="0" length="15" name="amo_user_modif">
+        <comment>utilisateur de modification d un amortissement</comment>
+      </column>
+    </property>
+    <property name="amoNum" type="long">
+      <column length="20" name="amo_num">
+        <comment>numero d immobilisation calcul automatique </comment>
+      </column>
+    </property>
+    <property name="amoCompteAmo" type="string">
+      <column length="20" name="amo_compte_amo">
+        <comment>numero de compte de nature immobilisation</comment>
+      </column>
+    </property>
+    <property name="amoLibelle" type="string">
+      <column length="100" name="amo_libelle">
+        <comment>description du bien</comment>
+      </column>
+    </property>
+    <property name="amoDateAchat" type="date">
+      <column default="NULL" name="amo_date_achat">
+        <comment>date d achat du bien</comment>
+      </column>
+    </property>
+    <property name="amoDateService" type="date">
+      <column default="NULL" name="amo_date_service">
+        <comment>date de mise en service. cette date est prioritaire par rapport a la date d achat</comment>
+      </column>
+    </property>
+    <property name="amoValeurAchat" type="double">
+      <column default="0" name="amo_valeur_achat">
+        <comment>valeur d achat dans la devise du pays</comment>
+      </column>
+    </property>
+    <property name="amoValeurReevalue" type="double">
+      <column default="0" name="amo_valeur_reevalue">
+        <comment>valeur reevaluee (permet de rectifie le calul de dotation)</comment>
+      </column>
+    </property>
+    <property name="amoDateReevalue" type="date">
+      <column default="null" name="amo_date_reevalue">
+        <comment>date reevaluee</comment>
+      </column>
+    </property>
+    <property name="amoTvaTaux" type="float">
+      <column default="0" name="amo_tva_taux">
+        <comment>taux de la tva</comment>
+      </column>
+    </property>
+    <property name="amoTvaTotal" type="double">
+      <column default="0" name="amo_tva_total">
+        <comment>= amo_valeur_achat  amo_tva_taux</comment>
+      </column>
+    </property>
+    <property name="amoTvaResiduelle" type="double">
+      <column default="0" name="amo_tva_residuelle">
+        <comment>montant de la tva residuelle</comment>
+      </column>
+    </property>
+    <property name="amoMode" type="integer">
+      <column default="0" length="1" name="amo_mode">
+        <comment>0=normal 1=accelere 2=degressif</comment>
+      </column>
+    </property>
+    <property name="amoTauxComptable" type="float">
+      <column default="0" name="amo_taux_comptable">
+        <comment>taux d amortissement comptable</comment>
+      </column>
+    </property>
+    <property name="amoNbAnneeCpte" type="float">
+      <column default="0" length="11" name="amo_nb_annee_cpte">
+        <comment>zone calculee par rapport a la zone taux comptable</comment>
+      </column>
+    </property>
+    <property name="amoTauxFiscal" type="float">
+      <column default="0" name="amo_taux_fiscal">
+        <comment>taux d amortissement fiscal</comment>
+      </column>
+    </property>
+    <property name="amoNbAnneeFiscal" type="float">
+      <column default="0" length="11" name="amo_nb_annee_fiscal">
+        <comment>zone calculee par rapport a la zone taux fiscale</comment>
+      </column>
+    </property>
+    <property name="amoAnterieur" type="double">
+      <column default="0" name="amo_anterieur">
+        <comment>amortissement anterieur a l annee en cours</comment>
+      </column>
+    </property>
+    <property name="amoDateAnterieur" type="date">
+      <column default="NULL" name="amo_date_anterieur">
+        <comment>date amortissement anterieur</comment>
+      </column>
+    </property>
+    <property name="amoReference" type="string">
+      <column length="30" name="amo_reference">
+        <comment>reference du bien (impression etiquettes)</comment>
+      </column>
+    </property>
+    <property name="amoPieceAchat" type="string">
+      <column length="20" name="amo_piece_achat">
+        <comment>numero de piece de l achat du bien</comment>
+      </column>
+    </property>
+    <property name="amoChassis" type="string">
+      <column length="30" name="amo_chassis">
+        <comment>numero de chassis ou numero de serie </comment>
+      </column>
+    </property>
+    <property name="amoNature" type="integer">
+      <column default="0" length="2" name="amo_nature">
+        <comment>0=nature non specifiee 1=amort. immobilier 2=amort. mobilier 3=caution 4=frais constitution</comment>
+      </column>
+    </property>
+    <property name="amoNatureDetail" type="integer">
+      <column default="0" length="2" name="amo_nature_detail">
+        <comment>suivant fichier xml nature parc</comment>
+      </column>
+    </property>
+    <property name="amoNatureDetailLib" type="string">
+      <column length="50" name="amo_nature_detail_lib">
+        <comment>suivant fichier xml nature parc</comment>
+      </column>
+    </property>
+    <property name="amoInfosCpl" type="string">
+      <column length="50" name="amo_infos_cpl">
+        <comment>informations complementaires</comment>
+      </column>
+    </property>
+    <property name="amoFournisseur" type="string">
+      <column length="20" name="amo_fournisseur">
+        <comment>compte fournisseur</comment>
+      </column>
+    </property>
+    <property name="amoLibFournisseur" type="string">
+      <column length="100" name="amo_lib_fournisseur">
+        <comment>libelle fournisseur</comment>
+      </column>
+    </property>
+    <property name="amoOrigine" type="string">
+      <column length="50" name="amo_origine">
+        <comment>0 origine non specifiee 1 dans le pays 2 dans la zone 3 hors de la zone</comment>
+      </column>
+    </property>
+    <property name="amoSite" type="string">
+      <column length="20" name="amo_site">
+        <comment>imputation site</comment>
+      </column>
+    </property>
+    <property name="amoLibSite" type="string">
+      <column length="100" name="amo_lib_site">
+        <comment>libelle site</comment>
+      </column>
+    </property>
+    <property name="amoDepartement" type="string">
+      <column length="20" name="amo_departement">
+        <comment>imputation departement</comment>
+      </column>
+    </property>
+    <property name="amoLibDepartement" type="string">
+      <column length="100" name="amo_lib_departement">
+        <comment>libelle departement</comment>
+      </column>
+    </property>
+    <property name="amoService" type="string">
+      <column length="20" name="amo_service">
+        <comment>imputation service</comment>
+      </column>
+    </property>
+    <property name="amoLibService" type="string">
+      <column length="100" name="amo_lib_service">
+        <comment>libelle service</comment>
+      </column>
+    </property>
+    <property name="amoRegion" type="string">
+      <column length="20" name="amo_region">
+        <comment>imputation region</comment>
+      </column>
+    </property>
+    <property name="amoLibRegion" type="string">
+      <column length="100" name="amo_lib_region">
+        <comment>libelle region</comment>
+      </column>
+    </property>
+    <property name="amoSecteur" type="string">
+      <column length="20" name="amo_secteur">
+        <comment>imputation secteur</comment>
+      </column>
+    </property>
+    <property name="amoLibSecteur" type="string">
+      <column length="100" name="amo_lib_secteur">
+        <comment>libelle secteur</comment>
+      </column>
+    </property>
+    <property name="amoPdv" type="string">
+      <column length="20" name="amo_pdv">
+        <comment>imputation point de vente</comment>
+      </column>
+    </property>
+    <property name="amoLibPdv" type="string">
+      <column length="100" name="amo_lib_pdv">
+        <comment>libelle pdv</comment>
+      </column>
+    </property>
+    <property name="amoDossier" type="string">
+      <column length="20" name="amo_dossier">
+        <comment>imputation dossier</comment>
+      </column>
+    </property>
+    <property name="amoLibDossier" type="string">
+      <column length="100" name="amo_lib_dossier">
+        <comment>libelle dossier</comment>
+      </column>
+    </property>
+    <property name="amoMission" type="string">
+      <column length="20" name="amo_mission">
+        <comment>imputation mission</comment>
+      </column>
+    </property>
+    <property name="amoLibMission" type="string">
+      <column length="100" name="amo_lib_mission">
+        <comment>libelle mission</comment>
+      </column>
+    </property>
+    <property name="amoParc" type="string">
+      <column length="20" name="amo_parc">
+        <comment>imputation parc</comment>
+      </column>
+    </property>
+    <property name="amoLibParc" type="string">
+      <column length="100" name="amo_lib_parc">
+        <comment>libelle parc</comment>
+      </column>
+    </property>
+    <property name="amoCle1" type="string">
+      <column length="20" name="amo_cle1">
+        <comment>imputation cle1</comment>
+      </column>
+    </property>
+    <property name="amoLibCle1" type="string">
+      <column length="100" name="amo_lib_cle1">
+        <comment>libelle cle1</comment>
+      </column>
+    </property>
+    <property name="amoAgent" type="string">
+      <column length="20" name="amo_agent">
+        <comment>code agent</comment>
+      </column>
+    </property>
+    <property name="amoLibAgent" type="string">
+      <column length="100" name="amo_lib_agent">
+        <comment>libelle agent</comment>
+      </column>
+    </property>
+    <property name="amoActivite" type="text">
+      <column name="amo_activite">
+        <comment>code activite</comment>
+      </column>
+    </property>
+    <property name="amoLibActivite" type="string">
+      <column length="100" name="amo_lib_activite">
+        <comment>libelle activite</comment>
+      </column>
+    </property>
+    <property name="amoProjet" type="string">
+      <column length="20" name="amo_projet">
+        <comment>code projet</comment>
+      </column>
+    </property>
+    <property name="amoLibProjet" type="string">
+      <column length="100" name="amo_lib_projet">
+        <comment>libelle projet</comment>
+      </column>
+    </property>
+    <property name="amoBudget" type="string">
+      <column length="20" name="amo_budget">
+        <comment>imputation budgetaire</comment>
+      </column>
+    </property>
+    <property name="amoLibBudget" type="string">
+      <column length="100" name="amo_lib_budget">
+        <comment>libelle budget</comment>
+      </column>
+    </property>
+    <property name="amoLocalisation" type="string">
+      <column length="100" name="amo_localisation">
+        <comment>localisation</comment>
+      </column>
+    </property>
+    <property name="amoPeriodeDeb" type="date">
+      <column default="NULL" name="amo_periode_deb">
+        <comment>date debut de calcul</comment>
+      </column>
+    </property>
+    <property name="amoPeriodeFin" type="date">
+      <column default="NULL" name="amo_periode_fin">
+        <comment>date fin de calcul</comment>
+      </column>
+    </property>
+    <property name="amoDotation" type="double">
+      <column default="0" name="amo_dotation">
+        <comment>valeur de la dotation calulee pour la periode</comment>
+      </column>
+    </property>
+    <property name="amoTotalAmort" type="double">
+      <column default="0" name="amo_total_amort">
+        <comment>= amo_anterieur + amo_dotation</comment>
+      </column>
+    </property>
+    <property name="amoValeurResiduelle" type="double">
+      <column default="0" name="amo_valeur_residuelle">
+        <comment>= amo_valeur_achat  - amo_total _amort</comment>
+      </column>
+    </property>
+    <property name="amoDateSortie" type="date">
+      <column default="NULL" name="amo_date_sortie">
+        <comment>date de sortie </comment>
+      </column>
+    </property>
+    <property name="amoTypeSortie" type="integer">
+      <column default="0" length="1" name="amo_type_sortie">
+        <comment>0=en cours 1=cession 2=rebut 3=amortis</comment>
+      </column>
+    </property>
+    <property name="amoNomClient" type="string">
+      <column length="50" name="amo_nom_client">
+        <comment>nom du client qui achete le bien cede (texte libre)</comment>
+      </column>
+    </property>
+    <property name="amoValeurCession" type="double">
+      <column default="0" name="amo_valeur_cession">
+        <comment>valeur de cession</comment>
+      </column>
+    </property>
+    <property name="amoFraisAnnexe" type="double">
+      <column default="0" name="amo_frais_annexe">
+        <comment>montant des frais annexes lors d une cession</comment>
+      </column>
+    </property>
+    <property name="amoReinvestissement" type="integer">
+      <column default="0" name="amo_reinvestissement">
+        <comment>si cession alors soit oui soit non</comment>
+      </column>
+    </property>
+    <property name="amoFactureCession" type="string">
+      <column length="20" name="amo_facture_cession">
+        <comment>numero de facture de cession des immobilisations</comment>
+      </column>
+    </property>
+    <property name="amoPieceCession" type="string">
+      <column length="20" name="amo_piece_cession">
+        <comment>numero de piece de la cession du bien </comment>
+      </column>
+    </property>
+    <property name="amoNetAPayer" type="double">
+      <column default="0" name="amo_net_a_payer">
+        <comment>total de la cession a payer par le client</comment>
+      </column>
+    </property>
+    <property name="amoTotalReglement" type="double">
+      <column default="0" name="amo_total_reglement">
+        <comment>total des reglements de la table AmortissementReglement</comment>
+      </column>
+    </property>
+    <property name="amoSolde" type="double">
+      <column default="0" name="amo_solde">
+        <comment>= amo_net_a_payer - amo_total_reglement</comment>
+      </column>
+    </property>
+    <property name="amoFinancement" type="integer">
+      <column default="0" length="1" name="amo_financement">
+        <comment>0=sans financement 1=credit court terme 2=credit bail</comment>
+      </column>
+    </property>
+    <property name="amoLibCompteAmo" type="string">
+      <column length="121" name="amo_lib_compte_amo">
+        <comment>libelle compte amortissement en FR</comment>
+      </column>
+    </property>
+    <property name="amoLibCompteDot" type="string">
+      <column length="121" name="amo_lib_compte_dot">
+        <comment>libelle compte dotation en FR</comment>
+      </column>
+    </property>
+    <property name="amoCompteDotation" type="string">
+      <column length="20" name="amo_compte_dotation">
+        <comment>compte de dotation</comment>
+      </column>
+    </property>
+    <property name="amoCompteImmo" type="string">
+      <column length="20" name="amo_compte_immo">
+        <comment>compte de l immobilisation</comment>
+      </column>
+    </property>
+    <property name="amoLibCompteImo" type="string">
+      <column length="121" name="amo_lib_compte_imo">
+        <comment>libelle compte immobilisation en FR</comment>
+      </column>
+    </property>
+    <property name="amoInactif" type="integer">
+      <column default="0" length="1" name="amo_inactif">
+        <comment>0=actif 1=inactif 2=supprimer</comment>
+      </column>
+    </property>
+    <property name="amoFactureAchat" type="string">
+      <column length="20" name="amo_facture_achat">
+        <comment>numero facture d achat fournisseur</comment>
+      </column>
+    </property>
+    <property name="amoHorsExp" type="double">
+      <column default="0" name="amo_hors_exp">
+        <comment>amortissement hors exploitation</comment>
+      </column>
+    </property>
+    <property name="amoCede" type="double">
+      <column default="0" name="amo_cede">
+        <comment>code amortissement</comment>
+      </column>
+    </property>
+    <property name="amoCompteCes" type="string">
+      <column length="20" name="amo_compte_ces">
+        <comment>compte de cession</comment>
+      </column>
+    </property>
+    <property name="amoLibCompteCes" type="string">
+      <column length="121" name="amo_lib_compte_ces">
+        <comment>libelle compte cession</comment>
+      </column>
+    </property>
+    <property name="amoPhoto" type="string">
+      <column length="100" name="amo_photo">
+        <comment>photo du bien</comment>
+      </column>
+    </property>
+    <property name="amoScan" type="string">
+      <column length="100" name="amo_scan">
+        <comment>scan facture du bien</comment>
+      </column>
+    </property>
+    <property name="amoModele" type="string">
+      <column length="20" name="amo_modele">
+        <comment>modele ecriture</comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>

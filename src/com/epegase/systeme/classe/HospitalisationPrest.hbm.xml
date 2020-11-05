@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="HospitalisationPrest" table="med_hospitalisation_prest">
+    <id column="hosprt_id" name="hosprtId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="hosprtDateCreat" type="timestamp">
+      <column default="null" name="hosprt_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="hosprtDateModif" type="timestamp">
+      <column default="null" name="hosprt_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="hosprtUserCreat" type="long">
+      <column default="0" name="hosprt_user_creat">
+        <comment>user de creation</comment>
+      </column>
+    </property>
+    <property name="hosprtUserModif" type="long">
+      <column default="0" name="hosprt_user_modif">
+        <comment>user de modification</comment>
+      </column>
+    </property>
+    <property name="hosprtIdMedecin" type="long">
+      <column default="0" name="hosprt_id_medecin">
+        <comment>id medecin</comment>
+      </column>
+    </property>
+    <property name="hosprtMedecin" type="string">
+      <column length="100" name="hosprt_medecin">
+        <comment>nom medecin</comment>
+      </column>
+    </property>
+    <property name="hosprtService" type="string">
+      <column length="121" name="hosprt_service">
+        <comment>service</comment>
+      </column>
+    </property>
+    <property name="hosprtProduit" type="string">
+      <column length="20" name="hosprt_produit">
+        <comment>code produit</comment>
+      </column>
+    </property>
+    <property name="hosprtLibelle" type="text">
+      <column name="hosprt_libelle">
+        <comment>libelle produit</comment>
+      </column>
+    </property>
+    <property name="hosprtLettre" type="string">
+      <column length="10" name="hosprt_lettre">
+        <comment>code lettre</comment>
+      </column>
+    </property>
+    <property name="hosprtNb" type="float">
+      <column default="0" name="hosprt_nb">
+        <comment>nombre lettre</comment>
+      </column>
+    </property>
+    <property name="hosprtNbCnamgs" type="float">
+      <column default="0" name="hosprt_nb_cnamgs">
+        <comment>nombre lettre cnamgs</comment>
+      </column>
+    </property>
+    <property name="hosprtValeur" type="double">
+      <column default="0" name="hosprt_valeur">
+        <comment>valeur lettre</comment>
+      </column>
+    </property>
+    <property name="hosprtValeurCnamgs" type="double">
+      <column default="0" name="hosprt_valeur_cnamgs">
+        <comment>valeur lettre cnamgs</comment>
+      </column>
+    </property>
+    <property name="hosprtCoef" type="float">
+      <column default="0" name="hosprt_coef">
+        <comment>coefficient</comment>
+      </column>
+    </property>
+    <property name="hosprtPu" type="double">
+      <column default="0" name="hosprt_pu">
+        <comment>prix unitaire</comment>
+      </column>
+    </property>
+    <property name="hosprtPuCnamgs" type="double">
+      <column default="0" name="hosprt_pu_cnamgs">
+        <comment>prix unitaire cnamgs</comment>
+      </column>
+    </property>
+    <property name="hosprtPuAssurance" type="double">
+      <column default="0" name="hosprt_pu_assurance">
+        <comment>prix unitaire assurance</comment>
+      </column>
+    </property>
+    <property name="hosprtCodeTva" type="string">
+      <column length="20" name="hosprt_code_tva">
+        <comment>code de tva</comment>
+      </column>
+    </property>
+    <property name="hosprtTauxTva" type="float">
+      <column default="0" name="hosprt_taux_tva">
+        <comment>taux de tva</comment>
+      </column>
+    </property>
+    <property name="hosprtRemise" type="float">
+      <column default="0" name="hosprt_remise">
+        <comment>%remise</comment>
+      </column>
+    </property>
+    <property name="hosprtRabais" type="double">
+      <column default="0" name="hosprt_rabais">
+        <comment>rabais</comment>
+      </column>
+    </property>
+    <property name="hosprtPuRem" type="double">
+      <column default="0" name="hosprt_pu_rem">
+        <comment>prix apres remise</comment>
+      </column>
+    </property>
+    <property name="hosprtQte" type="float">
+      <column default="0" name="hosprt_qte">
+        <comment>quantite</comment>
+      </column>
+    </property>
+    <property name="hosprtPatientHt" type="double">
+      <column default="0" name="hosprt_patient_ht">
+        <comment>part ht patient</comment>
+      </column>
+    </property>
+    <property name="hosprtPatientTaxe" type="double">
+      <column default="0" name="hosprt_patient_taxe">
+        <comment>part taxe patient</comment>
+      </column>
+    </property>
+    <property name="hosprtSocieteHt" type="double">
+      <column default="0" name="hosprt_societe_ht">
+        <comment>part ht societe</comment>
+      </column>
+    </property>
+    <property name="hosprtSocieteTaxe" type="double">
+      <column default="0" name="hosprt_societe_taxe">
+        <comment>part taxe societe</comment>
+      </column>
+    </property>
+    <property name="hosprtAssuranceHt" type="double">
+      <column default="0" name="hosprt_assurance_ht">
+        <comment>part ht assurance</comment>
+      </column>
+    </property>
+    <property name="hosprtAssuranceTaxe" type="double">
+      <column default="0" name="hosprt_assurance_taxe">
+        <comment>part taxe assurance</comment>
+      </column>
+    </property>
+    <property name="hosprtComplementaireHt" type="double">
+      <column default="0" name="hosprt_complementaire_ht">
+        <comment>part ht comllementaire</comment>
+      </column>
+    </property>
+    <property name="hosprtComplementaireTaxe" type="double">
+      <column default="0" name="hosprt_complementaire_taxe">
+        <comment>part taxe complementaire</comment>
+      </column>
+    </property>
+    <property name="hosprtTotal" type="double">
+      <column default="0" name="hosprt_total">
+        <comment>total ht</comment>
+      </column>
+    </property>
+    <property name="hosprtTaxe" type="double">
+      <column default="0" name="hosprt_taxe">
+        <comment>total taxe</comment>
+      </column>
+    </property>
+    <property name="hosprtIdSejour" type="long">
+      <column default="0" name="hosprt_id_sejour">
+        <comment>id sejour</comment>
+      </column>
+    </property>
+    <property name="hosprtRegPatient" type="double">
+      <column default="0" name="hosprt_reg_patient">
+        <comment>reglement patient</comment>
+      </column>
+    </property>
+    <property name="hosprtRegTiers" type="double">
+      <column default="0" name="hosprt_reg_tiers">
+        <comment>reglement tous tiers</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.HospitalisationEntete" column="hos_id" lazy="false" name="HospitalisationEntete" not-null="true"/>
+  </class>
+</hibernate-mapping>

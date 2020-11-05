@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="Brouillard" table="cpt_brouillard">
+    <id column="bro_id" name="bro_id" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="broIdOrigine" type="long">
+      <column default="0" name="bro_id_origine">
+        <comment>id origine de la table origine (pour les transferts)</comment>
+      </column>
+    </property>
+    <property name="broTypeOrigine" type="string">
+      <column length="3" name="bro_type_origine">
+        <comment>AM = amortissement LO=loyer VE=facture vente AC=facture fournisseur (pour les transferts)</comment>
+      </column>
+    </property>
+    <property name="broDateCreat" type="timestamp">
+      <column default="NULL" name="bro_date_creat">
+        <comment>date de creation de l  ecriture</comment>
+      </column>
+    </property>
+    <property name="broDateModif" type="timestamp">
+      <column default="NULL" name="bro_date_modif">
+        <comment>date de modification de l ecriture</comment>
+      </column>
+    </property>
+    <property name="broUserCreat" type="long">
+      <column default="0" length="15" name="bro_user_creat">
+        <comment>utilisateur de creation de l ecriture</comment>
+      </column>
+    </property>
+    <property name="broUserModif" type="long">
+      <column default="0" length="15" name="bro_user_modif">
+        <comment>utilisateur de modification de l ecriture</comment>
+      </column>
+    </property>
+    <property name="broIdResponsable" type="long">
+      <column default="0" length="15" name="bro_id_responsable">
+        <comment>responsable origine (origine bon entree ou bon de sortie)</comment>
+      </column>
+    </property>
+    <property name="broNomResponsable" type="string">
+      <column length="100" name="bro_nom_responsable">
+        <comment>nom responsable ecriture (origine bon entree ou bon de sortie)</comment>
+      </column>
+    </property>
+    <property name="broCode" type="string">
+      <column length="6" name="bro_code">
+        <comment>code journal table planJournauxComptables</comment>
+      </column>
+    </property>
+    <property name="broDateSaisie" type="date">
+      <column default="NULL" name="bro_date_saisie">
+        <comment>date de saisie</comment>
+      </column>
+    </property>
+    <property name="broPeriode" type="string">
+      <column length="7" name="bro_periode">
+        <comment>MM:AAAA par rapport a  la date de saisie</comment>
+      </column>
+    </property>
+    <property name="broJour" type="integer">
+      <column default="1" name="bro_jour">
+        <comment>partie jour de la date de saisie</comment>
+      </column>
+    </property>
+    <property name="broAnnee" type="string">
+      <column length="4" name="bro_annee">
+        <comment>partie annee de la date de saisie</comment>
+      </column>
+    </property>
+    <property name="broDeviseSaisie" type="string">
+      <column length="3" name="bro_devise_saisie">
+        <comment>devise de saisie</comment>
+      </column>
+    </property>
+    <property name="broDebitSaisie" type="double">
+      <column default="0" name="bro_debit_saisie">
+        <comment>montant credit dans la devise de saisie</comment>
+      </column>
+    </property>
+    <property name="broCreditSaisie" type="double">
+      <column default="0" name="bro_credit_saisie">
+        <comment>montant credit dans la devise de saisie</comment>
+      </column>
+    </property>
+    <property name="broCoefEuro" type="float">
+      <column default="0" name="bro_coef_euro">
+        <comment>coef de conversion en euro</comment>
+      </column>
+    </property>
+    <property name="broDebitEuro" type="double">
+      <column default="0" name="bro_debit_euro">
+        <comment>montant credit en euro</comment>
+      </column>
+    </property>
+    <property name="broCreditEuro" type="double">
+      <column default="0" name="bro_credit_euro">
+        <comment>montant credit en euro</comment>
+      </column>
+    </property>
+    <property name="broDevisePays" type="string">
+      <column length="3" name="bro_devise_pays">
+        <comment>devise du pays</comment>
+      </column>
+    </property>
+    <property name="broCoefPays" type="float">
+      <column default="0" name="bro_coef_pays">
+        <comment>coef de conversion dans la devise du pays</comment>
+      </column>
+    </property>
+    <property name="broDebitPays" type="double">
+      <column default="0" name="bro_debit_pays">
+        <comment>montant credit dans la devise du pays</comment>
+      </column>
+    </property>
+    <property name="broCreditPays" type="double">
+      <column default="0" name="bro_credit_pays">
+        <comment>montant credit dans la devise du pays</comment>
+      </column>
+    </property>
+    <property name="broDeviseGrp" type="string">
+      <column length="3" name="bro_devise_grp">
+        <comment>devise du groupe</comment>
+      </column>
+    </property>
+    <property name="broCoefGrp" type="float">
+      <column default="0" name="bro_coef_grp">
+        <comment>coef de conversion dans la devise du groupe</comment>
+      </column>
+    </property>
+    <property name="broDebitGrp" type="double">
+      <column default="0" name="bro_debit_grp">
+        <comment>montant credit dans la devise du groupe</comment>
+      </column>
+    </property>
+    <property name="broCreditGrp" type="double">
+      <column default="0" name="bro_credit_grp">
+        <comment>montant credit dans la devise du groupe</comment>
+      </column>
+    </property>
+    <property name="broCloture" type="integer">
+      <column length="1" name="bro_cloture">
+        <comment>0=en cours 1=cloture mensuelle 2=cloture annuelle</comment>
+      </column>
+    </property>
+    <property name="broEtat" type="integer">
+      <column length="1" name="bro_etat">
+        <comment>0=en cours 1=valide 2=transfere</comment>
+      </column>
+    </property>
+    <property name="broLibelle" type="string">
+      <column length="100" name="bro_libelle">
+        <comment>libelle de l ecriture</comment>
+      </column>
+    </property>
+    <property name="broPiece" type="string">
+      <column length="30" name="bro_piece">
+        <comment>numero de piece comptable</comment>
+      </column>
+    </property>
+    <property name="broPj" type="boolean">
+      <column default="false" name="bro_pj">
+        <comment>true si piece jointe</comment>
+      </column>
+    </property>
+    <property name="broNumTrf" type="string">
+      <column length="20" name="bro_num_trf">
+        <comment>numero de transfert</comment>
+      </column>
+    </property>
+    <property name="broNum" type="long">
+      <column default="0" name="bro_num">
+        <comment>numero de brouillard</comment>
+      </column>
+    </property>
+    <property name="broReference1" type="string">
+      <column length="30" name="bro_reference1">
+        <comment>reference 1</comment>
+      </column>
+    </property>
+    <property name="broReference2" type="string">
+      <column length="30" name="bro_reference2">
+        <comment>reference 2</comment>
+      </column>
+    </property>
+    <property name="broNatureJrx" type="integer">
+      <column default="0" length="2" name="bro_nature_jrx">
+        <comment>= nautre des journaux</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ExercicesComptable" column="execpt_id" lazy="false" name="exercicescomptable" not-null="true"/>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,234 @@
+
+g
+java:S1301Ò"KReplace this "switch" statement by "if" statements to increase readability.(£æ¥þÿÿÿÿ
+g
+java:S1301Ý"KReplace this "switch" statement by "if" statements to increase readability.(£æ¥þÿÿÿÿ
+g
+java:S1301ç"KReplace this "switch" statement by "if" statements to increase readability.(£æ¥þÿÿÿÿ
+g
+java:S1301ð"KReplace this "switch" statement by "if" statements to increase readability.(£æ¥þÿÿÿÿ
+g
+java:S1301ù"KReplace this "switch" statement by "if" statements to increase readability.(£æ¥þÿÿÿÿ
+g
+java:S1301‚"KReplace this "switch" statement by "if" statements to increase readability.(£æ¥þÿÿÿÿ
+g
+java:S1301Î"KReplace this "switch" statement by "if" statements to increase readability.(£æ¥þÿÿÿÿ
+g
+java:S1301Ô"KReplace this "switch" statement by "if" statements to increase readability.(£æ¥þÿÿÿÿ
+g
+java:S1301Ú"KReplace this "switch" statement by "if" statements to increase readability.(£æ¥þÿÿÿÿ
+g
+java:S1301ã"KReplace this "switch" statement by "if" statements to increase readability.(£æ¥þÿÿÿÿ
+g
+java:S1301ì"KReplace this "switch" statement by "if" statements to increase readability.(£æ¥þÿÿÿÿ
+g
+java:S1301ò"KReplace this "switch" statement by "if" statements to increase readability.(£æ¥þÿÿÿÿ
+g
+java:S1301ø"KReplace this "switch" statement by "if" statements to increase readability.(£æ¥þÿÿÿÿ
+g
+java:S1301þ"KReplace this "switch" statement by "if" statements to increase readability.(£æ¥þÿÿÿÿ
+g
+java:S1301‡"KReplace this "switch" statement by "if" statements to increase readability.(£æ¥þÿÿÿÿ
+D
+java:S3740"/Provide the parametrized type for this generic.(ý¾ F
+K
+java:S3740µ"/Provide the parametrized type for this generic.(³ç¿”øÿÿÿÿ
+K
+java:S3740®"/Provide the parametrized type for this generic.(³ç¿”øÿÿÿÿ
+F
+java:S3740Ì"/Provide the parametrized type for this generic.(ˆêþË
+F
+java:S3740­"/Provide the parametrized type for this generic.(øÉ‡®
+q
+java:S1192­"ZDefine a constant instead of duplicating this literal ":null:null:null:null:0.0:" 4 times.(†ë÷î
+a
+java:S1192}"FDefine a constant instead of duplicating this literal "CHAMP" 3 times.(ÏÈ±ùÿÿÿÿ
+e
+java:S1192B"ODefine a constant instead of duplicating this literal "POINTAGE-OMEGA" 6 times.(ä¼×ã
+3
+java:S1643±"Use a StringBuilder instead.(Ýž¦Á
+8
+java:S1643Ô
+"Use a StringBuilder instead.(­ÕŒêþÿÿÿÿ
+8
+java:S1643ß
+"Use a StringBuilder instead.(­ÕŒêþÿÿÿÿ
+s	java:S135d"YReduce the total number of break and continue statements in this loop to use at most one.(ìÁÙåþÿÿÿÿ
+t	java:S135†"YReduce the total number of break and continue statements in this loop to use at most one.(…¬å¿ýÿÿÿÿ
+t	java:S135æ"YReduce the total number of break and continue statements in this loop to use at most one.(ìÁÙåþÿÿÿÿ
+t	java:S135ñ"YReduce the total number of break and continue statements in this loop to use at most one.(ìÁÙåþÿÿÿÿ
+i
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(…†Š
+X
+java:S1854!"=Remove this useless assignment to local variable "hSSFSheet".(þà¸ôþÿÿÿÿ
+n
+java:S3776"SRefactor this method to reduce its Cognitive Complexity from 502 to the 15 allowed.(ìÞõÿÿÿÿÿ
+b
+java:S18714"LThis branch's code block is the same as the block for the branch on line 47.(õóïò
+C
+java:S1125/"(Remove the literal "true" boolean value.(ž¬ºøÿÿÿÿ
+>
+java:S11254"(Remove the literal "true" boolean value.(õóïò
+C
+java:S11259"(Remove the literal "true" boolean value.(‚¬“«þÿÿÿÿ
+C
+java:S1125>"(Remove the literal "true" boolean value.(ý“¯Ÿøÿÿÿÿ
+b
+java:S1871R"LThis branch's code block is the same as the block for the branch on line 77.(õóïò
+C
+java:S1125M"(Remove the literal "true" boolean value.(ž¬ºøÿÿÿÿ
+>
+java:S1125R"(Remove the literal "true" boolean value.(õóïò
+C
+java:S1125W"(Remove the literal "true" boolean value.(‚¬“«þÿÿÿÿ
+C
+java:S1125\"(Remove the literal "true" boolean value.(ý“¯Ÿøÿÿÿÿ
+<	java:S131f""Add a default case to this switch.(£æ¥þÿÿÿÿ
+>
+java:S1125w"(Remove the literal "true" boolean value.(Î¶‡Œ
+C
+java:S1125}"(Remove the literal "true" boolean value.(ÏÈ±ùÿÿÿÿ
+?
+java:S1125ƒ"(Remove the literal "true" boolean value.(¦¹í¾
+D
+java:S1125‡"(Remove the literal "true" boolean value.(ïÀ„íùÿÿÿÿ
+D
+java:S1125Ž"(Remove the literal "true" boolean value.(ž¬ºøÿÿÿÿ
+D
+java:S1125¶"(Remove the literal "true" boolean value.(æ¿¾×ùÿÿÿÿ
+?
+java:S1125Ê"(Remove the literal "true" boolean value.(õãè
+?
+java:S1125Ê"(Remove the literal "true" boolean value.(õãè
+?
+java:S1125Ê"(Remove the literal "true" boolean value.(õãè
+Y
+java:S1854ÿ"=Remove this useless assignment to local variable "hSSFSheet".(þà¸ôþÿÿÿÿ
+L
+java:S1854ˆ"5Remove this useless assignment to local variable "s".(ô¥§¹
+n
+java:S3776ú"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(ŒÒŠòÿÿÿÿÿ
+=	java:S131Œ""Add a default case to this switch.(£æ¥þÿÿÿÿ
+Y
+java:S1854¹"=Remove this useless assignment to local variable "hSSFSheet".(þà¸ôþÿÿÿÿ
+S
+java:S1854À"7Remove this useless assignment to local variable "str".(ƒ àüÿÿÿÿ
+i
+java:S3776³"RRefactor this method to reduce its Cognitive Complexity from 55 to the 15 allowed.(“ü–’
+O	java:S106Á"9Replace this use of System.out or System.err by a logger.(ÕØæ…
+O	java:S106Å"9Replace this use of System.out or System.err by a logger.(³Û¬î
+=	java:S131Ò""Add a default case to this switch.(£æ¥þÿÿÿÿ
+=	java:S131Ý""Add a default case to this switch.(£æ¥þÿÿÿÿ
+=	java:S131ç""Add a default case to this switch.(£æ¥þÿÿÿÿ
+=	java:S131ð""Add a default case to this switch.(£æ¥þÿÿÿÿ
+=	java:S131ù""Add a default case to this switch.(£æ¥þÿÿÿÿ
+=	java:S131‚""Add a default case to this switch.(£æ¥þÿÿÿÿ
+O	java:S106‹"9Replace this use of System.out or System.err by a logger.(þ˜Ë¿
+Y
+java:S1854²"=Remove this useless assignment to local variable "hSSFSheet".(þà¸ôþÿÿÿÿ
+S
+java:S1854º"7Remove this useless assignment to local variable "str".(ƒ àüÿÿÿÿ
+L
+java:S1854"5Remove this useless assignment to local variable "d".(´•´é
+o
+java:S3776¬"SRefactor this method to reduce its Cognitive Complexity from 111 to the 15 allowed.(÷Üåˆùÿÿÿÿ
+O	java:S106»"9Replace this use of System.out or System.err by a logger.(ÕØæ…
+O	java:S106¿"9Replace this use of System.out or System.err by a logger.(³Û¬î
+=	java:S131Î""Add a default case to this switch.(£æ¥þÿÿÿÿ
+=	java:S131Ô""Add a default case to this switch.(£æ¥þÿÿÿÿ
+=	java:S131Ú""Add a default case to this switch.(£æ¥þÿÿÿÿ
+=	java:S131ã""Add a default case to this switch.(£æ¥þÿÿÿÿ
+=	java:S131ì""Add a default case to this switch.(£æ¥þÿÿÿÿ
+=	java:S131ò""Add a default case to this switch.(£æ¥þÿÿÿÿ
+=	java:S131ø""Add a default case to this switch.(£æ¥þÿÿÿÿ
+=	java:S131þ""Add a default case to this switch.(£æ¥þÿÿÿÿ
+=	java:S131‡""Add a default case to this switch.(£æ¥þÿÿÿÿ
+O	java:S106"9Replace this use of System.out or System.err by a logger.(þ˜Ë¿
+D
+java:S1125ª"(Remove the literal "true" boolean value.(Ä‰×µùÿÿÿÿ
+Y
+java:S1854Ð"=Remove this useless assignment to local variable "hSSFSheet".(þà¸ôþÿÿÿÿ
+o
+java:S3776Ê"SRefactor this method to reduce its Cognitive Complexity from 226 to the 15 allowed.(Ü”¨Âÿÿÿÿÿ
+?
+java:S1125ß"(Remove the literal "true" boolean value.(¼”ßå
+=	java:S131è""Add a default case to this switch.(£æ¥þÿÿÿÿ
+>
+java:S1125ù"(Remove the literal "true" boolean value.(üô½
+?
+java:S1125 "(Remove the literal "true" boolean value.(¼”ßå
+Y
+java:S1854±"=Remove this useless assignment to local variable "hSSFSheet".(þà¸ôþÿÿÿÿ
+j
+java:S3776«"SRefactor this method to reduce its Cognitive Complexity from 240 to the 15 allowed.(È“ñÒ
+e
+java:S1871Ã"NThis branch's code block is the same as the block for the branch on line 1086.(õóïò
+j
+java:S1871È"NThis branch's code block is the same as the block for the branch on line 1086.(‚¬“«þÿÿÿÿ
+e
+java:S1871Í"NThis branch's code block is the same as the block for the branch on line 1086.(Øí±ä
+D
+java:S1125¾"(Remove the literal "true" boolean value.(ž¬ºøÿÿÿÿ
+?
+java:S1125Ã"(Remove the literal "true" boolean value.(õóïò
+D
+java:S1125È"(Remove the literal "true" boolean value.(‚¬“«þÿÿÿÿ
+?
+java:S1125Í"(Remove the literal "true" boolean value.(Øí±ä
+e
+java:S1871à"NThis branch's code block is the same as the block for the branch on line 1115.(õóïò
+j
+java:S1871å"NThis branch's code block is the same as the block for the branch on line 1115.(‚¬“«þÿÿÿÿ
+e
+java:S1871ê"NThis branch's code block is the same as the block for the branch on line 1115.(Øí±ä
+D
+java:S1125Û"(Remove the literal "true" boolean value.(ž¬ºøÿÿÿÿ
+?
+java:S1125à"(Remove the literal "true" boolean value.(õóïò
+D
+java:S1125å"(Remove the literal "true" boolean value.(‚¬“«þÿÿÿÿ
+?
+java:S1125ê"(Remove the literal "true" boolean value.(Øí±ä
+=	java:S131ó""Add a default case to this switch.(£æ¥þÿÿÿÿ
+?
+java:S1125„	"(Remove the literal "true" boolean value.(ÓÝ¤–
+D
+java:S1125Š	"(Remove the literal "true" boolean value.(ÚºæÃûÿÿÿÿ
+D
+java:S1125	"(Remove the literal "true" boolean value.(ÑÜüúÿÿÿÿ
+>
+java:S1125–	"(Remove the literal "true" boolean value.(Êú×R
+D
+java:S1125	"(Remove the literal "true" boolean value.(¬°±âþÿÿÿÿ
+D
+java:S1125	"(Remove the literal "true" boolean value.(¬°±âþÿÿÿÿ
+D
+java:S1125	"(Remove the literal "true" boolean value.(¬°±âþÿÿÿÿ
+D
+java:S1125	"(Remove the literal "true" boolean value.(¬°±âþÿÿÿÿ
+D
+java:S1125Ó
+"(Remove the literal "true" boolean value.(õÂª¯ùÿÿÿÿ
+?
+java:S1125Þ
+"(Remove the literal "true" boolean value.(·ˆÓ°
+=
+java:S1481$"'Remove this unused "b1" local variable.(èˆ«÷
+=
+java:S1481ˆ"&Remove this unused "s" local variable.(ô¥§¹
+>
+java:S1481¼"'Remove this unused "b1" local variable.(èˆ«÷
+D
+java:S1481½"(Remove this unused "str" local variable.(ûÍÇÉøÿÿÿÿ
+>
+java:S1481µ"'Remove this unused "b1" local variable.(èˆ«÷
+D
+java:S1481¶"(Remove this unused "str" local variable.(ûÍÇÉøÿÿÿÿ
+>
+java:S1481Ó"'Remove this unused "b1" local variable.(èˆ«÷
+@
+java:S1481Õ"*Remove this unused "bool1" local variable.(£¥Þ8
+E
+java:S1481Ø")Remove this unused "str3" local variable.(£Ûêýÿÿÿÿ
+>
+java:S1481´"'Remove this unused "b1" local variable.(èˆ«÷

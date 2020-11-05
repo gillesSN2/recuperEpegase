@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="HospitalisationMedi" table="med_hospitalisation_medi">
+    <id column="hosmed_id" name="hosmedId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="hosmedDateCreat" type="timestamp">
+      <column default="null" name="hosmed_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="hosmedDateModif" type="timestamp">
+      <column default="null" name="hosmed_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="hosmedUserCreat" type="long">
+      <column default="0" name="hosmed_user_creat">
+        <comment>user de creation</comment>
+      </column>
+    </property>
+    <property name="hosmedUserModif" type="long">
+      <column default="0" name="hosmed_user_modif">
+        <comment>user de modification</comment>
+      </column>
+    </property>
+    <property name="hosmedIdMedecin" type="long">
+      <column default="0" name="hosmed_id_medecin">
+        <comment>id medecin</comment>
+      </column>
+    </property>
+    <property name="hosmedMedecin" type="string">
+      <column length="100" name="hosmed_medecin">
+        <comment>nom medecin</comment>
+      </column>
+    </property>
+    <property name="hosmedService" type="string">
+      <column length="121" name="hosmed_service">
+        <comment>service</comment>
+      </column>
+    </property>
+    <property name="hosmedProduit" type="string">
+      <column length="20" name="hosmed_produit">
+        <comment>code produit</comment>
+      </column>
+    </property>
+    <property name="hosmedFamille" type="string">
+      <column length="121" name="hosmed_famille">
+        <comment>famille produit</comment>
+      </column>
+    </property>
+    <property name="hosmedLibelle" type="text">
+      <column name="hosmed_libelle">
+        <comment>libelle produit</comment>
+      </column>
+    </property>
+    <property name="hosmedCoef" type="float">
+      <column default="0" name="hosmed_coef">
+        <comment>cofficient</comment>
+      </column>
+    </property>
+    <property name="hosmedPu" type="double">
+      <column default="0" name="hosmed_pu">
+        <comment>prix unitaire</comment>
+      </column>
+    </property>
+    <property name="hosmedPuCnamgs" type="double">
+      <column default="0" name="hosmed_pu_cnamgs">
+        <comment>prix unitaire cnamgs</comment>
+      </column>
+    </property>
+    <property name="hosmedPuAssurance" type="double">
+      <column default="0" name="hosmed_pu_assurance">
+        <comment>prix unitaire assurance</comment>
+      </column>
+    </property>
+    <property name="hosmedPump" type="double">
+      <column default="0" name="hosmed_pump">
+        <comment>pump</comment>
+      </column>
+    </property>
+    <property name="hosmedCodeTva" type="string">
+      <column length="20" name="hosmed_code_tva">
+        <comment>code de tva</comment>
+      </column>
+    </property>
+    <property name="hosmedTauxTva" type="float">
+      <column default="0" name="hosmed_taux_tva">
+        <comment>taux de tva</comment>
+      </column>
+    </property>
+    <property name="hosmedRemise" type="float">
+      <column default="0" name="hosmed_remise">
+        <comment>%remise</comment>
+      </column>
+    </property>
+    <property name="hosmedRabais" type="double">
+      <column default="0" name="hosmed_rabais">
+        <comment>rabais</comment>
+      </column>
+    </property>
+    <property name="hosmedPuRem" type="double">
+      <column default="0" name="hosmed_pu_rem">
+        <comment>prix apres remise</comment>
+      </column>
+    </property>
+    <property name="hosmedDepot" type="string">
+      <column length="20" name="hosmed_depot">
+        <comment>code depot de stockage</comment>
+      </column>
+    </property>
+    <property name="hosmedQte" type="float">
+      <column default="0" name="hosmed_qte">
+        <comment>quantite</comment>
+      </column>
+    </property>
+    <property name="hosmedStock" type="float">
+      <column default="0" name="hosmed_stock">
+        <comment>quantite en stock</comment>
+      </column>
+    </property>
+    <property name="hosmedPatientHt" type="double">
+      <column default="0" name="hosmed_patient_ht">
+        <comment>part ht patient</comment>
+      </column>
+    </property>
+    <property name="hosmedPatientTaxe" type="double">
+      <column default="0" name="hosmed_patient_taxe">
+        <comment>part taxe patient</comment>
+      </column>
+    </property>
+    <property name="hosmedSocieteHt" type="double">
+      <column default="0" name="hosmed_societe_ht">
+        <comment>part ht societe</comment>
+      </column>
+    </property>
+    <property name="hosmedSocieteTaxe" type="double">
+      <column default="0" name="hosmed_societe_taxe">
+        <comment>part taxe societe</comment>
+      </column>
+    </property>
+    <property name="hosmedAssuranceHt" type="double">
+      <column default="0" name="hosmed_assurance_ht">
+        <comment>part ht assurance</comment>
+      </column>
+    </property>
+    <property name="hosmedAssuranceTaxe" type="double">
+      <column default="0" name="hosmed_assurance_taxe">
+        <comment>part taxe assurance</comment>
+      </column>
+    </property>
+    <property name="hosmedComplementaireHt" type="double">
+      <column default="0" name="hosmed_complementaire_ht">
+        <comment>part ht comllementaire</comment>
+      </column>
+    </property>
+    <property name="hosmedComplementaireTaxe" type="double">
+      <column default="0" name="hosmed_complementaire_taxe">
+        <comment>part taxe complementaire</comment>
+      </column>
+    </property>
+    <property name="hosmedTotal" type="double">
+      <column default="0" name="hosmed_total">
+        <comment>total ht</comment>
+      </column>
+    </property>
+    <property name="hosmedTaxe" type="double">
+      <column default="0" name="hosmed_taxe">
+        <comment>total taxe</comment>
+      </column>
+    </property>
+    <property name="hosmedIdSejour" type="long">
+      <column default="0" name="hosmed_id_sejour">
+        <comment>id sejour</comment>
+      </column>
+    </property>
+    <property name="hosmedRegPatient" type="double">
+      <column default="0" name="hosmed_reg_patient">
+        <comment>reglement patient</comment>
+      </column>
+    </property>
+    <property name="hosmedRegTiers" type="double">
+      <column default="0" name="hosmed_reg_tiers">
+        <comment>reglement tous tiers</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.HospitalisationEntete" column="hos_id" lazy="false" name="HospitalisationEntete" not-null="true"/>
+  </class>
+</hibernate-mapping>

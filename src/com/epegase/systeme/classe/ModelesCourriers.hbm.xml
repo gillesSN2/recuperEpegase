@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="ModelesCourriers" table="cmm_modele_courriers">
+    <id column="mod_id" name="modId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="modDateCreat" type="timestamp">
+      <column name="mod_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="modDateModif" type="timestamp">
+      <column name="mod_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="modUserCreat" type="long">
+      <column default="0" length="15" name="mod_user_creat">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="modUserModif" type="long">
+      <column default="0" length="15" name="mod_user_modif">
+        <comment>utilisateur de modification</comment>
+      </column>
+    </property>
+    <property name="modCode" type="string">
+      <column length="20" name="mod_code">
+        <comment>code modele</comment>
+      </column>
+    </property>
+    <property name="modNomFr" type="string">
+      <column length="100" name="mod_nom_FR">
+        <comment>nom modele en FR</comment>
+      </column>
+    </property>
+    <property name="modNomUk" type="string">
+      <column length="100" name="mod_nom_UK">
+        <comment>nom modele en UK</comment>
+      </column>
+    </property>
+    <property name="modNomSp" type="string">
+      <column length="100" name="mod_nom_SP">
+        <comment>nom modele en SP</comment>
+      </column>
+    </property>
+    <property name="modInactif" type="integer">
+      <column default="0" length="1" name="mod_inactif">
+        <comment>0=actif 1=inactif 2=supprimer</comment>
+      </column>
+    </property>
+    <property name="modNature" type="integer">
+      <column default="0" length="4" name="mod_nature">
+        <comment>commercial(10= mail 20=lettre 21=annexe 22=correspondance 25=contrat)   paye(82=contrat 83=attestation 84=cursus 85=certificat 86=correspondance)</comment>
+      </column>
+    </property>
+    <property name="modType" type="integer">
+      <column default="0" length="4" name="mod_type">
+        <comment>vente(0=vte 1=leasing 2=assistance 3=garantie 4=sav 5=autre)    paye(0=stage 1=cdd 2=cdi 3=prestataire 4=autre)</comment>
+      </column>
+    </property>
+    <property name="modTexte" type="text">
+      <column name="mod_texte">
+        <comment>texte</comment>
+      </column>
+    </property>
+    <property name="modOption" type="text">
+      <column length="2000" name="mod_Option">
+        <comment>texte sur option</comment>
+      </column>
+    </property>
+    <property name="modConditionPaiement" type="string">
+      <column length="200" name="mod_condition_paiement">
+        <comment>texte sur condition de paiement</comment>
+      </column>
+    </property>
+    <property name="modAccessoire" type="integer">
+      <column default="0" length="1" name="mod_accessoire">
+        <comment>0=sans 1=avec</comment>
+      </column>
+    </property>
+    <property name="modAcompte" type="integer">
+      <column default="0" length="1" name="mod_acompte">
+        <comment>0=sans 1=avec</comment>
+      </column>
+    </property>
+    <property name="modTauxAcompte" type="float">
+      <column default="0" name="mod_taux_acompte">
+        <comment>plancher taux acompte</comment>
+      </column>
+    </property>
+    <property name="modAmortissement" type="integer">
+      <column default="0" length="1" name="mod_amortissement">
+        <comment>0=sans 1=avec</comment>
+      </column>
+    </property>
+    <property name="modTauxAmortissement" type="float">
+      <column default="0" name="mod_taux_amortissement">
+        <comment>taux amortissement</comment>
+      </column>
+    </property>
+    <property name="modFraisFinancier" type="integer">
+      <column default="0" length="1" name="mod_frais_financier">
+        <comment>0=sans 1=avec</comment>
+      </column>
+    </property>
+    <property name="modTauxFraisFinancier" type="float">
+      <column default="0" name="mod_taux_frais_financier">
+        <comment>taux frais financiers</comment>
+      </column>
+    </property>
+    <property name="modContratEntretien" type="integer">
+      <column default="0" length="1" name="mod_contrat_entretien">
+        <comment>0=sans 1=avec</comment>
+      </column>
+    </property>
+    <property name="modTauxContratEntretien" type="float">
+      <column default="0" name="mod_taux_contrat_entretien">
+        <comment>taux contrat entretien</comment>
+      </column>
+    </property>
+    <property name="modAssurance" type="integer">
+      <column default="0" length="1" name="mod_assurance">
+        <comment>0=sans 1=avec</comment>
+      </column>
+    </property>
+    <property name="modTauxAssurance" type="float">
+      <column default="0" name="mod_taux_assurance">
+        <comment>taux assurance</comment>
+      </column>
+    </property>
+    <property name="modFranchise" type="integer">
+      <column default="0" length="1" name="mod_franchise">
+        <comment>0=sans 1=avec</comment>
+      </column>
+    </property>
+    <property name="modTauxFranchise" type="float">
+      <column default="0" name="mod_taux_franchise">
+        <comment>taux franchise</comment>
+      </column>
+    </property>
+    <property name="modFraisStructure" type="integer">
+      <column default="0" length="1" name="mod_frais_structure">
+        <comment>0=sans 1=avec</comment>
+      </column>
+    </property>
+    <property name="modTauxFraisStructure" type="float">
+      <column default="0" name="mod_taux_frais_structure">
+        <comment>taux frais structure</comment>
+      </column>
+    </property>
+    <property name="modRemplacement" type="integer">
+      <column default="0" length="1" name="mod_remplacement">
+        <comment>0=sans 1=avec</comment>
+      </column>
+    </property>
+    <property name="modTauxRemplacement" type="float">
+      <column default="0" name="mod_taux_remplacement">
+        <comment>taux vehicule de remplacement</comment>
+      </column>
+    </property>
+    <property name="modRemplissage" type="integer">
+      <column default="0" length="1" name="mod_remplissage">
+        <comment>0=sans 1=avec</comment>
+      </column>
+    </property>
+    <property name="modTauxRemplissage" type="float">
+      <column default="0" name="mod_taux_remplissage">
+        <comment>taux ponderation de remplissage</comment>
+      </column>
+    </property>
+    <property name="modMarge" type="integer">
+      <column default="0" length="1" name="mod_marge">
+        <comment>0=sans 1=avec</comment>
+      </column>
+    </property>
+    <property name="modTauxMarge" type="float">
+      <column default="0" name="mod_taux_marge">
+        <comment>taux marge</comment>
+      </column>
+    </property>
+    <property name="modValeurResiduelle" type="integer">
+      <column default="0" length="1" name="mod_valeur_residuelle">
+        <comment>0=sans 1=avec</comment>
+      </column>
+    </property>
+    <property name="modTauxValeurResiduelle" type="float">
+      <column default="0" name="mod_taux_valeur_residuelle">
+        <comment>taux valeur residuelle</comment>
+      </column>
+    </property>
+    <property name="modDureeMin" type="integer">
+      <column default="0" length="1" name="mod_duree_min">
+        <comment>duree minimale en nb mois</comment>
+      </column>
+    </property>
+    <property name="modDureeMax" type="integer">
+      <column default="0" length="1" name="mod_duree_max">
+        <comment>duree maximale en nb mois</comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>

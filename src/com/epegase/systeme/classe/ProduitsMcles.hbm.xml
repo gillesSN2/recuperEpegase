@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="ProduitsMcles" table="cmm_produits_mcles">
+    <id column="`promcl_id`" name="promclId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="promclMot" type="string">
+      <column length="20" name="promcl_mot">
+        <comment>mot cle</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.Produits" column="pro_id" lazy="false" name="produits" not-null="true"/>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="TiersAdherent" table="med_tiers_adherent">
+    <id column="tieadh_id" name="tieadhId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="tieadhDateCreat" type="timestamp">
+      <column name="tieadh_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="tieadhDateModif" type="timestamp">
+      <column name="tieadh_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="tieadhUserCreat" type="long">
+      <column default="0" length="15" name="tieadh_user_creat">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="tieadhUserModif" type="long">
+      <column default="0" length="15" name="tieadh_user_modif">
+        <comment>utilisateur de modification</comment>
+      </column>
+    </property>
+    <property name="tieadhRaisonSociale" type="string">
+      <column length="100" name="tieadh_raison_sociale">
+        <comment>raison sociale adherent</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.Tiers" column="tie_id" lazy="false" name="tiers" not-null="true"/>
+  </class>
+</hibernate-mapping>

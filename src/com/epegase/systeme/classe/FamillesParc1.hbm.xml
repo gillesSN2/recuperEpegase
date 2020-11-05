@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="com.epegase.systeme.classe.FamillesParc1" table="prc_familles_parc1">
+    <id column="famprc1_id" name="famprc1Id" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="famprc1DateCreation" type="timestamp">
+      <column name="famprc1_date_creation">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="famprc1DateModif" type="timestamp">
+      <column name="famprc1_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="famprc1UserCreation" type="long">
+      <column default="0" name="famprc1_user_creation">
+        <comment>user de creation</comment>
+      </column>
+    </property>
+    <property name="famprc1UserModif" type="long">
+      <column default="0" name="famprc1_user_modif">
+        <comment>user de modification</comment>
+      </column>
+    </property>
+    <property name="famprc1Nature" type="integer">
+      <column default="0" name="famprc1_nature">
+        <comment>suivant code xml</comment>
+      </column>
+    </property>
+    <property name="famprc1LibNature" type="string">
+      <column length="100" name="famprc1_lib_nature">
+        <comment>libelle nature</comment>
+      </column>
+    </property>
+    <property name="famprc1Code" type="string">
+      <column length="20" name="famprc1_code">
+        <comment>code famille parc</comment>
+      </column>
+    </property>
+    <property name="famprc1LibelleFr" type="string">
+      <column length="100" name="famprc1_libelle_fr">
+        <comment>libelle famille parc en FR</comment>
+      </column>
+    </property>
+    <property name="famprc1LibelleUk" type="string">
+      <column length="100" name="famprc1_libelle_uk">
+        <comment>libelle famille parc en UK</comment>
+      </column>
+    </property>
+    <property name="famprc1LibelleSp" type="string">
+      <column length="100" name="famprc1_libelle_sp">
+        <comment>libelle famille parc en SP</comment>
+      </column>
+    </property>
+    <property name="famprc1Inactif" type="integer">
+      <column default="0" name="famprc1_inactif">
+        <comment>0=actif 1=inactif 2=supprimer</comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>

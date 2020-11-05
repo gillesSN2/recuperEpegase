@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="LaboratoireResultat" table="med_laboratoire_resultat">
+    <id column="labres_id" name="labresId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="labresNum" type="string">
+      <column length="20" name="labres_num">
+        <comment>numero laboratoie</comment>
+      </column>
+    </property>
+    <property name="labresCode" type="string">
+      <column length="20" name="labres_code">
+        <comment>code du produit</comment>
+      </column>
+    </property>
+    <property name="labresLibelle" type="string">
+      <column length="200" name="labres_libelle">
+        <comment>libelle examen</comment>
+      </column>
+    </property>
+    <property name="labresType" type="integer">
+      <column default="0" name="labres_type">
+        <comment>type de reponse 0=titre 1=numerique 2=date 3=image 4=texte 5=reponse unique  6=reponse unique + action 7=reponse multiple 8=datail examen</comment>
+      </column>
+    </property>
+    <property name="labresOrdre" type="integer">
+      <column default="0" name="labres_ordre">
+        <comment>ordre de la response</comment>
+      </column>
+    </property>
+    <property name="labresNumerique" type="double">
+      <column default="0" name="labres_numerique">
+        <comment>reponse numerique</comment>
+      </column>
+    </property>
+    <property name="labresDate" type="date">
+      <column default="null" name="labres_date">
+        <comment>reponse date</comment>
+      </column>
+    </property>
+    <property name="labresImage" type="string">
+      <column length="100" name="labres_image">
+        <comment>reponse image</comment>
+      </column>
+    </property>
+    <property name="labresPdf" type="string">
+      <column length="100" name="labres_pdf">
+        <comment>reponse pdf</comment>
+      </column>
+    </property>
+    <property name="labresTexte" type="text">
+      <column name="labres_texte">
+        <comment>reponse texte</comment>
+      </column>
+    </property>
+    <property name="labresReponseAction" type="long">
+      <column default="0" name="labres_reponse_action">
+        <comment>id choix action</comment>
+      </column>
+    </property>
+    <property name="labresReponseUnique" type="text">
+      <column length="1000" name="labres_reponse_unique">
+        <comment>reponse unique</comment>
+      </column>
+    </property>
+    <property name="labresAction" type="string">
+      <column length="100" name="labres_action">
+        <comment>action</comment>
+      </column>
+    </property>
+    <property name="labresReponseMultiple" type="text">
+      <column length="5000" name="labres_reponse_multiple">
+        <comment>reponse multiple</comment>
+      </column>
+    </property>
+    <property name="labresUnite" type="string">
+      <column length="20" name="labres_unite">
+        <comment>unite reponse</comment>
+      </column>
+    </property>
+    <property name="labresCoef" type="float">
+      <column default="0" name="labres_coef">
+        <comment>coefficient de conversion</comment>
+      </column>
+    </property>
+    <property name="labresUniteConvertie" type="string">
+      <column length="20" name="labres_unite_convertie">
+        <comment>unite reponse convertie</comment>
+      </column>
+    </property>
+    <property name="labresFourchette" type="string">
+      <column length="100" name="labres_fourchette">
+        <comment>fourchette</comment>
+      </column>
+    </property>
+    <property name="labresFourchetteMin" type="double">
+      <column default="0" name="labres_fourchette_min">
+        <comment>fourchette mini</comment>
+      </column>
+    </property>
+    <property name="labresFourchetteMax" type="double">
+      <column default="0" name="labres_fourchette_max">
+        <comment>fourchette maxi</comment>
+      </column>
+    </property>
+    <property name="labresCommentaire" type="text">
+      <column name="labres_commentaire">
+        <comment>commentaire</comment>
+      </column>
+    </property>
+    <property name="labresTechnique" type="text">
+      <column length="5000" name="labres_technique">
+        <comment>technique utilisee</comment>
+      </column>
+    </property>
+    <property name="labresNorme" type="text">
+      <column length="5000" name="labres_norme">
+        <comment>norme statique</comment>
+      </column>
+    </property>
+    <property index="true" name="labresIdLab" type="long">
+      <column default="0" index="true" name="labres_id_lab">
+        <comment>id de la consultation laboratoire</comment>
+      </column>
+    </property>
+    <property index="true" name="labresIdPatient" type="long">
+      <column default="0" index="true" name="labres_id_patient">
+        <comment>id du patient</comment>
+      </column>
+    </property>
+    <property index="true" name="labresIdProdDet" type="long">
+      <column default="0" index="true" name="labres_id_proddet">
+        <comment>id du detail de produit</comment>
+      </column>
+    </property>
+    <property name="labresCategorie" type="string">
+      <column length="100" name="labresb_categorie">
+        <comment>categorie</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.LaboratoireLigne" column="lablig_id" lazy="false" name="laboratoireLigne" not-null="true"/>
+  </class>
+</hibernate-mapping>

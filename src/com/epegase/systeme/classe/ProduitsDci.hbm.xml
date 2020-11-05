@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="ProduitsDci" table="med_produits_dci">
+    <id column="prodci_id" name="prodciId" type="long" unsaved-value="null"/>
+    <property name="prodciDateCreation" type="timestamp">
+      <column default="null" name="prodci_date_creation">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="prodciDateModif" type="timestamp">
+      <column default="null" name="prodci_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="prodciUserCreation" type="long">
+      <column default="0" length="15" name="prodci_user_creation">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="prodciUserModif" type="long">
+      <column default="0" length="15" name="prodci_user_modif">
+        <comment>utilisateur de modification</comment>
+      </column>
+    </property>
+    <property name="prodciCode" type="text">
+      <column length="10000" name="prodci_code">
+        <comment>code dci</comment>
+      </column>
+    </property>
+    <property name="prodciForme" type="text">
+      <column length="10000" name="prodci_forme">
+        <comment>forme</comment>
+      </column>
+    </property>
+    <property name="prodciIndication" type="text">
+      <column length="10000" name="prodci_indication">
+        <comment>indication</comment>
+      </column>
+    </property>
+    <property name="prodciPosologie" type="text">
+      <column length="10000" name="prodci_posologie">
+        <comment>posologie</comment>
+      </column>
+    </property>
+    <property name="prodciContreIndic" type="text">
+      <column length="10000" name="prodci_contre_indic">
+        <comment>contre indication</comment>
+      </column>
+    </property>
+    <property name="prodciEffetSecond" type="text">
+      <column length="10000" name="prodci_effet_second">
+        <comment>effet secondaire</comment>
+      </column>
+    </property>
+    <property name="prodciType" type="integer">
+      <column default="0" length="1" name="prodci_type">
+        <comment>0=medicamment 1= a base de plante 2=veterinaire 3=hydratant cutanee 4=parapharmacie</comment>
+      </column>
+    </property>
+    <property name="prodciCat" type="integer">
+      <column default="0" length="1" name="prodci_cat">
+        <comment>???</comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>

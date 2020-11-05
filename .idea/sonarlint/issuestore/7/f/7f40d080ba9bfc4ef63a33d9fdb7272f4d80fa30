@@ -1,0 +1,11 @@
+
+j
+java:S1450"URemove the "compte" field and declare it as a local variable in the relevant methods.(Õ²å"
+>	java:S108@")Either remove or fill this block of code.(¼øÒ†
+I
+java:S1948".Make "mesFonctions" transient or serializable.(‰ñŞŸüÿÿÿÿ
+Œ
+java:S1130"qRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from constructor's body.(ëö¹ùşÿÿÿÿ
+C	java:S108A")Either remove or fill this block of code.(§ÁÒîúÿÿÿÿ
+N
+java:S1948"3Make "mesfonctionsItems" transient or serializable.(»½Éúÿÿÿÿ

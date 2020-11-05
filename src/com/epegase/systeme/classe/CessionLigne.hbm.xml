@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="CessionLigne" table="ach_cession_ligne">
+    <id column="ceslig_id" name="cesligId" type="long" unsaved-value="null">
+      <generator class="increment"/>
+    </id>
+    <property name="cesligCode" type="string">
+      <column length="20" name="ceslig_code">
+        <comment>code produit</comment>
+      </column>
+    </property>
+    <property name="cesligDepotOrigine" type="string">
+      <column length="20" name="ceslig_depot_origine">
+        <comment>code depot origine</comment>
+      </column>
+    </property>
+    <property name="cesligDepotDestination" type="string">
+      <column length="20" name="ceslig_depot_destination">
+        <comment>code depot destination</comment>
+      </column>
+    </property>
+    <property name="cesligSommier" type="string">
+      <column length="20" name="ceslig_sommier">
+        <comment>code sommier sortie</comment>
+      </column>
+    </property>
+    <property name="cesligFamille" type="string">
+      <column length="121" name="ceslig_famille">
+        <comment>famille produit</comment>
+      </column>
+    </property>
+    <property name="cesligLibelle" type="text">
+      <column name="ceslig_libelle">
+        <comment>libelle produit</comment>
+      </column>
+    </property>
+    <property name="cesligReference" type="string">
+      <column length="20" name="ceslig_reference">
+        <comment>reference produit</comment>
+      </column>
+    </property>
+    <property name="cesligUnite" type="string">
+      <column length="30" name="ceslig_unite">
+        <comment>unite produit</comment>
+      </column>
+    </property>
+    <property name="cesligCondition" type="string">
+      <column length="121" name="ceslig_condition">
+        <comment>conditionnement produit</comment>
+      </column>
+    </property>
+    <property name="cesligDescription" type="string">
+      <column length="20" name="ceslig_description">
+        <comment>description conditionnement produit</comment>
+      </column>
+    </property>
+    <property name="cesligQte" type="float">
+      <column default="0" name="ceslig_qte">
+        <comment>quantite origine</comment>
+      </column>
+    </property>
+    <property name="cesligCasierOrigine" type="string">
+      <column length="20" name="ceslig_casier_origine">
+        <comment>casier origine</comment>
+      </column>
+    </property>
+    <property name="cesligCasierDestination" type="string">
+      <column length="20" name="ceslig_casier_destination">
+        <comment>casier destination</comment>
+      </column>
+    </property>
+    <property name="cesligLong" type="float">
+      <column default="0" name="ceslig_long">
+        <comment>longueur</comment>
+      </column>
+    </property>
+    <property name="cesligLarg" type="float">
+      <column default="0" name="ceslig_larg">
+        <comment>largeur</comment>
+      </column>
+    </property>
+    <property name="cesligHaut" type="float">
+      <column default="0" name="ceslig_haut">
+        <comment>hauteur</comment>
+      </column>
+    </property>
+    <property name="cesligDiam" type="float">
+      <column default="0" name="ceslig_diam">
+        <comment>diametre</comment>
+      </column>
+    </property>
+    <property name="cesligNb" type="float">
+      <column default="0" name="ceslig_nb">
+        <comment>nombre de piece</comment>
+      </column>
+    </property>
+    <property name="cesligPoidsNet" type="float">
+      <column default="0" name="ceslig_poidsNet">
+        <comment>poids net</comment>
+      </column>
+    </property>
+    <property name="cesligPoidsBrut" type="float">
+      <column default="0" name="ceslig_poidsBrut">
+        <comment>poids brut</comment>
+      </column>
+    </property>
+    <property name="cesligVolume" type="float">
+      <column default="0" name="ceslig_volume">
+        <comment>volume</comment>
+      </column>
+    </property>
+    <property name="cesligQteUtil" type="float">
+      <column default="0" name="ceslig_qte_util">
+        <comment>quantite utilisee (valable pour le stock)</comment>
+      </column>
+    </property>
+    <property name="cesligStock" type="integer">
+      <column default="0" name="ceslig_stock">
+        <comment>mode gestion en stock</comment>
+      </column>
+    </property>
+    <property name="cesligQteStock" type="float">
+      <column default="0" name="ceslig_qte_stock">
+        <comment>quantite en stock</comment>
+      </column>
+    </property>
+    <property name="cesligLot" type="string">
+      <column length="30" name="ceslig_lot">
+        <comment>numero de lot</comment>
+      </column>
+    </property>
+    <property name="cesligNumSerie" type="string">
+      <column length="30" name="ceslig_num_serie">
+        <comment>numero de serie</comment>
+      </column>
+    </property>
+    <property name="cesligPump" type="double">
+      <column default="0" name="ceslig_pump">
+        <comment>pump</comment>
+      </column>
+    </property>
+    <property name="cesligTotal" type="double">
+      <column default="0" name="ceslig_total">
+        <comment>total pump</comment>
+      </column>
+    </property>
+    <property name="cesligObs" type="string">
+      <column length="50" name="ceslig_obs">
+        <comment>obsrvations</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.CessionEntete" column="ces_id" lazy="false" name="cessionEntete" not-null="true"/>
+  </class>
+</hibernate-mapping>

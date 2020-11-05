@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="StructurePot" table="peg_structure_pot">
+    <id column="str_id" name="strId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property column="str_dte_creat" name="strdtecreat" type="timestamp"/>
+    <property column="str_raison_sociale" name="strraisonsociale" type="string"/>
+    <property column="str_nom_pays" name="strnompays" type="string"/>
+    <property column="str_code_pays" name="strcodepays" type="string"/>
+    <property column="str_devise" name="strdevise" type="string"/>
+    <property column="str_langue" name="strlangue" type="string"/>
+    <property column="str_zone_fiscale" name="strzonefiscale" type="string"/>
+    <property column="str_zone_commerciale" name="strzonecommerciale" type="string"/>
+    <property column="str_forme_juridique" name="strformejuridique" type="string"/>
+    <property column="str_adresse" name="stradresse" type="string"/>
+    <property column="str_ville" name="strville" type="string"/>
+    <property column="str_bp" name="strbp" type="string"/>
+    <property column="str_tel1" name="strtel1" type="string"/>
+    <property column="str_mod1" name="strmod1" type="boolean"/>
+    <property column="str_mod2" name="strmod2" type="boolean"/>
+    <property column="str_mod3" name="strmod3" type="boolean"/>
+    <property column="str_mod4" name="strmod4" type="boolean"/>
+    <property column="str_mod5" name="strmod5" type="boolean"/>
+    <property column="str_mod6" name="strmod6" type="boolean"/>
+    <property column="str_mod7" name="strmod7" type="boolean"/>
+    <property column="str_mod8" name="strmod8" type="boolean"/>
+    <property column="str_mod9" name="strmod9" type="boolean"/>
+    <property column="str_mod10" name="strmod10" type="boolean"/>
+    <property column="str_contact" name="strcontact" type="string"/>
+    <property column="str_fonction" name="strfonction" type="string"/>
+    <property column="str_mail" name="strmail" type="string"/>
+    <property column="str_cel1" name="strcel1" type="string"/>
+    <property column="str_civilite" name="strcivilite" type="string"/>
+    <property column="str_observations" name="strobservations" type="string"/>
+    <property column="str_url" name="strurl" type="string"/>
+  </class>
+</hibernate-mapping>

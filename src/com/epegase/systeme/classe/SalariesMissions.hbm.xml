@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="SalariesMissions" table="pay_salaries_missions">
+    <id column="salmis_id" name="salmisId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="salmisDevise" type="string">
+      <column length="3" name="salmis_devise">
+        <comment>code devise</comment>
+      </column>
+    </property>
+    <property name="salmisVisa" type="double">
+      <column default="0" name="salmis_visa">
+        <comment>montant du visa</comment>
+      </column>
+    </property>
+    <property name="salmisTitreTransport" type="double">
+      <column default="0" name="salmis_titre_transport">
+        <comment>total titre de transport</comment>
+      </column>
+    </property>
+    <property name="salmisTypeTransport" type="integer">
+      <column default="0" name="salmis_type_transport">
+        <comment>0=route 1=train 2=avion 3=bateau</comment>
+      </column>
+    </property>
+    <property name="salmisDeplacement1" type="double">
+      <column default="0" name="salmis_deplacement1">
+        <comment>deplacement domicile = aeroport, port, gare</comment>
+      </column>
+    </property>
+    <property name="salmisDeplacement2" type="double">
+      <column default="0" name="salmis_deplacement2">
+        <comment>deplacement aeroport, port, gare = domicile</comment>
+      </column>
+    </property>
+    <property name="salmisResaHotel" type="boolean">
+      <column default="false" name="salmis_resa_hotel">
+        <comment>reservation hotel</comment>
+      </column>
+    </property>
+    <property name="salmisNomHotel" type="string">
+      <column length="50" name="salmis_nom_hotel">
+        <comment>nom hotel</comment>
+      </column>
+    </property>
+    <property name="salmisMailHotel" type="string">
+      <column length="50" name="salmis_mail_hotel">
+        <comment>mail hotel</comment>
+      </column>
+    </property>
+    <property name="salmisTelHotel" type="string">
+      <column length="50" name="salmis_tel_hotel">
+        <comment>telephone hotel</comment>
+      </column>
+    </property>
+    <property name="salmisChambreHotel" type="string">
+      <column length="10" name="salmis_chambre_hotel">
+        <comment>chambre hotel</comment>
+      </column>
+    </property>
+    <property name="salmisObs" type="string">
+      <column length="50" name="salmis_obs">
+        <comment>observations</comment>
+      </column>
+    </property>
+    <property name="salmisPerdiemTheo" type="double">
+      <column default="0" name="salmis_perdiem_theo">
+        <comment>total perdiem theorique</comment>
+      </column>
+    </property>
+    <property name="salmisPerdiemReel" type="double">
+      <column default="0" name="salmis_perdiem_reel">
+        <comment>total perdiem reel</comment>
+      </column>
+    </property>
+    <property name="salmisRestauration" type="double">
+      <column default="0" name="salmis_restauration">
+        <comment>total restauration</comment>
+      </column>
+    </property>
+    <property name="salmisHebergement" type="double">
+      <column default="0" name="salmis_hebergement">
+        <comment>total hebergement</comment>
+      </column>
+    </property>
+    <property name="salmisAutresFrais" type="double">
+      <column default="0" name="salmis_autres_frais">
+        <comment>total autres frais</comment>
+      </column>
+    </property>
+    <property name="salmisAcompte" type="double">
+      <column default="0" name="salmis_acompte">
+        <comment>acompte</comment>
+      </column>
+    </property>
+    <property name="salmisAccompagnant" type="text">
+      <column name="salmis_accompagnant">
+        <comment>liste des accompagnants</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.Salaries" column="sal_id" lazy="false" name="Salaries" not-null="true"/>
+    <many-to-one class="com.epegase.systeme.classe.Missions" column="mis_id" lazy="false" name="Missions" not-null="true"/>
+  </class>
+</hibernate-mapping>

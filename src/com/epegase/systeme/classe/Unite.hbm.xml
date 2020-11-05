@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="Unite" table="cmm_unite">
+    <id column="uni_id" name="uniId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="uniDateCreation" type="timestamp">
+      <column name="uni_date_creation">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="uniDateModif" type="timestamp">
+      <column name="uni_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="uniUserCreation" type="long">
+      <column default="0" name="uni_user_creation">
+        <comment>user de creation</comment>
+      </column>
+    </property>
+    <property name="uniUserModif" type="long">
+      <column default="0" name="uni_user_modif">
+        <comment>user de modification</comment>
+      </column>
+    </property>
+    <property name="uniLibelle" type="string">
+      <column length="10" name="uni_libelle">
+        <comment>libelle unite</comment>
+      </column>
+    </property>
+    <property name="uniEchelle" type="integer">
+      <column default="0" name="uni_echelle">
+        <comment/>
+      </column>
+    </property>
+    <property name="uniInactif" type="int">
+      <column default="0" name="uni_inactif">
+        <comment>0=actif 1=inactif 2=supprimer</comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>

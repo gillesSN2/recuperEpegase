@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="Equipes" table="cmm_equipes">
+    <id column="equ_id" name="equId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="equDateCreat" type="timestamp">
+      <column name="equ_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="equDateModif" type="timestamp">
+      <column name="equ_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="equUserCreat" type="long">
+      <column default="0" length="15" name="equ_user_creat">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="equUserModif" type="long">
+      <column default="0" length="15" name="equ_user_modif">
+        <comment>utilisateur de modification</comment>
+      </column>
+    </property>
+    <property name="equType" type="int">
+      <column default="0" name="equ_type">
+        <comment>0=commercial 1=administratif 3=production</comment>
+      </column>
+    </property>
+    <property name="equCode" type="string">
+      <column length="20" name="equ_code">
+        <comment>code activite</comment>
+      </column>
+    </property>
+    <property name="equNomFr" type="string">
+      <column length="100" name="equ_nom_FR">
+        <comment>nom activite en FR</comment>
+      </column>
+    </property>
+    <property name="equNomUk" type="string">
+      <column length="100" name="equ_nom_UK">
+        <comment>nom activite en UK</comment>
+      </column>
+    </property>
+    <property name="equNomSp" type="string">
+      <column length="100" name="equ_nom_SP">
+        <comment>nom activite en SP</comment>
+      </column>
+    </property>
+    <property name="equInactif" type="integer">
+      <column default="0" length="1" name="equ_inactif">
+        <comment>0=actif 1=inactif 2=supprimer</comment>
+      </column>
+    </property>
+    <property name="equQuart" type="integer">
+      <column default="0" length="1" name="equ_quart">
+        <comment>numero de quart</comment>
+      </column>
+    </property>
+    <property name="equHeureDebut" type="integer">
+      <column default="0" name="equ_heure_debut">
+        <comment>heure debut</comment>
+      </column>
+    </property>
+    <property name="equHeureFin" type="integer">
+      <column default="0" name="equ_heure_fin">
+        <comment>heure fin</comment>
+      </column>
+    </property>
+    <property name="equMinuteDebut" type="integer">
+      <column default="0" name="equ_minute_debut">
+        <comment>minute debut</comment>
+      </column>
+    </property>
+    <property name="equMinuteFin" type="integer">
+      <column default="0" name="equ_minute_fin">
+        <comment>minute fin</comment>
+      </column>
+    </property>
+    <property name="equIdResponsable" type="long">
+      <column default="0" name="equ_id_responsable">
+        <comment>id responsable</comment>
+      </column>
+    </property>
+    <property name="equNomResponsable" type="string">
+      <column length="100" name="equ_nom_responsable">
+        <comment>nom responsable</comment>
+      </column>
+    </property>
+    <property name="equIdAgent" type="text">
+      <column length="1000" name="equ_id_agent">
+        <comment>tableau des id agents</comment>
+      </column>
+    </property>
+    <property name="equNomAgent" type="text">
+      <column length="10000" name="equ_nom_agent">
+        <comment>tableau des nom agents</comment>
+      </column>
+    </property>
+    <property name="equDepot" type="string">
+      <column length="121" name="equ_depot">
+        <comment>depot de travail</comment>
+      </column>
+    </property>
+    <property name="equDepotOrigine" type="string">
+      <column length="121" name="equ_depot_origine">
+        <comment>depot origine</comment>
+      </column>
+    </property>
+    <property name="equCaisse" type="string">
+      <column length="121" name="equ_caisse">
+        <comment>caisse affectee</comment>
+      </column>
+    </property>
+    <property name="equStock" type="integer">
+      <column default="0" length="1" name="equ_stock">
+        <comment>0=stock equipe 1=stock global</comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>

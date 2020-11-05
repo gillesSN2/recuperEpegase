@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="ExercicesPaye" table="pay_exercices_paye">
+    <id column="exepay_id" name="exepayId" type="long" unsaved-value="null">
+      <generator class="assigned"/>
+    </id>
+    <property name="exepayDateCreat" type="timestamp">
+      <column default="null" name="exepay_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="exepayDateModif" type="timestamp">
+      <column default="null" name="exepay_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="exepayDateCloture" type="timestamp">
+      <column default="null" name="exepay_date_cloture">
+        <comment>date de cloture</comment>
+      </column>
+    </property>
+    <property name="exepayUserCreat" type="long">
+      <column default="0" name="exepay_user_creat">
+        <comment>user de creation</comment>
+      </column>
+    </property>
+    <property name="exepayUserCloture" type="long">
+      <column default="0" name="exepay_user_cloture">
+        <comment>user de cloture</comment>
+      </column>
+    </property>
+    <property name="exepayUserModif" type="long">
+      <column default="0" name="exepay_user_modif">
+        <comment>user de modification</comment>
+      </column>
+    </property>
+    <property name="exepayDateDebut" type="date">
+      <column default="null" name="exepay_date_debut">
+        <comment>date debut exercice</comment>
+      </column>
+    </property>
+    <property name="exepayDateFin" type="date">
+      <column default="null" name="exepay_date_fin">
+        <comment>date fin exercice</comment>
+      </column>
+    </property>
+    <property name="exepayEtat" type="integer">
+      <column default="0" name="exepay_etat">
+        <comment>etat 0=en cours 1=cloture</comment>
+      </column>
+    </property>
+    <property name="exepayNumBrd01" type="string">
+      <column length="50" name="exepay_num_brd_01">
+        <comment>numero de bordereau</comment>
+      </column>
+    </property>
+    <property name="exepayNumBrd02" type="string">
+      <column length="50" name="exepay_num_brd_02">
+        <comment>numero de bordereau</comment>
+      </column>
+    </property>
+    <property name="exepayNumBrd03" type="string">
+      <column length="50" name="exepay_num_brd_03">
+        <comment>numero de bordereau</comment>
+      </column>
+    </property>
+    <property name="exepayNumBrd04" type="string">
+      <column length="50" name="exepay_num_brd_04">
+        <comment>numero de bordereau</comment>
+      </column>
+    </property>
+    <property name="exepayNumBrd05" type="string">
+      <column length="50" name="exepay_num_brd_05">
+        <comment>numero de bordereau</comment>
+      </column>
+    </property>
+    <property name="exepayNumBrd06" type="string">
+      <column length="50" name="exepay_num_brd_06">
+        <comment>numero de bordereau</comment>
+      </column>
+    </property>
+    <property name="exepayNumBrd07" type="string">
+      <column length="50" name="exepay_num_brd_07">
+        <comment>numero de bordereau</comment>
+      </column>
+    </property>
+    <property name="exepayNumBrd08" type="string">
+      <column length="50" name="exepay_num_brd_08">
+        <comment>numero de bordereau</comment>
+      </column>
+    </property>
+    <property name="exepayNumBrd09" type="string">
+      <column length="50" name="exepay_num_brd_09">
+        <comment>numero de bordereau</comment>
+      </column>
+    </property>
+    <property name="exepayNumBrd10" type="string">
+      <column length="50" name="exepay_num_brd_10">
+        <comment>numero de bordereau</comment>
+      </column>
+    </property>
+    <property name="exepayNumBrd11" type="string">
+      <column length="50" name="exepay_num_brd_11">
+        <comment>numero de bordereau</comment>
+      </column>
+    </property>
+    <property name="exepayNumBrd12" type="string">
+      <column length="50" name="exepay_num_brd_12">
+        <comment>numero de bordereau</comment>
+      </column>
+    </property>
+    <property name="exepayDteBrd01" type="date">
+      <column default="null" name="exepay_dte_brd_01">
+        <comment>date de versement</comment>
+      </column>
+    </property>
+    <property name="exepayDteBrd02" type="date">
+      <column default="null" name="exepay_dte_brd_02">
+        <comment>date de versement</comment>
+      </column>
+    </property>
+    <property name="exepayDteBrd03" type="date">
+      <column default="null" name="exepay_dte_brd_03">
+        <comment>date de versement</comment>
+      </column>
+    </property>
+    <property name="exepayDteBrd04" type="date">
+      <column default="null" name="exepay_dte_brd_04">
+        <comment>date de versement</comment>
+      </column>
+    </property>
+    <property name="exepayDteBrd05" type="date">
+      <column default="null" name="exepay_dte_brd_05">
+        <comment>date de versement</comment>
+      </column>
+    </property>
+    <property name="exepayDteBrd06" type="date">
+      <column default="null" name="exepay_dte_brd_06">
+        <comment>date de versement</comment>
+      </column>
+    </property>
+    <property name="exepayDteBrd07" type="date">
+      <column default="null" name="exepay_dte_brd_07">
+        <comment>date de versement</comment>
+      </column>
+    </property>
+    <property name="exepayDteBrd08" type="date">
+      <column default="null" name="exepay_dte_brd_08">
+        <comment>date de versement</comment>
+      </column>
+    </property>
+    <property name="exepayDteBrd09" type="date">
+      <column default="null" name="exepay_dte_brd_09">
+        <comment>date de versement</comment>
+      </column>
+    </property>
+    <property name="exepayDteBrd10" type="date">
+      <column default="null" name="exepay_dte_brd_10">
+        <comment>date de versement</comment>
+      </column>
+    </property>
+    <property name="exepayDteBrd11" type="date">
+      <column default="null" name="exepay_dte_brd_11">
+        <comment>date de versement</comment>
+      </column>
+    </property>
+    <property name="exepayDteBrd12" type="date">
+      <column default="null" name="exepay_dte_brd_12">
+        <comment>date de versement</comment>
+      </column>
+    </property>
+    <property name="exepayRedevance" type="double">
+      <column default="0" name="exepay_redevance">
+        <comment>honoraires redevances</comment>
+      </column>
+    </property>
+    <property name="exepayTotBrd01" type="double">
+      <column default="0" name="exepay_tot_brd_01">
+        <comment>total du bordereau</comment>
+      </column>
+    </property>
+    <property name="exepayTotBrd02" type="double">
+      <column default="0" name="exepay_tot_brd_02">
+        <comment>total du bordereau</comment>
+      </column>
+    </property>
+    <property name="exepayTotBrd03" type="double">
+      <column default="0" name="exepay_tot_brd_03">
+        <comment>total du bordereau</comment>
+      </column>
+    </property>
+    <property name="exepayTotBrd04" type="double">
+      <column default="0" name="exepay_tot_brd_04">
+        <comment>total du bordereau</comment>
+      </column>
+    </property>
+    <property name="exepayTotBrd05" type="double">
+      <column default="0" name="exepay_tot_brd_05">
+        <comment>total du bordereau</comment>
+      </column>
+    </property>
+    <property name="exepayTotBrd06" type="double">
+      <column default="0" name="exepay_tot_brd_06">
+        <comment>total du bordereau</comment>
+      </column>
+    </property>
+    <property name="exepayTotBrd07" type="double">
+      <column default="0" name="exepay_tot_brd_07">
+        <comment>total du bordereau</comment>
+      </column>
+    </property>
+    <property name="exepayTotBrd08" type="double">
+      <column default="0" name="exepay_tot_brd_08">
+        <comment>total du bordereau</comment>
+      </column>
+    </property>
+    <property name="exepayTotBrd09" type="double">
+      <column default="0" name="exepay_tot_brd_09">
+        <comment>total du bordereau</comment>
+      </column>
+    </property>
+    <property name="exepayTotBrd10" type="double">
+      <column default="0" name="exepay_tot_brd_10">
+        <comment>total du bordereau</comment>
+      </column>
+    </property>
+    <property name="exepayTotBrd11" type="double">
+      <column default="0" name="exepay_tot_brd_11">
+        <comment>total du bordereau</comment>
+      </column>
+    </property>
+    <property name="exepayTotBrd12" type="double">
+      <column default="0" name="exepay_tot_brd_12">
+        <comment>total du bordereau</comment>
+      </column>
+    </property>
+    <property name="exepayTotAll01" type="double">
+      <column default="0" name="exepay_tot_all_01">
+        <comment>total du allocations</comment>
+      </column>
+    </property>
+    <property name="exepayTotAll02" type="double">
+      <column default="0" name="exepay_tot_all_02">
+        <comment>total du allocations</comment>
+      </column>
+    </property>
+    <property name="exepayTotAll03" type="double">
+      <column default="0" name="exepay_tot_all_03">
+        <comment>total du allocations</comment>
+      </column>
+    </property>
+    <property name="exepayTotAll04" type="double">
+      <column default="0" name="exepay_tot_all_04">
+        <comment>total du allocations</comment>
+      </column>
+    </property>
+    <property name="exepayTotAll05" type="double">
+      <column default="0" name="exepay_tot_all_05">
+        <comment>total du allocations</comment>
+      </column>
+    </property>
+    <property name="exepayTotAll06" type="double">
+      <column default="0" name="exepay_tot_all_06">
+        <comment>total du allocations</comment>
+      </column>
+    </property>
+    <property name="exepayTotAll07" type="double">
+      <column default="0" name="exepay_tot_all_07">
+        <comment>total du allocations</comment>
+      </column>
+    </property>
+    <property name="exepayTotAll08" type="double">
+      <column default="0" name="exepay_tot_all_08">
+        <comment>total du allocations</comment>
+      </column>
+    </property>
+    <property name="exepayTotAll09" type="double">
+      <column default="0" name="exepay_tot_all_09">
+        <comment>total du allocations</comment>
+      </column>
+    </property>
+    <property name="exepayTotAll10" type="double">
+      <column default="0" name="exepay_tot_all_10">
+        <comment>total du allocations</comment>
+      </column>
+    </property>
+    <property name="exepayTotAll11" type="double">
+      <column default="0" name="exepay_tot_all_11">
+        <comment>total du allocations</comment>
+      </column>
+    </property>
+    <property name="exepayTotAll12" type="double">
+      <column default="0" name="exepay_tot_all_12">
+        <comment>total du allocations</comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>

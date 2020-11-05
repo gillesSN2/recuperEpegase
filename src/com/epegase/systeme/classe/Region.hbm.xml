@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="Region" table="cmm_region">
+    <id column="reg_id" name="regId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="regDateCreat" type="timestamp">
+      <column name="reg_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="regDateModif" type="timestamp">
+      <column name="reg_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="regUserCreat" type="long">
+      <column default="0" length="15" name="reg_user_creat">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="regUserModif" type="long">
+      <column default="0" length="15" name="reg_user_modif">
+        <comment>utilisateur de modification</comment>
+      </column>
+    </property>
+    <property name="regCode" type="string">
+      <column length="20" name="reg_code">
+        <comment>code region</comment>
+      </column>
+    </property>
+    <property name="regNomFr" type="string">
+      <column length="100" name="reg_nom_FR">
+        <comment>nom region en FR</comment>
+      </column>
+    </property>
+    <property name="regNomUk" type="string">
+      <column length="100" name="reg_nom_UK">
+        <comment>nom region en UK</comment>
+      </column>
+    </property>
+    <property name="regNomSp" type="string">
+      <column length="100" name="reg_nom_SP">
+        <comment>nom region en SP</comment>
+      </column>
+    </property>
+    <property name="regInactif" type="integer">
+      <column default="0" length="1" name="reg_inactif">
+        <comment>1=inactif</comment>
+      </column>
+    </property>
+    <property name="regIdResponsable" type="long">
+      <column default="0" name="reg_id_responsable">
+        <comment>id responsable</comment>
+      </column>
+    </property>
+    <property name="regNomResponsable" type="string">
+      <column length="100" name="reg_nom_responsable">
+        <comment>nom responsable</comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>

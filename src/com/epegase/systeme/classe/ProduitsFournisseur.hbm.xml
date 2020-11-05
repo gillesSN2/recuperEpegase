@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="ProduitsFournisseur" table="cmm_produits_fournisseur">
+    <id column="profou_id" name="profouId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property index="true" name="profouRef" type="string">
+      <column index="true" length="20" name="profou_ref">
+        <comment>reference fournisseur</comment>
+      </column>
+    </property>
+    <property name="profouLib" type="string">
+      <column length="100" name="profou_lib">
+        <comment>libelle fournisseur</comment>
+      </column>
+    </property>
+    <property name="profouPa" type="double">
+      <column default="0" name="profou_pa">
+        <comment>prix achat</comment>
+      </column>
+    </property>
+    <property name="profouDevise" type="string">
+      <column length="3" name="profou_devise">
+        <comment>code devise</comment>
+      </column>
+    </property>
+    <property name="profouTauxDevise" type="float">
+      <column default="0" name="profou_taux_devise">
+        <comment>taux devise</comment>
+      </column>
+    </property>
+    <property name="profouFormat" type="integer">
+      <column default="0" name="profou_format">
+        <comment>format devise 0=us 1=fr 2=afr</comment>
+      </column>
+    </property>
+    <property name="profouCoefEuro" type="float">
+      <column default="0" name="profou_coef_euro">
+        <comment>coefficient de conversion en euro</comment>
+      </column>
+    </property>
+    <property name="profouCoefLocal" type="float">
+      <column default="0" name="profou_coef_local">
+        <comment>coefficient de conversion en devise locale</comment>
+      </column>
+    </property>
+    <property name="profouPaLocal" type="double">
+      <column default="0" name="profou_pa_local">
+        <comment>prix achat local</comment>
+      </column>
+    </property>
+    <property name="profouPaEuro" type="double">
+      <column default="0" name="profou_pa_euro">
+        <comment>prix achat euro</comment>
+      </column>
+    </property>
+    <property name="profouDate" type="date">
+      <column name="profou_date">
+        <comment>date dernier achat</comment>
+      </column>
+    </property>
+    <property name="profouCondition1" type="string">
+      <column length="50" name="profou_condition1">
+        <comment>conditionnement 1</comment>
+      </column>
+    </property>
+    <property name="profouCondition2" type="string">
+      <column length="50" name="profou_condition2">
+        <comment>conditionnement 2</comment>
+      </column>
+    </property>
+    <property name="profouCondition3" type="string">
+      <column length="50" name="profou_condition3">
+        <comment>conditionnement 3</comment>
+      </column>
+    </property>
+    <property name="profouCondition4" type="string">
+      <column length="50" name="profou_condition4">
+        <comment>conditionnement 4</comment>
+      </column>
+    </property>
+    <property name="profouCondition5" type="string">
+      <column length="50" name="profou_condition5">
+        <comment>conditionnement 5</comment>
+      </column>
+    </property>
+    <property name="profouInactif" type="integer">
+      <column default="0" length="1" name="profou_inactif">
+        <comment>0=actif 1=inactif 2=supprimer</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.Produits" column="pro_id" lazy="false" name="produits" not-null="true"/>
+    <many-to-one class="com.epegase.systeme.classe.Tiers" column="tie_id" lazy="false" name="tiers" not-null="true"/>
+  </class>
+</hibernate-mapping>

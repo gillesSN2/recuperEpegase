@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="AvoirLigneVentes" table="vte_avoir_ligne">
+    <id column="avrlig_id" name="avrligId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="avrligOrdre" type="integer">
+      <column default="0" name="avrlig_ordre">
+        <comment>ordre des lignes</comment>
+      </column>
+    </property>
+    <property name="avrligIdFac" type="long">
+      <column default="0" length="15" name="avrlig_id_fac">
+        <comment>id de la ligne facture</comment>
+      </column>
+    </property>
+    <property name="avrligIdNdb" type="long">
+      <column default="0" length="15" name="avrlig_id_ndb">
+        <comment>id de la ligne note de debit</comment>
+      </column>
+    </property>
+    <property name="avrligCode" type="string">
+      <column length="20" name="avrlig_code">
+        <comment>code produit</comment>
+      </column>
+    </property>
+    <property name="avrligFamille" type="string">
+      <column length="121" name="avrlig_famille">
+        <comment>famille vente</comment>
+      </column>
+    </property>
+    <property name="avrligLibelle" type="text">
+      <column length="500" name="avrlig_libelle">
+        <comment>libelle produit</comment>
+      </column>
+    </property>
+    <property name="avrligComplement" type="text">
+      <column length="500" name="avrlig_complement">
+        <comment>descriptif complementaire</comment>
+      </column>
+    </property>
+    <property name="avrligReference" type="string">
+      <column length="20" name="avrlig_reference">
+        <comment>reference produit</comment>
+      </column>
+    </property>
+    <property name="avrligTaxe" type="string">
+      <column length="20" name="avrlig_taxe">
+        <comment>code taxe</comment>
+      </column>
+    </property>
+    <property name="avrligTauxTaxe" type="float">
+      <column default="0" name="avrlig_taux_taxe">
+        <comment>taux de taxe</comment>
+      </column>
+    </property>
+    <property name="avrligUnite" type="string">
+      <column length="30" name="avrlig_unite">
+        <comment>unite produit</comment>
+      </column>
+    </property>
+    <property name="avrligCondition" type="string">
+      <column length="121" name="avrlig_condition">
+        <comment>conditionnement produit</comment>
+      </column>
+    </property>
+    <property name="avrligDescription" type="string">
+      <column length="20" name="avrlig_description">
+        <comment>description conditionnement produit</comment>
+      </column>
+    </property>
+    <property name="avrligDepot" type="string">
+      <column length="20" name="avrlig_depot">
+        <comment>code depot</comment>
+      </column>
+    </property>
+    <property name="avrligStock" type="integer">
+      <column default="0" name="avrlig_stock">
+        <comment>mode gestion en stock</comment>
+      </column>
+    </property>
+    <property name="avrligQteStock" type="float">
+      <column default="0" name="avrlig_qte_stock">
+        <comment>quantite en stock</comment>
+      </column>
+    </property>
+    <property name="avrligEchelle" type="integer">
+      <column default="0" name="avrlig_echelle">
+        <comment>echelle de la ligne</comment>
+      </column>
+    </property>
+    <property name="avrligQte" type="float">
+      <column default="0" name="avrlig_qte">
+        <comment>quantite</comment>
+      </column>
+    </property>
+    <property name="avrligLong" type="float">
+      <column default="0" name="avrlig_long">
+        <comment>longueur</comment>
+      </column>
+    </property>
+    <property name="avrligLarg" type="float">
+      <column default="0" name="avrlig_larg">
+        <comment>largeur</comment>
+      </column>
+    </property>
+    <property name="avrligHaut" type="float">
+      <column default="0" name="avrlig_haut">
+        <comment>hauteur</comment>
+      </column>
+    </property>
+    <property name="avrligDiam" type="float">
+      <column default="0" name="avrlig_diam">
+        <comment>diametre</comment>
+      </column>
+    </property>
+    <property name="avrligNb" type="float">
+      <column default="0" name="avrlig_nb">
+        <comment>nombre de piece</comment>
+      </column>
+    </property>
+    <property name="avrligPoidsNet" type="float">
+      <column default="0" name="avrlig_poidsNet">
+        <comment>poids net</comment>
+      </column>
+    </property>
+    <property name="avrligPoidsBrut" type="float">
+      <column default="0" name="avrlig_poidsBrut">
+        <comment>poids brut</comment>
+      </column>
+    </property>
+    <property name="avrligVolume" type="float">
+      <column default="0" name="avrlig_volume">
+        <comment>volume</comment>
+      </column>
+    </property>
+    <property name="avrligQteUtil" type="float">
+      <column default="0" name="avrlig_qte_util">
+        <comment>quantite utilisee (valable pour le stock)</comment>
+      </column>
+    </property>
+    <property name="avrligLot" type="string">
+      <column length="30" name="avrlig_lot">
+        <comment>numero de lot</comment>
+      </column>
+    </property>
+    <property name="avrligNumSerie" type="string">
+      <column length="30" name="avrlig_num_serie">
+        <comment>numero de serie</comment>
+      </column>
+    </property>
+    <property name="avrligDevise" type="string">
+      <column length="3" name="avrlig_devise">
+        <comment>code devise</comment>
+      </column>
+    </property>
+    <property name="avrligPu" type="double">
+      <column default="0" name="avrlig_pu">
+        <comment>prix unitaire</comment>
+      </column>
+    </property>
+    <property name="avrligTauxRemise" type="float">
+      <column default="0" name="avrlig_taux_remise">
+        <comment>taux de remise</comment>
+      </column>
+    </property>
+    <property name="avrligRabais" type="double">
+      <column default="0" name="avrlig_rabais">
+        <comment>valeur du rabais</comment>
+      </column>
+    </property>
+    <property name="avrligPuRem" type="double">
+      <column default="0" name="avrlig_pu_rem">
+        <comment>prix unitaire apres remise</comment>
+      </column>
+    </property>
+    <property name="avrligPuTtc" type="double">
+      <column default="0" name="avrlig_pu_ttc">
+        <comment>prix unitaire avant remise</comment>
+      </column>
+    </property>
+    <property name="avrligPuRemTtc" type="double">
+      <column default="0" name="avrlig_pu_rem_ttc">
+        <comment>prix unitaire apres remise</comment>
+      </column>
+    </property>
+    <property name="avrligPt" type="double">
+      <column default="0" name="avrlig_pt">
+        <comment>prix total ht</comment>
+      </column>
+    </property>
+    <property name="avrligTva" type="double">
+      <column default="0" name="avrlig_tva">
+        <comment>total taxe</comment>
+      </column>
+    </property>
+    <property name="avrligTc" type="double">
+      <column default="0" name="avrlig_tc">
+        <comment>total taxe complementaire</comment>
+      </column>
+    </property>
+    <property name="avrligTtc" type="double">
+      <column default="0" name="avrlig_ttc">
+        <comment>total ttc</comment>
+      </column>
+    </property>
+    <property name="avrligPump" type="double">
+      <column default="0" name="avrlig_pump">
+        <comment>prix unitaire moyen pondere</comment>
+      </column>
+    </property>
+    <property name="avrligCommission" type="double">
+      <column default="0" name="avrlig_commission">
+        <comment>total commission</comment>
+      </column>
+    </property>
+    <property name="avrligGroupe" type="string">
+      <column length="20" name="avrlig_groupe">
+        <comment>code du groupe</comment>
+      </column>
+    </property>
+    <property name="avrligModeGroupe" type="integer">
+      <column default="0" name="avrlig_mode_groupe">
+        <comment>0=produit simple 1=groupe visible 2=groupe invisible 3=forfait 4=calcul auto. 5=generique</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.AvoirEnteteVentes" column="avr_id" lazy="false" name="avoirEnteteVentes" not-null="true"/>
+  </class>
+</hibernate-mapping>

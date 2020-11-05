@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="Baremes" table="cmm_baremes">
+    <id column="bar_id" name="barId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="barDateCreat" type="timestamp">
+      <column name="bar_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="barDateModif" type="timestamp">
+      <column name="bar_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="barUserCreat" type="long">
+      <column default="0" length="15" name="bar_user_creat">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="barUserModif" type="long">
+      <column default="0" length="15" name="bar_user_modif">
+        <comment>utilisateur de modification</comment>
+      </column>
+    </property>
+    <property name="barCode" type="string">
+      <column length="20" name="bar_code">
+        <comment>code bareme</comment>
+      </column>
+    </property>
+    <property name="barNomFr" type="string">
+      <column length="100" name="bar_nom_FR">
+        <comment>nom bareme en FR</comment>
+      </column>
+    </property>
+    <property name="barNomUk" type="string">
+      <column length="100" name="bar_nom_UK">
+        <comment>nom bareme en UK</comment>
+      </column>
+    </property>
+    <property name="barNomSp" type="string">
+      <column length="100" name="bar_nom_SP">
+        <comment>nom bareme en SP</comment>
+      </column>
+    </property>
+    <property name="barInactif" type="integer">
+      <column default="0" length="1" name="bar_inactif">
+        <comment>0=actif 1=inactif 2=supprimer</comment>
+      </column>
+    </property>
+    <property name="barOptions" type="integer">
+      <column default="0" name="bar_options">
+        <comment>0=remise tiers 1=remise produit</comment>
+      </column>
+    </property>
+    <property name="barType" type="integer">
+      <column default="0" name="bar_type">
+        <comment>0=tiers 1=famille tiers 2=produit 3=famille produit 4=consultation 5=pharmacie 6=laboratoire 7=hospitalisation</comment>
+      </column>
+    </property>
+    <property index="true" name="barIdTiers" type="long">
+      <column default="0" index="true" name="bar_id_tiers">
+        <comment>id du tiers</comment>
+      </column>
+    </property>
+    <property index="true" name="barIdMedecin" type="long">
+      <column default="0" index="true" name="bar_id_medecin">
+        <comment>id du medecin</comment>
+      </column>
+    </property>
+    <property name="barNomTiers" type="string">
+      <column length="100" name="bar_nom_tiers">
+        <comment>nom du tiers</comment>
+      </column>
+    </property>
+    <property index="true" name="barCategorieTiers" type="string">
+      <column index="true" length="50" name="bar_categorie_tiers">
+        <comment>nom de la categorie ou famille du tiers</comment>
+      </column>
+    </property>
+    <property name="barOrdreTarif" type="integer">
+      <column default="0" name="bar_ordre_tarif">
+        <comment>ordre ou code medical 0=non assure 1=assure -1=cas social -2=etat -3=unique</comment>
+      </column>
+    </property>
+    <property index="true" name="barCodeProduit" type="string">
+      <column index="true" length="20" name="bar_code_produit">
+        <comment>code produit</comment>
+      </column>
+    </property>
+    <property name="barLibelleProduit" type="string">
+      <column length="100" name="bar_libelle_produit">
+        <comment>nom produit</comment>
+      </column>
+    </property>
+    <property name="barCodeVte" type="string">
+      <column length="20" name="bar_code_vte">
+        <comment>code famille vente</comment>
+      </column>
+    </property>
+    <property name="barLibelleVte" type="string">
+      <column length="100" name="bar_libelle_vte">
+        <comment>libelle famille vente</comment>
+      </column>
+    </property>
+    <property name="barDateDebut" type="date">
+      <column default="null" name="bar_date_debut">
+        <comment>date de debut de validite</comment>
+      </column>
+    </property>
+    <property name="barDateFin" type="date">
+      <column default="null" name="bar_date_fin">
+        <comment>annee de fin de validite</comment>
+      </column>
+    </property>
+    <property name="barRemise" type="float">
+      <column default="0" name="bar_remise">
+        <comment>remise</comment>
+      </column>
+    </property>
+    <property name="barRabais" type="double">
+      <column default="0" name="bar_rabais">
+        <comment>rabais</comment>
+      </column>
+    </property>
+    <property name="barPrix" type="double">
+      <column default="0" name="bar_prix">
+        <comment>prix force</comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>

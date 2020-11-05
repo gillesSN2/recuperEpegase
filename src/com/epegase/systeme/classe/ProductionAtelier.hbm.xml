@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="ProductionAtelier" table="cmm_production_atelier">
+    <id column="ate_id" name="ateId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="ateDateCreat" type="timestamp">
+      <column name="ate_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="ateDateModif" type="timestamp">
+      <column name="ate_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="ateUserCreat" type="long">
+      <column default="0" length="15" name="ate_user_creat">
+        <comment>utilisateur de modification</comment>
+      </column>
+    </property>
+    <property name="ateUserModif" type="long">
+      <column default="0" length="15" name="ate_user_modif">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="ateCode" type="string">
+      <column length="20" name="ate_code">
+        <comment>code de service</comment>
+      </column>
+    </property>
+    <property name="ateNomFr" type="string">
+      <column length="100" name="ate_nom_FR">
+        <comment>nom du service en FR</comment>
+      </column>
+    </property>
+    <property name="ateNomUk" type="string">
+      <column length="100" name="ate_nom_UK">
+        <comment>nom du service en UK</comment>
+      </column>
+    </property>
+    <property name="ateNomSp" type="string">
+      <column length="100" name="ate_nom_SP">
+        <comment>nom du service en SP</comment>
+      </column>
+    </property>
+    <property name="ateInactif" type="integer">
+      <column default="0" length="1" name="ate_inactif">
+        <comment>0=actif 1=inactif</comment>
+      </column>
+    </property>
+    <property name="atePourcentage" type="float">
+      <column default="0" name="ate_pourcentage">
+        <comment>% de repartition par rapport au departement</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.Site" column="sit_id" lazy="false" name="site" not-null="true"/>
+    <many-to-one class="com.epegase.systeme.classe.ProductionLigne" column="lig_id" lazy="false" name="productionLigne" not-null="true"/>
+  </class>
+</hibernate-mapping>

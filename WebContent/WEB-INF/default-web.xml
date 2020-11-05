@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.0" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+
+    <init-param>
+        <param-name>development</param-name>
+        <param-value>false</param-value>
+    </init-param>
+    <init-param>
+        <param-name>genStrAsCharArray</param-name>
+        <param-value>true</param-value>
+    </init-param>
+
+    <context-param>
+        <param-name>com.sun.faces.validateXml</param-name>
+        <param-value>true</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>com.sun.faces.forceLoadConfiguration></param-name>
+        <param-value>true</param-value>
+    </context-param>
+
+    <servlet>
+        <servlet-name>default</servlet-name>
+        <servlet-class>org.apache.catalina.servlets.DefaultServlet</servlet-class>
+        <init-param>
+            <param-name>debug</param-name>
+            <param-value>0</param-value>
+        </init-param>
+        <init-param>
+            <param-name>listings</param-name>
+            <param-value>false</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet>
+        <servlet-name>jsp</servlet-name>
+        <servlet-class>org.apache.jasper.servlet.JspServlet</servlet-class>
+        <init-param>
+            <param-name>xpoweredBy</param-name>
+            <param-value>true</param-value>
+        </init-param>
+        <init-param>
+            <param-name>httpMethods</param-name>
+            <param-value>GET,POST,HEAD/param-value></param-value>
+        </init-param>
+        <init-param>
+            <param-name>system-jar-includes</param-name>
+            <param-value>
+        /lib/
+        \lib\
+        jstl-impl.jar
+        el-impl.jar
+        javax.servlet.jar
+        javax.servlet.jsp.jar
+        javax.servlet.jsp.jstl.jar
+        javax.jms.jar
+        jsf-api.jar
+        jsp-impl.jar
+        jsf-impl.jar
+        jspcaching-connector.jar
+        web-glue.jar
+            </param-value>
+        </init-param>
+        <load-on-startup>3</load-on-startup>
+    </servlet>
+
+</web-app>

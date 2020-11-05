@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="CptTabFormule" table="cpt_tab_formule">
+    <id column="tabfor_id" name="tabfor_id" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="tabforCol" type="int">
+      <column length="2" name="tabfor_col">
+        <comment>numero de colonne</comment>
+      </column>
+    </property>
+    <property name="tabforZone" type="string">
+      <column length="50" name="tabfor_zone">
+        <comment>nom de la zone</comment>
+      </column>
+    </property>
+    <property name="tabforFormule" type="text">
+      <column length="1000" name="tabfor_formule">
+        <comment>contenu de la formule</comment>
+      </column>
+    </property>
+    <property name="tabforAnalytique" type="text">
+      <column length="10000" name="tabfor_analytique">
+        <comment>filtre analytique</comment>
+      </column>
+    </property>
+    <property name="tabforSite" type="text">
+      <column length="1000" name="tabfor_site">
+        <comment>filtre site</comment>
+      </column>
+    </property>
+    <property name="tabforDepartement" type="text">
+      <column length="1000" name="tabfor_departement">
+        <comment>filtre departement</comment>
+      </column>
+    </property>
+    <property name="tabforService" type="text">
+      <column length="1000" name="tabfor_service">
+        <comment>filtre service</comment>
+      </column>
+    </property>
+    <property name="tabforRegion" type="text">
+      <column length="1000" name="tabfor_region">
+        <comment>filtre region</comment>
+      </column>
+    </property>
+    <property name="tabforSecteur" type="text">
+      <column length="1000" name="tabfor_secteur">
+        <comment>filtre secteur</comment>
+      </column>
+    </property>
+    <property name="tabforPdv" type="text">
+      <column length="1000" name="tabfor_pdv">
+        <comment>filtre pdv</comment>
+      </column>
+    </property>
+    <property name="tabforActivite" type="text">
+      <column length="1000" name="tabfor_activite">
+        <comment>filtre activite</comment>
+      </column>
+    </property>
+    <property name="tabforDossier" type="text">
+      <column length="1000" name="tabfor_dossier">
+        <comment>filtre dossier</comment>
+      </column>
+    </property>
+    <property name="tabforParc" type="text">
+      <column length="1000" name="tabfor_parc">
+        <comment>filtre parc</comment>
+      </column>
+    </property>
+    <property name="tabforBudget" type="text">
+      <column length="1000" name="tabfor_budget">
+        <comment>filtre budget</comment>
+      </column>
+    </property>
+    <property name="tabforSolde" type="int">
+      <column default="0" length="1" name="tabfor_solde">
+        <comment>0=tout solde 1=solde crediteur 2=solde debiteur 3=mvts debiteur 4=mvts crediteur 5=saisie numerique 6=saisie texte 7=saisie liste</comment>
+      </column>
+    </property>
+    <property name="tabforPeriode" type="int">
+      <column default="0" name="tabfor_periode">
+        <comment>periode prioritaire par rapport à la periode de la colonne</comment>
+      </column>
+    </property>
+    <property name="tabforInactif" type="int">
+      <column default="0" name="tabfor_inactif">
+        <comment>0=actif 1=inactif</comment>
+      </column>
+    </property>
+    <property length="20" name="tabforOldId" type="long">
+      <column default="0" name="tabfor_old_id">
+        <comment>l ancien id cle etrangere </comment>
+      </column>
+    </property>
+    <property name="tabforTypeReglement" type="integer">
+      <column default="0" length="1" name="tabfor_type_reglement">
+        <comment>type de reglement espece, cheque, virement...</comment>
+      </column>
+    </property>
+    <property name="tabforSens" type="integer">
+      <column default="0" length="1" name="tabfor_sens">
+        <comment>sens 0=debit 1=credit</comment>
+      </column>
+    </property>
+    <property name="tabforNature" type="integer">
+      <column default="0" length="1" name="tabfor_nature">
+        <comment>nature du document origine 10=da 11=cotation 12=bc 13=reception 14=retour 15=facture 16=avoir 17=note debit 18=frais 19=collecte 20=besoin 21=devis 22=BC 23=BL 24=retour 25=facture 26=avoir 27=note debit 28=chargement</comment>
+      </column>
+    </property>
+    <property name="tabforCategorie" type="integer">
+      <column default="0" length="1" name="tabfor_categorie">
+        <comment>0=fournisseurs 20=clients 30=patients 40=eleves 62=bons de sortie 63=bons entree 64=virement interne 80=salarie</comment>
+      </column>
+    </property>
+    <property name="tabforCpteDest" type="string">
+      <column length="20" name="tabfor_cpte_dest">
+        <comment>compte des destinataires</comment>
+      </column>
+    </property>
+    <property name="tabforNatureSalarie" type="string">
+      <column length="250" name="tabfor_nature_salarie">
+        <comment>nature des salaries</comment>
+      </column>
+    </property>
+    <property name="tabforFeuilleSalarie" type="string">
+      <column length="20" name="tabfor_feuille_salarie">
+        <comment>feuille des salaries</comment>
+      </column>
+    </property>
+    <property name="tabforEtatSalarie" type="integer">
+      <column default="0" name="tabfor_etat_salarie">
+        <comment>etat des salaries</comment>
+      </column>
+    </property>
+    <property name="tabforTypeSalarie" type="integer">
+      <column default="0" name="tabfor_type_salarie">
+        <comment>0=interne 1=refacture</comment>
+      </column>
+    </property>
+    <property name="tabforClassementSalarie" type="string">
+      <column length="20" name="tabfor_classement_salarie">
+        <comment>classement des salaries</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.CptTabElement" column="tabele_id" lazy="false" name="cptTabElement" not-null="true"/>
+  </class>
+</hibernate-mapping>

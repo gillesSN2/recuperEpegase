@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="ChargementLigne" table="vte_chargement_ligne">
+    <id column="chalig_id" name="chaligId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="chaligIdBes" type="long">
+      <column default="0" length="15" name="chalig_id_bes">
+        <comment>id de la ligne du besoin</comment>
+      </column>
+    </property>
+    <property name="chaligIdBcm" type="long">
+      <column default="0" length="15" name="chalig_id_bcm">
+        <comment>id de la ligne de la commande</comment>
+      </column>
+    </property>
+    <property name="chaligOrdre" type="integer">
+      <column default="0" length="15" name="chalig_ordre">
+        <comment>numero ordre</comment>
+      </column>
+    </property>
+    <property name="chaligCode" type="string">
+      <column length="20" name="chalig_code">
+        <comment>code produit</comment>
+      </column>
+    </property>
+    <property name="chaligFamille" type="string">
+      <column length="121" name="chalig_famille">
+        <comment>famille vente</comment>
+      </column>
+    </property>
+    <property name="chaligLibelle" type="text">
+      <column name="chalig_libelle">
+        <comment>libelle produit</comment>
+      </column>
+    </property>
+    <property name="chaligGenerique" type="integer">
+      <column default="0" name="chalig_generique">
+        <comment>generique</comment>
+      </column>
+    </property>
+    <property name="chaligReference" type="string">
+      <column length="20" name="chalig_reference">
+        <comment>reference produit</comment>
+      </column>
+    </property>
+    <property name="chaligTaxe" type="string">
+      <column length="20" name="chalig_taxe">
+        <comment>code taxe</comment>
+      </column>
+    </property>
+    <property name="chaligTauxTaxe" type="float">
+      <column default="0" name="chalig_taux_taxe">
+        <comment>taux de taxe</comment>
+      </column>
+    </property>
+    <property name="chaligUnite" type="string">
+      <column length="30" name="chalig_unite">
+        <comment>unite produit</comment>
+      </column>
+    </property>
+    <property name="chaligCondition" type="string">
+      <column length="121" name="chalig_condition">
+        <comment>conditionnement produit</comment>
+      </column>
+    </property>
+    <property name="chaligDescription" type="string">
+      <column length="20" name="chalig_description">
+        <comment>description conditionnement produit</comment>
+      </column>
+    </property>
+    <property name="chaligCasier" type="string">
+      <column length="20" name="chalig_casier">
+        <comment>casier rangement</comment>
+      </column>
+    </property>
+    <property name="chaligStock" type="integer">
+      <column default="0" name="chalig_stock">
+        <comment>mode gestion stock</comment>
+      </column>
+    </property>
+    <property name="chaligDepotCharg" type="string">
+      <column length="20" name="chalig_depot_charg">
+        <comment>depot chargement</comment>
+      </column>
+    </property>
+    <property name="chaligQteDem" type="float">
+      <column default="0" name="chalig_qte_dem">
+        <comment>quantite demandee</comment>
+      </column>
+    </property>
+    <property name="chaligQteCharg" type="float">
+      <column default="0" name="chalig_qte_charg">
+        <comment>quantite de chargement</comment>
+      </column>
+    </property>
+    <property name="chaligPu" type="double">
+      <column default="0" name="chalig_pu">
+        <comment>prix unitaire</comment>
+      </column>
+    </property>
+    <property name="chaligTauxRemise" type="float">
+      <column default="0" name="chalig_taux_remise">
+        <comment>taux de remise</comment>
+      </column>
+    </property>
+    <property name="chaligRabais" type="double">
+      <column default="0" name="chalig_rabais">
+        <comment>valeur du rabais</comment>
+      </column>
+    </property>
+    <property name="chaligPuRem" type="double">
+      <column default="0" name="chalig_pu_rem">
+        <comment>prix unitaire apres remise</comment>
+      </column>
+    </property>
+    <property name="chaligPuTtc" type="double">
+      <column default="0" name="chalig_pu_ttc">
+        <comment>prix unitaire Ttc avant remise</comment>
+      </column>
+    </property>
+    <property name="chaligPuRemTtc" type="double">
+      <column default="0" name="chalig_pu_rem_ttc">
+        <comment>prix unitaire Ttc apres remise</comment>
+      </column>
+    </property>
+    <property name="chaligPt" type="double">
+      <column default="0" name="chalig_pt">
+        <comment>prix total ht</comment>
+      </column>
+    </property>
+    <property name="chaligTva" type="double">
+      <column default="0" name="chalig_tva">
+        <comment>total taxe</comment>
+      </column>
+    </property>
+    <property name="chaligTc" type="double">
+      <column default="0" name="chalig_tc">
+        <comment>total taxe complementaire</comment>
+      </column>
+    </property>
+    <property name="chaligTtc" type="double">
+      <column default="0" name="chalig_ttc">
+        <comment>total ttc</comment>
+      </column>
+    </property>
+    <property name="chaligPump" type="double">
+      <column default="0" name="chalig_pump">
+        <comment>prix unitaire moyen pondere</comment>
+      </column>
+    </property>
+    <property name="chaligEchelle" type="integer">
+      <column default="0" name="chalig_echelle">
+        <comment>echelle de la ligne</comment>
+      </column>
+    </property>
+    <property name="chaligQteFacture" type="float">
+      <column default="0" name="chalig_qte_facture">
+        <comment>quantite facture</comment>
+      </column>
+    </property>
+    <property name="chaligQteDon" type="float">
+      <column default="0" name="chalig_qte_don">
+        <comment>quantite don</comment>
+      </column>
+    </property>
+    <property name="chaligQteAvoir" type="float">
+      <column default="0" name="chalig_qte_avoir">
+        <comment>quantite avoir</comment>
+      </column>
+    </property>
+    <property name="chaligQteRetour" type="float">
+      <column default="0" name="chalig_qte_retour">
+        <comment>quantite retour</comment>
+      </column>
+    </property>
+    <property name="chaligQteNconforme" type="float">
+      <column default="0" name="chalig_qte_nconforme">
+        <comment>quantite non conforme</comment>
+      </column>
+    </property>
+    <property name="chaligQteDefectueux" type="float">
+      <column default="0" name="chalig_qte_defectueux">
+        <comment>quantite percee, cassee</comment>
+      </column>
+    </property>
+    <property name="chaligQtePerime" type="float">
+      <column default="0" name="chalig_qte_perime">
+        <comment>quantite perimee</comment>
+      </column>
+    </property>
+    <property name="chaligQteManquant" type="float">
+      <column default="0" name="chalig_qte_manquant">
+        <comment>quantite manquant usine</comment>
+      </column>
+    </property>
+    <property name="chaligQteReprise" type="float">
+      <column default="0" name="chalig_qte_reprise">
+        <comment>quantite reprise</comment>
+      </column>
+    </property>
+    <property name="chaligQteRamene" type="float">
+      <column default="0" name="chalig_qte_ramene">
+        <comment>quantite ramenee par le commercial</comment>
+      </column>
+    </property>
+    <property name="chaligQteEcart" type="float">
+      <column default="0" name="chalig_qte_ecart">
+        <comment>quantite ecart final</comment>
+      </column>
+    </property>
+    <property name="chaligQteUtil" type="float">
+      <column default="0" name="chalig_qte_util">
+        <comment>quantite utilisee (valable pour le stock)</comment>
+      </column>
+    </property>
+    <property name="chaligLong" type="float">
+      <column default="0" name="chalig_long">
+        <comment>longueur</comment>
+      </column>
+    </property>
+    <property name="chaligLarg" type="float">
+      <column default="0" name="chalig_larg">
+        <comment>largeur</comment>
+      </column>
+    </property>
+    <property name="chaligHaut" type="float">
+      <column default="0" name="chalig_haut">
+        <comment>hauteur</comment>
+      </column>
+    </property>
+    <property name="chaligDiam" type="float">
+      <column default="0" name="chalig_diam">
+        <comment>diametre</comment>
+      </column>
+    </property>
+    <property name="chaligNb" type="float">
+      <column default="0" name="chalig_nb">
+        <comment>nombre de piece</comment>
+      </column>
+    </property>
+    <property name="chaligPoidsNet" type="float">
+      <column default="0" name="chalig_poidsNet">
+        <comment>poids net</comment>
+      </column>
+    </property>
+    <property name="chaligPoidsBrut" type="float">
+      <column default="0" name="chalig_poidsBrut">
+        <comment>poids brut</comment>
+      </column>
+    </property>
+    <property name="chaligVolume" type="float">
+      <column default="0" name="chalig_volume">
+        <comment>volume</comment>
+      </column>
+    </property>
+    <property name="chaligDateChargement" type="date">
+      <column name="chalig_date_chargement">
+        <comment>date chargement ou rechargement</comment>
+      </column>
+    </property>
+    <property name="chaligRechargement" type="integer">
+      <column default="0" name="chalig_rechargement">
+        <comment>0=chargement 1=rechargement</comment>
+      </column>
+    </property>
+    <property name="chaligNombreRechargement" type="integer">
+      <column default="0" name="chalig_nombre_rechargement">
+        <comment>nmbre de rechargement</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ChargementEntete" column="chamob_id" lazy="false" name="ChargementEntete" not-null="true"/>
+  </class>
+</hibernate-mapping>

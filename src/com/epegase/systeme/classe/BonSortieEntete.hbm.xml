@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="BonSortieEntete" table="ach_bon_sortie_entete">
+    <id column="bou_id" name="bouId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="bouDateCreat" type="timestamp">
+      <column name="bou_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="bouDateModif" type="timestamp">
+      <column name="bou_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="bouIdCreateur" type="long">
+      <column default="0" length="15" name="bou_id_createur">
+        <comment>id user createur</comment>
+      </column>
+    </property>
+    <property name="bouNomCreateur" type="string">
+      <column length="100" name="bou_nom_createur">
+        <comment>nom du createur</comment>
+      </column>
+    </property>
+    <property name="bouIdModif" type="long">
+      <column default="0" length="15" name="bou_id_modif">
+        <comment>id user de modification</comment>
+      </column>
+    </property>
+    <property name="bouNomModif" type="string">
+      <column length="100" name="bou_nom_modif">
+        <comment>nom user de modification</comment>
+      </column>
+    </property>
+    <property index="true" name="bouDate" type="timestamp">
+      <column index="true" name="bou_date">
+        <comment>date inventaire</comment>
+      </column>
+    </property>
+    <property index="true" name="bouNum" type="string">
+      <column index="true" length="20" name="bou_num">
+        <comment>numero inventaire</comment>
+      </column>
+    </property>
+    <property index="true" name="bouDepot" type="string">
+      <column index="true" length="20" name="bou_depot">
+        <comment>depot inventorie</comment>
+      </column>
+    </property>
+    <property name="bouNomEquipe" type="string">
+      <column length="100" name="bou_nom_equipe">
+        <comment>nom equipe</comment>
+      </column>
+    </property>
+    <property name="bouIdEquipe" type="long">
+      <column default="0" length="15" name="bou_id_equipe">
+        <comment>id equipe</comment>
+      </column>
+    </property>
+    <property name="bouNomResponsable" type="string">
+      <column length="100" name="bou_nom_responsable">
+        <comment>nom du commercial</comment>
+      </column>
+    </property>
+    <property name="bouIdResponsable" type="long">
+      <column default="0" name="bou_id_responsable">
+        <comment>id du commercial</comment>
+      </column>
+    </property>
+    <property name="bouNomDemandeur" type="string">
+      <column length="100" name="bou_nom_demandeur">
+        <comment>nom du demandeur</comment>
+      </column>
+    </property>
+    <property name="bouIdDemandeur" type="long">
+      <column default="0" name="bou_id_demandeur">
+        <comment>id du demandeur</comment>
+      </column>
+    </property>
+    <property name="bouSerie" type="string">
+      <column length="4" name="bou_serie">
+        <comment>serie </comment>
+      </column>
+    </property>
+    <property name="bouObject" type="string">
+      <column length="100" name="bou_object">
+        <comment>objet</comment>
+      </column>
+    </property>
+    <property name="bouTotPump" type="double">
+      <column default="0" name="bou_tot_pump">
+        <comment>total ttc</comment>
+      </column>
+    </property>
+    <property name="bouActivite" type="text">
+      <column name="bou_activite">
+        <comment>code activite</comment>
+      </column>
+    </property>
+    <property name="bouSite" type="string">
+      <column length="121" name="bou_site">
+        <comment>code site</comment>
+      </column>
+    </property>
+    <property name="bouDepartement" type="string">
+      <column length="121" name="bou_departement">
+        <comment>code departement</comment>
+      </column>
+    </property>
+    <property name="bouService" type="string">
+      <column length="121" name="bou_service">
+        <comment>code service</comment>
+      </column>
+    </property>
+    <property name="bouRegion" type="string">
+      <column length="121" name="bou_region">
+        <comment>code region</comment>
+      </column>
+    </property>
+    <property name="bouSecteur" type="string">
+      <column length="121" name="bou_secteur">
+        <comment>code secteur</comment>
+      </column>
+    </property>
+    <property name="bouPdv" type="string">
+      <column length="121" name="bou_pdv">
+        <comment>code point de vente</comment>
+      </column>
+    </property>
+    <property name="bouAnal1" type="string">
+      <column length="121" name="bou_anal1">
+        <comment>code analytique 1 chantier</comment>
+      </column>
+    </property>
+    <property name="bouAnal2" type="string">
+      <column length="121" name="bou_anal2">
+        <comment>code analytique 2 parc</comment>
+      </column>
+    </property>
+    <property name="bouAnal4" type="string">
+      <column length="121" name="bou_anal4">
+        <comment>code analytique 4 dossier</comment>
+      </column>
+    </property>
+    <property name="bouInfo1" type="string">
+      <column length="100" name="bou_info1">
+        <comment>info 1</comment>
+      </column>
+    </property>
+    <property name="bouInfo2" type="string">
+      <column length="100" name="bou_info2">
+        <comment>info 2</comment>
+      </column>
+    </property>
+    <property name="bouInfo3" type="string">
+      <column length="100" name="bou_info3">
+        <comment>info 3</comment>
+      </column>
+    </property>
+    <property name="bouInfo4" type="string">
+      <column length="100" name="bou_info4">
+        <comment>info 4</comment>
+      </column>
+    </property>
+    <property name="bouInfo5" type="string">
+      <column length="100" name="bou_info5">
+        <comment>info 5</comment>
+      </column>
+    </property>
+    <property name="bouInfo6" type="string">
+      <column length="100" name="bou_info6">
+        <comment>info 6</comment>
+      </column>
+    </property>
+    <property name="bouInfo7" type="string">
+      <column length="100" name="bou_info7">
+        <comment>info 7</comment>
+      </column>
+    </property>
+    <property name="bouInfo8" type="string">
+      <column length="100" name="bou_info8">
+        <comment>info 8</comment>
+      </column>
+    </property>
+    <property name="bouInfo9" type="string">
+      <column length="100" name="bou_info9">
+        <comment>info 9</comment>
+      </column>
+    </property>
+    <property name="bouInfo10" type="string">
+      <column length="100" name="bou_info10">
+        <comment>info 10</comment>
+      </column>
+    </property>
+    <property name="bouDateImp" type="date">
+      <column name="bou_date_imp">
+        <comment>date impression</comment>
+      </column>
+    </property>
+    <property name="bouModeleImp" type="string">
+      <column length="50" name="bou_modele_imp">
+        <comment>nom jasper du modele</comment>
+      </column>
+    </property>
+    <property name="bouEtatVal" type="integer">
+      <column default="0" length="1" name="bou_etat_val">
+        <comment>0=sans validation 1=avec validation</comment>
+      </column>
+    </property>
+    <property name="bouGele" type="integer">
+      <column default="0" length="1" name="bou_gele">
+        <comment>0=non gele 1=gele</comment>
+      </column>
+    </property>
+    <property index="true" name="bouEtat" type="integer">
+      <column default="0" index="true" length="1" name="bou_etat">
+        <comment>0=En cours 1=valide 2=gele 3=annule</comment>
+      </column>
+    </property>
+    <property name="bouDateValide" type="date">
+      <column name="bou_date_valide">
+        <comment>date de validation</comment>
+      </column>
+    </property>
+    <property name="bouPosSignature" type="integer">
+      <column default="0" length="1" name="bou_pos_signature">
+        <comment>nb de signature ayant statue</comment>
+      </column>
+    </property>
+    <property name="bouDateAnnule" type="date">
+      <column name="bou_date_annule">
+        <comment>date annulation</comment>
+      </column>
+    </property>
+    <property name="bouMotifAnnule" type="string">
+      <column length="50" name="bou_motif_annule">
+        <comment>motif annulation</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ExercicesAchats" column="exeach_id" lazy="false" name="exercicesAchats" not-null="true"/>
+    <many-to-one class="com.epegase.systeme.classe.Users" column="usr_id" lazy="false" name="users" not-null="false"/>
+  </class>
+</hibernate-mapping>

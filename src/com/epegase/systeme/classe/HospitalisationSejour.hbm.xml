@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="HospitalisationSejour" table="med_hospitalisation_sejour">
+    <id column="hossej_id" name="hossejId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="hossejDateCreat" type="timestamp">
+      <column default="null" name="hossej_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="hossejDateModif" type="timestamp">
+      <column default="null" name="hossej_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="hossejUserCreat" type="long">
+      <column default="0" name="hossej_user_creat">
+        <comment>user de creation</comment>
+      </column>
+    </property>
+    <property name="hossejUserModif" type="long">
+      <column default="0" name="hossej_user_modif">
+        <comment>user de modification</comment>
+      </column>
+    </property>
+    <property name="hossejIdMedecin" type="long">
+      <column default="0" name="hossej_id_medecin">
+        <comment>id medecin</comment>
+      </column>
+    </property>
+    <property name="hossejMedecin" type="string">
+      <column length="100" name="hossej_medecin">
+        <comment>nom medecin</comment>
+      </column>
+    </property>
+    <property name="hossejService" type="string">
+      <column length="121" name="hossej_service">
+        <comment>service</comment>
+      </column>
+    </property>
+    <property name="hossejLit" type="string">
+      <column length="20" name="hossej_lit">
+        <comment>code lit</comment>
+      </column>
+    </property>
+    <property name="hossejLibelle" type="string">
+      <column length="100" name="hossej_libelle">
+        <comment>libelle produit</comment>
+      </column>
+    </property>
+    <property name="hossejDateEntree" type="timestamp">
+      <column default="null" name="hossej_date_entree">
+        <comment>date entree</comment>
+      </column>
+    </property>
+    <property name="hossejDateSortie" type="timestamp">
+      <column default="null" name="hossej_date_sortie">
+        <comment>date sortie</comment>
+      </column>
+    </property>
+    <property name="hossejNbJourTheo" type="integer">
+      <column default="0" name="hossej_nb_jour_theo">
+        <comment>nombre de jour theorique</comment>
+      </column>
+    </property>
+    <property name="hossejNbJour" type="integer">
+      <column default="0" name="hossej_nb_jour">
+        <comment>nombre de jour reel</comment>
+      </column>
+    </property>
+    <property name="hossejMotifEntree" type="string">
+      <column length="2" name="hossej_motif_entree">
+        <comment>motid entree fichier xml</comment>
+      </column>
+    </property>
+    <property name="hossejProvenance" type="string">
+      <column length="2" name="hossej_provenance">
+        <comment>provenance</comment>
+      </column>
+    </property>
+    <property name="hossejMotifSortie" type="string">
+      <column length="2" name="hossej_motif_sortie">
+        <comment>motid sortie fichier xml</comment>
+      </column>
+    </property>
+    <property name="hossejDestination" type="string">
+      <column length="2" name="hossej_destination">
+        <comment>destination</comment>
+      </column>
+    </property>
+    <property name="hossejCoef" type="float">
+      <column default="0" name="hossej_coef">
+        <comment>coefficient</comment>
+      </column>
+    </property>
+    <property name="hossejPu" type="double">
+      <column default="0" name="hossej_pu">
+        <comment>prix unitaire</comment>
+      </column>
+    </property>
+    <property name="hossejPuCnamgs" type="double">
+      <column default="0" name="hossej_pu_cnamgs">
+        <comment>prix unitaire cnamgs</comment>
+      </column>
+    </property>
+    <property name="hossejPuAssurance" type="double">
+      <column default="0" name="hossej_pu_assurance">
+        <comment>prix unitaire assurance</comment>
+      </column>
+    </property>
+    <property name="hossejCodeTva" type="string">
+      <column length="20" name="hossej_code_tva">
+        <comment>code de tva</comment>
+      </column>
+    </property>
+    <property name="hossejTauxTva" type="float">
+      <column default="0" name="hossej_taux_tva">
+        <comment>taux de tva</comment>
+      </column>
+    </property>
+    <property name="hossejRemise" type="float">
+      <column default="0" name="hossej_remise">
+        <comment>%remise</comment>
+      </column>
+    </property>
+    <property name="hossejPuRem" type="double">
+      <column default="0" name="hossej_pu_rem">
+        <comment>prix apres remise</comment>
+      </column>
+    </property>
+    <property name="hossejRabais" type="double">
+      <column default="0" name="hossej_rabais">
+        <comment>rabais</comment>
+      </column>
+    </property>
+    <property name="hossejPatientHt" type="double">
+      <column default="0" name="hossej_patient_ht">
+        <comment>part ht patient</comment>
+      </column>
+    </property>
+    <property name="hossejPatientTaxe" type="double">
+      <column default="0" name="hossej_patient_taxe">
+        <comment>part taxe patient</comment>
+      </column>
+    </property>
+    <property name="hossejSocieteHt" type="double">
+      <column default="0" name="hossej_societe_ht">
+        <comment>part ht societe</comment>
+      </column>
+    </property>
+    <property name="hossejSocieteTaxe" type="double">
+      <column default="0" name="hossej_societe_taxe">
+        <comment>part taxe societe</comment>
+      </column>
+    </property>
+    <property name="hossejAssuranceHt" type="double">
+      <column default="0" name="hossej_assurance_ht">
+        <comment>part ht assurance</comment>
+      </column>
+    </property>
+    <property name="hossejAssuranceTaxe" type="double">
+      <column default="0" name="hossej_assurance_taxe">
+        <comment>part taxe assurance</comment>
+      </column>
+    </property>
+    <property name="hossejComplementaireHt" type="double">
+      <column default="0" name="hossej_complementaire_ht">
+        <comment>part ht comllementaire</comment>
+      </column>
+    </property>
+    <property name="hossejComplementaireTaxe" type="double">
+      <column default="0" name="hossej_complementaire_taxe">
+        <comment>part taxe complementaire</comment>
+      </column>
+    </property>
+    <property name="hossejTotal" type="double">
+      <column default="0" name="hossej_total">
+        <comment>total ht</comment>
+      </column>
+    </property>
+    <property name="hossejTaxe" type="double">
+      <column default="0" name="hossej_taxe">
+        <comment>total taxe</comment>
+      </column>
+    </property>
+    <property name="hossejCodeDiag1" type="string">
+      <column length="20" name="hossej_code_diag1">
+        <comment>code diagnostic principal</comment>
+      </column>
+    </property>
+    <property name="hossejCodeDiag2" type="string">
+      <column length="20" name="hossej_code_diag2">
+        <comment>code diagnostic relie</comment>
+      </column>
+    </property>
+    <property name="hossejCodeDiag11" type="string">
+      <column length="20" name="hossej_code_diag11">
+        <comment>code diagnostic associe 1</comment>
+      </column>
+    </property>
+    <property name="hossejCodeDiag12" type="string">
+      <column length="20" name="hossej_code_diag12">
+        <comment>code diagnostic associe 2</comment>
+      </column>
+    </property>
+    <property name="hossejCodeDiag13" type="string">
+      <column length="20" name="hossej_code_diag13">
+        <comment>code diagnostic associe 3</comment>
+      </column>
+    </property>
+    <property name="hossejCodeDiag14" type="string">
+      <column length="20" name="hossej_code_diag14">
+        <comment>code diagnostic associe 4</comment>
+      </column>
+    </property>
+    <property name="hossejCodeDiag15" type="string">
+      <column length="20" name="hossej_code_diag15">
+        <comment>code diagnostic associe 5</comment>
+      </column>
+    </property>
+    <property name="hossejPoidsEntree" type="integer">
+      <column default="0" name="hossej_poids_entree">
+        <comment>poids entree pour les nourissons en gramme</comment>
+      </column>
+    </property>
+    <property name="hossejIndiceIgs" type="integer">
+      <column default="0" name="hossej_indice_igs">
+        <comment>indice de gravite isg</comment>
+      </column>
+    </property>
+    <property name="hossejNbSeances" type="integer">
+      <column default="0" name="hossej_nb_seances">
+        <comment>nombre de seances</comment>
+      </column>
+    </property>
+    <property name="hossejHospitAvant" type="boolean">
+      <column default="false" name="hossej_hospit_avant">
+        <comment>true si hospit30 jours avant</comment>
+      </column>
+    </property>
+    <property name="hossejHospit48" type="boolean">
+      <column default="false" name="hossej_hospit_48">
+        <comment>true si duree moins de 48 heures</comment>
+      </column>
+    </property>
+    <property name="hossejEvolution" type="text">
+      <column name="hossej_evolution">
+        <comment>evolution</comment>
+      </column>
+    </property>
+    <property name="hossejObservation" type="text">
+      <column name="hossej_observation">
+        <comment>observation</comment>
+      </column>
+    </property>
+    <property name="hossejRegPatient" type="double">
+      <column default="0" name="hossej_reg_patient">
+        <comment>reglement patient</comment>
+      </column>
+    </property>
+    <property name="hossejRegTiers" type="double">
+      <column default="0" name="hossej_reg_tiers">
+        <comment>reglement tous tiers</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.Patients" column="pat_id" lazy="false" name="Patients" not-null="true"/>
+    <many-to-one class="com.epegase.systeme.classe.HospitalisationEntete" column="hos_id" lazy="false" name="HospitalisationEntete" not-null="true"/>
+  </class>
+</hibernate-mapping>

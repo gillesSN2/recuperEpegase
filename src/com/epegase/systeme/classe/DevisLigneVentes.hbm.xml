@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="DevisLigneVentes" table="vte_devis_ligne">
+    <id column="dvslig_id" name="dvsligId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="dvsligOrdre" type="integer">
+      <column default="0" name="dvslig_ordre">
+        <comment>ordre des lignes</comment>
+      </column>
+    </property>
+    <property name="dvsligCode" type="string">
+      <column length="20" name="dvslig_code">
+        <comment>code produit</comment>
+      </column>
+    </property>
+    <property name="dvsligProcess" type="integer">
+      <column default="0" name="dvslig_process">
+        <comment>0= produit sans process 1=produit avec process</comment>
+      </column>
+    </property>
+    <property name="dvsligPrintTexte" type="integer">
+      <column default="0" name="dvslig_print_texte">
+        <comment>0= avec impresion texte 1=sans impression texte</comment>
+      </column>
+    </property>
+    <property name="dvsligFamille" type="string">
+      <column length="121" name="dvslig_famille">
+        <comment>famille vente</comment>
+      </column>
+    </property>
+    <property name="dvsligLibelle" type="text">
+      <column length="500" name="dvslig_libelle">
+        <comment>libelle produit</comment>
+      </column>
+    </property>
+    <property name="dvsligComplement" type="text">
+      <column length="500" name="dvslig_complement">
+        <comment>descriptif complementaire</comment>
+      </column>
+    </property>
+    <property name="dvsligReference" type="string">
+      <column length="20" name="dvslig_reference">
+        <comment>reference produit</comment>
+      </column>
+    </property>
+    <property name="dvsligTaxe" type="string">
+      <column length="20" name="dvslig_taxe">
+        <comment>code taxe</comment>
+      </column>
+    </property>
+    <property name="dvsligTauxTaxe" type="float">
+      <column default="0" name="dvslig_taux_taxe">
+        <comment>taux de taxe</comment>
+      </column>
+    </property>
+    <property name="dvsligUnite" type="string">
+      <column length="30" name="dvslig_unite">
+        <comment>unite produit</comment>
+      </column>
+    </property>
+    <property name="dvsligCondition" type="string">
+      <column length="121" name="dvslig_condition">
+        <comment>conditionnement produit</comment>
+      </column>
+    </property>
+    <property name="dvsligDescription" type="string">
+      <column length="20" name="dvslig_description">
+        <comment>description conditionnement produit</comment>
+      </column>
+    </property>
+    <property name="dvsligEchelle" type="integer">
+      <column default="0" name="dvslig_echelle">
+        <comment>echelle de la ligne</comment>
+      </column>
+    </property>
+    <property name="dvsligQte" type="float">
+      <column default="0" name="dvslig_qte">
+        <comment>quantite</comment>
+      </column>
+    </property>
+    <property name="dvsligLong" type="float">
+      <column default="0" name="dvslig_long">
+        <comment>longueur</comment>
+      </column>
+    </property>
+    <property name="dvsligLarg" type="float">
+      <column default="0" name="dvslig_larg">
+        <comment>largeur</comment>
+      </column>
+    </property>
+    <property name="dvsligHaut" type="float">
+      <column default="0" name="dvslig_haut">
+        <comment>hauteur</comment>
+      </column>
+    </property>
+    <property name="dvsligDiam" type="float">
+      <column default="0" name="dvslig_diam">
+        <comment>diametre</comment>
+      </column>
+    </property>
+    <property name="dvsligNb" type="float">
+      <column default="0" name="dvslig_nb">
+        <comment>nombre de piece</comment>
+      </column>
+    </property>
+    <property name="dvsligPrixKg" type="double">
+      <column default="0" name="dvslig_prix_Kg">
+        <comment>prix au kg</comment>
+      </column>
+    </property>
+    <property name="dvsligPoidsNet" type="float">
+      <column default="0" name="dvslig_poidsNet">
+        <comment>poids net</comment>
+      </column>
+    </property>
+    <property name="dvsligPoidsBrut" type="float">
+      <column default="0" name="dvslig_poidsBrut">
+        <comment>poids brut</comment>
+      </column>
+    </property>
+    <property name="dvsligVolume" type="float">
+      <column default="0" name="dvslig_volume">
+        <comment>volume</comment>
+      </column>
+    </property>
+    <property name="dvsligQteUtil" type="float">
+      <column default="0" name="dvslig_qte_util">
+        <comment>quantite utilisee (valable pour le stock)</comment>
+      </column>
+    </property>
+    <property name="dvsligStock" type="integer">
+      <column default="0" name="dvslig_stock">
+        <comment>mode de gestion du stock</comment>
+      </column>
+    </property>
+    <property name="dvsligDepot" type="string">
+      <column length="20" name="dvslig_depot">
+        <comment>code depot</comment>
+      </column>
+    </property>
+    <property name="dvsligDevise" type="string">
+      <column length="3" name="dvslig_devise">
+        <comment>code devise</comment>
+      </column>
+    </property>
+    <property name="dvsligPu" type="double">
+      <column default="0" name="dvslig_pu">
+        <comment>prix unitaire HT avant remise</comment>
+      </column>
+    </property>
+    <property name="dvsligTauxRemise" type="float">
+      <column default="0" name="dvslig_taux_remise">
+        <comment>taux de remise</comment>
+      </column>
+    </property>
+    <property name="dvsligRabais" type="double">
+      <column default="0" name="dvslig_rabais">
+        <comment>valeur du rabais</comment>
+      </column>
+    </property>
+    <property name="dvsligPuRem" type="double">
+      <column default="0" name="dvslig_pu_rem">
+        <comment>prix unitaire Ht apres remise</comment>
+      </column>
+    </property>
+    <property name="dvsligPuTtc" type="double">
+      <column default="0" name="dvslig_pu_ttc">
+        <comment>prix unitaire Ttc avant remise</comment>
+      </column>
+    </property>
+    <property name="dvsligPuRemTtc" type="double">
+      <column default="0" name="dvslig_pu_rem_ttc">
+        <comment>prix unitaire Ttc apres remise</comment>
+      </column>
+    </property>
+    <property name="dvsligPt" type="double">
+      <column default="0" name="dvslig_pt">
+        <comment>prix total ht</comment>
+      </column>
+    </property>
+    <property name="dvsligTva" type="double">
+      <column default="0" name="dvslig_tva">
+        <comment>total taxe</comment>
+      </column>
+    </property>
+    <property name="dvsligTc" type="double">
+      <column default="0" name="dvslig_tc">
+        <comment>total taxe complementaire</comment>
+      </column>
+    </property>
+    <property name="dvsligTtc" type="double">
+      <column default="0" name="dvslig_ttc">
+        <comment>total ttc</comment>
+      </column>
+    </property>
+    <property name="dvsligPump" type="double">
+      <column default="0" name="dvslig_pump">
+        <comment>prix unitaire moyen pondere unitaire</comment>
+      </column>
+    </property>
+    <property name="dvsligGroupe" type="string">
+      <column length="20" name="dvslig_groupe">
+        <comment>code du groupe</comment>
+      </column>
+    </property>
+    <property name="dvsligModeGroupe" type="integer">
+      <column default="0" name="dvslig_mode_groupe">
+        <comment>0=produit simple 1=groupe visible 2=groupe invisible 3=forfait 4=calcul auto. 5=generique</comment>
+      </column>
+    </property>
+    <property name="dvsligExcluCalcul" type="integer">
+      <column default="0" name="dvslig_exclu_calcul">
+        <comment>1 = exclu du calcul total</comment>
+      </column>
+    </property>
+    <property name="dvsligPromotion" type="string">
+      <column length="100" name="dvslig_promotion">
+        <comment>detail promotion</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.DevisEnteteVentes" column="dvs_id" lazy="false" name="devisEnteteVentes" not-null="true"/>
+  </class>
+</hibernate-mapping>

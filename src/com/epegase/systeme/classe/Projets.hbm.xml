@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="Projets" table="cmm_projet">
+    <id column="pro_id" name="proId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="proUserCreat" type="long">
+      <column name="pro_user_creat">
+        <comment>user de creation</comment>
+      </column>
+    </property>
+    <property name="proDateCreat" type="timestamp">
+      <column name="pro_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="proUserModif" type="long">
+      <column name="pro_user_modif">
+        <comment>user de creation</comment>
+      </column>
+    </property>
+    <property name="proDateModif" type="timestamp">
+      <column name="pro_date_modif">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="proIdResponsable" type="long">
+      <column name="pro_id_responsable">
+        <comment>id responsable</comment>
+      </column>
+    </property>
+    <property name="proNomResponsable" type="string">
+      <column length="100" name="pro_nom_responsable">
+        <comment>nom responsable</comment>
+      </column>
+    </property>
+    <property name="proChoixBudget" type="integer">
+      <column default="0" name="pro_choix_projet">
+        <comment>0=projet 10=budget comptable 11=budget achat</comment>
+      </column>
+    </property>
+    <property name="proCode" type="string">
+      <column length="20" name="pro_code">
+        <comment>code</comment>
+      </column>
+    </property>
+    <property name="proNomFR" type="string">
+      <column length="100" name="pro_nom_FR">
+        <comment>libelle fr</comment>
+      </column>
+    </property>
+    <property name="proNomUK" type="string">
+      <column length="100" name="pro_nom_UK">
+        <comment>libelle uk</comment>
+      </column>
+    </property>
+    <property name="proNomSP" type="string">
+      <column length="100" name="pro_nom_SP">
+        <comment>libelle sp</comment>
+      </column>
+    </property>
+    <property name="proDescription" type="text">
+      <column name="pro_description">
+        <comment>description projet</comment>
+      </column>
+    </property>
+    <property name="proInitiateur" type="string">
+      <column length="100" name="pro_initiateur">
+        <comment>initiateur ou responsable</comment>
+      </column>
+    </property>
+    <property name="proSource" type="string">
+      <column length="100" name="pro_source">
+        <comment>source</comment>
+      </column>
+    </property>
+    <property name="proDateDebut" type="date">
+      <column name="pro_date_debut">
+        <comment>date debut reel</comment>
+      </column>
+    </property>
+    <property name="proDateFin" type="date">
+      <column name="pro_date_fin">
+        <comment>date fin reel</comment>
+      </column>
+    </property>
+    <property name="proDateDebutConvention" type="date">
+      <column name="pro_date_debut_convention">
+        <comment>date debut de la convention</comment>
+      </column>
+    </property>
+    <property name="proDateFinConvention" type="date">
+      <column name="pro_date_fin_convention">
+        <comment>date fin de la convention</comment>
+      </column>
+    </property>
+    <property name="proAnnee" type="string">
+      <column length="4" name="pro_annee">
+        <comment>annee debut</comment>
+      </column>
+    </property>
+    <property name="proDuree" type="integer">
+      <column default="0" name="pro_duree">
+        <comment>duree du projet</comment>
+      </column>
+    </property>
+    <property name="proMontantDevise" type="double">
+      <column default="0" name="pro_montant_devise">
+        <comment>valeur en devise</comment>
+      </column>
+    </property>
+    <property name="proDevise" type="string">
+      <column length="3" name="pro_devise">
+        <comment>devise</comment>
+      </column>
+    </property>
+    <property name="proCoefEuro" type="float">
+      <column default="0" name="pro_coef_euro">
+        <comment>coef en euro</comment>
+      </column>
+    </property>
+    <property name="proMontantEuro" type="double">
+      <column default="0" name="pro_montant_euro">
+        <comment>valeur en euro</comment>
+      </column>
+    </property>
+    <property name="proCoefPays" type="float">
+      <column default="0" name="pro_coef_pays">
+        <comment>coef du pays</comment>
+      </column>
+    </property>
+    <property name="proMontantPays" type="double">
+      <column default="0" name="pro_montant_pays">
+        <comment>valeur en lcale</comment>
+      </column>
+    </property>
+    <property name="proNbTranche" type="integer">
+      <column default="0" name="pro_nb_tranche">
+        <comment>nombre de tranche</comment>
+      </column>
+    </property>
+    <property name="proContexte" type="text">
+      <column name="pro_contexte">
+        <comment>contexte du projet</comment>
+      </column>
+    </property>
+    <property name="proObjectif" type="text">
+      <column name="pro_objectif">
+        <comment>objectif du projet</comment>
+      </column>
+    </property>
+    <property name="proInactif" type="integer">
+      <column default="0" name="pro_inactif">
+        <comment>0=actif 1=inactif</comment>
+      </column>
+    </property>
+    <property name="proDateEcheanceDeb" type="text">
+      <column name="pro_date_echeance_deb">
+        <comment>date echeance debut</comment>
+      </column>
+    </property>
+    <property name="proDateEcheanceFin" type="text">
+      <column name="pro_date_echeance_fin">
+        <comment>date echeance fin</comment>
+      </column>
+    </property>
+    <property name="proMontantEcheance" type="text">
+      <column name="pro_montant_echeance">
+        <comment>montant echeance</comment>
+      </column>
+    </property>
+    <property name="proObsEcheance" type="text">
+      <column name="pro_obs_echeance">
+        <comment>observation echeance</comment>
+      </column>
+    </property>
+    <property name="proIdUsers" type="text">
+      <column name="pro_id_users">
+        <comment>liste des utilisateurs autorises</comment>
+      </column>
+    </property>
+  </class>
+</hibernate-mapping>

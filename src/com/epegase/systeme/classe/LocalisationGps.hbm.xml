@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="LocalisationGps" table="prc_localisation_gps">
+    <id column="locgps_id" name="locgpsId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="locgpsBalise" type="string">
+      <column length="20" name="locgps_balise">
+        <comment>code balise</comment>
+      </column>
+    </property>
+    <property name="locgpsDate" type="timestamp">
+      <column default="null" name="locgps_date">
+        <comment>date et heure evenement</comment>
+      </column>
+    </property>
+    <property name="locgpsJour" type="date">
+      <column default="null" name="locgps_jour">
+        <comment>date evenement</comment>
+      </column>
+    </property>
+    <property name="locgpsLongitude" type="float">
+      <column default="0" name="locgps_longitude">
+        <comment>longitude</comment>
+      </column>
+    </property>
+    <property name="locgpsLatitude" type="float">
+      <column default="0" name="locgps_latitude">
+        <comment>latitude</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ExercicesParc" column="exeprc_id" lazy="false" name="exercicesParc" not-null="true"/>
+    <many-to-one class="com.epegase.systeme.classe.Parc" column="prc_id" lazy="false" name="parc" not-null="true"/>
+  </class>
+</hibernate-mapping>

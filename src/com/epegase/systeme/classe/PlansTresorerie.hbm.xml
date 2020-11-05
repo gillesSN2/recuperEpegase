@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="PlansTresorerie" table="cpt_plan_tresorerie">
+    <id column="tre_id" name="treId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="treDateCreat" type="timestamp">
+      <column name="tre_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="treDateModif" type="timestamp">
+      <column name="tre_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="treUserCreat" type="long">
+      <column default="0" length="15" name="plb_user_creat">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="treUserModif" type="long">
+      <column default="0" length="15" name="plb_user_modif">
+        <comment>utilisateur de modification</comment>
+      </column>
+    </property>
+    <property name="treAnnee" type="string">
+      <column length="4" name="tre_annee">
+        <comment>Annee du budget</comment>
+      </column>
+    </property>
+    <property name="treCode" type="string">
+      <column length="20" name="tre_code">
+        <comment>code du budget</comment>
+      </column>
+    </property>
+    <property name="treLibelleFr" type="string">
+      <column length="100" name="tre_libelle_FR">
+        <comment>libelle du budget en FR</comment>
+      </column>
+    </property>
+    <property name="treLibelleUk" type="string">
+      <column length="100" name="tre_libelle_UK">
+        <comment>libelle du budget en UK</comment>
+      </column>
+    </property>
+    <property name="treLibelleSp" type="string">
+      <column length="100" name="tre_libelle_SP">
+        <comment>libelle du budget en SP</comment>
+      </column>
+    </property>
+    <property name="treCompte" type="string">
+      <column length="20" name="tre_compte">
+        <comment>compte</comment>
+      </column>
+    </property>
+    <property name="treLibelleCompte" type="string">
+      <column length="100" name="tre_libelle_compte">
+        <comment>libelle du compte</comment>
+      </column>
+    </property>
+    <property index="true" name="treProjet" type="string">
+      <column index="true" length="121" name="tre_projet">
+        <comment>code projet</comment>
+      </column>
+    </property>
+    <property name="treOrdre" type="integer">
+      <column default="0" length="1" name="tre_ordre">
+        <comment>ordre des elements</comment>
+      </column>
+    </property>
+    <property name="treType" type="integer">
+      <column default="0" length="1" name="tre_type">
+        <comment>0=encaissement 1=decaissement 2=titre 3=sous titre</comment>
+      </column>
+    </property>
+    <property name="treInactif" type="integer">
+      <column default="0" length="1" name="tre_inactif">
+        <comment>0=actif 1=inactif</comment>
+      </column>
+    </property>
+    <property name="treIdUsers" type="text">
+      <column name="tre_id_users">
+        <comment>liste des users autorises</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ExercicesComptable" column="execpt_id" name="exercicesComptable" not-null="true"/>
+  </class>
+</hibernate-mapping>

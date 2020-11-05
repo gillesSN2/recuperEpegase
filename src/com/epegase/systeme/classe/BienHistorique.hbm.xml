@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="BienHistorique" table="imm_bien_historique">
+    <id column="biehis_id" name="biehisId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="biehisDateCreat" type="timestamp">
+      <column default="NULL" name="biehis_date_creat">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="biehisDateModif" type="timestamp">
+      <column default="NULL" name="biehis_date_modif">
+        <comment>date de modification</comment>
+      </column>
+    </property>
+    <property name="biehisUserCreat" type="long">
+      <column default="0" length="15" name="biehis_user_creat">
+        <comment>utilisateur de creation</comment>
+      </column>
+    </property>
+    <property name="biehisUserModif" type="long">
+      <column default="0" length="15" name="biehis_user_modif">
+        <comment>utilisateur de modification</comment>
+      </column>
+    </property>
+    <property name="biehisDateVente" type="date">
+      <column default="null" name="biehis_date_vente">
+        <comment>date de la vente</comment>
+      </column>
+    </property>
+    <property name="biehisMontant" type="double">
+      <column default="0" name="biehis_montant">
+        <comment>montant de la vente</comment>
+      </column>
+    </property>
+    <property name="biehisEtude" type="string">
+      <column length="100" name="biehis_etude">
+        <comment>etude notairiale</comment>
+      </column>
+    </property>
+    <property name="biehisNomNotaire" type="string">
+      <column length="100" name="biehis_nom_notaire">
+        <comment>nom du notaire</comment>
+      </column>
+    </property>
+    <property name="biehisCivilNotaire" type="string">
+      <column length="20" name="biehis_civil_notaire">
+        <comment>civilite du notaire</comment>
+      </column>
+    </property>
+    <property name="biehisIdOldProprietaire" type="long">
+      <column default="0" name="biehis_id_old_proprietaire">
+        <comment>id ancien proprietaire</comment>
+      </column>
+    </property>
+    <property name="biehisOldProprietaire" type="string">
+      <column length="10" name="biehis_old_proprietaire">
+        <comment>ref ancien proprietaire</comment>
+      </column>
+    </property>
+    <property name="biehisNomOldProprietaire" type="string">
+      <column length="100" name="biehis_nom_old_proprietaire">
+        <comment>nom ancien proprietaire</comment>
+      </column>
+    </property>
+    <property name="biehisCivilOldProprietaire" type="string">
+      <column length="20" name="biehis_civil_old_proprietaire">
+        <comment>civilite ancien proprietaire</comment>
+      </column>
+    </property>
+    <property name="biehisIdNewProprietaire" type="long">
+      <column default="0" name="biehis_id_new_proprietaire">
+        <comment>id nouveau proprietaire</comment>
+      </column>
+    </property>
+    <property name="biehisNewProprietaire" type="string">
+      <column length="10" name="biehis_new_proprietaire">
+        <comment>ref nouveau proprietaire</comment>
+      </column>
+    </property>
+    <property name="biehisNomNewProprietaire" type="string">
+      <column length="100" name="biehis_nom_new_proprietaire">
+        <comment>nom nouveau proprietaire</comment>
+      </column>
+    </property>
+    <property name="biehisCivilNewProprietaire" type="string">
+      <column length="20" name="biehis_civil_new_proprietaire">
+        <comment>civilite nouveau proprietaire</comment>
+      </column>
+    </property>
+    <property name="biehisSacnActeVente" type="string">
+      <column length="100" name="biehis_scan_acte_vente">
+        <comment>scan acte de vente</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.Bien" column="bie_id" lazy="false" name="Bien" not-null="false"/>
+    <many-to-one class="com.epegase.systeme.classe.Tiers" column="tie_id" lazy="false" name="Tiers" not-null="false"/>
+  </class>
+</hibernate-mapping>

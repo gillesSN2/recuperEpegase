@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="FactureInterneLigneVentes" table="vte_facture_interne_ligne">
+    <id column="fitlig_id" name="fitligId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="fitligOrdre" type="integer">
+      <column default="0" name="fitlig_ordre">
+        <comment>ordre des lignes</comment>
+      </column>
+    </property>
+    <property name="fitligIdDvs" type="long">
+      <column default="0" length="15" name="fitlig_id_dvs">
+        <comment>id de la ligne devis</comment>
+      </column>
+    </property>
+    <property name="fitligIdBcm" type="long">
+      <column default="0" length="15" name="fitlig_id_bcm">
+        <comment>id de la ligne commande</comment>
+      </column>
+    </property>
+    <property name="fitligIdBlv" type="long">
+      <column default="0" length="15" name="fitlig_id_blv">
+        <comment>id de la ligne livraison</comment>
+      </column>
+    </property>
+    <property name="fitligCode" type="string">
+      <column length="20" name="fitlig_code">
+        <comment>code produit</comment>
+      </column>
+    </property>
+    <property name="fitligFamille" type="string">
+      <column length="121" name="fitlig_famille">
+        <comment>famille vente</comment>
+      </column>
+    </property>
+    <property name="fitligLibelle" type="text">
+      <column name="fitlig_libelle">
+        <comment>libelle produit</comment>
+      </column>
+    </property>
+    <property name="fitligComplement" type="text">
+      <column length="500" name="fitlig_complement">
+        <comment>descriptif complementaire</comment>
+      </column>
+    </property>
+    <property name="fitligReference" type="string">
+      <column length="20" name="fitlig_reference">
+        <comment>reference produit</comment>
+      </column>
+    </property>
+    <property name="fitligTaxe" type="string">
+      <column length="20" name="fitlig_taxe">
+        <comment>code taxe</comment>
+      </column>
+    </property>
+    <property name="fitligTauxTaxe" type="float">
+      <column default="0" name="fitlig_taux_taxe">
+        <comment>taux de taxe</comment>
+      </column>
+    </property>
+    <property name="fitligUnite" type="string">
+      <column length="30" name="fitlig_unite">
+        <comment>unite produit</comment>
+      </column>
+    </property>
+    <property name="fitligCondition" type="string">
+      <column length="121" name="fitlig_condition">
+        <comment>conditionnement produit</comment>
+      </column>
+    </property>
+    <property name="fitligDescription" type="string">
+      <column length="20" name="fitlig_description">
+        <comment>description conditionnement produit</comment>
+      </column>
+    </property>
+    <property name="fitligDepot" type="string">
+      <column length="20" name="fitlig_depot">
+        <comment>code depot</comment>
+      </column>
+    </property>
+    <property name="fitligStock" type="integer">
+      <column default="0" name="fitlig_stock">
+        <comment>mode de gestion stock</comment>
+      </column>
+    </property>
+    <property name="fitligQteStock" type="float">
+      <column default="0" name="fitlig_qte_stock">
+        <comment>quantite en stock</comment>
+      </column>
+    </property>
+    <property name="fitligEchelle" type="integer">
+      <column default="0" name="fitlig_echelle">
+        <comment>echelle de la ligne</comment>
+      </column>
+    </property>
+    <property name="fitligQte" type="float">
+      <column default="0" name="fitlig_qte">
+        <comment>quantite</comment>
+      </column>
+    </property>
+    <property name="fitligLong" type="float">
+      <column default="0" name="fitlig_long">
+        <comment>longueur</comment>
+      </column>
+    </property>
+    <property name="fitligLarg" type="float">
+      <column default="0" name="fitlig_larg">
+        <comment>largeur</comment>
+      </column>
+    </property>
+    <property name="fitligHaut" type="float">
+      <column default="0" name="fitlig_haut">
+        <comment>hauteur</comment>
+      </column>
+    </property>
+    <property name="fitligDiam" type="float">
+      <column default="0" name="fitlig_diam">
+        <comment>diametre</comment>
+      </column>
+    </property>
+    <property name="fitligNb" type="float">
+      <column default="0" name="fitlig_nb">
+        <comment>nombre de piece</comment>
+      </column>
+    </property>
+    <property name="fitligPoidsNet" type="float">
+      <column default="0" name="fitlig_poidsNet">
+        <comment>poids net</comment>
+      </column>
+    </property>
+    <property name="fitligPoidsBrut" type="float">
+      <column default="0" name="fitlig_poidsBrut">
+        <comment>poids brut</comment>
+      </column>
+    </property>
+    <property name="fitligVolume" type="float">
+      <column default="0" name="fitlig_volume">
+        <comment>volume</comment>
+      </column>
+    </property>
+    <property name="fitligQteUtil" type="float">
+      <column default="0" name="fitlig_qte_util">
+        <comment>quantite utilisee (valable pour le stock)</comment>
+      </column>
+    </property>
+    <property name="fitligLot" type="string">
+      <column length="30" name="fitlig_lot">
+        <comment>numero de lot</comment>
+      </column>
+    </property>
+    <property name="fitligNumSerie" type="string">
+      <column length="30" name="fitlig_num_serie">
+        <comment>numero de serie</comment>
+      </column>
+    </property>
+    <property name="fitligDevise" type="string">
+      <column length="3" name="fitlig_devise">
+        <comment>code devise</comment>
+      </column>
+    </property>
+    <property name="fitligManquant" type="double">
+      <column default="0" name="fitlig_manquant">
+        <comment>prix maquant non facture</comment>
+      </column>
+    </property>
+    <property name="fitligQteManquant" type="float">
+      <column default="0" name="fitlig_qte_manquant">
+        <comment>quantite maquante non facture</comment>
+      </column>
+    </property>
+    <property name="fitligPu" type="double">
+      <column default="0" name="fitlig_pu">
+        <comment>prix unitaire</comment>
+      </column>
+    </property>
+    <property name="fitligTauxRemise" type="float">
+      <column default="0" name="fitlig_taux_remise">
+        <comment>taux de remise</comment>
+      </column>
+    </property>
+    <property name="fitligRabais" type="double">
+      <column default="0" name="fitlig_rabais">
+        <comment>valeur du rabais</comment>
+      </column>
+    </property>
+    <property name="fitligPuRem" type="double">
+      <column default="0" name="fitlig_pu_rem">
+        <comment>prix unitaire apres remise</comment>
+      </column>
+    </property>
+    <property name="fitligPuRemTtc" type="double">
+      <column default="0" name="fitlig_pu_rem_ttc">
+        <comment>prix unitaire apres remise</comment>
+      </column>
+    </property>
+    <property name="fitligPuTtc" type="double">
+      <column default="0" name="fitlig_pu_ttc">
+        <comment>prix unitaire apres remise</comment>
+      </column>
+    </property>
+    <property name="fitligPt" type="double">
+      <column default="0" name="fitlig_pt">
+        <comment>prix total ht</comment>
+      </column>
+    </property>
+    <property name="fitligTva" type="double">
+      <column default="0" name="fitlig_tva">
+        <comment>total taxe</comment>
+      </column>
+    </property>
+    <property name="fitligTc" type="double">
+      <column default="0" name="fitlig_tc">
+        <comment>total taxe complementaire</comment>
+      </column>
+    </property>
+    <property name="fitligTtc" type="double">
+      <column default="0" name="fitlig_ttc">
+        <comment>total ttc</comment>
+      </column>
+    </property>
+    <property name="fitligPump" type="double">
+      <column default="0" name="fitlig_pump">
+        <comment>prix unitaire moyen pondere</comment>
+      </column>
+    </property>
+    <property name="fitligCommission" type="double">
+      <column default="0" name="fitlig_commission">
+        <comment>total commission</comment>
+      </column>
+    </property>
+    <property name="fitligGroupe" type="string">
+      <column length="20" name="fitlig_groupe">
+        <comment>code du groupe</comment>
+      </column>
+    </property>
+    <property name="fitligModeGroupe" type="integer">
+      <column default="0" name="fitlig_mode_groupe">
+        <comment>0=produit simple 1=groupe visible 2=groupe invisible 3=forfait 4=calcul auto. 5=generique</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.FactureInterneEnteteVentes" column="fit_id" lazy="false" name="factureInterneEnteteVentes" not-null="true"/>
+  </class>
+</hibernate-mapping>

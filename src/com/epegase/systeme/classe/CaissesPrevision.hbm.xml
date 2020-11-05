@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.epegase.systeme.classe">
+  <class name="CaissesPrevision" table="cai_caisses_prevision">
+    <id column="caipre_id" name="caipreId" type="long" unsaved-value="null">
+      <generator class="native"/>
+    </id>
+    <property name="caipreType" type="integer">
+      <column default="0" name="caipre_type">
+        <comment>0=prevision 1=caisse debut 2=caisse fin</comment>
+      </column>
+    </property>
+    <property name="caipreDateCreation" type="timestamp">
+      <column name="caipre_date_creation">
+        <comment>date de creation</comment>
+      </column>
+    </property>
+    <property name="caipreUserIdCreation" type="long">
+      <column default="0" length="15" name="caipre_user_id_creation">
+        <comment>user utilisation de creation</comment>
+      </column>
+    </property>
+    <property name="caipreDateModif" type="timestamp">
+      <column name="caipre_date_modif">
+        <comment>date de modif</comment>
+      </column>
+    </property>
+    <property name="caipreUserIdModif" type="long">
+      <column default="0" length="15" name="caipre_user_id_modif">
+        <comment>user utilisation de modif</comment>
+      </column>
+    </property>
+    <property name="caiprePeriode" type="string">
+      <column length="7" name="caipre_periode">
+        <comment>periode MMAAAA</comment>
+      </column>
+    </property>
+    <property name="caipreDateDebut" type="date">
+      <column name="caipre_date_debut">
+        <comment>date de debut</comment>
+      </column>
+    </property>
+    <property name="caipreDateFin" type="date">
+      <column name="caipre_date_fin">
+        <comment>date de fin</comment>
+      </column>
+    </property>
+    <property name="caipreEtat" type="int">
+      <column default="0" length="1" name="caipre_etat">
+        <comment>0=en cours 1=validation</comment>
+      </column>
+    </property>
+    <property name="caipreRecetteEspece" type="double">
+      <column default="0" name="caipre_recette_espece">
+        <comment>recette des especes</comment>
+      </column>
+    </property>
+    <property name="caipreRecetteCheque" type="double">
+      <column default="0" name="caipre_recette_cheque">
+        <comment>recette des cheques</comment>
+      </column>
+    </property>
+    <property name="caipreRecetteVirement" type="double">
+      <column default="0" name="caipre_recette_virement">
+        <comment>recette des virements</comment>
+      </column>
+    </property>
+    <property name="caipreRecetteTraite" type="double">
+      <column default="0" name="caipre_recette_traite">
+        <comment>recette des traites</comment>
+      </column>
+    </property>
+    <property name="caipreRecetteTpe" type="double">
+      <column default="0" name="caipre_recette_tpe">
+        <comment>recette des tpe</comment>
+      </column>
+    </property>
+    <property name="caipreRecetteePaiement" type="double">
+      <column default="0" name="caipre_recette_epaiement">
+        <comment>recette de epaiments</comment>
+      </column>
+    </property>
+    <property name="caipreRecetteTransfert" type="double">
+      <column default="0" name="caipre_recette_transfert">
+        <comment>recette des transferts</comment>
+      </column>
+    </property>
+    <property name="caipreRecetteCredoc" type="double">
+      <column default="0" name="caipre_recette_credoc">
+        <comment>recette des credoc</comment>
+      </column>
+    </property>
+    <property name="caipreRecetteFactor" type="double">
+      <column default="0" name="caipre_recette_factor">
+        <comment>recette des factor</comment>
+      </column>
+    </property>
+    <property name="caipreRecetteCompense" type="double">
+      <column default="0" name="caipre_recette_compense">
+        <comment>recette des compenses</comment>
+      </column>
+    </property>
+    <property name="caipreRecetteTerme" type="double">
+      <column default="0" name="caipre_recette_terme">
+        <comment>recette des termes</comment>
+      </column>
+    </property>
+    <property name="caipreRecetteBonCaisse" type="double">
+      <column default="0" name="caipre_recette_bon_caisse">
+        <comment>recette des bons de caisses</comment>
+      </column>
+    </property>
+    <property name="caipreTotalRecette" type="double">
+      <column default="0" name="caipre_total_recette">
+        <comment>montant total recette</comment>
+      </column>
+    </property>
+    <property name="caipreDepenseEspece" type="double">
+      <column default="0" name="caipre_depense_espece">
+        <comment>depense des especes</comment>
+      </column>
+    </property>
+    <property name="caipreDepenseCheque" type="double">
+      <column default="0" name="caipre_depense_cheque">
+        <comment>depense des cheques</comment>
+      </column>
+    </property>
+    <property name="caipreDepenseVirement" type="double">
+      <column default="0" name="caipre_depense_virement">
+        <comment>depense des virements</comment>
+      </column>
+    </property>
+    <property name="caipreDepenseTraite" type="double">
+      <column default="0" name="caipre_depense_traite">
+        <comment>depense des traites</comment>
+      </column>
+    </property>
+    <property name="caipreDepenseTpe" type="double">
+      <column default="0" name="caipre_depense_tpe">
+        <comment>depense des tpe</comment>
+      </column>
+    </property>
+    <property name="caipreDepenseePaiement" type="double">
+      <column default="0" name="caipre_depense_epaiement">
+        <comment>depense de epaiments</comment>
+      </column>
+    </property>
+    <property name="caipreDepenseTransfert" type="double">
+      <column default="0" name="caipre_depense_transfert">
+        <comment>depense des transferts</comment>
+      </column>
+    </property>
+    <property name="caipreDepenseCredoc" type="double">
+      <column default="0" name="caipre_depense_credoc">
+        <comment>depense des credoc</comment>
+      </column>
+    </property>
+    <property name="caipreDepenseFactor" type="double">
+      <column default="0" name="caipre_depense_factor">
+        <comment>depense des factor</comment>
+      </column>
+    </property>
+    <property name="caipreDepenseCompense" type="double">
+      <column default="0" name="caipre_depense_compense">
+        <comment>depense des compenses</comment>
+      </column>
+    </property>
+    <property name="caipreDepenseTerme" type="double">
+      <column default="0" name="caipre_depense_terme">
+        <comment>depense des termes</comment>
+      </column>
+    </property>
+    <property name="caipreDepenseBonCaisse" type="double">
+      <column default="0" name="caipre_depense_bon_caisse">
+        <comment>depense des bons de caisses</comment>
+      </column>
+    </property>
+    <property name="caipreTotalDepense" type="double">
+      <column default="0" name="caipre_total_depense">
+        <comment>montant total depense</comment>
+      </column>
+    </property>
+    <property name="caipreObservations" type="string">
+      <column length="200" name="caipre_observations">
+        <comment>observations</comment>
+      </column>
+    </property>
+    <property name="caipreNbP1" type="integer">
+      <column default="0" name="caipre_nb_p1">
+        <comment>nb piece 1</comment>
+      </column>
+    </property>
+    <property name="caipreNbP2" type="integer">
+      <column default="0" name="caipre_nb_p2">
+        <comment>nb piece 2</comment>
+      </column>
+    </property>
+    <property name="caipreNbP3" type="integer">
+      <column default="0" name="caipre_nb_p3">
+        <comment>nb piece 3</comment>
+      </column>
+    </property>
+    <property name="caipreNbP4" type="integer">
+      <column default="0" name="caipre_nb_p4">
+        <comment>nb piece 4</comment>
+      </column>
+    </property>
+    <property name="caipreNbP5" type="integer">
+      <column default="0" name="caipre_nb_p5">
+        <comment>nb piece 5</comment>
+      </column>
+    </property>
+    <property name="caipreNbP6" type="integer">
+      <column default="0" name="caipre_nb_p6">
+        <comment>nb piece 6</comment>
+      </column>
+    </property>
+    <property name="caipreNbP7" type="integer">
+      <column default="0" name="caipre_nb_p7">
+        <comment>nb piece 7</comment>
+      </column>
+    </property>
+    <property name="caipreNbP8" type="integer">
+      <column default="0" name="caipre_nb_p8">
+        <comment>nb piece 8</comment>
+      </column>
+    </property>
+    <property name="caipreNbP9" type="integer">
+      <column default="0" name="caipre_nb_p9">
+        <comment>nb piece 9</comment>
+      </column>
+    </property>
+    <property name="caipreNbP10" type="integer">
+      <column default="0" name="caipre_nb_p10">
+        <comment>nb piece 10</comment>
+      </column>
+    </property>
+    <property name="caipreNbB1" type="integer">
+      <column default="0" name="caipre_nb_b1">
+        <comment>nb billet 1</comment>
+      </column>
+    </property>
+    <property name="caipreNbB2" type="integer">
+      <column default="0" name="caipre_nb_b2">
+        <comment>nb billet 2</comment>
+      </column>
+    </property>
+    <property name="caipreNbB3" type="integer">
+      <column default="0" name="caipre_nb_b3">
+        <comment>nb billet 3</comment>
+      </column>
+    </property>
+    <property name="caipreNbB4" type="integer">
+      <column default="0" name="caipre_nb_b4">
+        <comment>nb billet 4</comment>
+      </column>
+    </property>
+    <property name="caipreNbB5" type="integer">
+      <column default="0" name="caipre_nb_b5">
+        <comment>nb billet 5</comment>
+      </column>
+    </property>
+    <property name="caipreNbB6" type="integer">
+      <column default="0" name="caipre_nb_b6">
+        <comment>nb billet 6</comment>
+      </column>
+    </property>
+    <property name="caipreNbB7" type="integer">
+      <column default="0" name="caipre_nb_b7">
+        <comment>nb billet 7</comment>
+      </column>
+    </property>
+    <property name="caipreNbB8" type="integer">
+      <column default="0" name="caipre_nb_b8">
+        <comment>nb billet 8</comment>
+      </column>
+    </property>
+    <property name="caipreNbB9" type="integer">
+      <column default="0" name="caipre_nb_b9">
+        <comment>nb billet 9</comment>
+      </column>
+    </property>
+    <property name="caipreNbB10" type="integer">
+      <column default="0" name="caipre_nb_b10">
+        <comment>nb billet 10</comment>
+      </column>
+    </property>
+    <property name="caipreTotalCheques" type="double">
+      <column default="0" name="caipre_total_cheques">
+        <comment>total cheque</comment>
+      </column>
+    </property>
+    <property name="caipreTotalDevises" type="double">
+      <column default="0" name="caipre_total_devises">
+        <comment>total devises</comment>
+      </column>
+    </property>
+    <property name="caipreCaisse" type="string">
+      <column length="20" name="caipre_caisse">
+        <comment>code caisse</comment>
+      </column>
+    </property>
+    <property name="caipreDepot" type="string">
+      <column length="20" name="caipre_depot">
+        <comment>code caisse</comment>
+      </column>
+    </property>
+    <property name="caipreIdCaissier" type="long">
+      <column default="0" name="caipre_id_caissier">
+        <comment>id caissier</comment>
+      </column>
+    </property>
+    <property name="caipreIdEquipe" type="long">
+      <column default="0" name="caipre_id_equipe">
+        <comment>id equipe</comment>
+      </column>
+    </property>
+    <property name="caipreIdResponsable" type="long">
+      <column default="0" name="caipre_id_responsable">
+        <comment>id responsable</comment>
+      </column>
+    </property>
+    <many-to-one class="com.epegase.systeme.classe.ExercicesCaisse" column="execai_id" name="exercicesCaisse" not-null="true"/>
+  </class>
+</hibernate-mapping>
