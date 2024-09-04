@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T060_UK>
+
+	<cat_tiers>
+		<libelle>Sympatisant</libelle>
+		<code>1</code>
+	</cat_tiers>
+
+	<cat_tiers>
+		<libelle>Member</libelle>
+		<code>2</code>
+	</cat_tiers>
+
+	<cat_tiers>
+		<libelle>Active</libelle>
+		<code>3</code>
+	</cat_tiers>
+
+	<cat_tiers>
+		<libelle>Ex-member</libelle>
+		<code>4</code>
+	</cat_tiers>
+
+</T060_UK>

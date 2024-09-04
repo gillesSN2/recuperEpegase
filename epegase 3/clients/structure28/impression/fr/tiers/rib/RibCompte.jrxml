@@ -1,0 +1,1107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="RibCompte" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isFloatColumnFooter="true">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="528"/>
+	<parameter name="filtre" class="java.lang.String"/>
+	<parameter name="entete" class="java.lang.String"/>
+	<parameter name="requete" class="java.lang.String"/>
+	<parameter name="societe" class="java.lang.String"/>
+	<parameter name="version" class="java.lang.String"/>
+	<parameter name="adresse" class="java.lang.String"/>
+	<parameter name="ville" class="java.lang.String"/>
+	<parameter name="pays" class="java.lang.String"/>
+	<parameter name="logo_1" class="java.lang.String"/>
+	<parameter name="logo_2" class="java.lang.String"/>
+	<parameter name="logo_4" class="java.lang.String"/>
+	<parameter name="telephone_1" class="java.lang.String"/>
+	<parameter name="telephone_2" class="java.lang.String"/>
+	<parameter name="fax" class="java.lang.String"/>
+	<parameter name="site_web" class="java.lang.String"/>
+	<parameter name="mails" class="java.lang.String"/>
+	<parameter name="identification_1" class="java.lang.String"/>
+	<parameter name="identification_2" class="java.lang.String"/>
+	<parameter name="identification_3" class="java.lang.String"/>
+	<parameter name="identification_4" class="java.lang.String"/>
+	<parameter name="identification_5" class="java.lang.String"/>
+	<parameter name="identification_6" class="java.lang.String"/>
+	<parameter name="identification_7" class="java.lang.String"/>
+	<parameter name="identification_8" class="java.lang.String"/>
+	<parameter name="identification_9" class="java.lang.String"/>
+	<parameter name="identification_10" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT
+     cmm_contacts.`con_id` AS cmm_contacts_con_id,
+     cmm_contacts.`con_date_creat` AS cmm_contacts_con_date_creat,
+     cmm_contacts.`con_date_modif` AS cmm_contacts_con_date_modif,
+     cmm_contacts.`con_user_creat` AS cmm_contacts_con_user_creat,
+     cmm_contacts.`con_user_modif` AS cmm_contacts_con_user_modif,
+     cmm_contacts.`con_etat` AS cmm_contacts_con_etat,
+     cmm_contacts.`con_nom` AS cmm_contacts_con_nom,
+     cmm_contacts.`con_prenom` AS cmm_contacts_con_prenom,
+     cmm_contacts.`con_patronyme` AS cmm_contacts_con_patronyme,
+     cmm_contacts.`con_civilite` AS cmm_contacts_con_civilite,
+     cmm_contacts.`con_nom_pays` AS cmm_contacts_con_nom_pays,
+     cmm_contacts.`con_langue` AS cmm_contacts_con_langue,
+     cmm_contacts.`con_fonction` AS cmm_contacts_con_fonction,
+     cmm_contacts.`con_service` AS cmm_contacts_con_service,
+     cmm_contacts.`con_date_naissance` AS cmm_contacts_con_date_naissance,
+     cmm_contacts.`con_anniversaire` AS cmm_contacts_con_anniversaire,
+     cmm_contacts.`con_tel_bur` AS cmm_contacts_con_tel_bur,
+     cmm_contacts.`con_tel_dom` AS cmm_contacts_con_tel_dom,
+     cmm_contacts.`con_cel1` AS cmm_contacts_con_cel1,
+     cmm_contacts.`con_cel2` AS cmm_contacts_con_cel2,
+     cmm_contacts.`con_cel3` AS cmm_contacts_con_cel3,
+     cmm_contacts.`con_fax` AS cmm_contacts_con_fax,
+     cmm_contacts.`con_adresse` AS cmm_contacts_con_adresse,
+     cmm_contacts.`con_rue` AS cmm_contacts_con_rue,
+     cmm_contacts.`con_lot` AS cmm_contacts_con_lot,
+     cmm_contacts.`con_ilot` AS cmm_contacts_con_ilot,
+     cmm_contacts.`con_batiment` AS cmm_contacts_con_batiment,
+     cmm_contacts.`con_porte` AS cmm_contacts_con_porte,
+     cmm_contacts.`con_escalier` AS cmm_contacts_con_escalier,
+     cmm_contacts.`con_ascensseur` AS cmm_contacts_con_ascensseur,
+     cmm_contacts.`con_quartier` AS cmm_contacts_con_quartier,
+     cmm_contacts.`con_commune` AS cmm_contacts_con_commune,
+     cmm_contacts.`con_departe` AS cmm_contacts_con_departe,
+     cmm_contacts.`con_zone` AS cmm_contacts_con_zone,
+     cmm_contacts.`con_bp` AS cmm_contacts_con_bp,
+     cmm_contacts.`con_cedex` AS cmm_contacts_con_cedex,
+     cmm_contacts.`con_ville` AS cmm_contacts_con_ville,
+     cmm_contacts.`con_yahoo` AS cmm_contacts_con_yahoo,
+     cmm_contacts.`con_msn` AS cmm_contacts_con_msn,
+     cmm_contacts.`con_skype` AS cmm_contacts_con_skype,
+     cmm_contacts.`con_aol` AS cmm_contacts_con_aol,
+     cmm_contacts.`con_mail1` AS cmm_contacts_con_mail1,
+     cmm_contacts.`con_mail2` AS cmm_contacts_con_mail2,
+     cmm_contacts.`con_mail3` AS cmm_contacts_con_mail3,
+     cmm_contacts.`con_mail4` AS cmm_contacts_con_mail4,
+     cmm_contacts.`con_mail5` AS cmm_contacts_con_mail5,
+     cmm_contacts.`con_blog` AS cmm_contacts_con_blog,
+     cmm_contacts.`con_web` AS cmm_contacts_con_web,
+     cmm_contacts.`con_observation` AS cmm_contacts_con_observation,
+     cmm_contacts.`con_appreciation` AS cmm_contacts_con_appreciation,
+     cmm_contacts.`con_num_banque` AS cmm_contacts_con_num_banque,
+     cmm_contacts.`con_guichet_banque` AS cmm_contacts_con_guichet_banque,
+     cmm_contacts.`con_compte_banque` AS cmm_contacts_con_compte_banque,
+     cmm_contacts.`con_cle_banque` AS cmm_contacts_con_cle_banque,
+     cmm_contacts.`con_iban` AS cmm_contacts_con_iban,
+     cmm_contacts.`con_swift` AS cmm_contacts_con_swift,
+     cmm_contacts.`tie_id` AS cmm_contacts_tie_id,
+     cmm_contacts.`con_journal` AS cmm_contacts_con_journal,
+     cmm_contacts.`con_pw_espace_client` AS cmm_contacts_con_pw_espace_client,
+     cmm_tiers.`tie_id` AS cmm_tiers_tie_id,
+     cmm_tiers.`tie_date_creat` AS cmm_tiers_tie_date_creat,
+     cmm_tiers.`tie_date_modif` AS cmm_tiers_tie_date_modif,
+     cmm_tiers.`tie_user_creat` AS cmm_tiers_tie_user_creat,
+     cmm_tiers.`tie_user_modif` AS cmm_tiers_tie_user_modif,
+     cmm_tiers.`tie_etat` AS cmm_tiers_tie_etat,
+     cmm_tiers.`tie_raison_sociale_nom` AS cmm_tiers_tie_raison_sociale_nom,
+     cmm_tiers.`tie_sigle` AS cmm_tiers_tie_sigle,
+     cmm_tiers.`tie_type` AS cmm_tiers_tie_type,
+     cmm_tiers.`tie_genre` AS cmm_tiers_tie_genre,
+     cmm_tiers.`tie_categorie` AS cmm_tiers_tie_categorie,
+     cmm_tiers.`tie_civilite` AS cmm_tiers_tie_civilite,
+     cmm_tiers.`tie_nom_pays` AS cmm_tiers_tie_nom_pays,
+     cmm_tiers.`tie_code_pays` AS cmm_tiers_tie_code_pays,
+     cmm_tiers.`tie_devise` AS cmm_tiers_tie_devise,
+     cmm_tiers.`tie_format_devise` AS cmm_tiers_tie_format_devise,
+     cmm_tiers.`tie_langue` AS cmm_tiers_tie_langue,
+     cmm_tiers.`tie_type_adresse` AS cmm_tiers_tie_type_adresse,
+     cmm_tiers.`tie_tel_dom` AS cmm_tiers_tie_tel_dom,
+     cmm_tiers.`tie_cel1` AS cmm_tiers_tie_cel1,
+     cmm_tiers.`tie_cel2` AS cmm_tiers_tie_cel2,
+     cmm_tiers.`tie_cel3` AS cmm_tiers_tie_cel3,
+     cmm_tiers.`tie_tel_voiture` AS cmm_tiers_tie_tel_voiture,
+     cmm_tiers.`tie_prenom` AS cmm_tiers_tie_prenom,
+     cmm_tiers.`tie_nom_jf` AS cmm_tiers_tie_nom_jf,
+     cmm_tiers.`tie_surnom` AS cmm_tiers_tie_surnom,
+     cmm_tiers.`tie_sexe` AS cmm_tiers_tie_sexe,
+     cmm_tiers.`tie_date_naissance` AS cmm_tiers_tie_date_naissance,
+     cmm_tiers.`tie_lieu_naissance` AS cmm_tiers_tie_lieu_naissance,
+     cmm_tiers.`tie_anniversaire` AS cmm_tiers_tie_anniversaire,
+     cmm_tiers.`tie_observations` AS cmm_tiers_tie_observations,
+     cmm_tiers.`tie_activite1` AS cmm_tiers_tie_activite1,
+     cmm_tiers.`tie_activite2` AS cmm_tiers_tie_activite2,
+     cmm_tiers.`tie_source` AS cmm_tiers_tie_source,
+     cmm_tiers.`tie_visibilite` AS cmm_tiers_tie_visibilite,
+     cmm_tiers.`tie_visibilite_grp` AS cmm_tiers_tie_visibilite_grp,
+     cmm_tiers.`tie_visibilite_user` AS cmm_tiers_tie_visibilite_user,
+     cmm_tiers.`tie_adresse` AS cmm_tiers_tie_adresse,
+     cmm_tiers.`tie_rue` AS cmm_tiers_tie_rue,
+     cmm_tiers.`tie_lot` AS cmm_tiers_tie_lot,
+     cmm_tiers.`tie_ilot` AS cmm_tiers_tie_ilot,
+     cmm_tiers.`tie_batiment` AS cmm_tiers_tie_batiment,
+     cmm_tiers.`tie_porte` AS cmm_tiers_tie_porte,
+     cmm_tiers.`tie_etage` AS cmm_tiers_tie_etage,
+     cmm_tiers.`tie_ascensseur` AS cmm_tiers_tie_ascensseur,
+     cmm_tiers.`tie_quartier` AS cmm_tiers_tie_quartier,
+     cmm_tiers.`tie_commune` AS cmm_tiers_tie_commune,
+     cmm_tiers.`tie_depart` AS cmm_tiers_tie_depart,
+     cmm_tiers.`tie_zone` AS cmm_tiers_tie_zone,
+     cmm_tiers.`tie_bp` AS cmm_tiers_tie_bp,
+     cmm_tiers.`tie_cedex` AS cmm_tiers_tie_cedex,
+     cmm_tiers.`tie_ville` AS cmm_tiers_tie_ville,
+     cmm_tiers.`tie_bur_tel1` AS cmm_tiers_tie_bur_tel1,
+     cmm_tiers.`tie_bur_tel2` AS cmm_tiers_tie_bur_tel2,
+     cmm_tiers.`tie_bur_tel3` AS cmm_tiers_tie_bur_tel3,
+     cmm_tiers.`tie_bur_fax` AS cmm_tiers_tie_bur_fax,
+     cmm_tiers.`tie_telex` AS cmm_tiers_tie_telex,
+     cmm_tiers.`tie_yahoo` AS cmm_tiers_tie_yahoo,
+     cmm_tiers.`tie_msn` AS cmm_tiers_tie_msn,
+     cmm_tiers.`tie_skype` AS cmm_tiers_tie_skype,
+     cmm_tiers.`tie_aol` AS cmm_tiers_tie_aol,
+     cmm_tiers.`tie_mail1` AS cmm_tiers_tie_mail1,
+     cmm_tiers.`tie_mail2` AS cmm_tiers_tie_mail2,
+     cmm_tiers.`tie_mail3` AS cmm_tiers_tie_mail3,
+     cmm_tiers.`tie_mail4` AS cmm_tiers_tie_mail4,
+     cmm_tiers.`tie_mail5` AS cmm_tiers_tie_mail5,
+     cmm_tiers.`tie_web` AS cmm_tiers_tie_web,
+     cmm_tiers.`tie_mode_reg` AS cmm_tiers_tie_mode_reg,
+     cmm_tiers.`tie_type_reg` AS cmm_tiers_tie_type_reg,
+     cmm_tiers.`tie_nb_echeance` AS cmm_tiers_tie_nb_echeance,
+     cmm_tiers.`tie_nb_arrondi` AS cmm_tiers_tie_nb_arrondi,
+     cmm_tiers.`tie_journal_reg` AS cmm_tiers_tie_journal_reg,
+     cmm_tiers.`tie_condition_reg` AS cmm_tiers_tie_condition_reg,
+     cmm_tiers.`tie_plafond` AS cmm_tiers_tie_plafond,
+     cmm_tiers.`tie_depotavance` AS cmm_tiers_tie_depotavance,
+     cmm_tiers.`tie_capatente` AS cmm_tiers_tie_capatente,
+     cmm_tiers.`tie_plaf_patente` AS cmm_tiers_tie_plaf_patente,
+     cmm_tiers.`tie_compte_bloque` AS cmm_tiers_tie_compte_bloque,
+     cmm_tiers.`tie_nom_famille` AS cmm_tiers_tie_nom_famille,
+     cmm_tiers.`tie_serie` AS cmm_tiers_tie_serie,
+     cmm_tiers.`tie_exo_douane` AS cmm_tiers_tie_exo_douane,
+     cmm_tiers.`tie_exo_tva` AS cmm_tiers_tie_exo_tva,
+     cmm_tiers.`tie_depot` AS cmm_tiers_tie_depot,
+     cmm_tiers.`tie_escompte` AS cmm_tiers_tie_escompte,
+     cmm_tiers.`tie_fac_pr` AS cmm_tiers_tie_fac_pr,
+     cmm_tiers.`tie_nom_banque` AS cmm_tiers_tie_nom_banque,
+     cmm_tiers.`tie_adresse_banque` AS cmm_tiers_tie_adresse_banque,
+     cmm_tiers.`tie_num_banque` AS cmm_tiers_tie_num_banque,
+     cmm_tiers.`tie_guichet_banque` AS cmm_tiers_tie_guichet_banque,
+     cmm_tiers.`tie_compte_banque` AS cmm_tiers_tie_compte_banque,
+     cmm_tiers.`tie_cle_banque` AS cmm_tiers_tie_cle_banque,
+     cmm_tiers.`tie_iban` AS cmm_tiers_tie_iban,
+     cmm_tiers.`tie_swift` AS cmm_tiers_tie_swift,
+     cmm_tiers.`tie_compte_0` AS cmm_tiers_tie_compte_0,
+     cmm_tiers.`tie_compte_1` AS cmm_tiers_tie_compte_1,
+     cmm_tiers.`tie_compte_2` AS cmm_tiers_tie_compte_2,
+     cmm_tiers.`tie_compte_3` AS cmm_tiers_tie_compte_3,
+     cmm_tiers.`tie_compte_4` AS cmm_tiers_tie_compte_4,
+     cmm_tiers.`tie_note_auto` AS cmm_tiers_tie_note_auto,
+     cmm_tiers.`tie_note_man` AS cmm_tiers_tie_note_man,
+     cmm_tiers.`tie_no_use_1` AS cmm_tiers_tie_no_use_1,
+     cmm_tiers.`tie_no_use_2` AS cmm_tiers_tie_no_use_2,
+     cmm_tiers.`tie_epoux` AS cmm_tiers_tie_epoux,
+     cmm_tiers.`tie_nom_pere` AS cmm_tiers_tie_nom_pere,
+     cmm_tiers.`tie_nom_mere` AS cmm_tiers_tie_nom_mere,
+     cmm_tiers.`tie_ci_num` AS cmm_tiers_tie_ci_num,
+     cmm_tiers.`tie_ci_date` AS cmm_tiers_tie_ci_date,
+     cmm_tiers.`tie_ci_lieu` AS cmm_tiers_tie_ci_lieu,
+     cmm_tiers.`tie_profession` AS cmm_tiers_tie_profession,
+     cmm_tiers.`tie_niveau_etude` AS cmm_tiers_tie_niveau_etude,
+     cmm_tiers.`tie_employeur` AS cmm_tiers_tie_employeur,
+     cmm_tiers.`tie_adresse_employeur` AS cmm_tiers_tie_adresse_employeur,
+     cmm_tiers.`tie_bp_employeur` AS cmm_tiers_tie_bp_employeur,
+     cmm_tiers.`tie_ville_employeur` AS cmm_tiers_tie_ville_employeur,
+     cmm_tiers.`tie_tel_employeur` AS cmm_tiers_tie_tel_employeur,
+     cmm_tiers.`tie_sit_fam` AS cmm_tiers_tie_sit_fam,
+     cmm_tiers.`tie_nb_charge` AS cmm_tiers_tie_nb_charge,
+     cmm_tiers.`tie_nb_enf` AS cmm_tiers_tie_nb_enf,
+     cmm_tiers.`tie_habitation` AS cmm_tiers_tie_habitation,
+     cmm_tiers.`tie_num1` AS cmm_tiers_tie_num1,
+     cmm_tiers.`tie_num2` AS cmm_tiers_tie_num2,
+     cmm_tiers.`tie_num3` AS cmm_tiers_tie_num3,
+     cmm_tiers.`tie_num4` AS cmm_tiers_tie_num4,
+     cmm_tiers.`tie_num5` AS cmm_tiers_tie_num5,
+     cmm_tiers.`tie_num6` AS cmm_tiers_tie_num6,
+     cmm_tiers.`tie_num7` AS cmm_tiers_tie_num7,
+     cmm_tiers.`tie_num8` AS cmm_tiers_tie_num8,
+     cmm_tiers.`tie_num9` AS cmm_tiers_tie_num9,
+     cmm_tiers.`tie_num10` AS cmm_tiers_tie_num10,
+     cmm_tiers.`tie_num11` AS cmm_tiers_tie_num11,
+     cmm_tiers.`tie_num12` AS cmm_tiers_tie_num12,
+     cmm_tiers.`tie_num13` AS cmm_tiers_tie_num13,
+     cmm_tiers.`tie_num14` AS cmm_tiers_tie_num14,
+     cmm_tiers.`tie_num15` AS cmm_tiers_tie_num15,
+     cmm_tiers.`tie_num16` AS cmm_tiers_tie_num16,
+     cmm_tiers.`tie_num17` AS cmm_tiers_tie_num17,
+     cmm_tiers.`tie_num18` AS cmm_tiers_tie_num18,
+     cmm_tiers.`tie_num19` AS cmm_tiers_tie_num19,
+     cmm_tiers.`tie_num20` AS cmm_tiers_tie_num20,
+     cmm_tiers.`tie_pdv` AS cmm_tiers_tie_pdv,
+     cmm_tiers.`tie_secteur` AS cmm_tiers_tie_secteur,
+     cmm_tiers.`tie_region` AS cmm_tiers_tie_region,
+     cmm_tiers.`tie_date_mariage` AS cmm_tiers_tie_date_mariage,
+     cmm_tiers.`tie_anniversaire_mariage` AS cmm_tiers_tie_anniversaire_mariage,
+     cmm_tiers.`tie_date_deces` AS cmm_tiers_tie_date_deces,
+     cmm_tiers.`tie_anniversaire_deces` AS cmm_tiers_tie_anniversaire_deces,
+     cmm_tiers.`tie_assurt1` AS cmm_tiers_tie_assurt1,
+     cmm_tiers.`tie_assurt2` AS cmm_tiers_tie_assurt2,
+     cmm_tiers.`tie_assurt3` AS cmm_tiers_tie_assurt3,
+     cmm_tiers.`tie_bnq1` AS cmm_tiers_tie_bnq1,
+     cmm_tiers.`tie_bnq2` AS cmm_tiers_tie_bnq2,
+     cmm_tiers.`tie_bnq3` AS cmm_tiers_tie_bnq3,
+     cmm_tiers.`tie_bnq4` AS cmm_tiers_tie_bnq4,
+     cmm_tiers.`tie_bnq5` AS cmm_tiers_tie_bnq5,
+     cmm_tiers.`tie_bnq6` AS cmm_tiers_tie_bnq6,
+     cmm_tiers.`tie_bnq7` AS cmm_tiers_tie_bnq7,
+     cmm_tiers.`tie_id_structure` AS cmm_tiers_tie_id_structure,
+     cmm_tiers.`tie_photo` AS cmm_tiers_tie_photo,
+     cmm_tiers.`tie_compte_sage` AS cmm_tiers_tie_compte_sage,
+     cmm_tiers.`tie_transfert_cpte` AS cmm_tiers_tie_transfert_cpte
+FROM
+     `cmm_tiers` cmm_tiers INNER JOIN `cmm_contacts` cmm_contacts ON cmm_tiers.`tie_id` = cmm_contacts.`tie_id`
+WHERE
+     $P!{requete}]]>
+	</queryString>
+	<field name="cmm_contacts_con_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_date_creat" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_date_modif" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_user_creat" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_user_modif" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_etat" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_nom" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_prenom" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_patronyme" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_civilite" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_nom_pays" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_langue" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_fonction" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_service" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_date_naissance" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_anniversaire" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_tel_bur" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_tel_dom" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_cel1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_cel2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_cel3" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_fax" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_adresse" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_rue" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_lot" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_ilot" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_batiment" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_porte" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_escalier" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_ascensseur" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_quartier" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_commune" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_departe" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_zone" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_bp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_cedex" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_ville" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_yahoo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_msn" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_skype" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_aol" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_mail1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_mail2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_mail3" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_mail4" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_mail5" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_blog" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_web" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_observation" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_appreciation" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_num_banque" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_guichet_banque" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_compte_banque" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_cle_banque" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_iban" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_swift" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_tie_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_journal" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_pw_espace_client" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_date_creat" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_date_modif" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_user_creat" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_user_modif" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_etat" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_raison_sociale_nom" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_sigle" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_type" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_genre" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_categorie" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_civilite" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_nom_pays" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_code_pays" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_devise" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_format_devise" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_langue" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_type_adresse" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_tel_dom" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_cel1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_cel2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_cel3" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_tel_voiture" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_prenom" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_nom_jf" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_surnom" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_sexe" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_date_naissance" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_lieu_naissance" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_anniversaire" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_observations" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_activite1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_activite2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_source" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_visibilite" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_visibilite_grp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_visibilite_user" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_adresse" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_rue" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_lot" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_ilot" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_batiment" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_porte" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_etage" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_ascensseur" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_quartier" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_commune" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_depart" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_zone" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_bp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_cedex" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_ville" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_bur_tel1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_bur_tel2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_bur_tel3" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_bur_fax" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_telex" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_yahoo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_msn" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_skype" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_aol" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_mail1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_mail2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_mail3" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_mail4" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_mail5" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_web" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_mode_reg" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_type_reg" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_nb_echeance" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_nb_arrondi" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_journal_reg" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_condition_reg" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_plafond" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_depotavance" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_capatente" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_plaf_patente" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_compte_bloque" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_nom_famille" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_serie" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_exo_douane" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_exo_tva" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_depot" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_escompte" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_fac_pr" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_nom_banque" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_adresse_banque" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_num_banque" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_guichet_banque" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_compte_banque" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_cle_banque" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_iban" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_swift" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_compte_0" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_compte_1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_compte_2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_compte_3" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_compte_4" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_note_auto" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_note_man" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_no_use_1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_no_use_2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_epoux" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_nom_pere" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_nom_mere" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_ci_num" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_ci_date" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_ci_lieu" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_profession" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_niveau_etude" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_employeur" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_adresse_employeur" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_bp_employeur" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_ville_employeur" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_tel_employeur" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_sit_fam" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_nb_charge" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_nb_enf" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_habitation" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_num1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_num2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_num3" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_num4" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_num5" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_num6" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_num7" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_num8" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_num9" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_num10" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_num11" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_num12" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_num13" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_num14" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_num15" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_num16" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_num17" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_num18" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_num19" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_num20" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_pdv" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_secteur" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_region" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_date_mariage" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_anniversaire_mariage" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_date_deces" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_anniversaire_deces" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_assurt1" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_assurt2" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_assurt3" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_bnq1" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_bnq2" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_bnq3" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_bnq4" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_bnq5" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_bnq6" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_bnq7" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_id_structure" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_photo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_compte_sage" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_transfert_cpte" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="date_jour" class="java.util.Date">
+		<variableExpression><![CDATA[new java.util.Date()]]></variableExpression>
+	</variable>
+	<detail>
+		<band height="777" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="553" height="78" forecolor="#992F2A" backcolor="#992F2A"/>
+			</rectangle>
+			<textField>
+				<reportElement x="116" y="211" width="392" height="34"/>
+				<textElement>
+					<font fontName="DejaVu Serif" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cmm_tiers_tie_raison_sociale_nom}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="116" y="246" width="392" height="30"/>
+				<textElement>
+					<font fontName="DejaVu Serif" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cmm_tiers_tie_adresse}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="116" y="276" width="392" height="33"/>
+				<textElement>
+					<font fontName="DejaVu Serif" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cmm_tiers_tie_bp} + $F{cmm_tiers_tie_ville}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="18" y="11" width="512" height="21" forecolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="DejaVu Serif" size="14"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{societe}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="45" width="553" height="32" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="20" isBold="false" isItalic="true" pdfFontName="Helvetica-Oblique"/>
+				</textElement>
+				<text><![CDATA[RELEVE D'IDENTITE BANCAIRE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="112" y="420" width="80" height="14"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="12" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[BANQUE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="216" y="420" width="73" height="14"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="12" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[AGENCE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="316" y="420" width="103" height="14"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="12" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[COMPTE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="446" y="420" width="62" height="14"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="12" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[CLE RIB]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="112" y="453" width="80" height="18"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cmm_contacts_con_num_banque}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="216" y="453" width="73" height="18"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cmm_contacts_con_guichet_banque}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="316" y="453" width="103" height="18"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cmm_contacts_con_compte_banque}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="446" y="453" width="62" height="18"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cmm_contacts_con_cle_banque}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="15" y="453" width="80" height="14"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="12" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[RIB]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="500" width="80" height="14"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="12" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[IBAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="546" width="80" height="14"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="12" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[SWIFT]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="112" y="500" width="396" height="18"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cmm_contacts_con_iban}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="112" y="546" width="396" height="18"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cmm_contacts_con_swift}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="116" y="173" width="392" height="14"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="12" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Nom de la banque]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="25">
+			<rectangle>
+				<reportElement x="0" y="0" width="553" height="24" forecolor="#992F2A" backcolor="#992F2A"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="18" y="1" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Created by Bagwell & Watson]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="18" y="12" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.bagwell-watson.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="196" y="1" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Writen by Phoenix SaaS ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="196" y="12" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.phoenix-saas.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="1" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Support by Planet-e-pegase ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="12" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.planet-e-pegase.biz ]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

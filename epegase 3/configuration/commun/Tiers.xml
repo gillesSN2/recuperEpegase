@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tiers>
+
+    <type_tiers>
+        <libelle_FR>Prestataires</libelle_FR>
+        <libelle_UK>Providers</libelle_UK>
+        <libelle_SP></libelle_SP>
+        <cat_FR>Artisan, Prestataire, Avocat, Notaire, Magistrat, Médecin, Infirmière, Transitaire, Transporteur, Propriétaire, Producteur, Eleveur</cat_FR>
+        <cat_UK>Craftsman, Provider, Lawyer, Notary, Magistrate, Doctor, Nurse, Trasit Agent, Conveyor, Owner, Productor, Farmer</cat_UK>
+        <cat_SP></cat_SP>
+        <code>000</code>
+        <type>0</type>
+    </type_tiers>
+
+    <type_tiers>
+        <libelle_FR>Fournisseurs Sociétés</libelle_FR>
+        <libelle_UK></libelle_UK>
+        <libelle_SP></libelle_SP>
+        <cat_FR>Fournisseur, Assureur, Avocat, Notaire, Magistrat, Médecin, Infirmière, Transitaire, Transporteur, Propriétaire, Administration, Organisme Social, Association, Banque, Bailleur de fonds,
+        </cat_FR>
+        <cat_UK></cat_UK>
+        <cat_SP></cat_SP>
+        <code>001</code>
+        <type>0</type>
+    </type_tiers>
+
+    <type_tiers>
+        <libelle_FR>Suspects Individuels</libelle_FR>
+        <libelle_UK></libelle_UK>
+        <libelle_SP></libelle_SP>
+        <cat_FR>Suspect,</cat_FR>
+        <cat_UK></cat_UK>
+        <cat_SP></cat_SP>
+        <code>010</code>
+        <type>2</type>
+    </type_tiers>
+
+    <type_tiers>
+        <libelle_FR>Suspects Sociétés</libelle_FR>
+        <libelle_UK>Suspect Company</libelle_UK>
+        <libelle_SP></libelle_SP>
+        <cat_FR>Suspect,</cat_FR>
+        <cat_UK>Suspect,</cat_UK>
+        <cat_SP></cat_SP>
+        <code>011</code>
+        <type>2</type>
+    </type_tiers>
+
+    <type_tiers>
+        <libelle_FR>Prospects Individuels</libelle_FR>
+        <libelle_UK>Individual Prospective</libelle_UK>
+        <libelle_SP></libelle_SP>
+        <cat_FR>Prospect,</cat_FR>
+        <cat_UK>Prospective,</cat_UK>
+        <cat_SP></cat_SP>
+        <code>020</code>
+        <type>2</type>
+    </type_tiers>
+
+    <type_tiers>
+        <libelle_FR>Prospects Sociétés</libelle_FR>
+        <libelle_UK>Prospective company</libelle_UK>
+        <libelle_SP></libelle_SP>
+        <cat_FR>Prospect,</cat_FR>
+        <cat_UK>Prospective, </cat_UK>
+        <cat_SP></cat_SP>
+        <code>021</code>
+        <type>2</type>
+    </type_tiers>
+
+    <type_tiers>
+        <libelle_FR>Clients Individuels</libelle_FR>
+        <libelle_UK>Individual Customer</libelle_UK>
+        <libelle_SP></libelle_SP>
+        <cat_FR>Client, Locataire, Prestataire,</cat_FR>
+        <cat_UK>Customer, Tenant,</cat_UK>
+        <cat_SP></cat_SP>
+        <code>030</code>
+        <type>3</type>
+    </type_tiers>
+
+    <type_tiers>
+        <libelle_FR>Clients Sociétés</libelle_FR>
+        <libelle_UK>customer company</libelle_UK>
+        <libelle_SP></libelle_SP>
+        <cat_FR>Client, Locataire, Assurance/IPM, Mutuelle/Complémentaire, Programme Médical,</cat_FR>
+        <cat_UK>Customer, Tenant,</cat_UK>
+        <cat_SP></cat_SP>
+        <code>031</code>
+        <type>3</type>
+    </type_tiers>
+
+    <type_tiers>
+        <libelle_FR>Patients</libelle_FR>
+        <libelle_UK>Patients</libelle_UK>
+        <libelle_SP></libelle_SP>
+        <cat_FR>Comptant, Terme, spécial, Cas social,</cat_FR>
+        <cat_UK>Insured, Uninsured</cat_UK>
+        <cat_SP></cat_SP>
+        <code>034</code>
+        <type>3</type>
+    </type_tiers>
+
+    <type_tiers>
+        <libelle_FR>Membres individuels</libelle_FR>
+        <libelle_UK>Individual member</libelle_UK>
+        <libelle_SP></libelle_SP>
+        <cat_FR>Membre,</cat_FR>
+        <cat_UK>Member, </cat_UK>
+        <cat_SP></cat_SP>
+        <code>035</code>
+        <type>3</type>
+    </type_tiers>
+
+    <type_tiers>
+        <libelle_FR>Membres Groupes</libelle_FR>
+        <libelle_UK>Groups Member</libelle_UK>
+        <libelle_SP></libelle_SP>
+        <cat_FR>Membre,</cat_FR>
+        <cat_UK>Member, </cat_UK>
+        <cat_SP></cat_SP>
+        <code>036</code>
+        <type>3</type>
+    </type_tiers>
+
+    <type_tiers>
+        <libelle_FR>Eleves</libelle_FR>
+        <libelle_UK>Student</libelle_UK>
+        <libelle_SP></libelle_SP>
+        <cat_FR>Crèche, Primaire, Secondaire, Supérieur, Professionnel,</cat_FR>
+        <cat_UK>Crib, Primary, Secondary, Superior, Professional, </cat_UK>
+        <cat_SP></cat_SP>
+        <code>037</code>
+        <type>3</type>
+    </type_tiers>
+
+    <type_tiers>
+        <libelle_FR>Salariés</libelle_FR>
+        <libelle_UK>Employee</libelle_UK>
+        <libelle_SP></libelle_SP>
+        <cat_FR>Standard, Administratif, Chauffeur, Commercial, Médical, Surveillant, Assistants, Instituteurs, Professeurs, Technique,</cat_FR>
+        <cat_UK>Standar, Administrative, Driver, Commercial, Teacher, Medical, Supervisor, Assistants, Teachers, Professors,  Technical,</cat_UK>
+        <cat_SP></cat_SP>
+        <code>050</code>
+        <type>5</type>
+    </type_tiers>
+
+    <type_tiers>
+        <libelle_FR>Paroissiens</libelle_FR>
+        <libelle_UK>Parishioner</libelle_UK>
+        <libelle_SP></libelle_SP>
+        <cat_FR>Sympathisant, Membre, Actif, Ex-membre,
+        </cat_FR>
+        <cat_UK>Sympatisant, Member, Active, Ex-member, </cat_UK>
+        <cat_SP></cat_SP>
+        <code>060</code>
+        <type>6</type>
+    </type_tiers>
+
+    <type_tiers>
+        <libelle_FR>Divers</libelle_FR>
+        <libelle_UK>Various</libelle_UK>
+        <libelle_SP></libelle_SP>
+        <cat_FR>Divers,</cat_FR>
+        <cat_UK>Various,</cat_UK>
+        <cat_SP></cat_SP>
+        <code>099</code>
+        <type>99</type>
+    </type_tiers>
+
+</Tiers>

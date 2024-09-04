@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Fiche3Mca" language="groovy" pageWidth="550" pageHeight="200" columnWidth="550" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["/usr/local/SUNWappserver/domains/domain1/config/epegase/web/configuration/impression/fr/compta/etatfin_SYSCOA/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="societe" class="java.lang.String"/>
+	<parameter name="requete" class="java.lang.String"/>
+	<parameter name="adresse" class="java.lang.String"/>
+	<parameter name="sigle" class="java.lang.String"/>
+	<parameter name="identification_1" class="java.lang.String"/>
+	<parameter name="identification_2" class="java.lang.String"/>
+	<parameter name="identification_3" class="java.lang.String"/>
+	<parameter name="identification_4" class="java.lang.String"/>
+	<parameter name="identification_5" class="java.lang.String"/>
+	<parameter name="identification_6" class="java.lang.String"/>
+	<parameter name="identification_7" class="java.lang.String"/>
+	<parameter name="exercice" class="java.lang.Long"/>
+	<parameter name="page_init" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="etat_init" class="java.lang.Integer"/>
+	<parameter name="dateDeb" class="java.util.Date"/>
+	<parameter name="dateFin" class="java.util.Date"/>
+	<parameter name="telephone_1" class="java.lang.String"/>
+	<parameter name="fax" class="java.lang.String"/>
+	<parameter name="boite_postale" class="java.lang.String"/>
+	<parameter name="ville" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT
+     cpt_complement_informations.`cplmen_type` AS cpt_complement_informations_cplmen_type,
+     cpt_complement_informations.`execpt_id` AS cpt_complement_informations_execpt_id,
+     cpt_complement_informations.`cplmen_nom` AS cpt_complement_informations_cplmen_nom,
+     cpt_complement_informations.`cplmen_prenom` AS cpt_complement_informations_cplmen_prenom,
+     cpt_complement_informations.`cplmen_qualite` AS cpt_complement_informations_cplmen_qualite,
+     cpt_complement_informations.`cplmen_adresse` AS cpt_complement_informations_cplmen_adresse
+FROM
+     `cpt_complement_informations` cpt_complement_informations
+WHERE
+     cplmen_type = 3 and execpt_id = $P{exercice}]]>
+	</queryString>
+	<field name="cpt_complement_informations_cplmen_type" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_complement_informations_execpt_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_complement_informations_cplmen_nom" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_complement_informations_cplmen_prenom" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_complement_informations_cplmen_qualite" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_complement_informations_cplmen_adresse" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<sortField name="cpt_complement_informations_cplmen_nom"/>
+	<variable name="page_en_cours" class="java.lang.Integer">
+		<variableExpression><![CDATA[$P{page_init}+$V{PAGE_NUMBER}]]></variableExpression>
+		<initialValueExpression><![CDATA[$P{page_init}]]></initialValueExpression>
+	</variable>
+	<variable name="etat_en_cours" class="java.lang.Integer">
+		<variableExpression><![CDATA[$P{etat_init}+$V{PAGE_NUMBER}]]></variableExpression>
+		<initialValueExpression><![CDATA[$P{etat_init}]]></initialValueExpression>
+	</variable>
+	<variable name="duree" class="java.lang.Integer">
+		<variableExpression><![CDATA[$P{dateFin}.getMonth()-$P{dateDeb}.getMonth()+1]]></variableExpression>
+		<initialValueExpression><![CDATA[$P{dateFin}.getMonth()-$P{dateDeb}.getMonth()+1]]></initialValueExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<columnHeader>
+		<band height="67">
+			<staticText>
+				<reportElement x="114" y="12" width="319" height="14"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MEMBRES DU CONSEIL D'ADMINISTRATION]]></text>
+			</staticText>
+			<line>
+				<reportElement x="169" y="34" width="1" height="33"/>
+			</line>
+			<line>
+				<reportElement x="10" y="34" width="1" height="33"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="10" y="62" width="530" height="1"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="10" y="33" width="530" height="1"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="349" y="34" width="1" height="33"/>
+			</line>
+			<line>
+				<reportElement x="540" y="34" width="1" height="33"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="276" y="34" width="1" height="33"/>
+			</line>
+			<staticText>
+				<reportElement x="285" y="43" width="56" height="11"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Qualité]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="177" y="43" width="92" height="11"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Prénoms]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="24" y="43" width="135" height="11"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Noms]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="359" y="43" width="173" height="11"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Adresse (BP, Ville, Pays)]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<line>
+				<reportElement x="10" y="0" width="1" height="20"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="169" y="0" width="1" height="20"/>
+			</line>
+			<line>
+				<reportElement x="276" y="0" width="1" height="20"/>
+			</line>
+			<line>
+				<reportElement x="540" y="0" width="1" height="20"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="349" y="0" width="1" height="20"/>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement x="19" y="2" width="134" height="13"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="7" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cpt_complement_informations_cplmen_nom}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="177" y="2" width="89" height="13"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="7" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cpt_complement_informations_cplmen_prenom}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="284" y="2" width="55" height="13"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="7" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cpt_complement_informations_cplmen_qualite}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="364" y="2" width="172" height="13"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="7" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cpt_complement_informations_cplmen_adresse}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="11" y="16" width="529" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="16">
+			<line>
+				<reportElement x="10" y="6" width="530" height="1"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="169" y="0" width="1" height="7"/>
+			</line>
+			<line>
+				<reportElement x="276" y="0" width="1" height="7"/>
+			</line>
+			<line>
+				<reportElement x="349" y="0" width="1" height="7"/>
+			</line>
+			<line>
+				<reportElement x="540" y="0" width="1" height="7"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="10" y="0" width="1" height="7"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+		</band>
+	</pageFooter>
+</jasperReport>

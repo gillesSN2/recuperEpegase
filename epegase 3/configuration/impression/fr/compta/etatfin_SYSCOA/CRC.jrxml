@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="BilanActif" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["/usr/local/SUNWappserver/domains/domain1/config/epegase/web/configuration/impression/fr/compta/etatfin_SYSCOA/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="societe" class="java.lang.String"/>
+	<parameter name="requete" class="java.lang.String"/>
+	<parameter name="adresse" class="java.lang.String"/>
+	<parameter name="sigle" class="java.lang.String"/>
+	<parameter name="identification_1" class="java.lang.String"/>
+	<parameter name="exercice" class="java.lang.Long"/>
+	<parameter name="page_init" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="etat_init" class="java.lang.Integer"/>
+	<parameter name="dateDeb" class="java.util.Date"/>
+	<parameter name="dateFin" class="java.util.Date"/>
+	<queryString>
+		<![CDATA[SELECT
+     cpt_exercices_comptable.`execpt_id` AS cpt_exercices_comptable_execpt_id,
+     cpt_exercices_comptable.`execpt_date_creat` AS cpt_exercices_comptable_execpt_date_creat,
+     cpt_exercices_comptable.`execpt_date_modif` AS cpt_exercices_comptable_execpt_date_modif,
+     cpt_exercices_comptable.`execpt_date_cloture` AS cpt_exercices_comptable_execpt_date_cloture,
+     cpt_exercices_comptable.`execpt_user_creat` AS cpt_exercices_comptable_execpt_user_creat,
+     cpt_exercices_comptable.`execpt_user_cloture` AS cpt_exercices_comptable_execpt_user_cloture,
+     cpt_exercices_comptable.`execpt_user_modif` AS cpt_exercices_comptable_execpt_user_modif,
+     cpt_exercices_comptable.`execpt_date_debut` AS cpt_exercices_comptable_execpt_date_debut,
+     cpt_exercices_comptable.`execpt_date_fin` AS cpt_exercices_comptable_execpt_date_fin,
+     cpt_exercices_comptable.`execpt_etat` AS cpt_exercices_comptable_execpt_etat
+FROM
+     `cpt_exercices_comptable` cpt_exercices_comptable
+WHERE
+     execpt_id = $P{exercice}]]>
+	</queryString>
+	<field name="cpt_exercices_comptable_execpt_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_date_creat" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_date_modif" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_date_cloture" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_user_creat" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_user_cloture" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_user_modif" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_date_debut" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_date_fin" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_etat" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="page_en_cours" class="java.lang.Integer">
+		<variableExpression><![CDATA[$P{page_init}+$V{PAGE_NUMBER}]]></variableExpression>
+		<initialValueExpression><![CDATA[$P{page_init}]]></initialValueExpression>
+	</variable>
+	<variable name="etat_en_cours" class="java.lang.Integer">
+		<variableExpression><![CDATA[$P{etat_init}+$V{PAGE_NUMBER}]]></variableExpression>
+		<initialValueExpression><![CDATA[$P{etat_init}]]></initialValueExpression>
+	</variable>
+	<variable name="duree" class="java.lang.Integer">
+		<variableExpression><![CDATA[$P{dateFin}.getMonth()-$P{dateDeb}.getMonth()+1]]></variableExpression>
+		<initialValueExpression><![CDATA[$P{dateFin}.getMonth()-$P{dateDeb}.getMonth()+1]]></initialValueExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="121" splitType="Prevent">
+			<staticText>
+				<reportElement x="0" y="95" width="123" height="15"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[N° identification fiscale :]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="130" y="96" width="89" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{identification_1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="417" y="95" width="91" height="15"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Durée (en mois) :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="238" y="95" width="85" height="15"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Exercice clos le :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="79" width="50" height="15"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Adresse :]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="56" y="80" width="476" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{adresse}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="49" width="231" height="15"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[DENOMINATION SOCIALE DE L'ENTREPRISE :]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="251" y="50" width="297" height="27"/>
+				<textElement>
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{societe}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="85" y="64" width="166" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{sigle}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="63" width="67" height="15"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Sigle usuel :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="323" y="10" width="215" height="15"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[COMPTE DE RESULTAT SYSTEME NORMAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="122" y="21" width="134" height="14"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[COMPTE DE RESULTAT]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement mode="Transparent" x="319" y="4" width="226" height="39"/>
+			</rectangle>
+			<textField>
+				<reportElement x="219" y="4" width="100" height="14"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["- "+$V{etat_en_cours}+" -"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="405" y="28" width="134" height="10" forecolor="#0D0909"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["PAGE "+$V{page_en_cours}+"/4"]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="327" y="96" width="78" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$P{dateFin}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="512" y="96" width="20" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Integer"><![CDATA[$V{duree}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="681" splitType="Stretch">
+			<subreport>
+				<reportElement x="0" y="3" width="555" height="661"/>
+				<subreportParameter name="adresse"/>
+				<subreportParameter name="requete">
+					<subreportParameterExpression><![CDATA[$P{requete}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="sigle"/>
+				<subreportParameter name="identification_1"/>
+				<subreportParameter name="societe"/>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression class="java.lang.String"><![CDATA[$P{SUBREPORT_DIR} + "CRC_1.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="681">
+			<subreport>
+				<reportElement x="1" y="0" width="554" height="662"/>
+				<subreportParameter name="adresse"/>
+				<subreportParameter name="requete">
+					<subreportParameterExpression><![CDATA[$P{requete}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="sigle"/>
+				<subreportParameter name="identification_1"/>
+				<subreportParameter name="societe"/>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression class="java.lang.String"><![CDATA[$P{SUBREPORT_DIR} + "CRC_2.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+</jasperReport>

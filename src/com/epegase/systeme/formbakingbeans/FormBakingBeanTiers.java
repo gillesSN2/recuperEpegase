@@ -400,7 +400,7 @@ public class FormBakingBeanTiers implements Serializable {
       this.formTiers.setLesReglementsClient(this.lesReglementClientListe);
       this.formTiers.setMesFamilleVentestems(this.mesFamilleVentestems);
       this.formTiers.setTypeVente(this.typeVente);
-      this.formTiers.setGenreTiers(this.menutiers.getGenre());
+      this.formTiers.setGenreTiers(this.menutiers.getGenre());//OOOO
       this.formTiers.setLigneMenu(this.menutiers);
       this.formTiers.setOptionTiers(this.optionTiers);
       this.formTiers.setFormRecherche(this.formRecherche);

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<origine>
+
+	<source>
+		<nom_FR>NON SPECIFIE</nom_FR>
+		<nom_UK>NOT SPECIFIED</nom_UK>
+		<nom_SP></nom_SP>
+	</source>
+
+	<source>
+		<nom_FR>BOUCHE A OREILLE</nom_FR>
+		<nom_UK>WORD OF MOUNT</nom_UK>
+		<nom_SP></nom_SP>
+	</source>
+
+	<source>
+		<nom_FR>RECOMMENDATION CLIENT</nom_FR>
+		<nom_UK>CUSTOMER RECOMMENDATION</nom_UK>
+		<nom_SP></nom_SP>
+	</source>
+
+	<source>
+		<nom_FR>PHONING</nom_FR>
+		<nom_UK>PHONING</nom_UK>
+		<nom_SP></nom_SP>
+	</source>
+
+	<source>
+		<nom_FR>MAILING</nom_FR>
+		<nom_UK>MAILING</nom_UK>
+		<nom_SP></nom_SP>
+	</source>
+
+	<source>
+		<nom_FR>PUBLICITE INTERNET</nom_FR>
+		<nom_UK>INTERNET AVERTISING</nom_UK>
+		<nom_SP></nom_SP>
+	</source>
+
+	<source>
+		<nom_FR>COMPAGNE PUBLICITAIRE</nom_FR>
+		<nom_UK>ADVERTISING CAMPAIGN</nom_UK>
+		<nom_SP></nom_SP>
+	</source>
+
+	<source>
+		<nom_FR>MAGAZINE</nom_FR>
+		<nom_UK>MAGAZINE</nom_UK>
+		<nom_SP></nom_SP>
+	</source>
+
+	<source>
+		<nom_FR>RADIO</nom_FR>
+		<nom_UK>RADIO</nom_UK>
+		<nom_SP></nom_SP>
+	</source>
+
+	<source>
+		<nom_FR>AUTRE</nom_FR>
+		<nom_UK>OTHER</nom_UK>
+		<nom_SP></nom_SP>
+	</source>
+</origine>

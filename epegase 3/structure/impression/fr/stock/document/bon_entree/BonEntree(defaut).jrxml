@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Inventaire" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isFloatColumnFooter="true" whenResourceMissingType="Error">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="247"/>
+	<property name="ireport.y" value="336"/>
+	<parameter name="requete" class="java.lang.String"/>
+	<parameter name="societe" class="java.lang.String"/>
+	<parameter name="version" class="java.lang.String"/>
+	<parameter name="adresse" class="java.lang.String"/>
+	<parameter name="ville" class="java.lang.String"/>
+	<parameter name="pays" class="java.lang.String"/>
+	<parameter name="logo_1" class="java.lang.String"/>
+	<parameter name="logo_2" class="java.lang.String"/>
+	<parameter name="logo_4" class="java.lang.String"/>
+	<parameter name="telephone_1" class="java.lang.String"/>
+	<parameter name="telephone_2" class="java.lang.String"/>
+	<parameter name="fax" class="java.lang.String"/>
+	<parameter name="site_web" class="java.lang.String"/>
+	<parameter name="mails" class="java.lang.String"/>
+	<parameter name="identification_1" class="java.lang.String"/>
+	<parameter name="identification_2" class="java.lang.String"/>
+	<parameter name="identification_3" class="java.lang.String"/>
+	<parameter name="identification_4" class="java.lang.String"/>
+	<parameter name="identification_5" class="java.lang.String"/>
+	<parameter name="identification_6" class="java.lang.String"/>
+	<parameter name="identification_7" class="java.lang.String"/>
+	<parameter name="identification_8" class="java.lang.String"/>
+	<parameter name="identification_9" class="java.lang.String"/>
+	<parameter name="identification_10" class="java.lang.String"/>
+	<parameter name="banque" class="java.lang.String"/>
+	<parameter name="montant_lettre" class="java.lang.String"/>
+	<parameter name="filtre" class="java.lang.String"/>
+	<parameter name="entete" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT
+     ach_bonEntree_entete.`bin_id` AS ach_bonEntree_entete_bin_id,
+     ach_bonEntree_entete.`bin_date_creat` AS ach_bonEntree_entete_bin_date_creat,
+     ach_bonEntree_entete.`bin_date_modif` AS ach_bonEntree_entete_bin_date_modif,
+     ach_bonEntree_entete.`bin_id_createur` AS ach_bonEntree_entete_bin_id_createur,
+     ach_bonEntree_entete.`bin_nom_createur` AS ach_bonEntree_entete_bin_nom_createur,
+     ach_bonEntree_entete.`bin_id_modif` AS ach_bonEntree_entete_bin_id_modif,
+     ach_bonEntree_entete.`bin_nom_modif` AS ach_bonEntree_entete_bin_nom_modif,
+     ach_bonEntree_entete.`bin_date` AS ach_bonEntree_entete_bin_date,
+     ach_bonEntree_entete.`bin_num` AS ach_bonEntree_entete_bin_num,
+     ach_bonEntree_entete.`bin_depot` AS ach_bonEntree_entete_bin_depot,
+     ach_bonEntree_entete.`bin_nom_responsable` AS ach_bonEntree_entete_bin_nom_responsable,
+     ach_bonEntree_entete.`bin_id_responsable` AS ach_bonEntree_entete_bin_id_responsable,
+     ach_bonEntree_entete.`bin_serie` AS ach_bonEntree_entete_bin_serie,
+     ach_bonEntree_entete.`bin_object` AS ach_bonEntree_entete_bin_object,
+     ach_bonEntree_entete.`bin_tot_pump` AS ach_bonEntree_entete_bin_tot_pump,
+     ach_bonEntree_entete.`bin_activite` AS ach_bonEntree_entete_bin_activite,
+     ach_bonEntree_entete.`bin_site` AS ach_bonEntree_entete_bin_site,
+     ach_bonEntree_entete.`bin_departement` AS ach_bonEntree_entete_bin_departement,
+     ach_bonEntree_entete.`bin_service` AS ach_bonEntree_entete_bin_service,
+     ach_bonEntree_entete.`bin_region` AS ach_bonEntree_entete_bin_region,
+     ach_bonEntree_entete.`bin_secteur` AS ach_bonEntree_entete_bin_secteur,
+     ach_bonEntree_entete.`bin_pdv` AS ach_bonEntree_entete_bin_pdv,
+     ach_bonEntree_entete.`bin_anal2` AS ach_bonEntree_entete_bin_anal2,
+     ach_bonEntree_entete.`bin_anal4` AS ach_bonEntree_entete_bin_anal4,
+     ach_bonEntree_entete.`bin_info1` AS ach_bonEntree_entete_bin_info1,
+     ach_bonEntree_entete.`bin_info2` AS ach_bonEntree_entete_bin_info2,
+     ach_bonEntree_entete.`bin_info3` AS ach_bonEntree_entete_bin_info3,
+     ach_bonEntree_entete.`bin_info4` AS ach_bonEntree_entete_bin_info4,
+     ach_bonEntree_entete.`bin_info5` AS ach_bonEntree_entete_bin_info5,
+     ach_bonEntree_entete.`bin_info6` AS ach_bonEntree_entete_bin_info6,
+     ach_bonEntree_entete.`bin_info7` AS ach_bonEntree_entete_bin_info7,
+     ach_bonEntree_entete.`bin_info8` AS ach_bonEntree_entete_bin_info8,
+     ach_bonEntree_entete.`bin_info9` AS ach_bonEntree_entete_bin_info9,
+     ach_bonEntree_entete.`bin_info10` AS ach_bonEntree_entete_bin_info10,
+     ach_bonEntree_entete.`bin_date_imp` AS ach_bonEntree_entete_bin_date_imp,
+     ach_bonEntree_entete.`bin_modele_imp` AS ach_bonEntree_entete_bin_modele_imp,
+     ach_bonEntree_entete.`bin_etat_val` AS ach_bonEntree_entete_bin_etat_val,
+     ach_bonEntree_entete.`bin_gele` AS ach_bonEntree_entete_bin_gele,
+     ach_bonEntree_entete.`bin_etat` AS ach_bonEntree_entete_bin_etat,
+     ach_bonEntree_entete.`bin_date_valide` AS ach_bonEntree_entete_bin_date_valide,
+     ach_bonEntree_entete.`bin_date_annule` AS ach_bonEntree_entete_bin_date_annule,
+     ach_bonEntree_entete.`bin_motif_annule` AS ach_bonEntree_entete_bin_motif_annule,
+     ach_bonEntree_entete.`exeach_id` AS ach_bonEntree_entete_exeach_id,
+     ach_bonEntree_entete.`usr_id` AS ach_bonEntree_entete_usr_id,
+     ach_bonEntree_ligne.`binlig_id` AS ach_bonEntree_ligne_binlig_id,
+     ach_bonEntree_ligne.`binlig_code` AS ach_bonEntree_ligne_binlig_code,
+     ach_bonEntree_ligne.`binlig_famille` AS ach_bonEntree_ligne_binlig_famille,
+     ach_bonEntree_ligne.`binlig_libelle` AS ach_bonEntree_ligne_binlig_libelle,
+     ach_bonEntree_ligne.`binlig_reference` AS ach_bonEntree_ligne_binlig_reference,
+     ach_bonEntree_ligne.`binlig_unite` AS ach_bonEntree_ligne_binlig_unite,
+     ach_bonEntree_ligne.`binlig_condition` AS ach_bonEntree_ligne_binlig_condition,
+     ach_bonEntree_ligne.`binlig_qte` AS ach_bonEntree_ligne_binlig_qte,
+     ach_bonEntree_ligne.`binlig_casier` AS ach_bonEntree_ligne_binlig_casier,
+     ach_bonEntree_ligne.`binlig_long` AS ach_bonEntree_ligne_binlig_long,
+     ach_bonEntree_ligne.`binlig_larg` AS ach_bonEntree_ligne_binlig_larg,
+     ach_bonEntree_ligne.`binlig_haut` AS ach_bonEntree_ligne_binlig_haut,
+     ach_bonEntree_ligne.`binlig_diam` AS ach_bonEntree_ligne_binlig_diam,
+     ach_bonEntree_ligne.`binlig_nb` AS ach_bonEntree_ligne_binlig_nb,
+     ach_bonEntree_ligne.`binlig_poidsNet` AS ach_bonEntree_ligne_binlig_poidsNet,
+     ach_bonEntree_ligne.`binlig_poidsBrut` AS ach_bonEntree_ligne_binlig_poidsBrut,
+     ach_bonEntree_ligne.`binlig_volume` AS ach_bonEntree_ligne_binlig_volume,
+     ach_bonEntree_ligne.`binlig_qte_util` AS ach_bonEntree_ligne_binlig_qte_util,
+     ach_bonEntree_ligne.`binlig_qte_stock` AS ach_bonEntree_ligne_binlig_qte_stock,
+     ach_bonEntree_ligne.`binlig_pump` AS ach_bonEntree_ligne_binlig_pump,
+     ach_bonEntree_ligne.`binlig_total` AS ach_bonEntree_ligne_binlig_total,
+     ach_bonEntree_ligne.`binlig_obs` AS ach_bonEntree_ligne_binlig_obs,
+     ach_bonEntree_ligne.`bin_id` AS ach_bonEntree_ligne_bin_id
+FROM
+     `ach_bonEntree_entete` ach_bonEntree_entete INNER JOIN `ach_bonEntree_ligne` ach_bonEntree_ligne ON ach_bonEntree_entete.`bin_id` = ach_bonEntree_ligne.`bin_id`
+WHERE
+   $P!{requete}]]>
+	</queryString>
+	<field name="ach_bonEntree_entete_bin_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_date_creat" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_date_modif" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_id_createur" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_nom_createur" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_id_modif" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_nom_modif" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_date" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_num" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_depot" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_nom_responsable" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_id_responsable" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_serie" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_object" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_tot_pump" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_activite" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_site" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_departement" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_service" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_region" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_secteur" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_pdv" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_anal2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_anal4" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_info1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_info2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_info3" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_info4" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_info5" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_info6" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_info7" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_info8" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_info9" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_info10" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_date_imp" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_modele_imp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_etat_val" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_gele" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_etat" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_date_valide" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_date_annule" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_bin_motif_annule" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_exeach_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_entete_usr_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_ligne_binlig_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_ligne_binlig_code" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_ligne_binlig_famille" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_ligne_binlig_libelle" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_ligne_binlig_reference" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_ligne_binlig_unite" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_ligne_binlig_condition" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_ligne_binlig_qte" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_ligne_binlig_casier" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_ligne_binlig_long" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_ligne_binlig_larg" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_ligne_binlig_haut" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_ligne_binlig_diam" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_ligne_binlig_nb" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_ligne_binlig_poidsNet" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_ligne_binlig_poidsBrut" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_ligne_binlig_volume" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_ligne_binlig_qte_util" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_ligne_binlig_qte_stock" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_ligne_binlig_pump" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_ligne_binlig_total" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_ligne_binlig_obs" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_bonEntree_ligne_bin_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<title>
+		<band height="116" splitType="Stretch">
+			<rectangle>
+				<reportElement x="1" y="1" width="555" height="36" forecolor="#000000" backcolor="#000000"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="1" y="88" width="555" height="27" forecolor="#992F2A" backcolor="#992F2A"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="1" y="37" width="555" height="51" forecolor="#999999" backcolor="#999999"/>
+			</rectangle>
+			<textField evaluationTime="Report">
+				<reportElement x="509" y="97" width="23" height="10" forecolor="#FFFFFF"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="25" y="41" width="511" height="20" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{filtre}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="20" y="97" width="55" height="10" forecolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[© B&W 2010 -]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="77" y="97" width="28" height="11" forecolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{version}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="355" y="97" width="151" height="10" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Page "+$V{PAGE_NUMBER}+" / "]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy HH.mm.ss">
+				<reportElement x="108" y="97" width="151" height="10" forecolor="#FFFFFF"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="25" y="64" width="511" height="20" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{societe}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="25" y="6" width="511" height="24" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans" size="18"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{entete}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="139" splitType="Stretch">
+			<textField pattern="d/M/yyyy" isBlankWhenNull="true">
+				<reportElement x="206" y="16" width="68" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{ach_bonEntree_entete_bin_date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="6" y="16" width="85" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Bon entrée N°:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="96" y="16" width="69" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{ach_bonEntree_entete_bin_num}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="29" y="34" width="61" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Suivi par :]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="96" y="34" width="178" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{ach_bonEntree_entete_bin_nom_responsable}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="167" y="16" width="34" height="18"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="91" width="61" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Objet :]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="96" y="92" width="178" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{ach_bonEntree_entete_bin_object}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="29" y="54" width="61" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Activité :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="72" width="61" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Service :]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="96" y="54" width="178" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{ach_bonEntree_entete_bin_activite}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="96" y="73" width="178" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{ach_bonEntree_entete_bin_service}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="305" y="16" width="61" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dépôt :]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="380" y="16" width="151" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{ach_bonEntree_entete_bin_depot}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="62" splitType="Stretch">
+			<staticText>
+				<reportElement x="13" y="32" width="61" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Code]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="86" y="32" width="202" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Libellé produit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="345" y="32" width="38" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Unité]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="301" y="32" width="31" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Qte.]]></text>
+			</staticText>
+			<line>
+				<reportElement x="12" y="24" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="76" y="24" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="292" y="24" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="335" y="24" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="387" y="24" width="1" height="38"/>
+			</line>
+			<staticText>
+				<reportElement x="396" y="32" width="53" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Casier]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="474" y="32" width="53" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Prix Total]]></text>
+			</staticText>
+			<line>
+				<reportElement x="459" y="24" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="540" y="24" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="12" y="24" width="529" height="1"/>
+			</line>
+			<line>
+				<reportElement x="12" y="55" width="529" height="1"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="28" splitType="Stretch">
+			<textField>
+				<reportElement x="18" y="4" width="56" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{ach_bonEntree_ligne_binlig_code}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="84" y="4" width="208" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{ach_bonEntree_ligne_binlig_libelle}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="343" y="4" width="38" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{ach_bonEntree_ligne_binlig_unite}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="299" y="4" width="31" height="20">
+					<printWhenExpression><![CDATA[$F{ach_bonEntree_ligne_binlig_qte}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{ach_bonEntree_ligne_binlig_qte}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="12" y="0" width="1" height="28"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="76" y="0" width="1" height="28"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="292" y="0" width="1" height="28"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="335" y="0" width="1" height="28"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="387" y="0" width="1" height="28"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="459" y="0" width="1" height="28"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="540" y="0" width="1" height="28"/>
+			</line>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="397" y="4" width="52" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{ach_bonEntree_ligne_binlig_casier}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="467" y="4" width="61" height="20">
+					<printWhenExpression><![CDATA[$F{ach_bonEntree_ligne_binlig_total}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{ach_bonEntree_ligne_binlig_total}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="50">
+			<line>
+				<reportElement x="13" y="29" width="527" height="1"/>
+			</line>
+			<textField pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="467" y="12" width="63" height="15">
+					<printWhenExpression><![CDATA[$F{ach_bonEntree_entete_bin_tot_pump}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{ach_bonEntree_entete_bin_tot_pump}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="350" y="12" width="104" height="15"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total PUMP]]></text>
+			</staticText>
+			<line>
+				<reportElement x="76" y="0" width="1" height="10"/>
+			</line>
+			<line>
+				<reportElement x="12" y="0" width="1" height="29"/>
+			</line>
+			<line>
+				<reportElement x="12" y="9" width="529" height="1"/>
+			</line>
+			<line>
+				<reportElement x="292" y="0" width="1" height="10"/>
+			</line>
+			<line>
+				<reportElement x="335" y="0" width="1" height="29"/>
+			</line>
+			<line>
+				<reportElement x="387" y="0" width="1" height="10"/>
+			</line>
+			<line>
+				<reportElement x="459" y="0" width="1" height="29"/>
+			</line>
+			<line>
+				<reportElement x="540" y="0" width="1" height="29"/>
+			</line>
+		</band>
+	</columnFooter>
+	<lastPageFooter>
+		<band height="25">
+			<rectangle>
+				<reportElement x="1" y="0" width="555" height="24" forecolor="#992F2A" backcolor="#992F2A"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="367" y="12" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Right">
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.planet-e-pegase.biz ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="367" y="1" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Right">
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Support by Planet-e-pegase ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="201" y="1" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Writen by Phoenix SaaS ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="1" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement>
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Created by Bagwell & Watson]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="12" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement>
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.bagwell-watson.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="201" y="12" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.phoenix-saas.com]]></text>
+			</staticText>
+		</band>
+	</lastPageFooter>
+</jasperReport>

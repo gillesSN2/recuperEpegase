@@ -477,10 +477,10 @@ public class UtilInitHibernate implements Serializable {
       return (Session)var2;
    }
 
-   public Session getOpenSession(String var1, String var2) throws HibernateException, NamingException {
+   public Session getOpenSession(String var1, String module) throws HibernateException, NamingException {
       Object var3 = (Session)this.sessionThread.get();
       if (var3 == null) {
-         this.configure(var1, var2);
+         this.configure(var1, module);
          var3 = this.sessionFactory.openSession();
          this.sessionThread.set(var3);
       }

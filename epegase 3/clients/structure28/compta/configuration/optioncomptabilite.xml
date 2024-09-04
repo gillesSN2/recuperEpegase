@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<option_compta>
+  <nbcr>10</nbcr>
+  <typelib>libre</typelib>
+  <tri_jrx>3</tri_jrx>
+  <tri_extrait>piece</tri_extrait>
+  <trf_brl>0</trf_brl>
+  <trf_cpte>1</trf_cpte>
+  <trf_cpteAchats>0</trf_cpteAchats>
+  <trf_cpteVentes>0</trf_cpteVentes>
+  <trf_cptePaye>0</trf_cptePaye>
+  <trf_cpteImmo>0</trf_cpteImmo>
+  <clotureSansControle>0</clotureSansControle>
+  <ecartDebit />
+  <ecartCredit />
+  <analytique>false</analytique>
+  <anal_c1>false</anal_c1>
+  <anal_c2>false</anal_c2>
+  <anal_c3>false</anal_c3>
+  <anal_c4>false</anal_c4>
+  <anal_c5>false</anal_c5>
+  <anal_c6>false</anal_c6>
+  <anal_c7>false</anal_c7>
+  <anal_c8>false</anal_c8>
+  <anal_c9>false</anal_c9>
+  <anal_c10>false</anal_c10>
+  <anal_c11>false</anal_c11>
+  <anal_c12>false</anal_c12>
+  <anal_c13>false</anal_c13>
+  <anal_c14>false</anal_c14>
+  <anal_c15>false</anal_c15>
+  <anal_c16>false</anal_c16>
+  <anal_c17>false</anal_c17>
+  <anal_c18>false</anal_c18>
+  <anal_c19>false</anal_c19>
+  <anal_c20>false</anal_c20>
+  <anal_c21>false</anal_c21>
+  <anal_c22>false</anal_c22>
+  <anal_c23>false</anal_c23>
+  <anal_c24>false</anal_c24>
+  <tresorerie>true</tresorerie>
+  <budget>false</budget>
+  <bud_c1>false</bud_c1>
+  <bud_c2>false</bud_c2>
+  <bud_c3>false</bud_c3>
+  <bud_c4>false</bud_c4>
+  <bud_c5>false</bud_c5>
+  <bud_c6>false</bud_c6>
+  <bud_c7>false</bud_c7>
+  <bud_c8>false</bud_c8>
+  <bud_c9>false</bud_c9>
+  <bud_c10>false</bud_c10>
+  <bud_c11>false</bud_c11>
+  <bud_c12>false</bud_c12>
+  <bud_c13>false</bud_c13>
+  <bud_c14>false</bud_c14>
+  <bud_c15>false</bud_c15>
+  <bud_c16>false</bud_c16>
+  <bud_c17>false</bud_c17>
+  <bud_c18>false</bud_c18>
+  <bud_c19>false</bud_c19>
+  <bud_c20>false</bud_c20>
+  <bud_c21>false</bud_c21>
+  <bud_c22>false</bud_c22>
+  <bud_c23>false</bud_c23>
+  <bud_c24>false</bud_c24>
+  <ContrePartie>masquée</ContrePartie>
+  <NumReference1>visible</NumReference1>
+  <NumReference2>visible</NumReference2>
+  <nbLigneMaxAm>18</nbLigneMaxAm>
+  <nbLigneMaxLo>18</nbLigneMaxLo>
+  <nbLigneMaxBu>18</nbLigneMaxBu>
+  <nbLigneMaxEx>18</nbLigneMaxEx>
+  <nbLigneMaxJr>18</nbLigneMaxJr>
+  <nbLigneMaxBr>18</nbLigneMaxBr>
+  <dossierExport />
+  <planCpteLiasse>0</planCpteLiasse>
+  <calculImmobilisation>0</calculImmobilisation>
+</option_compta>
+

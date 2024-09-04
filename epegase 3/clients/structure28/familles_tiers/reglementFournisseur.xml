@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reglement>
+  <mode>
+    <categories>0</categories>
+    <libelles>Espèces</libelles>
+    <journals />
+    <echeances />
+    <nbjours>0</nbjours>
+    <arrondis>0</arrondis>
+    <conditions>Paiement cash</conditions>
+    <defaut>true</defaut>
+  </mode>
+  <mode>
+    <categories>1</categories>
+    <libelles>Chèque</libelles>
+    <journals />
+    <echeances />
+    <nbjours>30</nbjours>
+    <arrondis>0</arrondis>
+    <conditions>Paiement terme</conditions>
+    <defaut>false</defaut>
+  </mode>
+  <mode>
+    <categories>2</categories>
+    <libelles>Virement</libelles>
+    <journals />
+    <echeances />
+    <nbjours>0</nbjours>
+    <arrondis>0</arrondis>
+    <conditions>Paiement terme</conditions>
+    <defaut>true</defaut>
+  </mode>
+</reglement>
+

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incoterms>
+
+	<type>
+		<groupe>C</groupe>
+		<libelle>MAIN CARRIAGE PAID</libelle>
+		<code>CFR</code>
+		<nom>Cost and Freight, chargé sur le bateau, livraison au port de départ, frais payés au port d'arrivée, sans assurance pour le transport, non déchargé du navire à destination sauf liner terms "quai"</nom>
+		<etat>0</etat>
+	</type>
+
+	<type>
+		<groupe>C</groupe>
+		<libelle>MAIN CARRIAGE PAID</libelle>
+		<code>CIF</code>
+		<nom>Cost, Insurance and Freight, chargé sur le bateau, frais au port d'arrivée, avec l'assurance marchandise transportée souscrite par le vendeur pour le compte de l'acheteur</nom>
+		<etat>0</etat>
+	</type>
+
+	<type>
+		<groupe>C</groupe>
+		<libelle>MAIN CARRIAGE PAID</libelle>
+		<code>CIP</code>
+		<nom>Carriage and Insurance Paid to, jusqu'au déchargement du mode de transport, avec assurance marchandise transportée souscrite par le vendeur pour le compte de l'acheteur</nom>
+		<etat>0</etat>
+	</type>
+
+	<type>
+		<groupe>C</groupe>
+		<libelle>MAIN CARRIAGE PAID</libelle>
+		<code>CPT</code>
+		<nom>Carriage Paid To, livraison au premier transporteur, frais jusqu'au déchargement du mode de transport, sans assurance pour le transport</nom>
+		<etat>0</etat>
+	</type>
+
+	<type>
+		<groupe>D</groupe>
+		<libelle>ARRIVAL</libelle>
+		<code>DAF</code>
+		<nom>Delivered At Frontier, à la frontière désignée, au point frontière désigné ; terrestre exclusivement</nom>
+		<etat>0</etat>
+	</type>
+
+	<type>
+		<groupe>D</groupe>
+		<libelle>ARRIVAL</libelle>
+		<code>DDP</code>
+		<nom>Delivered Duty Paid, à destination finale, dédouanement import effectué (si exclusion des taxes, le préciser)</nom>
+		<etat>0</etat>
+	</type>
+
+	<type>
+		<groupe>D</groupe>
+		<libelle>ARRIVAL</libelle>
+		<code>DDU</code>
+		<nom>Delivered Duty Unpaid, à destination finale mais sans le dédouanement import</nom>
+		<etat>0</etat>
+	</type>
+
+	<type>
+		<groupe>D</groupe>
+		<libelle>ARRIVAL</libelle>
+		<code>DEQ</code>
+		<nom>Delivered Ex Quay, déchargé sur le quai du port d'arrivée</nom>
+		<etat>0</etat>
+	</type>
+
+	<type>
+		<groupe>D</groupe>
+		<libelle>ARRIVAL</libelle>
+		<code>DES</code>
+		<nom>Delivered Ex Ship, dans le bateau au port d'arrivée</nom>
+		<etat>0</etat>
+	</type>
+
+	<type>
+		<groupe>E</groupe>
+		<libelle>DEPARTURE</libelle>
+		<code>EXW</code>
+		<nom>Ex Works, au départ non chargé, non dédouané/sortie d'usine (non adapté aux flux modernes de produits finis)</nom>
+		<etat>0</etat>
+	</type>
+
+	<type>
+		<groupe>F</groupe>
+		<libelle>MAIN CARRIAGE UNPAID</libelle>
+		<code>FAS</code>
+		<nom>Free Along side Ship, sur le quai du port de départ</nom>
+		<etat>0</etat>
+	</type>
+
+	<type>
+		<groupe>F</groupe>
+		<libelle>MAIN CARRIAGE UNPAID</libelle>
+		<code>FCA</code>
+		<nom>Free Carrier, chargé "au départ" ou acheminé à "tel lieu" dans le pays de départ (tous transports)</nom>
+		<etat>0</etat>
+	</type>
+
+	<type>
+		<groupe>F</groupe>
+		<libelle>MAIN CARRIAGE UNPAID</libelle>
+		<code>FOB</code>
+		<nom>Free On Board, chargé sur le bateau sauf liner terms "quai", au port de départ</nom>
+		<etat>0</etat>
+	</type>
+</incoterms>

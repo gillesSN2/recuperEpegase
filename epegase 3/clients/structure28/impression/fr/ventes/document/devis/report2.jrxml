@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report2" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Title" fontName="Arial" fontSize="26" isBold="true" pdfFontName="Helvetica-Bold"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<parameter name="societe" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT
+     vte_devis_ligne.`dvslig_id` AS vte_devis_ligne_dvslig_id,
+     vte_devis_ligne.`dvslig_code` AS vte_devis_ligne_dvslig_code,
+     vte_devis_ligne.`dvslig_famille` AS vte_devis_ligne_dvslig_famille,
+     vte_devis_ligne.`dvslig_libelle` AS vte_devis_ligne_dvslig_libelle,
+     vte_devis_ligne.`dvslig_reference` AS vte_devis_ligne_dvslig_reference,
+     vte_devis_ligne.`dvslig_taxe` AS vte_devis_ligne_dvslig_taxe,
+     vte_devis_ligne.`dvslig_taux_taxe` AS vte_devis_ligne_dvslig_taux_taxe,
+     vte_devis_ligne.`dvslig_unite` AS vte_devis_ligne_dvslig_unite,
+     vte_devis_ligne.`dvslig_condition` AS vte_devis_ligne_dvslig_condition,
+     vte_devis_ligne.`dvslig_echelle` AS vte_devis_ligne_dvslig_echelle,
+     vte_devis_ligne.`dvslig_qte` AS vte_devis_ligne_dvslig_qte,
+     vte_devis_ligne.`dvslig_long` AS vte_devis_ligne_dvslig_long,
+     vte_devis_ligne.`dvslig_larg` AS vte_devis_ligne_dvslig_larg,
+     vte_devis_ligne.`dvslig_haut` AS vte_devis_ligne_dvslig_haut,
+     vte_devis_ligne.`dvslig_diam` AS vte_devis_ligne_dvslig_diam,
+     vte_devis_ligne.`dvslig_nb` AS vte_devis_ligne_dvslig_nb,
+     vte_devis_ligne.`dvslig_poidsNet` AS vte_devis_ligne_dvslig_poidsNet,
+     vte_devis_ligne.`dvslig_poidsBrut` AS vte_devis_ligne_dvslig_poidsBrut,
+     vte_devis_ligne.`dvslig_volume` AS vte_devis_ligne_dvslig_volume,
+     vte_devis_ligne.`dvslig_qte_util` AS vte_devis_ligne_dvslig_qte_util,
+     vte_devis_ligne.`dvslig_stock` AS vte_devis_ligne_dvslig_stock,
+     vte_devis_ligne.`dvslig_depot` AS vte_devis_ligne_dvslig_depot,
+     vte_devis_ligne.`dvslig_devise` AS vte_devis_ligne_dvslig_devise,
+     vte_devis_ligne.`dvslig_pu` AS vte_devis_ligne_dvslig_pu,
+     vte_devis_ligne.`dvslig_taux_remise` AS vte_devis_ligne_dvslig_taux_remise,
+     vte_devis_ligne.`dvslig_rabais` AS vte_devis_ligne_dvslig_rabais,
+     vte_devis_ligne.`dvslig_pu_rem` AS vte_devis_ligne_dvslig_pu_rem,
+     vte_devis_ligne.`dvslig_pu_ttc` AS vte_devis_ligne_dvslig_pu_ttc,
+     vte_devis_ligne.`dvslig_pu_rem_ttc` AS vte_devis_ligne_dvslig_pu_rem_ttc,
+     vte_devis_ligne.`dvslig_pt` AS vte_devis_ligne_dvslig_pt,
+     vte_devis_ligne.`dvslig_tva` AS vte_devis_ligne_dvslig_tva,
+     vte_devis_ligne.`dvslig_tc` AS vte_devis_ligne_dvslig_tc,
+     vte_devis_ligne.`dvslig_ttc` AS vte_devis_ligne_dvslig_ttc,
+     vte_devis_ligne.`dvslig_pump` AS vte_devis_ligne_dvslig_pump,
+     vte_devis_ligne.`dvs_id` AS vte_devis_ligne_dvs_id,
+     vte_devis_entete.`dvs_id` AS vte_devis_entete_dvs_id,
+     vte_devis_entete.`dvs_date_creat` AS vte_devis_entete_dvs_date_creat,
+     vte_devis_entete.`dvs_date_modif` AS vte_devis_entete_dvs_date_modif,
+     vte_devis_entete.`dvs_id_createur` AS vte_devis_entete_dvs_id_createur,
+     vte_devis_entete.`dvs_nom_createur` AS vte_devis_entete_dvs_nom_createur,
+     vte_devis_entete.`dvs_id_modif` AS vte_devis_entete_dvs_id_modif,
+     vte_devis_entete.`dvs_nom_modif` AS vte_devis_entete_dvs_nom_modif,
+     vte_devis_entete.`dvs_date` AS vte_devis_entete_dvs_date,
+     vte_devis_entete.`dvs_num` AS vte_devis_entete_dvs_num,
+     vte_devis_entete.`dvs_nom_responsable` AS vte_devis_entete_dvs_nom_responsable,
+     vte_devis_entete.`dvs_id_responsable` AS vte_devis_entete_dvs_id_responsable,
+     vte_devis_entete.`dvs_nom_tiers` AS vte_devis_entete_dvs_nom_tiers,
+     vte_devis_entete.`dvs_civil_tiers` AS vte_devis_entete_dvs_civil_tiers,
+     vte_devis_entete.`dvs_nom_contact` AS vte_devis_entete_dvs_nom_contact,
+     vte_devis_entete.`dvs_civil_contact` AS vte_devis_entete_dvs_civil_contact,
+     vte_devis_entete.`dvs_serie` AS vte_devis_entete_dvs_serie,
+     vte_devis_entete.`dvs_exo_tva` AS vte_devis_entete_dvs_exo_tva,
+     vte_devis_entete.`dvs_exo_douane` AS vte_devis_entete_dvs_exo_douane,
+     vte_devis_entete.`dvs_cat` AS vte_devis_entete_dvs_cat,
+     vte_devis_entete.`dvs_devise` AS vte_devis_entete_dvs_devise,
+     vte_devis_entete.`dvs_object` AS vte_devis_entete_dvs_object,
+     vte_devis_entete.`dvs_observation` AS vte_devis_entete_dvs_observation,
+     vte_devis_entete.`dvs_tot_ht` AS vte_devis_entete_dvs_tot_ht,
+     vte_devis_entete.`dvs_tot_remise` AS vte_devis_entete_dvs_tot_remise,
+     vte_devis_entete.`dvs_tot_rabais` AS vte_devis_entete_dvs_tot_rabais,
+     vte_devis_entete.`dvs_tot_tva` AS vte_devis_entete_dvs_tot_tva,
+     vte_devis_entete.`dvs_tot_tc` AS vte_devis_entete_dvs_tot_tc,
+     vte_devis_entete.`dvs_tot_ttc` AS vte_devis_entete_dvs_tot_ttc,
+     vte_devis_entete.`dvs_tot_reglement` AS vte_devis_entete_dvs_tot_reglement,
+     vte_devis_entete.`dvs_solde` AS vte_devis_entete_dvs_solde,
+     vte_devis_entete.`dvs_banque` AS vte_devis_entete_dvs_banque,
+     vte_devis_entete.`dvs_type_reg` AS vte_devis_entete_dvs_type_reg,
+     vte_devis_entete.`dvs_mode_reg` AS vte_devis_entete_dvs_mode_reg,
+     vte_devis_entete.`dvs_nb_jour_reg` AS vte_devis_entete_dvs_nb_jour_reg,
+     vte_devis_entete.`dvs_arrondi_reg` AS vte_devis_entete_dvs_arrondi_reg,
+     vte_devis_entete.`dvs_condition_reg` AS vte_devis_entete_dvs_condition_reg,
+     vte_devis_entete.`dvs_date_eche_reg` AS vte_devis_entete_dvs_date_eche_reg,
+     vte_devis_entete.`dvs_journal_reg` AS vte_devis_entete_dvs_journal_reg,
+     vte_devis_entete.`dvs_activite` AS vte_devis_entete_dvs_activite,
+     vte_devis_entete.`dvs_site` AS vte_devis_entete_dvs_site,
+     vte_devis_entete.`dvs_departement` AS vte_devis_entete_dvs_departement,
+     vte_devis_entete.`dvs_service` AS vte_devis_entete_dvs_service,
+     vte_devis_entete.`dvs_region` AS vte_devis_entete_dvs_region,
+     vte_devis_entete.`dvs_secteur` AS vte_devis_entete_dvs_secteur,
+     vte_devis_entete.`dvs_pdv` AS vte_devis_entete_dvs_pdv,
+     vte_devis_entete.`dvs_anal2` AS vte_devis_entete_dvs_anal2,
+     vte_devis_entete.`dvs_anal4` AS vte_devis_entete_dvs_anal4,
+     vte_devis_entete.`dvs_info1` AS vte_devis_entete_dvs_info1,
+     vte_devis_entete.`dvs_info2` AS vte_devis_entete_dvs_info2,
+     vte_devis_entete.`dvs_info3` AS vte_devis_entete_dvs_info3,
+     vte_devis_entete.`dvs_info4` AS vte_devis_entete_dvs_info4,
+     vte_devis_entete.`dvs_info5` AS vte_devis_entete_dvs_info5,
+     vte_devis_entete.`dvs_info6` AS vte_devis_entete_dvs_info6,
+     vte_devis_entete.`dvs_info7` AS vte_devis_entete_dvs_info7,
+     vte_devis_entete.`dvs_info8` AS vte_devis_entete_dvs_info8,
+     vte_devis_entete.`dvs_info9` AS vte_devis_entete_dvs_info9,
+     vte_devis_entete.`dvs_info10` AS vte_devis_entete_dvs_info10,
+     vte_devis_entete.`dvs_formule1` AS vte_devis_entete_dvs_formule1,
+     vte_devis_entete.`dvs_formule2` AS vte_devis_entete_dvs_formule2,
+     vte_devis_entete.`dvs_annexe1` AS vte_devis_entete_dvs_annexe1,
+     vte_devis_entete.`dvs_annexe2` AS vte_devis_entete_dvs_annexe2,
+     vte_devis_entete.`dvs_contrat` AS vte_devis_entete_dvs_contrat,
+     vte_devis_entete.`dvs_incoterm` AS vte_devis_entete_dvs_incoterm,
+     vte_devis_entete.`dvs_lieu_livraison` AS vte_devis_entete_dvs_lieu_livraison,
+     vte_devis_entete.`dvs_date_livraison` AS vte_devis_entete_dvs_date_livraison,
+     vte_devis_entete.`dvs_info_livraison` AS vte_devis_entete_dvs_info_livraison,
+     vte_devis_entete.`dvs_date_imp` AS vte_devis_entete_dvs_date_imp,
+     vte_devis_entete.`dvs_modele_imp` AS vte_devis_entete_dvs_modele_imp,
+     vte_devis_entete.`dvs_garde` AS vte_devis_entete_dvs_garde,
+     vte_devis_entete.`dvs_etat_val` AS vte_devis_entete_dvs_etat_val,
+     vte_devis_entete.`dvs_gele` AS vte_devis_entete_dvs_gele,
+     vte_devis_entete.`dvs_etat` AS vte_devis_entete_dvs_etat,
+     vte_devis_entete.`dvs_date_validite` AS vte_devis_entete_dvs_date_validite,
+     vte_devis_entete.`dvs_date_relance` AS vte_devis_entete_dvs_date_relance,
+     vte_devis_entete.`dvs_date_valide` AS vte_devis_entete_dvs_date_valide,
+     vte_devis_entete.`dvs_date_transforme` AS vte_devis_entete_dvs_date_transforme,
+     vte_devis_entete.`dvs_type_transforme` AS vte_devis_entete_dvs_type_transforme,
+     vte_devis_entete.`dvs_date_annule` AS vte_devis_entete_dvs_date_annule,
+     vte_devis_entete.`dvs_motif_annule` AS vte_devis_entete_dvs_motif_annule,
+     vte_devis_entete.`dvs_factor_nom` AS vte_devis_entete_dvs_factor_nom,
+     vte_devis_entete.`dvs_factor_id` AS vte_devis_entete_dvs_factor_id,
+     vte_devis_entete.`dvs_factor_etat` AS vte_devis_entete_dvs_factor_etat,
+     vte_devis_entete.`dvs_beneficiaire` AS vte_devis_entete_dvs_beneficiaire,
+     vte_devis_entete.`dvs_accord` AS vte_devis_entete_dvs_accord,
+     vte_devis_entete.`dvs_regime` AS vte_devis_entete_dvs_regime,
+     vte_devis_entete.`dvs_bureau` AS vte_devis_entete_dvs_bureau,
+     vte_devis_entete.`dvs_pays` AS vte_devis_entete_dvs_pays,
+     vte_devis_entete.`dvs_utilisation` AS vte_devis_entete_dvs_utilisation,
+     vte_devis_entete.`dvs_fournisseur` AS vte_devis_entete_dvs_fournisseur,
+     vte_devis_entete.`exevte_id` AS vte_devis_entete_exevte_id,
+     vte_devis_entete.`tie_id` AS vte_devis_entete_tie_id,
+     vte_devis_entete.`usr_id` AS vte_devis_entete_usr_id,
+     vte_devis_entete.`dvs_id_contact` AS vte_devis_entete_dvs_id_contact,
+     vte_devis_entete.`dvs_echeance_reliquat` AS vte_devis_entete_dvs_echeance_reliquat,
+     vte_devis_entete.`dvs_motif_rejet_credit` AS vte_devis_entete_dvs_motif_rejet_credit
+FROM
+     `vte_devis_entete` vte_devis_entete INNER JOIN `vte_devis_ligne` vte_devis_ligne ON vte_devis_entete.`dvs_id` = vte_devis_ligne.`dvs_id`]]>
+	</queryString>
+	<field name="vte_devis_ligne_dvslig_id" class="java.lang.Long"/>
+	<field name="vte_devis_ligne_dvslig_code" class="java.lang.String"/>
+	<field name="vte_devis_ligne_dvslig_famille" class="java.lang.String"/>
+	<field name="vte_devis_ligne_dvslig_libelle" class="java.lang.String"/>
+	<field name="vte_devis_ligne_dvslig_reference" class="java.lang.String"/>
+	<field name="vte_devis_ligne_dvslig_taxe" class="java.lang.String"/>
+	<field name="vte_devis_ligne_dvslig_taux_taxe" class="java.lang.Float"/>
+	<field name="vte_devis_ligne_dvslig_unite" class="java.lang.String"/>
+	<field name="vte_devis_ligne_dvslig_condition" class="java.lang.String"/>
+	<field name="vte_devis_ligne_dvslig_echelle" class="java.lang.Integer"/>
+	<field name="vte_devis_ligne_dvslig_qte" class="java.lang.Float"/>
+	<field name="vte_devis_ligne_dvslig_long" class="java.lang.Float"/>
+	<field name="vte_devis_ligne_dvslig_larg" class="java.lang.Float"/>
+	<field name="vte_devis_ligne_dvslig_haut" class="java.lang.Float"/>
+	<field name="vte_devis_ligne_dvslig_diam" class="java.lang.Float"/>
+	<field name="vte_devis_ligne_dvslig_nb" class="java.lang.Float"/>
+	<field name="vte_devis_ligne_dvslig_poidsNet" class="java.lang.Float"/>
+	<field name="vte_devis_ligne_dvslig_poidsBrut" class="java.lang.Float"/>
+	<field name="vte_devis_ligne_dvslig_volume" class="java.lang.Float"/>
+	<field name="vte_devis_ligne_dvslig_qte_util" class="java.lang.Float"/>
+	<field name="vte_devis_ligne_dvslig_stock" class="java.lang.Integer"/>
+	<field name="vte_devis_ligne_dvslig_depot" class="java.lang.String"/>
+	<field name="vte_devis_ligne_dvslig_devise" class="java.lang.String"/>
+	<field name="vte_devis_ligne_dvslig_pu" class="java.lang.Double"/>
+	<field name="vte_devis_ligne_dvslig_taux_remise" class="java.lang.Float"/>
+	<field name="vte_devis_ligne_dvslig_rabais" class="java.lang.Double"/>
+	<field name="vte_devis_ligne_dvslig_pu_rem" class="java.lang.Double"/>
+	<field name="vte_devis_ligne_dvslig_pu_ttc" class="java.lang.Double"/>
+	<field name="vte_devis_ligne_dvslig_pu_rem_ttc" class="java.lang.Double"/>
+	<field name="vte_devis_ligne_dvslig_pt" class="java.lang.Double"/>
+	<field name="vte_devis_ligne_dvslig_tva" class="java.lang.Double"/>
+	<field name="vte_devis_ligne_dvslig_tc" class="java.lang.Double"/>
+	<field name="vte_devis_ligne_dvslig_ttc" class="java.lang.Double"/>
+	<field name="vte_devis_ligne_dvslig_pump" class="java.lang.Double"/>
+	<field name="vte_devis_ligne_dvs_id" class="java.lang.Long"/>
+	<field name="vte_devis_entete_dvs_id" class="java.lang.Long"/>
+	<field name="vte_devis_entete_dvs_date_creat" class="java.sql.Timestamp"/>
+	<field name="vte_devis_entete_dvs_date_modif" class="java.sql.Timestamp"/>
+	<field name="vte_devis_entete_dvs_id_createur" class="java.lang.Long"/>
+	<field name="vte_devis_entete_dvs_nom_createur" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_id_modif" class="java.lang.Long"/>
+	<field name="vte_devis_entete_dvs_nom_modif" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_date" class="java.sql.Timestamp"/>
+	<field name="vte_devis_entete_dvs_num" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_nom_responsable" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_id_responsable" class="java.lang.Long"/>
+	<field name="vte_devis_entete_dvs_nom_tiers" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_civil_tiers" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_nom_contact" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_civil_contact" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_serie" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_exo_tva" class="java.lang.Integer"/>
+	<field name="vte_devis_entete_dvs_exo_douane" class="java.lang.Integer"/>
+	<field name="vte_devis_entete_dvs_cat" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_devise" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_object" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_observation" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_tot_ht" class="java.lang.Double"/>
+	<field name="vte_devis_entete_dvs_tot_remise" class="java.lang.Double"/>
+	<field name="vte_devis_entete_dvs_tot_rabais" class="java.lang.Double"/>
+	<field name="vte_devis_entete_dvs_tot_tva" class="java.lang.Double"/>
+	<field name="vte_devis_entete_dvs_tot_tc" class="java.lang.Double"/>
+	<field name="vte_devis_entete_dvs_tot_ttc" class="java.lang.Double"/>
+	<field name="vte_devis_entete_dvs_tot_reglement" class="java.lang.Double"/>
+	<field name="vte_devis_entete_dvs_solde" class="java.lang.Integer"/>
+	<field name="vte_devis_entete_dvs_banque" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_type_reg" class="java.lang.Integer"/>
+	<field name="vte_devis_entete_dvs_mode_reg" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_nb_jour_reg" class="java.lang.Integer"/>
+	<field name="vte_devis_entete_dvs_arrondi_reg" class="java.lang.Integer"/>
+	<field name="vte_devis_entete_dvs_condition_reg" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_date_eche_reg" class="java.sql.Date"/>
+	<field name="vte_devis_entete_dvs_journal_reg" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_activite" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_site" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_departement" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_service" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_region" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_secteur" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_pdv" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_anal2" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_anal4" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_info1" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_info2" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_info3" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_info4" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_info5" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_info6" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_info7" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_info8" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_info9" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_info10" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_formule1" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_formule2" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_annexe1" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_annexe2" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_contrat" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_incoterm" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_lieu_livraison" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_date_livraison" class="java.sql.Date"/>
+	<field name="vte_devis_entete_dvs_info_livraison" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_date_imp" class="java.sql.Timestamp"/>
+	<field name="vte_devis_entete_dvs_modele_imp" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_garde" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_etat_val" class="java.lang.Integer"/>
+	<field name="vte_devis_entete_dvs_gele" class="java.lang.Integer"/>
+	<field name="vte_devis_entete_dvs_etat" class="java.lang.Integer"/>
+	<field name="vte_devis_entete_dvs_date_validite" class="java.sql.Date"/>
+	<field name="vte_devis_entete_dvs_date_relance" class="java.sql.Date"/>
+	<field name="vte_devis_entete_dvs_date_valide" class="java.sql.Timestamp"/>
+	<field name="vte_devis_entete_dvs_date_transforme" class="java.sql.Timestamp"/>
+	<field name="vte_devis_entete_dvs_type_transforme" class="java.lang.Integer"/>
+	<field name="vte_devis_entete_dvs_date_annule" class="java.sql.Timestamp"/>
+	<field name="vte_devis_entete_dvs_motif_annule" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_factor_nom" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_factor_id" class="java.lang.Long"/>
+	<field name="vte_devis_entete_dvs_factor_etat" class="java.lang.Integer"/>
+	<field name="vte_devis_entete_dvs_beneficiaire" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_accord" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_regime" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_bureau" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_pays" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_utilisation" class="java.lang.String"/>
+	<field name="vte_devis_entete_dvs_fournisseur" class="java.lang.String"/>
+	<field name="vte_devis_entete_exevte_id" class="java.lang.Long"/>
+	<field name="vte_devis_entete_tie_id" class="java.lang.Long"/>
+	<field name="vte_devis_entete_usr_id" class="java.lang.Long"/>
+	<field name="vte_devis_entete_dvs_id_contact" class="java.lang.Long"/>
+	<field name="vte_devis_entete_dvs_echeance_reliquat" class="java.sql.Date"/>
+	<field name="vte_devis_entete_dvs_motif_rejet_credit" class="java.lang.String"/>
+	<group name="Group1">
+		<groupExpression><![CDATA[(int)($V{REPORT_COUNT}/15)]]></groupExpression>
+		<groupHeader>
+			<band height="40">
+				<textField>
+					<reportElement style="SubTitle" x="47" y="13" width="506" height="24" forecolor="#000000"/>
+					<textElement>
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["GroupField"]]></textFieldExpression>
+				</textField>
+				<rectangle>
+					<reportElement mode="Opaque" x="0" y="13" width="36" height="24" forecolor="#CCCCCC" backcolor="#CCCCCC"/>
+				</rectangle>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="6"/>
+		</groupFooter>
+	</group>
+	<group name="Group2">
+		<groupExpression><![CDATA[(int)($V{REPORT_COUNT}/5)]]></groupExpression>
+		<groupHeader>
+			<band height="30">
+				<textField>
+					<reportElement style="SubTitle" x="0" y="4" width="460" height="20"/>
+					<textElement>
+						<font size="16" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["GroupField"]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="70" splitType="Stretch">
+			<image>
+				<reportElement x="275" y="0" width="300" height="64"/>
+				<imageExpression><![CDATA["leaf_banner_gray.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="12" y="22" width="263" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{societe}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="36" splitType="Stretch">
+			<staticText>
+				<reportElement style="Column header" x="0" y="19" width="100" height="15"/>
+				<textElement/>
+				<text><![CDATA[Label]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="35" width="555" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="16" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="15" width="555" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement style="Detail" x="2" y="0" width="100" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA["Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="112" y="0" width="100" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{vte_devis_ligne_dvslig_code}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="221" y="0" width="208" height="15"/>
+				<textElement>
+					<paragraph>
+						<tabStop position="10" alignment="Left"/>
+					</paragraph>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{vte_devis_ligne_dvslig_libelle}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement mode="Transparent" x="212" y="0" width="208" height="16"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="112" y="0" width="100" height="16"/>
+			</rectangle>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="3" width="555" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement style="Column header" x="433" y="0" width="80" height="20"/>
+				<textElement textAlignment="Right">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement style="Column header" x="513" y="0" width="40" height="20"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement style="Column header" x="0" y="0" width="197" height="20"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

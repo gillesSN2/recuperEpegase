@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<options_ventes>
+  <activiteEnteteLigne>0</activiteEnteteLigne>
+  <affichInGlobViewCAMPAGNE />
+  <nbrJrRelanceBESOIN>0</nbrJrRelanceBESOIN>
+  <nbrJrValidBESOIN>0</nbrJrValidBESOIN>
+  <affichInTierFilBESOIN>100</affichInTierFilBESOIN>
+  <affichInGlobViewBESOIN>100</affichInGlobViewBESOIN>
+  <nbrJrRelanceSIMUL>0</nbrJrRelanceSIMUL>
+  <nbrJrValidSIMUL>0</nbrJrValidSIMUL>
+  <affichInTierFilSIMUL>100</affichInTierFilSIMUL>
+  <affichInGlobViewSIMUL>100</affichInGlobViewSIMUL>
+  <familleProduitSIMUL />
+  <numeroPortefeuille>0</numeroPortefeuille>
+  <nbrJrRelanceDEVIS>0</nbrJrRelanceDEVIS>
+  <nbrJrValidDEVIS>0</nbrJrValidDEVIS>
+  <affichInTierFilDEVIS>100</affichInTierFilDEVIS>
+  <affichInGlobViewDEVIS>100</affichInGlobViewDEVIS>
+  <nbrJrRelanceCOM>0</nbrJrRelanceCOM>
+  <nbrJrValidCOM>0</nbrJrValidCOM>
+  <affichInTierFilCOM>100</affichInTierFilCOM>
+  <affichInGlobViewCOM>100</affichInGlobViewCOM>
+  <impressionBcBlCOM>0</impressionBcBlCOM>
+  <validationBcBlCOM>0</validationBcBlCOM>
+  <nbrJrRelanceLIV>0</nbrJrRelanceLIV>
+  <nbrJrValidLIV>0</nbrJrValidLIV>
+  <affichInTierFilLIV>100</affichInTierFilLIV>
+  <affichInGlobViewLIV>100</affichInGlobViewLIV>
+  <gestionLivreur>0</gestionLivreur>
+  <nbrJrRelanceFAC>0</nbrJrRelanceFAC>
+  <nbrJrValidFAC>0</nbrJrValidFAC>
+  <affichInTierFilFAC>100</affichInTierFilFAC>
+  <affichInGlobViewFAC>100</affichInGlobViewFAC>
+  <numBlFac>0</numBlFac>
+  <nbrJrRelanceNOTDEB>0</nbrJrRelanceNOTDEB>
+  <nbrJrValidNOTDEB>0</nbrJrValidNOTDEB>
+  <affichInTierFilNOTDEB>100</affichInTierFilNOTDEB>
+  <affichInGlobViewNOTDEB>100</affichInGlobViewNOTDEB>
+  <nbrJrRelanceRETOUR>0</nbrJrRelanceRETOUR>
+  <nbrJrValidRETOUR>0</nbrJrValidRETOUR>
+  <affichInTierFilRETOUR>100</affichInTierFilRETOUR>
+  <affichInGlobViewRETOUR>100</affichInGlobViewRETOUR>
+  <nbrJrRelanceAVOIR>0</nbrJrRelanceAVOIR>
+  <nbrJrValidAVOIR>0</nbrJrValidAVOIR>
+  <affichInTierFilAVOIR>100</affichInTierFilAVOIR>
+  <affichInGlobViewAVOIR>100</affichInGlobViewAVOIR>
+  <paiementAVOIR>0</paiementAVOIR>
+  <affichInGlobViewCh>0</affichInGlobViewCh>
+  <depotChargementDefaut />
+  <affichInGlobViewCOMMISSION>100</affichInGlobViewCOMMISSION>
+  <facture>false</facture>
+  <avoir>false</avoir>
+  <noteDebit>false</noteDebit>
+  <modeCommission />
+  <compteDebit />
+  <gestRegSectPdvBLC>false</gestRegSectPdvBLC>
+  <gestActBLC>false</gestActBLC>
+  <affichInTierFilBLC>100</affichInTierFilBLC>
+  <affichInGlobViewBLC>100</affichInGlobViewBLC>
+  <gestRegSectPdvFACTC>false</gestRegSectPdvFACTC>
+  <gestActFACTC>false</gestActFACTC>
+  <affichInTierFilFACTC>100</affichInTierFilFACTC>
+  <affichInGlobViewFACTC>100</affichInGlobViewFACTC>
+  <gestRegSectPdvTICKC>false</gestRegSectPdvTICKC>
+  <gestActTICKC>false</gestActTICKC>
+  <affichInTierFilTICKC>100</affichInTierFilTICKC>
+  <affichInGlobViewTICKC>100</affichInGlobViewTICKC>
+  <caisseDefaut>CA:CAISSE</caisseDefaut>
+  <nbrCaracteresFamPRO>2</nbrCaracteresFamPRO>
+  <nbrCaracteresProPRO>3</nbrCaracteresProPRO>
+  <modCalcProPRO>0</modCalcProPRO>
+  <decrmtPrsChrStock>1</decrmtPrsChrStock>
+  <nbDecQte>0</nbDecQte>
+  <nbDecPu>0</nbDecPu>
+  <decrmtPriVteStock>2</decrmtPriVteStock>
+  <decrmtRabais>1</decrmtRabais>
+  <analAuto>0</analAuto>
+  <nbLigneMax>18</nbLigneMax>
+  <libProduit>1</libProduit>
+  <responsable>1</responsable>
+  <produitGenerique>0</produitGenerique>
+  <photosProduit>0</photosProduit>
+  <chargementListe>1</chargementListe>
+  <descriptifComplementaire>0</descriptifComplementaire>
+  <dateTransformation>0</dateTransformation>
+  <libelleProduit>0</libelleProduit>
+  <tvaDefaut />
+  <tlvDefaut />
+  <tomDefaut />
+  <irppDefaut />
+  <produitAchat>0</produitAchat>
+  <choixStock>0</choixStock>
+  <lib1ENTETE />
+  <lib2ENTETE />
+  <lib3ENTETE />
+  <lib4ENTETE />
+  <lib5ENTETE />
+  <lib6ENTETE />
+  <lib7ENTETE />
+  <lib8ENTETE />
+  <lib9ENTETE />
+  <lib10ENTETE />
+  <transfertDocument>1</transfertDocument>
+  <zoneRef1>0</zoneRef1>
+  <zoneRef2>1</zoneRef2>
+  <zoneLibelle>0</zoneLibelle>
+  <zoneLibelleSuite>0</zoneLibelleSuite>
+</options_ventes>
+

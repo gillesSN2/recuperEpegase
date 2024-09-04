@@ -1,0 +1,963 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Fiche3" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" whenResourceMissingType="Empty" isIgnorePagination="true">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="160"/>
+	<property name="ireport.y" value="820"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["/usr/local/SUNWappserver/domains/domain1/config/epegase/web/configuration/impression/fr/compta/etatfin_SYSCOA/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="societe" class="java.lang.String"/>
+	<parameter name="requete" class="java.lang.String"/>
+	<parameter name="adresse" class="java.lang.String"/>
+	<parameter name="sigle" class="java.lang.String"/>
+	<parameter name="identification_1" class="java.lang.String"/>
+	<parameter name="identification_2" class="java.lang.String"/>
+	<parameter name="identification_3" class="java.lang.String"/>
+	<parameter name="identification_4" class="java.lang.String"/>
+	<parameter name="identification_5" class="java.lang.String"/>
+	<parameter name="identification_6" class="java.lang.String"/>
+	<parameter name="identification_7" class="java.lang.String"/>
+	<parameter name="exercice" class="java.lang.Long"/>
+	<parameter name="page_init" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="etat_init" class="java.lang.Integer"/>
+	<parameter name="dateDeb" class="java.util.Date"/>
+	<parameter name="dateFin" class="java.util.Date"/>
+	<queryString>
+		<![CDATA[SELECT
+     cpt_tab_resultats.`tabres_id` AS cpt_tab_resultats_tabres_id,
+     cpt_tab_resultats.`tabres_code` AS cpt_tab_resultats_tabres_code,
+     cpt_tab_resultats.`tabres_nom_FR` AS cpt_tab_resultats_tabres_nom_FR,
+     cpt_tab_resultats.`tabres_annee` AS cpt_tab_resultats_tabres_annee,
+     cpt_tab_resultats.`tabres_date_deb` AS cpt_tab_resultats_tabres_date_deb,
+     cpt_tab_resultats.`tabres_date_fin` AS cpt_tab_resultats_tabres_date_fin,
+     cpt_tab_resultats.`tabres_nb_mois` AS cpt_tab_resultats_tabres_nb_mois,
+     cpt_tab_resultats.`tabres_jr_sit` AS cpt_tab_resultats_tabres_jr_sit,
+     cpt_tab_resultats.`tabres_jr_rv` AS cpt_tab_resultats_tabres_jr_rv,
+     cpt_tab_resultats.`tabres_reference` AS cpt_tab_resultats_tabres_reference,
+     cpt_tab_resultats.`tabres_lib_FR` AS cpt_tab_resultats_tabres_lib_FR,
+     cpt_tab_resultats.`tabres_num` AS cpt_tab_resultats_tabres_num,
+     cpt_tab_resultats.`tabres_type` AS cpt_tab_resultats_tabres_type,
+     cpt_tab_resultats.`tabres_mode` AS cpt_tab_resultats_tabres_mode,
+     cpt_tab_resultats.`execpt_id` AS cpt_tab_resultats_execpt_id,
+     cpt_tab_resultats.`tabres_con_01` AS cpt_tab_resultats_tabres_con_01,
+     cpt_tab_resultats.`tabres_col_02` AS cpt_tab_resultats_tabres_col_02,
+     cpt_tab_resultats.`tabres_col_03` AS cpt_tab_resultats_tabres_col_03,
+     cpt_tab_resultats.`tabres_col_04` AS cpt_tab_resultats_tabres_col_04
+FROM
+     `cpt_tab_resultats` cpt_tab_resultats
+WHERE
+      $P!{requete}]]>
+	</queryString>
+	<field name="cpt_tab_resultats_tabres_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_tab_resultats_tabres_code" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_tab_resultats_tabres_nom_FR" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_tab_resultats_tabres_annee" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_tab_resultats_tabres_date_deb" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_tab_resultats_tabres_date_fin" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_tab_resultats_tabres_nb_mois" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_tab_resultats_tabres_jr_sit" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_tab_resultats_tabres_jr_rv" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_tab_resultats_tabres_reference" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_tab_resultats_tabres_lib_FR" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_tab_resultats_tabres_num" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_tab_resultats_tabres_type" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_tab_resultats_tabres_mode" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_tab_resultats_execpt_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_tab_resultats_tabres_con_01" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_tab_resultats_tabres_col_02" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_tab_resultats_tabres_col_03" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_tab_resultats_tabres_col_04" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<sortField name="cpt_tab_resultats_tabres_id"/>
+	<variable name="page_en_cours" class="java.lang.Integer">
+		<variableExpression><![CDATA[$P{page_init}+$V{PAGE_NUMBER}]]></variableExpression>
+		<initialValueExpression><![CDATA[$P{page_init}]]></initialValueExpression>
+	</variable>
+	<variable name="etat_en_cours" class="java.lang.Integer">
+		<variableExpression><![CDATA[$P{etat_init}+$V{PAGE_NUMBER}]]></variableExpression>
+		<initialValueExpression><![CDATA[$P{etat_init}]]></initialValueExpression>
+	</variable>
+	<variable name="duree" class="java.lang.Integer">
+		<variableExpression><![CDATA[$P{dateFin}.getMonth()-$P{dateDeb}.getMonth()+1]]></variableExpression>
+		<initialValueExpression><![CDATA[$P{dateFin}.getMonth()-$P{dateDeb}.getMonth()+1]]></initialValueExpression>
+	</variable>
+	<variable name="c51_1" class="java.lang.String">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C5-1") ? $F{cpt_tab_resultats_tabres_con_01} : $V{c51_1} )]]></variableExpression>
+	</variable>
+	<variable name="c52_1" class="java.lang.String">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C5-2") ? $F{cpt_tab_resultats_tabres_con_01} : $V{c52_1} )]]></variableExpression>
+	</variable>
+	<variable name="c53_1" class="java.lang.String">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C5-3") ? $F{cpt_tab_resultats_tabres_con_01} : $V{c53_1} )]]></variableExpression>
+	</variable>
+	<variable name="c54_1" class="java.lang.String">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C5-4") ? $F{cpt_tab_resultats_tabres_con_01} : $V{c54_1} )]]></variableExpression>
+	</variable>
+	<variable name="c55_1" class="java.lang.String">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C5-5") ? $F{cpt_tab_resultats_tabres_con_01} : $V{c55_1} )]]></variableExpression>
+	</variable>
+	<variable name="c56_1" class="java.lang.String">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C5-6") ? $F{cpt_tab_resultats_tabres_con_01} : $V{c56_1} )]]></variableExpression>
+	</variable>
+	<variable name="c57_1" class="java.lang.String">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C5-7") ? $F{cpt_tab_resultats_tabres_con_01} : $V{c57_1} )]]></variableExpression>
+	</variable>
+	<variable name="c58_1" class="java.lang.String">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C5-8") ? $F{cpt_tab_resultats_tabres_con_01} : $V{c58_1} )]]></variableExpression>
+	</variable>
+	<variable name="c59_1" class="java.lang.String">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C5-9") ? $F{cpt_tab_resultats_tabres_con_01} : $V{c59_1} )]]></variableExpression>
+	</variable>
+	<variable name="c510_1" class="java.lang.String">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C5-10") ? $F{cpt_tab_resultats_tabres_con_01} : $V{c510_1} )]]></variableExpression>
+	</variable>
+	<variable name="c51_2" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C5-1") ? $F{cpt_tab_resultats_tabres_col_02} : 0.0 )]]></variableExpression>
+	</variable>
+	<variable name="c52_2" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C5-2") ? $F{cpt_tab_resultats_tabres_col_02} : 0.0 )]]></variableExpression>
+	</variable>
+	<variable name="c53_2" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C5-3") ? $F{cpt_tab_resultats_tabres_col_02} : 0.0 )]]></variableExpression>
+	</variable>
+	<variable name="c54_2" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C5-4") ? $F{cpt_tab_resultats_tabres_col_02} : 0.0 )]]></variableExpression>
+	</variable>
+	<variable name="c55_2" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C5-5") ? $F{cpt_tab_resultats_tabres_col_02} : 0.0 )]]></variableExpression>
+	</variable>
+	<variable name="c56_2" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C5-6") ? $F{cpt_tab_resultats_tabres_col_02} : 0.0 )]]></variableExpression>
+	</variable>
+	<variable name="c57_2" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C5-7") ? $F{cpt_tab_resultats_tabres_col_02} : 0.0 )]]></variableExpression>
+	</variable>
+	<variable name="c58_2" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C5-8") ? $F{cpt_tab_resultats_tabres_col_02} : 0.0 )]]></variableExpression>
+	</variable>
+	<variable name="c59_2" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C5-9") ? $F{cpt_tab_resultats_tabres_col_02} : 0.0 )]]></variableExpression>
+	</variable>
+	<variable name="c510_2" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C5-10") ? $F{cpt_tab_resultats_tabres_col_02} : 0.0 )]]></variableExpression>
+	</variable>
+	<variable name="c61_1" class="java.lang.String">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C6-1") ? $F{cpt_tab_resultats_tabres_con_01} : $V{c61_1} )]]></variableExpression>
+	</variable>
+	<variable name="c62_1" class="java.lang.String">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C6-2") ? $F{cpt_tab_resultats_tabres_con_01} : $V{c62_1} )]]></variableExpression>
+	</variable>
+	<variable name="c63_1" class="java.lang.String">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C6-3") ? $F{cpt_tab_resultats_tabres_con_01} : $V{c63_1} )]]></variableExpression>
+	</variable>
+	<variable name="c64_1" class="java.lang.String">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C6-4") ? $F{cpt_tab_resultats_tabres_con_01} : $V{c64_1} )]]></variableExpression>
+	</variable>
+	<variable name="c65_1" class="java.lang.String">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C6-5") ? $F{cpt_tab_resultats_tabres_con_01} : $V{c65_1} )]]></variableExpression>
+	</variable>
+	<variable name="c66_1" class="java.lang.String">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C6-6") ? $F{cpt_tab_resultats_tabres_con_01} : $V{c66_1} )]]></variableExpression>
+	</variable>
+	<variable name="c67_1" class="java.lang.String">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C6-7") ? $F{cpt_tab_resultats_tabres_con_01} : $V{c67_1} )]]></variableExpression>
+	</variable>
+	<variable name="c68_1" class="java.lang.String">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C6-8") ? $F{cpt_tab_resultats_tabres_con_01} : $V{c68_1} )]]></variableExpression>
+	</variable>
+	<variable name="c69_1" class="java.lang.String">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C6-9") ? $F{cpt_tab_resultats_tabres_con_01} : $V{c69_1} )]]></variableExpression>
+	</variable>
+	<variable name="c610_1" class="java.lang.String">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C6-10") ? $F{cpt_tab_resultats_tabres_con_01} : $V{c610_1} )]]></variableExpression>
+	</variable>
+	<variable name="c61_2" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C6-1") ? $F{cpt_tab_resultats_tabres_col_02} : 0.0 )]]></variableExpression>
+	</variable>
+	<variable name="c62_2" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C6-2") ? $F{cpt_tab_resultats_tabres_col_02} : 0.0 )]]></variableExpression>
+	</variable>
+	<variable name="c63_2" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C6-3") ? $F{cpt_tab_resultats_tabres_col_02} : 0.0 )]]></variableExpression>
+	</variable>
+	<variable name="c64_2" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C6-4") ? $F{cpt_tab_resultats_tabres_col_02} : 0.0 )]]></variableExpression>
+	</variable>
+	<variable name="c65_2" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C6-5") ? $F{cpt_tab_resultats_tabres_col_02} : 0.0 )]]></variableExpression>
+	</variable>
+	<variable name="c66_2" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C6-6") ? $F{cpt_tab_resultats_tabres_col_02} : 0.0 )]]></variableExpression>
+	</variable>
+	<variable name="c67_2" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C6-7") ? $F{cpt_tab_resultats_tabres_col_02} : 0.0 )]]></variableExpression>
+	</variable>
+	<variable name="c68_2" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C6-8") ? $F{cpt_tab_resultats_tabres_col_02} : 0.0 )]]></variableExpression>
+	</variable>
+	<variable name="c69_2" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C6-9") ? $F{cpt_tab_resultats_tabres_col_02} : 0.0 )]]></variableExpression>
+	</variable>
+	<variable name="c610_2" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C6-10") ? $F{cpt_tab_resultats_tabres_col_02} : 0.0 )]]></variableExpression>
+	</variable>
+	<variable name="c71_2" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C7-1") ? $F{cpt_tab_resultats_tabres_col_02} : 0.0 )]]></variableExpression>
+	</variable>
+	<variable name="c72_2" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C7-2") ? $F{cpt_tab_resultats_tabres_col_02} : 0.0 )]]></variableExpression>
+	</variable>
+	<variable name="c73_2" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[( $F{cpt_tab_resultats_tabres_reference}.equalsIgnoreCase("C7-3") ? $F{cpt_tab_resultats_tabres_col_02} : 0.0 )]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="118" splitType="Prevent">
+			<rectangle>
+				<reportElement mode="Transparent" x="381" y="4" width="164" height="25"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="9" y="95" width="115" height="11"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[N° identification fiscale :]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="131" y="95" width="89" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{identification_1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="417" y="95" width="91" height="11"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Durée (en mois) :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="238" y="95" width="85" height="11"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Exercice clos le :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="79" width="50" height="11"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Adresse :]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="56" y="80" width="488" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{adresse}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="49" width="206" height="11"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[DENOMINATION SOCIALE DE L'ENTREPRISE :]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="217" y="50" width="325" height="27"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{societe}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="83" y="64" width="133" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{sigle}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="9" y="63" width="67" height="11"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Sigle usuel :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="392" y="10" width="146" height="15"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ETAT ANNEXE PAGE 12/28]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="219" y="4" width="100" height="14"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["- "+$V{etat_en_cours}+" -"]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="327" y="95" width="78" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$P{dateFin}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="512" y="95" width="32" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Integer"><![CDATA[$V{duree}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="508" y="108" width="34" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="324" y="108" width="85" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="125" y="108" width="95" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="50" y="92" width="492" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="80" y="76" width="136" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+		</band>
+	</pageHeader>
+	<lastPageFooter>
+		<band height="684">
+			<rectangle>
+				<reportElement x="14" y="25" width="528" height="20"/>
+				<graphicElement>
+					<pen lineWidth="1.0"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="14" y="45" width="528" height="165"/>
+				<graphicElement>
+					<pen lineWidth="1.0"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="14" y="254" width="528" height="165"/>
+				<graphicElement>
+					<pen lineWidth="1.0"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="14" y="234" width="528" height="20"/>
+				<graphicElement>
+					<pen lineWidth="1.0"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="14" y="444" width="528" height="66"/>
+				<graphicElement>
+					<pen lineWidth="1.0"/>
+				</graphicElement>
+			</rectangle>
+			<line>
+				<reportElement x="14" y="62" width="528" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="14" y="78" width="528" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="14" y="94" width="528" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="14" y="110" width="528" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="14" y="126" width="528" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="425" y="25" width="1" height="185"/>
+			</line>
+			<line>
+				<reportElement x="14" y="143" width="528" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="14" y="159" width="528" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="15" y="175" width="528" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="15" y="191" width="528" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="14" y="271" width="528" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="14" y="352" width="528" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="14" y="368" width="528" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="14" y="319" width="528" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="425" y="234" width="1" height="185"/>
+			</line>
+			<line>
+				<reportElement x="14" y="287" width="528" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="14" y="335" width="528" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="14" y="303" width="528" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="15" y="384" width="528" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="15" y="400" width="528" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="425" y="444" width="1" height="66"/>
+			</line>
+			<line>
+				<reportElement x="309" y="444" width="1" height="66"/>
+			</line>
+			<line>
+				<reportElement x="193" y="444" width="1" height="66"/>
+			</line>
+			<line>
+				<reportElement x="194" y="472" width="349" height="1"/>
+				<graphicElement>
+					<pen lineWidth="1.0"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="194" y="494" width="349" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="32" y="30" width="385" height="11"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[I - C5 - Echéances initiales des dettes à deux ans au plus :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="432" y="31" width="102" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Montant]]></text>
+			</staticText>
+			<textField evaluationTime="Report" isBlankWhenNull="true">
+				<reportElement x="31" y="49" width="386" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{c51_1}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" isBlankWhenNull="true">
+				<reportElement x="31" y="65" width="386" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{c52_1}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" isBlankWhenNull="true">
+				<reportElement x="31" y="81" width="386" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{c53_1}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" isBlankWhenNull="true">
+				<reportElement x="31" y="97" width="386" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{c54_1}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" isBlankWhenNull="true">
+				<reportElement x="31" y="113" width="386" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{c55_1}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="437" y="113" width="97" height="11">
+					<printWhenExpression><![CDATA[$V{c55_2}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{c55_2}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="437" y="81" width="97" height="11">
+					<printWhenExpression><![CDATA[$V{c53_2}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{c53_2}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="437" y="49" width="97" height="11">
+					<printWhenExpression><![CDATA[$V{c51_2}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{c51_2}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="437" y="65" width="97" height="11">
+					<printWhenExpression><![CDATA[$V{c52_2}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{c52_2}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="437" y="97" width="97" height="11">
+					<printWhenExpression><![CDATA[$V{c54_2}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{c54_2}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="437" y="129" width="97" height="11">
+					<printWhenExpression><![CDATA[$V{c56_2}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{c56_2}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" isBlankWhenNull="true">
+				<reportElement x="31" y="129" width="386" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{c56_1}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="437" y="146" width="97" height="11">
+					<printWhenExpression><![CDATA[$V{c57_2}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{c57_2}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" isBlankWhenNull="true">
+				<reportElement x="31" y="162" width="386" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{c58_1}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="437" y="162" width="97" height="11">
+					<printWhenExpression><![CDATA[$V{c58_2}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{c58_2}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" isBlankWhenNull="true">
+				<reportElement x="31" y="146" width="386" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{c57_1}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" isBlankWhenNull="true">
+				<reportElement x="32" y="178" width="386" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{c59_1}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="438" y="178" width="97" height="11">
+					<printWhenExpression><![CDATA[$V{c59_2}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{c59_2}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" isBlankWhenNull="true">
+				<reportElement x="32" y="194" width="386" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{c510_1}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="438" y="194" width="97" height="11">
+					<printWhenExpression><![CDATA[$V{c510_2}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{c510_2}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="437" y="338" width="97" height="11">
+					<printWhenExpression><![CDATA[$V{c66_2}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{c66_2}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="437" y="274" width="97" height="11">
+					<printWhenExpression><![CDATA[$V{c62_2}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{c62_2}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="438" y="403" width="97" height="11">
+					<printWhenExpression><![CDATA[$V{c610_2}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{c610_2}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" isBlankWhenNull="true">
+				<reportElement x="31" y="355" width="386" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{c67_1}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="437" y="355" width="97" height="11">
+					<printWhenExpression><![CDATA[$V{c67_2}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{c67_2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="432" y="240" width="102" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Montant]]></text>
+			</staticText>
+			<textField evaluationTime="Report" pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="437" y="322" width="97" height="11">
+					<printWhenExpression><![CDATA[$V{c65_2}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{c65_2}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="437" y="258" width="97" height="11">
+					<printWhenExpression><![CDATA[$V{c61_2}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{c61_2}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="437" y="290" width="97" height="11">
+					<printWhenExpression><![CDATA[$V{c63_2}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{c63_2}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" isBlankWhenNull="true">
+				<reportElement x="31" y="338" width="386" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{c66_1}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" isBlankWhenNull="true">
+				<reportElement x="32" y="403" width="386" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{c610_1}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" isBlankWhenNull="true">
+				<reportElement x="31" y="306" width="386" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{c64_1}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" isBlankWhenNull="true">
+				<reportElement x="31" y="274" width="386" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{c62_1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="32" y="239" width="385" height="11"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[I - C6 - Echéances initiales des dettes à plus de deux ans :]]></text>
+			</staticText>
+			<textField evaluationTime="Report" isBlankWhenNull="true">
+				<reportElement x="31" y="371" width="386" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{c68_1}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" isBlankWhenNull="true">
+				<reportElement x="32" y="387" width="386" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{c69_1}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" isBlankWhenNull="true">
+				<reportElement x="31" y="290" width="386" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{c63_1}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" isBlankWhenNull="true">
+				<reportElement x="31" y="258" width="386" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{c61_1}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="438" y="387" width="97" height="11">
+					<printWhenExpression><![CDATA[$V{c69_2}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{c69_2}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="437" y="306" width="97" height="11">
+					<printWhenExpression><![CDATA[$V{c64_2}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{c64_2}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="437" y="371" width="97" height="11">
+					<printWhenExpression><![CDATA[$V{c68_2}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{c68_2}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" isBlankWhenNull="true">
+				<reportElement x="31" y="322" width="386" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{c65_1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="32" y="479" width="134" height="11"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[I - C7 - Montant de la TVA :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="449" width="63" height="11"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Facturée]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="338" y="449" width="63" height="11"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Récupérable]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="448" y="449" width="63" height="21"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Supportée
+non déductible]]></text>
+			</staticText>
+			<textField evaluationTime="Report" pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="438" y="480" width="97" height="11">
+					<printWhenExpression><![CDATA[$V{c73_2}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{c73_2}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="319" y="480" width="97" height="11">
+					<printWhenExpression><![CDATA[$V{c72_2}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{c72_2}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="204" y="480" width="97" height="11">
+					<printWhenExpression><![CDATA[$V{c71_2}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{c71_2}]]></textFieldExpression>
+			</textField>
+		</band>
+	</lastPageFooter>
+</jasperReport>

@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Simulation" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isFloatColumnFooter="true" whenResourceMissingType="Empty">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="847"/>
+	<parameter name="requete" class="java.lang.String"/>
+	<parameter name="societe" class="java.lang.String"/>
+	<parameter name="version" class="java.lang.String"/>
+	<parameter name="adresse" class="java.lang.String"/>
+	<parameter name="ville" class="java.lang.String"/>
+	<parameter name="pays" class="java.lang.String"/>
+	<parameter name="logo_1" class="java.lang.String"/>
+	<parameter name="logo_2" class="java.lang.String"/>
+	<parameter name="logo_4" class="java.lang.String"/>
+	<parameter name="telephone_1" class="java.lang.String"/>
+	<parameter name="telephone_2" class="java.lang.String"/>
+	<parameter name="fax" class="java.lang.String"/>
+	<parameter name="site_web" class="java.lang.String"/>
+	<parameter name="mails" class="java.lang.String"/>
+	<parameter name="identification_1" class="java.lang.String"/>
+	<parameter name="identification_2" class="java.lang.String"/>
+	<parameter name="identification_3" class="java.lang.String"/>
+	<parameter name="identification_4" class="java.lang.String"/>
+	<parameter name="identification_5" class="java.lang.String"/>
+	<parameter name="identification_6" class="java.lang.String"/>
+	<parameter name="identification_7" class="java.lang.String"/>
+	<parameter name="identification_8" class="java.lang.String"/>
+	<parameter name="identification_9" class="java.lang.String"/>
+	<parameter name="identification_10" class="java.lang.String"/>
+	<parameter name="banque" class="java.lang.String"/>
+	<parameter name="montant_lettre" class="java.lang.String"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["/usr/local/SUNWappserver/domains/domain1/config/epegase/clients/structure1/impression/fr/ventes/document/devis/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="signe_signature" class="java.lang.String"/>
+	<parameter name="parcChassis" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="simcrtActivite" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtActivite]]></fieldDescription>
+	</field>
+	<field name="simcrtAnal2" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtAnal2]]></fieldDescription>
+	</field>
+	<field name="simcrtAnal4" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtAnal4]]></fieldDescription>
+	</field>
+	<field name="simcrtAnnexe1" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtAnnexe1]]></fieldDescription>
+	</field>
+	<field name="simcrtAnnexe2" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtAnnexe2]]></fieldDescription>
+	</field>
+	<field name="simcrtCat" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtCat]]></fieldDescription>
+	</field>
+	<field name="simcrtCivilContact" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtCivilContact]]></fieldDescription>
+	</field>
+	<field name="simcrtCivilTiers" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtCivilTiers]]></fieldDescription>
+	</field>
+	<field name="simcrtDate" class="java.util.Date">
+		<fieldDescription><![CDATA[simcrtDate]]></fieldDescription>
+	</field>
+	<field name="simcrtDateAnnule" class="java.util.Date">
+		<fieldDescription><![CDATA[simcrtDateAnnule]]></fieldDescription>
+	</field>
+	<field name="simcrtDateCreat" class="java.util.Date">
+		<fieldDescription><![CDATA[simcrtDateCreat]]></fieldDescription>
+	</field>
+	<field name="simcrtDateImp" class="java.util.Date">
+		<fieldDescription><![CDATA[simcrtDateImp]]></fieldDescription>
+	</field>
+	<field name="simcrtDateLivraison" class="java.util.Date">
+		<fieldDescription><![CDATA[simcrtDateLivraison]]></fieldDescription>
+	</field>
+	<field name="simcrtDateModif" class="java.util.Date">
+		<fieldDescription><![CDATA[simcrtDateModif]]></fieldDescription>
+	</field>
+	<field name="simcrtDateRelance" class="java.util.Date">
+		<fieldDescription><![CDATA[simcrtDateRelance]]></fieldDescription>
+	</field>
+	<field name="simcrtDateTransforme" class="java.util.Date">
+		<fieldDescription><![CDATA[simcrtDateTransforme]]></fieldDescription>
+	</field>
+	<field name="simcrtDateValide" class="java.util.Date">
+		<fieldDescription><![CDATA[simcrtDateValide]]></fieldDescription>
+	</field>
+	<field name="simcrtDateValidite" class="java.util.Date">
+		<fieldDescription><![CDATA[simcrtDateValidite]]></fieldDescription>
+	</field>
+	<field name="simcrtDepartement" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtDepartement]]></fieldDescription>
+	</field>
+	<field name="simcrtDevise" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtDevise]]></fieldDescription>
+	</field>
+	<field name="simcrtEtat" class="java.lang.Integer">
+		<fieldDescription><![CDATA[simcrtEtat]]></fieldDescription>
+	</field>
+	<field name="simcrtEtatVal" class="java.lang.Integer">
+		<fieldDescription><![CDATA[simcrtEtatVal]]></fieldDescription>
+	</field>
+	<field name="simcrtExoDouane" class="java.lang.Integer">
+		<fieldDescription><![CDATA[simcrtExoDouane]]></fieldDescription>
+	</field>
+	<field name="simcrtExoTva" class="java.lang.Integer">
+		<fieldDescription><![CDATA[simcrtExoTva]]></fieldDescription>
+	</field>
+	<field name="simcrtFormule1" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtFormule1]]></fieldDescription>
+	</field>
+	<field name="simcrtFormule2" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtFormule2]]></fieldDescription>
+	</field>
+	<field name="simcrtGarde" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtGarde]]></fieldDescription>
+	</field>
+	<field name="simcrtGele" class="java.lang.Integer">
+		<fieldDescription><![CDATA[simcrtGele]]></fieldDescription>
+	</field>
+	<field name="simcrtId" class="java.lang.Long">
+		<fieldDescription><![CDATA[simcrtId]]></fieldDescription>
+	</field>
+	<field name="simcrtIdContact" class="java.lang.Long">
+		<fieldDescription><![CDATA[simcrtIdContact]]></fieldDescription>
+	</field>
+	<field name="simcrtIdCreateur" class="java.lang.Long">
+		<fieldDescription><![CDATA[simcrtIdCreateur]]></fieldDescription>
+	</field>
+	<field name="simcrtIdModif" class="java.lang.Long">
+		<fieldDescription><![CDATA[simcrtIdModif]]></fieldDescription>
+	</field>
+	<field name="simcrtIdResponsable" class="java.lang.Long">
+		<fieldDescription><![CDATA[simcrtIdResponsable]]></fieldDescription>
+	</field>
+	<field name="simcrtIncoterm" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtIncoterm]]></fieldDescription>
+	</field>
+	<field name="simcrtInfo1" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtInfo1]]></fieldDescription>
+	</field>
+	<field name="simcrtInfo10" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtInfo10]]></fieldDescription>
+	</field>
+	<field name="simcrtInfo2" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtInfo2]]></fieldDescription>
+	</field>
+	<field name="simcrtInfo3" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtInfo3]]></fieldDescription>
+	</field>
+	<field name="simcrtInfo4" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtInfo4]]></fieldDescription>
+	</field>
+	<field name="simcrtInfo5" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtInfo5]]></fieldDescription>
+	</field>
+	<field name="simcrtInfo6" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtInfo6]]></fieldDescription>
+	</field>
+	<field name="simcrtInfo7" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtInfo7]]></fieldDescription>
+	</field>
+	<field name="simcrtInfo8" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtInfo8]]></fieldDescription>
+	</field>
+	<field name="simcrtInfo9" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtInfo9]]></fieldDescription>
+	</field>
+	<field name="simcrtInfoLivraison" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtInfoLivraison]]></fieldDescription>
+	</field>
+	<field name="simcrtLieuLivraison" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtLieuLivraison]]></fieldDescription>
+	</field>
+	<field name="simcrtModeleImp" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtModeleImp]]></fieldDescription>
+	</field>
+	<field name="simcrtMotifAnnule" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtMotifAnnule]]></fieldDescription>
+	</field>
+	<field name="simcrtNomContact" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtNomContact]]></fieldDescription>
+	</field>
+	<field name="simcrtNomCreateur" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtNomCreateur]]></fieldDescription>
+	</field>
+	<field name="simcrtNomModif" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtNomModif]]></fieldDescription>
+	</field>
+	<field name="simcrtNomResponsable" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtNomResponsable]]></fieldDescription>
+	</field>
+	<field name="simcrtNomTiers" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtNomTiers]]></fieldDescription>
+	</field>
+	<field name="simcrtNum" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtNum]]></fieldDescription>
+	</field>
+	<field name="simcrtObject" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtObject]]></fieldDescription>
+	</field>
+	<field name="simcrtObservation" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtObservation]]></fieldDescription>
+	</field>
+	<field name="simcrtPdv" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtPdv]]></fieldDescription>
+	</field>
+	<field name="simcrtRegion" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtRegion]]></fieldDescription>
+	</field>
+	<field name="simcrtSecteur" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtSecteur]]></fieldDescription>
+	</field>
+	<field name="simcrtSerie" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtSerie]]></fieldDescription>
+	</field>
+	<field name="simcrtService" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtService]]></fieldDescription>
+	</field>
+	<field name="simcrtSite" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtSite]]></fieldDescription>
+	</field>
+	<field name="simcrtTotHt" class="java.lang.Double">
+		<fieldDescription><![CDATA[simcrtTotHt]]></fieldDescription>
+	</field>
+	<field name="simcrtTotTc" class="java.lang.Double">
+		<fieldDescription><![CDATA[simcrtTotTc]]></fieldDescription>
+	</field>
+	<field name="simcrtTotTtc" class="java.lang.Double">
+		<fieldDescription><![CDATA[simcrtTotTtc]]></fieldDescription>
+	</field>
+	<field name="simcrtTotTva" class="java.lang.Double">
+		<fieldDescription><![CDATA[simcrtTotTva]]></fieldDescription>
+	</field>
+	<field name="simcrtTypeTransforme" class="java.lang.Integer">
+		<fieldDescription><![CDATA[simcrtTypeTransforme]]></fieldDescription>
+	</field>
+	<field name="var_photo" class="java.lang.String">
+		<fieldDescription><![CDATA[var_photo]]></fieldDescription>
+	</field>
+	<field name="var_suite" class="java.lang.String">
+		<fieldDescription><![CDATA[var_suite]]></fieldDescription>
+	</field>
+	<field name="var_condition" class="java.lang.String">
+		<fieldDescription><![CDATA[var_condition]]></fieldDescription>
+	</field>
+	<field name="simcrtTypeContrat" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtTypeContrat]]></fieldDescription>
+	</field>
+	<field name="simcrtCode" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtCode]]></fieldDescription>
+	</field>
+	<field name="simcrtMarque" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtMarque]]></fieldDescription>
+	</field>
+	<field name="simcrtGamme" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtGamme]]></fieldDescription>
+	</field>
+	<field name="simcrtModele" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtModele]]></fieldDescription>
+	</field>
+	<field name="simcrtTaxe" class="java.lang.String">
+		<fieldDescription><![CDATA[simcrtTaxe]]></fieldDescription>
+	</field>
+	<field name="simcrtTauxTaxe" class="java.lang.Float">
+		<fieldDescription><![CDATA[simcrtTauxTaxe]]></fieldDescription>
+	</field>
+	<field name="simcrtPrc" class="java.lang.Double">
+		<fieldDescription><![CDATA[simcrtPrc]]></fieldDescription>
+	</field>
+	<field name="simcrtPrg" class="java.lang.Double">
+		<fieldDescription><![CDATA[simcrtPrg]]></fieldDescription>
+	</field>
+	<field name="simcrtRemise" class="java.lang.Double">
+		<fieldDescription><![CDATA[simcrtRemise]]></fieldDescription>
+	</field>
+	<field name="simcrtAcompte" class="java.lang.Double">
+		<fieldDescription><![CDATA[simcrtAcompte]]></fieldDescription>
+	</field>
+	<field name="simcrtBase" class="java.lang.Double">
+		<fieldDescription><![CDATA[simcrtBase]]></fieldDescription>
+	</field>
+	<field name="simcrtAmortissement" class="java.lang.Double">
+		<fieldDescription><![CDATA[simcrtAmortissement]]></fieldDescription>
+	</field>
+	<field name="simcrtFraisFinancier" class="java.lang.Double">
+		<fieldDescription><![CDATA[simcrtFraisFinancier]]></fieldDescription>
+	</field>
+	<field name="simcrtEntretien" class="java.lang.Double">
+		<fieldDescription><![CDATA[simcrtEntretien]]></fieldDescription>
+	</field>
+	<field name="simcrtAssurance" class="java.lang.Double">
+		<fieldDescription><![CDATA[simcrtAssurance]]></fieldDescription>
+	</field>
+	<field name="simcrtFranchise" class="java.lang.Double">
+		<fieldDescription><![CDATA[simcrtFranchise]]></fieldDescription>
+	</field>
+	<field name="simcrtFraisStructure" class="java.lang.Double">
+		<fieldDescription><![CDATA[simcrtFraisStructure]]></fieldDescription>
+	</field>
+	<field name="simcrtRemplacement" class="java.lang.Double">
+		<fieldDescription><![CDATA[simcrtRemplacement]]></fieldDescription>
+	</field>
+	<field name="simcrtRemplissage" class="java.lang.Double">
+		<fieldDescription><![CDATA[simcrtRemplissage]]></fieldDescription>
+	</field>
+	<field name="simcrtValeurRachat" class="java.lang.Double">
+		<fieldDescription><![CDATA[simcrtValeurRachat]]></fieldDescription>
+	</field>
+	<field name="simcrtPr" class="java.lang.Double">
+		<fieldDescription><![CDATA[simcrtPr]]></fieldDescription>
+	</field>
+	<field name="simcrtValeurResiduelleTheo" class="java.lang.Double">
+		<fieldDescription><![CDATA[simcrtValeurResiduelleTheo]]></fieldDescription>
+	</field>
+	<field name="simcrtValeurResiduelleReelle" class="java.lang.Double">
+		<fieldDescription><![CDATA[simcrtValeurResiduelleReelle]]></fieldDescription>
+	</field>
+	<field name="simcrtDureeMin" class="java.lang.Integer">
+		<fieldDescription><![CDATA[simcrtDureeMin]]></fieldDescription>
+	</field>
+	<field name="simcrtDureeMax" class="java.lang.Integer">
+		<fieldDescription><![CDATA[simcrtDureeMax]]></fieldDescription>
+	</field>
+	<field name="simcrtNbMois" class="java.lang.Integer">
+		<fieldDescription><![CDATA[simcrtNbMois]]></fieldDescription>
+	</field>
+	<field name="simcrtThMois" class="java.lang.Double">
+		<fieldDescription><![CDATA[simcrtThMois]]></fieldDescription>
+	</field>
+	<field name="simcrtTxMois" class="java.lang.Double">
+		<fieldDescription><![CDATA[simcrtTxMois]]></fieldDescription>
+	</field>
+	<field name="simcrtTtMois" class="java.lang.Double">
+		<fieldDescription><![CDATA[simcrtTtMois]]></fieldDescription>
+	</field>
+	<field name="simcrtCumulEcheance" class="java.lang.Double">
+		<fieldDescription><![CDATA[simcrtCumulEcheance]]></fieldDescription>
+	</field>
+	<field name="simcrtTauxValeurResiduelle" class="java.lang.Float">
+		<fieldDescription><![CDATA[simcrtTauxValeurResiduelle]]></fieldDescription>
+	</field>
+	<field name="simcrtTauxAmortissement" class="java.lang.Float">
+		<fieldDescription><![CDATA[simcrtTauxAmortissement]]></fieldDescription>
+	</field>
+	<field name="simcrtTauxFraisFinancier" class="java.lang.Float">
+		<fieldDescription><![CDATA[simcrtTauxFraisFinancier]]></fieldDescription>
+	</field>
+	<field name="simcrtTauxEntretien" class="java.lang.Float">
+		<fieldDescription><![CDATA[simcrtTauxEntretien]]></fieldDescription>
+	</field>
+	<field name="simcrtTauxAssurance" class="java.lang.Float">
+		<fieldDescription><![CDATA[simcrtTauxAssurance]]></fieldDescription>
+	</field>
+	<field name="simcrtTauxFranchise" class="java.lang.Float">
+		<fieldDescription><![CDATA[simcrtTauxFranchise]]></fieldDescription>
+	</field>
+	<field name="simcrtTauxFraisStructure" class="java.lang.Float">
+		<fieldDescription><![CDATA[simcrtTauxFraisStructure]]></fieldDescription>
+	</field>
+	<field name="simcrtTauxRemplacement" class="java.lang.Float">
+		<fieldDescription><![CDATA[simcrtTauxRemplacement]]></fieldDescription>
+	</field>
+	<field name="simcrtTauxRemplissage" class="java.lang.Float">
+		<fieldDescription><![CDATA[simcrtTauxRemplissage]]></fieldDescription>
+	</field>
+	<field name="simcrtTauxMarge" class="java.lang.Float">
+		<fieldDescription><![CDATA[simcrtTauxMarge]]></fieldDescription>
+	</field>
+	<field name="simcrtTauxRemise" class="java.lang.Float">
+		<fieldDescription><![CDATA[simcrtTauxRemise]]></fieldDescription>
+	</field>
+	<field name="var_descriptif" class="java.lang.String">
+		<fieldDescription><![CDATA[var_descriptif]]></fieldDescription>
+	</field>
+	<field name="tieadresse" class="java.lang.String">
+		<fieldDescription><![CDATA[tiers.tieadresse]]></fieldDescription>
+	</field>
+	<field name="tieascensseur" class="java.lang.String">
+		<fieldDescription><![CDATA[tiers.tieascensseur]]></fieldDescription>
+	</field>
+	<field name="tiebatiment" class="java.lang.String">
+		<fieldDescription><![CDATA[tiers.tiebatiment]]></fieldDescription>
+	</field>
+	<field name="tiebp" class="java.lang.String">
+		<fieldDescription><![CDATA[tiers.tiebp]]></fieldDescription>
+	</field>
+	<field name="tieburtel1" class="java.lang.String">
+		<fieldDescription><![CDATA[tiers.tieburtel1]]></fieldDescription>
+	</field>
+	<field name="tieburtel2" class="java.lang.String">
+		<fieldDescription><![CDATA[tiers.tieburtel2]]></fieldDescription>
+	</field>
+	<field name="tieburtel3" class="java.lang.String">
+		<fieldDescription><![CDATA[tiers.tieburtel3]]></fieldDescription>
+	</field>
+	<field name="tiecategorie" class="java.lang.String">
+		<fieldDescription><![CDATA[tiers.tiecategorie]]></fieldDescription>
+	</field>
+	<field name="tiecivilite" class="java.lang.String">
+		<fieldDescription><![CDATA[tiers.tiecivilite]]></fieldDescription>
+	</field>
+	<field name="tiecompte0" class="java.lang.String">
+		<fieldDescription><![CDATA[tiers.tiecompte0]]></fieldDescription>
+	</field>
+	<field name="tienompays" class="java.lang.String">
+		<fieldDescription><![CDATA[tiers.tienompays]]></fieldDescription>
+	</field>
+	<field name="tieville" class="java.lang.String">
+		<fieldDescription><![CDATA[tiers.tieville]]></fieldDescription>
+	</field>
+	<title>
+		<band height="110" splitType="Stretch">
+			<image scaleImage="RetainShape" hAlign="Left">
+				<reportElement x="13" y="10" width="129" height="89"/>
+				<imageExpression class="java.lang.String"><![CDATA[$P{logo_1}]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="166" y="11" width="368" height="86"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{societe}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="134" splitType="Stretch">
+			<rectangle radius="10">
+				<reportElement mode="Transparent" x="13" y="6" width="267" height="120" forecolor="#B50519"/>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement mode="Transparent" x="293" y="6" width="245" height="120" forecolor="#B50519"/>
+			</rectangle>
+			<textField>
+				<reportElement x="92" y="29" width="175" height="37"/>
+				<textElement>
+					<font fontName="Arial" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{simcrtNomTiers}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="92" y="82" width="175" height="12"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{tieadresse}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="92" y="95" width="175" height="12"/>
+				<textElement markup="none">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{tiebp}.concat($F{tieville})]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="21" y="30" width="61" height="12"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nom client]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="21" y="82" width="61" height="12"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Adresse]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="21" y="95" width="61" height="12"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[BP, Ville]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="92" y="107" width="175" height="12"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{tieburtel1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="21" y="107" width="61" height="12"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Téléphone]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="303" y="42" width="75" height="12"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="303" y="63" width="75" height="12"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[N° Client]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="303" y="84" width="75" height="12"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Commercial]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="303" y="107" width="75" height="12"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Objet]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="393" y="42" width="120" height="12"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{simcrtDate}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="393" y="63" width="120" height="12"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{tiecompte0}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="393" y="84" width="120" height="12"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{simcrtNomResponsable}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="393" y="108" width="120" height="12"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{simcrtObject}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="92" y="69" width="175" height="12"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{simcrtNomContact}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="21" y="69" width="61" height="12"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Contact]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="116" y="10" width="72" height="12"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Adressée à]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="303" y="21" width="75" height="12"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Simulation]]></text>
+			</staticText>
+			<textField pattern="">
+				<reportElement x="431" y="21" width="57" height="12"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{simcrtNum}]]></textFieldExpression>
+			</textField>
+			<textField pattern="">
+				<reportElement x="395" y="21" width="28" height="12"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{simcrtTypeContrat}.split(":")[1]]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="346">
+			<image scaleImage="RetainShape" hAlign="Center">
+				<reportElement x="300" y="116" width="235" height="177"/>
+				<imageExpression class="java.lang.String"><![CDATA[$F{var_photo}]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="22" y="18" width="257" height="324"/>
+				<textElement markup="html"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{var_descriptif}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="332" y="47" width="100" height="12" forecolor="#000000" backcolor="#F5EBEB"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Durée crédit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="332" y="62" width="100" height="12" forecolor="#000000" backcolor="#F5EBEB"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Loyer H.T.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="332" y="77" width="100" height="12" forecolor="#000000" backcolor="#F5EBEB"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Loyer T.T.C.]]></text>
+			</staticText>
+			<textField pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="445" y="63" width="63" height="12">
+					<printWhenExpression><![CDATA[$F{simcrtThMois}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{simcrtThMois}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="445" y="33" width="63" height="12">
+					<printWhenExpression><![CDATA[$F{simcrtAcompte}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{simcrtAcompte}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="332" y="33" width="100" height="12" forecolor="#000000" backcolor="#F5EBEB">
+					<printWhenExpression><![CDATA[$F{simcrtAcompte}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Acompte]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="332" y="92" width="100" height="12" forecolor="#000000" backcolor="#F5EBEB">
+					<printWhenExpression><![CDATA[$F{simcrtValeurResiduelleReelle}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Valeur résiduelle]]></text>
+			</staticText>
+			<textField pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="445" y="92" width="63" height="12">
+					<printWhenExpression><![CDATA[$F{simcrtValeurResiduelleReelle}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{simcrtValeurResiduelleReelle}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="445" y="78" width="63" height="12">
+					<printWhenExpression><![CDATA[$F{simcrtTtMois}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{simcrtTtMois}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="448" y="48" width="34" height="12" forecolor="#000000" backcolor="#F5EBEB"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(mois)]]></text>
+			</staticText>
+			<textField pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="487" y="48" width="21" height="12">
+					<printWhenExpression><![CDATA[$F{simcrtNbMois}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{simcrtNbMois}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="305" y="12" width="229" height="12" forecolor="#000000" backcolor="#F5EBEB">
+					<printWhenExpression><![CDATA[$F{simcrtAcompte}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Conditions de règlements]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="289" y="298" width="257" height="45"/>
+				<textElement markup="html"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{var_suite}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<lastPageFooter>
+		<band height="154" splitType="Stretch">
+			<rectangle radius="10">
+				<reportElement mode="Transparent" x="13" y="10" width="525" height="100" forecolor="#B50519"/>
+			</rectangle>
+			<textField isBlankWhenNull="true">
+				<reportElement x="20" y="26" width="229" height="58"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{var_condition}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="283" y="117" width="254" height="11"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Tél. : " + $P{telephone_1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="283" y="140" width="254" height="11"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["N° NINEA : " + $P{identification_1} + "  N° RCCM : " + $P{identification_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="283" y="128" width="254" height="11"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Fax : " + $P{fax}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="82" y="91" width="46" height="10"/>
+				<textElement textAlignment="Left" markup="none">
+					<font fontName="Arial" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{simcrtLieuLivraison}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="19" y="91" width="55" height="10"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Livraison :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="133" y="91" width="66" height="10"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Valable jusqu'au :]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="200" y="91" width="44" height="10"/>
+				<textElement textAlignment="Left" markup="none">
+					<font fontName="Arial" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{simcrtDateValidite}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="254" y="10" width="1" height="100"/>
+				<graphicElement>
+					<pen lineColor="#B50519"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="13" y="83" width="241" height="1"/>
+				<graphicElement>
+					<pen lineColor="#B50519"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="269" y="14" width="115" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="8" isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Signature commercial :]]></text>
+			</staticText>
+			<image scaleImage="RetainShape" hAlign="Center">
+				<reportElement x="276" y="35" width="98" height="59"/>
+				<imageExpression class="java.lang.String"><![CDATA[$P{signe_signature}]]></imageExpression>
+			</image>
+			<line>
+				<reportElement x="403" y="10" width="1" height="100"/>
+				<graphicElement>
+					<pen lineColor="#B50519"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="415" y="14" width="115" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="8" isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[BON POUR ACCORD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="14" width="229" height="10"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="8" isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Conditions :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="414" y="26" width="115" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Date, cachet et signature lisible]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="129" width="41" height="11"/>
+				<textElement textAlignment="Left" markup="none">
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Ste web :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="141" width="37" height="11"/>
+				<textElement textAlignment="Left" markup="none">
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Banque :]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="46" y="117" width="232" height="11"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{mails}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="58" y="129" width="222" height="11"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{site_web}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="58" y="141" width="221" height="11"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{banque}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="15" y="117" width="29" height="11"/>
+				<textElement textAlignment="Left" markup="none">
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Email :]]></text>
+			</staticText>
+		</band>
+	</lastPageFooter>
+</jasperReport>

@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="cotationFournisseur" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="0" isFloatColumnFooter="true">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="359"/>
+	<parameter name="requete" class="java.lang.String"/>
+	<parameter name="societe" class="java.lang.String"/>
+	<parameter name="version" class="java.lang.String"/>
+	<parameter name="adresse" class="java.lang.String"/>
+	<parameter name="ville" class="java.lang.String"/>
+	<parameter name="pays" class="java.lang.String"/>
+	<parameter name="logo_1" class="java.lang.String"/>
+	<parameter name="logo_2" class="java.lang.String"/>
+	<parameter name="logo_4" class="java.lang.String"/>
+	<parameter name="telephone_1" class="java.lang.String"/>
+	<parameter name="telephone_2" class="java.lang.String"/>
+	<parameter name="fax" class="java.lang.String"/>
+	<parameter name="site_web" class="java.lang.String"/>
+	<parameter name="mails" class="java.lang.String"/>
+	<parameter name="identification_1" class="java.lang.String"/>
+	<parameter name="identification_2" class="java.lang.String"/>
+	<parameter name="identification_3" class="java.lang.String"/>
+	<parameter name="identification_4" class="java.lang.String"/>
+	<parameter name="identification_5" class="java.lang.String"/>
+	<parameter name="identification_6" class="java.lang.String"/>
+	<parameter name="identification_7" class="java.lang.String"/>
+	<parameter name="identification_8" class="java.lang.String"/>
+	<parameter name="identification_9" class="java.lang.String"/>
+	<parameter name="identification_10" class="java.lang.String"/>
+	<parameter name="banque" class="java.lang.String"/>
+	<parameter name="montant_lettre" class="java.lang.String"/>
+	<queryString language="xPath">
+		<![CDATA[]]>
+	</queryString>
+	<field name="cotligCode" class="java.lang.String">
+		<fieldDescription><![CDATA[cotligCode]]></fieldDescription>
+	</field>
+	<field name="cotligCondition" class="java.lang.String">
+		<fieldDescription><![CDATA[cotligCondition]]></fieldDescription>
+	</field>
+	<field name="cotligDevise" class="java.lang.String">
+		<fieldDescription><![CDATA[cotligDevise]]></fieldDescription>
+	</field>
+	<field name="cotligDiam" class="java.lang.Float">
+		<fieldDescription><![CDATA[cotligDiam]]></fieldDescription>
+	</field>
+	<field name="cotligEchelle" class="java.lang.Integer">
+		<fieldDescription><![CDATA[cotligEchelle]]></fieldDescription>
+	</field>
+	<field name="cotligFamille" class="java.lang.String">
+		<fieldDescription><![CDATA[cotligFamille]]></fieldDescription>
+	</field>
+	<field name="cotligHaut" class="java.lang.Float">
+		<fieldDescription><![CDATA[cotligHaut]]></fieldDescription>
+	</field>
+	<field name="cotligId" class="java.lang.Long">
+		<fieldDescription><![CDATA[cotligId]]></fieldDescription>
+	</field>
+	<field name="cotligIdDa" class="java.lang.Long">
+		<fieldDescription><![CDATA[cotligIdDa]]></fieldDescription>
+	</field>
+	<field name="cotligLarg" class="java.lang.Float">
+		<fieldDescription><![CDATA[cotligLarg]]></fieldDescription>
+	</field>
+	<field name="cotligLibelle" class="java.lang.String">
+		<fieldDescription><![CDATA[cotligLibelle]]></fieldDescription>
+	</field>
+	<field name="cotligLong" class="java.lang.Float">
+		<fieldDescription><![CDATA[cotligLong]]></fieldDescription>
+	</field>
+	<field name="cotligNb" class="java.lang.Float">
+		<fieldDescription><![CDATA[cotligNb]]></fieldDescription>
+	</field>
+	<field name="cotligPoidsBrut" class="java.lang.Float">
+		<fieldDescription><![CDATA[cotligPoidsBrut]]></fieldDescription>
+	</field>
+	<field name="cotligPoidsNet" class="java.lang.Float">
+		<fieldDescription><![CDATA[cotligPoidsNet]]></fieldDescription>
+	</field>
+	<field name="cotligPr" class="java.lang.Double">
+		<fieldDescription><![CDATA[cotligPr]]></fieldDescription>
+	</field>
+	<field name="cotligPt" class="java.lang.Double">
+		<fieldDescription><![CDATA[cotligPt]]></fieldDescription>
+	</field>
+	<field name="cotligPu" class="java.lang.Double">
+		<fieldDescription><![CDATA[cotligPu]]></fieldDescription>
+	</field>
+	<field name="cotligPuRem" class="java.lang.Double">
+		<fieldDescription><![CDATA[cotligPuRem]]></fieldDescription>
+	</field>
+	<field name="cotligPump" class="java.lang.Double">
+		<fieldDescription><![CDATA[cotligPump]]></fieldDescription>
+	</field>
+	<field name="cotligQte" class="java.lang.Float">
+		<fieldDescription><![CDATA[cotligQte]]></fieldDescription>
+	</field>
+	<field name="cotligQteUtil" class="java.lang.Float">
+		<fieldDescription><![CDATA[cotligQteUtil]]></fieldDescription>
+	</field>
+	<field name="cotligRabais" class="java.lang.Double">
+		<fieldDescription><![CDATA[cotligRabais]]></fieldDescription>
+	</field>
+	<field name="cotligReference" class="java.lang.String">
+		<fieldDescription><![CDATA[cotligReference]]></fieldDescription>
+	</field>
+	<field name="cotligStock" class="java.lang.Integer">
+		<fieldDescription><![CDATA[cotligStock]]></fieldDescription>
+	</field>
+	<field name="cotligTauxRemise" class="java.lang.Float">
+		<fieldDescription><![CDATA[cotligTauxRemise]]></fieldDescription>
+	</field>
+	<field name="cotligTauxTaxe" class="java.lang.Float">
+		<fieldDescription><![CDATA[cotligTauxTaxe]]></fieldDescription>
+	</field>
+	<field name="cotligTaxe" class="java.lang.String">
+		<fieldDescription><![CDATA[cotligTaxe]]></fieldDescription>
+	</field>
+	<field name="cotligTc" class="java.lang.Double">
+		<fieldDescription><![CDATA[cotligTc]]></fieldDescription>
+	</field>
+	<field name="cotligTtc" class="java.lang.Double">
+		<fieldDescription><![CDATA[cotligTtc]]></fieldDescription>
+	</field>
+	<field name="cotligTva" class="java.lang.Double">
+		<fieldDescription><![CDATA[cotligTva]]></fieldDescription>
+	</field>
+	<field name="cotligUnite" class="java.lang.String">
+		<fieldDescription><![CDATA[cotligUnite]]></fieldDescription>
+	</field>
+	<field name="cotligVolume" class="java.lang.Float">
+		<fieldDescription><![CDATA[cotligVolume]]></fieldDescription>
+	</field>
+	<field name="cotActivite" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotActivite]]></fieldDescription>
+	</field>
+	<field name="cotAnal2" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotAnal2]]></fieldDescription>
+	</field>
+	<field name="cotAnal4" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotAnal4]]></fieldDescription>
+	</field>
+	<field name="cotAnnexe1" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotAnnexe1]]></fieldDescription>
+	</field>
+	<field name="cotAnnexe2" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotAnnexe2]]></fieldDescription>
+	</field>
+	<field name="cotArrondiReg" class="java.lang.Integer">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotArrondiReg]]></fieldDescription>
+	</field>
+	<field name="cotBanque" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotBanque]]></fieldDescription>
+	</field>
+	<field name="cotBudget" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotBudget]]></fieldDescription>
+	</field>
+	<field name="cotBudgetDispo" class="java.lang.Double">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotBudgetDispo]]></fieldDescription>
+	</field>
+	<field name="cotBudgetDispoMois" class="java.lang.Double">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotBudgetDispoMois]]></fieldDescription>
+	</field>
+	<field name="cotBudgetTreso" class="java.lang.Double">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotBudgetTreso]]></fieldDescription>
+	</field>
+	<field name="cotBudgetTresoMois" class="java.lang.Double">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotBudgetTresoMois]]></fieldDescription>
+	</field>
+	<field name="cotCat" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotCat]]></fieldDescription>
+	</field>
+	<field name="cotCivilContact" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotCivilContact]]></fieldDescription>
+	</field>
+	<field name="cotCivilTiers" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotCivilTiers]]></fieldDescription>
+	</field>
+	<field name="cotConditionReg" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotConditionReg]]></fieldDescription>
+	</field>
+	<field name="cotContrat" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotContrat]]></fieldDescription>
+	</field>
+	<field name="cotDate" class="java.util.Date">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotDate]]></fieldDescription>
+	</field>
+	<field name="cotDateAnnule" class="java.util.Date">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotDateAnnule]]></fieldDescription>
+	</field>
+	<field name="cotDateCreat" class="java.util.Date">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotDateCreat]]></fieldDescription>
+	</field>
+	<field name="cotDateEcheReg" class="java.util.Date">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotDateEcheReg]]></fieldDescription>
+	</field>
+	<field name="cotDateImp" class="java.util.Date">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotDateImp]]></fieldDescription>
+	</field>
+	<field name="cotDateLivraison" class="java.util.Date">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotDateLivraison]]></fieldDescription>
+	</field>
+	<field name="cotDateModif" class="java.util.Date">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotDateModif]]></fieldDescription>
+	</field>
+	<field name="cotDateRelance" class="java.util.Date">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotDateRelance]]></fieldDescription>
+	</field>
+	<field name="cotDateTransforme" class="java.util.Date">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotDateTransforme]]></fieldDescription>
+	</field>
+	<field name="cotDateValide" class="java.util.Date">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotDateValide]]></fieldDescription>
+	</field>
+	<field name="cotDateValidite" class="java.util.Date">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotDateValidite]]></fieldDescription>
+	</field>
+	<field name="cotDepartement" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotDepartement]]></fieldDescription>
+	</field>
+	<field name="cotDevise" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotDevise]]></fieldDescription>
+	</field>
+	<field name="cotEtat" class="java.lang.Integer">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotEtat]]></fieldDescription>
+	</field>
+	<field name="cotEtatVal" class="java.lang.Integer">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotEtatVal]]></fieldDescription>
+	</field>
+	<field name="cotExoDouane" class="java.lang.Integer">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotExoDouane]]></fieldDescription>
+	</field>
+	<field name="cotExoTva" class="java.lang.Integer">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotExoTva]]></fieldDescription>
+	</field>
+	<field name="cotFormule1" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotFormule1]]></fieldDescription>
+	</field>
+	<field name="cotFormule2" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotFormule2]]></fieldDescription>
+	</field>
+	<field name="cotGele" class="java.lang.Integer">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotGele]]></fieldDescription>
+	</field>
+	<field name="cotId" class="java.lang.Long">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotId]]></fieldDescription>
+	</field>
+	<field name="cotIdContact" class="java.lang.Long">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotIdContact]]></fieldDescription>
+	</field>
+	<field name="cotIdCreateur" class="java.lang.Long">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotIdCreateur]]></fieldDescription>
+	</field>
+	<field name="cotIdModif" class="java.lang.Long">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotIdModif]]></fieldDescription>
+	</field>
+	<field name="cotIdResponsable" class="java.lang.Long">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotIdResponsable]]></fieldDescription>
+	</field>
+	<field name="cotIncoterm" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotIncoterm]]></fieldDescription>
+	</field>
+	<field name="cotInfo1" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotInfo1]]></fieldDescription>
+	</field>
+	<field name="cotInfo10" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotInfo10]]></fieldDescription>
+	</field>
+	<field name="cotInfo2" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotInfo2]]></fieldDescription>
+	</field>
+	<field name="cotInfo3" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotInfo3]]></fieldDescription>
+	</field>
+	<field name="cotInfo4" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotInfo4]]></fieldDescription>
+	</field>
+	<field name="cotInfo5" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotInfo5]]></fieldDescription>
+	</field>
+	<field name="cotInfo6" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotInfo6]]></fieldDescription>
+	</field>
+	<field name="cotInfo7" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotInfo7]]></fieldDescription>
+	</field>
+	<field name="cotInfo8" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotInfo8]]></fieldDescription>
+	</field>
+	<field name="cotInfo9" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotInfo9]]></fieldDescription>
+	</field>
+	<field name="cotInfoLivraison" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotInfoLivraison]]></fieldDescription>
+	</field>
+	<field name="cotLieuLivraison" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotLieuLivraison]]></fieldDescription>
+	</field>
+	<field name="cotModeReg" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotModeReg]]></fieldDescription>
+	</field>
+	<field name="cotModeleImp" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotModeleImp]]></fieldDescription>
+	</field>
+	<field name="cotMotifAnnule" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotMotifAnnule]]></fieldDescription>
+	</field>
+	<field name="cotNbJourReg" class="java.lang.Integer">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotNbJourReg]]></fieldDescription>
+	</field>
+	<field name="cotNomContact" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotNomContact]]></fieldDescription>
+	</field>
+	<field name="cotNomCreateur" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotNomCreateur]]></fieldDescription>
+	</field>
+	<field name="cotNomModif" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotNomModif]]></fieldDescription>
+	</field>
+	<field name="cotNomResponsable" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotNomResponsable]]></fieldDescription>
+	</field>
+	<field name="cotNomTiers" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotNomTiers]]></fieldDescription>
+	</field>
+	<field name="cotNum" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotNum]]></fieldDescription>
+	</field>
+	<field name="cotObject" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotObject]]></fieldDescription>
+	</field>
+	<field name="cotObservation" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotObservation]]></fieldDescription>
+	</field>
+	<field name="cotPdv" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotPdv]]></fieldDescription>
+	</field>
+	<field name="cotRegion" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotRegion]]></fieldDescription>
+	</field>
+	<field name="cotSecteur" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotSecteur]]></fieldDescription>
+	</field>
+	<field name="cotSerie" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotSerie]]></fieldDescription>
+	</field>
+	<field name="cotService" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotService]]></fieldDescription>
+	</field>
+	<field name="cotSite" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotSite]]></fieldDescription>
+	</field>
+	<field name="cotTotHt" class="java.lang.Double">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotTotHt]]></fieldDescription>
+	</field>
+	<field name="cotTotRabais" class="java.lang.Double">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotTotRabais]]></fieldDescription>
+	</field>
+	<field name="cotTotRemise" class="java.lang.Double">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotTotRemise]]></fieldDescription>
+	</field>
+	<field name="cotTotTc" class="java.lang.Double">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotTotTc]]></fieldDescription>
+	</field>
+	<field name="cotTotTtc" class="java.lang.Double">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotTotTtc]]></fieldDescription>
+	</field>
+	<field name="cotTotTva" class="java.lang.Double">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotTotTva]]></fieldDescription>
+	</field>
+	<field name="cotTypeImp" class="java.lang.Integer">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotTypeImp]]></fieldDescription>
+	</field>
+	<field name="cotTypeReg" class="java.lang.Integer">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotTypeReg]]></fieldDescription>
+	</field>
+	<field name="cotTypeTransforme" class="java.lang.Integer">
+		<fieldDescription><![CDATA[cotationEnteteAchats.cotTypeTransforme]]></fieldDescription>
+	</field>
+	<field name="tieadresse" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.tiers.tieadresse]]></fieldDescription>
+	</field>
+	<field name="tierue" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.tiers.tierue]]></fieldDescription>
+	</field>
+	<field name="tielot" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.tiers.tielot]]></fieldDescription>
+	</field>
+	<field name="tieilot" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.tiers.tieilot]]></fieldDescription>
+	</field>
+	<field name="tiebatiment" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.tiers.tiebatiment]]></fieldDescription>
+	</field>
+	<field name="tieporte" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.tiers.tieporte]]></fieldDescription>
+	</field>
+	<field name="tieetage" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.tiers.tieetage]]></fieldDescription>
+	</field>
+	<field name="tieascensseur" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.tiers.tieascensseur]]></fieldDescription>
+	</field>
+	<field name="tiequartier" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.tiers.tiequartier]]></fieldDescription>
+	</field>
+	<field name="tiecommune" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.tiers.tiecommune]]></fieldDescription>
+	</field>
+	<field name="tiedepart" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.tiers.tiedepart]]></fieldDescription>
+	</field>
+	<field name="tiezone" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.tiers.tiezone]]></fieldDescription>
+	</field>
+	<field name="tiebp" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.tiers.tiebp]]></fieldDescription>
+	</field>
+	<field name="tiecedex" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.tiers.tiecedex]]></fieldDescription>
+	</field>
+	<field name="tieville" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.tiers.tieville]]></fieldDescription>
+	</field>
+	<field name="tieburtel1" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.tiers.tieburtel1]]></fieldDescription>
+	</field>
+	<field name="tieburtel2" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.tiers.tieburtel2]]></fieldDescription>
+	</field>
+	<field name="tieburtel3" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.tiers.tieburtel3]]></fieldDescription>
+	</field>
+	<field name="tieburfax" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.tiers.tieburfax]]></fieldDescription>
+	</field>
+	<field name="tiecompte0" class="java.lang.String">
+		<fieldDescription><![CDATA[cotationEnteteAchats.tiers.tiecompte0]]></fieldDescription>
+	</field>
+	<title>
+		<band height="100" splitType="Stretch">
+			<textField>
+				<reportElement x="21" y="0" width="506" height="31"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="24" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{societe}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="532" y="0" width="19" height="32"/>
+				<textElement rotation="Left">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[© B&W]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="125" splitType="Stretch">
+			<rectangle>
+				<reportElement x="288" y="10" width="248" height="104"/>
+			</rectangle>
+			<textField>
+				<reportElement x="300" y="15" width="232" height="21"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cotNomTiers}]]></textFieldExpression>
+			</textField>
+			<textField pattern="d/M/yyyy" isBlankWhenNull="true">
+				<reportElement x="206" y="16" width="68" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{cotDate}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="16" width="81" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cotation N° :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="96" y="16" width="69" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cotNum}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="21" y="34" width="61" height="20">
+					<printWhenExpression><![CDATA[( $F{cotNomResponsable}.length()!=0 ? true : false )]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Suivi par :]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="96" y="34" width="178" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cotNomResponsable}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="384" y="76" width="143" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cotNomContact}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="300" y="75" width="74" height="13">
+					<printWhenExpression><![CDATA[( $F{cotNomContact}.length()!=0 ? true : false )]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[A l'attention de]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="300" y="39" width="228" height="16"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{tieadresse}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="300" y="92" width="227" height="22"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{ville}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="167" y="16" width="34" height="18"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="21" y="91" width="61" height="20">
+					<printWhenExpression><![CDATA[( $F{cotObject}.length()!=0 ? true : false )]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Objet :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="300" y="57" width="228" height="16">
+					<printWhenExpression><![CDATA[( $F{tiebp}.length()!=0 ? true : false )]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["BP " + $F{tiebp}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="96" y="92" width="178" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cotObject}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="21" y="54" width="61" height="20">
+					<printWhenExpression><![CDATA[( $F{cotActivite}.length()!=0 ? true : false )]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Activité :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="21" y="72" width="61" height="20">
+					<printWhenExpression><![CDATA[( $F{cotBudget}.length()!=0 ? true : false )]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Budget :]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="96" y="54" width="178" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cotActivite}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="96" y="73" width="178" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cotBudget}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="62" splitType="Stretch">
+			<staticText>
+				<reportElement x="13" y="32" width="61" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Code]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="86" y="32" width="298" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Libellé produit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="487" y="32" width="38" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Unité]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="427" y="32" width="31" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Qte.]]></text>
+			</staticText>
+			<line>
+				<reportElement x="12" y="24" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="76" y="24" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="414" y="24" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="474" y="24" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="540" y="24" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="12" y="24" width="529" height="1"/>
+			</line>
+			<line>
+				<reportElement x="12" y="55" width="529" height="1"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="28" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement x="18" y="4" width="56" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cotligCode}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="84" y="4" width="300" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cotligLibelle}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="485" y="4" width="38" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+			</textField>
+			<textField>
+				<reportElement x="425" y="4" width="31" height="20">
+					<printWhenExpression><![CDATA[$F{cotligQte}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{cotligQte}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="12" y="0" width="1" height="28"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="76" y="0" width="1" height="28"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="414" y="0" width="1" height="28"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="474" y="0" width="1" height="28"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="540" y="0" width="1" height="28"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="65" splitType="Stretch">
+			<line>
+				<reportElement x="12" y="0" width="1" height="10"/>
+			</line>
+			<line>
+				<reportElement x="76" y="0" width="1" height="10"/>
+			</line>
+			<line>
+				<reportElement x="414" y="0" width="1" height="10"/>
+			</line>
+			<line>
+				<reportElement x="474" y="0" width="1" height="10"/>
+			</line>
+			<line>
+				<reportElement x="12" y="10" width="529" height="1"/>
+			</line>
+			<line>
+				<reportElement x="540" y="0" width="1" height="10"/>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement x="14" y="32" width="523" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cotFormule1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="14" y="49" width="523" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cotFormule2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="16" y="16" width="90" height="14"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Observations :]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="35" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="5" width="555" height="1"/>
+			</line>
+			<textField>
+				<reportElement x="13" y="10" width="528" height="11"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8" isItalic="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{adresse} + " " + $P{ville} + " - Tél.: " + $P{telephone_1} + " - Fax : " + $P{fax} + " - Email : " + $P{mails}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="13" y="22" width="528" height="11"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["N° RC : " + $P{identification_1} + " - N° NINEA : " + $P{identification_2}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

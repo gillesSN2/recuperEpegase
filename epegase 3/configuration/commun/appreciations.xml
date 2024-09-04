@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Appreciations>
+
+	<apprec>
+		<code>1</code>
+		<nom_FR>Plomb</nom_FR>
+		<nom_UK></nom_UK>
+		<nom_SP></nom_SP>
+	</apprec>
+
+	<apprec>
+		<code>2</code>
+		<nom_FR>Zinc</nom_FR>
+		<nom_UK></nom_UK>
+		<nom_SP></nom_SP>
+	</apprec>
+
+	<apprec>
+		<code>3</code>
+		<nom_FR>Cuivre</nom_FR>
+		<nom_UK></nom_UK>
+		<nom_SP></nom_SP>
+	</apprec>
+
+	<apprec>
+		<code>4</code>
+		<nom_FR>Fer</nom_FR>
+		<nom_UK></nom_UK>
+		<nom_SP></nom_SP>
+	</apprec>
+
+	<apprec>
+		<code>5</code>
+		<nom_FR>Alunimium</nom_FR>
+		<nom_UK></nom_UK>
+		<nom_SP></nom_SP>
+	</apprec>
+
+  	<apprec>
+		<code>6</code>
+		<nom_FR>Argent</nom_FR>
+		<nom_UK></nom_UK>
+		<nom_SP></nom_SP>
+	</apprec>
+
+  	<apprec>
+		<code>7</code>
+		<nom_FR>Or</nom_FR>
+		<nom_UK></nom_UK>
+		<nom_SP></nom_SP>
+	</apprec>
+
+    	<apprec>
+		<code>8</code>
+		<nom_FR>Platine</nom_FR>
+		<nom_UK></nom_UK>
+		<nom_SP></nom_SP>
+	</apprec>
+
+    	<apprec>
+		<code>9</code>
+		<nom_FR>Diamant</nom_FR>
+		<nom_UK></nom_UK>
+		<nom_SP></nom_SP>
+	</apprec>
+
+</Appreciations>

@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Releve" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="27"/>
+	<property name="ireport.y" value="133"/>
+	<style name="ST1" isDefault="false" pattern="">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{formatDevise}==0)]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" markup="none" pattern="#,##0.00"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{formatDevise}==1)]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.00"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{formatDevise}==2)]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0" isItalic="false"/>
+		</conditionalStyle>
+	</style>
+	<parameter name="structure" class="java.lang.String"/>
+	<parameter name="requete" class="java.lang.String"/>
+	<parameter name="societe" class="java.lang.String"/>
+	<parameter name="version" class="java.lang.String"/>
+	<parameter name="adresse" class="java.lang.String"/>
+	<parameter name="ville" class="java.lang.String"/>
+	<parameter name="pays" class="java.lang.String"/>
+	<parameter name="logo_1" class="java.lang.String"/>
+	<parameter name="logo_2" class="java.lang.String"/>
+	<parameter name="logo_4" class="java.lang.String"/>
+	<parameter name="telephone_1" class="java.lang.String"/>
+	<parameter name="telephone_2" class="java.lang.String"/>
+	<parameter name="fax" class="java.lang.String"/>
+	<parameter name="site_web" class="java.lang.String"/>
+	<parameter name="mails" class="java.lang.String"/>
+	<parameter name="identification_1" class="java.lang.String"/>
+	<parameter name="identification_2" class="java.lang.String"/>
+	<parameter name="identification_3" class="java.lang.String"/>
+	<parameter name="identification_4" class="java.lang.String"/>
+	<parameter name="identification_5" class="java.lang.String"/>
+	<parameter name="identification_6" class="java.lang.String"/>
+	<parameter name="identification_7" class="java.lang.String"/>
+	<parameter name="identification_8" class="java.lang.String"/>
+	<parameter name="identification_9" class="java.lang.String"/>
+	<parameter name="identification_10" class="java.lang.String"/>
+	<parameter name="banque" class="java.lang.String"/>
+	<parameter name="montant_lettre" class="java.lang.String"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["/usr/local/SUNWappserver/domains/domain1/config/epegase/clients/structure1/impression/fr/ventes/document/devis/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="signe_signature" class="java.lang.String"/>
+	<parameter name="parcChassis" class="java.lang.String"/>
+	<parameter name="entete" class="java.lang.String"/>
+	<parameter name="filtre" class="java.lang.String"/>
+	<parameter name="valeur1" class="java.lang.Double"/>
+	<parameter name="formatDevise" class="java.lang.Integer"/>
+	<parameter name="annexe1" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT
+     cpt_ecritures.`ecr_date_saisie` AS cpt_ecritures_ecr_date_saisie,
+     cpt_ecritures.`ecr_compte` AS cpt_ecritures_ecr_compte,
+     cpt_ecritures.`ecr_libcompte` AS cpt_ecritures_ecr_libcompte,
+     cpt_ecritures.`ecr_debit_pays` AS cpt_ecritures_ecr_debit_pays,
+     cpt_ecritures.`ecr_credit_pays` AS cpt_ecritures_ecr_credit_pays,
+     cpt_ecritures.`ecr_date_echeance` AS cpt_ecritures_ecr_date_echeance,
+     cpt_ecritures.`ecr_libelle` AS cpt_ecritures_ecr_libelle,
+     cpt_ecritures.`ecr_piece` AS cpt_ecritures_ecr_piece,
+     cpt_ecritures.`ecr_reference1` AS cpt_ecritures_ecr_reference1,
+     cpt_ecritures.`ecr_reference2` AS cpt_ecritures_ecr_reference2,
+     cpt_ecritures.`ecr_lettrage` AS cpt_ecritures_ecr_lettrage
+FROM
+     `cpt_ecritures` cpt_ecritures
+WHERE
+     $P!{requete}]]>
+	</queryString>
+	<field name="cpt_ecritures_ecr_date_saisie" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_ecritures_ecr_compte" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_ecritures_ecr_libcompte" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_ecritures_ecr_debit_pays" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_ecritures_ecr_credit_pays" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_ecritures_ecr_date_echeance" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_ecritures_ecr_libelle" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_ecritures_ecr_piece" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_ecritures_ecr_reference1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_ecritures_ecr_reference2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_ecritures_ecr_lettrage" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<sortField name="cpt_ecritures_ecr_compte"/>
+	<sortField name="cpt_ecritures_ecr_date_saisie"/>
+	<variable name="entete" class="java.lang.String"/>
+	<variable name="societe" class="java.lang.String"/>
+	<variable name="filtre" class="java.lang.String"/>
+	<variable name="version" class="java.lang.String"/>
+	<variable name="totDebit" class="java.lang.Double" resetType="Group" resetGroup="tiers" calculation="Sum">
+		<variableExpression><![CDATA[$F{cpt_ecritures_ecr_debit_pays}]]></variableExpression>
+	</variable>
+	<variable name="totCredit" class="java.lang.Double" resetType="Group" resetGroup="tiers" calculation="Sum">
+		<variableExpression><![CDATA[$F{cpt_ecritures_ecr_credit_pays}]]></variableExpression>
+	</variable>
+	<variable name="solde" class="java.lang.Double" resetType="Group" resetGroup="tiers">
+		<variableExpression><![CDATA[$V{totDebit}-$V{totCredit}]]></variableExpression>
+	</variable>
+	<variable name="dateChaine" class="java.lang.String">
+		<variableExpression><![CDATA[$P{annexe1}.split("-")[2].substring(0,2).concat("/").concat($P{annexe1}.split("-")[1]).concat("/").concat($P{annexe1}.split("-")[0])]]></variableExpression>
+		<initialValueExpression><![CDATA[$P{annexe1}.split("-")[2].substring(0,2).concat("/").concat($P{annexe1}.split("-")[1]).concat("/").concat($P{annexe1}.split("-")[0])]]></initialValueExpression>
+	</variable>
+	<group name="tiers" isStartNewPage="true" isResetPageNumber="true" isReprintHeaderOnEachPage="true">
+		<groupExpression><![CDATA[$F{cpt_ecritures_ecr_compte}]]></groupExpression>
+		<groupFooter>
+			<band height="128">
+				<line>
+					<reportElement x="49" y="1" width="462" height="1"/>
+					<graphicElement>
+						<pen lineWidth="0.5"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="48" y="0" width="1" height="37"/>
+				</line>
+				<line>
+					<reportElement x="169" y="0" width="1" height="37"/>
+				</line>
+				<line>
+					<reportElement x="338" y="0" width="1" height="37"/>
+				</line>
+				<line>
+					<reportElement x="425" y="0" width="1" height="19"/>
+				</line>
+				<line>
+					<reportElement x="510" y="0" width="1" height="37"/>
+				</line>
+				<line>
+					<reportElement x="49" y="37" width="462" height="1"/>
+				</line>
+				<staticText>
+					<reportElement x="48" y="50" width="463" height="41"/>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<text><![CDATA[Veuillez confirmer par retour, le présent solde à la date ci-dessus indiquée.
+
+Dans l'attente, veuillez agréer, Madame, Monsieur, l'assurance de nos sentiments les meilleurs.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="381" y="104" width="128" height="13">
+						<printWhenExpression><![CDATA[$F{cpt_ecritures_ecr_compte}.startsWith("41")]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<text><![CDATA[Le Client]]></text>
+				</staticText>
+				<line>
+					<reportElement x="102" y="0" width="1" height="37"/>
+				</line>
+				<staticText>
+					<reportElement x="50" y="104" width="128" height="13"/>
+					<textElement textAlignment="Left">
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<text><![CDATA[Le Chef Comptable]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="210" y="6" width="116" height="13"/>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+					</textElement>
+					<text><![CDATA[Total mouvements]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="210" y="21" width="116" height="13"/>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+					</textElement>
+					<text><![CDATA[Solde]]></text>
+				</staticText>
+				<textField evaluationTime="Group" evaluationGroup="tiers" isBlankWhenNull="true">
+					<reportElement style="ST1" x="359" y="5" width="60" height="11">
+						<printWhenExpression><![CDATA[$V{totDebit}!=0]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{totDebit}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Group" evaluationGroup="tiers" isBlankWhenNull="true">
+					<reportElement style="ST1" x="441" y="5" width="60" height="11">
+						<printWhenExpression><![CDATA[$V{totCredit}!=0]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{totCredit}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="338" y="18" width="172" height="1"/>
+				</line>
+				<textField evaluationTime="Group" evaluationGroup="tiers" isBlankWhenNull="true">
+					<reportElement style="ST1" x="396" y="22" width="60" height="11">
+						<printWhenExpression><![CDATA[$V{solde}!=0]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Center">
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{solde}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="381" y="104" width="128" height="13">
+						<printWhenExpression><![CDATA[$F{cpt_ecritures_ecr_compte}.startsWith("40")]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<text><![CDATA[Le Fournisseur]]></text>
+				</staticText>
+			</band>
+		</groupFooter>
+	</group>
+	<columnHeader>
+		<band height="297" splitType="Stretch">
+			<rectangle radius="10">
+				<reportElement mode="Transparent" x="244" y="82" width="267" height="100"/>
+			</rectangle>
+			<line>
+				<reportElement x="48" y="273" width="462" height="1"/>
+			</line>
+			<line>
+				<reportElement x="48" y="273" width="1" height="23"/>
+			</line>
+			<line>
+				<reportElement x="102" y="273" width="1" height="23"/>
+			</line>
+			<line>
+				<reportElement x="169" y="273" width="1" height="23"/>
+			</line>
+			<line>
+				<reportElement x="338" y="273" width="1" height="23"/>
+			</line>
+			<line>
+				<reportElement x="425" y="274" width="1" height="23"/>
+			</line>
+			<line>
+				<reportElement x="510" y="273" width="1" height="23"/>
+			</line>
+			<line>
+				<reportElement x="48" y="296" width="463" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="51" y="278" width="48" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="105" y="278" width="59" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[N° Pièce]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="172" y="278" width="166" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Intitulé écriture]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="341" y="278" width="82" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Montant Débit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="428" y="278" width="80" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Montant Crédit]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="306" y="97" width="199" height="22"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cpt_ecritures_ecr_libcompte}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="255" y="97" width="45" height="12"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Nom client]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="255" y="141" width="45" height="12"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[BP, Ville]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="255" y="128" width="45" height="12"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Adresse]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="48" y="210" width="463" height="44"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Madame, Monsieur, \n\nEn date du  ".concat($V{dateChaine}).concat(", l'examen de votre compte dans notre comptabilité, fait apparaître les sommes impayées dont nous vous prions de noter le détail ci-après:")]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="48" y="97" width="162" height="28"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[CONFIRMATION DE SOLDE]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="48" y="21" width="463" height="31"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{societe}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="255" y="163" width="74" height="12"/>
+				<textElement>
+					<font fontName="Arial" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{ville}.concat(", le ")]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="329" y="163" width="176" height="12"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[new Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="49" y="141" width="50" height="12"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[N° Compte:]]></text>
+			</staticText>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="106" y="142" width="60" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cpt_ecritures_ecr_compte}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="49" y="156" width="50" height="12"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Arrêté le:]]></text>
+			</staticText>
+			<textField evaluationTime="Group" evaluationGroup="tiers" pattern="" isBlankWhenNull="true">
+				<reportElement x="106" y="157" width="60" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{dateChaine}]]></textFieldExpression>
+			</textField>
+			<subreport>
+				<reportElement x="305" y="128" width="200" height="29"/>
+				<subreportParameter name="numero">
+					<subreportParameterExpression><![CDATA[$F{cpt_ecritures_ecr_compte}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression class="java.lang.String"><![CDATA[$P{SUBREPORT_DIR} + "adresse_tiers.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="13">
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="48" y="0" width="1" height="13"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="102" y="0" width="1" height="13"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="169" y="0" width="1" height="13"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="338" y="0" width="1" height="13"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="425" y="0" width="1" height="13"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="510" y="0" width="1" height="13"/>
+			</line>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="52" y="2" width="47" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{cpt_ecritures_ecr_date_saisie}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="105" y="2" width="60" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cpt_ecritures_ecr_reference1}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement style="ST1" x="173" y="2" width="156" height="11" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cpt_ecritures_ecr_libelle}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="ST1" x="359" y="2" width="60" height="11">
+					<printWhenExpression><![CDATA[$F{cpt_ecritures_ecr_debit_pays}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{cpt_ecritures_ecr_debit_pays}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="ST1" x="441" y="2" width="60" height="11">
+					<printWhenExpression><![CDATA[$F{cpt_ecritures_ecr_credit_pays}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{cpt_ecritures_ecr_credit_pays}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="35">
+			<textField>
+				<reportElement x="7" y="8" width="254" height="11"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Tél. : " + $P{telephone_1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="293" y="8" width="254" height="11"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Fax : " + $P{fax}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="293" y="20" width="254" height="11"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["N° NINEA : " + $P{identification_1} + "  N° RCCM : " + $P{identification_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="6" y="20" width="254" height="11"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Site web : " + $P{site_web}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="5" width="555" height="1" backcolor="#000000"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Double" lineColor="#080606"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+</jasperReport>

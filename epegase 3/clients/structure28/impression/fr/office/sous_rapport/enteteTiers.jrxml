@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="enteteTiers" pageWidth="240" pageHeight="200" columnWidth="240" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="idTiers" class="java.lang.Long"/>
+	<queryString>
+		<![CDATA[SELECT
+     cmm_tiers.`tie_raison_sociale_nom` AS cmm_tiers_tie_raison_sociale_nom,
+     cmm_tiers.`tie_sigle` AS cmm_tiers_tie_sigle,
+     cmm_tiers.`tie_nom_pays` AS cmm_tiers_tie_nom_pays,
+     cmm_tiers.`tie_ville` AS cmm_tiers_tie_ville,
+     cmm_tiers.`tie_cedex` AS cmm_tiers_tie_cedex,
+     cmm_tiers.`tie_bp` AS cmm_tiers_tie_bp,
+     cmm_tiers.`tie_zone` AS cmm_tiers_tie_zone,
+     cmm_tiers.`tie_depart` AS cmm_tiers_tie_depart,
+     cmm_tiers.`tie_commune` AS cmm_tiers_tie_commune,
+     cmm_tiers.`tie_quartier` AS cmm_tiers_tie_quartier,
+     cmm_tiers.`tie_ascensseur` AS cmm_tiers_tie_ascensseur,
+     cmm_tiers.`tie_etage` AS cmm_tiers_tie_etage,
+     cmm_tiers.`tie_porte` AS cmm_tiers_tie_porte,
+     cmm_tiers.`tie_batiment` AS cmm_tiers_tie_batiment,
+     cmm_tiers.`tie_ilot` AS cmm_tiers_tie_ilot,
+     cmm_tiers.`tie_lot` AS cmm_tiers_tie_lot,
+     cmm_tiers.`tie_rue` AS cmm_tiers_tie_rue,
+     cmm_tiers.`tie_adresse` AS cmm_tiers_tie_adresse,
+     cmm_tiers.`tie_bur_tel1` AS cmm_tiers_tie_bur_tel1,
+     cmm_tiers.`tie_bur_tel2` AS cmm_tiers_tie_bur_tel2,
+     cmm_tiers.`tie_bur_tel3` AS cmm_tiers_tie_bur_tel3,
+     cmm_tiers.`tie_bur_fax` AS cmm_tiers_tie_bur_fax,
+     cmm_tiers.`tie_telex` AS cmm_tiers_tie_telex,
+     cmm_tiers.`tie_id` AS cmm_tiers_tie_id
+FROM
+     `cmm_tiers` cmm_tiers
+WHERE
+     cmm_tiers.`tie_id` = $P{idTiers}]]>
+	</queryString>
+	<field name="cmm_tiers_tie_raison_sociale_nom" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_sigle" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_nom_pays" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_ville" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_cedex" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_bp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_zone" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_depart" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_commune" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_quartier" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_ascensseur" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_etage" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_porte" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_batiment" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_ilot" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_lot" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_rue" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_adresse" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_bur_tel1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_bur_tel2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_bur_tel3" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_bur_fax" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_telex" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="date_jour" class="java.util.Date">
+		<variableExpression><![CDATA[new java.util.Date()]]></variableExpression>
+	</variable>
+	<detail>
+		<band height="80" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement x="5" y="3" width="228" height="34"/>
+				<textElement>
+					<font fontName="DejaVu Serif" size="12" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cmm_tiers_tie_raison_sociale_nom}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="5" y="42" width="228" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cmm_tiers_tie_adresse}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="5" y="58" width="228" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Serif"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cmm_tiers_tie_bp} + $F{cmm_tiers_tie_ville}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

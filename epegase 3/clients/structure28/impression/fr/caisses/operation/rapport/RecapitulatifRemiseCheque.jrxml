@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="TresoModePaiement" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="10" bottomMargin="10" isFloatColumnFooter="true">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="ST1" isDefault="false" pattern="">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{formatDevise}==0)]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" markup="none" pattern="#,##0.00"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{formatDevise}==1)]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.00"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{formatDevise}==2)]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0" isItalic="false"/>
+		</conditionalStyle>
+	</style>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\Documents and Settings\\user\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="entete" class="java.lang.String"/>
+	<parameter name="filtre" class="java.lang.String"/>
+	<parameter name="societe" class="java.lang.String"/>
+	<parameter name="version" class="java.lang.String"/>
+	<parameter name="requete" class="java.lang.String"/>
+	<parameter name="formatDevise" class="java.lang.Integer"/>
+	<parameter name="nbst" class="java.lang.Integer"/>
+	<parameter name="totauxTtc" class="java.lang.String"/>
+	<parameter name="dateDebUk" class="java.lang.String"/>
+	<parameter name="dateFinUk" class="java.lang.String"/>
+	<parameter name="journal" class="java.lang.String"/>
+	<parameter name="compte" class="java.lang.String"/>
+	<parameter name="valeur1" class="java.lang.Double"/>
+	<queryString language="xPath">
+		<![CDATA[]]>
+	</queryString>
+	<field name="rglId" class="java.lang.Long">
+		<fieldDescription><![CDATA[rglId]]></fieldDescription>
+	</field>
+	<field name="rglCle1" class="java.lang.String">
+		<fieldDescription><![CDATA[rglCle1]]></fieldDescription>
+	</field>
+	<field name="rglCle2" class="java.lang.String">
+		<fieldDescription><![CDATA[rglCle2]]></fieldDescription>
+	</field>
+	<field name="rglPeriode" class="java.lang.String">
+		<fieldDescription><![CDATA[rglPeriode]]></fieldDescription>
+	</field>
+	<field name="rglDateReg" class="java.util.Date">
+		<fieldDescription><![CDATA[rglDateReg]]></fieldDescription>
+	</field>
+	<field name="rglDateEncaissement" class="java.util.Date">
+		<fieldDescription><![CDATA[rglDateEncaissement]]></fieldDescription>
+	</field>
+	<field name="rglDateRejet" class="java.util.Date">
+		<fieldDescription><![CDATA[rglDateRejet]]></fieldDescription>
+	</field>
+	<field name="rglDateValeur" class="java.util.Date">
+		<fieldDescription><![CDATA[rglDateValeur]]></fieldDescription>
+	</field>
+	<field name="rglBon" class="java.lang.String">
+		<fieldDescription><![CDATA[rglBon]]></fieldDescription>
+	</field>
+	<field name="rglIdBon" class="java.lang.Long">
+		<fieldDescription><![CDATA[rglIdBon]]></fieldDescription>
+	</field>
+	<field name="rglIdDocument" class="java.lang.Long">
+		<fieldDescription><![CDATA[rglIdDocument]]></fieldDescription>
+	</field>
+	<field name="rglDocument" class="java.lang.String">
+		<fieldDescription><![CDATA[rglDocument]]></fieldDescription>
+	</field>
+	<field name="rglNatureDoc" class="java.lang.Integer">
+		<fieldDescription><![CDATA[rglNatureDoc]]></fieldDescription>
+	</field>
+	<field name="rglSerie" class="java.lang.String">
+		<fieldDescription><![CDATA[rglSerie]]></fieldDescription>
+	</field>
+	<field name="rglNum" class="java.lang.String">
+		<fieldDescription><![CDATA[rglNum]]></fieldDescription>
+	</field>
+	<field name="rglCodeCaiss" class="java.lang.String">
+		<fieldDescription><![CDATA[rglCodeCaiss]]></fieldDescription>
+	</field>
+	<field name="rglLibCaiss" class="java.lang.String">
+		<fieldDescription><![CDATA[rglLibCaiss]]></fieldDescription>
+	</field>
+	<field name="rglCodeEmetrice" class="java.lang.String">
+		<fieldDescription><![CDATA[rglCodeEmetrice]]></fieldDescription>
+	</field>
+	<field name="rglLibEmetrice" class="java.lang.String">
+		<fieldDescription><![CDATA[rglLibEmetrice]]></fieldDescription>
+	</field>
+	<field name="rglCodeReceptrice" class="java.lang.String">
+		<fieldDescription><![CDATA[rglCodeReceptrice]]></fieldDescription>
+	</field>
+	<field name="rglLibReceptrice" class="java.lang.String">
+		<fieldDescription><![CDATA[rglLibReceptrice]]></fieldDescription>
+	</field>
+	<field name="rglLibelle" class="java.lang.String">
+		<fieldDescription><![CDATA[rglLibelle]]></fieldDescription>
+	</field>
+	<field name="rglObjet" class="java.lang.String">
+		<fieldDescription><![CDATA[rglObjet]]></fieldDescription>
+	</field>
+	<field name="rglCategorie" class="java.lang.Integer">
+		<fieldDescription><![CDATA[rglCategorie]]></fieldDescription>
+	</field>
+	<field name="rglTypeReg" class="java.lang.Integer">
+		<fieldDescription><![CDATA[rglTypeReg]]></fieldDescription>
+	</field>
+	<field name="rglMode" class="java.lang.String">
+		<fieldDescription><![CDATA[rglMode]]></fieldDescription>
+	</field>
+	<field name="rglDepense" class="java.lang.Double">
+		<fieldDescription><![CDATA[rglDepense]]></fieldDescription>
+	</field>
+	<field name="rglRecette" class="java.lang.Double">
+		<fieldDescription><![CDATA[rglRecette]]></fieldDescription>
+	</field>
+	<field name="rglTimbre" class="java.lang.Double">
+		<fieldDescription><![CDATA[rglTimbre]]></fieldDescription>
+	</field>
+	<field name="rglDevise" class="java.lang.String">
+		<fieldDescription><![CDATA[rglDevise]]></fieldDescription>
+	</field>
+	<field name="rglFormatDevise" class="java.lang.Integer">
+		<fieldDescription><![CDATA[rglFormatDevise]]></fieldDescription>
+	</field>
+	<field name="rglNomTiers" class="java.lang.String">
+		<fieldDescription><![CDATA[rglNomTiers]]></fieldDescription>
+	</field>
+	<field name="rglIdTiers" class="java.lang.Long">
+		<fieldDescription><![CDATA[rglIdTiers]]></fieldDescription>
+	</field>
+	<field name="rglTypeTiers" class="java.lang.Integer">
+		<fieldDescription><![CDATA[rglTypeTiers]]></fieldDescription>
+	</field>
+	<field name="rglDepotTiers" class="java.lang.Integer">
+		<fieldDescription><![CDATA[rglDepotTiers]]></fieldDescription>
+	</field>
+	<field name="rglIdCaissier" class="java.lang.Long">
+		<fieldDescription><![CDATA[rglIdCaissier]]></fieldDescription>
+	</field>
+	<field name="rglNomCaissier" class="java.lang.String">
+		<fieldDescription><![CDATA[rglNomCaissier]]></fieldDescription>
+	</field>
+	<field name="rglBudget" class="java.lang.String">
+		<fieldDescription><![CDATA[rglBudget]]></fieldDescription>
+	</field>
+	<field name="rglActivite" class="java.lang.String">
+		<fieldDescription><![CDATA[rglActivite]]></fieldDescription>
+	</field>
+	<field name="rglDossier" class="java.lang.String">
+		<fieldDescription><![CDATA[rglDossier]]></fieldDescription>
+	</field>
+	<field name="rglParc" class="java.lang.String">
+		<fieldDescription><![CDATA[rglParc]]></fieldDescription>
+	</field>
+	<field name="rglSite" class="java.lang.String">
+		<fieldDescription><![CDATA[rglSite]]></fieldDescription>
+	</field>
+	<field name="rglDepartement" class="java.lang.String">
+		<fieldDescription><![CDATA[rglDepartement]]></fieldDescription>
+	</field>
+	<field name="rglService" class="java.lang.String">
+		<fieldDescription><![CDATA[rglService]]></fieldDescription>
+	</field>
+	<field name="rglRegion" class="java.lang.String">
+		<fieldDescription><![CDATA[rglRegion]]></fieldDescription>
+	</field>
+	<field name="rglSecteur" class="java.lang.String">
+		<fieldDescription><![CDATA[rglSecteur]]></fieldDescription>
+	</field>
+	<field name="rglPdv" class="java.lang.String">
+		<fieldDescription><![CDATA[rglPdv]]></fieldDescription>
+	</field>
+	<field name="rglModele" class="java.lang.String">
+		<fieldDescription><![CDATA[rglModele]]></fieldDescription>
+	</field>
+	<field name="rglDateImp" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[rglDateImp]]></fieldDescription>
+	</field>
+	<field name="rglTrf" class="java.lang.Integer">
+		<fieldDescription><![CDATA[rglTrf]]></fieldDescription>
+	</field>
+	<field name="rglDateTransfert" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[rglDateTransfert]]></fieldDescription>
+	</field>
+	<field name="rglBanqueTireur" class="java.lang.String">
+		<fieldDescription><![CDATA[rglBanqueTireur]]></fieldDescription>
+	</field>
+	<field name="rglNumChqBdx" class="java.lang.String">
+		<fieldDescription><![CDATA[rglNumChqBdx]]></fieldDescription>
+	</field>
+	<field name="rglIdContact" class="java.lang.Long">
+		<fieldDescription><![CDATA[rglIdContact]]></fieldDescription>
+	</field>
+	<field name="rglNomContact" class="java.lang.String">
+		<fieldDescription><![CDATA[rglNomContact]]></fieldDescription>
+	</field>
+	<field name="rglCle1Repartition" class="java.lang.String">
+		<fieldDescription><![CDATA[rglCle1Repartition]]></fieldDescription>
+	</field>
+	<field name="rglCle2Repartition" class="java.lang.String">
+		<fieldDescription><![CDATA[rglCle2Repartition]]></fieldDescription>
+	</field>
+	<field name="rglImp" class="java.lang.Integer">
+		<fieldDescription><![CDATA[rglImp]]></fieldDescription>
+	</field>
+	<field name="rglDateCloture" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[rglDateCloture]]></fieldDescription>
+	</field>
+	<field name="rglOperation" class="java.lang.String">
+		<fieldDescription><![CDATA[rglOperation]]></fieldDescription>
+	</field>
+	<field name="rglDateMvt1" class="java.util.Date">
+		<fieldDescription><![CDATA[rglDateMvt1]]></fieldDescription>
+	</field>
+	<field name="rglNumMvt1" class="java.lang.String">
+		<fieldDescription><![CDATA[rglNumMvt1]]></fieldDescription>
+	</field>
+	<field name="rglDateMvt2" class="java.util.Date">
+		<fieldDescription><![CDATA[rglDateMvt2]]></fieldDescription>
+	</field>
+	<field name="rglNumMvt2" class="java.lang.String">
+		<fieldDescription><![CDATA[rglNumMvt2]]></fieldDescription>
+	</field>
+	<field name="rglCaisseMvt1" class="java.lang.String">
+		<fieldDescription><![CDATA[rglCaisseMvt1]]></fieldDescription>
+	</field>
+	<field name="rglBanqueMvt2" class="java.lang.String">
+		<fieldDescription><![CDATA[rglBanqueMvt2]]></fieldDescription>
+	</field>
+	<field name="rglB1" class="java.lang.Integer">
+		<fieldDescription><![CDATA[rglB1]]></fieldDescription>
+	</field>
+	<field name="rglB2" class="java.lang.Integer">
+		<fieldDescription><![CDATA[rglB2]]></fieldDescription>
+	</field>
+	<field name="rglB3" class="java.lang.Integer">
+		<fieldDescription><![CDATA[rglB3]]></fieldDescription>
+	</field>
+	<field name="rglB4" class="java.lang.Integer">
+		<fieldDescription><![CDATA[rglB4]]></fieldDescription>
+	</field>
+	<field name="rglB5" class="java.lang.Integer">
+		<fieldDescription><![CDATA[rglB5]]></fieldDescription>
+	</field>
+	<field name="rglB6" class="java.lang.Integer">
+		<fieldDescription><![CDATA[rglB6]]></fieldDescription>
+	</field>
+	<field name="rglB7" class="java.lang.Integer">
+		<fieldDescription><![CDATA[rglB7]]></fieldDescription>
+	</field>
+	<field name="rglB8" class="java.lang.Integer">
+		<fieldDescription><![CDATA[rglB8]]></fieldDescription>
+	</field>
+	<field name="rglB9" class="java.lang.Integer">
+		<fieldDescription><![CDATA[rglB9]]></fieldDescription>
+	</field>
+	<field name="rglB10" class="java.lang.Integer">
+		<fieldDescription><![CDATA[rglB10]]></fieldDescription>
+	</field>
+	<field name="rglP1" class="java.lang.Integer">
+		<fieldDescription><![CDATA[rglP1]]></fieldDescription>
+	</field>
+	<field name="rglP2" class="java.lang.Integer">
+		<fieldDescription><![CDATA[rglP2]]></fieldDescription>
+	</field>
+	<field name="rglP3" class="java.lang.Integer">
+		<fieldDescription><![CDATA[rglP3]]></fieldDescription>
+	</field>
+	<field name="rglP4" class="java.lang.Integer">
+		<fieldDescription><![CDATA[rglP4]]></fieldDescription>
+	</field>
+	<field name="rglP5" class="java.lang.Integer">
+		<fieldDescription><![CDATA[rglP5]]></fieldDescription>
+	</field>
+	<field name="rglP6" class="java.lang.Integer">
+		<fieldDescription><![CDATA[rglP6]]></fieldDescription>
+	</field>
+	<field name="rglP7" class="java.lang.Integer">
+		<fieldDescription><![CDATA[rglP7]]></fieldDescription>
+	</field>
+	<field name="rglP8" class="java.lang.Integer">
+		<fieldDescription><![CDATA[rglP8]]></fieldDescription>
+	</field>
+	<field name="rglP9" class="java.lang.Integer">
+		<fieldDescription><![CDATA[rglP9]]></fieldDescription>
+	</field>
+	<field name="rglP10" class="java.lang.Integer">
+		<fieldDescription><![CDATA[rglP10]]></fieldDescription>
+	</field>
+	<field name="rglNumTrf" class="java.lang.String">
+		<fieldDescription><![CDATA[rglNumTrf]]></fieldDescription>
+	</field>
+	<field name="rglDateExecBc" class="java.util.Date">
+		<fieldDescription><![CDATA[rglDateExecBc]]></fieldDescription>
+	</field>
+	<field name="rglFrais" class="java.lang.Double">
+		<fieldDescription><![CDATA[rglFrais]]></fieldDescription>
+	</field>
+	<field name="banqueDepot" class="java.lang.String">
+		<fieldDescription><![CDATA[banqueDepot]]></fieldDescription>
+	</field>
+	<field name="dateDepot" class="java.util.Date">
+		<fieldDescription><![CDATA[dateDepot]]></fieldDescription>
+	</field>
+	<field name="numDepot" class="java.lang.String">
+		<fieldDescription><![CDATA[numDepot]]></fieldDescription>
+	</field>
+	<field name="dateValeur" class="java.util.Date">
+		<fieldDescription><![CDATA[dateValeur]]></fieldDescription>
+	</field>
+	<sortField name="banqueDepot"/>
+	<sortField name="rglNum"/>
+	<variable name="tot_debit_compte" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[$F{rglDepense}]]></variableExpression>
+	</variable>
+	<variable name="tot_credit_compte" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[$F{rglRecette}]]></variableExpression>
+	</variable>
+	<variable name="tot_solde_compte" class="java.lang.Double">
+		<variableExpression><![CDATA[$V{tot_debit_compte}-$V{tot_credit_compte}]]></variableExpression>
+	</variable>
+	<variable name="entete" class="java.lang.String"/>
+	<variable name="filtre" class="java.lang.String"/>
+	<variable name="societe" class="java.lang.String"/>
+	<variable name="version" class="java.lang.String"/>
+	<variable name="intitule_compte" class="java.lang.String"/>
+	<variable name="modeReglement" class="java.lang.String">
+		<variableExpression><![CDATA[( $F{rglTypeReg}==0 || $F{rglTypeReg}==11? "Espèces"
+    : ( $F{rglTypeReg}==1 ? "Chèque"
+      : ( $F{rglTypeReg}==2 ? "Virement"
+         : ( $F{rglTypeReg}==3 ? "Traites"
+            : ( $F{rglTypeReg}==4 ? "TPE"
+                : ( $F{rglTypeReg}==5 ? "Transfert"
+                   : ( $F{rglTypeReg}==6 ? "ePaiement"
+                      : ( $F{rglTypeReg}==7 ? "Crédoc"
+                         : ( $F{rglTypeReg}==8 ? "Factor"
+                            : ( $F{rglTypeReg}==9 ? "Compense"
+                               : ( $F{rglTypeReg}==10 ? "Terme"
+                                  : ( $F{rglTypeReg}==90 ? "Bon caisse"
+                                     : ( $F{rglTypeReg}==91 ? "Ecart"
+                                        : "???" )))))))))))))]]></variableExpression>
+	</variable>
+	<variable name="totBanque" class="java.lang.Double" resetType="Group" resetGroup="jour" calculation="Sum">
+		<variableExpression><![CDATA[$F{rglRecette}]]></variableExpression>
+	</variable>
+	<variable name="totRemise" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[$F{rglRecette}]]></variableExpression>
+	</variable>
+	<group name="jour">
+		<groupExpression><![CDATA[$F{banqueDepot}]]></groupExpression>
+		<groupFooter>
+			<band height="21">
+				<textField evaluationTime="Group" evaluationGroup="jour" isBlankWhenNull="true">
+					<reportElement style="ST1" x="430" y="4" width="60" height="11">
+						<printWhenExpression><![CDATA[$V{totBanque}!=0]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{totBanque}]]></textFieldExpression>
+				</textField>
+				<textField pattern="">
+					<reportElement x="324" y="5" width="98" height="11"/>
+					<textElement textAlignment="Center">
+						<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{banqueDepot}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement stretchType="RelativeToTallestObject" x="12" y="0" width="1" height="21"/>
+				</line>
+				<line>
+					<reportElement stretchType="RelativeToTallestObject" x="111" y="0" width="1" height="21"/>
+				</line>
+				<line>
+					<reportElement stretchType="RelativeToTallestObject" x="174" y="0" width="1" height="21"/>
+				</line>
+				<line>
+					<reportElement stretchType="RelativeToTallestObject" x="319" y="0" width="1" height="21"/>
+				</line>
+				<line>
+					<reportElement stretchType="RelativeToTallestObject" x="428" y="0" width="1" height="21"/>
+				</line>
+				<line>
+					<reportElement stretchType="RelativeToTallestObject" x="492" y="0" width="1" height="21"/>
+				</line>
+				<line>
+					<reportElement stretchType="RelativeToTallestObject" x="548" y="0" width="1" height="21"/>
+				</line>
+				<line>
+					<reportElement stretchType="RelativeToTallestObject" x="785" y="0" width="1" height="21"/>
+				</line>
+				<line>
+					<reportElement stretchType="RelativeToTallestObject" x="665" y="0" width="1" height="21"/>
+				</line>
+				<line>
+					<reportElement x="12" y="20" width="774" height="1"/>
+					<graphicElement>
+						<pen lineWidth="0.5"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement stretchType="RelativeToTallestObject" x="606" y="0" width="1" height="21"/>
+				</line>
+				<line>
+					<reportElement stretchType="RelativeToTallestObject" x="721" y="0" width="1" height="21"/>
+				</line>
+			</band>
+		</groupFooter>
+	</group>
+	<group name="piece">
+		<groupExpression><![CDATA[$F{rglLibReceptrice}]]></groupExpression>
+		<groupFooter>
+			<band height="12">
+				<line>
+					<reportElement stretchType="RelativeToTallestObject" x="606" y="0" width="1" height="12"/>
+				</line>
+				<line>
+					<reportElement stretchType="RelativeToTallestObject" x="111" y="0" width="1" height="12"/>
+				</line>
+				<line>
+					<reportElement stretchType="RelativeToTallestObject" x="174" y="0" width="1" height="12"/>
+				</line>
+				<line>
+					<reportElement stretchType="RelativeToTallestObject" x="319" y="0" width="1" height="12"/>
+				</line>
+				<line>
+					<reportElement stretchType="RelativeToTallestObject" x="428" y="0" width="1" height="12"/>
+				</line>
+				<line>
+					<reportElement stretchType="RelativeToTallestObject" x="492" y="0" width="1" height="12"/>
+				</line>
+				<line>
+					<reportElement stretchType="RelativeToTallestObject" x="548" y="0" width="1" height="12"/>
+				</line>
+				<line>
+					<reportElement stretchType="RelativeToTallestObject" x="785" y="0" width="1" height="12"/>
+				</line>
+				<line>
+					<reportElement stretchType="RelativeToTallestObject" x="12" y="0" width="1" height="12"/>
+				</line>
+				<textField evaluationTime="Group" evaluationGroup="piece" isBlankWhenNull="true">
+					<reportElement x="184" y="1" width="124" height="11"/>
+					<textElement>
+						<font fontName="DejaVu Sans" size="7"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{rglNomTiers}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Group" evaluationGroup="piece" isBlankWhenNull="true">
+					<reportElement x="113" y="1" width="59" height="11"/>
+					<textElement>
+						<font fontName="DejaVu Sans" size="7"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{rglDocument}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement stretchType="RelativeToTallestObject" x="665" y="0" width="1" height="12"/>
+				</line>
+				<textField evaluationTime="Group" evaluationGroup="piece" isBlankWhenNull="true">
+					<reportElement style="ST1" x="430" y="1" width="60" height="11">
+						<printWhenExpression><![CDATA[$F{rglRecette}!=0]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$F{rglRecette}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Group" evaluationGroup="piece" isBlankWhenNull="true">
+					<reportElement x="20" y="1" width="88" height="11"/>
+					<textElement>
+						<font fontName="DejaVu Sans" size="7"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{banqueDepot}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Group" evaluationGroup="piece" pattern="dd/MM/yy" isBlankWhenNull="true">
+					<reportElement x="496" y="1" width="50" height="11"/>
+					<textElement textAlignment="Center">
+						<font fontName="DejaVu Sans" size="7"/>
+					</textElement>
+					<textFieldExpression class="java.util.Date"><![CDATA[$F{rglDateReg}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Group" evaluationGroup="piece" isBlankWhenNull="true">
+					<reportElement x="328" y="1" width="52" height="11"/>
+					<textElement>
+						<font fontName="DejaVu Sans" size="7"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{rglNumChqBdx}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Group" evaluationGroup="piece" pattern="dd/MM/yy" isBlankWhenNull="true">
+					<reportElement x="553" y="1" width="50" height="11"/>
+					<textElement textAlignment="Center">
+						<font fontName="DejaVu Sans" size="7"/>
+					</textElement>
+					<textFieldExpression class="java.util.Date"><![CDATA[$F{dateDepot}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Group" evaluationGroup="piece" pattern="dd/MM/yy" isBlankWhenNull="true">
+					<reportElement x="611" y="1" width="50" height="11"/>
+					<textElement textAlignment="Center">
+						<font fontName="DejaVu Sans" size="7"/>
+					</textElement>
+					<textFieldExpression class="java.util.Date"><![CDATA[$F{dateValeur}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Group" evaluationGroup="piece" isBlankWhenNull="true">
+					<reportElement x="391" y="1" width="30" height="11"/>
+					<textElement>
+						<font fontName="DejaVu Sans" size="7"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{rglCodeReceptrice}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement stretchType="RelativeToTallestObject" x="721" y="0" width="1" height="12"/>
+				</line>
+				<textField evaluationTime="Group" evaluationGroup="piece" pattern="dd/MM/yy" isBlankWhenNull="true">
+					<reportElement x="669" y="1" width="50" height="11"/>
+					<textElement textAlignment="Center">
+						<font fontName="DejaVu Sans" size="7"/>
+					</textElement>
+					<textFieldExpression class="java.util.Date"><![CDATA[$F{rglDateEncaissement}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Group" evaluationGroup="piece" pattern="dd/MM/yy" isBlankWhenNull="true">
+					<reportElement x="727" y="1" width="50" height="11"/>
+					<textElement textAlignment="Center">
+						<font fontName="DejaVu Sans" size="7"/>
+					</textElement>
+					<textFieldExpression class="java.util.Date"><![CDATA[$F{rglDateRejet}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="56" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="802" height="32" forecolor="#000000" backcolor="#FFFFFF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="32" width="802" height="23" forecolor="#992F2A" backcolor="#FFFFFF"/>
+			</rectangle>
+			<textField pattern="dd/MM/yyyy HH.mm.ss">
+				<reportElement mode="Transparent" x="108" y="38" width="118" height="11" forecolor="#000000"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Transparent" x="746" y="39" width="25" height="11" forecolor="#000000"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="591" y="39" width="151" height="11" forecolor="#000000"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Page "+$V{PAGE_NUMBER}+"/ "]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Transparent" x="20" y="39" width="55" height="11" forecolor="#000000"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[© B&W 2010 - ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="483" y="8" width="288" height="15" forecolor="#000000"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{filtre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="18" y="9" width="391" height="15" forecolor="#000000"/>
+				<textElement>
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{entete}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Transparent" x="78" y="39" width="28" height="11" forecolor="#000000"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{version}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="262" y="36" width="288" height="15" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{societe}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="58" splitType="Stretch">
+			<staticText>
+				<reportElement x="494" y="35" width="52" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dte Cheq.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="35" width="88" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Banque de dépôt]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="113" y="35" width="59" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Référence]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="430" y="35" width="60" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Montant]]></text>
+			</staticText>
+			<line>
+				<reportElement x="492" y="28" width="1" height="30"/>
+			</line>
+			<line>
+				<reportElement x="319" y="28" width="1" height="30"/>
+			</line>
+			<line>
+				<reportElement x="174" y="28" width="1" height="30"/>
+			</line>
+			<line>
+				<reportElement x="111" y="28" width="1" height="30"/>
+			</line>
+			<line>
+				<reportElement x="12" y="28" width="1" height="30"/>
+			</line>
+			<line>
+				<reportElement x="12" y="27" width="774" height="1"/>
+			</line>
+			<line>
+				<reportElement x="548" y="28" width="1" height="30"/>
+			</line>
+			<line>
+				<reportElement x="785" y="28" width="1" height="30"/>
+			</line>
+			<line>
+				<reportElement x="428" y="28" width="1" height="30"/>
+			</line>
+			<staticText>
+				<reportElement x="184" y="35" width="124" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tiers]]></text>
+			</staticText>
+			<line>
+				<reportElement x="665" y="28" width="1" height="30"/>
+			</line>
+			<line>
+				<reportElement x="606" y="28" width="1" height="30"/>
+			</line>
+			<line>
+				<reportElement x="12" y="57" width="774" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="328" y="35" width="90" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[N° de chèques]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="551" y="35" width="52" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dte dépôt]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="608" y="35" width="57" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dte val.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="668" y="35" width="51" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dte enca.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="724" y="35" width="51" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dte rejet]]></text>
+			</staticText>
+			<line>
+				<reportElement x="721" y="28" width="1" height="30"/>
+			</line>
+		</band>
+	</columnHeader>
+	<lastPageFooter>
+		<band height="71">
+			<rectangle>
+				<reportElement x="0" y="45" width="802" height="24" forecolor="#992F2A" backcolor="#FFFFFF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="12" y="6" width="773" height="32"/>
+			</rectangle>
+			<line>
+				<reportElement x="428" y="6" width="1" height="32"/>
+			</line>
+			<line>
+				<reportElement x="492" y="6" width="1" height="32"/>
+			</line>
+			<line>
+				<reportElement x="548" y="6" width="1" height="32"/>
+			</line>
+			<staticText>
+				<reportElement x="108" y="15" width="310" height="15"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total remise]]></text>
+			</staticText>
+			<textField evaluationTime="Report" isBlankWhenNull="true">
+				<reportElement style="ST1" x="430" y="15" width="60" height="15">
+					<printWhenExpression><![CDATA[$V{totRemise}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{totRemise}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="35" y="46" width="160" height="12" forecolor="#000000"/>
+				<textElement>
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Created by Bagwell & Watson]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="35" y="57" width="160" height="12" forecolor="#000000"/>
+				<textElement>
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.bagwell-watson.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="312" y="46" width="160" height="12" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Writen by Phoenix SaaS ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="603" y="46" width="160" height="12" forecolor="#000000"/>
+				<textElement textAlignment="Right">
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Support by Planet-e-pegase ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="603" y="57" width="160" height="12" forecolor="#000000"/>
+				<textElement textAlignment="Right">
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.planet-e-pegase.biz ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="312" y="57" width="160" height="12" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.phoenix-saas.com]]></text>
+			</staticText>
+			<line>
+				<reportElement x="665" y="6" width="1" height="32"/>
+			</line>
+			<line>
+				<reportElement x="606" y="6" width="1" height="32"/>
+			</line>
+			<line>
+				<reportElement x="721" y="6" width="1" height="32"/>
+			</line>
+		</band>
+	</lastPageFooter>
+</jasperReport>

@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Devis" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isFloatColumnFooter="true" whenResourceMissingType="Empty">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="1980"/>
+	<style name="ST1" isDefault="false" pattern="">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{nbDecQte}.equalsIgnoreCase("0"))]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{nbDecQte}.equalsIgnoreCase("1"))]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.0"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{nbDecQte}.equalsIgnoreCase("2"))]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.00"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{nbDecQte}.equalsIgnoreCase("3"))]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.000"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{nbDecQte}.equalsIgnoreCase("4"))]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.0000"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{nbDecQte}.equalsIgnoreCase("5"))]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.00000"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{nbDecQte}.equalsIgnoreCase("6"))]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.000000"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{nbDecQte}.equalsIgnoreCase("7"))]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.0000000"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{nbDecQte}.equalsIgnoreCase("8"))]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.00000000"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{nbDecQte}.equalsIgnoreCase("9"))]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.000000000"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{nbDecQte}.equalsIgnoreCase("10"))]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.0000000000"/>
+		</conditionalStyle>
+	</style>
+	<parameter name="requete" class="java.lang.String"/>
+	<parameter name="societe" class="java.lang.String"/>
+	<parameter name="version" class="java.lang.String"/>
+	<parameter name="adresse" class="java.lang.String"/>
+	<parameter name="ville" class="java.lang.String"/>
+	<parameter name="pays" class="java.lang.String"/>
+	<parameter name="logo_1" class="java.lang.String"/>
+	<parameter name="logo_2" class="java.lang.String"/>
+	<parameter name="logo_4" class="java.lang.String"/>
+	<parameter name="telephone_1" class="java.lang.String"/>
+	<parameter name="telephone_2" class="java.lang.String"/>
+	<parameter name="fax" class="java.lang.String"/>
+	<parameter name="site_web" class="java.lang.String"/>
+	<parameter name="mails" class="java.lang.String"/>
+	<parameter name="identification_1" class="java.lang.String"/>
+	<parameter name="identification_2" class="java.lang.String"/>
+	<parameter name="identification_3" class="java.lang.String"/>
+	<parameter name="identification_4" class="java.lang.String"/>
+	<parameter name="identification_5" class="java.lang.String"/>
+	<parameter name="identification_6" class="java.lang.String"/>
+	<parameter name="identification_7" class="java.lang.String"/>
+	<parameter name="identification_8" class="java.lang.String"/>
+	<parameter name="identification_9" class="java.lang.String"/>
+	<parameter name="identification_10" class="java.lang.String"/>
+	<parameter name="banque" class="java.lang.String"/>
+	<parameter name="montant_lettre" class="java.lang.String"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["/usr/local/SUNWappserver/domains/domain1/config/epegase/clients/structure1/impression/fr/ventes/document/devis/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="signe_signature" class="java.lang.String"/>
+	<parameter name="parcChassis" class="java.lang.String"/>
+	<parameter name="annexe1" class="java.lang.String"/>
+	<parameter name="annexe2" class="java.lang.String"/>
+	<parameter name="pageGarde" class="java.lang.String"/>
+	<parameter name="imageFond" class="java.lang.String"/>
+	<parameter name="duplicata" class="java.lang.String"/>
+	<parameter name="nbDecQte" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="bouligCasier" class="java.lang.String">
+		<fieldDescription><![CDATA[bouligCasier]]></fieldDescription>
+	</field>
+	<field name="bouligCode" class="java.lang.String">
+		<fieldDescription><![CDATA[bouligCode]]></fieldDescription>
+	</field>
+	<field name="bouligCondition" class="java.lang.String">
+		<fieldDescription><![CDATA[bouligCondition]]></fieldDescription>
+	</field>
+	<field name="bouligDiam" class="java.lang.Float">
+		<fieldDescription><![CDATA[bouligDiam]]></fieldDescription>
+	</field>
+	<field name="bouligFamille" class="java.lang.String">
+		<fieldDescription><![CDATA[bouligFamille]]></fieldDescription>
+	</field>
+	<field name="bouligHaut" class="java.lang.Float">
+		<fieldDescription><![CDATA[bouligHaut]]></fieldDescription>
+	</field>
+	<field name="bouligId" class="java.lang.Long">
+		<fieldDescription><![CDATA[bouligId]]></fieldDescription>
+	</field>
+	<field name="bouligLarg" class="java.lang.Float">
+		<fieldDescription><![CDATA[bouligLarg]]></fieldDescription>
+	</field>
+	<field name="bouligLibelle" class="java.lang.String">
+		<fieldDescription><![CDATA[bouligLibelle]]></fieldDescription>
+	</field>
+	<field name="bouligLong" class="java.lang.Float">
+		<fieldDescription><![CDATA[bouligLong]]></fieldDescription>
+	</field>
+	<field name="bouligNb" class="java.lang.Float">
+		<fieldDescription><![CDATA[bouligNb]]></fieldDescription>
+	</field>
+	<field name="bouligObs" class="java.lang.String">
+		<fieldDescription><![CDATA[bouligObs]]></fieldDescription>
+	</field>
+	<field name="bouligPoidsBrut" class="java.lang.Float">
+		<fieldDescription><![CDATA[bouligPoidsBrut]]></fieldDescription>
+	</field>
+	<field name="bouligPoidsNet" class="java.lang.Float">
+		<fieldDescription><![CDATA[bouligPoidsNet]]></fieldDescription>
+	</field>
+	<field name="bouligPump" class="java.lang.Double">
+		<fieldDescription><![CDATA[bouligPump]]></fieldDescription>
+	</field>
+	<field name="bouligQte" class="java.lang.Float">
+		<fieldDescription><![CDATA[bouligQte]]></fieldDescription>
+	</field>
+	<field name="bouligQteStock" class="java.lang.Float">
+		<fieldDescription><![CDATA[bouligQteStock]]></fieldDescription>
+	</field>
+	<field name="bouligQteUtil" class="java.lang.Float">
+		<fieldDescription><![CDATA[bouligQteUtil]]></fieldDescription>
+	</field>
+	<field name="bouligReference" class="java.lang.String">
+		<fieldDescription><![CDATA[bouligReference]]></fieldDescription>
+	</field>
+	<field name="bouligStock" class="java.lang.Integer">
+		<fieldDescription><![CDATA[bouligStock]]></fieldDescription>
+	</field>
+	<field name="bouligTotal" class="java.lang.Double">
+		<fieldDescription><![CDATA[bouligTotal]]></fieldDescription>
+	</field>
+	<field name="bouligUnite" class="java.lang.String">
+		<fieldDescription><![CDATA[bouligUnite]]></fieldDescription>
+	</field>
+	<field name="bouligVolume" class="java.lang.Float">
+		<fieldDescription><![CDATA[bouligVolume]]></fieldDescription>
+	</field>
+	<field name="bouActivite" class="java.lang.String">
+		<fieldDescription><![CDATA[bonSortieEntete.bouActivite]]></fieldDescription>
+	</field>
+	<field name="bouAnal2" class="java.lang.String">
+		<fieldDescription><![CDATA[bonSortieEntete.bouAnal2]]></fieldDescription>
+	</field>
+	<field name="bouAnal4" class="java.lang.String">
+		<fieldDescription><![CDATA[bonSortieEntete.bouAnal4]]></fieldDescription>
+	</field>
+	<field name="bouDate" class="java.util.Date">
+		<fieldDescription><![CDATA[bonSortieEntete.bouDate]]></fieldDescription>
+	</field>
+	<field name="bouDateAnnule" class="java.util.Date">
+		<fieldDescription><![CDATA[bonSortieEntete.bouDateAnnule]]></fieldDescription>
+	</field>
+	<field name="bouDateCreat" class="java.util.Date">
+		<fieldDescription><![CDATA[bonSortieEntete.bouDateCreat]]></fieldDescription>
+	</field>
+	<field name="bouDateImp" class="java.util.Date">
+		<fieldDescription><![CDATA[bonSortieEntete.bouDateImp]]></fieldDescription>
+	</field>
+	<field name="bouDateModif" class="java.util.Date">
+		<fieldDescription><![CDATA[bonSortieEntete.bouDateModif]]></fieldDescription>
+	</field>
+	<field name="bouDateValide" class="java.util.Date">
+		<fieldDescription><![CDATA[bonSortieEntete.bouDateValide]]></fieldDescription>
+	</field>
+	<field name="bouDepartement" class="java.lang.String">
+		<fieldDescription><![CDATA[bonSortieEntete.bouDepartement]]></fieldDescription>
+	</field>
+	<field name="bouDepot" class="java.lang.String">
+		<fieldDescription><![CDATA[bonSortieEntete.bouDepot]]></fieldDescription>
+	</field>
+	<field name="bouEtat" class="java.lang.Integer">
+		<fieldDescription><![CDATA[bonSortieEntete.bouEtat]]></fieldDescription>
+	</field>
+	<field name="bouEtatVal" class="java.lang.Integer">
+		<fieldDescription><![CDATA[bonSortieEntete.bouEtatVal]]></fieldDescription>
+	</field>
+	<field name="bouGele" class="java.lang.Integer">
+		<fieldDescription><![CDATA[bonSortieEntete.bouGele]]></fieldDescription>
+	</field>
+	<field name="bouId" class="java.lang.Long">
+		<fieldDescription><![CDATA[bonSortieEntete.bouId]]></fieldDescription>
+	</field>
+	<field name="bouIdCreateur" class="java.lang.Long">
+		<fieldDescription><![CDATA[bonSortieEntete.bouIdCreateur]]></fieldDescription>
+	</field>
+	<field name="bouIdModif" class="java.lang.Long">
+		<fieldDescription><![CDATA[bonSortieEntete.bouIdModif]]></fieldDescription>
+	</field>
+	<field name="bouIdResponsable" class="java.lang.Long">
+		<fieldDescription><![CDATA[bonSortieEntete.bouIdResponsable]]></fieldDescription>
+	</field>
+	<field name="bouInfo1" class="java.lang.String">
+		<fieldDescription><![CDATA[bonSortieEntete.bouInfo1]]></fieldDescription>
+	</field>
+	<field name="bouInfo10" class="java.lang.String">
+		<fieldDescription><![CDATA[bonSortieEntete.bouInfo10]]></fieldDescription>
+	</field>
+	<field name="bouInfo2" class="java.lang.String">
+		<fieldDescription><![CDATA[bonSortieEntete.bouInfo2]]></fieldDescription>
+	</field>
+	<field name="bouInfo3" class="java.lang.String">
+		<fieldDescription><![CDATA[bonSortieEntete.bouInfo3]]></fieldDescription>
+	</field>
+	<field name="bouInfo4" class="java.lang.String">
+		<fieldDescription><![CDATA[bonSortieEntete.bouInfo4]]></fieldDescription>
+	</field>
+	<field name="bouInfo5" class="java.lang.String">
+		<fieldDescription><![CDATA[bonSortieEntete.bouInfo5]]></fieldDescription>
+	</field>
+	<field name="bouInfo6" class="java.lang.String">
+		<fieldDescription><![CDATA[bonSortieEntete.bouInfo6]]></fieldDescription>
+	</field>
+	<field name="bouInfo7" class="java.lang.String">
+		<fieldDescription><![CDATA[bonSortieEntete.bouInfo7]]></fieldDescription>
+	</field>
+	<field name="bouInfo8" class="java.lang.String">
+		<fieldDescription><![CDATA[bonSortieEntete.bouInfo8]]></fieldDescription>
+	</field>
+	<field name="bouInfo9" class="java.lang.String">
+		<fieldDescription><![CDATA[bonSortieEntete.bouInfo9]]></fieldDescription>
+	</field>
+	<field name="bouModeleImp" class="java.lang.String">
+		<fieldDescription><![CDATA[bonSortieEntete.bouModeleImp]]></fieldDescription>
+	</field>
+	<field name="bouMotifAnnule" class="java.lang.String">
+		<fieldDescription><![CDATA[bonSortieEntete.bouMotifAnnule]]></fieldDescription>
+	</field>
+	<field name="bouNomCreateur" class="java.lang.String">
+		<fieldDescription><![CDATA[bonSortieEntete.bouNomCreateur]]></fieldDescription>
+	</field>
+	<field name="bouNomModif" class="java.lang.String">
+		<fieldDescription><![CDATA[bonSortieEntete.bouNomModif]]></fieldDescription>
+	</field>
+	<field name="bouNomResponsable" class="java.lang.String">
+		<fieldDescription><![CDATA[bonSortieEntete.bouNomResponsable]]></fieldDescription>
+	</field>
+	<field name="bouNum" class="java.lang.String">
+		<fieldDescription><![CDATA[bonSortieEntete.bouNum]]></fieldDescription>
+	</field>
+	<field name="bouObject" class="java.lang.String">
+		<fieldDescription><![CDATA[bonSortieEntete.bouObject]]></fieldDescription>
+	</field>
+	<field name="bouPdv" class="java.lang.String">
+		<fieldDescription><![CDATA[bonSortieEntete.bouPdv]]></fieldDescription>
+	</field>
+	<field name="bouRegion" class="java.lang.String">
+		<fieldDescription><![CDATA[bonSortieEntete.bouRegion]]></fieldDescription>
+	</field>
+	<field name="bouSecteur" class="java.lang.String">
+		<fieldDescription><![CDATA[bonSortieEntete.bouSecteur]]></fieldDescription>
+	</field>
+	<field name="bouSerie" class="java.lang.String">
+		<fieldDescription><![CDATA[bonSortieEntete.bouSerie]]></fieldDescription>
+	</field>
+	<field name="bouService" class="java.lang.String">
+		<fieldDescription><![CDATA[bonSortieEntete.bouService]]></fieldDescription>
+	</field>
+	<field name="bouSite" class="java.lang.String">
+		<fieldDescription><![CDATA[bonSortieEntete.bouSite]]></fieldDescription>
+	</field>
+	<field name="bouTotPump" class="java.lang.Double">
+		<fieldDescription><![CDATA[bonSortieEntete.bouTotPump]]></fieldDescription>
+	</field>
+	<variable name="etat" class="java.lang.String">
+		<variableExpression><![CDATA[( $F{bouEtat}==0 ? "En cours"
+    : ( $F{bouEtat}==1 ? "Validé"
+        : ( $F{bouEtat}==2 ? "Gelé"
+            : ( $F{bouEtat}==3 ? "Annulé" : "???" ) ) ) )]]></variableExpression>
+	</variable>
+	<variable name="totPump" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[$F{bouTotPump}]]></variableExpression>
+	</variable>
+	<background>
+		<band height="802">
+			<image hAlign="Center" onErrorType="Blank">
+				<reportElement x="36" y="29" width="500" height="765"/>
+				<imageExpression class="java.lang.String"><![CDATA[$P{imageFond}]]></imageExpression>
+			</image>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="162" y="262" width="1" height="536" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="540" y="262" width="1" height="536" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<line>
+				<reportElement x="13" y="798" width="527" height="1"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="12" y="262" width="1" height="536" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="115" y="262" width="1" height="536" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<staticText>
+				<reportElement x="20" y="143" width="521" height="32" forecolor="#F6A9A8">
+					<printWhenExpression><![CDATA[$P{duplicata}.equals("true")]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[D U P L I C A T A ]]></text>
+			</staticText>
+		</band>
+	</background>
+	<title>
+		<band height="110" splitType="Stretch">
+			<image scaleImage="FillFrame" hAlign="Center" vAlign="Top">
+				<reportElement x="92" y="10" width="392" height="74"/>
+				<imageExpression class="java.lang.String"><![CDATA[$P{logo_1}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="92" y="71" width="392" height="15"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SA au capital de 410 000 000 Fcfa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="92" y="86" width="392" height="15"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[N° NIF: 087800055 R - RC N° 5081]]></text>
+			</staticText>
+			<line>
+				<reportElement x="236" y="104" width="100" height="1"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="134" splitType="Stretch">
+			<rectangle>
+				<reportElement mode="Transparent" x="12" y="70" width="324" height="28"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="162" y="70" width="175" height="56"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="12" y="98" width="325" height="28"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="12" y="70" width="103" height="56"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="115" y="70" width="47" height="56"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="14" y="46" width="109" height="18"/>
+				<textElement>
+					<font fontName="Arial" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Promo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="214" y="78" width="95" height="15"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Commercial]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="124" y="78" width="30" height="15"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="17" y="78" width="94" height="15"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Numéro]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="116" y="104" width="46" height="12"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{bouDate}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="167" y="103" width="166" height="12"/>
+				<textElement>
+					<font fontName="Arial" size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{bouNomResponsable}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="21" y="103" width="90" height="12"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{bouNum}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="277" y="16" width="264" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{bouObject}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="47" splitType="Stretch">
+			<line>
+				<reportElement x="12" y="8" width="1" height="39"/>
+			</line>
+			<line>
+				<reportElement x="115" y="9" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="162" y="9" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="540" y="8" width="1" height="39"/>
+			</line>
+			<line>
+				<reportElement x="12" y="8" width="529" height="1"/>
+			</line>
+			<line>
+				<reportElement x="13" y="42" width="527" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="16" y="17" width="97" height="15" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Référence]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="247" y="17" width="143" height="15" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Description]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="127" y="17" width="31" height="15" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Qte.]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="13">
+			<textField isBlankWhenNull="true">
+				<reportElement x="19" y="1" width="77" height="12"/>
+				<textElement>
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{bouligCode}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="170" y="1" width="353" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Arial" size="10" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{bouligLibelle}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement style="ST1" x="116" y="1" width="42" height="12">
+					<printWhenExpression><![CDATA[$F{bouligQte}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{bouligQte}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<lastPageFooter>
+		<band height="166" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="9" width="555" height="154"/>
+				<graphicElement>
+					<pen lineColor="#FFFFFF"/>
+				</graphicElement>
+			</rectangle>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="12" y="8" width="1" height="85" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<line>
+				<reportElement x="12" y="8" width="529" height="1"/>
+			</line>
+			<line>
+				<reportElement x="540" y="8" width="1" height="84"/>
+			</line>
+			<line>
+				<reportElement x="12" y="92" width="529" height="1"/>
+			</line>
+			<line>
+				<reportElement x="0" y="124" width="555" height="1" backcolor="#000000"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Double" lineColor="#0F6CF4"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="363" y="26" width="120" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12" isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Signature]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="277" y="128" width="88" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Fax : " + $P{fax}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="179" y="128" width="88" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Tél. : " + $P{telephone_1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="220" y="148" width="137" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Email : " + $P{mails}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="27" y="128" width="144" height="11"/>
+				<textElement>
+					<font fontName="Arial" size="8" isBold="false" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Siège social: Niarela - Rue ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="394" y="128" width="144" height="11"/>
+				<textElement>
+					<font fontName="Arial" size="8" isBold="false" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[BP: E 1566- Bamako - Mali]]></text>
+			</staticText>
+		</band>
+	</lastPageFooter>
+</jasperReport>

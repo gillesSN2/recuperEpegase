@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Inventaire" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isFloatColumnFooter="true" whenResourceMissingType="Error">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="278"/>
+	<property name="ireport.y" value="336"/>
+	<parameter name="requete" class="java.lang.String"/>
+	<parameter name="societe" class="java.lang.String"/>
+	<parameter name="version" class="java.lang.String"/>
+	<parameter name="adresse" class="java.lang.String"/>
+	<parameter name="ville" class="java.lang.String"/>
+	<parameter name="pays" class="java.lang.String"/>
+	<parameter name="logo_1" class="java.lang.String"/>
+	<parameter name="logo_2" class="java.lang.String"/>
+	<parameter name="logo_4" class="java.lang.String"/>
+	<parameter name="telephone_1" class="java.lang.String"/>
+	<parameter name="telephone_2" class="java.lang.String"/>
+	<parameter name="fax" class="java.lang.String"/>
+	<parameter name="site_web" class="java.lang.String"/>
+	<parameter name="mails" class="java.lang.String"/>
+	<parameter name="identification_1" class="java.lang.String"/>
+	<parameter name="identification_2" class="java.lang.String"/>
+	<parameter name="identification_3" class="java.lang.String"/>
+	<parameter name="identification_4" class="java.lang.String"/>
+	<parameter name="identification_5" class="java.lang.String"/>
+	<parameter name="identification_6" class="java.lang.String"/>
+	<parameter name="identification_7" class="java.lang.String"/>
+	<parameter name="identification_8" class="java.lang.String"/>
+	<parameter name="identification_9" class="java.lang.String"/>
+	<parameter name="identification_10" class="java.lang.String"/>
+	<parameter name="banque" class="java.lang.String"/>
+	<parameter name="montant_lettre" class="java.lang.String"/>
+	<parameter name="filtre" class="java.lang.String"/>
+	<parameter name="entete" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT
+     ach_cession_entete.`ces_id` AS ach_cession_entete_ces_id,
+     ach_cession_entete.`ces_date_creat` AS ach_cession_entete_ces_date_creat,
+     ach_cession_entete.`ces_date_modif` AS ach_cession_entete_ces_date_modif,
+     ach_cession_entete.`ces_id_createur` AS ach_cession_entete_ces_id_createur,
+     ach_cession_entete.`ces_nom_createur` AS ach_cession_entete_ces_nom_createur,
+     ach_cession_entete.`ces_id_modif` AS ach_cession_entete_ces_id_modif,
+     ach_cession_entete.`ces_nom_modif` AS ach_cession_entete_ces_nom_modif,
+     ach_cession_entete.`ces_date` AS ach_cession_entete_ces_date,
+     ach_cession_entete.`ces_num` AS ach_cession_entete_ces_num,
+     ach_cession_entete.`ces_depot_origine` AS ach_cession_entete_ces_depot_origine,
+     ach_cession_entete.`ces_depot_destination` AS ach_cession_entete_ces_depot_destination,
+     ach_cession_entete.`ces_nom_responsable` AS ach_cession_entete_ces_nom_responsable,
+     ach_cession_entete.`ces_id_responsable` AS ach_cession_entete_ces_id_responsable,
+     ach_cession_entete.`ces_serie` AS ach_cession_entete_ces_serie,
+     ach_cession_entete.`ces_object` AS ach_cession_entete_ces_object,
+     ach_cession_entete.`ces_tot_pump` AS ach_cession_entete_ces_tot_pump,
+     ach_cession_entete.`ces_activite` AS ach_cession_entete_ces_activite,
+     ach_cession_entete.`ces_site` AS ach_cession_entete_ces_site,
+     ach_cession_entete.`ces_departement` AS ach_cession_entete_ces_departement,
+     ach_cession_entete.`ces_service` AS ach_cession_entete_ces_service,
+     ach_cession_entete.`ces_region` AS ach_cession_entete_ces_region,
+     ach_cession_entete.`ces_secteur` AS ach_cession_entete_ces_secteur,
+     ach_cession_entete.`ces_pdv` AS ach_cession_entete_ces_pdv,
+     ach_cession_entete.`ces_anal2` AS ach_cession_entete_ces_anal2,
+     ach_cession_entete.`ces_anal4` AS ach_cession_entete_ces_anal4,
+     ach_cession_entete.`ces_info1` AS ach_cession_entete_ces_info1,
+     ach_cession_entete.`ces_info2` AS ach_cession_entete_ces_info2,
+     ach_cession_entete.`ces_info3` AS ach_cession_entete_ces_info3,
+     ach_cession_entete.`ces_info4` AS ach_cession_entete_ces_info4,
+     ach_cession_entete.`ces_info5` AS ach_cession_entete_ces_info5,
+     ach_cession_entete.`ces_info6` AS ach_cession_entete_ces_info6,
+     ach_cession_entete.`ces_info7` AS ach_cession_entete_ces_info7,
+     ach_cession_entete.`ces_info8` AS ach_cession_entete_ces_info8,
+     ach_cession_entete.`ces_info9` AS ach_cession_entete_ces_info9,
+     ach_cession_entete.`ces_info10` AS ach_cession_entete_ces_info10,
+     ach_cession_entete.`ces_date_imp` AS ach_cession_entete_ces_date_imp,
+     ach_cession_entete.`ces_modele_imp` AS ach_cession_entete_ces_modele_imp,
+     ach_cession_entete.`ces_etat_val` AS ach_cession_entete_ces_etat_val,
+     ach_cession_entete.`ces_gele` AS ach_cession_entete_ces_gele,
+     ach_cession_entete.`ces_etat` AS ach_cession_entete_ces_etat,
+     ach_cession_entete.`ces_date_valide` AS ach_cession_entete_ces_date_valide,
+     ach_cession_entete.`ces_date_annule` AS ach_cession_entete_ces_date_annule,
+     ach_cession_entete.`ces_motif_annule` AS ach_cession_entete_ces_motif_annule,
+     ach_cession_entete.`exeach_id` AS ach_cession_entete_exeach_id,
+     ach_cession_entete.`usr_id` AS ach_cession_entete_usr_id,
+     ach_cession_ligne.`ceslig_id` AS ach_cession_ligne_ceslig_id,
+     ach_cession_ligne.`ceslig_code` AS ach_cession_ligne_ceslig_code,
+     ach_cession_ligne.`ceslig_famille` AS ach_cession_ligne_ceslig_famille,
+     ach_cession_ligne.`ceslig_libelle` AS ach_cession_ligne_ceslig_libelle,
+     ach_cession_ligne.`ceslig_reference` AS ach_cession_ligne_ceslig_reference,
+     ach_cession_ligne.`ceslig_unite` AS ach_cession_ligne_ceslig_unite,
+     ach_cession_ligne.`ceslig_condition` AS ach_cession_ligne_ceslig_condition,
+     ach_cession_ligne.`ceslig_qte_origine` AS ach_cession_ligne_ceslig_qte_origine,
+     ach_cession_ligne.`ceslig_qte_destination` AS ach_cession_ligne_ceslig_qte_destination,
+     ach_cession_ligne.`ceslig_casier_origine` AS ach_cession_ligne_ceslig_casier_origine,
+     ach_cession_ligne.`ceslig_casier_destination` AS ach_cession_ligne_ceslig_casier_destination,
+     ach_cession_ligne.`ceslig_long` AS ach_cession_ligne_ceslig_long,
+     ach_cession_ligne.`ceslig_larg` AS ach_cession_ligne_ceslig_larg,
+     ach_cession_ligne.`ceslig_haut` AS ach_cession_ligne_ceslig_haut,
+     ach_cession_ligne.`ceslig_diam` AS ach_cession_ligne_ceslig_diam,
+     ach_cession_ligne.`ceslig_nb` AS ach_cession_ligne_ceslig_nb,
+     ach_cession_ligne.`ceslig_poidsNet` AS ach_cession_ligne_ceslig_poidsNet,
+     ach_cession_ligne.`ceslig_poidsBrut` AS ach_cession_ligne_ceslig_poidsBrut,
+     ach_cession_ligne.`ceslig_volume` AS ach_cession_ligne_ceslig_volume,
+     ach_cession_ligne.`ceslig_qte_util_origine` AS ach_cession_ligne_ceslig_qte_util_origine,
+     ach_cession_ligne.`ceslig_qte_util_destination` AS ach_cession_ligne_ceslig_qte_util_destination,
+     ach_cession_ligne.`ceslig_qte_stock` AS ach_cession_ligne_ceslig_qte_stock,
+     ach_cession_ligne.`ceslig_pump` AS ach_cession_ligne_ceslig_pump,
+     ach_cession_ligne.`ceslig_total` AS ach_cession_ligne_ceslig_total,
+     ach_cession_ligne.`ceslig_obs` AS ach_cession_ligne_ceslig_obs,
+     ach_cession_ligne.`ces_id` AS ach_cession_ligne_ces_id
+FROM
+     `ach_cession_entete` ach_cession_entete INNER JOIN `ach_cession_ligne` ach_cession_ligne ON ach_cession_entete.`ces_id` = ach_cession_ligne.`ces_id`
+WHERE
+   $P!{requete}]]>
+	</queryString>
+	<field name="ach_cession_entete_ces_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_date_creat" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_date_modif" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_id_createur" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_nom_createur" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_id_modif" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_nom_modif" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_date" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_num" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_depot_origine" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_depot_destination" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_nom_responsable" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_id_responsable" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_serie" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_object" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_tot_pump" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_activite" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_site" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_departement" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_service" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_region" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_secteur" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_pdv" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_anal2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_anal4" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_info1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_info2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_info3" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_info4" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_info5" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_info6" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_info7" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_info8" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_info9" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_info10" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_date_imp" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_modele_imp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_etat_val" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_gele" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_etat" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_date_valide" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_date_annule" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_ces_motif_annule" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_exeach_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_entete_usr_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_ligne_ceslig_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_ligne_ceslig_code" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_ligne_ceslig_famille" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_ligne_ceslig_libelle" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_ligne_ceslig_reference" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_ligne_ceslig_unite" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_ligne_ceslig_condition" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_ligne_ceslig_qte_origine" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_ligne_ceslig_qte_destination" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_ligne_ceslig_casier_origine" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_ligne_ceslig_casier_destination" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_ligne_ceslig_long" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_ligne_ceslig_larg" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_ligne_ceslig_haut" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_ligne_ceslig_diam" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_ligne_ceslig_nb" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_ligne_ceslig_poidsNet" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_ligne_ceslig_poidsBrut" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_ligne_ceslig_volume" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_ligne_ceslig_qte_util_origine" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_ligne_ceslig_qte_util_destination" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_ligne_ceslig_qte_stock" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_ligne_ceslig_pump" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_ligne_ceslig_total" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_ligne_ceslig_obs" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_cession_ligne_ces_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<title>
+		<band height="116" splitType="Stretch">
+			<rectangle>
+				<reportElement x="1" y="1" width="555" height="36" forecolor="#000000" backcolor="#000000"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="1" y="88" width="555" height="27" forecolor="#992F2A" backcolor="#992F2A"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="1" y="37" width="555" height="51" forecolor="#999999" backcolor="#999999"/>
+			</rectangle>
+			<textField evaluationTime="Report">
+				<reportElement x="509" y="97" width="23" height="10" forecolor="#FFFFFF"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="25" y="41" width="511" height="20" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{filtre}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="20" y="97" width="55" height="10" forecolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[© B&W 2010 -]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="77" y="97" width="28" height="11" forecolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{version}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="355" y="97" width="151" height="10" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Page "+$V{PAGE_NUMBER}+" / "]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy HH.mm.ss">
+				<reportElement x="108" y="97" width="151" height="10" forecolor="#FFFFFF"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="25" y="64" width="511" height="20" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{societe}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="25" y="6" width="511" height="24" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans" size="18"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{entete}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="139" splitType="Stretch">
+			<textField pattern="d/M/yyyy" isBlankWhenNull="true">
+				<reportElement x="206" y="16" width="68" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{ach_cession_entete_ces_date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="6" y="16" width="85" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cession N°:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="96" y="16" width="69" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{ach_cession_entete_ces_num}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="29" y="34" width="61" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Suivi par :]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="96" y="34" width="178" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{ach_cession_entete_ces_nom_responsable}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="167" y="16" width="34" height="18"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="91" width="61" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Objet :]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="96" y="92" width="178" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{ach_cession_entete_ces_object}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="29" y="54" width="61" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Activité :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="72" width="61" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Service :]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="96" y="54" width="178" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{ach_cession_entete_ces_activite}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="96" y="73" width="178" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{ach_cession_entete_ces_service}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="291" y="16" width="113" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dépôt origine:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="423" y="16" width="108" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{ach_cession_entete_ces_depot_origine}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="423" y="44" width="108" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{ach_cession_entete_ces_depot_destination}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="289" y="44" width="115" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dépôt destination:]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="62" splitType="Stretch">
+			<staticText>
+				<reportElement x="13" y="32" width="61" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Code]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="86" y="32" width="202" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Libellé produit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="299" y="27" width="36" height="27"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Qte. Org.]]></text>
+			</staticText>
+			<line>
+				<reportElement x="12" y="24" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="76" y="24" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="292" y="24" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="340" y="24" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="387" y="24" width="1" height="38"/>
+			</line>
+			<staticText>
+				<reportElement x="396" y="32" width="53" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Casier]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="474" y="32" width="53" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Prix Total]]></text>
+			</staticText>
+			<line>
+				<reportElement x="459" y="24" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="540" y="24" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="12" y="24" width="529" height="1"/>
+			</line>
+			<line>
+				<reportElement x="12" y="55" width="529" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="348" y="27" width="36" height="27"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Qte. Des.]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="28" splitType="Stretch">
+			<textField>
+				<reportElement x="18" y="4" width="56" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{ach_cession_ligne_ceslig_code}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="84" y="4" width="200" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{ach_cession_ligne_ceslig_libelle}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="299" y="4" width="31" height="20">
+					<printWhenExpression><![CDATA[$F{ach_cession_ligne_ceslig_qte_origine}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{ach_cession_ligne_ceslig_qte_origine}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="12" y="0" width="1" height="28"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="76" y="0" width="1" height="28"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="292" y="0" width="1" height="28"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="340" y="0" width="1" height="28"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="387" y="0" width="1" height="28"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="459" y="0" width="1" height="28"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="540" y="0" width="1" height="28"/>
+			</line>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="397" y="4" width="52" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{ach_cession_ligne_ceslig_casier_origine}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="467" y="4" width="61" height="20">
+					<printWhenExpression><![CDATA[$F{ach_cession_ligne_ceslig_total}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{ach_cession_ligne_ceslig_total}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="347" y="4" width="31" height="20">
+					<printWhenExpression><![CDATA[$F{ach_cession_ligne_ceslig_qte_destination}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{ach_cession_ligne_ceslig_qte_destination}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="50">
+			<line>
+				<reportElement x="13" y="29" width="527" height="1"/>
+			</line>
+			<textField pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="467" y="12" width="63" height="15">
+					<printWhenExpression><![CDATA[$F{ach_cession_entete_ces_tot_pump}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{ach_cession_entete_ces_tot_pump}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="350" y="12" width="104" height="15"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total PUMP]]></text>
+			</staticText>
+			<line>
+				<reportElement x="76" y="0" width="1" height="10"/>
+			</line>
+			<line>
+				<reportElement x="12" y="0" width="1" height="29"/>
+			</line>
+			<line>
+				<reportElement x="12" y="9" width="529" height="1"/>
+			</line>
+			<line>
+				<reportElement x="292" y="0" width="1" height="10"/>
+			</line>
+			<line>
+				<reportElement x="340" y="0" width="1" height="29"/>
+			</line>
+			<line>
+				<reportElement x="387" y="0" width="1" height="10"/>
+			</line>
+			<line>
+				<reportElement x="459" y="0" width="1" height="29"/>
+			</line>
+			<line>
+				<reportElement x="540" y="0" width="1" height="29"/>
+			</line>
+		</band>
+	</columnFooter>
+	<lastPageFooter>
+		<band height="25">
+			<rectangle>
+				<reportElement x="1" y="0" width="555" height="24" forecolor="#992F2A" backcolor="#992F2A"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="367" y="12" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Right">
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.planet-e-pegase.biz ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="367" y="1" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Right">
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Support by Planet-e-pegase ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="201" y="1" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Writen by Phoenix SaaS ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="1" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement>
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Created by Bagwell & Watson]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="12" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement>
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.bagwell-watson.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="201" y="12" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.phoenix-saas.com]]></text>
+			</staticText>
+		</band>
+	</lastPageFooter>
+</jasperReport>

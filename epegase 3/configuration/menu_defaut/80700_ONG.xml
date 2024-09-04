@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<M80700_ONG>
+
+    <ligneonglet>
+        <libelle>Descriptif</libelle>
+        <code>1</code>
+        <acc>true</acc>
+        <add>true</add>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+    </ligneonglet>
+
+    <ligneonglet>
+        <libelle>Photos</libelle>
+        <code>2</code>
+        <acc>true</acc>
+        <add>true</add>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+    </ligneonglet>
+
+    <ligneonglet>
+        <libelle>Caractéristiques</libelle>
+        <code>3</code>
+        <acc>true</acc>
+        <add>true</add>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+    </ligneonglet>
+
+    <ligneonglet>
+        <libelle>Stock</libelle>
+        <code>4</code>
+        <acc>true</acc>
+        <add>true</add>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+    </ligneonglet>
+
+    <ligneonglet>
+        <libelle>Tarifications</libelle>
+        <code>5</code>
+        <acc>true</acc>
+        <add>true</add>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+    </ligneonglet>
+
+    <ligneonglet>
+        <libelle>Option vente</libelle>
+        <code>6</code>
+        <acc>true</acc>
+        <add>true</add>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+    </ligneonglet>
+
+    <ligneonglet>
+        <libelle>Mots clés</libelle>
+        <code>7</code>
+        <acc>true</acc>
+        <add>true</add>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+    </ligneonglet>
+
+    <ligneonglet>
+        <libelle>Service</libelle>
+        <code>8</code>
+        <acc>true</acc>
+        <add>true</add>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+    </ligneonglet>
+
+</M80700_ONG>

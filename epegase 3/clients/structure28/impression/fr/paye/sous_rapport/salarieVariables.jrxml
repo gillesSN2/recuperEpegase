@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="salarieVariable" language="groovy" pageWidth="263" pageHeight="13" whenNoDataType="AllSectionsNoDetail" columnWidth="263" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="idSal" class="java.lang.Long"/>
+	<queryString>
+		<![CDATA[SELECT
+     pay_salaries_variables.`salvar_id` AS pay_salaries_variables_salvar_id,
+     pay_salaries_variables.`salvar_code` AS pay_salaries_variables_salvar_code,
+     pay_salaries_variables.`salvar_periode` AS pay_salaries_variables_salvar_periode,
+     pay_salaries_variables.`salvar_valeur_colA` AS pay_salaries_variables_salvar_valeur_colA,
+     pay_salaries_variables.`salvar_valeur_colB` AS pay_salaries_variables_salvar_valeur_colB,
+     pay_salaries_variables.`salvar_valeur_colC` AS pay_salaries_variables_salvar_valeur_colC,
+     pay_salaries_variables.`salvar_valeur_colD` AS pay_salaries_variables_salvar_valeur_colD,
+     pay_salaries_variables.`salvar_valeur_colE` AS pay_salaries_variables_salvar_valeur_colE,
+     pay_salaries_variables.`salvar_variableA` AS pay_salaries_variables_salvar_variableA,
+     pay_salaries_variables.`salvar_variableB` AS pay_salaries_variables_salvar_variableB,
+     pay_salaries_variables.`salvar_variableC` AS pay_salaries_variables_salvar_variableC,
+     pay_salaries_variables.`salvar_variableD` AS pay_salaries_variables_salvar_variableD,
+     pay_salaries_variables.`salvar_variableE` AS pay_salaries_variables_salvar_variableE,
+     pay_salaries_variables.`plpId` AS pay_salaries_variables_plpId,
+     pay_salaries_variables.`sal_id` AS pay_salaries_variables_sal_id
+FROM
+     `pay_salaries_variables` pay_salaries_variables
+WHERE
+     variables_sal_id = $P!{idSal}]]>
+	</queryString>
+	<field name="pay_salaries_variables_salvar_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_variables_salvar_code" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_variables_salvar_periode" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_variables_salvar_valeur_colA" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_variables_salvar_valeur_colB" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_variables_salvar_valeur_colC" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_variables_salvar_valeur_colD" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_variables_salvar_valeur_colE" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_variables_salvar_variableA" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_variables_salvar_variableB" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_variables_salvar_variableC" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_variables_salvar_variableD" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_variables_salvar_variableE" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_variables_plpId" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_variables_sal_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<detail>
+		<band height="13" splitType="Stretch">
+			<textField>
+				<reportElement x="3" y="1" width="60" height="12"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{pay_salaries_variables_salvar_code}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="221" y="1" width="37" height="12"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{pay_salaries_variables_salvar_valeur_colE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="1" width="38" height="12"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{pay_salaries_variables_salvar_valeur_colD}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="137" y="1" width="38" height="12"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{pay_salaries_variables_salvar_valeur_colC}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="94" y="1" width="38" height="12"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{pay_salaries_variables_salvar_valeur_colB}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

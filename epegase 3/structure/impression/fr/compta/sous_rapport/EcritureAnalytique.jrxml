@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ecriture_analytique" language="groovy" pageWidth="800" pageHeight="100" orientation="Landscape" columnWidth="800" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="id_ecriture" class="java.lang.Long">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     cpt_ecrituresanalytiques.`ecrana_debit_saisie` AS cpt_ecrituresanalytiques_ecrana_debit_saisie,
+     cpt_ecrituresanalytiques.`ecrana_credit_saisie` AS cpt_ecrituresanalytiques_ecrana_credit_saisie,
+     cpt_ecrituresanalytiques.`ecrana_site` AS cpt_ecrituresanalytiques_ecrana_site,
+     cpt_ecrituresanalytiques.`ecrana_departement` AS cpt_ecrituresanalytiques_ecrana_departement,
+     cpt_ecrituresanalytiques.`ecrana_service` AS cpt_ecrituresanalytiques_ecrana_service,
+     cpt_ecrituresanalytiques.`ecrana_region` AS cpt_ecrituresanalytiques_ecrana_region,
+     cpt_ecrituresanalytiques.`ecrana_secteur` AS cpt_ecrituresanalytiques_ecrana_secteur,
+     cpt_ecrituresanalytiques.`ecrana_pdv` AS cpt_ecrituresanalytiques_ecrana_pdv,
+     cpt_ecrituresanalytiques.`ecrana_activite` AS cpt_ecrituresanalytiques_ecrana_activite,
+     cpt_ecrituresanalytiques.`ecrana_projet` AS cpt_ecrituresanalytiques_ecrana_projet,
+     cpt_ecrituresanalytiques.`ecrana_budget` AS cpt_ecrituresanalytiques_ecrana_budget,
+     cpt_ecrituresanalytiques.`ecrana_anal1` AS cpt_ecrituresanalytiques_ecrana_anal1,
+     cpt_ecrituresanalytiques.`ecrana_anal2` AS cpt_ecrituresanalytiques_ecrana_anal2,
+     cpt_ecrituresanalytiques.`ecrana_anal3` AS cpt_ecrituresanalytiques_ecrana_anal3,
+     cpt_ecrituresanalytiques.`ecrana_anal4` AS cpt_ecrituresanalytiques_ecrana_anal4,
+     cpt_ecrituresanalytiques.`ecr_id` AS cpt_ecrituresanalytiques_ecr_id
+FROM
+     `cpt_ecrituresanalytiques` cpt_ecrituresanalytiques
+WHERE
+     ecr_id = $P{id_ecriture}]]>
+	</queryString>
+	<field name="cpt_ecrituresanalytiques_ecrana_debit_saisie" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_ecrituresanalytiques_ecrana_credit_saisie" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_ecrituresanalytiques_ecrana_site" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_ecrituresanalytiques_ecrana_departement" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_ecrituresanalytiques_ecrana_service" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_ecrituresanalytiques_ecrana_region" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_ecrituresanalytiques_ecrana_secteur" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_ecrituresanalytiques_ecrana_pdv" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_ecrituresanalytiques_ecrana_activite" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_ecrituresanalytiques_ecrana_projet" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_ecrituresanalytiques_ecrana_budget" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_ecrituresanalytiques_ecrana_anal1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_ecrituresanalytiques_ecrana_anal2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_ecrituresanalytiques_ecrana_anal3" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_ecrituresanalytiques_ecrana_anal4" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_ecrituresanalytiques_ecr_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<columnHeader>
+		<band height="17">
+			<line>
+				<reportElement x="6" y="0" width="750" height="1"/>
+			</line>
+			<line>
+				<reportElement x="6" y="1" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement x="62" y="1" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement x="117" y="1" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement x="173" y="1" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement x="229" y="1" width="1" height="16"/>
+			</line>
+			<line>
+				<reportElement x="395" y="1" width="1" height="16"/>
+			</line>
+			<line>
+				<reportElement x="561" y="1" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement x="659" y="1" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement x="755" y="1" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement x="284" y="1" width="1" height="16"/>
+			</line>
+			<line>
+				<reportElement x="340" y="1" width="1" height="16"/>
+			</line>
+			<line>
+				<reportElement x="451" y="1" width="1" height="16"/>
+			</line>
+			<line>
+				<reportElement x="506" y="1" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement x="6" y="13" width="750" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="14" y="3" width="41" height="9"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans" size="7"/>
+				</textElement>
+				<text><![CDATA[Site]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="69" y="3" width="41" height="9"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans" size="7"/>
+				</textElement>
+				<text><![CDATA[Départ.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="126" y="3" width="41" height="9"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans" size="7"/>
+				</textElement>
+				<text><![CDATA[Service]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="182" y="3" width="41" height="9"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans" size="7"/>
+				</textElement>
+				<text><![CDATA[Région]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="237" y="3" width="41" height="9"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans" size="7"/>
+				</textElement>
+				<text><![CDATA[Secteur]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="293" y="3" width="41" height="9"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans" size="7"/>
+				</textElement>
+				<text><![CDATA[P.D.V.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="348" y="3" width="41" height="9"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans" size="7"/>
+				</textElement>
+				<text><![CDATA[Anal. 1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="403" y="3" width="41" height="9"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans" size="7"/>
+				</textElement>
+				<text><![CDATA[Anal. 2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="459" y="3" width="41" height="9"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans" size="7"/>
+				</textElement>
+				<text><![CDATA[Anal. 3]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="514" y="3" width="41" height="9"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans" size="7"/>
+				</textElement>
+				<text><![CDATA[Anal. 4]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="590" y="3" width="41" height="9"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans" size="7"/>
+				</textElement>
+				<text><![CDATA[Débit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="688" y="3" width="41" height="9"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans" size="7"/>
+				</textElement>
+				<text><![CDATA[Crédit]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="11" splitType="Stretch">
+			<textField pattern="#,##0" isBlankWhenNull="true">
+				<reportElement x="575" y="0" width="70" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8" isItalic="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{cpt_ecrituresanalytiques_ecrana_debit_saisie}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0" isBlankWhenNull="true">
+				<reportElement x="678" y="0" width="70" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8" isItalic="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{cpt_ecrituresanalytiques_ecrana_credit_saisie}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="12" y="1" width="45" height="10"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cpt_ecrituresanalytiques_ecrana_site}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="68" y="1" width="45" height="10"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cpt_ecrituresanalytiques_ecrana_departement}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="123" y="1" width="45" height="10"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cpt_ecrituresanalytiques_ecrana_service}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="179" y="1" width="45" height="10"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cpt_ecrituresanalytiques_ecrana_region}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="6" y="0" width="1" height="11"/>
+			</line>
+			<line>
+				<reportElement x="62" y="0" width="1" height="11"/>
+			</line>
+			<line>
+				<reportElement x="117" y="0" width="1" height="11"/>
+			</line>
+			<line>
+				<reportElement x="173" y="0" width="1" height="11"/>
+			</line>
+			<line>
+				<reportElement x="229" y="0" width="1" height="11"/>
+			</line>
+			<line>
+				<reportElement x="395" y="0" width="1" height="11"/>
+			</line>
+			<line>
+				<reportElement x="561" y="0" width="1" height="11"/>
+			</line>
+			<line>
+				<reportElement x="659" y="-1" width="1" height="11"/>
+			</line>
+			<line>
+				<reportElement x="755" y="-1" width="1" height="11"/>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement x="235" y="1" width="45" height="10"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cpt_ecrituresanalytiques_ecrana_secteur}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="290" y="1" width="45" height="10"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cpt_ecrituresanalytiques_ecrana_pdv}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="284" y="0" width="1" height="11"/>
+			</line>
+			<line>
+				<reportElement x="340" y="0" width="1" height="11"/>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement x="345" y="1" width="45" height="10"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cpt_ecrituresanalytiques_ecrana_anal1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="401" y="1" width="45" height="10"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cpt_ecrituresanalytiques_ecrana_anal2}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="451" y="0" width="1" height="11"/>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement x="456" y="1" width="45" height="10"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cpt_ecrituresanalytiques_ecrana_anal3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="512" y="1" width="45" height="10"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cpt_ecrituresanalytiques_ecrana_anal3}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="506" y="0" width="1" height="11"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="5">
+			<line>
+				<reportElement x="6" y="4" width="750" height="1"/>
+			</line>
+			<line>
+				<reportElement x="6" y="0" width="1" height="4"/>
+			</line>
+			<line>
+				<reportElement x="62" y="0" width="1" height="4"/>
+			</line>
+			<line>
+				<reportElement x="117" y="0" width="1" height="4"/>
+			</line>
+			<line>
+				<reportElement x="173" y="0" width="1" height="4"/>
+			</line>
+			<line>
+				<reportElement x="229" y="0" width="1" height="4"/>
+			</line>
+			<line>
+				<reportElement x="395" y="0" width="1" height="4"/>
+			</line>
+			<line>
+				<reportElement x="561" y="0" width="1" height="4"/>
+			</line>
+			<line>
+				<reportElement x="659" y="0" width="1" height="4"/>
+			</line>
+			<line>
+				<reportElement x="755" y="0" width="1" height="4"/>
+			</line>
+			<line>
+				<reportElement x="284" y="0" width="1" height="4"/>
+			</line>
+			<line>
+				<reportElement x="340" y="0" width="1" height="4"/>
+			</line>
+			<line>
+				<reportElement x="451" y="0" width="1" height="4"/>
+			</line>
+			<line>
+				<reportElement x="506" y="0" width="1" height="4"/>
+			</line>
+		</band>
+	</columnFooter>
+</jasperReport>

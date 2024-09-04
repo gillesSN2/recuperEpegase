@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<natures>
+
+	<type>
+		<code>1</code>
+		<nom_FR>Capital</nom_FR>
+		<nom_UK>Capital</nom_UK>
+		<nom_SP></nom_SP>
+		<sens>1</sens>
+	</type>
+
+	<type>
+		<code>2</code>
+		<nom_FR>Résultat</nom_FR>
+		<nom_UK>Result</nom_UK>
+		<nom_SP></nom_SP>
+		<sens>1</sens>
+	</type>
+
+	<type>
+		<code>3</code>
+		<nom_FR>Immobilisations</nom_FR>
+		<nom_UK>Immobilizations</nom_UK>
+		<nom_SP></nom_SP>
+		<sens>0</sens>
+	</type>
+
+	<type>
+		<code>4</code>
+		<nom_FR>Amortissements et Provisions</nom_FR>
+		<nom_UK>Amortizations and Provisions</nom_UK>
+		<nom_SP></nom_SP>
+		<sens>1</sens>
+	</type>
+
+	<type>
+		<code>5</code>
+		<nom_FR>Stock</nom_FR>
+		<nom_UK>Stock</nom_UK>
+		<nom_SP></nom_SP>
+		<sens>0</sens>
+	</type>
+
+	<type>
+		<code>6</code>
+		<nom_FR>Fournisseurs</nom_FR>
+		<nom_UK>Suppliers</nom_UK>
+		<nom_SP></nom_SP>
+		<sens>1</sens>
+	</type>
+
+	<type>
+		<code>7</code>
+		<nom_FR>Clients</nom_FR>
+		<nom_UK>Customers</nom_UK>
+		<nom_SP></nom_SP>
+		<sens>0</sens>
+	</type>
+
+	<type>
+		<code>8</code>
+		<nom_FR>Personnels</nom_FR>
+		<nom_UK>Staffs</nom_UK>
+		<nom_SP></nom_SP>
+		<sens>0</sens>
+	</type>
+
+	<type>
+		<code>9</code>
+		<nom_FR>Autres Tiers</nom_FR>
+		<nom_UK>Other Thirds</nom_UK>
+		<nom_SP></nom_SP>
+		<sens>2</sens>
+	</type>
+
+	<type>
+		<code>10</code>
+		<nom_FR>Banques</nom_FR>
+		<nom_UK>Banks</nom_UK>
+		<nom_SP></nom_SP>
+		<sens>2</sens>
+	</type>
+
+	<type>
+		<code>11</code>
+		<nom_FR>Caisses</nom_FR>
+		<nom_UK>Cashes</nom_UK>
+		<nom_SP></nom_SP>
+		<sens>2</sens>
+	</type>
+
+	<type>
+		<code>12</code>
+		<nom_FR>Autres Trésoreries</nom_FR>
+		<nom_UK>Other Treasuries</nom_UK>
+		<nom_SP></nom_SP>
+		<sens>2</sens>
+	</type>
+
+	<type>
+		<code>13</code>
+		<nom_FR>TVA sur achats</nom_FR>
+		<nom_UK>VAT</nom_UK>
+		<nom_SP></nom_SP>
+		<sens>2</sens>
+	</type>
+
+	<type>
+		<code>14</code>
+		<nom_FR>TVA sur ventes</nom_FR>
+		<nom_UK></nom_UK>
+		<nom_SP></nom_SP>
+		<sens>2</sens>
+	</type>
+
+	<type>
+		<code>15</code>
+		<nom_FR>Autres Etats</nom_FR>
+		<nom_UK>Other States</nom_UK>
+		<nom_SP></nom_SP>
+		<sens>2</sens>
+	</type>
+
+	<type>
+		<code>16</code>
+		<nom_FR>Charges</nom_FR>
+		<nom_UK>Loads</nom_UK>
+		<nom_SP></nom_SP>
+		<sens>0</sens>
+	</type>
+
+	<type>
+		<code>17</code>
+		<nom_FR>Produits</nom_FR>
+		<nom_UK>Products</nom_UK>
+		<nom_SP></nom_SP>
+		<sens>1</sens>
+	</type>
+
+	<type>
+		<code>18</code>
+		<nom_FR>Dotations</nom_FR>
+		<nom_UK>Dotations</nom_UK>
+		<nom_SP></nom_SP>
+		<sens>0</sens>
+	</type>
+
+	<type>
+		<code>19</code>
+		<nom_FR>Réserves</nom_FR>
+		<nom_UK>Reserves</nom_UK>
+		<nom_SP></nom_SP>
+		<sens>2</sens>
+	</type>
+
+	<type>
+		<code>20</code>
+		<nom_FR>Report à nouveaux</nom_FR>
+		<nom_UK>Carryforward to new</nom_UK>
+		<nom_SP></nom_SP>
+		<sens>2</sens>
+	</type>
+
+	<type>
+		<code>21</code>
+		<nom_FR>Subventions</nom_FR>
+		<nom_UK>Subsidies</nom_UK>
+		<nom_SP></nom_SP>
+		<sens>2</sens>
+	</type>
+
+	<type>
+		<code>22</code>
+		<nom_FR>Emprunts et dettes</nom_FR>
+		<nom_UK>Loans and debts</nom_UK>
+		<nom_SP></nom_SP>
+		<sens>2</sens>
+	</type>
+
+	<type>
+		<code>23</code>
+		<nom_FR>Produits et charges HAO</nom_FR>
+		<nom_UK>Products and loads HAO</nom_UK>
+		<nom_SP></nom_SP>
+		<sens>2</sens>
+	</type>
+
+        <type>
+		<code>24</code>
+		<nom_FR>Résultats</nom_FR>
+		<nom_UK>Results</nom_UK>
+		<nom_SP></nom_SP>
+		<sens>2</sens>
+	</type>
+
+        <type>
+		<code>25</code>
+		<nom_FR>Plus ou moins value de cession</nom_FR>
+		<nom_UK></nom_UK>
+		<nom_SP></nom_SP>
+		<sens>2</sens>
+	</type>
+
+        <type>
+		<code>90</code>
+		<nom_FR>Attente</nom_FR>
+		<nom_UK>Attente</nom_UK>
+		<nom_SP></nom_SP>
+		<sens>2</sens>
+	</type>
+
+	<type>
+		<code>99</code>
+		<nom_FR>Aucune nature</nom_FR>
+		<nom_UK>No nature</nom_UK>
+		<nom_SP></nom_SP>
+		<sens>2</sens>
+	</type>
+</natures>

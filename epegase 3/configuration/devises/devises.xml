@@ -1,0 +1,949 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<devises>
+
+	<ligne>
+		<code>AED</code>
+		<libelle1>United Arab Emirates Dirhams</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.2056017136</taux1>
+		<taux2>4.8637726911</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>AFN</code>
+		<libelle1>Afghanistan Afghanis</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.0156111733</taux1>
+		<taux2>64.0566842090</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>ALL</code>
+		<libelle1>Albania Leke</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.0071218981</taux1>
+		<taux2>140.4120053458</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>ARS</code>
+		<libelle1>Argentina Pesos</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.1709670254</taux1>
+		<taux2>5.8490811179</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>AUD</code>
+		<libelle1>Australia Dollars</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.7868513296</taux1>
+		<taux2>1.2708881112</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>BBD</code>
+		<libelle1>Barbados Dollars</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.3776030395</taux1>
+		<taux2>2.6482837674</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>BDT</code>
+		<libelle1>Bangladesh Taka</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.0092222013</taux1>
+		<taux2>108.4339808753</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>BGN</code>
+		<libelle1>Bulgaria Leva</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.5112805822</taux1>
+		<taux2>1.9558732227</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>BHD</code>
+		<libelle1>Bahrain Dinars</libelle1>
+		<date>2012/04/30</date>
+		<taux1>2.0030025385</taux1>
+		<taux2>0.4992504906</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>BMD</code>
+		<libelle1>Bermuda Dollars</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.7552060790</taux1>
+		<taux2>1.3241418837</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>BRL</code>
+		<libelle1>Brazil Reais</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.3984909609</taux1>
+		<taux2>2.5094672106</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>BSD</code>
+		<libelle1>Bahamas Dollars</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.7552060790</taux1>
+		<taux2>1.3241418837</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>CAD</code>
+		<libelle1>Canada Dollars</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.7647854009</taux1>
+		<taux2>1.3075563404</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>CHF</code>
+		<libelle1>Switzerland Francs</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.8323702807</taux1>
+		<taux2>1.2013884003</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>CLP</code>
+		<libelle1>Chile Pesos</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.0015564199</taux1>
+		<taux2>642.5001248008</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>CNY</code>
+		<libelle1>China Yuan Renminbi</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.1199343863</taux1>
+		<taux2>8.3378923353</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>COP</code>
+		<libelle1>Colombia Pesos</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.0004277819</taux1>
+		<taux2>2337.6400814546</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>CRC</code>
+		<libelle1>Costa Rica Colones</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.0014973552</taux1>
+		<taux2>667.8441923726</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>CYP</code>
+		<libelle1>Cyprus Pounds</libelle1>
+		<date>2012/04/30</date>
+		<taux1>1.7086014414</taux1>
+		<taux2>0.5852740000</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>CZK</code>
+		<libelle1>Czech Republic Koruny</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.0400849523</taux1>
+		<taux2>24.9470173478</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>DKK</code>
+		<libelle1>Denmark Kroner</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.1344180318</taux1>
+		<taux2>7.4394780719</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>DOP</code>
+		<libelle1>Dominican Republic Pesos</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.0193176985</taux1>
+		<taux2>51.7660009015</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>DZD</code>
+		<libelle1>Algeria Dinars</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.0101748717</taux1>
+		<taux2>98.2813373218</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>EEK</code>
+		<libelle1>Estonia Krooni</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.0639114851</taux1>
+		<taux2>15.6466400000</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>EGP</code>
+		<libelle1>Egypt Pounds</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.1249430670</taux1>
+		<taux2>8.0036453724</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>EUR</code>
+		<libelle1>Euro</libelle1>
+		<date>2012/04/30</date>
+		<taux1>1.0000000000</taux1>
+		<taux2>1.0000000000</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>FJD</code>
+		<libelle1>Fiji Dollars</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.4256341461</taux1>
+		<taux2>2.3494355637</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>GBP</code>
+		<libelle1>United Kingdom Pounds</libelle1>
+		<date>2012/04/30</date>
+		<taux1>1.2255768363</taux1>
+		<taux2>0.8159423142</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>HKD</code>
+		<libelle1>Hong Kong Dollars</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.0973436731</taux1>
+		<taux2>10.2728813116</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>HRK</code>
+		<libelle1>Croatia Kuna</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.1334144014</taux1>
+		<taux2>7.4954426927</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>HUF</code>
+		<libelle1>Hungary Forint</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.0034862735</taux1>
+		<taux2>286.8392277721</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>IDR</code>
+		<libelle1>Indonesia Rupiahs</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.0000821519</taux1>
+		<taux2>12172.5715083244</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>ILS</code>
+		<libelle1>Israel New Shekels</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.2007792128</taux1>
+		<taux2>4.9805952808</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>INR</code>
+		<libelle1>India Rupees</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.0143246787</taux1>
+		<taux2>69.8095935816</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>IQD</code>
+		<libelle1>Iraq Dinars</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.0006482968</taux1>
+		<taux2>1542.5034837827</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>IRR</code>
+		<libelle1>Iran Rials</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.0000614889</taux1>
+		<taux2>16263.1106153990</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>ISK</code>
+		<libelle1>Iceland Kronur</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.0060008429</taux1>
+		<taux2>166.6432560616</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>JMD</code>
+		<libelle1>Jamaica Dollars</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.0087025358</taux1>
+		<taux2>114.9090367070</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>JOD</code>
+		<libelle1>Jordan Dinars</libelle1>
+		<date>2012/04/30</date>
+		<taux1>1.0660837100</taux1>
+		<taux2>0.9380126444</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>JPY</code>
+		<libelle1>Japan Yen</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.0094609402</taux1>
+		<taux2>105.6977404777</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>KES</code>
+		<libelle1>Kenya Shillings</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.0090828911</taux1>
+		<taux2>110.0971031620</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>KRW</code>
+		<libelle1>South Korea Won</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.0006689170</taux1>
+		<taux2>1494.9537802435</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>KWD</code>
+		<libelle1>Kuwait Dinars</libelle1>
+		<date>2012/04/30</date>
+		<taux1>2.7199414773</taux1>
+		<taux2>0.3676549692</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>KZT</code>
+		<libelle1>Kazakhstan Tenge</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.0051122773</taux1>
+		<taux2>195.6075432222</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>LBP</code>
+		<libelle1>Lebanon Pounds</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.0005017402</taux1>
+		<taux2>1993.0633897025</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>LKR</code>
+		<libelle1>Sri Lanka Rupees</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.0058258572</taux1>
+		<taux2>171.6485611320</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>MAD</code>
+		<libelle1>Morocco Dirhams</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.0897169575</taux1>
+		<taux2>11.1461648737</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>MTL</code>
+		<libelle1>Malta Liri</libelle1>
+		<date>2012/04/30</date>
+		<taux1>2.3293733986</taux1>
+		<taux2>0.4293000000</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>MUR</code>
+		<libelle1>Mauritius Rupees</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.0259699474</taux1>
+		<taux2>38.5060464826</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>MXN</code>
+		<libelle1>Mexico Pesos</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.0579603035</taux1>
+		<taux2>17.2531877753</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>MYR</code>
+		<libelle1>Malaysia Ringgits</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.2495600989</taux1>
+		<taux2>4.0070508243</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>NGN</code>
+		<libelle1>Nigeria Nairas</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.0047965429</taux1>
+		<taux2>208.4834870996</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>NOK</code>
+		<libelle1>Norway Kroner</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.1320257035</taux1>
+		<taux2>7.5742826870</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>NZD</code>
+		<libelle1>New Zealand Dollars</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.6174646167</taux1>
+		<taux2>1.6195259986</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>OMR</code>
+		<libelle1>Oman Rials</libelle1>
+		<date>2012/04/30</date>
+		<taux1>1.9613857516</taux1>
+		<taux2>0.5098436140</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>PEN</code>
+		<libelle1>Peru Nuevos Soles</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.2860195652</taux1>
+		<taux2>3.4962643176</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>PHP</code>
+		<libelle1>Philippines Pesos</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.0179039973</taux1>
+		<taux2>55.8534489568</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>PKR</code>
+		<libelle1>Pakistan Rupees</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.0082964790</taux1>
+		<taux2>120.5330597167</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>PLN</code>
+		<libelle1>Poland Zlotych</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.2395773161</taux1>
+		<taux2>4.1740178752</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>QAR</code>
+		<libelle1>Qatar Riyals</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.2073908594</taux1>
+		<taux2>4.8218132804</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>RON</code>
+		<libelle1>Romania New Lei</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.2255764879</taux1>
+		<taux2>4.4330861308</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>RUB</code>
+		<libelle1>Russia Rubles</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.0257149352</taux1>
+		<taux2>38.8879067218</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>SAR</code>
+		<libelle1>Saudi Arabia Riyals</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.2013735113</taux1>
+		<taux2>4.9658964248</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>SDG</code>
+		<libelle1>Sudan Pounds</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.2823411195</taux1>
+		<taux2>3.5418149570</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>SEK</code>
+		<libelle1>Sweden Kronor</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.1123997098</taux1>
+		<taux2>8.8968201233</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>SGD</code>
+		<libelle1>Singapore Dollars</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.6104945481</taux1>
+		<taux2>1.6380162658</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>SKK</code>
+		<libelle1>Slovakia Koruny</libelle1>
+		<date>2009/02/04</date>
+		<taux1>0.3319391890</taux1>
+		<taux2>30.1260000000</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>THB</code>
+		<libelle1>Thailand Baht</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.0245402346</taux1>
+		<taux2>40.7494067209</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>TND</code>
+		<libelle1>Tunisia Dinars</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.4911526405</taux1>
+		<taux2>2.0360269243</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>TRY</code>
+		<libelle1>Turkey Lira</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.4298565813</taux1>
+		<taux2>2.3263573098</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>TTD</code>
+		<libelle1>Trinidad and Tobago Dollars</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.1180378435</taux1>
+		<taux2>8.4718592818</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>TWD</code>
+		<libelle1>Taiwan New Dollars</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.0258663066</taux1>
+		<taux2>38.6603319026</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>USD</code>
+		<libelle1>United States Dollars</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.7552060790</taux1>
+		<taux2>1.3241418837</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>VEF</code>
+		<libelle1>Venezuela Bolivares Fuertes</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.1756293207</taux1>
+		<taux2>5.6938100998</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>VND</code>
+		<libelle1>Vietnam Dong</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.0000362473</taux1>
+		<taux2>27588.2313181660</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>XAF</code>
+		<libelle1>CFA Francs BEAC</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.0015244902</taux1>
+		<taux2>655.9570000000</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>XAG</code>
+		<libelle1>Silver Ounces</libelle1>
+		<date>2012/04/30</date>
+		<taux1>23.4299643522</taux1>
+		<taux2>0.0426803893</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>XAU</code>
+		<libelle1>Gold Ounces</libelle1>
+		<date>2012/04/30</date>
+		<taux1>1257.5479214373</taux1>
+		<taux2>0.0007951983</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>XCD</code>
+		<libelle1>East Caribbean Dollars</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.2797059502</taux1>
+		<taux2>3.5751831491</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>XDR</code>
+		<libelle1>IMF Special Drawing Rights</libelle1>
+		<date>2012/04/30</date>
+		<taux1>1.1709819619</taux1>
+		<taux2>0.8539841197</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>XOF</code>
+		<libelle1>CFA Francs BCEAO</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.0015244902</taux1>
+		<taux2>655.9570000000</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>XPD</code>
+		<libelle1>Palladium Ounces</libelle1>
+		<date>2012/04/30</date>
+		<taux1>514.9767620891</taux1>
+		<taux2>0.0019418352</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>XPF</code>
+		<libelle1>CFP Francs</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.0083800000</taux1>
+		<taux2>119.3317422434</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>XPT</code>
+		<libelle1>Platinum Ounces</libelle1>
+		<date>2012/04/30</date>
+		<taux1>1184.1201794291</taux1>
+		<taux2>0.0008445089</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>ZAR</code>
+		<libelle1>South Africa Rand</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.0971142581</taux1>
+		<taux2>10.2971491448</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+
+	<ligne>
+		<code>ZMK</code>
+		<libelle1>Zambia Kwacha</libelle1>
+		<date>2012/04/30</date>
+		<taux1>0.0001430688</taux1>
+		<taux2>6989.6418300486</taux2>
+		<format>0</format>
+		<principal></principal>
+		<secondaire></secondaire>
+	</ligne>
+</devises>

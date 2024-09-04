@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T030_UK>
+
+	<cat_tiers>
+		<libelle>Customer</libelle>
+		<code>1</code>
+	</cat_tiers>
+
+	<cat_tiers>
+		<libelle>Tenant</libelle>
+		<code>2</code>
+	</cat_tiers>
+
+</T030_UK>

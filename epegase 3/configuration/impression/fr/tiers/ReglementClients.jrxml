@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ListeFamilleFournisseurs" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isFloatColumnFooter="true">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="161"/>
+	<parameter name="entete" class="java.lang.String"/>
+	<parameter name="filtre" class="java.lang.String"/>
+	<parameter name="societe" class="java.lang.String"/>
+	<parameter name="version" class="java.lang.String"/>
+	<parameter name="requete" class="java.lang.String"/>
+	<queryString language="xPath">
+		<![CDATA[]]>
+	</queryString>
+	<field name="arrondis" class="java.lang.String">
+		<fieldDescription><![CDATA[arrondis]]></fieldDescription>
+	</field>
+	<field name="categories" class="java.lang.String">
+		<fieldDescription><![CDATA[categories]]></fieldDescription>
+	</field>
+	<field name="conditions" class="java.lang.String">
+		<fieldDescription><![CDATA[conditions]]></fieldDescription>
+	</field>
+	<field name="echeances" class="java.lang.String">
+		<fieldDescription><![CDATA[echeances]]></fieldDescription>
+	</field>
+	<field name="journals" class="java.lang.String">
+		<fieldDescription><![CDATA[journals]]></fieldDescription>
+	</field>
+	<field name="libEcheances" class="java.lang.String">
+		<fieldDescription><![CDATA[libEcheances]]></fieldDescription>
+	</field>
+	<field name="libelles" class="java.lang.String">
+		<fieldDescription><![CDATA[libelles]]></fieldDescription>
+	</field>
+	<field name="nbjours" class="java.lang.String">
+		<fieldDescription><![CDATA[nbjours]]></fieldDescription>
+	</field>
+	<variable name="lib_eche" class="java.lang.String">
+		<variableExpression><![CDATA[( $F{echeances}=="0" ? "Comptant" :
+    ( $F{echeances}=="1" ? "Terme date facture" :
+        "Terme date fin mois" ) )]]></variableExpression>
+	</variable>
+	<title>
+		<band height="118" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="553" height="36" forecolor="#000000" backcolor="#000000"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="87" width="553" height="27" forecolor="#992F2A" backcolor="#992F2A"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="36" width="553" height="51" forecolor="#999999" backcolor="#999999"/>
+			</rectangle>
+			<textField pattern="dd/MM/yyyy HH.mm.ss">
+				<reportElement x="106" y="96" width="151" height="10" forecolor="#FFFFFF"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="18" y="96" width="55" height="10" forecolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[© B&W 2010 -]]></text>
+			</staticText>
+			<textField>
+				<reportElement mode="Transparent" x="361" y="96" width="151" height="10" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Page "+$V{PAGE_NUMBER}+" / "]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="515" y="96" width="23" height="10" forecolor="#FFFFFF"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="23" y="5" width="510" height="24" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans" size="18"/>
+				</textElement>
+				<text><![CDATA[Liste des modes de règlement des Clients]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="23" y="63" width="510" height="20" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{societe}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="23" y="40" width="510" height="20" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{filtre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="75" y="96" width="28" height="11" forecolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{version}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="59" splitType="Stretch">
+			<printWhenExpression><![CDATA[$V{PAGE_NUMBER}!=1]]></printWhenExpression>
+			<rectangle>
+				<reportElement x="0" y="0" width="553" height="32" forecolor="#999999" backcolor="#999999"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="33" width="553" height="23" forecolor="#992F2A" backcolor="#992F2A"/>
+			</rectangle>
+			<textField pattern="dd/MM/yyyy HH.mm.ss">
+				<reportElement x="106" y="40" width="148" height="10" forecolor="#FFFFFF"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="18" y="40" width="55" height="10" forecolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[© B&W 2010 - ]]></text>
+			</staticText>
+			<textField evaluationTime="Report">
+				<reportElement mode="Transparent" x="515" y="40" width="23" height="10" forecolor="#FFFFFF"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="361" y="40" width="151" height="10" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Page "+$V{PAGE_NUMBER}+" / "]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="255" y="10" width="288" height="15" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{societe}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="18" y="10" width="391" height="15" forecolor="#FFFFFF"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Liste des modes de règlement des Clients]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="75" y="40" width="28" height="11" forecolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{version}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="50" splitType="Stretch">
+			<line>
+				<reportElement x="318" y="11" width="1" height="39"/>
+			</line>
+			<line>
+				<reportElement x="377" y="11" width="1" height="39"/>
+			</line>
+			<line>
+				<reportElement x="421" y="11" width="1" height="39"/>
+			</line>
+			<staticText>
+				<reportElement x="66" y="21" width="112" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Libellé]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="320" y="21" width="55" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nb jours]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="382" y="21" width="36" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Arr.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="442" y="21" width="67" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Conditions]]></text>
+			</staticText>
+			<line>
+				<reportElement x="22" y="11" width="1" height="39"/>
+			</line>
+			<line>
+				<reportElement x="532" y="12" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="22" y="11" width="511" height="1"/>
+			</line>
+			<line>
+				<reportElement x="22" y="42" width="511" height="1"/>
+			</line>
+			<line>
+				<reportElement x="59" y="11" width="1" height="39"/>
+			</line>
+			<staticText>
+				<reportElement x="25" y="21" width="32" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Code]]></text>
+			</staticText>
+			<line>
+				<reportElement x="183" y="11" width="1" height="39"/>
+			</line>
+			<line>
+				<reportElement x="224" y="11" width="1" height="39"/>
+			</line>
+			<staticText>
+				<reportElement x="188" y="22" width="32" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[JR.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="238" y="21" width="67" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Echéances]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="16" splitType="Stretch">
+			<line>
+				<reportElement x="532" y="0" width="1" height="16"/>
+			</line>
+			<line>
+				<reportElement x="421" y="0" width="1" height="16"/>
+			</line>
+			<line>
+				<reportElement x="377" y="0" width="1" height="16"/>
+			</line>
+			<line>
+				<reportElement x="318" y="0" width="1" height="16"/>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement x="430" y="2" width="95" height="13"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{conditions}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="387" y="2" width="26" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{arrondis}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="325" y="2" width="46" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{nbjours}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="71" y="2" width="107" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{libelles}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="22" y="0" width="1" height="16"/>
+			</line>
+			<line>
+				<reportElement x="59" y="0" width="1" height="16"/>
+			</line>
+			<textField>
+				<reportElement x="27" y="2" width="28" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{categories}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="190" y="2" width="28" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{journals}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="228" y="2" width="86" height="13"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{lib_eche}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="183" y="0" width="1" height="16"/>
+			</line>
+			<line>
+				<reportElement x="224" y="0" width="1" height="16"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="19">
+			<line>
+				<reportElement x="318" y="0" width="1" height="10"/>
+			</line>
+			<line>
+				<reportElement x="532" y="0" width="1" height="10"/>
+			</line>
+			<line>
+				<reportElement x="421" y="0" width="1" height="10"/>
+			</line>
+			<line>
+				<reportElement x="377" y="0" width="1" height="10"/>
+			</line>
+			<line>
+				<reportElement x="22" y="0" width="1" height="10"/>
+			</line>
+			<line>
+				<reportElement x="22" y="10" width="511" height="1"/>
+			</line>
+			<line>
+				<reportElement x="59" y="0" width="1" height="10"/>
+			</line>
+			<line>
+				<reportElement x="183" y="0" width="1" height="10"/>
+			</line>
+			<line>
+				<reportElement x="224" y="0" width="1" height="10"/>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="25">
+			<rectangle>
+				<reportElement x="0" y="0" width="553" height="24" forecolor="#992F2A" backcolor="#992F2A"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="18" y="1" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Created by Bagwell & Watson]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="18" y="12" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.bagwell-watson.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="196" y="1" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Writen by Phoenix SaaS ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="196" y="12" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.phoenix-saas.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="373" y="1" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Support by Planet-e-pegase ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="373" y="12" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.planet-e-pegase.biz ]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

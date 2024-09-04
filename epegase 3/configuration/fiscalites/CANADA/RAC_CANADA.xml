@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fiscalite>
+
+	<racine>
+		<code>105</code>
+		<lib_FR>Compte De Banque</lib_FR>
+		<lib_UK>Bank Account</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>10</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>106</code>
+		<lib_FR>Petite Caisse</lib_FR>
+		<lib_UK>Litle Cash</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>11</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>110</code>
+		<lib_FR>Comptes Clients</lib_FR>
+		<lib_UK>Customers Accounts</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>7</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>115</code>
+		<lib_FR>Cautionnement Et Dépôts</lib_FR>
+		<lib_UK>Guarantees And Deposit</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>18</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>119</code>
+		<lib_FR>Provision Mauvaises Créances</lib_FR>
+		<lib_UK>Provisions For Bad Credits</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>120</code>
+		<lib_FR>Inventaire</lib_FR>
+		<lib_UK>Inventory</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>125</code>
+		<lib_FR>Travaux En Cours</lib_FR>
+		<lib_UK>Works In Progress</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>18</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>150</code>
+		<lib_FR>Terrains</lib_FR>
+		<lib_UK>Grounds</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>160</code>
+		<lib_FR>Mobilier</lib_FR>
+		<lib_UK>Furniture</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>161</code>
+		<lib_FR>Amortissement Cum. Mobilier</lib_FR>
+		<lib_UK>Cumulated Amortization. Furniture</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>162</code>
+		<lib_FR>Matériel Roulant</lib_FR>
+		<lib_UK>Rolling Stock</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>163</code>
+		<lib_FR>Amortissements Cum. Matériel Roulant</lib_FR>
+		<lib_UK>Cumulated Amortization. Rolling stock</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>164</code>
+		<lib_FR>Equipements</lib_FR>
+		<lib_UK>Equipments</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>165</code>
+		<lib_FR>Amortissements Cum. Equipement</lib_FR>
+		<lib_UK>Cumulated Amortization. Equipment</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>210</code>
+		<lib_FR>Comptes Fournisseurs</lib_FR>
+		<lib_UK>Suppliers Accounts</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>6</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>220</code>
+		<lib_FR>Vacances À Payer</lib_FR>
+		<lib_UK>Holidays To Pay</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>18</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>230</code>
+		<lib_FR>Impôts Fédéral À Payer</lib_FR>
+		<lib_UK>Federal Taxes To Pay</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>12</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>232</code>
+		<lib_FR>Impôt Provincial À Payer</lib_FR>
+		<lib_UK>Provincial Taxes To Pay</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>12</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>234</code>
+		<lib_FR>Assurance-Emploi À Payer</lib_FR>
+		<lib_UK>Insurance-Employment To Pay</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>12</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>236</code>
+		<lib_FR>R.R.Q. À Payer</lib_FR>
+		<lib_UK>R.R.Q. To Pay</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>12</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>238</code>
+		<lib_FR>Cotisation Fonds De Santé</lib_FR>
+		<lib_UK>Contribution Funds Of Health</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>12</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>242</code>
+		<lib_FR>Autres Déductions À Payer</lib_FR>
+		<lib_UK>Other Deductions To Pay</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>12</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>243</code>
+		<lib_FR>C.S.S.T. À Payer</lib_FR>
+		<lib_UK>C.S.S.T To Pay</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>12</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>244</code>
+		<lib_FR>Assurances Collectives</lib_FR>
+		<lib_UK>Collectives Insurances</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>12</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>245</code>
+		<lib_FR>Syndicat À Payer</lib_FR>
+		<lib_UK>Trade Union To Be Paid</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>12</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>280</code>
+		<lib_FR>T.P.S. À Payer</lib_FR>
+		<lib_UK>T.P.S To Pay</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>13</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>282</code>
+		<lib_FR>T.P.S. À Réclamer</lib_FR>
+		<lib_UK>T.P.S. To Claim</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>13</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>300</code>
+		<lib_FR>Capital Action</lib_FR>
+		<lib_UK>Capital Share</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>1</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>360</code>
+		<lib_FR>Bénéfices Non Répartis</lib_FR>
+		<lib_UK>Undivided Profits</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>2</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>400</code>
+		<lib_FR>Ventes De Marchandises</lib_FR>
+		<lib_UK>Sales Of Goods</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>410</code>
+		<lib_FR>Ventes Accessoires</lib_FR>
+		<lib_UK>Sales Of Accessories</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>414</code>
+		<lib_FR>Ventes Autres Catégories</lib_FR>
+		<lib_UK>Sales Of Other Categories</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>416</code>
+		<lib_FR>Ventes De Services</lib_FR>
+		<lib_UK>Sales Of Services</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>421</code>
+		<lib_FR>Revenus D'intérêts</lib_FR>
+		<lib_UK>Incomes Of Interests</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>422</code>
+		<lib_FR>Transport Facturé</lib_FR>
+		<lib_UK>Invoiced Transport</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>450</code>
+		<lib_FR>Escompte Sur Ventes</lib_FR>
+		<lib_UK>Discount On Sales</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>500</code>
+		<lib_FR>Achats Marchandises</lib_FR>
+		<lib_UK>Goods Purchases</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>505</code>
+		<lib_FR>Autres Achats</lib_FR>
+		<lib_UK>Other Purchases</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>520</code>
+		<lib_FR>Transport Sur Les Achats</lib_FR>
+		<lib_UK>Transport Of The Purchases</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>560</code>
+		<lib_FR>Coût Des Marchandises Vendues P&F</lib_FR>
+		<lib_UK>Cost Of The Sold Goods P&F</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>600</code>
+		<lib_FR>Dépenses Loyer</lib_FR>
+		<lib_UK>Rent Expenses</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>602</code>
+		<lib_FR>Dépenses De Bureau</lib_FR>
+		<lib_UK>Office Expenses</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>604</code>
+		<lib_FR>Dépenses De Dépalcement</lib_FR>
+		<lib_UK>Moving Expenses</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>605</code>
+		<lib_FR>Repas Et Frais De Représentation</lib_FR>
+		<lib_UK>Meals and Entertainment Expenses</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>606</code>
+		<lib_FR>Dépenses De Téléphone</lib_FR>
+		<lib_UK>Telephone Expenses</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>608</code>
+		<lib_FR>Dépenses D'électricité</lib_FR>
+		<lib_UK>Expenses Of Electricity</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>609</code>
+		<lib_FR>Dépenses De Chauffage</lib_FR>
+		<lib_UK>Heating Expenses</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>610</code>
+		<lib_FR>Réparation Et Entretien Des Bâtiments</lib_FR>
+		<lib_UK>Repairing And Building Maintenance</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>611</code>
+		<lib_FR>Réparation Et Entretien  Matériel</lib_FR>
+		<lib_UK>Répairing And Material Maintenance</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>612</code>
+		<lib_FR>Réparation Et Entretien Véhicules</lib_FR>
+		<lib_UK>Repairing And Vehicles Maintenance</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>613</code>
+		<lib_FR>Frais De Carburant</lib_FR>
+		<lib_UK>Fuel Expenses</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>614</code>
+		<lib_FR>Petit Outillage</lib_FR>
+		<lib_UK>Small Tools</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>620</code>
+		<lib_FR>Dépenses De Transport</lib_FR>
+		<lib_UK>Expenses Of Transport</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>630</code>
+		<lib_FR>Dépenses De Salaire</lib_FR>
+		<lib_UK>Expenses Of Salary</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>632</code>
+		<lib_FR>Avantages Sociaux</lib_FR>
+		<lib_UK>Social Advantages</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>643</code>
+		<lib_FR>Fournisseurs Et Sous Traitants</lib_FR>
+		<lib_UK>Suppliers And The Under Treating</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>644</code>
+		<lib_FR>Honoraires Professionnels</lib_FR>
+		<lib_UK>Professional Fees</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>645</code>
+		<lib_FR>Frais De Location</lib_FR>
+		<lib_UK>Renting Expenses</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>646</code>
+		<lib_FR>Frais D'intérêts</lib_FR>
+		<lib_UK>Expenses Of Interests</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>648</code>
+		<lib_FR>Frais De Banque</lib_FR>
+		<lib_UK>Expenses Of Bank</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>649</code>
+		<lib_FR>Taxes Sur Permis Et Licences</lib_FR>
+		<lib_UK>Taxation Of Permits And Licences</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>650</code>
+		<lib_FR>Dépenses De Publicité</lib_FR>
+		<lib_UK>Advertising Expenses</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>660</code>
+		<lib_FR>Dépenses Amortissement</lib_FR>
+		<lib_UK>Amortization Expenses</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>670</code>
+		<lib_FR>Mauvaise Créance</lib_FR>
+		<lib_UK>Bad Credit</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<util>1</util>
+	</racine>
+
+	<racine>
+		<code>680</code>
+		<lib_FR>Autres Dépenses</lib_FR>
+		<lib_UK>Other Expenses</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<util>1</util>
+	</racine>
+</fiscalite>

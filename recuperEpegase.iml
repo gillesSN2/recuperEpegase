@@ -51,6 +51,9 @@
     <orderEntry type="library" name="activation" level="project" />
   </component>
   <component name="POM File Configuration" pomFile="" />
+  <component name="SonarLintModuleSettings">
+    <option name="uniqueId" value="5f57eb52-8cff-45f3-9605-82062d1a188a" />
+  </component>
   <component name="sonarModuleSettings">
     <option name="localAnalysisScripName" value="&lt;PROJECT&gt;" />
     <option name="serverName" value="&lt;PROJECT&gt;" />

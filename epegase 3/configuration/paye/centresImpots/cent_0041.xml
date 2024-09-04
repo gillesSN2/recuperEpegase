@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<impot>
+
+	<centre>
+		<code>01</code>
+		<lib_FR>DOUALA</lib_FR>
+		<lib_UK>DOUALA</lib_UK>
+		<lib_SP>DOUALA</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>02</code>
+		<lib_FR>YAOUNDE</lib_FR>
+		<lib_UK>YAOUNDE</lib_UK>
+		<lib_SP>YAOUNDE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+</impot>

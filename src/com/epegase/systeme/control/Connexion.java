@@ -170,21 +170,21 @@ public class Connexion extends HttpServlet implements Serializable {
 
             List var3 = var10.list();
             this.utilInitHibernate.closeSession();
-            if ((var3.size() == 0 || ((UsersPeg)var3.get(0)).getUsretat() != 1 || ((UsersPeg)var3.get(0)).getStructurePeg().getStretat() != 1) && !this.var_invisible) {
-               if (var3.size() > 0 && ((UsersPeg)var3.get(0)).getUsretat() == 0) {
+            if ((var3.size() == 0 || ((UsersPeg) var3.get(0)).getUsretat() != 1 || ((UsersPeg) var3.get(0)).getStructurePeg().getStretat() != 1) && !this.var_invisible) {
+               if (var3.size() > 0 && ((UsersPeg) var3.get(0)).getUsretat() == 0) {
                   var2 = "non actif";
-               } else if (var3.size() > 0 && ((UsersPeg)var3.get(0)).getUsretat() == 2) {
+               } else if (var3.size() > 0 && ((UsersPeg) var3.get(0)).getUsretat() == 2) {
                   var2 = "bloqué sur erreur mot de passe";
-               } else if (var3.size() > 0 && ((UsersPeg)var3.get(0)).getUsretat() == 3) {
+               } else if (var3.size() > 0 && ((UsersPeg) var3.get(0)).getUsretat() == 3) {
                   var2 = "bloqué sur erreur code secret";
-               } else if (var3.size() > 0 && ((UsersPeg)var3.get(0)).getUsretat() == 4) {
+               } else if (var3.size() > 0 && ((UsersPeg) var3.get(0)).getUsretat() == 4) {
                   var2 = "réactivé par admistrateur, mais doit changer de mot de passe";
                } else {
                   var2 = "home";
                   ++this.cpte;
                }
             } else {
-               this.usersPeg = (UsersPeg)var3.get(0);
+               this.usersPeg = (UsersPeg) var3.get(0);
                this.baseData = "structure" + this.usersPeg.getStructurePeg().getStrId();
                if (this.usersPeg.getStructurePeg().getCabinetPeg() != null) {
                   this.var_id_cabinet = this.usersPeg.getStructurePeg().getCabinetPeg().getCabId();
@@ -344,7 +344,7 @@ public class Connexion extends HttpServlet implements Serializable {
                try {
                   Transaction var78 = var76.beginTransaction();
                   if (var4.size() != 0) {
-                     Users var79 = (Users)var4.get(0);
+                     Users var79 = (Users) var4.get(0);
                      this.usersLog = var79;
                      StructureDao var81 = new StructureDao(this.baseData, this.utilInitHibernate);
                      this.structureLog = var81.logStructure(var76);
@@ -383,7 +383,7 @@ public class Connexion extends HttpServlet implements Serializable {
                }
 
                if (this.structureLog != null && this.structureLog.getStrmaitrecabinet() == 1) {
-                  if (((UsersPeg)var3.get(0)).getUsrcabinet() == 1) {
+                  if (((UsersPeg) var3.get(0)).getUsrcabinet() == 1) {
                      var2 = "home";
                      ++this.cpte;
                   } else {
@@ -396,9 +396,9 @@ public class Connexion extends HttpServlet implements Serializable {
                }
             }
 
-            if (var3.size() > 0 && ((UsersPeg)var3.get(0)).getStructurePeg().getStretat() == 0) {
+            if (var3.size() > 0 && ((UsersPeg) var3.get(0)).getStructurePeg().getStretat() == 0) {
                var2 = "société bloquée";
-            } else if (var3.size() > 0 && ((UsersPeg)var3.get(0)).getStructurePeg().getStretat() == 2) {
+            } else if (var3.size() > 0 && ((UsersPeg) var3.get(0)).getStructurePeg().getStretat() == 2) {
                var2 = "société cloturée";
             }
          } else {
@@ -547,4 +547,5 @@ public class Connexion extends HttpServlet implements Serializable {
    public void setVar_invisible(boolean var1) {
       this.var_invisible = var1;
    }
+
 }

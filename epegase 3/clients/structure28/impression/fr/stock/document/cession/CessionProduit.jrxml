@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Cession" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isFloatColumnFooter="true" whenResourceMissingType="Error">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="96"/>
+	<parameter name="requete" class="java.lang.String"/>
+	<parameter name="societe" class="java.lang.String"/>
+	<parameter name="version" class="java.lang.String"/>
+	<parameter name="adresse" class="java.lang.String"/>
+	<parameter name="ville" class="java.lang.String"/>
+	<parameter name="pays" class="java.lang.String"/>
+	<parameter name="logo_1" class="java.lang.String"/>
+	<parameter name="logo_2" class="java.lang.String"/>
+	<parameter name="logo_4" class="java.lang.String"/>
+	<parameter name="telephone_1" class="java.lang.String"/>
+	<parameter name="telephone_2" class="java.lang.String"/>
+	<parameter name="fax" class="java.lang.String"/>
+	<parameter name="site_web" class="java.lang.String"/>
+	<parameter name="mails" class="java.lang.String"/>
+	<parameter name="identification_1" class="java.lang.String"/>
+	<parameter name="identification_2" class="java.lang.String"/>
+	<parameter name="identification_3" class="java.lang.String"/>
+	<parameter name="identification_4" class="java.lang.String"/>
+	<parameter name="identification_5" class="java.lang.String"/>
+	<parameter name="identification_6" class="java.lang.String"/>
+	<parameter name="identification_7" class="java.lang.String"/>
+	<parameter name="identification_8" class="java.lang.String"/>
+	<parameter name="identification_9" class="java.lang.String"/>
+	<parameter name="identification_10" class="java.lang.String"/>
+	<parameter name="banque" class="java.lang.String"/>
+	<parameter name="montant_lettre" class="java.lang.String"/>
+	<parameter name="filtre" class="java.lang.String"/>
+	<parameter name="entete" class="java.lang.String"/>
+	<queryString language="xPath">
+		<![CDATA[]]>
+	</queryString>
+	<field name="cesligCasierDestination" class="java.lang.String">
+		<fieldDescription><![CDATA[cesligCasierDestination]]></fieldDescription>
+	</field>
+	<field name="cesligCasierOrigine" class="java.lang.String">
+		<fieldDescription><![CDATA[cesligCasierOrigine]]></fieldDescription>
+	</field>
+	<field name="cesligCode" class="java.lang.String">
+		<fieldDescription><![CDATA[cesligCode]]></fieldDescription>
+	</field>
+	<field name="cesligCondition" class="java.lang.String">
+		<fieldDescription><![CDATA[cesligCondition]]></fieldDescription>
+	</field>
+	<field name="cesligDiam" class="java.lang.Float">
+		<fieldDescription><![CDATA[cesligDiam]]></fieldDescription>
+	</field>
+	<field name="cesligFamille" class="java.lang.String">
+		<fieldDescription><![CDATA[cesligFamille]]></fieldDescription>
+	</field>
+	<field name="cesligHaut" class="java.lang.Float">
+		<fieldDescription><![CDATA[cesligHaut]]></fieldDescription>
+	</field>
+	<field name="cesligId" class="java.lang.Long">
+		<fieldDescription><![CDATA[cesligId]]></fieldDescription>
+	</field>
+	<field name="cesligLarg" class="java.lang.Float">
+		<fieldDescription><![CDATA[cesligLarg]]></fieldDescription>
+	</field>
+	<field name="cesligLibelle" class="java.lang.String">
+		<fieldDescription><![CDATA[cesligLibelle]]></fieldDescription>
+	</field>
+	<field name="cesligLong" class="java.lang.Float">
+		<fieldDescription><![CDATA[cesligLong]]></fieldDescription>
+	</field>
+	<field name="cesligNb" class="java.lang.Float">
+		<fieldDescription><![CDATA[cesligNb]]></fieldDescription>
+	</field>
+	<field name="cesligObs" class="java.lang.String">
+		<fieldDescription><![CDATA[cesligObs]]></fieldDescription>
+	</field>
+	<field name="cesligPoidsBrut" class="java.lang.Float">
+		<fieldDescription><![CDATA[cesligPoidsBrut]]></fieldDescription>
+	</field>
+	<field name="cesligPoidsNet" class="java.lang.Float">
+		<fieldDescription><![CDATA[cesligPoidsNet]]></fieldDescription>
+	</field>
+	<field name="cesligPump" class="java.lang.Double">
+		<fieldDescription><![CDATA[cesligPump]]></fieldDescription>
+	</field>
+	<field name="cesligQte" class="java.lang.Float">
+		<fieldDescription><![CDATA[cesligQte]]></fieldDescription>
+	</field>
+	<field name="cesligQteStock" class="java.lang.Float">
+		<fieldDescription><![CDATA[cesligQteStock]]></fieldDescription>
+	</field>
+	<field name="cesligQteUtil" class="java.lang.Float">
+		<fieldDescription><![CDATA[cesligQteUtil]]></fieldDescription>
+	</field>
+	<field name="cesligReference" class="java.lang.String">
+		<fieldDescription><![CDATA[cesligReference]]></fieldDescription>
+	</field>
+	<field name="cesligStock" class="java.lang.Integer">
+		<fieldDescription><![CDATA[cesligStock]]></fieldDescription>
+	</field>
+	<field name="cesligTotal" class="java.lang.Double">
+		<fieldDescription><![CDATA[cesligTotal]]></fieldDescription>
+	</field>
+	<field name="cesligUnite" class="java.lang.String">
+		<fieldDescription><![CDATA[cesligUnite]]></fieldDescription>
+	</field>
+	<field name="cesligVolume" class="java.lang.Float">
+		<fieldDescription><![CDATA[cesligVolume]]></fieldDescription>
+	</field>
+	<field name="cesActivite" class="java.lang.String">
+		<fieldDescription><![CDATA[cessionEntete.cesActivite]]></fieldDescription>
+	</field>
+	<field name="cesAnal2" class="java.lang.String">
+		<fieldDescription><![CDATA[cessionEntete.cesAnal2]]></fieldDescription>
+	</field>
+	<field name="cesAnal4" class="java.lang.String">
+		<fieldDescription><![CDATA[cessionEntete.cesAnal4]]></fieldDescription>
+	</field>
+	<field name="cesDate" class="java.util.Date">
+		<fieldDescription><![CDATA[cessionEntete.cesDate]]></fieldDescription>
+	</field>
+	<field name="cesDateAnnule" class="java.util.Date">
+		<fieldDescription><![CDATA[cessionEntete.cesDateAnnule]]></fieldDescription>
+	</field>
+	<field name="cesDateCreat" class="java.util.Date">
+		<fieldDescription><![CDATA[cessionEntete.cesDateCreat]]></fieldDescription>
+	</field>
+	<field name="cesDateImp" class="java.util.Date">
+		<fieldDescription><![CDATA[cessionEntete.cesDateImp]]></fieldDescription>
+	</field>
+	<field name="cesDateModif" class="java.util.Date">
+		<fieldDescription><![CDATA[cessionEntete.cesDateModif]]></fieldDescription>
+	</field>
+	<field name="cesDateValide" class="java.util.Date">
+		<fieldDescription><![CDATA[cessionEntete.cesDateValide]]></fieldDescription>
+	</field>
+	<field name="cesDepartement" class="java.lang.String">
+		<fieldDescription><![CDATA[cessionEntete.cesDepartement]]></fieldDescription>
+	</field>
+	<field name="cesDepotDestination" class="java.lang.String">
+		<fieldDescription><![CDATA[cessionEntete.cesDepotDestination]]></fieldDescription>
+	</field>
+	<field name="cesDepotOrigine" class="java.lang.String">
+		<fieldDescription><![CDATA[cessionEntete.cesDepotOrigine]]></fieldDescription>
+	</field>
+	<field name="cesEtat" class="java.lang.Integer">
+		<fieldDescription><![CDATA[cessionEntete.cesEtat]]></fieldDescription>
+	</field>
+	<field name="cesEtatVal" class="java.lang.Integer">
+		<fieldDescription><![CDATA[cessionEntete.cesEtatVal]]></fieldDescription>
+	</field>
+	<field name="cesGele" class="java.lang.Integer">
+		<fieldDescription><![CDATA[cessionEntete.cesGele]]></fieldDescription>
+	</field>
+	<field name="cesId" class="java.lang.Long">
+		<fieldDescription><![CDATA[cessionEntete.cesId]]></fieldDescription>
+	</field>
+	<field name="cesIdCreateur" class="java.lang.Long">
+		<fieldDescription><![CDATA[cessionEntete.cesIdCreateur]]></fieldDescription>
+	</field>
+	<field name="cesIdModif" class="java.lang.Long">
+		<fieldDescription><![CDATA[cessionEntete.cesIdModif]]></fieldDescription>
+	</field>
+	<field name="cesIdResponsable" class="java.lang.Long">
+		<fieldDescription><![CDATA[cessionEntete.cesIdResponsable]]></fieldDescription>
+	</field>
+	<field name="cesInfo1" class="java.lang.String">
+		<fieldDescription><![CDATA[cessionEntete.cesInfo1]]></fieldDescription>
+	</field>
+	<field name="cesInfo10" class="java.lang.String">
+		<fieldDescription><![CDATA[cessionEntete.cesInfo10]]></fieldDescription>
+	</field>
+	<field name="cesInfo2" class="java.lang.String">
+		<fieldDescription><![CDATA[cessionEntete.cesInfo2]]></fieldDescription>
+	</field>
+	<field name="cesInfo3" class="java.lang.String">
+		<fieldDescription><![CDATA[cessionEntete.cesInfo3]]></fieldDescription>
+	</field>
+	<field name="cesInfo4" class="java.lang.String">
+		<fieldDescription><![CDATA[cessionEntete.cesInfo4]]></fieldDescription>
+	</field>
+	<field name="cesInfo5" class="java.lang.String">
+		<fieldDescription><![CDATA[cessionEntete.cesInfo5]]></fieldDescription>
+	</field>
+	<field name="cesInfo6" class="java.lang.String">
+		<fieldDescription><![CDATA[cessionEntete.cesInfo6]]></fieldDescription>
+	</field>
+	<field name="cesInfo7" class="java.lang.String">
+		<fieldDescription><![CDATA[cessionEntete.cesInfo7]]></fieldDescription>
+	</field>
+	<field name="cesInfo8" class="java.lang.String">
+		<fieldDescription><![CDATA[cessionEntete.cesInfo8]]></fieldDescription>
+	</field>
+	<field name="cesInfo9" class="java.lang.String">
+		<fieldDescription><![CDATA[cessionEntete.cesInfo9]]></fieldDescription>
+	</field>
+	<field name="cesModeleImp" class="java.lang.String">
+		<fieldDescription><![CDATA[cessionEntete.cesModeleImp]]></fieldDescription>
+	</field>
+	<field name="cesMotifAnnule" class="java.lang.String">
+		<fieldDescription><![CDATA[cessionEntete.cesMotifAnnule]]></fieldDescription>
+	</field>
+	<field name="cesNomCreateur" class="java.lang.String">
+		<fieldDescription><![CDATA[cessionEntete.cesNomCreateur]]></fieldDescription>
+	</field>
+	<field name="cesNomModif" class="java.lang.String">
+		<fieldDescription><![CDATA[cessionEntete.cesNomModif]]></fieldDescription>
+	</field>
+	<field name="cesNomResponsable" class="java.lang.String">
+		<fieldDescription><![CDATA[cessionEntete.cesNomResponsable]]></fieldDescription>
+	</field>
+	<field name="cesNum" class="java.lang.String">
+		<fieldDescription><![CDATA[cessionEntete.cesNum]]></fieldDescription>
+	</field>
+	<field name="cesObject" class="java.lang.String">
+		<fieldDescription><![CDATA[cessionEntete.cesObject]]></fieldDescription>
+	</field>
+	<field name="cesPdv" class="java.lang.String">
+		<fieldDescription><![CDATA[cessionEntete.cesPdv]]></fieldDescription>
+	</field>
+	<field name="cesRegion" class="java.lang.String">
+		<fieldDescription><![CDATA[cessionEntete.cesRegion]]></fieldDescription>
+	</field>
+	<field name="cesSecteur" class="java.lang.String">
+		<fieldDescription><![CDATA[cessionEntete.cesSecteur]]></fieldDescription>
+	</field>
+	<field name="cesSerie" class="java.lang.String">
+		<fieldDescription><![CDATA[cessionEntete.cesSerie]]></fieldDescription>
+	</field>
+	<field name="cesService" class="java.lang.String">
+		<fieldDescription><![CDATA[cessionEntete.cesService]]></fieldDescription>
+	</field>
+	<field name="cesSite" class="java.lang.String">
+		<fieldDescription><![CDATA[cessionEntete.cesSite]]></fieldDescription>
+	</field>
+	<field name="cesTotPump" class="java.lang.Double">
+		<fieldDescription><![CDATA[cessionEntete.cesTotPump]]></fieldDescription>
+	</field>
+	<sortField name="cesligCode"/>
+	<variable name="etat" class="java.lang.String">
+		<variableExpression><![CDATA[( $F{cesEtat}==0 ? "En cours"
+    : ( $F{cesEtat}==1 ? "Validé"
+        : ($F{cesEtat}==2 ? "Gelé"
+            : ($F{cesEtat}==3 ? "Annulé" : "???" ) ) ) )]]></variableExpression>
+	</variable>
+	<variable name="totPump" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[$F{cesTotPump}]]></variableExpression>
+	</variable>
+	<title>
+		<band height="89" splitType="Stretch">
+			<rectangle>
+				<reportElement x="1" y="1" width="800" height="36" forecolor="#000000" backcolor="#000000"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="1" y="37" width="800" height="51" forecolor="#999999" backcolor="#999999"/>
+			</rectangle>
+			<textField>
+				<reportElement x="25" y="41" width="751" height="20" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{filtre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="25" y="64" width="751" height="20" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{societe}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="25" y="6" width="751" height="24" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans" size="18"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{entete}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="98" splitType="Stretch">
+			<textField pattern="d/M/yyyy" isBlankWhenNull="true">
+				<reportElement x="206" y="36" width="68" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{cesDate}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="36" width="81" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cession N°:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="96" y="36" width="69" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cesNum}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="21" y="54" width="61" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Suivi par :]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="96" y="54" width="178" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cesNomResponsable}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="167" y="36" width="34" height="18"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="21" y="74" width="61" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Objet :]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="96" y="74" width="455" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cesObject}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="558" y="75" width="61" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Activité :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="558" y="54" width="61" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Service :]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="638" y="75" width="147" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cesActivite}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="638" y="55" width="147" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cesService}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="276" y="36" width="75" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Origine :]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="365" y="36" width="178" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cesDepotOrigine}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="558" y="36" width="61" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Etat :]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="638" y="36" width="147" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{etat}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="1" y="1" width="800" height="27" forecolor="#992F2A" backcolor="#992F2A"/>
+			</rectangle>
+			<textField evaluationTime="Report">
+				<reportElement x="757" y="9" width="23" height="11" forecolor="#FFFFFF"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="603" y="9" width="151" height="11" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Page "+$V{PAGE_NUMBER}+" / "]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy HH.mm.ss">
+				<reportElement x="108" y="9" width="151" height="11" forecolor="#FFFFFF"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="77" y="9" width="28" height="11" forecolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{version}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="20" y="9" width="55" height="11" forecolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[© B&W 2010 -]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="365" y="54" width="178" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cesDepotDestination}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="277" y="54" width="74" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Destination :]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="62" splitType="Stretch">
+			<staticText>
+				<reportElement x="15" y="32" width="94" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Code]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="224" y="32" width="206" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Libellé produit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="487" y="32" width="38" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Unité]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="443" y="32" width="31" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Qte.]]></text>
+			</staticText>
+			<line>
+				<reportElement x="12" y="24" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="218" y="24" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="434" y="24" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="477" y="24" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="529" y="24" width="1" height="38"/>
+			</line>
+			<staticText>
+				<reportElement x="538" y="32" width="53" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Casier]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="605" y="32" width="67" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Prix Total]]></text>
+			</staticText>
+			<line>
+				<reportElement x="601" y="24" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="784" y="24" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="12" y="24" width="772" height="1"/>
+			</line>
+			<line>
+				<reportElement x="12" y="55" width="772" height="1"/>
+			</line>
+			<line>
+				<reportElement x="676" y="24" width="1" height="38"/>
+			</line>
+			<staticText>
+				<reportElement x="681" y="32" width="98" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Observations]]></text>
+			</staticText>
+			<line>
+				<reportElement x="112" y="24" width="1" height="38"/>
+			</line>
+			<staticText>
+				<reportElement x="118" y="32" width="94" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Référence]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="15" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement x="18" y="2" width="89" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cesligCode}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="226" y="2" width="200" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cesligLibelle}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="485" y="2" width="38" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cesligUnite}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="441" y="2" width="31" height="11">
+					<printWhenExpression><![CDATA[$F{cesligQteUtil}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{cesligQteUtil}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="12" y="0" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="218" y="0" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="434" y="0" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="477" y="0" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="529" y="0" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="601" y="0" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="784" y="0" width="1" height="15"/>
+			</line>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="539" y="2" width="52" height="11"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cesligCasierOrigine}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="609" y="2" width="61" height="11">
+					<printWhenExpression><![CDATA[$F{cesligTotal}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{cesligTotal}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="676" y="0" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="112" y="0" width="1" height="15"/>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement x="121" y="2" width="89" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cesligReference}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="683" y="2" width="96" height="11"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cesligObs}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="50">
+			<line>
+				<reportElement x="13" y="29" width="772" height="1"/>
+			</line>
+			<textField evaluationTime="Page" pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="609" y="13" width="63" height="11">
+					<printWhenExpression><![CDATA[$V{totPump}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{totPump}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="492" y="12" width="104" height="15"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total PUMP]]></text>
+			</staticText>
+			<line>
+				<reportElement x="218" y="0" width="1" height="10"/>
+			</line>
+			<line>
+				<reportElement x="12" y="0" width="1" height="29"/>
+			</line>
+			<line>
+				<reportElement x="12" y="9" width="772" height="1"/>
+			</line>
+			<line>
+				<reportElement x="434" y="0" width="1" height="10"/>
+			</line>
+			<line>
+				<reportElement x="477" y="0" width="1" height="29"/>
+			</line>
+			<line>
+				<reportElement x="529" y="0" width="1" height="10"/>
+			</line>
+			<line>
+				<reportElement x="601" y="0" width="1" height="29"/>
+			</line>
+			<line>
+				<reportElement x="784" y="0" width="1" height="29"/>
+			</line>
+			<line>
+				<reportElement x="676" y="0" width="1" height="29"/>
+			</line>
+			<line>
+				<reportElement x="112" y="0" width="1" height="10"/>
+			</line>
+		</band>
+	</columnFooter>
+	<lastPageFooter>
+		<band height="25">
+			<rectangle>
+				<reportElement x="1" y="0" width="800" height="24" forecolor="#992F2A" backcolor="#992F2A"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="611" y="12" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Right">
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.planet-e-pegase.biz ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="611" y="1" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Right">
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Support by Planet-e-pegase ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="308" y="1" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Writen by Phoenix SaaS ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="1" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement>
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Created by Bagwell & Watson]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="12" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement>
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.bagwell-watson.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="308" y="12" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.phoenix-saas.com]]></text>
+			</staticText>
+		</band>
+	</lastPageFooter>
+</jasperReport>

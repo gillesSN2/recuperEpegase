@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grille_convent>
+
+	<grille>
+		<code>1</code>
+		<lib_FR>EMPLOYE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<val_mois>68107</val_mois>
+		<val_heure>0.000</val_heure>
+		<niveau></niveau>
+		<rendement>0.0</rendement>
+		<responsabilite>0.0</responsabilite>
+		<fonction>0.0</fonction>
+		<caisse>0.0</caisse>
+		<transport>0.0</transport>
+		<telephone>0.0</telephone>
+		<logement>0.0</logement>
+		<eau>0.0</eau>
+		<electricite>0.0</electricite>
+	</grille>
+
+	<grille>
+		<code>2</code>
+		<lib_FR>EMPLOYES</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<val_mois>79625</val_mois>
+		<val_heure>0.000</val_heure>
+		<niveau></niveau>
+		<rendement>0.0</rendement>
+		<responsabilite>0.0</responsabilite>
+		<fonction>0.0</fonction>
+		<caisse>0.0</caisse>
+		<transport>0.0</transport>
+		<telephone>0.0</telephone>
+		<logement>0.0</logement>
+		<eau>0.0</eau>
+		<electricite>0.0</electricite>
+	</grille>
+
+	<grille>
+		<code>3</code>
+		<lib_FR>EMPLOYES</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<val_mois>84621</val_mois>
+		<val_heure>0.000</val_heure>
+		<niveau></niveau>
+		<rendement>0.0</rendement>
+		<responsabilite>0.0</responsabilite>
+		<fonction>0.0</fonction>
+		<caisse>0.0</caisse>
+		<transport>0.0</transport>
+		<telephone>0.0</telephone>
+		<logement>0.0</logement>
+		<eau>0.0</eau>
+		<electricite>0.0</electricite>
+	</grille>
+
+	<grille>
+		<code>4</code>
+		<lib_FR>EMPLOYES</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<val_mois>88777</val_mois>
+		<val_heure>0.000</val_heure>
+		<niveau></niveau>
+		<rendement>0.0</rendement>
+		<responsabilite>0.0</responsabilite>
+		<fonction>0.0</fonction>
+		<caisse>0.0</caisse>
+		<transport>0.0</transport>
+		<telephone>0.0</telephone>
+		<logement>0.0</logement>
+		<eau>0.0</eau>
+		<electricite>0.0</electricite>
+	</grille>
+
+	<grille>
+		<code>1ERE</code>
+		<lib_FR>EMPLOYES RESPONSABILITES</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<val_mois>68948</val_mois>
+		<val_heure>0.000</val_heure>
+		<niveau></niveau>
+		<rendement>0.0</rendement>
+		<responsabilite>0.0</responsabilite>
+		<fonction>0.0</fonction>
+		<caisse>0.0</caisse>
+		<transport>0.0</transport>
+		<telephone>0.0</telephone>
+		<logement>0.0</logement>
+		<eau>0.0</eau>
+		<electricite>0.0</electricite>
+	</grille>
+
+	<grille>
+		<code>2EME</code>
+		<lib_FR>EMPLOYES RESPONSABILITES</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<val_mois>77403</val_mois>
+		<val_heure>0.000</val_heure>
+		<niveau></niveau>
+		<rendement>0.0</rendement>
+		<responsabilite>0.0</responsabilite>
+		<fonction>0.0</fonction>
+		<caisse>0.0</caisse>
+		<transport>0.0</transport>
+		<telephone>0.0</telephone>
+		<logement>0.0</logement>
+		<eau>0.0</eau>
+		<electricite>0.0</electricite>
+	</grille>
+
+	<grille>
+		<code>3EME</code>
+		<lib_FR>EMPLOYES RESPONSABILITES</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<val_mois>89146</val_mois>
+		<val_heure>0.000</val_heure>
+		<niveau></niveau>
+		<rendement>0.0</rendement>
+		<responsabilite>0.0</responsabilite>
+		<fonction>0.0</fonction>
+		<caisse>0.0</caisse>
+		<transport>0.0</transport>
+		<telephone>0.0</telephone>
+		<logement>0.0</logement>
+		<eau>0.0</eau>
+		<electricite>0.0</electricite>
+	</grille>
+
+	<grille>
+		<code>4EME</code>
+		<lib_FR>EMPLOYES RESPONSABILITES</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<val_mois>100691</val_mois>
+		<val_heure>0.000</val_heure>
+		<niveau></niveau>
+		<rendement>0.0</rendement>
+		<responsabilite>0.0</responsabilite>
+		<fonction>0.0</fonction>
+		<caisse>0.0</caisse>
+		<transport>0.0</transport>
+		<telephone>0.0</telephone>
+		<logement>0.0</logement>
+		<eau>0.0</eau>
+		<electricite>0.0</electricite>
+	</grille>
+
+	<grille>
+		<code>5EME</code>
+		<lib_FR>EMPLOYES RESPONSABILITES</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<val_mois>103938</val_mois>
+		<val_heure>0.000</val_heure>
+		<niveau></niveau>
+		<rendement>0.0</rendement>
+		<responsabilite>0.0</responsabilite>
+		<fonction>0.0</fonction>
+		<caisse>0.0</caisse>
+		<transport>0.0</transport>
+		<telephone>0.0</telephone>
+		<logement>0.0</logement>
+		<eau>0.0</eau>
+		<electricite>0.0</electricite>
+	</grille>
+
+	<grille>
+		<code>6EME</code>
+		<lib_FR>EMPLOYES RESPONSABILITES</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<val_mois>124226</val_mois>
+		<val_heure>0.000</val_heure>
+		<niveau></niveau>
+		<rendement>0.0</rendement>
+		<responsabilite>0.0</responsabilite>
+		<fonction>0.0</fonction>
+		<caisse>0.0</caisse>
+		<transport>0.0</transport>
+		<telephone>0.0</telephone>
+		<logement>0.0</logement>
+		<eau>0.0</eau>
+		<electricite>0.0</electricite>
+	</grille>
+</grille_convent>

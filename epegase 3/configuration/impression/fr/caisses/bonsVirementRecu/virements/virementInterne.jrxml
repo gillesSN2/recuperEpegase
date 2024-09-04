@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="recu" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isFloatColumnFooter="true">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="432"/>
+	<style name="ST1" isDefault="true" pattern="">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($V{format_devise}==0)]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" markup="none" pattern="#,##0.00"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($V{format_devise}==1)]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.00"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($V{format_devise}==2)]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0" isItalic="false"/>
+		</conditionalStyle>
+	</style>
+	<parameter name="filtre" class="java.lang.String"/>
+	<parameter name="entete" class="java.lang.String"/>
+	<parameter name="requete" class="java.lang.String"/>
+	<parameter name="societe" class="java.lang.String"/>
+	<parameter name="version" class="java.lang.String"/>
+	<parameter name="adresse" class="java.lang.String"/>
+	<parameter name="ville" class="java.lang.String"/>
+	<parameter name="pays" class="java.lang.String"/>
+	<parameter name="logo_1" class="java.lang.String"/>
+	<parameter name="logo_2" class="java.lang.String"/>
+	<parameter name="logo_4" class="java.lang.String"/>
+	<parameter name="telephone_1" class="java.lang.String"/>
+	<parameter name="telephone_2" class="java.lang.String"/>
+	<parameter name="fax" class="java.lang.String"/>
+	<parameter name="site_web" class="java.lang.String"/>
+	<parameter name="mails" class="java.lang.String"/>
+	<parameter name="identification_1" class="java.lang.String"/>
+	<parameter name="identification_2" class="java.lang.String"/>
+	<parameter name="identification_3" class="java.lang.String"/>
+	<parameter name="identification_4" class="java.lang.String"/>
+	<parameter name="identification_5" class="java.lang.String"/>
+	<parameter name="identification_6" class="java.lang.String"/>
+	<parameter name="identification_7" class="java.lang.String"/>
+	<parameter name="identification_8" class="java.lang.String"/>
+	<parameter name="identification_9" class="java.lang.String"/>
+	<parameter name="identification_10" class="java.lang.String"/>
+	<parameter name="banque" class="java.lang.String"/>
+	<parameter name="montant_lettre" class="java.lang.String"/>
+	<parameter name="signe_signature" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT
+     cai_virement_interne.`vir_id` AS cai_virement_interne_vir_id,
+     cai_virement_interne.`vir_cle` AS cai_virement_interne_vir_cle,
+     cai_virement_interne.`vir_date_creat` AS cai_virement_interne_vir_date_creat,
+     cai_virement_interne.`vir_user_creat` AS cai_virement_interne_vir_user_creat,
+     cai_virement_interne.`vir_date_modif` AS cai_virement_interne_vir_date_modif,
+     cai_virement_interne.`vir_user_modif` AS cai_virement_interne_vir_user_modif,
+     cai_virement_interne.`vir_nature` AS cai_virement_interne_vir_nature,
+     cai_virement_interne.`vir_num` AS cai_virement_interne_vir_num,
+     cai_virement_interne.`vir_date` AS cai_virement_interne_vir_date,
+     cai_virement_interne.`vir_nom_responsable` AS cai_virement_interne_vir_nom_responsable,
+     cai_virement_interne.`vir_cod_emetrice` AS cai_virement_interne_vir_cod_emetrice,
+     cai_virement_interne.`vir_nom_emetrice` AS cai_virement_interne_vir_nom_emetrice,
+     cai_virement_interne.`vir_cod_receptrice` AS cai_virement_interne_vir_cod_receptrice,
+     cai_virement_interne.`vir_nom_receptrice` AS cai_virement_interne_vir_nom_receptrice,
+     cai_virement_interne.`vir_serie` AS cai_virement_interne_vir_serie,
+     cai_virement_interne.`vir_libelle` AS cai_virement_interne_vir_libelle,
+     cai_virement_interne.`vir_devise` AS cai_virement_interne_vir_devise,
+     cai_virement_interne.`vir_montant` AS cai_virement_interne_vir_montant,
+     cai_virement_interne.`vir_type_reg` AS cai_virement_interne_vir_type_reg,
+     cai_virement_interne.`VirEtat` AS cai_virement_interne_VirEtat,
+     cai_virement_interne.`vir_date_valeur` AS cai_virement_interne_vir_date_valeur,
+     cai_virement_interne.`vir_actif` AS cai_virement_interne_vir_actif,
+     cai_virement_interne.`vir_code_caiss` AS cai_virement_interne_vir_code_caiss,
+     cai_virement_interne.`vir_lib_caiss` AS cai_virement_interne_vir_lib_caiss,
+     cai_virement_interne.`vir_activite` AS cai_virement_interne_vir_activite,
+     cai_virement_interne.`vir_site` AS cai_virement_interne_vir_site,
+     cai_virement_interne.`vir_departement` AS cai_virement_interne_vir_departement,
+     cai_virement_interne.`vir_service` AS cai_virement_interne_vir_service,
+     cai_virement_interne.`vir_region` AS cai_virement_interne_vir_region,
+     cai_virement_interne.`vir_secteur` AS cai_virement_interne_vir_secteur,
+     cai_virement_interne.`vir_pdv` AS cai_virement_interne_vir_pdv,
+     cai_virement_interne.`vir_budget` AS cai_virement_interne_vir_budget,
+     cai_virement_interne.`execai_id` AS cai_virement_interne_execai_id
+FROM
+     `cai_virement_interne` cai_virement_interne
+WHERE
+    $P!{requete}]]>
+	</queryString>
+	<field name="cai_virement_interne_vir_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cai_virement_interne_vir_cle" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cai_virement_interne_vir_date_creat" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cai_virement_interne_vir_user_creat" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cai_virement_interne_vir_date_modif" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cai_virement_interne_vir_user_modif" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cai_virement_interne_vir_nature" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cai_virement_interne_vir_num" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cai_virement_interne_vir_date" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cai_virement_interne_vir_nom_responsable" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cai_virement_interne_vir_cod_emetrice" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cai_virement_interne_vir_nom_emetrice" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cai_virement_interne_vir_cod_receptrice" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cai_virement_interne_vir_nom_receptrice" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cai_virement_interne_vir_serie" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cai_virement_interne_vir_libelle" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cai_virement_interne_vir_devise" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cai_virement_interne_vir_montant" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cai_virement_interne_vir_type_reg" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cai_virement_interne_VirEtat" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cai_virement_interne_vir_date_valeur" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cai_virement_interne_vir_actif" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cai_virement_interne_vir_code_caiss" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cai_virement_interne_vir_lib_caiss" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cai_virement_interne_vir_activite" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cai_virement_interne_vir_site" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cai_virement_interne_vir_departement" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cai_virement_interne_vir_service" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cai_virement_interne_vir_region" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cai_virement_interne_vir_secteur" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cai_virement_interne_vir_pdv" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cai_virement_interne_vir_budget" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cai_virement_interne_execai_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="date_jour" class="java.util.Date">
+		<variableExpression><![CDATA[new java.util.Date()]]></variableExpression>
+	</variable>
+	<variable name="format_devise" class="java.lang.Integer">
+		<variableExpression><![CDATA[( ($F{cai_virement_interne_vir_devise}.equalsIgnoreCase("XOF")||$F{cai_virement_interne_vir_devise}.equalsIgnoreCase("XAF")) ? 2
+    : ( $F{cai_virement_interne_vir_devise}.equalsIgnoreCase("EUR") ? 1 : 0 ) )]]></variableExpression>
+	</variable>
+	<detail>
+		<band height="802" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="772" width="553" height="24" forecolor="#992F2A" backcolor="#992F2A"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="18" y="773" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Created by Bagwell & Watson]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="18" y="784" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.bagwell-watson.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="196" y="773" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Writen by Phoenix SaaS ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="196" y="784" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.phoenix-saas.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="784" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.planet-e-pegase.biz ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="773" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Support by Planet-e-pegase ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="16" y="396" width="529" height="1"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<rectangle>
+				<reportElement x="0" y="350" width="553" height="24" forecolor="#992F2A" backcolor="#992F2A"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="196" y="351" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Writen by Phoenix SaaS ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="196" y="362" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.phoenix-saas.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="18" y="362" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.bagwell-watson.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="18" y="351" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Created by Bagwell & Watson]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="362" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.planet-e-pegase.biz ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="351" width="160" height="12" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Support by Planet-e-pegase ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="19" y="21" width="521" height="28"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{societe}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="41" y="85" width="100" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<text><![CDATA[Reçu N°:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="166" y="85" width="167" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cai_virement_interne_vir_num}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="41" y="114" width="118" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<text><![CDATA[Montant transmit:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="ST1" x="166" y="114" width="167" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{cai_virement_interne_vir_montant}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="166" y="172" width="371" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cai_virement_interne_vir_nom_emetrice}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="41" y="172" width="100" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<text><![CDATA[Emetteur:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="41" y="216" width="100" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<text><![CDATA[Objet reçu:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="166" y="216" width="371" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cai_virement_interne_vir_libelle}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="40" y="239" width="100" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<text><![CDATA[Nom Caissier:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="165" y="239" width="371" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cai_virement_interne_vir_nom_responsable}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="165" y="142" width="371" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{montant_lettre}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="379" y="85" width="42" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<text><![CDATA[Date:]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="435" y="85" width="96" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{cai_virement_interne_vir_date}]]></textFieldExpression>
+			</textField>
+			<textField pattern="">
+				<reportElement x="435" y="114" width="96" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cai_virement_interne_vir_devise}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="379" y="114" width="51" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<text><![CDATA[Devise:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="38" y="266" width="219" height="76"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="293" y="266" width="219" height="76"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="44" y="272" width="130" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<text><![CDATA[Signature caissier]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="361" y="272" width="144" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<text><![CDATA[Signature bénéficiaire]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="19" y="417" width="521" height="28"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{societe}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="38" y="662" width="219" height="76"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="293" y="662" width="219" height="76"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="44" y="668" width="130" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<text><![CDATA[Signature caissier]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="361" y="668" width="144" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<text><![CDATA[Signature bénéficiaire]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="199" y="51" width="161" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<text><![CDATA[Virement interne]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="166" y="194" width="371" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cai_virement_interne_vir_nom_receptrice}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="41" y="194" width="100" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<text><![CDATA[Récepteur:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="199" y="449" width="161" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<text><![CDATA[Virement interne]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="41" y="592" width="100" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<text><![CDATA[Récepteur:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="166" y="614" width="371" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cai_virement_interne_vir_libelle}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="165" y="637" width="371" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cai_virement_interne_vir_nom_responsable}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="165" y="540" width="371" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{montant_lettre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="166" y="570" width="371" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cai_virement_interne_vir_nom_emetrice}]]></textFieldExpression>
+			</textField>
+			<textField pattern="">
+				<reportElement x="435" y="512" width="96" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cai_virement_interne_vir_devise}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="166" y="483" width="167" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cai_virement_interne_vir_num}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="41" y="570" width="100" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<text><![CDATA[Emetteur:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="637" width="100" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<text><![CDATA[Nom Caissier:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="41" y="512" width="118" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<text><![CDATA[Montant transmit:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="41" y="483" width="100" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<text><![CDATA[Reçu N°:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="41" y="614" width="100" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<text><![CDATA[Objet reçu:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="ST1" x="166" y="512" width="167" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{cai_virement_interne_vir_montant}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="435" y="483" width="96" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{cai_virement_interne_vir_date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="166" y="592" width="371" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cai_virement_interne_vir_nom_receptrice}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="379" y="483" width="42" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<text><![CDATA[Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="379" y="512" width="51" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<text><![CDATA[Devise:]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

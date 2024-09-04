@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<M60100>
+
+    <lignemenu>
+        <libelle_FR>Gestion des Produits</libelle_FR>
+        <libelle_UK></libelle_UK>
+        <libelle_SP></libelle_SP>
+        <pagemenu></pagemenu>
+        <commande>60100:01</commande>
+        <type></type>
+        <genre></genre>
+        <acc>true</acc>
+        <add>true</add>
+        <dup>true</dup>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+        <clo>true</clo>
+        <trf>true</trf>
+    </lignemenu>
+
+    <lignemenu>
+        <libelle_FR></libelle_FR>
+        <libelle_UK></libelle_UK>
+        <libelle_SP></libelle_SP>
+        <pagemenu></pagemenu>
+        <commande></commande>
+        <type></type>
+        <genre></genre>
+        <acc>true</acc>
+        <add>true</add>
+        <dup>true</dup>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+        <clo>true</clo>
+        <trf>true</trf>
+    </lignemenu>
+
+    <lignemenu>
+        <libelle_FR>Inventaires</libelle_FR>
+        <libelle_UK></libelle_UK>
+        <libelle_SP></libelle_SP>
+        <pagemenu></pagemenu>
+        <commande>60100:10</commande>
+        <type></type>
+        <genre></genre>
+        <acc>true</acc>
+        <add>true</add>
+        <dup>true</dup>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+        <clo>true</clo>
+        <trf>true</trf>
+    </lignemenu>
+
+    <lignemenu>
+        <libelle_FR>Bons d'entrée</libelle_FR>
+        <libelle_UK></libelle_UK>
+        <libelle_SP></libelle_SP>
+        <pagemenu></pagemenu>
+        <commande>60100:11</commande>
+        <type></type>
+        <genre></genre>
+        <acc>true</acc>
+        <add>true</add>
+        <dup>true</dup>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+        <clo>true</clo>
+        <trf>true</trf>
+    </lignemenu>
+
+    <lignemenu>
+        <libelle_FR>Bons de sortie</libelle_FR>
+        <libelle_UK></libelle_UK>
+        <libelle_SP></libelle_SP>
+        <pagemenu></pagemenu>
+        <commande>60100:12</commande>
+        <type></type>
+        <genre></genre>
+        <acc>true</acc>
+        <add>true</add>
+        <dup>true</dup>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+        <clo>true</clo>
+        <trf>true</trf>
+    </lignemenu>
+
+    <lignemenu>
+        <libelle_FR>Cessions</libelle_FR>
+        <libelle_UK></libelle_UK>
+        <libelle_SP></libelle_SP>
+        <pagemenu></pagemenu>
+        <commande>60100:13</commande>
+        <type></type>
+        <genre></genre>
+        <acc>true</acc>
+        <add>true</add>
+        <dup>true</dup>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+        <clo>true</clo>
+        <trf>true</trf>
+    </lignemenu>
+
+    <lignemenu>
+        <libelle_FR></libelle_FR>
+        <libelle_UK></libelle_UK>
+        <libelle_SP></libelle_SP>
+        <pagemenu></pagemenu>
+        <commande></commande>
+        <type></type>
+        <genre></genre>
+        <acc>true</acc>
+        <add>true</add>
+        <dup>true</dup>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+        <clo>true</clo>
+        <trf>true</trf>
+    </lignemenu>
+
+
+    <lignemenu>
+        <libelle_FR>Productions</libelle_FR>
+        <libelle_UK></libelle_UK>
+        <libelle_SP></libelle_SP>
+        <pagemenu></pagemenu>
+        <commande>60100:14</commande>
+        <type></type>
+        <genre></genre>
+        <acc>true</acc>
+        <add>true</add>
+        <dup>true</dup>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+        <clo>true</clo>
+        <trf>true</trf>
+    </lignemenu>
+
+    <lignemenu>
+        <libelle_FR>Simulations/Productions</libelle_FR>
+        <libelle_UK></libelle_UK>
+        <libelle_SP></libelle_SP>
+        <pagemenu></pagemenu>
+        <commande>60100:15</commande>
+        <type></type>
+        <genre></genre>
+        <acc>true</acc>
+        <add>true</add>
+        <dup>true</dup>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+        <clo>true</clo>
+        <trf>true</trf>
+    </lignemenu>
+
+    <lignemenu>
+        <libelle_FR></libelle_FR>
+        <libelle_UK></libelle_UK>
+        <libelle_SP></libelle_SP>
+        <pagemenu></pagemenu>
+        <commande></commande>
+        <type></type>
+        <genre></genre>
+        <acc>true</acc>
+        <add>true</add>
+        <dup>true</dup>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+        <clo>true</clo>
+        <trf>true</trf>
+    </lignemenu>
+
+
+    <lignemenu>
+        <libelle_FR>Impressions des stocks</libelle_FR>
+        <libelle_UK></libelle_UK>
+        <libelle_SP></libelle_SP>
+        <pagemenu></pagemenu>
+        <commande>60100:90</commande>
+        <type></type>
+        <genre></genre>
+        <acc>true</acc>
+        <add>true</add>
+        <dup>true</dup>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+        <clo>true</clo>
+        <trf>true</trf>
+    </lignemenu>
+
+    <lignemenu>
+        <libelle_FR></libelle_FR>
+        <libelle_UK></libelle_UK>
+        <libelle_SP></libelle_SP>
+        <pagemenu></pagemenu>
+        <commande></commande>
+        <type></type>
+        <genre></genre>
+        <acc>true</acc>
+        <add>true</add>
+        <dup>true</dup>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+        <clo>true</clo>
+        <trf>true</trf>
+    </lignemenu>
+
+    <lignemenu>
+        <libelle_FR>Transfert en comptabilité</libelle_FR>
+        <libelle_UK></libelle_UK>
+        <libelle_SP></libelle_SP>
+        <pagemenu></pagemenu>
+        <commande>60100:98</commande>
+        <type></type>
+        <genre></genre>
+        <acc>true</acc>
+        <add>true</add>
+        <dup>true</dup>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+        <clo>true</clo>
+        <trf>true</trf>
+    </lignemenu>
+
+    <lignemenu>
+        <libelle_FR></libelle_FR>
+        <libelle_UK></libelle_UK>
+        <libelle_SP></libelle_SP>
+        <pagemenu></pagemenu>
+        <commande></commande>
+        <type></type>
+        <genre></genre>
+        <acc>true</acc>
+        <add>true</add>
+        <dup>true</dup>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+        <clo>true</clo>
+        <trf>true</trf>
+    </lignemenu>
+
+    <lignemenu>
+        <libelle_FR>Sélection exercice</libelle_FR>
+        <libelle_UK></libelle_UK>
+        <libelle_SP></libelle_SP>
+        <pagemenu></pagemenu>
+        <commande>60100:99</commande>
+        <type></type>
+        <genre></genre>
+        <acc>true</acc>
+        <add>true</add>
+        <dup>true</dup>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+        <clo>true</clo>
+        <trf>true</trf>
+    </lignemenu>
+
+</M60100>

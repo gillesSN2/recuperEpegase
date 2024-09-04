@@ -1,0 +1,939 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ListeSalarie" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isFloatColumnFooter="true">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="4"/>
+	<property name="ireport.y" value="177"/>
+	<style name="ST1" isDefault="false" pattern="">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{formatDevise}==0)]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" markup="none" pattern="#,##0.00"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{formatDevise}==1)]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.00"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{formatDevise}==2)]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0" isItalic="false"/>
+		</conditionalStyle>
+	</style>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\Documents and Settings\\user\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="entete" class="java.lang.String"/>
+	<parameter name="filtre" class="java.lang.String"/>
+	<parameter name="societe" class="java.lang.String"/>
+	<parameter name="version" class="java.lang.String"/>
+	<parameter name="requete" class="java.lang.String"/>
+	<parameter name="formatDevise" class="java.lang.Integer"/>
+	<queryString>
+		<![CDATA[SELECT
+     pay_salaries.`sal_id` AS pay_salaries_sal_id,
+     pay_salaries.`sal_date_creat` AS pay_salaries_sal_date_creat,
+     pay_salaries.`sal_date_modif` AS pay_salaries_sal_date_modif,
+     pay_salaries.`sal_user_creat` AS pay_salaries_sal_user_creat,
+     pay_salaries.`sal_user_modif` AS pay_salaries_sal_user_modif,
+     pay_salaries.`sal_matricule` AS pay_salaries_sal_matricule,
+     pay_salaries.`sal_photo` AS pay_salaries_sal_photo,
+     pay_salaries.`sal_nature` AS pay_salaries_sal_nature,
+     pay_salaries.`sal_protege` AS pay_salaries_sal_protege,
+     pay_salaries.`sal_etat` AS pay_salaries_sal_etat,
+     pay_salaries.`sal_type` AS pay_salaries_sal_type,
+     pay_salaries.`sal_nom` AS pay_salaries_sal_nom,
+     pay_salaries.`sal_nom_jf` AS pay_salaries_sal_nom_jf,
+     pay_salaries.`sal_prenom` AS pay_salaries_sal_prenom,
+     pay_salaries.`sal_civilite` AS pay_salaries_sal_civilite,
+     pay_salaries.`sal_nom_pays` AS pay_salaries_sal_nom_pays,
+     pay_salaries.`sal_langue` AS pay_salaries_sal_langue,
+     pay_salaries.`sal_fonction` AS pay_salaries_sal_fonction,
+     pay_salaries.`sal_site` AS pay_salaries_sal_site,
+     pay_salaries.`sal_departement` AS pay_salaries_sal_departement,
+     pay_salaries.`sal_service` AS pay_salaries_sal_service,
+     pay_salaries.`sal_acticvite` AS pay_salaries_sal_acticvite,
+     pay_salaries.`sal_budget` AS pay_salaries_sal_budget,
+     pay_salaries.`sal_parc` AS pay_salaries_sal_parc,
+     pay_salaries.`sal_date_naissance` AS pay_salaries_sal_date_naissance,
+     pay_salaries.`sal_lieu_naissance` AS pay_salaries_sal_lieu_naissance,
+     pay_salaries.`sal_pays_naissance` AS pay_salaries_sal_pays_naissance,
+     pay_salaries.`sal_code_naissance` AS pay_salaries_sal_code_naissance,
+     pay_salaries.`sal_nationnalite` AS pay_salaries_sal_nationnalite,
+     pay_salaries.`sal_ethnie` AS pay_salaries_sal_ethnie,
+     pay_salaries.`sal_anniversaire` AS pay_salaries_sal_anniversaire,
+     pay_salaries.`sal_tel_bur` AS pay_salaries_sal_tel_bur,
+     pay_salaries.`sal_tel_dom` AS pay_salaries_sal_tel_dom,
+     pay_salaries.`sal_cel1` AS pay_salaries_sal_cel1,
+     pay_salaries.`sal_cel2` AS pay_salaries_sal_cel2,
+     pay_salaries.`sal_cel3` AS pay_salaries_sal_cel3,
+     pay_salaries.`sal_adresse` AS pay_salaries_sal_adresse,
+     pay_salaries.`sal_rue` AS pay_salaries_sal_rue,
+     pay_salaries.`sal_lot` AS pay_salaries_sal_lot,
+     pay_salaries.`sal_ilot` AS pay_salaries_sal_ilot,
+     pay_salaries.`sal_batiment` AS pay_salaries_sal_batiment,
+     pay_salaries.`sal_porte` AS pay_salaries_sal_porte,
+     pay_salaries.`sal_escalier` AS pay_salaries_sal_escalier,
+     pay_salaries.`sal_ascensseur` AS pay_salaries_sal_ascensseur,
+     pay_salaries.`sal_etage` AS pay_salaries_sal_etage,
+     pay_salaries.`sal_quartier` AS pay_salaries_sal_quartier,
+     pay_salaries.`sal_commune` AS pay_salaries_sal_commune,
+     pay_salaries.`sal_departe` AS pay_salaries_sal_departe,
+     pay_salaries.`sal_zone` AS pay_salaries_sal_zone,
+     pay_salaries.`sal_bp` AS pay_salaries_sal_bp,
+     pay_salaries.`sal_ville` AS pay_salaries_sal_ville,
+     pay_salaries.`sal_yahoo` AS pay_salaries_sal_yahoo,
+     pay_salaries.`sal_msn` AS pay_salaries_sal_msn,
+     pay_salaries.`sal_skype` AS pay_salaries_sal_skype,
+     pay_salaries.`sal_aol` AS pay_salaries_sal_aol,
+     pay_salaries.`sal_mail1` AS pay_salaries_sal_mail1,
+     pay_salaries.`sal_observation` AS pay_salaries_sal_observation,
+     pay_salaries.`sal_num_banque` AS pay_salaries_sal_num_banque,
+     pay_salaries.`sal_guichet_banque` AS pay_salaries_sal_guichet_banque,
+     pay_salaries.`sal_compte_banque` AS pay_salaries_sal_compte_banque,
+     pay_salaries.`sal_cle_banque` AS pay_salaries_sal_cle_banque,
+     pay_salaries.`sal_iban` AS pay_salaries_sal_iban,
+     pay_salaries.`sal_swift` AS pay_salaries_sal_swift,
+     pay_salaries.`sal_genre` AS pay_salaries_sal_genre,
+     pay_salaries.`sal_sit_famille` AS pay_salaries_sal_sit_famille,
+     pay_salaries.`sal_nb_enfant` AS pay_salaries_sal_nb_enfant,
+     pay_salaries.`sal_nb_part_fiscal` AS pay_salaries_sal_nb_part_fiscal,
+     pay_salaries.`sal_nb_femme` AS pay_salaries_sal_nb_femme,
+     pay_salaries.`sal_nb_part_trimf` AS pay_salaries_sal_nb_part_trimf,
+     pay_salaries.`sal_nb_jour_cp` AS pay_salaries_sal_nb_jour_cp,
+     pay_salaries.`sal_nb_jour_tr` AS pay_salaries_sal_nb_jour_tr,
+     pay_salaries.`sal_date_marie` AS pay_salaries_sal_date_marie,
+     pay_salaries.`sal_date_divorce` AS pay_salaries_sal_date_divorce,
+     pay_salaries.`sal_date_veuf` AS pay_salaries_sal_date_veuf,
+     pay_salaries.`sal_date_concubinage` AS pay_salaries_sal_date_concubinage,
+     pay_salaries.`sal_date_pacs` AS pay_salaries_sal_date_pacs,
+     pay_salaries.`sal_convention` AS pay_salaries_sal_convention,
+     pay_salaries.`sal_lib_convention` AS pay_salaries_sal_lib_convention,
+     pay_salaries.`sal_Cod_Centres_Impots` AS pay_salaries_sal_Cod_Centres_Impots,
+     pay_salaries.`sal_Lib_Centres_Impots` AS pay_salaries_sal_Lib_Centres_Impots,
+     pay_salaries.`sal_classement` AS pay_salaries_sal_classement,
+     pay_salaries.`sal_lib_classement` AS pay_salaries_sal_lib_classement,
+     pay_salaries.`sal_niv_emploi` AS pay_salaries_sal_niv_emploi,
+     pay_salaries.`sal_lib_niv_emploi` AS pay_salaries_sal_lib_niv_emploi,
+     pay_salaries.`sal_grille` AS pay_salaries_sal_grille,
+     pay_salaries.`sal_lib_grille` AS pay_salaries_sal_lib_grille,
+     pay_salaries.`sal_date_entree` AS pay_salaries_sal_date_entree,
+     pay_salaries.`sal_date_sortie` AS pay_salaries_sal_date_sortie,
+     pay_salaries.`sal_motif_sortie` AS pay_salaries_sal_motif_sortie,
+     pay_salaries.`sal_date_impot` AS pay_salaries_sal_date_impot,
+     pay_salaries.`sal_feuille` AS pay_salaries_sal_feuille,
+     pay_salaries.`sal_num_ci` AS pay_salaries_sal_num_ci,
+     pay_salaries.`sal_date_ci` AS pay_salaries_sal_date_ci,
+     pay_salaries.`sal_delivre_ci` AS pay_salaries_sal_delivre_ci,
+     pay_salaries.`sal_lieu_ci` AS pay_salaries_sal_lieu_ci,
+     pay_salaries.`sal_num_secu` AS pay_salaries_sal_num_secu,
+     pay_salaries.`sal_date_secu` AS pay_salaries_sal_date_secu,
+     pay_salaries.`sal_num_retraite` AS pay_salaries_sal_num_retraite,
+     pay_salaries.`sal_date_retraite` AS pay_salaries_sal_date_retraite,
+     pay_salaries.`sal_approb_insp` AS pay_salaries_sal_approb_insp,
+     pay_salaries.`sal_visa_enreg` AS pay_salaries_sal_visa_enreg,
+     pay_salaries.`sal_classe_recrut` AS pay_salaries_sal_classe_recrut,
+     pay_salaries.`sal_service_mil` AS pay_salaries_sal_service_mil,
+     pay_salaries.`sal_corps_app` AS pay_salaries_sal_corps_app,
+     pay_salaries.`sal_grade` AS pay_salaries_sal_grade,
+     pay_salaries.`sal_date_entree_pays` AS pay_salaries_sal_date_entree_pays,
+     pay_salaries.`exepay_id` AS pay_salaries_exepay_id,
+     pay_salaries.`sal_mode_reglement` AS pay_salaries_sal_mode_reglement,
+     pay_salaries.`sal_pere` AS pay_salaries_sal_pere,
+     pay_salaries.`sal_mere` AS pay_salaries_sal_mere,
+     pay_salaries.`sal_compte_net` AS pay_salaries_sal_compte_net,
+     pay_salaries.`sal_compte_acompte` AS pay_salaries_sal_compte_acompte,
+     pay_salaries.`sal_compte_avance` AS pay_salaries_sal_compte_avance,
+     pay_salaries.`sal_cle_anal1` AS pay_salaries_sal_cle_anal1,
+     pay_salaries.`sal_lib_cle_anal1` AS pay_salaries_sal_lib_cle_anal1,
+     pay_salaries.`sal_cle_anal2` AS pay_salaries_sal_cle_anal2,
+     pay_salaries.`sal_lib_cle_anal2` AS pay_salaries_sal_lib_cle_anal2
+FROM
+     `pay_salaries` pay_salaries
+WHERE
+     $P!{requete} and sal_mode_reglement=3 and sal_etat<=1]]>
+	</queryString>
+	<field name="pay_salaries_sal_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_date_creat" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_date_modif" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_user_creat" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_user_modif" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_matricule" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_photo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_nature" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_protege" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_etat" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_type" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_nom" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_nom_jf" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_prenom" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_civilite" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_nom_pays" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_langue" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_fonction" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_site" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_departement" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_service" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_acticvite" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_budget" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_parc" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_date_naissance" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_lieu_naissance" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_pays_naissance" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_code_naissance" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_nationnalite" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_ethnie" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_anniversaire" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_tel_bur" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_tel_dom" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_cel1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_cel2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_cel3" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_adresse" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_rue" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_lot" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_ilot" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_batiment" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_porte" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_escalier" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_ascensseur" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_etage" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_quartier" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_commune" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_departe" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_zone" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_bp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_ville" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_yahoo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_msn" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_skype" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_aol" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_mail1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_observation" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_num_banque" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_guichet_banque" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_compte_banque" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_cle_banque" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_iban" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_swift" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_genre" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_sit_famille" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_nb_enfant" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_nb_part_fiscal" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_nb_femme" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_nb_part_trimf" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_nb_jour_cp" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_nb_jour_tr" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_date_marie" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_date_divorce" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_date_veuf" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_date_concubinage" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_date_pacs" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_convention" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_lib_convention" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_Cod_Centres_Impots" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_Lib_Centres_Impots" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_classement" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_lib_classement" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_niv_emploi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_lib_niv_emploi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_grille" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_lib_grille" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_date_entree" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_date_sortie" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_motif_sortie" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_date_impot" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_feuille" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_num_ci" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_date_ci" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_delivre_ci" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_lieu_ci" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_num_secu" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_date_secu" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_num_retraite" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_date_retraite" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_approb_insp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_visa_enreg" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_classe_recrut" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_service_mil" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_corps_app" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_grade" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_date_entree_pays" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_exepay_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_mode_reglement" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_pere" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_mere" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_compte_net" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_compte_acompte" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_compte_avance" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_cle_anal1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_lib_cle_anal1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_cle_anal2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_salaries_sal_lib_cle_anal2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<sortField name="pay_salaries_sal_num_banque"/>
+	<sortField name="pay_salaries_sal_nom"/>
+	<sortField name="pay_salaries_sal_prenom"/>
+	<variable name="modeReglementLibelle" class="java.lang.String">
+		<variableExpression><![CDATA[( $F{pay_salaries_sal_mode_reglement} ? "Espèces"
+    : ( $F{pay_salaries_sal_mode_reglement} ? "Chèques"
+        : ( $F{pay_salaries_sal_mode_reglement} ? "Virements"
+            : ( $F{pay_salaries_sal_mode_reglement} ? "BICITEL"
+                : ( $F{pay_salaries_sal_mode_reglement} ? "FERLO" : "Autres" ) ) ) ))]]></variableExpression>
+	</variable>
+	<title>
+		<band height="116" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="802" height="36" forecolor="#000000" backcolor="#FFFFFF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="37" width="802" height="51" forecolor="#999999" backcolor="#FFFFFF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="87" width="802" height="27" forecolor="#992F2A" backcolor="#FFFFFF"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="18" y="96" width="61" height="10" forecolor="#000000"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[© B&W 2014 -]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="16" y="65" width="767" height="20" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{societe}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="79" y="96" width="28" height="11" forecolor="#000000"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{version}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="16" y="41" width="768" height="20" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{filtre}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="16" y="8" width="768" height="24" forecolor="#000000"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans" size="18"/>
+				</textElement>
+				<text><![CDATA[Liste des salariés]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy HH.mm.ss">
+				<reportElement x="111" y="96" width="151" height="10" forecolor="#000000"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="593" y="96" width="166" height="10" forecolor="#000000"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Page "+$V{PAGE_NUMBER}+" / "]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="760" y="96" width="23" height="10" forecolor="#000000"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="59" splitType="Stretch">
+			<printWhenExpression><![CDATA[$V{PAGE_COUNT}>=2]]></printWhenExpression>
+			<rectangle>
+				<reportElement x="0" y="2" width="802" height="32" forecolor="#999999" backcolor="#FFFFFF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="35" width="802" height="23" forecolor="#992F2A" backcolor="#FFFFFF"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="18" y="42" width="61" height="10" forecolor="#000000"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[© B&W 2014 - ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="489" y="11" width="294" height="15" forecolor="#000000"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{societe}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="42" width="28" height="11" forecolor="#000000"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{version}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="16" y="11" width="393" height="15" forecolor="#000000"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Liste des salariés]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy HH.mm.ss">
+				<reportElement x="112" y="42" width="148" height="10" forecolor="#000000"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="753" y="41" width="25" height="10" forecolor="#000000"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="594" y="41" width="157" height="10" forecolor="#000000"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Page "+$V{PAGE_NUMBER}+" / "]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="72" splitType="Stretch">
+			<staticText>
+				<reportElement x="21" y="39" width="55" height="12"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Matricule]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="92" y="39" width="136" height="12"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nom]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="384" y="39" width="47" height="12"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Banque]]></text>
+			</staticText>
+			<line>
+				<reportElement x="10" y="27" width="1" height="45"/>
+			</line>
+			<line>
+				<reportElement x="86" y="27" width="1" height="45"/>
+			</line>
+			<line>
+				<reportElement x="382" y="27" width="1" height="45"/>
+			</line>
+			<line>
+				<reportElement x="432" y="27" width="1" height="45"/>
+			</line>
+			<line>
+				<reportElement x="483" y="27" width="1" height="45"/>
+			</line>
+			<line>
+				<reportElement x="561" y="27" width="1" height="45"/>
+			</line>
+			<line>
+				<reportElement x="784" y="27" width="1" height="45"/>
+			</line>
+			<line>
+				<reportElement x="10" y="27" width="774" height="1"/>
+			</line>
+			<line>
+				<reportElement x="10" y="58" width="774" height="1"/>
+			</line>
+			<line>
+				<reportElement x="232" y="27" width="1" height="45"/>
+			</line>
+			<staticText>
+				<reportElement x="239" y="39" width="136" height="12"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Prénom]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="435" y="39" width="47" height="12"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Guichet]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="486" y="39" width="76" height="12"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[N° Compte]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="562" y="39" width="23" height="12"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Clé]]></text>
+			</staticText>
+			<line>
+				<reportElement x="586" y="27" width="1" height="45"/>
+			</line>
+			<staticText>
+				<reportElement x="588" y="39" width="100" height="12"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IBAN]]></text>
+			</staticText>
+			<line>
+				<reportElement x="691" y="27" width="1" height="45"/>
+			</line>
+			<staticText>
+				<reportElement x="695" y="39" width="86" height="12"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SWIFT]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="15" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement x="18" y="0" width="56" height="14"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{pay_salaries_sal_matricule}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="92" y="0" width="136" height="14"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{pay_salaries_sal_nom}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="10" y="0" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement x="86" y="0" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement x="382" y="0" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement x="432" y="0" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement x="483" y="0" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement x="561" y="0" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement x="784" y="0" width="1" height="15"/>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement x="239" y="0" width="136" height="14"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{pay_salaries_sal_prenom}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="232" y="0" width="1" height="15"/>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement x="384" y="0" width="47" height="14">
+					<printWhenExpression><![CDATA[$F{pay_salaries_sal_mode_reglement}==2]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{pay_salaries_sal_num_banque}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="435" y="0" width="47" height="14">
+					<printWhenExpression><![CDATA[$F{pay_salaries_sal_mode_reglement}==2]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{pay_salaries_sal_guichet_banque}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="486" y="0" width="76" height="14">
+					<printWhenExpression><![CDATA[$F{pay_salaries_sal_mode_reglement}==2]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{pay_salaries_sal_compte_banque}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="562" y="0" width="23" height="14">
+					<printWhenExpression><![CDATA[$F{pay_salaries_sal_mode_reglement}==2]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{pay_salaries_sal_cle_banque}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="586" y="0" width="1" height="15"/>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement x="588" y="0" width="100" height="14">
+					<printWhenExpression><![CDATA[$F{pay_salaries_sal_mode_reglement}==2]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{pay_salaries_sal_iban}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="691" y="0" width="1" height="15"/>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement x="695" y="0" width="86" height="14"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{pay_salaries_sal_swift}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="35" splitType="Stretch">
+			<line>
+				<reportElement x="86" y="0" width="1" height="10"/>
+			</line>
+			<line>
+				<reportElement x="382" y="0" width="1" height="11"/>
+			</line>
+			<line>
+				<reportElement x="432" y="0" width="1" height="11"/>
+			</line>
+			<line>
+				<reportElement x="784" y="0" width="1" height="10"/>
+			</line>
+			<line>
+				<reportElement x="10" y="10" width="774" height="1"/>
+			</line>
+			<line>
+				<reportElement x="483" y="0" width="1" height="11"/>
+			</line>
+			<line>
+				<reportElement x="561" y="0" width="1" height="11"/>
+			</line>
+			<line>
+				<reportElement x="10" y="0" width="1" height="10"/>
+			</line>
+			<line>
+				<reportElement x="232" y="0" width="1" height="10"/>
+			</line>
+			<line>
+				<reportElement x="586" y="0" width="1" height="11"/>
+			</line>
+			<line>
+				<reportElement x="691" y="0" width="1" height="11"/>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="26">
+			<rectangle>
+				<reportElement x="0" y="1" width="802" height="24" forecolor="#992F2A" backcolor="#FFFFFF"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="36" y="2" width="160" height="12" forecolor="#000000"/>
+				<textElement>
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Created by Bagwell & Watson]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="13" width="160" height="12" forecolor="#000000"/>
+				<textElement>
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.bagwell-watson.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="313" y="2" width="160" height="12" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Writen by Phoenix SaaS ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="604" y="2" width="160" height="12" forecolor="#000000"/>
+				<textElement textAlignment="Right">
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Support by Planet-e-pegase ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="604" y="13" width="160" height="12" forecolor="#000000"/>
+				<textElement textAlignment="Right">
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.planet-e-pegase.biz ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="313" y="13" width="160" height="12" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.phoenix-saas.com]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

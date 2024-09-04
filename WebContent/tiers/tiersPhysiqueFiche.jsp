@@ -16,7 +16,7 @@
 
         <rich:tabPanel switchType="client" immediate="true" id="tabPanelFrniss" style="border:0px;">
 
-            <rich:tab label="Identité">
+            <rich:tab label="Identité"     >
                 <h:panelGrid  width="100%" id="panGlobal">
                     <h:panelGrid width="100%">
                         <h:panelGrid width="100%">
@@ -61,7 +61,7 @@
                                     </a4j:outputPanel>
                                 </h:column>
                                 <h:column rendered="#{!bakingbeanepegase.menuModuleHorizontalCtrl.formBakingBeanTiers.formTiers.var_tiersDivers}"><h:outputText value="Lieu naissance:"/></h:column>
-                                <h:column rendered="#{!bakingbeanepegase.menuModuleHorizontalCtrl.formBakingBeanTiers.formTiers.var_tiersDivers}"><h:inputText style="width:100%;" maxlength="100" value="#{bakingbeanepegase.menuModuleHorizontalCtrl.formBakingBeanTiers.formTiers.newtiers.tielieunaissance}"/></h:column>
+                                    <h:column rendered="#{!bakingbeanepegase.menuModuleHorizontalCtrl.formBakingBeanTiers.formTiers.var_tiersDivers}"><h:inputText style="width:100%;" maxlength="100" value="#{bakingbeanepegase.menuModuleHorizontalCtrl.formBakingBeanTiers.formTiers.newtiers.tielieunaissance}"/></h:column>
                                 <h:column rendered="#{!bakingbeanepegase.menuModuleHorizontalCtrl.formBakingBeanTiers.formTiers.var_tiersDivers}"><h:outputText value="Marié(e) le:"/></h:column>
                                 <h:column rendered="#{!bakingbeanepegase.menuModuleHorizontalCtrl.formBakingBeanTiers.formTiers.var_tiersDivers}">
                                     <a4j:outputPanel layout="block">

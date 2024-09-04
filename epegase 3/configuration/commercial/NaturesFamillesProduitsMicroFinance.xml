@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<naturesFamillesProduits>
+
+	<type>
+		<code>1001</code>
+		<etat>0</etat>
+		<nom_FR>Produits divers</nom_FR>
+		<nom_UK>Various products</nom_UK>
+		<nom_SP></nom_SP>
+	</type>
+
+	<type>
+		<code>1002</code>
+		<etat>0</etat>
+		<nom_FR>Prêts</nom_FR>
+		<nom_UK>Loans</nom_UK>
+		<nom_SP></nom_SP>
+	</type>
+
+	<type>
+		<code>1003</code>
+		<etat>0</etat>
+		<nom_FR>Comptes courants</nom_FR>
+		<nom_UK>Accounts</nom_UK>
+		<nom_SP></nom_SP>
+	</type>
+
+	<type>
+		<code>1004</code>
+		<etat>0</etat>
+		<nom_FR>Comptes à terme</nom_FR>
+		<nom_UK></nom_UK>
+		<nom_SP></nom_SP>
+	</type>
+</naturesFamillesProduits>

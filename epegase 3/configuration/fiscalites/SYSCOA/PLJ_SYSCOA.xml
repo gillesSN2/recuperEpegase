@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<planJournal>
+
+	<journal>
+		<code>ACH</code>
+		<lib_FR>ACHATS</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>1</nature>
+		<compteTreso></compteTreso>
+	</journal>
+
+        <journal>
+		<code>VTE</code>
+		<lib_FR>VENTES</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>2</nature>
+		<compteTreso></compteTreso>
+	</journal>
+
+        <journal>
+		<code>PAY</code>
+		<lib_FR>OD PAYE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<compteTreso></compteTreso>
+	</journal>
+
+        <journal>
+		<code>LOY</code>
+		<lib_FR>LOYERS</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<compteTreso></compteTreso>
+	</journal>
+
+        <journal>
+		<code>IMO</code>
+		<lib_FR>IMMOBILISATIONS</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<compteTreso></compteTreso>
+	</journal>
+
+        <journal>
+		<code>BNQ</code>
+		<lib_FR>BANQUE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>8</nature>
+		<compteTreso>5211000000</compteTreso>
+	</journal>
+
+        <journal>
+		<code>CAI</code>
+		<lib_FR>CAISSE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>10</nature>
+		<compteTreso>5711000000</compteTreso>
+	</journal>
+
+        <journal>
+		<code>AA</code>
+		<lib_FR>CLOTURE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>14</nature>
+		<compteTreso></compteTreso>
+	</journal>
+
+        <journal>
+		<code>AN</code>
+		<lib_FR>REPORTS A NOUVEAU</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>15</nature>
+		<compteTreso></compteTreso>
+	</journal>
+
+</planJournal>

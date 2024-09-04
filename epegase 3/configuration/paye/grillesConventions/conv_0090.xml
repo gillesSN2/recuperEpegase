@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collective>
+
+	<convention>
+		<code>ALIMENT</code>
+		<lib_FR>INDUSTRIE ALIMENTAIRE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<heure_mois>0.00</heure_mois>
+		<heure_semaine>0.00</heure_semaine>
+		<date_maj></date_maj>
+		<tranche1>0.00</tranche1>
+		<tranche2>0.00</tranche2>
+		<tranche3>0.00</tranche3>
+		<tranche4>0.00</tranche4>
+		<tranche5>0.00</tranche5>
+		<inactif>0</inactif>
+	</convention>
+
+	<convention>
+		<code>ASSURANCES</code>
+		<lib_FR>SECTEURS DES ASSURANCES</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<heure_mois>0.00</heure_mois>
+		<heure_semaine>0.00</heure_semaine>
+		<date_maj></date_maj>
+		<tranche1>0.00</tranche1>
+		<tranche2>0.00</tranche2>
+		<tranche3>0.00</tranche3>
+		<tranche4>0.00</tranche4>
+		<tranche5>0.00</tranche5>
+		<inactif>0</inactif>
+	</convention>
+
+	<convention>
+		<code>BANQUES</code>
+		<lib_FR>SECTEUR BANCAIRE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<heure_mois>0.00</heure_mois>
+		<heure_semaine>0.00</heure_semaine>
+		<date_maj></date_maj>
+		<tranche1>0.00</tranche1>
+		<tranche2>0.00</tranche2>
+		<tranche3>0.00</tranche3>
+		<tranche4>0.00</tranche4>
+		<tranche5>0.00</tranche5>
+		<inactif>0</inactif>
+	</convention>
+
+	<convention>
+		<code>BOULANGER</code>
+		<lib_FR>BOULANGERIE INDUSTRIELLE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<heure_mois>0.00</heure_mois>
+		<heure_semaine>0.00</heure_semaine>
+		<date_maj></date_maj>
+		<tranche1>0.00</tranche1>
+		<tranche2>0.00</tranche2>
+		<tranche3>0.00</tranche3>
+		<tranche4>0.00</tranche4>
+		<tranche5>0.00</tranche5>
+		<inactif>0</inactif>
+	</convention>
+
+	<convention>
+		<code>BTP</code>
+		<lib_FR>SECTEUR DU BATIMENT ET DES TRAVAUX PUBLICS</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<heure_mois>0.00</heure_mois>
+		<heure_semaine>0.00</heure_semaine>
+		<date_maj></date_maj>
+		<tranche1>0.00</tranche1>
+		<tranche2>0.00</tranche2>
+		<tranche3>0.00</tranche3>
+		<tranche4>0.00</tranche4>
+		<tranche5>0.00</tranche5>
+		<inactif>0</inactif>
+	</convention>
+
+	<convention>
+		<code>COMMERCE</code>
+		<lib_FR>SECTEUR COMMERCE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<heure_mois>0.00</heure_mois>
+		<heure_semaine>0.00</heure_semaine>
+		<date_maj></date_maj>
+		<tranche1>0.00</tranche1>
+		<tranche2>0.00</tranche2>
+		<tranche3>0.00</tranche3>
+		<tranche4>0.00</tranche4>
+		<tranche5>0.00</tranche5>
+		<inactif>0</inactif>
+	</convention>
+
+	<convention>
+		<code>CONFECTION</code>
+		<lib_FR>ATELIER DE CONFECTION</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<heure_mois>0.00</heure_mois>
+		<heure_semaine>0.00</heure_semaine>
+		<date_maj></date_maj>
+		<tranche1>0.00</tranche1>
+		<tranche2>0.00</tranche2>
+		<tranche3>0.00</tranche3>
+		<tranche4>0.00</tranche4>
+		<tranche5>0.00</tranche5>
+		<inactif>0</inactif>
+	</convention>
+
+	<convention>
+		<code>CORPSGRAS</code>
+		<lib_FR>INDUSTRIE DES CORPS GRAS</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<heure_mois>0.00</heure_mois>
+		<heure_semaine>0.00</heure_semaine>
+		<date_maj></date_maj>
+		<tranche1>0.00</tranche1>
+		<tranche2>0.00</tranche2>
+		<tranche3>0.00</tranche3>
+		<tranche4>0.00</tranche4>
+		<tranche5>0.00</tranche5>
+		<inactif>0</inactif>
+	</convention>
+
+	<convention>
+		<code>ELECT</code>
+		<lib_FR>INDUSTRIE DE PRODUCTION ELECTRIQUE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<heure_mois>0.00</heure_mois>
+		<heure_semaine>0.00</heure_semaine>
+		<date_maj></date_maj>
+		<tranche1>0.00</tranche1>
+		<tranche2>0.00</tranche2>
+		<tranche3>0.00</tranche3>
+		<tranche4>0.00</tranche4>
+		<tranche5>0.00</tranche5>
+		<inactif>0</inactif>
+	</convention>
+
+	<convention>
+		<code>EMCIBAN</code>
+		<lib_FR>CONVENTION COLLECTIVE EMCIBAN</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<heure_mois>0.00</heure_mois>
+		<heure_semaine>0.00</heure_semaine>
+		<date_maj></date_maj>
+		<tranche1>0.00</tranche1>
+		<tranche2>0.00</tranche2>
+		<tranche3>0.00</tranche3>
+		<tranche4>0.00</tranche4>
+		<tranche5>0.00</tranche5>
+		<inactif>0</inactif>
+	</convention>
+
+	<convention>
+		<code>ENSEING1</code>
+		<lib_FR>ENSEIGNEMENT (1)</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<heure_mois>0.00</heure_mois>
+		<heure_semaine>0.00</heure_semaine>
+		<date_maj></date_maj>
+		<tranche1>0.00</tranche1>
+		<tranche2>0.00</tranche2>
+		<tranche3>0.00</tranche3>
+		<tranche4>0.00</tranche4>
+		<tranche5>0.00</tranche5>
+		<inactif>0</inactif>
+	</convention>
+
+	<convention>
+		<code>ENSEING2</code>
+		<lib_FR>ENSEIGNEMENT MOYEN GENERAL</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<heure_mois>0.00</heure_mois>
+		<heure_semaine>0.00</heure_semaine>
+		<date_maj></date_maj>
+		<tranche1>0.00</tranche1>
+		<tranche2>0.00</tranche2>
+		<tranche3>0.00</tranche3>
+		<tranche4>0.00</tranche4>
+		<tranche5>0.00</tranche5>
+		<inactif>0</inactif>
+	</convention>
+
+	<convention>
+		<code>ENSEING3</code>
+		<lib_FR>ENSEIGNEMENT SECONDAIRE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<heure_mois>0.00</heure_mois>
+		<heure_semaine>0.00</heure_semaine>
+		<date_maj></date_maj>
+		<tranche1>0.00</tranche1>
+		<tranche2>0.00</tranche2>
+		<tranche3>0.00</tranche3>
+		<tranche4>0.00</tranche4>
+		<tranche5>0.00</tranche5>
+		<inactif>0</inactif>
+	</convention>
+
+	<convention>
+		<code>ENSEING4</code>
+		<lib_FR>ENSEIGNEMENT EDUCATION PHYSIQUE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<heure_mois>0.00</heure_mois>
+		<heure_semaine>0.00</heure_semaine>
+		<date_maj></date_maj>
+		<tranche1>0.00</tranche1>
+		<tranche2>0.00</tranche2>
+		<tranche3>0.00</tranche3>
+		<tranche4>0.00</tranche4>
+		<tranche5>0.00</tranche5>
+		<inactif>0</inactif>
+	</convention>
+
+	<convention>
+		<code>HOTEL</code>
+		<lib_FR>INDUSTRIE HOTELLERIE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<heure_mois>0.00</heure_mois>
+		<heure_semaine>0.00</heure_semaine>
+		<date_maj></date_maj>
+		<tranche1>0.00</tranche1>
+		<tranche2>0.00</tranche2>
+		<tranche3>0.00</tranche3>
+		<tranche4>0.00</tranche4>
+		<tranche5>0.00</tranche5>
+		<inactif>0</inactif>
+	</convention>
+
+	<convention>
+		<code>MECANIQUE</code>
+		<lib_FR>MECANIQUE GENERALE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<heure_mois>0.00</heure_mois>
+		<heure_semaine>0.00</heure_semaine>
+		<date_maj></date_maj>
+		<tranche1>0.00</tranche1>
+		<tranche2>0.00</tranche2>
+		<tranche3>0.00</tranche3>
+		<tranche4>0.00</tranche4>
+		<tranche5>0.00</tranche5>
+		<inactif>0</inactif>
+	</convention>
+
+	<convention>
+		<code>MINE</code>
+		<lib_FR>INDUSTRIE EXTRACTIVE ET PROSPECTION MINIERE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<heure_mois>0.00</heure_mois>
+		<heure_semaine>0.00</heure_semaine>
+		<date_maj></date_maj>
+		<tranche1>0.00</tranche1>
+		<tranche2>0.00</tranche2>
+		<tranche3>0.00</tranche3>
+		<tranche4>0.00</tranche4>
+		<tranche5>0.00</tranche5>
+		<inactif>0</inactif>
+	</convention>
+
+	<convention>
+		<code>PECHE</code>
+		<lib_FR>SECTEUR MARINE DE PECHE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<heure_mois>0.00</heure_mois>
+		<heure_semaine>0.00</heure_semaine>
+		<date_maj></date_maj>
+		<tranche1>0.00</tranche1>
+		<tranche2>0.00</tranche2>
+		<tranche3>0.00</tranche3>
+		<tranche4>0.00</tranche4>
+		<tranche5>0.00</tranche5>
+		<inactif>0</inactif>
+	</convention>
+
+	<convention>
+		<code>POLYGRAPH</code>
+		<lib_FR>INDUSTRIE POLYGRAPHIQUE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<heure_mois>0.00</heure_mois>
+		<heure_semaine>0.00</heure_semaine>
+		<date_maj></date_maj>
+		<tranche1>0.00</tranche1>
+		<tranche2>0.00</tranche2>
+		<tranche3>0.00</tranche3>
+		<tranche4>0.00</tranche4>
+		<tranche5>0.00</tranche5>
+		<inactif>0</inactif>
+	</convention>
+
+	<convention>
+		<code>TEXTILE</code>
+		<lib_FR>INDUSTRIE DU TEXTILE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<heure_mois>0.00</heure_mois>
+		<heure_semaine>0.00</heure_semaine>
+		<date_maj></date_maj>
+		<tranche1>0.00</tranche1>
+		<tranche2>0.00</tranche2>
+		<tranche3>0.00</tranche3>
+		<tranche4>0.00</tranche4>
+		<tranche5>0.00</tranche5>
+		<inactif>0</inactif>
+	</convention>
+
+	<convention>
+		<code>TRANSPORT</code>
+		<lib_FR>TRANSPORT</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<heure_mois>0.00</heure_mois>
+		<heure_semaine>0.00</heure_semaine>
+		<date_maj></date_maj>
+		<tranche1>0.00</tranche1>
+		<tranche2>0.00</tranche2>
+		<tranche3>0.00</tranche3>
+		<tranche4>0.00</tranche4>
+		<tranche5>0.00</tranche5>
+		<inactif>0</inactif>
+	</convention>
+
+	<convention>
+		<code>TRANSPUB</code>
+		<lib_FR>TRANSPORT PUBLIC ROUTIERS</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<heure_mois>0.00</heure_mois>
+		<heure_semaine>0.00</heure_semaine>
+		<date_maj></date_maj>
+		<tranche1>0.00</tranche1>
+		<tranche2>0.00</tranche2>
+		<tranche3>0.00</tranche3>
+		<tranche4>0.00</tranche4>
+		<tranche5>0.00</tranche5>
+		<inactif>0</inactif>
+	</convention>
+
+	<convention>
+		<code>UNISYNDI</code>
+		<lib_FR>CONVENTION COLLECTIVE UNISYNDI</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<heure_mois>0.00</heure_mois>
+		<heure_semaine>0.00</heure_semaine>
+		<date_maj></date_maj>
+		<tranche1>0.00</tranche1>
+		<tranche2>0.00</tranche2>
+		<tranche3>0.00</tranche3>
+		<tranche4>0.00</tranche4>
+		<tranche5>0.00</tranche5>
+		<inactif>0</inactif>
+	</convention>
+</collective>

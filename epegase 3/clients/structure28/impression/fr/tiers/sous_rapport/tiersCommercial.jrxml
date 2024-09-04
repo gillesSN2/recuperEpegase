@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="287"/>
+	<property name="ireport.y" value="920"/>
+	<parameter name="societe" class="java.lang.String"/>
+	<parameter name="version" class="java.lang.String"/>
+	<parameter name="adresse" class="java.lang.String"/>
+	<parameter name="boite_postale" class="java.lang.String"/>
+	<parameter name="ville" class="java.lang.String"/>
+	<parameter name="pays" class="java.lang.String"/>
+	<parameter name="logo_1" class="java.lang.String"/>
+	<parameter name="logo_2" class="java.lang.String"/>
+	<parameter name="logo_4" class="java.lang.String"/>
+	<parameter name="telephone_1" class="java.lang.String"/>
+	<parameter name="telephone_2" class="java.lang.String"/>
+	<parameter name="fax" class="java.lang.String"/>
+	<parameter name="site_web" class="java.lang.String"/>
+	<parameter name="mails" class="java.lang.String"/>
+	<parameter name="identification_1" class="java.lang.String"/>
+	<parameter name="identification_2" class="java.lang.String"/>
+	<parameter name="identification_3" class="java.lang.String"/>
+	<parameter name="identification_4" class="java.lang.String"/>
+	<parameter name="identification_5" class="java.lang.String"/>
+	<parameter name="identification_6" class="java.lang.String"/>
+	<parameter name="identification_7" class="java.lang.String"/>
+	<parameter name="identification_8" class="java.lang.String"/>
+	<parameter name="identification_9" class="java.lang.String"/>
+	<parameter name="identification_10" class="java.lang.String"/>
+	<parameter name="banques" class="java.lang.String"/>
+	<parameter name="montant_lettre" class="java.lang.String"/>
+	<parameter name="signe_signature" class="java.lang.String"/>
+	<parameter name="parcChassis" class="java.lang.String"/>
+	<parameter name="annexe1" class="java.lang.String"/>
+	<parameter name="annexe2" class="java.lang.String"/>
+	<parameter name="pageGarde" class="java.lang.String"/>
+	<parameter name="imageFond" class="java.lang.String"/>
+	<parameter name="duplicata" class="java.lang.String"/>
+	<parameter name="nbDecQte" class="java.lang.String"/>
+	<queryString language="xPath">
+		<![CDATA[]]>
+	</queryString>
+	<field name="tieraisonsocialenom" class="java.lang.String">
+		<fieldDescription><![CDATA[tieraisonsocialenom]]></fieldDescription>
+	</field>
+	<field name="texteCommercial" class="java.lang.String">
+		<fieldDescription><![CDATA[texteCommercial]]></fieldDescription>
+	</field>
+	<field name="tieadresse" class="java.lang.String">
+		<fieldDescription><![CDATA[tieadresse]]></fieldDescription>
+	</field>
+	<field name="tieascensseur" class="java.lang.String">
+		<fieldDescription><![CDATA[tieascensseur]]></fieldDescription>
+	</field>
+	<field name="tiebatiment" class="java.lang.String">
+		<fieldDescription><![CDATA[tiebatiment]]></fieldDescription>
+	</field>
+	<field name="tiebp" class="java.lang.String">
+		<fieldDescription><![CDATA[tiebp]]></fieldDescription>
+	</field>
+	<field name="tieburtel1" class="java.lang.String">
+		<fieldDescription><![CDATA[tieburtel1]]></fieldDescription>
+	</field>
+	<field name="tieburtel2" class="java.lang.String">
+		<fieldDescription><![CDATA[tieburtel2]]></fieldDescription>
+	</field>
+	<field name="tieburtel3" class="java.lang.String">
+		<fieldDescription><![CDATA[tieburtel3]]></fieldDescription>
+	</field>
+	<field name="tiecategorie" class="java.lang.String">
+		<fieldDescription><![CDATA[tiecategorie]]></fieldDescription>
+	</field>
+	<field name="tiecivilite" class="java.lang.String">
+		<fieldDescription><![CDATA[tiecivilite]]></fieldDescription>
+	</field>
+	<field name="tiecompte0" class="java.lang.String">
+		<fieldDescription><![CDATA[tiecompte0]]></fieldDescription>
+	</field>
+	<field name="tienompays" class="java.lang.String">
+		<fieldDescription><![CDATA[tienompays]]></fieldDescription>
+	</field>
+	<field name="tieville" class="java.lang.String">
+		<fieldDescription><![CDATA[tieville]]></fieldDescription>
+	</field>
+	<field name="tiemail1" class="java.lang.String">
+		<fieldDescription><![CDATA[tiemail1]]></fieldDescription>
+	</field>
+	<background>
+		<band height="802">
+			<image scaleImage="RetainShape" hAlign="Center">
+				<reportElement x="0" y="0" width="555" height="802"/>
+				<imageExpression class="java.lang.String"><![CDATA[$P{imageFond}]]></imageExpression>
+			</image>
+		</band>
+	</background>
+	<pageHeader>
+		<band height="197">
+			<image scaleImage="FillFrame" hAlign="Center" isLazy="true">
+				<reportElement mode="Transparent" x="12" y="5" width="231" height="142"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+				<imageExpression class="java.lang.String"><![CDATA[$P{logo_1}]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="318" y="12" width="48" height="12"/>
+				<textElement>
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Dakar, le"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="455" y="7" width="67" height="12"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="Arial" size="6" isBold="true"/>
+				</textElement>
+				<text><![CDATA[© B&W - Page N° ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="318" y="109" width="215" height="12"/>
+				<textElement markup="none">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{tiebp}.concat(( $F{tiebp}!=null && $F{tiebp}.isEmpty()==false ? " " : "" )).concat($F{tieville}).concat(( $F{tieville}!=null && $F{tieville}.isEmpty()==false ? " " : "" )).concat($F{tienompays})]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd MMMMM yyyy">
+				<reportElement x="362" y="12" width="97" height="12"/>
+				<textElement>
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[new Date()]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="318" y="96" width="215" height="12"/>
+				<textElement>
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{tieadresse}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="318" y="122" width="215" height="12"/>
+				<textElement>
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Tél : "+$F{tieburtel1}+( $F{tiemail1}!=null&&$F{tiemail1}.isEmpty()==false ? " /"+$F{tiemail1} : "" )]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="318" y="36" width="215" height="44"/>
+				<textElement>
+					<font fontName="Arial" size="13" isBold="true" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{tieraisonsocialenom}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="525" y="7" width="15" height="12"/>
+				<textElement>
+					<font fontName="Arial" size="6"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Integer"><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="570" splitType="Stretch">
+			<textField>
+				<reportElement x="53" y="17" width="445" height="491"/>
+				<textElement textAlignment="Justified" markup="html"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{texteCommercial}]]></textFieldExpression>
+			</textField>
+			<image scaleImage="RetainShape" hAlign="Center">
+				<reportElement x="347" y="409" width="206" height="150"/>
+				<imageExpression class="java.lang.String"><![CDATA[$P{signe_signature}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="288" y="541" width="254" height="11"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Fax : " + $P{fax}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="288" y="553" width="254" height="11"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["N° NINEA : " + $P{identification_1} + "  N° RCCM : " + $P{identification_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="288" y="530" width="254" height="11"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Tél. : " + $P{telephone_1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="53" y="553" width="221" height="11"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{banques}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="553" width="37" height="11"/>
+				<textElement textAlignment="Left" markup="none">
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Banque :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="541" width="41" height="11"/>
+				<textElement textAlignment="Left" markup="none">
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Ste web :]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="53" y="541" width="222" height="11"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{site_web}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="526" width="555" height="1"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Double"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="10" y="529" width="41" height="11"/>
+				<textElement textAlignment="Left" markup="none">
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Adresse :]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="53" y="529" width="222" height="11"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{adresse} + " - BP " + $P{boite_postale} + " - "+ $P{ville}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

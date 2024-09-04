@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="detailBud" language="groovy" pageWidth="270" pageHeight="842" columnWidth="268" leftMargin="1" rightMargin="1" topMargin="1" bottomMargin="1" whenResourceMissingType="Empty">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="numero" class="java.lang.Long"/>
+	<queryString>
+		<![CDATA[SELECT
+     cpt_plan_bugetaire_compte.`plbcpt_id` AS cpt_plan_bugetaire_compte_plbcpt_id,
+     cpt_plan_bugetaire_compte.`plbcpt_code` AS cpt_plan_bugetaire_compte_plbcpt_code,
+     cpt_plan_bugetaire_compte.`plbcpt_nature` AS cpt_plan_bugetaire_compte_plbcpt_nature,
+     cpt_plan_bugetaire_compte.`plbcpt_compte` AS cpt_plan_bugetaire_compte_plbcpt_compte,
+     cpt_plan_bugetaire_compte.`plbcpt_libelle_FR` AS cpt_plan_bugetaire_compte_plbcpt_libelle_FR,
+     cpt_plan_bugetaire_compte.`plbcpt_libelle_UK` AS cpt_plan_bugetaire_compte_plbcpt_libelle_UK,
+     cpt_plan_bugetaire_compte.`plbcpt_libelle_SP` AS cpt_plan_bugetaire_compte_plbcpt_libelle_SP,
+     cpt_plan_bugetaire_compte.`plb_id` AS cpt_plan_bugetaire_compte_plb_id,
+     cpt_plan_bugetaire_compte.`plbcpt_type` AS cpt_plan_bugetaire_compte_plbcpt_type
+FROM
+     `cpt_plan_bugetaire_compte` cpt_plan_bugetaire_compte
+WHERE
+     plb_id = $P!{numero}
+]]>
+	</queryString>
+	<field name="cpt_plan_bugetaire_compte_plbcpt_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_plan_bugetaire_compte_plbcpt_code" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_plan_bugetaire_compte_plbcpt_nature" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_plan_bugetaire_compte_plbcpt_compte" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_plan_bugetaire_compte_plbcpt_libelle_FR" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_plan_bugetaire_compte_plbcpt_libelle_UK" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_plan_bugetaire_compte_plbcpt_libelle_SP" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_plan_bugetaire_compte_plb_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_plan_bugetaire_compte_plbcpt_type" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<sortField name="cpt_plan_bugetaire_compte_plbcpt_type"/>
+	<sortField name="cpt_plan_bugetaire_compte_plbcpt_nature"/>
+	<sortField name="cpt_plan_bugetaire_compte_plbcpt_compte"/>
+	<detail>
+		<band height="14" splitType="Stretch">
+			<textField>
+				<reportElement x="8" y="2" width="66" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isItalic="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cpt_plan_bugetaire_compte_plbcpt_compte}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="81" y="2" width="177" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isItalic="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cpt_plan_bugetaire_compte_plbcpt_libelle_FR}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

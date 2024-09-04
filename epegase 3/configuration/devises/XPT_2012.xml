@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XPT>
+
+	<historique>
+		<date>2012/01/01</date>
+		<taux1>1071.9962583313</taux1>
+		<taux2>0.0009328391</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/01/02</date>
+		<taux1>1073.1518786816</taux1>
+		<taux2>0.0009318346</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/01/03</date>
+		<taux1>1078.2594670892</taux1>
+		<taux2>0.0009274206</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/01/04</date>
+		<taux1>1094.8525353708</taux1>
+		<taux2>0.0009133650</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/01/05</date>
+		<taux1>1097.2466809489</taux1>
+		<taux2>0.0009113721</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/01/06</date>
+		<taux1>1105.3503852278</taux1>
+		<taux2>0.0009046905</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/01/07</date>
+		<taux1>1103.0807029425</taux1>
+		<taux2>0.0009065520</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/01/08</date>
+		<taux1>1106.6766278660</taux1>
+		<taux2>0.0009036063</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/01/09</date>
+		<taux1>1101.1146001906</taux1>
+		<taux2>0.0009081707</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/01/10</date>
+		<taux1>1114.0906062177</taux1>
+		<taux2>0.0008975931</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/01/11</date>
+		<taux1>1145.8389893369</taux1>
+		<taux2>0.0008727230</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/01/12</date>
+		<taux1>1173.7694738094</taux1>
+		<taux2>0.0008519560</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/01/13</date>
+		<taux1>1166.9191206712</taux1>
+		<taux2>0.0008569574</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/01/14</date>
+		<taux1>1172.5672409046</taux1>
+		<taux2>0.0008528296</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/01/15</date>
+		<taux1>1171.7800703370</taux1>
+		<taux2>0.0008534025</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/01/16</date>
+		<taux1>1175.1162026469</taux1>
+		<taux2>0.0008509797</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/01/17</date>
+		<taux1>1182.0998194106</taux1>
+		<taux2>0.0008459522</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/01/18</date>
+		<taux1>1196.1670171076</taux1>
+		<taux2>0.0008360037</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/01/19</date>
+		<taux1>1185.4475660920</taux1>
+		<taux2>0.0008435632</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/01/20</date>
+		<taux1>1173.3437715609</taux1>
+		<taux2>0.0008522651</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/01/21</date>
+		<taux1>1187.3782099545</taux1>
+		<taux2>0.0008421916</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/01/22</date>
+		<taux1>1184.5868439432</taux1>
+		<taux2>0.0008441762</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/01/23</date>
+		<taux1>1189.2266010865</taux1>
+		<taux2>0.0008408826</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/01/24</date>
+		<taux1>1199.7261429121</taux1>
+		<taux2>0.0008335236</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/01/25</date>
+		<taux1>1187.0048299125</taux1>
+		<taux2>0.0008424566</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/01/26</date>
+		<taux1>1207.7522123109</taux1>
+		<taux2>0.0008279844</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/01/27</date>
+		<taux1>1227.6700474857</taux1>
+		<taux2>0.0008145511</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/01/28</date>
+		<taux1>1227.5004080345</taux1>
+		<taux2>0.0008146637</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/01/29</date>
+		<taux1>1221.8608538716</taux1>
+		<taux2>0.0008184238</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/01/30</date>
+		<taux1>1221.7130403133</taux1>
+		<taux2>0.0008185228</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/01/31</date>
+		<taux1>1228.3793793330</taux1>
+		<taux2>0.0008140807</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/02/01</date>
+		<taux1>1210.8360434164</taux1>
+		<taux2>0.0008258756</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/02/02</date>
+		<taux1>1230.6271141184</taux1>
+		<taux2>0.0008125938</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/02/03</date>
+		<taux1>1238.7358145323</taux1>
+		<taux2>0.0008072746</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/02/04</date>
+		<taux1>1233.2052933426</taux1>
+		<taux2>0.0008108950</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/02/05</date>
+		<taux1>1233.4206989985</taux1>
+		<taux2>0.0008107534</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/02/06</date>
+		<taux1>1237.1822185639</taux1>
+		<taux2>0.0008082884</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/02/07</date>
+		<taux1>1239.4563555885</taux1>
+		<taux2>0.0008068053</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/02/08</date>
+		<taux1>1245.0927691930</taux1>
+		<taux2>0.0008031530</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/02/09</date>
+		<taux1>1255.4378191430</taux1>
+		<taux2>0.0007965349</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/02/10</date>
+		<taux1>1244.6218530563</taux1>
+		<taux2>0.0008034569</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/02/11</date>
+		<taux1>1257.2195237797</taux1>
+		<taux2>0.0007954060</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/02/12</date>
+		<taux1>1257.4785475061</taux1>
+		<taux2>0.0007952422</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/02/13</date>
+		<taux1>1256.5794443967</taux1>
+		<taux2>0.0007958112</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/02/14</date>
+		<taux1>1252.1316303420</taux1>
+		<taux2>0.0007986381</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/02/15</date>
+		<taux1>1252.1316303420</taux1>
+		<taux2>0.0007986381</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/02/16</date>
+		<taux1>1249.5504912316</taux1>
+		<taux2>0.0008002878</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/02/17</date>
+		<taux1>1238.7896144437</taux1>
+		<taux2>0.0008072396</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/02/18</date>
+		<taux1>1241.4029984874</taux1>
+		<taux2>0.0008055402</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/02/19</date>
+		<taux1>1242.5497006900</taux1>
+		<taux2>0.0008047968</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/02/20</date>
+		<taux1>1242.5497006900</taux1>
+		<taux2>0.0008047968</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/02/21</date>
+		<taux1>1242.5494518424</taux1>
+		<taux2>0.0008047969</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/02/22</date>
+		<taux1>1273.8416421373</taux1>
+		<taux2>0.0007850269</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/02/23</date>
+		<taux1>1302.1467701814</taux1>
+		<taux2>0.0007679626</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/02/24</date>
+		<taux1>1290.2883441618</taux1>
+		<taux2>0.0007750206</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/02/25</date>
+		<taux1>1270.7389846739</taux1>
+		<taux2>0.0007869437</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/02/26</date>
+		<taux1>1273.5261327575</taux1>
+		<taux2>0.0007852214</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/02/27</date>
+		<taux1>1272.9866609189</taux1>
+		<taux2>0.0007855542</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/02/28</date>
+		<taux1>1273.4681027702</taux1>
+		<taux2>0.0007852572</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/02/29</date>
+		<taux1>1275.5590388132</taux1>
+		<taux2>0.0007839700</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/03/01</date>
+		<taux1>1262.7364356808</taux1>
+		<taux2>0.0007919309</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/03/02</date>
+		<taux1>1275.8044786760</taux1>
+		<taux2>0.0007838192</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/03/03</date>
+		<taux1>1286.0096839304</taux1>
+		<taux2>0.0007775991</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/03/04</date>
+		<taux1>1286.9075500007</taux1>
+		<taux2>0.0007770566</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/03/05</date>
+		<taux1>1287.7598622255</taux1>
+		<taux2>0.0007765423</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/03/06</date>
+		<taux1>1256.8235045190</taux1>
+		<taux2>0.0007956567</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/03/07</date>
+		<taux1>1231.5783287778</taux1>
+		<taux2>0.0008119662</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/03/08</date>
+		<taux1>1239.5374160722</taux1>
+		<taux2>0.0008067526</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/03/09</date>
+		<taux1>1248.8375256704</taux1>
+		<taux2>0.0008007447</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/03/10</date>
+		<taux1>1284.2661601260</taux1>
+		<taux2>0.0007786548</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/03/11</date>
+		<taux1>1279.8704362742</taux1>
+		<taux2>0.0007813291</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/03/12</date>
+		<taux1>1288.0374976364</taux1>
+		<taux2>0.0007763749</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/03/13</date>
+		<taux1>1298.9914279603</taux1>
+		<taux2>0.0007698280</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/03/14</date>
+		<taux1>1277.6679213650</taux1>
+		<taux2>0.0007826760</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/03/15</date>
+		<taux1>1286.7296049797</taux1>
+		<taux2>0.0007771641</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/03/16</date>
+		<taux1>1270.6169195265</taux1>
+		<taux2>0.0007870193</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/03/17</date>
+		<taux1>1268.4484549943</taux1>
+		<taux2>0.0007883647</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/03/18</date>
+		<taux1>1268.6319371928</taux1>
+		<taux2>0.0007882507</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/03/19</date>
+		<taux1>1268.6193811767</taux1>
+		<taux2>0.0007882585</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/03/20</date>
+		<taux1>1250.5762780476</taux1>
+		<taux2>0.0007996314</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/03/21</date>
+		<taux1>1243.0289001317</taux1>
+		<taux2>0.0008044865</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/03/22</date>
+		<taux1>1228.8256450496</taux1>
+		<taux2>0.0008137851</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/03/23</date>
+		<taux1>1226.4515399030</taux1>
+		<taux2>0.0008153604</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/03/24</date>
+		<taux1>1225.7894290758</taux1>
+		<taux2>0.0008158008</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/03/25</date>
+		<taux1>1226.0174638614</taux1>
+		<taux2>0.0008156491</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/03/26</date>
+		<taux1>1234.0502041458</taux1>
+		<taux2>0.0008103398</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/03/27</date>
+		<taux1>1242.4944008644</taux1>
+		<taux2>0.0008048326</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/03/28</date>
+		<taux1>1226.6688494783</taux1>
+		<taux2>0.0008152159</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/03/29</date>
+		<taux1>1223.6621505788</taux1>
+		<taux2>0.0008172190</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/03/30</date>
+		<taux1>1228.6848764214</taux1>
+		<taux2>0.0008138783</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/03/31</date>
+		<taux1>1227.8919000012</taux1>
+		<taux2>0.0008144039</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/04/01</date>
+		<taux1>1227.9661185359</taux1>
+		<taux2>0.0008143547</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/04/02</date>
+		<taux1>1227.9661185359</taux1>
+		<taux2>0.0008143547</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/04/03</date>
+		<taux1>1239.8431629722</taux1>
+		<taux2>0.0008065536</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/04/04</date>
+		<taux1>1241.2226109995</taux1>
+		<taux2>0.0008056573</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/04/05</date>
+		<taux1>1226.1386257005</taux1>
+		<taux2>0.0008155685</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/04/06</date>
+		<taux1>1226.4177997072</taux1>
+		<taux2>0.0008153828</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/04/07</date>
+		<taux1>1226.5901370841</taux1>
+		<taux2>0.0008152683</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/04/08</date>
+		<taux1>1226.0218606015</taux1>
+		<taux2>0.0008156461</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/04/09</date>
+		<taux1>1230.4014778785</taux1>
+		<taux2>0.0008127428</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/04/10</date>
+		<taux1>1220.9483813770</taux1>
+		<taux2>0.0008190354</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/04/11</date>
+		<taux1>1207.4405686780</taux1>
+		<taux2>0.0008281981</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/04/12</date>
+		<taux1>1215.8922363673</taux1>
+		<taux2>0.0008224413</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/04/13</date>
+		<taux1>1211.9219322412</taux1>
+		<taux2>0.0008251357</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/04/14</date>
+		<taux1>1205.8389485894</taux1>
+		<taux2>0.0008292981</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/04/15</date>
+		<taux1>1206.2451262414</taux1>
+		<taux2>0.0008290189</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/04/16</date>
+		<taux1>1198.7187145010</taux1>
+		<taux2>0.0008342241</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/04/17</date>
+		<taux1>1205.5460480922</taux1>
+		<taux2>0.0008294996</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/04/18</date>
+		<taux1>1202.1612329752</taux1>
+		<taux2>0.0008318352</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/04/19</date>
+		<taux1>1201.5980099450</taux1>
+		<taux2>0.0008322251</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/04/20</date>
+		<taux1>1195.7455448786</taux1>
+		<taux2>0.0008362983</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/04/21</date>
+		<taux1>1195.1872177416</taux1>
+		<taux2>0.0008366890</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/04/22</date>
+		<taux1>1197.4566432193</taux1>
+		<taux2>0.0008351033</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/04/23</date>
+		<taux1>1185.1956340121</taux1>
+		<taux2>0.0008437426</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/04/24</date>
+		<taux1>1173.0854598126</taux1>
+		<taux2>0.0008524528</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/04/25</date>
+		<taux1>1174.8819116515</taux1>
+		<taux2>0.0008511494</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/04/26</date>
+		<taux1>1183.6429949251</taux1>
+		<taux2>0.0008448493</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/04/27</date>
+		<taux1>1186.3027808375</taux1>
+		<taux2>0.0008429551</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/04/28</date>
+		<taux1>1186.8575179939</taux1>
+		<taux2>0.0008425611</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/04/29</date>
+		<taux1>1187.5994494944</taux1>
+		<taux2>0.0008420347</taux2>
+	</historique>
+
+	<historique>
+		<date>2012/04/30</date>
+		<taux1>1184.1201794291</taux1>
+		<taux2>0.0008445089</taux2>
+	</historique>
+</XPT>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classement>
+
+	<classe>
+		<code>11</code>
+		<lib_FR>CADRES NATIONAUX</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<inactif>0</inactif>
+	</classe>
+
+	<classe>
+		<code>12</code>
+		<lib_FR>CADRES AUTRES UEMOA</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<inactif>0</inactif>
+	</classe>
+
+	<classe>
+		<code>13</code>
+		<lib_FR>CADRES AUTRES AFRICAINS</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<inactif>0</inactif>
+	</classe>
+
+	<classe>
+		<code>14</code>
+		<lib_FR>CADRES NON AFRICAINS</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<inactif>0</inactif>
+	</classe>
+
+	<classe>
+		<code>21</code>
+		<lib_FR>EMPLOYES NATIONAUX</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<inactif>0</inactif>
+	</classe>
+
+	<classe>
+		<code>22</code>
+		<lib_FR>EMPLOYES AUTRES UEMOA</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<inactif>0</inactif>
+	</classe>
+
+	<classe>
+		<code>23</code>
+		<lib_FR>EMPLOYES AUTRES AFRICAINS</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<inactif>0</inactif>
+	</classe>
+
+	<classe>
+		<code>24</code>
+		<lib_FR>EMPLOYES NON AFRICAINS</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<inactif>0</inactif>
+	</classe>
+
+	<classe>
+		<code>31</code>
+		<lib_FR>OUVRIERS NATIONAUX</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<inactif>0</inactif>
+	</classe>
+
+	<classe>
+		<code>32</code>
+		<lib_FR>OUVRIERS AUTRES UEMOA</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<inactif>0</inactif>
+	</classe>
+
+	<classe>
+		<code>33</code>
+		<lib_FR>OUVRIERS AUTRES AFRICAINS</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<inactif>0</inactif>
+	</classe>
+
+	<classe>
+		<code>34</code>
+		<lib_FR>OUVRIERS NON AFRICAINS</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<inactif>0</inactif>
+	</classe>
+
+	<classe>
+		<code>40</code>
+		<lib_FR>PERSONNELS TEMPORAIRES</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<inactif>0</inactif>
+	</classe>
+</classement>

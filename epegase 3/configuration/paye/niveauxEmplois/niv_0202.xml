@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<emploi>
+
+	<niveau>
+		<code>1</code>
+		<lib_FR>CADRES SUPERIEURS INGENIEURS</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<inactif>0</inactif>
+	</niveau>
+
+	<niveau>
+		<code>2</code>
+		<lib_FR>TECHNICIENS SUPERIEURS</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<inactif>0</inactif>
+	</niveau>
+
+	<niveau>
+		<code>3</code>
+		<lib_FR>TECHNICIENS</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<inactif>0</inactif>
+	</niveau>
+
+	<niveau>
+		<code>4</code>
+		<lib_FR>MAIN D`OEUVRES QUALIFIES</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<inactif>0</inactif>
+	</niveau>
+
+	<niveau>
+		<code>5</code>
+		<lib_FR>MAIN D`OEUVRES SPECIALISES</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<inactif>0</inactif>
+	</niveau>
+
+	<niveau>
+		<code>6</code>
+		<lib_FR>MAIN D`OEUVRES BANALES</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<inactif>0</inactif>
+	</niveau>
+</emploi>

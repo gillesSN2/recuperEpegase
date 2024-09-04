@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<journaux>
+
+	<type>
+		<code>0</code>
+		<nom_FR>Général</nom_FR>
+		<nom_UK></nom_UK>
+		<nom_SP></nom_SP>
+	</type>
+
+	<type>
+		<code>1</code>
+		<nom_FR>Achat</nom_FR>
+		<nom_UK></nom_UK>
+		<nom_SP></nom_SP>
+	</type>
+
+	<type>
+		<code>2</code>
+		<nom_FR>Ventes</nom_FR>
+		<nom_UK></nom_UK>
+		<nom_SP></nom_SP>
+	</type>
+
+	<type>
+		<code>3</code>
+		<nom_FR>Paye</nom_FR>
+		<nom_UK></nom_UK>
+		<nom_SP></nom_SP>
+	</type>
+
+	<type>
+		<code>4</code>
+		<nom_FR>Loyer</nom_FR>
+		<nom_UK></nom_UK>
+		<nom_SP></nom_SP>
+	</type>
+
+	<type>
+		<code>5</code>
+		<nom_FR>Amortissement</nom_FR>
+		<nom_UK></nom_UK>
+		<nom_SP></nom_SP>
+	</type>
+
+	<type>
+		<code>6</code>
+		<nom_FR>Amortissement (virement de poste à poste)</nom_FR>
+		<nom_UK></nom_UK>
+		<nom_SP></nom_SP>
+	</type>
+
+	<type>
+		<code>7</code>
+		<nom_FR>Banque avec centralisation automatique</nom_FR>
+		<nom_UK></nom_UK>
+		<nom_SP></nom_SP>
+	</type>
+
+	<type>
+		<code>8</code>
+		<nom_FR>Banque sans centralisation</nom_FR>
+		<nom_UK></nom_UK>
+		<nom_SP></nom_SP>
+	</type>
+
+	<type>
+		<code>9</code>
+		<nom_FR>Caisse avec centralisation automatique</nom_FR>
+		<nom_UK></nom_UK>
+		<nom_SP></nom_SP>
+	</type>
+
+	<type>
+		<code>10</code>
+		<nom_FR>Caisse sans centralisation</nom_FR>
+		<nom_UK></nom_UK>
+		<nom_SP></nom_SP>
+	</type>
+
+	<type>
+		<code>11</code>
+		<nom_FR>Situation</nom_FR>
+		<nom_UK></nom_UK>
+		<nom_SP></nom_SP>
+	</type>
+
+	<type>
+		<code>12</code>
+		<nom_FR>Réserve</nom_FR>
+		<nom_UK></nom_UK>
+		<nom_SP></nom_SP>
+	</type>
+
+	<type>
+		<code>13</code>
+		<nom_FR>Balance</nom_FR>
+		<nom_UK></nom_UK>
+		<nom_SP></nom_SP>
+	</type>
+
+	<type>
+		<code>14</code>
+		<nom_FR>Cloture</nom_FR>
+		<nom_UK></nom_UK>
+		<nom_SP></nom_SP>
+	</type>
+
+	<type>
+		<code>15</code>
+		<nom_FR>A nouveaux</nom_FR>
+		<nom_UK></nom_UK>
+		<nom_SP></nom_SP>
+	</type>
+</journaux>

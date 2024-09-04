@@ -1,0 +1,8232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<planComptable>
+
+	<compte>
+		<code>111100</code>
+		<lib_FR>Capital Social</lib_FR>
+		<lib_UK>Social Capital</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>1</nature>
+		<ran>0</ran>
+		<racine>1111</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Capital</lib_nat>
+	</compte>
+
+	<compte>
+		<code>111200</code>
+		<lib_FR>Fonds De Dotation</lib_FR>
+		<lib_UK>Funds Of Equipment</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>1</nature>
+		<ran>0</ran>
+		<racine>1112</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Capital</lib_nat>
+	</compte>
+
+	<compte>
+		<code>111710</code>
+		<lib_FR>Capital Individuel</lib_FR>
+		<lib_UK>Individual Capital</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>1</nature>
+		<ran>0</ran>
+		<racine>11171</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Capital</lib_nat>
+	</compte>
+
+	<compte>
+		<code>111750</code>
+		<lib_FR>Compte De L'exploitant</lib_FR>
+		<lib_UK>Owner Account</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>1</nature>
+		<ran>0</ran>
+		<racine>11175</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Capital</lib_nat>
+	</compte>
+
+	<compte>
+		<code>111900</code>
+		<lib_FR>Actionnaires, Capital Souscrit</lib_FR>
+		<lib_UK>Shareholders, Subscribed Capital</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>1</nature>
+		<ran>0</ran>
+		<racine>1119</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Capital</lib_nat>
+	</compte>
+
+	<compte>
+		<code>112100</code>
+		<lib_FR>Primes D'émission</lib_FR>
+		<lib_UK>Bonus Of Emission</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>1</nature>
+		<ran>0</ran>
+		<racine>1121</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Capital</lib_nat>
+	</compte>
+
+	<compte>
+		<code>112200</code>
+		<lib_FR>Primes De Fusion</lib_FR>
+		<lib_UK>Bonus Of Fusion</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>1</nature>
+		<ran>0</ran>
+		<racine>1122</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Capital</lib_nat>
+	</compte>
+
+	<compte>
+		<code>112300</code>
+		<lib_FR>Primes D'apport</lib_FR>
+		<lib_UK>Bonus Of Contribution</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>1</nature>
+		<ran>0</ran>
+		<racine>1123</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Capital</lib_nat>
+	</compte>
+
+	<compte>
+		<code>113000</code>
+		<lib_FR>Ecarts De Réévaluation</lib_FR>
+		<lib_UK>Spaces Of Revaluation</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>1</nature>
+		<ran>0</ran>
+		<racine>1130</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Capital</lib_nat>
+	</compte>
+
+	<compte>
+		<code>114000</code>
+		<lib_FR>Réserve Légale</lib_FR>
+		<lib_UK>Legal Reserve</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>1</nature>
+		<ran>0</ran>
+		<racine>1140</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Capital</lib_nat>
+	</compte>
+
+	<compte>
+		<code>115100</code>
+		<lib_FR>Réserves Statutaires Ou Contractuelles</lib_FR>
+		<lib_UK>Statuaries Reserves Or Contractual</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>1</nature>
+		<ran>0</ran>
+		<racine>1151</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Capital</lib_nat>
+	</compte>
+
+	<compte>
+		<code>115200</code>
+		<lib_FR>Réserves Facultatives</lib_FR>
+		<lib_UK>Optional Reserves</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>1</nature>
+		<ran>0</ran>
+		<racine>1152</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Capital</lib_nat>
+	</compte>
+
+	<compte>
+		<code>115500</code>
+		<lib_FR>Réserves Règlementées</lib_FR>
+		<lib_UK>Lawful Reserves</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>1</nature>
+		<ran>0</ran>
+		<racine>1155</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Capital</lib_nat>
+	</compte>
+
+	<compte>
+		<code>116100</code>
+		<lib_FR>Report À Nouveau (Solde Créditeur)</lib_FR>
+		<lib_UK>Carryforwarding ( Credit Balance )</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>1</nature>
+		<ran>0</ran>
+		<racine>1161</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Capital</lib_nat>
+	</compte>
+
+	<compte>
+		<code>116900</code>
+		<lib_FR>Report À Nouveau (Solde Débiteur)</lib_FR>
+		<lib_UK>Carryforwarding To New ( Credit Balance)</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>1</nature>
+		<ran>0</ran>
+		<racine>1169</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Capital</lib_nat>
+	</compte>
+
+	<compte>
+		<code>118100</code>
+		<lib_FR>Résultats Nets En Instance D'affectation (Solde Créditeur)</lib_FR>
+		<lib_UK>Results In Authority Assignment ( Credit Balance )</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>2</nature>
+		<ran>0</ran>
+		<racine>1181</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Résultat</lib_nat>
+	</compte>
+
+	<compte>
+		<code>118900</code>
+		<lib_FR>Résultats Nets En Instance D'affectation (Solde Débiteur)</lib_FR>
+		<lib_UK>Results In Authority Assignment ( Debit Balance )</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>2</nature>
+		<ran>0</ran>
+		<racine>1189</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Résultat</lib_nat>
+	</compte>
+
+	<compte>
+		<code>119100</code>
+		<lib_FR>Résultat Net De L'exercice (Solde Créditeur)</lib_FR>
+		<lib_UK>Execrcise Buttom Lines ( Credit Balance )</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>2</nature>
+		<ran>0</ran>
+		<racine>1191</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Résultat</lib_nat>
+	</compte>
+
+	<compte>
+		<code>119900</code>
+		<lib_FR>Résultat Net De L'exercice (Solde Débiteur)</lib_FR>
+		<lib_UK>Exercise Buttom Lines ( Debit Balance)</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>2</nature>
+		<ran>0</ran>
+		<racine>1199</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Résultat</lib_nat>
+	</compte>
+
+	<compte>
+		<code>131100</code>
+		<lib_FR>Subventions D'investissement Reues</lib_FR>
+		<lib_UK>Read Again Subsidies Investment</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>1311</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>131900</code>
+		<lib_FR>Subventions D'investissement Inscrites Au Cpc</lib_FR>
+		<lib_UK>Subsidies Investment With The Cpc</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>1319</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>135100</code>
+		<lib_FR>Provisions Pour Amortissements Dérogatoires</lib_FR>
+		<lib_UK>Derogatory Depreciation Allowances</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>1351</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>135200</code>
+		<lib_FR>Provisions Pour Plus-Values En Instance D'imposition</lib_FR>
+		<lib_UK>Provisions For  Appreciation In Authority</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>1352</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>135400</code>
+		<lib_FR>Provisions Pour Investissements</lib_FR>
+		<lib_UK>Provisions For Investments</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>1354</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>135500</code>
+		<lib_FR>Provisions Pour Reconstitution Des Gisements</lib_FR>
+		<lib_UK>Provisions For Recontitution Of The Deposits</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>1355</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>135600</code>
+		<lib_FR>Provisions Pour Acquisition Et Construction De Logements</lib_FR>
+		<lib_UK>Provision For Acquisition And Housing Construction</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>1356</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>135800</code>
+		<lib_FR>Autres Provisions Règlementées</lib_FR>
+		<lib_UK>Others Regulated Provisions</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>1358</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>141000</code>
+		<lib_FR>Emprunts Obligataires</lib_FR>
+		<lib_UK>Bond-Holders Loans</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>18</nature>
+		<ran>0</ran>
+		<racine>141</racine>
+		<libre>000</libre>
+		<sens>0</sens>
+		<lib_nat>Dotations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>148000</code>
+		<lib_FR>Autres Dettes De Financement</lib_FR>
+		<lib_UK>Others Debts Of Financing</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>18</nature>
+		<ran>0</ran>
+		<racine>148</racine>
+		<libre>000</libre>
+		<sens>0</sens>
+		<lib_nat>Dotations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>151000</code>
+		<lib_FR>Provisions Pour Risques</lib_FR>
+		<lib_UK>Provisions For Risks</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>18</nature>
+		<ran>0</ran>
+		<racine>151</racine>
+		<libre>000</libre>
+		<sens>0</sens>
+		<lib_nat>Dotations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>155000</code>
+		<lib_FR>Provisions Pour Charges</lib_FR>
+		<lib_UK>Provisions For Loads</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>18</nature>
+		<ran>0</ran>
+		<racine>155</racine>
+		<libre>000</libre>
+		<sens>0</sens>
+		<lib_nat>Dotations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>160100</code>
+		<lib_FR>Comptes De Liaison Du Siège</lib_FR>
+		<lib_UK>The Seat Connection Accounts</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>18</nature>
+		<ran>0</ran>
+		<racine>1601</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Dotations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>160500</code>
+		<lib_FR>Comptes De Liaison Des Établissements</lib_FR>
+		<lib_UK>Establishments Connection Accounts</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>18</nature>
+		<ran>0</ran>
+		<racine>1605</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Dotations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>171000</code>
+		<lib_FR>Augmentation Des Créances Immobilisées</lib_FR>
+		<lib_UK>Increase In The Immobilized Credits</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>18</nature>
+		<ran>0</ran>
+		<racine>1710</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Dotations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>172000</code>
+		<lib_FR>Diminution Des Dettes De Financement</lib_FR>
+		<lib_UK>Reduction Of The Debts Of Financing</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>18</nature>
+		<ran>0</ran>
+		<racine>1720</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Dotations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>211100</code>
+		<lib_FR>Frais De Constitution</lib_FR>
+		<lib_UK>Expenses Of Construction</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2111</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>211200</code>
+		<lib_FR>Frais Préalables Au Démarrage</lib_FR>
+		<lib_UK>Expenses Preliminary Of Starting</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2112</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>211300</code>
+		<lib_FR>Frais D'augmentation Du Capital</lib_FR>
+		<lib_UK>Expenses Encrase Capital</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2113</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>211400</code>
+		<lib_FR>Frais Sur Opérations De Fusions, Scissions Et Transformations</lib_FR>
+		<lib_UK>Expenses On Fusion Operations, Scissions And Transformations</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2114</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>211600</code>
+		<lib_FR>Frais De Prospection</lib_FR>
+		<lib_UK>Propection Expenses</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2116</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>211700</code>
+		<lib_FR>Frais De Publicité</lib_FR>
+		<lib_UK>Expenses Of Advertising</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2117</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>211800</code>
+		<lib_FR>Autres Frais Préliminaires</lib_FR>
+		<lib_UK>Other Preliminary Expenses</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2118</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>212100</code>
+		<lib_FR>Frais D'acquisitition Des Immobilisations</lib_FR>
+		<lib_UK>Expenses Of The Immobilisations Acquisition</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2121</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>212500</code>
+		<lib_FR>Frais D'emission Des Emprunts</lib_FR>
+		<lib_UK>Expenses Of The Loans Emission</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2125</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>212800</code>
+		<lib_FR>Autres Charges À Répartir</lib_FR>
+		<lib_UK>Other Deferred Loads</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2128</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>213000</code>
+		<lib_FR>Primes De Remboursement Des Obligations</lib_FR>
+		<lib_UK>Bonus Of Refunding Obligations</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2130</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>221000</code>
+		<lib_FR>Immobilisation En Recherche Et Développement</lib_FR>
+		<lib_UK>Immobilization In Research And Development</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2210</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>222000</code>
+		<lib_FR>Brevets, Marques, Droits Et Valeurs Similaires</lib_FR>
+		<lib_UK>Patents, Marks, Rights And Similar Values</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2220</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>223000</code>
+		<lib_FR>Fonds Commercial</lib_FR>
+		<lib_UK>Commercial Funds</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2230</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>228500</code>
+		<lib_FR>Autres Immobilisations Incorporelles</lib_FR>
+		<lib_UK>Other  Incorporeal Immobilizations</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2285</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>231100</code>
+		<lib_FR>Terrains Nus</lib_FR>
+		<lib_UK>Open Areas</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2311</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>231200</code>
+		<lib_FR>Terrains Aménagés</lib_FR>
+		<lib_UK>Arranged Grounds</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2312</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>231300</code>
+		<lib_FR>Terrains Bâtis</lib_FR>
+		<lib_UK>Developed Sites</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2313</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>231400</code>
+		<lib_FR>Terrains De Gisement</lib_FR>
+		<lib_UK>Grounds Of Deposit</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2314</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>231600</code>
+		<lib_FR>Agencements Et Aménagements De Terrains</lib_FR>
+		<lib_UK>Fittings And Installations Of Grounds</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2316</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>231800</code>
+		<lib_FR>Autres Terrains</lib_FR>
+		<lib_UK>Other Grounds</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2318</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>232110</code>
+		<lib_FR>Bâtiments Industriels (A,B,,,)</lib_FR>
+		<lib_UK>Industrual Buildings (A,B,,,)</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>23211</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>232140</code>
+		<lib_FR>Bâtiments Administratifs Et Commerciaux (A,B,,,)</lib_FR>
+		<lib_UK>Administrative And Commercial Buildings( A,B,,,)</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>23214</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>232180</code>
+		<lib_FR>Autres Bâtiments</lib_FR>
+		<lib_UK>Other Buildings</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>23218</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>232300</code>
+		<lib_FR>Constructions Sur Terrains D'autrui</lib_FR>
+		<lib_UK>Construction On Grounds Of Others</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2323</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>232500</code>
+		<lib_FR>Ouvrages D'infrastructure</lib_FR>
+		<lib_UK>Work Infrastructures</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2325</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>232700</code>
+		<lib_FR>Agencements Et Aménagements Des Constructions</lib_FR>
+		<lib_UK>Fittings And Installations Of Constructions</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2327</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>232800</code>
+		<lib_FR>Autres Constructions</lib_FR>
+		<lib_UK>Other Constructions</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2328</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>233100</code>
+		<lib_FR>Installations Techniques</lib_FR>
+		<lib_UK>Technical Installations</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2331</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>233210</code>
+		<lib_FR>Matériel</lib_FR>
+		<lib_UK>Material</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>23321</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>233240</code>
+		<lib_FR>Outillage</lib_FR>
+		<lib_UK>Tools</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>23324</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>233300</code>
+		<lib_FR>Emballages Récuperables Identifiables</lib_FR>
+		<lib_UK>Identifiable Recoverable Packing</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2333</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>233800</code>
+		<lib_FR>Autres Installations Techniques, Matériel Et Outillage</lib_FR>
+		<lib_UK>Other Technical Installations, Material And Tools</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2338</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>234000</code>
+		<lib_FR>Matériel De Transport</lib_FR>
+		<lib_UK>Transport Material</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2340</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>235100</code>
+		<lib_FR>Mobilier De Bureau</lib_FR>
+		<lib_UK>Office Equipment</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2351</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>235200</code>
+		<lib_FR>Matériel De Bureau</lib_FR>
+		<lib_UK>Office Equipment</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2352</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>235500</code>
+		<lib_FR>Matériel Informatique</lib_FR>
+		<lib_UK>Computer Material</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2355</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>235600</code>
+		<lib_FR>Agencements, Installations Et Aménagements Divers (Biens N'appartenant Pas À L'entreprise)</lib_FR>
+		<lib_UK>Fitting And Installations Various ( Goods Belonging To The Company)</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2356</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>235800</code>
+		<lib_FR>Autres Mobilier, Matériel De Bureau Et Aménagements Divers</lib_FR>
+		<lib_UK>Other Furniture, Office Equipment And Various Installations</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2358</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>238000</code>
+		<lib_FR>Autres Immobilisations Corporelles</lib_FR>
+		<lib_UK>Other Corporeal Immobilizations</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2380</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>239200</code>
+		<lib_FR>Immobilisations Corporelles En Cours Des Terrains Et Constructions</lib_FR>
+		<lib_UK>Corporeal Immobilisations In Progress Of Grounds And Constructions</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2392</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>239300</code>
+		<lib_FR>Immobilisations Corporelles En Cours Des Installations Techniques, Matériel Et Outillage</lib_FR>
+		<lib_UK>Corporeal Immoblizations In Progress Of Technical Installations, Material And Tools</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2393</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>239400</code>
+		<lib_FR>Immobilisations Corporelles En Cours De Matériel De Transport</lib_FR>
+		<lib_UK>Corporeal Immobilizations In Progress Of Transport Material</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2394</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>239500</code>
+		<lib_FR>Immobilisations Corporelles En Cours De Mobilier, Matériel De Bureau Et Aménagements Divers</lib_FR>
+		<lib_UK>Corporeal Immobilizations In Progress Of Office Equipment And Various Installations</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2395</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>239700</code>
+		<lib_FR>Avances Et Acomptes Versés Sur Commandes D'immobilisations Corporelles</lib_FR>
+		<lib_UK>Advances And Installments Paid On Orders Of Corporeal Immobilizations</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2397</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>239800</code>
+		<lib_FR>Autres Immobilisations Corporelles En Cours</lib_FR>
+		<lib_UK>Other Corporeal Immobilizations In Progress</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2398</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>241500</code>
+		<lib_FR>Prêts Aux Associés</lib_FR>
+		<lib_UK>Loans For Associates</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2415</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>241600</code>
+		<lib_FR>Billets De Fonds</lib_FR>
+		<lib_UK>Tickets Of Funds</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2416</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>241800</code>
+		<lib_FR>Autres Prêts</lib_FR>
+		<lib_UK>Other Loans</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2418</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>244100</code>
+		<lib_FR>Prêts Au Personnel</lib_FR>
+		<lib_UK>Staff Loans</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2441</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>248110</code>
+		<lib_FR>Obligations</lib_FR>
+		<lib_UK>Debentures</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>24811</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>248130</code>
+		<lib_FR>Bons D'équipement</lib_FR>
+		<lib_UK>Equipment Forms</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>24813</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>248180</code>
+		<lib_FR>Bons Divers</lib_FR>
+		<lib_UK>Various Forms</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>24818</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>248300</code>
+		<lib_FR>Créances Rattachées À Des Participations</lib_FR>
+		<lib_UK>Credits Attached To The Participations</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2483</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>248610</code>
+		<lib_FR>Dépôts</lib_FR>
+		<lib_UK>Deposits</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>24861</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>248640</code>
+		<lib_FR>Cautionnements</lib_FR>
+		<lib_UK>Guarantees</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>24864</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>248700</code>
+		<lib_FR>Créances Immobilisées</lib_FR>
+		<lib_UK>Immobilized Credits</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2487</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>248800</code>
+		<lib_FR>Créances Financières Diverses</lib_FR>
+		<lib_UK>Various Financial Credits</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2488</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>251000</code>
+		<lib_FR>Titres De Participation</lib_FR>
+		<lib_UK>Titles Of Participation</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2510</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>258100</code>
+		<lib_FR>Actions</lib_FR>
+		<lib_UK>Shares</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2581</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>258800</code>
+		<lib_FR>Titres Divers</lib_FR>
+		<lib_UK>Various Titles</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2588</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>271000</code>
+		<lib_FR>Diminution Des Créances Immobilisées</lib_FR>
+		<lib_UK>Reduction Of The Immobilized Credits</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2710</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>272000</code>
+		<lib_FR>Augmentation Des Dettes De Financement</lib_FR>
+		<lib_UK>Increase Of The Financial Debts</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2720</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>281100</code>
+		<lib_FR>Amortissements Des Frais Préliminaires</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>2811</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>281200</code>
+		<lib_FR>Amortissements Des Charges À Répartir</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>2812</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>281360</code>
+		<lib_FR>Amortissements Des Agencements Et Amenagements De Terrains</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>28136</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>281380</code>
+		<lib_FR>Amortissements Des Autres Terrains</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>28138</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>282100</code>
+		<lib_FR>Amortissements De L'immobilisation En Recherche Et Développement</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>2821</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>282200</code>
+		<lib_FR>Amortissements Des Brevets, Marques, Droits Et Valeurs Similaire</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>2822</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>282300</code>
+		<lib_FR>Amortissements Du Fonds Commercial</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>2823</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>282800</code>
+		<lib_FR>Amortissements Des Autres Immobilisations Incorporelles</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>2828</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>283110</code>
+		<lib_FR>Amortissements Des Terrains Nus</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>28311</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>283120</code>
+		<lib_FR>Amortissements Des Terrains Aménagés</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>28312</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>283130</code>
+		<lib_FR>Amortissements Des Terrains Bâtis</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>28313</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>283140</code>
+		<lib_FR>Amortissements Des Terrains De Gisement</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>28314</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>283210</code>
+		<lib_FR>Amortissements Des Bâtiments</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>28321</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>283230</code>
+		<lib_FR>Amortissements Des Constructions Sur Terrains D'autrui</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>28323</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>283250</code>
+		<lib_FR>Amortissements Des Ouvrages D'infrastructure</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>28325</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>283270</code>
+		<lib_FR>Amortissements Des Installations, Agencements Et Aménagements Des Constructions</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>28327</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>283280</code>
+		<lib_FR>Amortissements Des Autres Constructions</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>28328</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>283310</code>
+		<lib_FR>Amortissements Des Installations Techniques</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>28331</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>283320</code>
+		<lib_FR>Amortissements Du Matériel Et Outillage</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>28332</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>283330</code>
+		<lib_FR>Amortissements Des Emballages Récuperables Identifiables</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>28333</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>283380</code>
+		<lib_FR>Amortissements Des Autres Installations Techniques, Matériel Et Outillage</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>28338</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>283400</code>
+		<lib_FR>Amortissements Du Matériel De Transport</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>2834</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>283510</code>
+		<lib_FR>Amortissements Du Mobilier De Bureau</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>28351</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>283520</code>
+		<lib_FR>Amortissements Du Matériel De Bureau</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>28352</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>283550</code>
+		<lib_FR>Amortissements Du Matériel Informatique</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>28355</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>283560</code>
+		<lib_FR>Amortissements Des Agencements, Installations Et Aménagements Divers</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>28356</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>283580</code>
+		<lib_FR>Amortissements Des Autres Mobilier, Matériel De Bureau Et Aménagements Divers</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>28358</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>283800</code>
+		<lib_FR>Amortissements Des Autres Immobilisations Corporelles</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>2838</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>292000</code>
+		<lib_FR>Provisions Pour Dépréciation Des Immobilisations Incorporelles</lib_FR>
+		<lib_UK>Provisions For The Depreciation Of Incorporeal Immobilizations</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>2920</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>293000</code>
+		<lib_FR>Provisions Pour Dépréciation Des Immobilisations Corporelles</lib_FR>
+		<lib_UK>Provisions For The Depreciation Of Corporeal Immobilizations</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>2930</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>294100</code>
+		<lib_FR>Provisions Pour Dépréciation Des Prêts Immobilisés</lib_FR>
+		<lib_UK>Provisions For The Depreciation Of The Immobilized Loans</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>2941</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>294800</code>
+		<lib_FR>Provisions Pour Dépréciation Des Autres Créances Financières</lib_FR>
+		<lib_UK>Provisions For Depreciation Of The Other Financial Credits</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>2948</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>295100</code>
+		<lib_FR>Provisions Pour Dépréciation Des Titres De Participation</lib_FR>
+		<lib_UK>Provisions For The Depreciation Of The Participation Titles</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>2951</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>295800</code>
+		<lib_FR>Provisions Pour Dépréciation Des Autres Titres Immobilisés</lib_FR>
+		<lib_UK>Provisions For The Depreciation Of The Other Immobilized Titles</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>2958</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>311100</code>
+		<lib_FR>Marchandises (Groupe A)</lib_FR>
+		<lib_UK>Merchandise (Group A)</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3111</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>311200</code>
+		<lib_FR>Marchandises (Groupe B)</lib_FR>
+		<lib_UK>Merchandises (Group B)</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3112</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>311600</code>
+		<lib_FR>Marchandises En Cours De Route</lib_FR>
+		<lib_UK>Merchandises In The Course Of Road</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3116</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>311800</code>
+		<lib_FR>Autres Marchandises</lib_FR>
+		<lib_UK>Other Merchandises</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3118</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>312110</code>
+		<lib_FR>Matières Premières (Groupe A)</lib_FR>
+		<lib_UK>Raw Materials ( Group A)</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>31211</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>312120</code>
+		<lib_FR>Matières Premières (Groupe B)</lib_FR>
+		<lib_UK>Raw Materials (Group B)</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>31212</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>312210</code>
+		<lib_FR>Matières Consommables (Groupe A)</lib_FR>
+		<lib_UK>Consumable Matters</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>31221</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>312220</code>
+		<lib_FR>Matières Consommables (Groupe B)</lib_FR>
+		<lib_UK>Consumable Matters</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>31222</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>312230</code>
+		<lib_FR>Combustibles</lib_FR>
+		<lib_UK>Fuels</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>31223</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>312240</code>
+		<lib_FR>Produits D'entretien</lib_FR>
+		<lib_UK>Maintenance Products</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>31224</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>312250</code>
+		<lib_FR>Fournitures D'atelier Et D'usine</lib_FR>
+		<lib_UK>Supplies For Worshop And Factory</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>31225</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>312260</code>
+		<lib_FR>Fournitures De Magasin</lib_FR>
+		<lib_UK>Supplies Of Store</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>31226</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>312270</code>
+		<lib_FR>Fournitures De Bureau</lib_FR>
+		<lib_UK>Office Supplies</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>31227</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>312310</code>
+		<lib_FR>Emballages Perdus</lib_FR>
+		<lib_UK>Lost Packagings</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>31231</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>312320</code>
+		<lib_FR>Emballages Récuperables Non Identifiables</lib_FR>
+		<lib_UK>Nonidentifiable Recoverable Packagings</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>31232</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>312330</code>
+		<lib_FR>Emballages À Usage Mixte</lib_FR>
+		<lib_UK>Packagings With Mixed Use</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>31233</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>312600</code>
+		<lib_FR>Matières Et Fournitures Consommables En Cours De Route</lib_FR>
+		<lib_UK>Consumable Matters And Supplies In The Course Of Road</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3126</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>312800</code>
+		<lib_FR>Autres Matières Et Fournitures Consommables</lib_FR>
+		<lib_UK>Other Matters And Consumable Supplies</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3128</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>313110</code>
+		<lib_FR>Biens Produits En Cours</lib_FR>
+		<lib_UK>Produced Goods In Progress</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>31311</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>313120</code>
+		<lib_FR>Biens Intermédiaires En Cours</lib_FR>
+		<lib_UK>Intermediate Goods In Progress</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>31312</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>313170</code>
+		<lib_FR>Biens Résiduels En Cours</lib_FR>
+		<lib_UK>Residual Goods In Progress</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>31317</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>313410</code>
+		<lib_FR>Travaux En Cours</lib_FR>
+		<lib_UK>Works In Progress</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>31341</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>313420</code>
+		<lib_FR>Etudes En Cours</lib_FR>
+		<lib_UK>Studies In Progress</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>31342</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>313430</code>
+		<lib_FR>Prestations En Cours</lib_FR>
+		<lib_UK>Services In Progress</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>31343</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>313800</code>
+		<lib_FR>Autres Produits En Cours</lib_FR>
+		<lib_UK>Others Products In Progress</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3138</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>314110</code>
+		<lib_FR>Produits Intermédiaires (Groupe A)</lib_FR>
+		<lib_UK>Intermediate Products (Group A)</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>31411</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>314120</code>
+		<lib_FR>Produits Intermédiaires (Groupe B)</lib_FR>
+		<lib_UK>Intermediate Products (Group B)</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>31412</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>314510</code>
+		<lib_FR>Déchets</lib_FR>
+		<lib_UK>Waste</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>31451</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>314520</code>
+		<lib_FR>Rebuts</lib_FR>
+		<lib_UK>Scraps</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>31452</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>314530</code>
+		<lib_FR>Matières De Récuperation</lib_FR>
+		<lib_UK>Recovery Matters</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>31453</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>314800</code>
+		<lib_FR>Autres Produits Intermédiaires Et Produits Résiduels</lib_FR>
+		<lib_UK>Other Intermediate Products And Residual Products</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3148</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>315100</code>
+		<lib_FR>Produits Finis (Groupe A)</lib_FR>
+		<lib_UK>Finished Products (Group A)</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3151</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>315200</code>
+		<lib_FR>Produits Finis (Groupe B)</lib_FR>
+		<lib_UK>Finished Products (Group B)</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3152</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>315600</code>
+		<lib_FR>Produits Finis En Cours De Route</lib_FR>
+		<lib_UK>Finished Products In The Course Of Road</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3156</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>315800</code>
+		<lib_FR>Autres Produits Finis</lib_FR>
+		<lib_UK>Other Finished Products</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3158</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>341100</code>
+		<lib_FR>Fournisseurs : Avances Et Acomptes Versés Sur Commandes D'exploitation</lib_FR>
+		<lib_UK>Suppliers: Paid Advances On Exploitation Order</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3411</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>341300</code>
+		<lib_FR>Fournisseurs : Créances Pour Emballages Et Matériel À Rendre</lib_FR>
+		<lib_UK>Suppliers: Credits For Packaging And Material To Be Return</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3413</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>341700</code>
+		<lib_FR>Rabais, Remises Et Ristournes À Obtenir Ou Avoirs Non Encore Reçus</lib_FR>
+		<lib_UK>Reduction, Handing-Over, Rabates To Be Obtained With The Not Yet Received Assets</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3417</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>341800</code>
+		<lib_FR>Autres Fournisseurs Débiteurs</lib_FR>
+		<lib_UK>Others Suppliers Debtors</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3418</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>342110</code>
+		<lib_FR>Clients : Catégorie A</lib_FR>
+		<lib_UK>Customers: Category A</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>34211</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>342120</code>
+		<lib_FR>Clients : Catégorie B</lib_FR>
+		<lib_UK>Customers: Category B</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>34212</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>342300</code>
+		<lib_FR>Clients : Retenues De Garantie</lib_FR>
+		<lib_UK>Customers: Reserves Of Guaranties</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3423</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>342400</code>
+		<lib_FR>Clients Douteux Ou Litigieux</lib_FR>
+		<lib_UK>Doubtful Or Litigious Customers</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3424</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>342500</code>
+		<lib_FR>Clients : Effets À Recevoir</lib_FR>
+		<lib_UK>Customers: Effects To Receive</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3425</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>342710</code>
+		<lib_FR>Clients : Factures À Etablir</lib_FR>
+		<lib_UK>Customers: Invoices To Be Established</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>34271</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>342720</code>
+		<lib_FR>Creances Sur Travaux Non Encore Facturables</lib_FR>
+		<lib_UK>Credits On Not Yet Billable Works</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>34272</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>342800</code>
+		<lib_FR>Autres Clients Et Comptes Rattachés</lib_FR>
+		<lib_UK>Other Customers And Attached Accounts</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3428</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>343100</code>
+		<lib_FR>Avances Et Acomptes Au Personnel</lib_FR>
+		<lib_UK>The Staff Advances And Installments</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3431</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>343800</code>
+		<lib_FR>Personnel : Autres Débiteurs</lib_FR>
+		<lib_UK>Staff: Other Debtors</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3438</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>345110</code>
+		<lib_FR>Subventions D'investissement À Recevoir</lib_FR>
+		<lib_UK>Investment Subsidies To Receive</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>34511</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>345120</code>
+		<lib_FR>Subventions D'exploitation À Recevoir</lib_FR>
+		<lib_UK>Exploitation Subsidies To Receive</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>34512</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>345130</code>
+		<lib_FR>Subventions D'equilibre À Recevoir</lib_FR>
+		<lib_UK>Balance Subsidies To Receive</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>34513</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>345300</code>
+		<lib_FR>Acomptes Sur Impôts Sur Les Résultats</lib_FR>
+		<lib_UK>Installments On Income Taxes</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3453</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>345510</code>
+		<lib_FR>Etat : Tva Récupérable Sur Immobilisations</lib_FR>
+		<lib_UK>State : Recoverable Vat On Immobilizations</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>34551</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>345520</code>
+		<lib_FR>Etat : Tva Récupérable Sur Charges</lib_FR>
+		<lib_UK>State: Recoverable Vat On Loads</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>34552</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>345600</code>
+		<lib_FR>Etat : Crédit De Tva (Suivant Déclaration)</lib_FR>
+		<lib_UK>State: Credit Of Vat ( According To Thr Declaration)</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3456</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>345800</code>
+		<lib_FR>Etat : Autres Comptes Débiteurs</lib_FR>
+		<lib_UK>State: Other Debtors Accounts</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3458</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>346100</code>
+		<lib_FR>Associés : Comptes D'apport En Société</lib_FR>
+		<lib_UK>Associates : Accounts Of Contribution In Society</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3461</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>346300</code>
+		<lib_FR>Comptes Courants Des Associés Débiteurs</lib_FR>
+		<lib_UK>Current Accounts Of Associates Debtors</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3463</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>346400</code>
+		<lib_FR>Associés : Opérations Faites En Commun</lib_FR>
+		<lib_UK>Associates: Operations Made In Common</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3464</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>346700</code>
+		<lib_FR>Créances Rattachées Aux Comptes D'associés</lib_FR>
+		<lib_UK>Credits Attached To The Associates Accounts</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3467</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>346800</code>
+		<lib_FR>Autres Comptes D'associés Débiteurs</lib_FR>
+		<lib_UK>Other Accounts Of Credit Associates</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3468</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>348100</code>
+		<lib_FR>Créances Sur Cessions D'immobilisations</lib_FR>
+		<lib_UK>Credits On Immobilization Transfers</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3481</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>348200</code>
+		<lib_FR>Créances Sur Cessions D'élèments D'actif Circulant</lib_FR>
+		<lib_UK>Credits On Tansfers Of Current Assets Elements</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3482</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>348700</code>
+		<lib_FR>Créances Rattachées Aux Autres Débiteurs</lib_FR>
+		<lib_UK>Credits Attached To The Other Debtors</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3487</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>348800</code>
+		<lib_FR>Divers Débiteurs</lib_FR>
+		<lib_UK>Various Debtors</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3488</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>349100</code>
+		<lib_FR>Charges Constatées D'avance</lib_FR>
+		<lib_UK>Noted Loads On Advance</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3491</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>349300</code>
+		<lib_FR>Intérêts Courus Et Non Echus À Percevoir</lib_FR>
+		<lib_UK>Receivable Interests And Not Fallen To Perceive</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3493</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>349500</code>
+		<lib_FR>Comptes De Répartition Périodique Des Charges</lib_FR>
+		<lib_UK>Accounts Of Periodic Dictribution Of The Loads</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3495</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>349700</code>
+		<lib_FR>Comptes Transitoires Ou D'attente : Débiteurs</lib_FR>
+		<lib_UK>Transitory Accounts Or Waiting : Debtors</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3497</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>350100</code>
+		<lib_FR>Actions, Partie Libérée</lib_FR>
+		<lib_UK>Shares, Released Part</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3501</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>350200</code>
+		<lib_FR>Actions, Partie Non Libérée</lib_FR>
+		<lib_UK>Shares, Not Released Part</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3502</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>350400</code>
+		<lib_FR>Obligations</lib_FR>
+		<lib_UK>Obligations</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3504</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>350610</code>
+		<lib_FR>Bons De Caisse</lib_FR>
+		<lib_UK>Valid Of Cash</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>35061</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>350620</code>
+		<lib_FR>Bons De Trésor</lib_FR>
+		<lib_UK>Valid Of Treasure</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>35062</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>350800</code>
+		<lib_FR>Autres Titres Et Valeurs De Placement Similaires</lib_FR>
+		<lib_UK>Other Titles And Similary Placement Values</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3508</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>370100</code>
+		<lib_FR>Diminution Des Créances Circulantes</lib_FR>
+		<lib_UK>Reduction Of The Circulating Credits</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3701</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>370200</code>
+		<lib_FR>Augmentation Des Dettes Circulantes</lib_FR>
+		<lib_UK>Increase Of The Circulating Credits</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3702</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>391100</code>
+		<lib_FR>Provisions Pour Dépréciation Des Marchandises</lib_FR>
+		<lib_UK>Provision For Depreciation Of Goods</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3911</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>391200</code>
+		<lib_FR>Provisions Pour Dépréciation Des Matières Et Fournitures</lib_FR>
+		<lib_UK>Provision For Depreciation Of Matters And Supplies</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3912</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>391300</code>
+		<lib_FR>Provisions Pour Dépréciation Des Produits En Cours</lib_FR>
+		<lib_UK>Provision For Depreciation Of Products In Progress</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3913</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>391400</code>
+		<lib_FR>Provisions Pour Dépréciation Des Produits Intermédiaires</lib_FR>
+		<lib_UK>Provision For Depreciation Of Intermediate Products</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3914</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>391500</code>
+		<lib_FR>Provisions Pour Dépréciation Des Produits Finis</lib_FR>
+		<lib_UK>Provisions For Depreciation Of Finished Products</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3915</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>394100</code>
+		<lib_FR>Provisions Pour Dépréciation : Fournisseurs Débiteurs, Avances Et Acomptes</lib_FR>
+		<lib_UK>Provisions For Depreciation : Suppliers Debtors, Advances And Installments</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3941</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>394200</code>
+		<lib_FR>Provisions Pour Dépréciation Des Clients Et Comptes Rattachés</lib_FR>
+		<lib_UK>Provisions For Depreciation Of Customers And Attached Accounts</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3942</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>394300</code>
+		<lib_FR>Provisions Pour Dépréciation Du Personnel - Débiteur</lib_FR>
+		<lib_UK>Provision For Depreciation Of The Staff - Debtor</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3943</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>394600</code>
+		<lib_FR>Provisions Pour Dépréciation Des Comptes D'associés Débiteurs</lib_FR>
+		<lib_UK>Provision For Depreciation Of The Associates Debtors Accounts</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3946</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>394800</code>
+		<lib_FR>Provisions Pour Dépréciation Des Autres Débiteurs</lib_FR>
+		<lib_UK>Ptovision For Depreciation Of The Other Debtors</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3948</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>395000</code>
+		<lib_FR>Provisions Pour Dépréciation Des Titres Et Valeurs De Placement</lib_FR>
+		<lib_UK>Provisions For Depreciation Of Titles And Placement Values</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>5</nature>
+		<ran>0</ran>
+		<racine>3950</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Stock</lib_nat>
+	</compte>
+
+	<compte>
+		<code>410000</code>
+		<lib_FR>Emprunts Obligataires</lib_FR>
+		<lib_UK>Bond-Holders Loans</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>9</nature>
+		<ran>0</ran>
+		<racine>410</racine>
+		<libre>000</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Tiers</lib_nat>
+	</compte>
+
+	<compte>
+		<code>441110</code>
+		<lib_FR>Fournisseurs : Catégorie A</lib_FR>
+		<lib_UK>Suppliers : Category B</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>6</nature>
+		<ran>1</ran>
+		<racine>44111</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Fournisseurs</lib_nat>
+	</compte>
+
+	<compte>
+		<code>441120</code>
+		<lib_FR>Fournisseurs : Catégorie B</lib_FR>
+		<lib_UK>Suppliers : Category B</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>6</nature>
+		<ran>1</ran>
+		<racine>44112</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Fournisseurs</lib_nat>
+	</compte>
+
+	<compte>
+		<code>441300</code>
+		<lib_FR>Fournisseurs : Retenues De Garantie</lib_FR>
+		<lib_UK>Suppliers : Reserves Of Guarantee</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>6</nature>
+		<ran>1</ran>
+		<racine>4413</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Fournisseurs</lib_nat>
+	</compte>
+
+	<compte>
+		<code>441500</code>
+		<lib_FR>Fournisseurs : Effets À Payer</lib_FR>
+		<lib_UK>Suppliers : Payable Bills</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>6</nature>
+		<ran>1</ran>
+		<racine>4415</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Fournisseurs</lib_nat>
+	</compte>
+
+	<compte>
+		<code>441700</code>
+		<lib_FR>Fournisseurs : Factures Non Parvenues</lib_FR>
+		<lib_UK>Suppliers : Upstart Invoices</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>6</nature>
+		<ran>1</ran>
+		<racine>4417</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Fournisseurs</lib_nat>
+	</compte>
+
+	<compte>
+		<code>441800</code>
+		<lib_FR>Autres Fournisseurs Et Comptes Rattachés</lib_FR>
+		<lib_UK>Other Suppliers And Attached Accounts</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>6</nature>
+		<ran>1</ran>
+		<racine>4418</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Fournisseurs</lib_nat>
+	</compte>
+
+	<compte>
+		<code>442100</code>
+		<lib_FR>Clients : Avances Et Acomptes Reus Sur Commandes En Cours</lib_FR>
+		<lib_UK>Customers : Advances And Installments</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>7</nature>
+		<ran>1</ran>
+		<racine>4421</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Clients</lib_nat>
+	</compte>
+
+	<compte>
+		<code>442500</code>
+		<lib_FR>Clients : Dettes Pour Emballages Et Matériel Consignes</lib_FR>
+		<lib_UK>Customers : Debts For Packaging And Consigned Material</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>7</nature>
+		<ran>1</ran>
+		<racine>4425</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Clients</lib_nat>
+	</compte>
+
+	<compte>
+		<code>442700</code>
+		<lib_FR>Rabais, Remises Et Ristournes À Accorder : Avoirs À Etablir</lib_FR>
+		<lib_UK>Reduction, Handing-Over And Rebates To Grant: Assets To Establish</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>7</nature>
+		<ran>1</ran>
+		<racine>4427</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Clients</lib_nat>
+	</compte>
+
+	<compte>
+		<code>442800</code>
+		<lib_FR>Autres Clients Créditeurs</lib_FR>
+		<lib_UK>Other Credit Customers</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>7</nature>
+		<ran>1</ran>
+		<racine>4428</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Clients</lib_nat>
+	</compte>
+
+	<compte>
+		<code>443200</code>
+		<lib_FR>Rémunérations Dues Au Personnel</lib_FR>
+		<lib_UK>Renumerations Due To The Staff</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>8</nature>
+		<ran>1</ran>
+		<racine>4432</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Personnels</lib_nat>
+	</compte>
+
+	<compte>
+		<code>443300</code>
+		<lib_FR>Dépôts Du Personnel Créditeurs</lib_FR>
+		<lib_UK>Deposit Of Credit Staff</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>8</nature>
+		<ran>1</ran>
+		<racine>4433</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Personnels</lib_nat>
+	</compte>
+
+	<compte>
+		<code>443400</code>
+		<lib_FR>Oppositions Sur Salaires</lib_FR>
+		<lib_UK>Oppositions Of Salaries</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>8</nature>
+		<ran>1</ran>
+		<racine>4434</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Personnels</lib_nat>
+	</compte>
+
+	<compte>
+		<code>443700</code>
+		<lib_FR>Charges Du Personnel À Payer</lib_FR>
+		<lib_UK>Staff Loads To Pay</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>8</nature>
+		<ran>1</ran>
+		<racine>4437</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Personnels</lib_nat>
+	</compte>
+
+	<compte>
+		<code>443800</code>
+		<lib_FR>Personnel : Autres Créditeurs</lib_FR>
+		<lib_UK>Staff : Other Creditors</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>8</nature>
+		<ran>1</ran>
+		<racine>4438</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Personnels</lib_nat>
+	</compte>
+
+	<compte>
+		<code>444100</code>
+		<lib_FR>Caisse Nationale De La Sécurité Sociale</lib_FR>
+		<lib_UK>National Social Security Office</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>9</nature>
+		<ran>0</ran>
+		<racine>4441</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Tiers</lib_nat>
+	</compte>
+
+	<compte>
+		<code>444300</code>
+		<lib_FR>Caisses De Retraite</lib_FR>
+		<lib_UK>Pension Fund</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>9</nature>
+		<ran>0</ran>
+		<racine>4443</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Tiers</lib_nat>
+	</compte>
+
+	<compte>
+		<code>444500</code>
+		<lib_FR>Mutuelles</lib_FR>
+		<lib_UK>Mutuals</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>9</nature>
+		<ran>0</ran>
+		<racine>4445</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Tiers</lib_nat>
+	</compte>
+
+	<compte>
+		<code>444700</code>
+		<lib_FR>Charges Sociales À Payer</lib_FR>
+		<lib_UK>Social Loads To Pay</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>9</nature>
+		<ran>0</ran>
+		<racine>4447</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Tiers</lib_nat>
+	</compte>
+
+	<compte>
+		<code>444800</code>
+		<lib_FR>Autres Organismes Sociaux</lib_FR>
+		<lib_UK>Other Social Organizations</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>9</nature>
+		<ran>0</ran>
+		<racine>4448</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Tiers</lib_nat>
+	</compte>
+
+	<compte>
+		<code>445210</code>
+		<lib_FR>Etat : Taxe Urbaine Et Taxe D'édilite</lib_FR>
+		<lib_UK>State: Urban Tax And Elite Tax</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>12</nature>
+		<ran>0</ran>
+		<racine>44521</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Trésoreries</lib_nat>
+	</compte>
+
+	<compte>
+		<code>445220</code>
+		<lib_FR>Etat : Patente</lib_FR>
+		<lib_UK>State : Licence</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>12</nature>
+		<ran>0</ran>
+		<racine>44522</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Trésoreries</lib_nat>
+	</compte>
+
+	<compte>
+		<code>445250</code>
+		<lib_FR>Etat : Igr</lib_FR>
+		<lib_UK>State : Igr</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>12</nature>
+		<ran>0</ran>
+		<racine>44525</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Trésoreries</lib_nat>
+	</compte>
+
+	<compte>
+		<code>445300</code>
+		<lib_FR>Etat : Impôts Sur Les Résultats</lib_FR>
+		<lib_UK>State: Income Taxes</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>12</nature>
+		<ran>0</ran>
+		<racine>4453</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Trésoreries</lib_nat>
+	</compte>
+
+	<compte>
+		<code>445500</code>
+		<lib_FR>Etat : Tva Facturée</lib_FR>
+		<lib_UK>State : Invoiced Vat</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>10</nature>
+		<ran>0</ran>
+		<racine>4455</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Banques</lib_nat>
+	</compte>
+
+	<compte>
+		<code>445600</code>
+		<lib_FR>Etat : Tva Due (Suivant Déclarations)</lib_FR>
+		<lib_UK>State: Vat Due (According To The Declarations)</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>10</nature>
+		<ran>0</ran>
+		<racine>4456</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Banques</lib_nat>
+	</compte>
+
+	<compte>
+		<code>445700</code>
+		<lib_FR>Etat : Impôts Et Taxes À Payer</lib_FR>
+		<lib_UK>State : Taxes To Pay</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>10</nature>
+		<ran>0</ran>
+		<racine>4457</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Banques</lib_nat>
+	</compte>
+
+	<compte>
+		<code>445800</code>
+		<lib_FR>Etat : Autres Comptes Créditeurs</lib_FR>
+		<lib_UK>State : Other Creditors Accounts</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>10</nature>
+		<ran>0</ran>
+		<racine>4458</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Banques</lib_nat>
+	</compte>
+
+	<compte>
+		<code>446100</code>
+		<lib_FR>Associés : Capital À Rembourser</lib_FR>
+		<lib_UK>Associates:  Capital To Refund</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>9</nature>
+		<ran>0</ran>
+		<racine>4461</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Tiers</lib_nat>
+	</compte>
+
+	<compte>
+		<code>446200</code>
+		<lib_FR>Associés : Versements Reus Sur Augmentation De Capital</lib_FR>
+		<lib_UK>Associates : Payments Read Again In The Capital</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>9</nature>
+		<ran>0</ran>
+		<racine>4462</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Tiers</lib_nat>
+	</compte>
+
+	<compte>
+		<code>446300</code>
+		<lib_FR>Comptes Courants Des Associés Créditeurs</lib_FR>
+		<lib_UK>Currents Accounts Of The Credit Associates</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>9</nature>
+		<ran>0</ran>
+		<racine>4463</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Tiers</lib_nat>
+	</compte>
+
+	<compte>
+		<code>446400</code>
+		<lib_FR>Associés : Opérations Faites En Commun</lib_FR>
+		<lib_UK>Associates : Operations Made In Common</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>9</nature>
+		<ran>0</ran>
+		<racine>4464</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Tiers</lib_nat>
+	</compte>
+
+	<compte>
+		<code>446500</code>
+		<lib_FR>Associés : Dividendes À Payer</lib_FR>
+		<lib_UK>Associates : Dividends To Pay</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>9</nature>
+		<ran>0</ran>
+		<racine>4465</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Tiers</lib_nat>
+	</compte>
+
+	<compte>
+		<code>446800</code>
+		<lib_FR>Autres Comptes D'associés : Créditeurs</lib_FR>
+		<lib_UK>Other Accounts Of Associates : Creditors</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>9</nature>
+		<ran>0</ran>
+		<racine>4468</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Tiers</lib_nat>
+	</compte>
+
+	<compte>
+		<code>448100</code>
+		<lib_FR>Dettes Sur Acquisitions D'immobilisations</lib_FR>
+		<lib_UK>Debts On Acquisitions Of Immobilizations</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>9</nature>
+		<ran>0</ran>
+		<racine>4481</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Tiers</lib_nat>
+	</compte>
+
+	<compte>
+		<code>448300</code>
+		<lib_FR>Dettes Sur Acquisitions De Titres Et Valeurs De Placement</lib_FR>
+		<lib_UK>Debts On Acquisitions Of Titles And Placement Values</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>9</nature>
+		<ran>0</ran>
+		<racine>4483</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Tiers</lib_nat>
+	</compte>
+
+	<compte>
+		<code>448400</code>
+		<lib_FR>Obligations Echues À Rembourser</lib_FR>
+		<lib_UK>Fallen Obligations To Refund</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>9</nature>
+		<ran>0</ran>
+		<racine>4484</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Tiers</lib_nat>
+	</compte>
+
+	<compte>
+		<code>448500</code>
+		<lib_FR>Obligations, Coupons À Payer</lib_FR>
+		<lib_UK>Obligations, Tickets To Pay</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>9</nature>
+		<ran>0</ran>
+		<racine>4485</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Tiers</lib_nat>
+	</compte>
+
+	<compte>
+		<code>448700</code>
+		<lib_FR>Dettes Rattachées Aux Autres Créanciers</lib_FR>
+		<lib_UK>Debts Attached To The Creditors</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>9</nature>
+		<ran>0</ran>
+		<racine>4487</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Tiers</lib_nat>
+	</compte>
+
+	<compte>
+		<code>448800</code>
+		<lib_FR>Divers Créanciers</lib_FR>
+		<lib_UK>Various Creditors</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>9</nature>
+		<ran>0</ran>
+		<racine>4488</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Tiers</lib_nat>
+	</compte>
+
+	<compte>
+		<code>449100</code>
+		<lib_FR>Produits Constatés D'avance</lib_FR>
+		<lib_UK>Products Noted In Advance</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>9</nature>
+		<ran>0</ran>
+		<racine>4491</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Tiers</lib_nat>
+	</compte>
+
+	<compte>
+		<code>449300</code>
+		<lib_FR>Intérêts Courus Et Non Echus À Payer</lib_FR>
+		<lib_UK>Rceivable Interests And Not Fallen To Pay</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>9</nature>
+		<ran>0</ran>
+		<racine>4493</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Tiers</lib_nat>
+	</compte>
+
+	<compte>
+		<code>449500</code>
+		<lib_FR>Comptes De Répartition Périodique Des Produits</lib_FR>
+		<lib_UK>Accounts Of Periodic Distribution Of Products</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>9</nature>
+		<ran>0</ran>
+		<racine>4495</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Tiers</lib_nat>
+	</compte>
+
+	<compte>
+		<code>449700</code>
+		<lib_FR>Comptes Transitoires Ou D'attente - Créditeurs</lib_FR>
+		<lib_UK>Transitory Accounts Or Waiting - Creditors</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>9</nature>
+		<ran>0</ran>
+		<racine>4497</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Tiers</lib_nat>
+	</compte>
+
+	<compte>
+		<code>450100</code>
+		<lib_FR>Provisions Pour Litiges</lib_FR>
+		<lib_UK>Provisions For Lawsuits</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>4501</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>450200</code>
+		<lib_FR>Provisions Pour Garanties Données Aux Clients</lib_FR>
+		<lib_UK>Provisions For Guarantees Given To The Customers</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>4502</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>450500</code>
+		<lib_FR>Provisions Pour Amendes, Doubles Droits Et Pénalités</lib_FR>
+		<lib_UK>Provisions For Fines, Doubles Rights And Penalities</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>4505</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>450600</code>
+		<lib_FR>Provisions Pour Pertes De Change</lib_FR>
+		<lib_UK>Provisions For Loss On Transaction</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>4506</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>450700</code>
+		<lib_FR>Provisions Pour Impôts</lib_FR>
+		<lib_UK>Provisions For Taxes</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>4507</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>450800</code>
+		<lib_FR>Autres Provisions Pour Risques Et Charges</lib_FR>
+		<lib_UK>Other Provisions For Risks And Loads</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>4508</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>470100</code>
+		<lib_FR>Augmentation Des Créances Circulantes</lib_FR>
+		<lib_UK>Increase In The Circulating Credits</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>9</nature>
+		<ran>0</ran>
+		<racine>4701</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Tiers</lib_nat>
+	</compte>
+
+	<compte>
+		<code>470200</code>
+		<lib_FR>Diminution Des Dettes Circulantes</lib_FR>
+		<lib_UK>Reduction Of Circulating Debts</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>9</nature>
+		<ran>0</ran>
+		<racine>4702</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Tiers</lib_nat>
+	</compte>
+
+	<compte>
+		<code>481000</code>
+		<lib_FR>Emprunts Aupres Des Établissements De Crédit</lib_FR>
+		<lib_UK>Loans Near The Finance Companies</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>9</nature>
+		<ran>0</ran>
+		<racine>481</racine>
+		<libre>000</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Tiers</lib_nat>
+	</compte>
+
+	<compte>
+		<code>482000</code>
+		<lib_FR>Avances De L'état</lib_FR>
+		<lib_UK>Advances Of The State</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>9</nature>
+		<ran>0</ran>
+		<racine>482</racine>
+		<libre>000</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Tiers</lib_nat>
+	</compte>
+
+	<compte>
+		<code>483000</code>
+		<lib_FR>Dettes Rattachées À Des Participations</lib_FR>
+		<lib_UK>Debts Attached To Participations</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>9</nature>
+		<ran>0</ran>
+		<racine>483</racine>
+		<libre>000</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Tiers</lib_nat>
+	</compte>
+
+	<compte>
+		<code>484000</code>
+		<lib_FR>Billets De Fonds</lib_FR>
+		<lib_UK>Tickets Of Funds</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>9</nature>
+		<ran>0</ran>
+		<racine>484</racine>
+		<libre>000</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Tiers</lib_nat>
+	</compte>
+
+	<compte>
+		<code>485000</code>
+		<lib_FR>Avances Reues Et Comptes Courants Bloqués</lib_FR>
+		<lib_UK>Read Again Advances And Blocked Currents Accounts</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>9</nature>
+		<ran>0</ran>
+		<racine>485</racine>
+		<libre>000</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Tiers</lib_nat>
+	</compte>
+
+	<compte>
+		<code>486000</code>
+		<lib_FR>Fournisseurs D'immobilisation</lib_FR>
+		<lib_UK>Immobilizations Suppliers</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>9</nature>
+		<ran>0</ran>
+		<racine>486</racine>
+		<libre>000</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Tiers</lib_nat>
+	</compte>
+
+	<compte>
+		<code>487000</code>
+		<lib_FR>Dépôts Et Cautionnements Reues</lib_FR>
+		<lib_UK>Deposits And Guarantees Read Again</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>9</nature>
+		<ran>0</ran>
+		<racine>487</racine>
+		<libre>000</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Tiers</lib_nat>
+	</compte>
+
+	<compte>
+		<code>488000</code>
+		<lib_FR>Dettes De Financement Diverses</lib_FR>
+		<lib_UK>Various Debts Of Financing</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>9</nature>
+		<ran>0</ran>
+		<racine>488</racine>
+		<libre>000</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Tiers</lib_nat>
+	</compte>
+
+	<compte>
+		<code>511110</code>
+		<lib_FR>Chèques En Portefeuille</lib_FR>
+		<lib_UK>Cheques In Portofolio</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>15</nature>
+		<ran>0</ran>
+		<racine>51111</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Etats</lib_nat>
+	</compte>
+
+	<compte>
+		<code>511120</code>
+		<lib_FR>Chéques À L'encaissement</lib_FR>
+		<lib_UK>Cheques In Cashing</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>15</nature>
+		<ran>0</ran>
+		<racine>51112</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Etats</lib_nat>
+	</compte>
+
+	<compte>
+		<code>511310</code>
+		<lib_FR>Effets Echus À Encaisser</lib_FR>
+		<lib_UK>Fallen Effects To Box</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>15</nature>
+		<ran>0</ran>
+		<racine>51131</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Etats</lib_nat>
+	</compte>
+
+	<compte>
+		<code>511320</code>
+		<lib_FR>Effets À L'encaissement</lib_FR>
+		<lib_UK>Effects With The Cashing</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>15</nature>
+		<ran>0</ran>
+		<racine>51132</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Etats</lib_nat>
+	</compte>
+
+	<compte>
+		<code>511500</code>
+		<lib_FR>Virement De Fonds</lib_FR>
+		<lib_UK>Transfer Of Funds</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>15</nature>
+		<ran>0</ran>
+		<racine>5115</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Etats</lib_nat>
+	</compte>
+
+	<compte>
+		<code>511800</code>
+		<lib_FR>Autres Valeurs À Encaisser</lib_FR>
+		<lib_UK>Other Values To Box</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>15</nature>
+		<ran>0</ran>
+		<racine>5118</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Etats</lib_nat>
+	</compte>
+
+	<compte>
+		<code>512310</code>
+		<lib_FR>Achats D'emballages Perdus</lib_FR>
+		<lib_UK>Purchases Of Lost Packagings</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>15</nature>
+		<ran>0</ran>
+		<racine>51231</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Etats</lib_nat>
+	</compte>
+
+	<compte>
+		<code>513000</code>
+		<lib_FR>Provisions Pour Propre Assureur</lib_FR>
+		<lib_UK>Provisions For Own Insurer</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>15</nature>
+		<ran>0</ran>
+		<racine>513</racine>
+		<libre>000</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Etats</lib_nat>
+	</compte>
+
+	<compte>
+		<code>514100</code>
+		<lib_FR>Banques (Solde Débiteur)</lib_FR>
+		<lib_UK>Bank (Debit Balance)</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>15</nature>
+		<ran>0</ran>
+		<racine>5141</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Etats</lib_nat>
+	</compte>
+
+	<compte>
+		<code>514300</code>
+		<lib_FR>Trésorerie Générale</lib_FR>
+		<lib_UK>General Treasury</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>15</nature>
+		<ran>0</ran>
+		<racine>5143</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Etats</lib_nat>
+	</compte>
+
+	<compte>
+		<code>514600</code>
+		<lib_FR>Chèques Postaux</lib_FR>
+		<lib_UK>Postal Cheques</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>15</nature>
+		<ran>0</ran>
+		<racine>5146</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Etats</lib_nat>
+	</compte>
+
+	<compte>
+		<code>514800</code>
+		<lib_FR>Autres Établissements Financiers Et Assimilés (Soldes Débiteurs)</lib_FR>
+		<lib_UK>Other Financial Institutions And Assimilated (Debit Balances)</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>15</nature>
+		<ran>0</ran>
+		<racine>5148</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Etats</lib_nat>
+	</compte>
+
+	<compte>
+		<code>515000</code>
+		<lib_FR>Provisions Pour Amendes, Double Droits, Pénalités</lib_FR>
+		<lib_UK>Provisions For Fgines, Double Rights, Penalities</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>15</nature>
+		<ran>0</ran>
+		<racine>515</racine>
+		<libre>000</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Etats</lib_nat>
+	</compte>
+
+	<compte>
+		<code>516110</code>
+		<lib_FR>Caisse Centrale</lib_FR>
+		<lib_UK>Central Cash</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>14</nature>
+		<ran>0</ran>
+		<racine>51611</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>BRS</lib_nat>
+	</compte>
+
+	<compte>
+		<code>516130</code>
+		<lib_FR>Caisse (Succursale Ou Agence A)</lib_FR>
+		<lib_UK>Cash (Branch Ou Agency A)</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>14</nature>
+		<ran>0</ran>
+		<racine>51613</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>BRS</lib_nat>
+	</compte>
+
+	<compte>
+		<code>516140</code>
+		<lib_FR>Caisse (Succursale Ou Agence B)</lib_FR>
+		<lib_UK>Cash ( Branch Or Agency B)</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>14</nature>
+		<ran>0</ran>
+		<racine>51614</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>BRS</lib_nat>
+	</compte>
+
+	<compte>
+		<code>516500</code>
+		<lib_FR>Regies D'avances Et Accréditifs</lib_FR>
+		<lib_UK>Advances Controls And Credit Letters</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>15</nature>
+		<ran>0</ran>
+		<racine>5165</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Etats</lib_nat>
+	</compte>
+
+	<compte>
+		<code>518000</code>
+		<lib_FR>Autres Provisions Pour Risques</lib_FR>
+		<lib_UK>Other Provisions For Riks</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>15</nature>
+		<ran>0</ran>
+		<racine>518</racine>
+		<libre>000</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Etats</lib_nat>
+	</compte>
+
+	<compte>
+		<code>520000</code>
+		<lib_FR>Crédits D'escompte</lib_FR>
+		<lib_UK>Credits Of Discounts</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>15</nature>
+		<ran>0</ran>
+		<racine>520</racine>
+		<libre>000</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Etats</lib_nat>
+	</compte>
+
+	<compte>
+		<code>530000</code>
+		<lib_FR>Crédits De Trésorerie</lib_FR>
+		<lib_UK>Treasury Credits</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>15</nature>
+		<ran>0</ran>
+		<racine>530</racine>
+		<libre>000</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Etats</lib_nat>
+	</compte>
+
+	<compte>
+		<code>541000</code>
+		<lib_FR>Banques (Solde Créditeur)</lib_FR>
+		<lib_UK>Bank ( Credit Balance)</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>15</nature>
+		<ran>0</ran>
+		<racine>541</racine>
+		<libre>000</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Etats</lib_nat>
+	</compte>
+
+	<compte>
+		<code>548000</code>
+		<lib_FR>Autres Établissements Financiers Et Assimilés (Soldes Créditeurs)</lib_FR>
+		<lib_UK>Other Financial Institutions And Assimilated (Credit Balance)</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>15</nature>
+		<ran>0</ran>
+		<racine>548</racine>
+		<libre>000</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Etats</lib_nat>
+	</compte>
+
+	<compte>
+		<code>551000</code>
+		<lib_FR>Provisions Pour Impôts</lib_FR>
+		<lib_UK>Provisions For Taxes</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>15</nature>
+		<ran>0</ran>
+		<racine>551</racine>
+		<libre>000</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Etats</lib_nat>
+	</compte>
+
+	<compte>
+		<code>552000</code>
+		<lib_FR>Crédits D'escompte</lib_FR>
+		<lib_UK>Discount Credits</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>15</nature>
+		<ran>0</ran>
+		<racine>552</racine>
+		<libre>000</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Etats</lib_nat>
+	</compte>
+
+	<compte>
+		<code>552000</code>
+		<lib_FR>Provisions Pour Pensions De Retraite Et Obligations Similaires</lib_FR>
+		<lib_UK>Provisions For Pension Funds And Similary Obligations</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>15</nature>
+		<ran>0</ran>
+		<racine>552</racine>
+		<libre>000</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Etats</lib_nat>
+	</compte>
+
+	<compte>
+		<code>552000</code>
+		<lib_FR>Crédits D'escompte</lib_FR>
+		<lib_UK>Credits Of Discount</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>15</nature>
+		<ran>0</ran>
+		<racine>5520</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Etats</lib_nat>
+	</compte>
+
+	<compte>
+		<code>553000</code>
+		<lib_FR>Crédits De Trésorerie</lib_FR>
+		<lib_UK>Credits Of Treasury</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>15</nature>
+		<ran>0</ran>
+		<racine>5530</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Etats</lib_nat>
+	</compte>
+
+	<compte>
+		<code>554100</code>
+		<lib_FR>Banques (Solde Créditeur)</lib_FR>
+		<lib_UK>Bank (Credit Balance)</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>15</nature>
+		<ran>0</ran>
+		<racine>5541</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Etats</lib_nat>
+	</compte>
+
+	<compte>
+		<code>554800</code>
+		<lib_FR>Autres Établissements Financiers Et Assimilés (Soldes Créditeurs)</lib_FR>
+		<lib_UK>Other Financial  Institutions And Assimilated (Credits Balance)</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>15</nature>
+		<ran>0</ran>
+		<racine>5548</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Etats</lib_nat>
+	</compte>
+
+	<compte>
+		<code>555000</code>
+		<lib_FR>Provisions Pour Charges À Répartir Sur Plusieurs Exercices</lib_FR>
+		<lib_UK>Provisions For Loads To Divide Up On Several Excercises</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>15</nature>
+		<ran>0</ran>
+		<racine>555</racine>
+		<libre>000</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Etats</lib_nat>
+	</compte>
+
+	<compte>
+		<code>558000</code>
+		<lib_FR>Autres Provisions Pour Charges</lib_FR>
+		<lib_UK>Other Provisions For Loads</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>15</nature>
+		<ran>0</ran>
+		<racine>558</racine>
+		<libre>000</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Etats</lib_nat>
+	</compte>
+
+	<compte>
+		<code>590000</code>
+		<lib_FR>Provisions Pour Depreciation Des Comptes De Tresorerie</lib_FR>
+		<lib_UK>Provisions For Depreciation Of Treasury Accounts</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>15</nature>
+		<ran>0</ran>
+		<racine>5900</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Autres Etats</lib_nat>
+	</compte>
+
+	<compte>
+		<code>611100</code>
+		<lib_FR>Achats De Marchandises Groupe A</lib_FR>
+		<lib_UK>Purchases Of Goods Group A</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6111</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>611200</code>
+		<lib_FR>Achats De Marchandises Groupe B</lib_FR>
+		<lib_UK>Purchases Of Goods Group B</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6112</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>611400</code>
+		<lib_FR>Variation De Stocks De Marchandises</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6114</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>611800</code>
+		<lib_FR>Achats Revendus De Marchandises Des Exercices Antérieurs</lib_FR>
+		<lib_UK>Resold Purchases Of Earliers Excercises</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6118</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>611900</code>
+		<lib_FR>Rabais, Remises Et Ristournes Obtenus Sur Achats De Marchandises</lib_FR>
+		<lib_UK>Reductions, Handing-Over And Rebates Obtained On Goods Purchases</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6119</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>612110</code>
+		<lib_FR>Achats De Matières Premières A</lib_FR>
+		<lib_UK>Purchases Of Raw Materials A</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61211</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>612120</code>
+		<lib_FR>Achats De Matières Premières B</lib_FR>
+		<lib_UK>Purchases Of Raw Materials B</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61212</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>612210</code>
+		<lib_FR>Achats De Matières Et Fournitures A</lib_FR>
+		<lib_UK>Matters Purchases And Supplies A</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61221</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>612220</code>
+		<lib_FR>Achats De Matières Et Fournitures B</lib_FR>
+		<lib_UK>Matter Purchases And Supplies B</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61222</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>612230</code>
+		<lib_FR>Achats De Combustibles</lib_FR>
+		<lib_UK>Purchases Of Fuels</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61223</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>612240</code>
+		<lib_FR>Achats De Produits D'entretien</lib_FR>
+		<lib_UK>Other Products Of Maintenance</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61224</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>612250</code>
+		<lib_FR>Achats De Fournitures D'atelier Et D'usine</lib_FR>
+		<lib_UK>Purchases Of Workshop And Factory Supplies</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61225</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>612260</code>
+		<lib_FR>Achats De Fournitures De Magasin</lib_FR>
+		<lib_UK>Purchases Of Store Supplies</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61226</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>612270</code>
+		<lib_FR>Achats De Fournitures De Bureau</lib_FR>
+		<lib_UK>Purchases Of Office Supplies</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61227</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>612320</code>
+		<lib_FR>Achats D'emballages Récupérables Non Identifiables</lib_FR>
+		<lib_UK>Purchases Of Not Identifiable Recoverable Packagings</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61232</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>612330</code>
+		<lib_FR>Achats D'emballages À Usage Mixte</lib_FR>
+		<lib_UK>Purchases Of Packagings For Mixed Use</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61233</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>612410</code>
+		<lib_FR>Variation Des Stocks De Matières Premières</lib_FR>
+		<lib_UK>Variation Of Raw Material Stocks</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61241</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>612420</code>
+		<lib_FR>Variation Des Stocks De Matières Et Fournitures Consommables</lib_FR>
+		<lib_UK>Variation Of Matter Stocks And  Consumable Supplies</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61242</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>612430</code>
+		<lib_FR>Variation Des Stocks Des Emballages</lib_FR>
+		<lib_UK>Variation Of Stocks Of Packagings</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61243</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>612510</code>
+		<lib_FR>Achats De Fournitures Non Stockables (Eau, Électricité,,)</lib_FR>
+		<lib_UK>Not Storable Purchases Of Supplies (Water, Electricity,)</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61251</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>612520</code>
+		<lib_FR>Achats De Fournitures D'entretien</lib_FR>
+		<lib_UK>Purchases Of Supplies Of Maintenance</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61252</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>612530</code>
+		<lib_FR>Achats De Petit Outillage Et Petit Équipement</lib_FR>
+		<lib_UK>Purchases Of Small Tools And Small Equipment</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61253</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>612540</code>
+		<lib_FR>Achats De Fournitures De Bureau</lib_FR>
+		<lib_UK>Purchases Of Office Supplies</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61254</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>612610</code>
+		<lib_FR>Achats Des Travaux</lib_FR>
+		<lib_UK>Purchases Of Works</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61261</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>612620</code>
+		<lib_FR>Achats Des Études</lib_FR>
+		<lib_UK>Purchases Of The Studies</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61262</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>612630</code>
+		<lib_FR>Achats Des Prestations De Service</lib_FR>
+		<lib_UK>Purchases Of The Performances Of Service</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61263</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>612800</code>
+		<lib_FR>Achats De Matières Et De Fournitures Des Exercices Antérieurs</lib_FR>
+		<lib_UK>Purchases Of Matters And Supplies Of The Former Exercises</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6128</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>612910</code>
+		<lib_FR>Rabais, Remises Et Ristournes Obtenus Sur Achats De Matières Premières</lib_FR>
+		<lib_UK>Reduction, Handing-Over And Rebates Obtained On Purchases Of Raw Materials</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61291</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>612920</code>
+		<lib_FR>Rabais, Remises Et Ristournes Obtenus Sur Achats De Matières Et Fournitures Consommables</lib_FR>
+		<lib_UK>Reduction, Handing-Over And Rebates Obtained On Purchases Of Matters And Consumable Supplies</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61292</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>612930</code>
+		<lib_FR>Rabais, Remises Et Ristournes Obtenus Sur Achats Des Emballages</lib_FR>
+		<lib_UK>Reduction, Handing-Over And Rebates Obtained On Purchases Of Packagings</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61293</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>612950</code>
+		<lib_FR>Rabais, Remises Et Ristournes Obtenus Sur Achats Non Stockés</lib_FR>
+		<lib_UK>Reduction, Handing-Over And Rebates Obtained On Not Stored Purchases</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61295</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>612960</code>
+		<lib_FR>Rabais, Remises Et Ristournes Obtenus Sur Achats De Travaux, Études Et Prestations De Service</lib_FR>
+		<lib_UK>Reduction, Handing-Over And Rebates Obtained On Purchases Of Works, Studies And Performances Of Serv</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61296</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>612980</code>
+		<lib_FR>Rabais, Remises Et Ristournes Obtenus Sur Achats De Matières Et Fournitures Des Exercices Antérieurs</lib_FR>
+		<lib_UK>Reduction, Handing-Over And Rebates Obtained On Purchases Of Matters And Supplies Of The Former Exer</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61298</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>613110</code>
+		<lib_FR>Locations De Terrains</lib_FR>
+		<lib_UK>Hirings Of Grounds</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61311</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>613120</code>
+		<lib_FR>Locations De Constructions</lib_FR>
+		<lib_UK>Hirings Of Constructions</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61312</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>613130</code>
+		<lib_FR>Locations De Matériel Et D'outillage</lib_FR>
+		<lib_UK>Hirings Of Material And Tools</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61313</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>613140</code>
+		<lib_FR>Locations De Mobilier Et De Matériel De Bureau</lib_FR>
+		<lib_UK>Hirings Of Furniture And Office Equipment</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61314</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>613150</code>
+		<lib_FR>Locations De Matériel Informatique</lib_FR>
+		<lib_UK>Hirings Of Computer Material</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61315</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>613160</code>
+		<lib_FR>Locations De Matériel De Transport</lib_FR>
+		<lib_UK>Hirings Of Means Of Transport</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61316</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>613170</code>
+		<lib_FR>Malis Sur Emballages Rendus</lib_FR>
+		<lib_UK>Malis On Returned Packagings</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61317</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>613180</code>
+		<lib_FR>Locations Et Charges Locatives Diverses</lib_FR>
+		<lib_UK>Hirings And Various Rental Loads</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61318</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>613210</code>
+		<lib_FR>Redevances De Crédit Bail : Mobilier Et Matériel</lib_FR>
+		<lib_UK>Royalties Of Leasing : Furniture And Material</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61321</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>613310</code>
+		<lib_FR>Entretien Et Réparations Des Biens Immobiliers</lib_FR>
+		<lib_UK>Maintenance And Repairings Of The Real Goods</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61331</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>613320</code>
+		<lib_FR>Entretien Et Réparations Des Biens Mobiliers</lib_FR>
+		<lib_UK>Maintenance And Repairings Of The Real Goods</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61332</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>613350</code>
+		<lib_FR>Maintenance</lib_FR>
+		<lib_UK>Maintenance</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61335</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>613410</code>
+		<lib_FR>Assurances Multirisque (Vol, Incendie,R,C,)</lib_FR>
+		<lib_UK>Multirisk Insurances (Theft , Fire, R, C,)</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61341</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>613430</code>
+		<lib_FR>Assurances : Risques D'exploitation</lib_FR>
+		<lib_UK>Insurances: Risks Of Exploitation</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61343</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>613450</code>
+		<lib_FR>Assurances : Matériel De Transport</lib_FR>
+		<lib_UK>Insurances: Means Of Transport</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61345</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>613480</code>
+		<lib_FR>Autres Assurances</lib_FR>
+		<lib_UK>Other Insurances</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61348</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>613510</code>
+		<lib_FR>Rémunérations Du Personnel Occasionnel</lib_FR>
+		<lib_UK>Remunerations Of The Occasional Personnel</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61351</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>613520</code>
+		<lib_FR>Rémunérations Du Personnel Intérimaire</lib_FR>
+		<lib_UK>Remunerations Of The Temporary Staff</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61352</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>613530</code>
+		<lib_FR>Rémunérations Du Personnel Détaché Ou Prêté À L'entreprise</lib_FR>
+		<lib_UK>Remunerations Of The Personnel Detached Or Lent With The Company</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61353</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>613610</code>
+		<lib_FR>Commissions Et Courtages</lib_FR>
+		<lib_UK>Commissions And Brokerages</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61361</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>613650</code>
+		<lib_FR>Honoraires</lib_FR>
+		<lib_UK>Fees</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61365</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>613670</code>
+		<lib_FR>Frais D'actes Et De Contentieux</lib_FR>
+		<lib_UK>Expenses Of Acts And Dispute</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61367</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>613710</code>
+		<lib_FR>Redevances Pour Brevets</lib_FR>
+		<lib_UK>Royalties For Patents</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61371</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>613780</code>
+		<lib_FR>Autres Redevances</lib_FR>
+		<lib_UK>Other Royalties</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61378</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>614110</code>
+		<lib_FR>Etudes Générales</lib_FR>
+		<lib_UK>General Studies</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61411</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>614130</code>
+		<lib_FR>Recherches</lib_FR>
+		<lib_UK>Researches</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61413</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>614150</code>
+		<lib_FR>Documentation Générale</lib_FR>
+		<lib_UK>General Documentation</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61415</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>614160</code>
+		<lib_FR>Documentation Technique</lib_FR>
+		<lib_UK>Technical Documentation</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61416</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>614210</code>
+		<lib_FR>Transports Du Personnel</lib_FR>
+		<lib_UK>Transport Of The Personnel</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61421</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>614250</code>
+		<lib_FR>Transports Sur Achats</lib_FR>
+		<lib_UK>Transport On Purchases</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61425</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>614260</code>
+		<lib_FR>Transports Sur Ventes</lib_FR>
+		<lib_UK>Transport On Sales</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61426</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>614280</code>
+		<lib_FR>Autres Transports</lib_FR>
+		<lib_UK>Other Transports</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61428</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>614310</code>
+		<lib_FR>Voyages Et Déplacements</lib_FR>
+		<lib_UK>Travelling And Displacements</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61431</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>614330</code>
+		<lib_FR>Frais De Démenagement</lib_FR>
+		<lib_UK>Removal Expenses</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61433</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>614350</code>
+		<lib_FR>Missions</lib_FR>
+		<lib_UK>Missions</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61435</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>614360</code>
+		<lib_FR>Réceptions</lib_FR>
+		<lib_UK>Receptions</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61436</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>614410</code>
+		<lib_FR>Annonces Et Insertions</lib_FR>
+		<lib_UK>Advertisements And Insertions</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61441</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>614420</code>
+		<lib_FR>Echantillons, Catalogues Et Imprimés Publicitaires</lib_FR>
+		<lib_UK>Samples, Catalogues And Printed Advertising Executives</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61442</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>614430</code>
+		<lib_FR>Foires Et Expositions</lib_FR>
+		<lib_UK>Fairs And Exposures</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61443</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>614440</code>
+		<lib_FR>Primes De Publicité</lib_FR>
+		<lib_UK>Premiums Of Advertising</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61444</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>614460</code>
+		<lib_FR>Publications</lib_FR>
+		<lib_UK>Publications</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61446</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>614470</code>
+		<lib_FR>Cadeaux À La Clientèle</lib_FR>
+		<lib_UK>Gifts With The Customers</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61447</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>614480</code>
+		<lib_FR>Autres Charges De Publicité Et Relations Publiques</lib_FR>
+		<lib_UK>Other Loads Of Advertising And Public Relations</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61448</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>614510</code>
+		<lib_FR>Frais Postaux</lib_FR>
+		<lib_UK>Postal Expenses</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61451</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>614550</code>
+		<lib_FR>Frais De Téléphone</lib_FR>
+		<lib_UK>Telephone Expenses</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61455</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>614560</code>
+		<lib_FR>Frais De Télex Et De Télégrammes</lib_FR>
+		<lib_UK>Expenses Of Telex And Telegrams</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61456</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>614610</code>
+		<lib_FR>Cotisations</lib_FR>
+		<lib_UK>Contributions</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61461</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>614620</code>
+		<lib_FR>Dons</lib_FR>
+		<lib_UK>Gifts</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61462</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>614710</code>
+		<lib_FR>Frais D'achat Et De Vente Des Titres</lib_FR>
+		<lib_UK>Expenses Of Purchase And Sale Of The Titles</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61471</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>614720</code>
+		<lib_FR>Frais Sur Effets De Commerce</lib_FR>
+		<lib_UK>Expenses On Commercial Drafts</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61472</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>614730</code>
+		<lib_FR>Frais Et Commisions Sur Services Bancaires</lib_FR>
+		<lib_UK>Expenses And Commissions On Banking Services</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61473</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>614800</code>
+		<lib_FR>Autres Charges Externes Des Exercices Antérieurs</lib_FR>
+		<lib_UK>Other External Loads Of The Former Exercises</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6148</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>614900</code>
+		<lib_FR>Rabais, Remises Et Ristournes Obtenus Sur Autres Charges Externes</lib_FR>
+		<lib_UK>Reduction, Handing-Over And Rebates Obtained On Other External Loads</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6149</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>616110</code>
+		<lib_FR>Taxe Urbaine Et Taxe D'edilite</lib_FR>
+		<lib_UK>Urban Tax And Tax Of Municipal Administration</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61611</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>616120</code>
+		<lib_FR>Patente</lib_FR>
+		<lib_UK>Licence</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61612</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>616150</code>
+		<lib_FR>Taxes Locales</lib_FR>
+		<lib_UK>Local Taxes</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61615</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>616500</code>
+		<lib_FR>Impôts Et Taxes Directs</lib_FR>
+		<lib_UK>Direct Taxes</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6165</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>616710</code>
+		<lib_FR>Droits D'enregistrement Et De Timbre</lib_FR>
+		<lib_UK>Fees Of Registration And Stamp</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61671</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>616730</code>
+		<lib_FR>Taxes Sur Les Véhicules</lib_FR>
+		<lib_UK>Taxes Of The Vehicles</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61673</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>616780</code>
+		<lib_FR>Autres Impôts, Taxes Et Droits Assimilés</lib_FR>
+		<lib_UK>Other Taxes And Assimilated Rights</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61678</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>616800</code>
+		<lib_FR>Impôts Et Taxes Des Exercices Antérieurs</lib_FR>
+		<lib_UK>Taxes Of The Former Exercises</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6168</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>617110</code>
+		<lib_FR>Appointements Et Salaires</lib_FR>
+		<lib_UK>Salaries And Wages</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61711</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>617120</code>
+		<lib_FR>Primes Et Gratifications</lib_FR>
+		<lib_UK>Bonuses And Gratuities</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61712</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>617130</code>
+		<lib_FR>Indemnités Et Avantages Divers</lib_FR>
+		<lib_UK>Others Allowances And Advantages</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61713</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>617140</code>
+		<lib_FR>Commissions Au Personnel</lib_FR>
+		<lib_UK>Commissions With The Staff</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61714</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>617150</code>
+		<lib_FR>Rémunérations Des Administrateurs, Gérants Et Associés</lib_FR>
+		<lib_UK>Remunerations Of The Administrators, Managers And Associates</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61715</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>617410</code>
+		<lib_FR>Cotisations De Sécurité Sociale</lib_FR>
+		<lib_UK>Contributions Of Social Security</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61741</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>617420</code>
+		<lib_FR>Cotisations Aux Caisses De Retraite</lib_FR>
+		<lib_UK>Contributions With The Pension Funds</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61742</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>617430</code>
+		<lib_FR>Cotisations Aux Mutuelles</lib_FR>
+		<lib_UK>Contributions With The Mutuals</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61743</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>617440</code>
+		<lib_FR>Prestations Familiales</lib_FR>
+		<lib_UK>Family Allowances</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61744</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>617450</code>
+		<lib_FR>Assurances Accidents De Travail</lib_FR>
+		<lib_UK>Industrial Accidents Insurances</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61745</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>617610</code>
+		<lib_FR>Assurances Groupe</lib_FR>
+		<lib_UK>Group Insurances</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61761</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>617620</code>
+		<lib_FR>Prestations De Retraites</lib_FR>
+		<lib_UK>Services Of Retirements</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61762</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>617630</code>
+		<lib_FR>Allocations Aux Oeuvres Sociales</lib_FR>
+		<lib_UK>Allowances With Social Works</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61763</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>617640</code>
+		<lib_FR>Habillement Et Vètements De Travail</lib_FR>
+		<lib_UK>Clothing And Working Clotheses</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61764</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>617650</code>
+		<lib_FR>Indemnités De Préavis Et De Licenciement</lib_FR>
+		<lib_UK>Allowances Of Notice And Dismissal</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61765</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>617660</code>
+		<lib_FR>Mèdecine De Travail, Pharmacie</lib_FR>
+		<lib_UK>Medicine Of Work, Pharmacy</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61766</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>617680</code>
+		<lib_FR>Autres Charges Sociales Diverses</lib_FR>
+		<lib_UK>Others Various Social Contributions</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61768</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>617710</code>
+		<lib_FR>Appointements Et Salaires</lib_FR>
+		<lib_UK>Salaries And Wages</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61771</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>617740</code>
+		<lib_FR>Charges Sociales Sur Appointements Et Salaires De L'exploitant</lib_FR>
+		<lib_UK>Social Contributions On Salaries And Wages Of The Owner</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61774</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>617800</code>
+		<lib_FR>Charges Du Personnel Des Exercices Antérieurs</lib_FR>
+		<lib_UK>Loads Of The Staff Of The Former Exercises</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6178</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>618100</code>
+		<lib_FR>Jetons De Présence</lib_FR>
+		<lib_UK>Attendance Fees</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6181</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>618200</code>
+		<lib_FR>Pertes Sur Créances Irrecouvrables</lib_FR>
+		<lib_UK>Losses On Irrecoverable Credits</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6182</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>618500</code>
+		<lib_FR>Pertes Sur Opérations Faites En Commun</lib_FR>
+		<lib_UK>Losses On Jointly Made Operations</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6185</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>618600</code>
+		<lib_FR>Transfert De Profits Sur Opérations Faites En Commun</lib_FR>
+		<lib_UK>Transfer Of Profits On Jointly Made Operations</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6186</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>618800</code>
+		<lib_FR>Autres Charges D"Exploitation Des Exercices Antérieurs</lib_FR>
+		<lib_UK>Other Running Costs Of The Former Exercises</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6188</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>619110</code>
+		<lib_FR>D.E.A. Des Frais Préliminaires</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61911</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>619120</code>
+		<lib_FR>D.E.A. Des Charges À Répartir</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61912</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>619210</code>
+		<lib_FR>D.E.A. De L'immobilisation En Recherche Et Développement</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61921</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>619220</code>
+		<lib_FR>D.E.A. Des Brevets, Marques, Droits Et Valeurs Similaires</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61922</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>619230</code>
+		<lib_FR>D.E.A. Du Fonds Commercial</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61923</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>619280</code>
+		<lib_FR>D.E.A. Des Autres Immobilisations Incorporelles</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61928</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>619310</code>
+		<lib_FR>D.E.A. Des Terrains</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61931</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>619320</code>
+		<lib_FR>D.E.A. Des Constructions</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61932</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>619330</code>
+		<lib_FR>D.E.A. Des Installations Techniques, Matériel Et Outillage</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61933</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>619340</code>
+		<lib_FR>D.E.A. Du Matériel De Transport</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61934</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>619350</code>
+		<lib_FR>D.E.A. Des Mobiliers, Matériels De Bureau Et Aménagements Divers</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61935</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>619380</code>
+		<lib_FR>D.E.A. Des Autres Immobilisations Corporelles</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61938</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>619420</code>
+		<lib_FR>D.E.P. Pour Dépréciation Des Immobilisations Incorporelles</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61942</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>619430</code>
+		<lib_FR>D.E.P. Pour Dépréciation Des Immobilisations Corporelles</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61943</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>619550</code>
+		<lib_FR>D.E.P. Pour Risques Et Charges Durables</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61955</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>619610</code>
+		<lib_FR>D.E.P. Pour Dépréciation Des Stocks</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61961</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>619640</code>
+		<lib_FR>D.E.P. Pour Dépréciation Des Créances De L'actif Circulant</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61964</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>619810</code>
+		<lib_FR>D.E. Aux Amortissements Des Exercices Antérieurs</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61981</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>619840</code>
+		<lib_FR>D.E. Aux Provisions Des Exercices Antérieurs</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>61984</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>631110</code>
+		<lib_FR>Intérêts Des Emprunts</lib_FR>
+		<lib_UK>Interests Of The Loans</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>63111</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>631130</code>
+		<lib_FR>Intérêts Des Dettes Rattachées À Des Participations</lib_FR>
+		<lib_UK>Interests Of The Debts Attached To Participations</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>63113</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>631140</code>
+		<lib_FR>Intérêts Des Comptes Courants Et Depots Créditeurs</lib_FR>
+		<lib_UK>Interests Of The Accounts - Credit Currents And Deposits</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>63114</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>631150</code>
+		<lib_FR>Intérêts Bancaires Et Sur Opérations De Financement</lib_FR>
+		<lib_UK>Banking Interests And On Financial Transactions</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>63115</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>631180</code>
+		<lib_FR>Autres Intérêts Des Emprunts Et Dettes</lib_FR>
+		<lib_UK>Other Interests Of The Loans And Debts</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>63118</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>631800</code>
+		<lib_FR>Charges D'intérêts Des Exercices Antérieurs</lib_FR>
+		<lib_UK>Loads Of Interests Of The Former Exercises</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6318</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>633100</code>
+		<lib_FR>Pertes De Change Propres A L'exercice</lib_FR>
+		<lib_UK>Losses On Transaction Suitable For The Exercise</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6331</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>633800</code>
+		<lib_FR>Pertes De Change Des Exercices Antérieurs</lib_FR>
+		<lib_UK>Losses On Transaction Of The Former Exercises</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6338</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>638200</code>
+		<lib_FR>Pertes Sur Créances Liees À Des Participations</lib_FR>
+		<lib_UK>Losses On Credits Related To Participations</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6382</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>638500</code>
+		<lib_FR>Charges Nettes Sur Cession De Titres Et Valeurs De Placement</lib_FR>
+		<lib_UK>Net Loads On Transfer Of Titles And Placement Values</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6385</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>638600</code>
+		<lib_FR>Escomptes Accordés</lib_FR>
+		<lib_UK>Granted Discounts</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6386</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>638800</code>
+		<lib_FR>Autres Charges Financières Des Exercices Antérieurs</lib_FR>
+		<lib_UK>Other Financial Expenses Of The Former Exercises</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6388</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>639100</code>
+		<lib_FR>Dotations Aux Amortissements Des Primes De Remboursement Des Obligations</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6391</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>639200</code>
+		<lib_FR>Dotations Aux Provisions Pour Dépréciations Des Immobilisations Financières</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6392</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>639300</code>
+		<lib_FR>Dotations Aux Provisions Pour Risques Et Charges Financières</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6393</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>639400</code>
+		<lib_FR>Dotation Aux Provisions Pour Dépréciation Des Titres Et Valeurs De Placement</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6394</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>639800</code>
+		<lib_FR>Dotations Financières Des Exercices Antérieurs</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6398</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>651200</code>
+		<lib_FR>Vna Des Immobilisations Incorporelles Cédées</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6512</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>651300</code>
+		<lib_FR>Vna Des Immobilisations Corporelles Cédées</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6513</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>651400</code>
+		<lib_FR>Vna Provisions Des Immobilisations Financières Cédées (Droits De Propriété)</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6514</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>651800</code>
+		<lib_FR>Vna Des Immobilisations Cédées Des Exercices Antérieurs</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6518</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>656100</code>
+		<lib_FR>Subventions Accordees De L'exercice</lib_FR>
+		<lib_UK>Granted Subsidies Of The Exercise</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6561</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>656800</code>
+		<lib_FR>Subventions Accordées Des Exercices Antérieurs</lib_FR>
+		<lib_UK>Granted Subsidies Of The Former Exercises</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6568</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>658110</code>
+		<lib_FR>Pénalités Sur Marchés</lib_FR>
+		<lib_UK>Penalties On Markets</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>65811</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>658120</code>
+		<lib_FR>Débits</lib_FR>
+		<lib_UK>Flows</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>65812</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>658200</code>
+		<lib_FR>Rappels D'impôts (Autres Qu'impôts Sur Les Résultats)</lib_FR>
+		<lib_UK>Recalls Of Taxes (Others That Income Taxes)</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6582</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>658310</code>
+		<lib_FR>Pénalités Et Amendes Fiscales</lib_FR>
+		<lib_UK>Penalties And Penal Taxes</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>65831</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>658330</code>
+		<lib_FR>Pénalités Et Amendes Pénales</lib_FR>
+		<lib_UK>Penalties And Penal Taxes</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>65833</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>658500</code>
+		<lib_FR>Créances Devenues Irrecouvrables</lib_FR>
+		<lib_UK>Credits Become Irrecoverable</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6585</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>658610</code>
+		<lib_FR>Dons</lib_FR>
+		<lib_UK>Gifts</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>65861</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>658620</code>
+		<lib_FR>Libéralités</lib_FR>
+		<lib_UK>Liberalities</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>65862</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>658630</code>
+		<lib_FR>Lots</lib_FR>
+		<lib_UK>Batches</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>65863</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>658800</code>
+		<lib_FR>Autres Charges Non Courantes Des Exercices Antérieurs</lib_FR>
+		<lib_UK>Other Not Current Loads Of The Former Exercises</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6588</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>659110</code>
+		<lib_FR>D.A.E. De L'immobilisation En Non-Valeurs</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>65911</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>659120</code>
+		<lib_FR>D.A.E. Des Immobilisations Incorporelles</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>65912</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>659130</code>
+		<lib_FR>D.A.E. Des Immobilisations Corporelles</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>65913</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>659410</code>
+		<lib_FR>D.N.C. Pour Amortissements Derogatoires</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>65941</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>659420</code>
+		<lib_FR>D.N.C. Pour Plus-Values En Instance D'imposition</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>65942</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>659440</code>
+		<lib_FR>D.N.C. Pour Investissements</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>65944</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>659450</code>
+		<lib_FR>D.N.C. Pour Reconstitution De Gisements</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>65945</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>659460</code>
+		<lib_FR>D.N.C. Pour Acquisition Et Construction De Logements</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>65946</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>659550</code>
+		<lib_FR>D.N.C. Aux Provisions Pour Risques Et Charges Durables</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>65955</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>659570</code>
+		<lib_FR>D.N.C. Aux Provisions Pour Risques Et Charges Momentanés</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>65957</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>659620</code>
+		<lib_FR>D.N.C. Aux Provisions Pour Dépréciation De L'actif Immobilisé</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>65962</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>659630</code>
+		<lib_FR>D.N.C. Aux Provisions Pour Dépréciation De L'actif Circulant</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>65963</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>659800</code>
+		<lib_FR>Dotations Non Courantes Des Exercices Antérieurs</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6598</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>670100</code>
+		<lib_FR>Impôts Sur Les Bénéfices</lib_FR>
+		<lib_UK>Taxes On Benefits</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6701</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>670500</code>
+		<lib_FR>Imposition Minimale Annuelle Des Sociétés</lib_FR>
+		<lib_UK>Annual Minimal Imposition Of The Companies</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6705</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>670800</code>
+		<lib_FR>Rappels Et Dégrèvements D'impôts Sur Les Résultats</lib_FR>
+		<lib_UK>Recalls And Taxes Relief On The Results</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6708</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>711100</code>
+		<lib_FR>Ventes De Marchandises Au Maroc</lib_FR>
+		<lib_UK>Sales Of Goods In Morocco</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7111</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>711300</code>
+		<lib_FR>Ventes De Marchandises À L'étranger</lib_FR>
+		<lib_UK>Sales Of Goods In Abroad</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7113</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>711800</code>
+		<lib_FR>Ventes De Marchandises Des Exercices Antérieurs</lib_FR>
+		<lib_UK>Sales Of Goods Of The Former Exercises</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7118</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>711900</code>
+		<lib_FR>Rabais, Remises Et Ristournes Accordés Par L'entreprise</lib_FR>
+		<lib_UK>Reduction, Handing-Over And Rebates Granted By The Company</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7119</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>712110</code>
+		<lib_FR>Ventes De Produits Finis</lib_FR>
+		<lib_UK>Sales Of Finished Products</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>71211</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>712120</code>
+		<lib_FR>Ventes De Produits Intermédiaires</lib_FR>
+		<lib_UK>Intermediate Products Sales</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>71212</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>712170</code>
+		<lib_FR>Ventes De Produits Résiduels</lib_FR>
+		<lib_UK>Sales Residual Products</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>71217</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>712210</code>
+		<lib_FR>Ventes De Produits Finis</lib_FR>
+		<lib_UK>Sales Of Finished Products</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>71221</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>712220</code>
+		<lib_FR>Ventes De Produits Intermédiaires</lib_FR>
+		<lib_UK>Sales Of Intermediates Products</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>71222</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>712410</code>
+		<lib_FR>Travaux</lib_FR>
+		<lib_UK>Works</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>71241</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>712420</code>
+		<lib_FR>Etudes</lib_FR>
+		<lib_UK>Studies</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>71242</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>712430</code>
+		<lib_FR>Prestations De Services</lib_FR>
+		<lib_UK>Performances Of Services</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>71243</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>712510</code>
+		<lib_FR>Travaux</lib_FR>
+		<lib_UK>Works</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>71251</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>712520</code>
+		<lib_FR>Etudes</lib_FR>
+		<lib_UK>Studies</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>71252</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>712530</code>
+		<lib_FR>Prestations De Services</lib_FR>
+		<lib_UK>Performances Of Services</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>71253</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>712600</code>
+		<lib_FR>Redevances Pour Brevets, Marques, Droits Et Valeurs Similaires</lib_FR>
+		<lib_UK>Royalties For Patents, Marks, Rights And  Similar Values</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7126</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>712710</code>
+		<lib_FR>Locations Diverses Reçues</lib_FR>
+		<lib_UK>Various Hirings Received</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>71271</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>712720</code>
+		<lib_FR>Commissions Et Courtages Reçus</lib_FR>
+		<lib_UK>Received Commissions And Brokerages</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>71272</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>712730</code>
+		<lib_FR>Produits De Services Exploités Dans L'intérêt Du Personnel</lib_FR>
+		<lib_UK>Products Of Services Exploited In The Interest Of The Staff</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>71273</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>712750</code>
+		<lib_FR>Bonis Sur Reprises D'emballages Consignes</lib_FR>
+		<lib_UK>Profits On Resumptions Of Packagings Instructions</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>71275</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>712760</code>
+		<lib_FR>Ports Et Frais Accessoires Facturés</lib_FR>
+		<lib_UK>Ports And Incidental Expenses Invoicees</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>71276</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>712780</code>
+		<lib_FR>Autres Ventes Et Produits Accessoires</lib_FR>
+		<lib_UK>Other Additional Sales And Products</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>71278</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>712800</code>
+		<lib_FR>Ventes De Biens Et Services Produits Des Exercices Antérieurs</lib_FR>
+		<lib_UK>Sales Of Goods And Produced Services Of The Former Exercises</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7128</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>712910</code>
+		<lib_FR>R,R,R Accordées Sur Ventes Au Maroc Des Biens Produits</lib_FR>
+		<lib_UK>R, R, R Granted On Sales To Morocco Of The Produced Goods</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>71291</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>712920</code>
+		<lib_FR>R,R,R Accordées Sur Ventes A L'etranger Des Biens Produits</lib_FR>
+		<lib_UK>R, R, R Granted On Sales In Abroad Of The Produced Goods</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>71292</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>712940</code>
+		<lib_FR>R,R,R Accordées Sur Ventes Au Maroc Des Services Produits</lib_FR>
+		<lib_UK>R, R, R Granted On Sales In Abroad Of The Produced Services</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>71294</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>712950</code>
+		<lib_FR>R,R,R Accordées Sur Ventes À L'étranger Des Services Produits</lib_FR>
+		<lib_UK>R, R, R Granted On Sales In Abroad Of The Produced Services</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>71295</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>712980</code>
+		<lib_FR>Rabais, Remises Et Ristournes Accordés Sur Ventes De B Et S Produits Des Exercices Antérieurs</lib_FR>
+		<lib_UK>Reduction, Handing-Over And Rebates Granted On Sales Of B And S Produced Of The Former Exercises</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>71298</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>713110</code>
+		<lib_FR>Variation Des Stocks De Biens Produits En Cours</lib_FR>
+		<lib_UK>Variation Of Stocks Of Produced Goods In Progress</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>71311</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>713120</code>
+		<lib_FR>Variation Des Stocks De Produits Intermédiaires En Cours</lib_FR>
+		<lib_UK>Variation Of Stocks Of Intermediate Products In Progress</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>71312</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>713170</code>
+		<lib_FR>Variation Des Stocks De Produits Résiduels En Cours</lib_FR>
+		<lib_UK>Variation Of Stocks Of Residual Products In Progress</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>71317</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>713210</code>
+		<lib_FR>Variation Des Stocks De Produits Finis</lib_FR>
+		<lib_UK>Variation Of Stocks Of Finished Products</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>71321</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>713220</code>
+		<lib_FR>Variation Des Stocks De Produits Intermédiaires</lib_FR>
+		<lib_UK>Variation Of Intermediate Stocks Of Products</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>71322</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>713270</code>
+		<lib_FR>Variation Des Stocks De Produits Résiduels</lib_FR>
+		<lib_UK>Variation Of Stocks Of Residual Products</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>71327</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>713410</code>
+		<lib_FR>Variation Des Stocks De Travaux En Cours</lib_FR>
+		<lib_UK>Variation Of Stocks Of Works In Progress</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>71341</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>713420</code>
+		<lib_FR>Variation Des Stocks D'études En Cours</lib_FR>
+		<lib_UK>Variation Of Stocks Of Studies In Progress</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>71342</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>713430</code>
+		<lib_FR>Variation Des Stocks De Prestations En Cours</lib_FR>
+		<lib_UK>Variation Of Stocks Of Services In Progress</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>71343</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>714100</code>
+		<lib_FR>Immobilisation En Non Valeurs Produite</lib_FR>
+		<lib_UK>Immobilization In Not Values Produced</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7141</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>714200</code>
+		<lib_FR>Immobilisations Incorporelles Produites</lib_FR>
+		<lib_UK>Incorporeal Immobilizations Produced</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7142</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>714300</code>
+		<lib_FR>Immobilisations Corporelles Produites</lib_FR>
+		<lib_UK>Corporeal Immobilizations Produced</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7143</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>714800</code>
+		<lib_FR>Immobilisations Produites Des Exercices Antérieurs</lib_FR>
+		<lib_UK>Produced Immobilizations Of The Former Exercises</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7148</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>716100</code>
+		<lib_FR>Subventions D'exploitations Reçues De L'exercice</lib_FR>
+		<lib_UK>Subsidies Of Exploitations Received From The Exercise</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7161</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>716800</code>
+		<lib_FR>Subventions D'exploitation Reues Des Exercices Antérieurs</lib_FR>
+		<lib_UK>Grants Of Exploitation Of The Former Exercises</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7168</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>718100</code>
+		<lib_FR>Jetons De Présence Reçus</lib_FR>
+		<lib_UK>Received Attendance Fees</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7181</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>718200</code>
+		<lib_FR>Revenus Des Immeubles Non Affectés A L'exploitation</lib_FR>
+		<lib_UK>Returned Of The Not Affected Buildings Of The Exploitation</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7182</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>718500</code>
+		<lib_FR>Profits Sur Opérations Faites En Commun</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7185</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>718600</code>
+		<lib_FR>Transfert De Pertes Sur Opérations Faites En Commun</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7186</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>718800</code>
+		<lib_FR>Autres Produits D'exploitation Des Exercices Antérieurs</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7188</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>719100</code>
+		<lib_FR>Reprises Sur Amortissements De L'immobilisation En Non Valeurs</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7191</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>719200</code>
+		<lib_FR>Reprises Sur Amortissements Des Immobilisations Incorporelles</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7192</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>719300</code>
+		<lib_FR>Reprises Sur Amortissements Des Immobilisations Corporelles</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7193</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>719400</code>
+		<lib_FR>Reprises Sur Provisions Pour Dépréciation Des Immobilisations</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7194</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>719500</code>
+		<lib_FR>Reprises Sur Provisions Pour Risques Et Charges</lib_FR>
+		<lib_UK>Recoveries On Provisions For Risks And Loads</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7195</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>719600</code>
+		<lib_FR>Reprises Sur Provisions Pour Depreciation De L'actif Circulant</lib_FR>
+		<lib_UK>Recoveries On Provisions For Depreciation Of The Current Assets</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7196</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>719710</code>
+		<lib_FR>T,C,E : Achats De Marchandises</lib_FR>
+		<lib_UK>T,C,E : Purchases Of Goods</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>71971</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>719720</code>
+		<lib_FR>T,C,E : Achats Consommés De Matieres Et Fournitures</lib_FR>
+		<lib_UK>T, C, E: Consumed Purchases Of Matters And Supplies</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>71972</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>719730</code>
+		<lib_FR>T,C,E:- Autes Charges Externes</lib_FR>
+		<lib_UK>T,C,E: Other External Loads</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>71973</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>719750</code>
+		<lib_FR>T,C,E : Impôts Et Taxes</lib_FR>
+		<lib_UK>T,C,E : Taxes</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>71975</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>719760</code>
+		<lib_FR>T,C,E : Charges De Personnel</lib_FR>
+		<lib_UK>T,C,E : Loads Of The Staff</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>71976</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>719780</code>
+		<lib_FR>T,C,E : Autres Charges D'exploitation</lib_FR>
+		<lib_UK>T, C, E: Other Running Costs</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>71978</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>719810</code>
+		<lib_FR>Reprises Sur Amortissements Des Exercices Antérieurs</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>71981</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>719840</code>
+		<lib_FR>Reprises Sur Provisions Des Exercices Antérieurs</lib_FR>
+		<lib_UK>Recoveries On Provisions Of The Former Exercises</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>71984</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>732100</code>
+		<lib_FR>Revenus Des Titres De Participation</lib_FR>
+		<lib_UK>Incomes Of The Non-Voting Shares</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7321</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>732500</code>
+		<lib_FR>Revenus Des Titres Immobilisés</lib_FR>
+		<lib_UK>Incomes Of The Investments</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7325</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>732800</code>
+		<lib_FR>Produits Des Titres De Participation Et Des Autres Titres Immobilisés Des Exercices Antérieurs</lib_FR>
+		<lib_UK>Products Of The Non-Voting Shares And Other Investments Of The Former Exercises</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7328</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>733100</code>
+		<lib_FR>Gains De Change Propres A L'exercice</lib_FR>
+		<lib_UK>Profits Of Exchange Suitable For The Exercise</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7331</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>733800</code>
+		<lib_FR>Gains De Change Des Exercices Antérieurs</lib_FR>
+		<lib_UK>Profits Of Exchange Of The Former Exercises</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7338</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>738110</code>
+		<lib_FR>Intérêts Des Prêts</lib_FR>
+		<lib_UK>Interests Of The Loans</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>73811</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>738130</code>
+		<lib_FR>Revenus Des Autres Créances Financières</lib_FR>
+		<lib_UK>Incomes Of The Other Financial Credits</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>73813</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>738300</code>
+		<lib_FR>Revenus Des Créances Rattachées À Des Participations</lib_FR>
+		<lib_UK>Incomes Of The Credits Attached To Participations</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7383</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>738400</code>
+		<lib_FR>Revenus Des Titres Et Valeurs De Placement</lib_FR>
+		<lib_UK>Incomes Of The Titles And Investment Values</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7384</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>738500</code>
+		<lib_FR>Produits Nets Sur Cessions De Titres Et Valeurs De Placement</lib_FR>
+		<lib_UK>Net Products On Transfers Of Titles And Placement Values</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7385</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>738600</code>
+		<lib_FR>Escomptes Obtenus</lib_FR>
+		<lib_UK>Obtained Discounts</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7386</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>738800</code>
+		<lib_FR>Intérêts Et Autres Produits Financiers Des Exercices Antérieurs</lib_FR>
+		<lib_UK>Interests And Other Financial Products Of The Former Exercises</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7388</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>739100</code>
+		<lib_FR>Reprises Sur Amortissements Des Primes De Remboursement Des Obligations</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7391</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>739200</code>
+		<lib_FR>Reprises Sur Provisions Pour Dépréciation Des Immobilisations Financières</lib_FR>
+		<lib_UK>Recovery On Provisions For Depreciation Of The Financial Immobilizations</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7392</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>739300</code>
+		<lib_FR>Reprises Sur Provisions Pour Risques Et Charges Financières</lib_FR>
+		<lib_UK>Recovery On Provisions For Risks And Financial Loads</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7393</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>739400</code>
+		<lib_FR>Reprise Sur Provisions Pour Dépréciation Des Titres Et Valeurs De Placement</lib_FR>
+		<lib_UK>Recovery On Provisions For Depreciation Of The Titles And Placement Values</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7394</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>739600</code>
+		<lib_FR>Reprises Sur Provisions Pour Dépréciation Des Comptes De Trésorerie</lib_FR>
+		<lib_UK>Recoveries On Provisions For Depreciation Of The Treasury Accounts</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7396</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>739710</code>
+		<lib_FR>Transfert : Charges D'intérêts</lib_FR>
+		<lib_UK>Transfer: Loads Of Interests</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>73971</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>739730</code>
+		<lib_FR>Transfert : Pertes De Change</lib_FR>
+		<lib_UK>Transfer: Losses On Transactions</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>73973</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>739780</code>
+		<lib_FR>Transfert : Autres Charges Financières</lib_FR>
+		<lib_UK>Transfer: Other Financial Loads</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>73978</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>739800</code>
+		<lib_FR>Reprises Sur Dotations Financières Des Exercices Antérieurs</lib_FR>
+		<lib_UK>Recoveries On Budgets Of The Former Exercises</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7398</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>751200</code>
+		<lib_FR>Produits Des Cessions Des Immobilisations Incorporelles</lib_FR>
+		<lib_UK>Products Of The Transfers Of Incorporeal Immobilizations</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7512</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>751300</code>
+		<lib_FR>Produits Des Cessions Des Immobilisations Corporelles</lib_FR>
+		<lib_UK>Products Of The Transfers Of The Incorporeal Immobilizations</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7513</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>751400</code>
+		<lib_FR>Produits Des Cessions Des Immobilisations Financières (Droits De Propriété)</lib_FR>
+		<lib_UK>Products Of The Transfers Of The Financial Immobilizations (Property Rights)</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7514</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>751800</code>
+		<lib_FR>Produits Des Cessions Des Immobilisations Des Exercices Antérieurs</lib_FR>
+		<lib_UK>Products Of The Transfers Of The Former Exercises Immobilizations</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7518</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>756100</code>
+		<lib_FR>Subventions D'équilibre Reues De L'exercice</lib_FR>
+		<lib_UK>Received Balancing Subsidies Of The Exercise</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7561</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>756800</code>
+		<lib_FR>Subventions D'équilibre Reues Des Exercices Antérieurs</lib_FR>
+		<lib_UK>Received Balancing Subsidies Of The Former Exercises</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7568</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>757700</code>
+		<lib_FR>Reprises Sur Subventions D'investissement De L'exercice</lib_FR>
+		<lib_UK>Recoveries On Subsidies Of Investment Of The Exercise</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7577</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>757800</code>
+		<lib_FR>Reprises Sur Subventions D'investissement Des Exercices Antérieurs</lib_FR>
+		<lib_UK>Recoveries On Subsidies Of Investment Of The Former Exercises</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7578</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>758110</code>
+		<lib_FR>Pénalités Reues Sur Marchés</lib_FR>
+		<lib_UK>Penalties Received On Markets</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>75811</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>758120</code>
+		<lib_FR>Débits Reçus</lib_FR>
+		<lib_UK>Received Flows</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>75812</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>758200</code>
+		<lib_FR>Dégrèvement D'impôts (Autres Qu Impôts Sur Les Résultats)</lib_FR>
+		<lib_UK>Tax Relief (Others That Income Tax)</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7582</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>758500</code>
+		<lib_FR>Rentrées Sur Créances Soldées</lib_FR>
+		<lib_UK>Re-Entries On Balanced Credits</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7585</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>758610</code>
+		<lib_FR>Dons</lib_FR>
+		<lib_UK>Gifts</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>75861</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>758620</code>
+		<lib_FR>Libéralités</lib_FR>
+		<lib_UK>Liberalities</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>75862</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>758630</code>
+		<lib_FR>Lots</lib_FR>
+		<lib_UK>Batches</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>75863</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>758800</code>
+		<lib_FR>Autres Produits Non Courants Des Exercices Antérieurs</lib_FR>
+		<lib_UK>Other Not Current Products Of The Former Exercises</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7588</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>759110</code>
+		<lib_FR>R,A,E De L'immobilisation En Non Valeurs</lib_FR>
+		<lib_UK>R,A,E Of The Not Value Immobilizations</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>75911</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>759120</code>
+		<lib_FR>R,A,E Des Immobilisations Incorporelles</lib_FR>
+		<lib_UK>R,A,E Of Incorporeal Immobilizations</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>75912</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>759130</code>
+		<lib_FR>R,A,E Des Immobilisations Corporelles</lib_FR>
+		<lib_UK>R,A,E Of Incorporeal Immobilizations</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>75913</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>759410</code>
+		<lib_FR>Reprises Sur Amortissements Dérogatoires</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>75941</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>759420</code>
+		<lib_FR>Reprises Sur Plus-Values En Instance D'imposition</lib_FR>
+		<lib_UK>Recoveries On Appreciations In Authority Of Imposition</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>75942</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>759440</code>
+		<lib_FR>Reprises Sur Provisions Pour Investissements</lib_FR>
+		<lib_UK>Recoveries On Provisions For Investments</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>75944</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>759450</code>
+		<lib_FR>Reprises Sur Provisions Pour Reconstitution De Gisements</lib_FR>
+		<lib_UK>Recoveries On Provisions For Reconstitution Of Deposits</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>75945</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>759460</code>
+		<lib_FR>Reprises Sur Provisions Pour Acquisition Et Construction De Logements</lib_FR>
+		<lib_UK>Recoveries On Provisions For Acquisition And Housing Construction</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>75946</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>759550</code>
+		<lib_FR>Reprises Sur Provisions Pour Risques Et Charges Durables</lib_FR>
+		<lib_UK>Recoveries On Provisions For Risks And Durable Loads</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>75955</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>759570</code>
+		<lib_FR>Reprises Sur Provisions Pour Risques Et Charges Momentanés</lib_FR>
+		<lib_UK>Recoveries On Provisions For Risks And Temporary Loads</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>75957</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>759620</code>
+		<lib_FR>R,N,C Sur Provisions Pour Dépréciation De L'actif Immobilisé</lib_FR>
+		<lib_UK>R, N, C On Provisions For Depreciation Of The Immobilized Active</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>75962</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>759630</code>
+		<lib_FR>R,N,C Sur Provisions Pour Dépréciation De L'actif Circulant</lib_FR>
+		<lib_UK>R, N, C On Provisions For Depreciation Of The Current Assets</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>75963</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>759700</code>
+		<lib_FR>Transferts De Charges Non Courantes</lib_FR>
+		<lib_UK>Transfers Of Not Current Loads</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7597</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>759800</code>
+		<lib_FR>Reprises Non Courantes Des Exercices Antérieurs.</lib_FR>
+		<lib_UK>Not Current Resumptions Of The Former Exercises</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7598</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+
+	<compte>
+		<code>810000</code>
+		<lib_FR>Résultat D'exploitation</lib_FR>
+		<lib_UK>Turnover</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>2</nature>
+		<ran>0</ran>
+		<racine>8100</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Résultat</lib_nat>
+	</compte>
+
+	<compte>
+		<code>811000</code>
+		<lib_FR>Marge Brute</lib_FR>
+		<lib_UK>Gross Margin</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>2</nature>
+		<ran>0</ran>
+		<racine>8110</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Résultat</lib_nat>
+	</compte>
+
+	<compte>
+		<code>811100</code>
+		<lib_FR>Amortissements Des Frais De Constitution</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>8111</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>811200</code>
+		<lib_FR>Amortissements Des Frais Préliminaires Au Démarrage</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>8112</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>811300</code>
+		<lib_FR>Amortissements Des Frais D'augmentation Du Capital</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>8113</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>811400</code>
+		<lib_FR>Amortissements Des Frais Sur Opérations De Fusions, Scissions</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>8114</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>811600</code>
+		<lib_FR>Amortissements Des Frais De Prospection</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>8116</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>811700</code>
+		<lib_FR>Amortissements Des Frais De Publicité</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>8117</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>811800</code>
+		<lib_FR>Amortissements Des Autres Frais Préliminaires</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>8118</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>812100</code>
+		<lib_FR>Amortissements Des Frais D'acquisition Des Immobilisations</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>8121</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>812500</code>
+		<lib_FR>Amortissements Des Frais D'emission Des Emprunts</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>8125</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>812800</code>
+		<lib_FR>Amortissements Des Autres Charges À Répartir</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>4</nature>
+		<ran>0</ran>
+		<racine>8128</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Amortissements et Provisions</lib_nat>
+	</compte>
+
+	<compte>
+		<code>814000</code>
+		<lib_FR>Valeur Ajoutée</lib_FR>
+		<lib_UK>Added-Value</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>18</nature>
+		<ran>0</ran>
+		<racine>8140</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Dotations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>817100</code>
+		<lib_FR>Excédent Brut D'exploitation (Créditeur)</lib_FR>
+		<lib_UK>Rough Surplus Of Exploitation (Creditor)</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>18</nature>
+		<ran>0</ran>
+		<racine>8171</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Dotations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>817900</code>
+		<lib_FR>Insuffisance Brute D'exploitation (Débiteur)</lib_FR>
+		<lib_UK>Rough Insuficiency Of Exploitation (Debtor)</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>18</nature>
+		<ran>0</ran>
+		<racine>8179</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Dotations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>830000</code>
+		<lib_FR>Résultat Financier</lib_FR>
+		<lib_UK>Financial Result</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>18</nature>
+		<ran>0</ran>
+		<racine>8300</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Dotations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>840000</code>
+		<lib_FR>Résultat Courant</lib_FR>
+		<lib_UK>Current Result</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>18</nature>
+		<ran>0</ran>
+		<racine>8400</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Dotations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>919570</code>
+		<lib_FR>D.E.P. Pour Risques Et Charges Momentanés</lib_FR>
+		<lib_UK>For Temporary Risks And Loads</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>18</nature>
+		<ran>0</ran>
+		<racine>91957</racine>
+		<libre>0</libre>
+		<sens>0</sens>
+		<lib_nat>Dotations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>939600</code>
+		<lib_FR>Dotations Aux Provisions Pour Dépréciation Des Compte De Trésorerie</lib_FR>
+		<lib_UK>Dotations Of The Provisions For Depreciation Of The Treasure Accounts</lib_UK>
+		<lib_SP></lib_SP>
+		<nature>18</nature>
+		<ran>0</ran>
+		<racine>9396</racine>
+		<libre>00</libre>
+		<sens>0</sens>
+		<lib_nat>Dotations</lib_nat>
+	</compte>
+</planComptable>

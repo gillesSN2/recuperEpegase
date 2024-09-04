@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plp>
+
+	<rubrique>
+                <nature>1</nature>
+                <lib_nature>1</lib_nature>
+		<code>1</code>
+		<lib_FR>CADRES SUPÉRIEURS, INGÉNIEURS</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+                <option>0</option>
+                <protection>0</protection>
+		<inactif>0</inactif>
+                <mode>0</mode>
+                <chargesFiscales>false</chargesFiscales>
+                <tauxFiscales>0</tauxFiscales>
+                <formuleFiscales></formuleFiscales>
+                <chargesSociales>false</chargesSociales>
+                <tauxSociales>0</tauxSociales>
+                <formuleSociales></formuleSociales>
+                <chargesAutres>false</chargesAutres>
+                <tauxAutres>0</tauxAutres>
+                <formuleSociales></formuleSociales>
+                <chargesPatronales>false</chargesPatronales>
+                <tauxPatronales>0</tauxPatronales>
+                <formulePatronales></formulePatronales>
+                <libelleForce></libelleForce>
+                <compteStandard></compteStandard>
+                <comptePrestataire></comptePrestataire>
+                <cpStandard></cpStandard>
+                <cpPrestataire></cpPrestataire>
+                <regroupement>0</regroupement>
+                <analytique>0</analytique>
+                <ran>0</ran>
+	</rubrique>
+
+
+</plp>

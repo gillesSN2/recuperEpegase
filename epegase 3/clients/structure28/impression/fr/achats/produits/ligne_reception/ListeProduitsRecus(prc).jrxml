@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ListeReception" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="822" leftMargin="10" rightMargin="10" topMargin="20" bottomMargin="20" isFloatColumnFooter="true">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="987"/>
+	<property name="ireport.y" value="240"/>
+	<style name="ST1" isDefault="false" pattern="">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{formatDevise}==0)]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" markup="none" pattern="#,##0.00"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{formatDevise}==1)]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.00"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{formatDevise}==2)]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0" isItalic="false"/>
+		</conditionalStyle>
+	</style>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\Documents and Settings\\user\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="entete" class="java.lang.String"/>
+	<parameter name="filtre" class="java.lang.String"/>
+	<parameter name="societe" class="java.lang.String"/>
+	<parameter name="version" class="java.lang.String"/>
+	<parameter name="requete" class="java.lang.String"/>
+	<parameter name="formatDevise" class="java.lang.Integer"/>
+	<queryString>
+		<![CDATA[SELECT
+     ach_reception_entete.`rec_date` AS ach_reception_entete_rec_date,
+     ach_reception_entete.`rec_num` AS ach_reception_entete_rec_num,
+     ach_reception_entete.`rec_serie` AS ach_reception_entete_rec_serie,
+     ach_reception_entete.`rec_devise` AS ach_reception_entete_rec_devise,
+     ach_reception_entete.`rec_coef_devise` AS ach_reception_entete_rec_coef_devise,
+     ach_reception_ligne.`reclig_id` AS ach_reception_ligne_reclig_id,
+     ach_reception_ligne.`reclig_id_da` AS ach_reception_ligne_reclig_id_da,
+     ach_reception_ligne.`reclig_id_cot` AS ach_reception_ligne_reclig_id_cot,
+     ach_reception_ligne.`reclig_id_cmd` AS ach_reception_ligne_reclig_id_cmd,
+     ach_reception_ligne.`reclig_code` AS ach_reception_ligne_reclig_code,
+     ach_reception_ligne.`reclig_famille` AS ach_reception_ligne_reclig_famille,
+     ach_reception_ligne.`reclig_libelle` AS ach_reception_ligne_reclig_libelle,
+     ach_reception_ligne.`reclig_reference` AS ach_reception_ligne_reclig_reference,
+     ach_reception_ligne.`reclig_taxe` AS ach_reception_ligne_reclig_taxe,
+     ach_reception_ligne.`reclig_taux_taxe` AS ach_reception_ligne_reclig_taux_taxe,
+     ach_reception_ligne.`reclig_unite` AS ach_reception_ligne_reclig_unite,
+     ach_reception_ligne.`reclig_condition` AS ach_reception_ligne_reclig_condition,
+     ach_reception_ligne.`reclig_description` AS ach_reception_ligne_reclig_description,
+     ach_reception_ligne.`reclig_stock` AS ach_reception_ligne_reclig_stock,
+     ach_reception_ligne.`reclig_echelle` AS ach_reception_ligne_reclig_echelle,
+     ach_reception_ligne.`reclig_qte` AS ach_reception_ligne_reclig_qte,
+     ach_reception_ligne.`reclig_long` AS ach_reception_ligne_reclig_long,
+     ach_reception_ligne.`reclig_larg` AS ach_reception_ligne_reclig_larg,
+     ach_reception_ligne.`reclig_haut` AS ach_reception_ligne_reclig_haut,
+     ach_reception_ligne.`reclig_diam` AS ach_reception_ligne_reclig_diam,
+     ach_reception_ligne.`reclig_nb` AS ach_reception_ligne_reclig_nb,
+     ach_reception_ligne.`reclig_poidsNet` AS ach_reception_ligne_reclig_poidsNet,
+     ach_reception_ligne.`reclig_poidsBrut` AS ach_reception_ligne_reclig_poidsBrut,
+     ach_reception_ligne.`reclig_volume` AS ach_reception_ligne_reclig_volume,
+     ach_reception_ligne.`reclig_qte_util` AS ach_reception_ligne_reclig_qte_util,
+     ach_reception_ligne.`reclig_depot` AS ach_reception_ligne_reclig_depot,
+     ach_reception_ligne.`reclig_depot_cmd` AS ach_reception_ligne_reclig_depot_cmd,
+     ach_reception_ligne.`reclig_qte_stock` AS ach_reception_ligne_reclig_qte_stock,
+     ach_reception_ligne.`reclig_devise` AS ach_reception_ligne_reclig_devise,
+     ach_reception_ligne.`reclig_pu` AS ach_reception_ligne_reclig_pu,
+     ach_reception_ligne.`reclig_taux_remise` AS ach_reception_ligne_reclig_taux_remise,
+     ach_reception_ligne.`reclig_rabais` AS ach_reception_ligne_reclig_rabais,
+     ach_reception_ligne.`reclig_pu_rem` AS ach_reception_ligne_reclig_pu_rem,
+     ach_reception_ligne.`reclig_pt_dev` AS ach_reception_ligne_reclig_pt_dev,
+     ach_reception_ligne.`reclig_pt` AS ach_reception_ligne_reclig_pt,
+     ach_reception_ligne.`reclig_tva` AS ach_reception_ligne_reclig_tva,
+     ach_reception_ligne.`reclig_tc` AS ach_reception_ligne_reclig_tc,
+     ach_reception_ligne.`reclig_ttc` AS ach_reception_ligne_reclig_ttc,
+     ach_reception_ligne.`reclig_pr` AS ach_reception_ligne_reclig_pr,
+     ach_reception_ligne.`reclig_pump` AS ach_reception_ligne_reclig_pump,
+     ach_reception_ligne.`reclig_douane` AS ach_reception_ligne_reclig_douane,
+     ach_reception_ligne.`reclig_taux_douane` AS ach_reception_ligne_reclig_taux_douane,
+     ach_reception_ligne.`reclig_mode` AS ach_reception_ligne_reclig_mode,
+     ach_reception_ligne.`reclig_gr` AS ach_reception_ligne_reclig_gr,
+     ach_reception_ligne.`reclig_couleur` AS ach_reception_ligne_reclig_couleur,
+     ach_reception_ligne.`reclig_fob` AS ach_reception_ligne_reclig_fob,
+     ach_reception_ligne.`reclig_fret` AS ach_reception_ligne_reclig_fret,
+     ach_reception_ligne.`reclig_assurance` AS ach_reception_ligne_reclig_assurance,
+     ach_reception_ligne.`reclig_t1` AS ach_reception_ligne_reclig_t1,
+     ach_reception_ligne.`reclig_t3` AS ach_reception_ligne_reclig_t3,
+     ach_reception_ligne.`reclig_t5` AS ach_reception_ligne_reclig_t5,
+     ach_reception_ligne.`reclig_t10` AS ach_reception_ligne_reclig_t10,
+     ach_reception_ligne.`reclig_t30` AS ach_reception_ligne_reclig_t30,
+     ach_reception_ligne.`reclig_t31` AS ach_reception_ligne_reclig_t31,
+     ach_reception_ligne.`reclig_frais` AS ach_reception_ligne_reclig_frais,
+     ach_reception_ligne.`reclig_pr_kg` AS ach_reception_ligne_reclig_pr_kg,
+     ach_reception_ligne.`reclig_pr_u` AS ach_reception_ligne_reclig_pr_u,
+     ach_reception_ligne.`rec_id` AS ach_reception_ligne_rec_id,
+     ach_reception_entete.`rec_nom_responsable` AS ach_reception_entete_rec_nom_responsable,
+     ach_reception_entete.`rec_nom_tiers` AS ach_reception_entete_rec_nom_tiers,
+     ach_reception_entete.`rec_nom_contact` AS ach_reception_entete_rec_nom_contact,
+     ach_reception_entete.`rec_valo` AS ach_reception_entete_rec_valo
+FROM
+     `ach_reception_entete` ach_reception_entete INNER JOIN `ach_reception_ligne` ach_reception_ligne ON ach_reception_entete.`rec_id` = ach_reception_ligne.`rec_id`
+WHERE
+    $P!{requete}]]>
+	</queryString>
+	<field name="ach_reception_entete_rec_date" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_entete_rec_num" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_entete_rec_serie" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_entete_rec_devise" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_entete_rec_coef_devise" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_id_da" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_id_cot" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_id_cmd" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_code" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_famille" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_libelle" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_reference" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_taxe" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_taux_taxe" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_unite" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_condition" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_description" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_stock" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_echelle" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_qte" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_long" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_larg" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_haut" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_diam" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_nb" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_poidsNet" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_poidsBrut" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_volume" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_qte_util" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_depot" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_depot_cmd" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_qte_stock" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_devise" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_pu" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_taux_remise" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_rabais" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_pu_rem" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_pt_dev" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_pt" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_tva" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_tc" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_ttc" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_pr" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_pump" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_douane" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_taux_douane" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_mode" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_gr" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_couleur" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_fob" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_fret" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_assurance" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_t1" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_t3" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_t5" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_t10" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_t30" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_t31" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_frais" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_pr_kg" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_reclig_pr_u" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_ligne_rec_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_entete_rec_nom_responsable" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_entete_rec_nom_tiers" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_entete_rec_nom_contact" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_reception_entete_rec_valo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<sortField name="ach_reception_ligne_reclig_code"/>
+	<sortField name="ach_reception_entete_rec_num"/>
+	<variable name="totauxHT" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[$F{ach_reception_ligne_reclig_pt}]]></variableExpression>
+	</variable>
+	<variable name="totalProd" class="java.lang.Double" resetType="Group" resetGroup="gie" calculation="Sum">
+		<variableExpression><![CDATA[$F{ach_reception_ligne_reclig_pt}]]></variableExpression>
+	</variable>
+	<variable name="margeProd" class="java.lang.Double">
+		<variableExpression><![CDATA[$F{ach_reception_ligne_reclig_pt_dev}]]></variableExpression>
+	</variable>
+	<variable name="totalMarge" class="java.lang.Double" resetType="Group" resetGroup="gie" calculation="Sum">
+		<variableExpression><![CDATA[$V{margeProd}]]></variableExpression>
+	</variable>
+	<variable name="margeGene" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[$V{margeProd}]]></variableExpression>
+	</variable>
+	<variable name="totQte" class="java.lang.Float" resetType="Group" resetGroup="gie" calculation="Sum">
+		<variableExpression><![CDATA[$F{ach_reception_ligne_reclig_qte}]]></variableExpression>
+	</variable>
+	<variable name="qteGene" class="java.lang.Float" calculation="Sum">
+		<variableExpression><![CDATA[$F{ach_reception_ligne_reclig_qte}]]></variableExpression>
+	</variable>
+	<variable name="gie" class="java.lang.String">
+		<variableExpression><![CDATA[$F{ach_reception_ligne_reclig_code}]]></variableExpression>
+	</variable>
+	<variable name="prc" class="java.lang.Float"/>
+	<variable name="prg" class="java.lang.Float"/>
+	<variable name="coutProd" class="java.lang.Double">
+		<variableExpression><![CDATA[$F{ach_reception_ligne_reclig_pt} * $V{prc}]]></variableExpression>
+	</variable>
+	<variable name="codeFamille" class="java.lang.String">
+		<variableExpression><![CDATA[( $F{ach_reception_ligne_reclig_famille}.contains(":") ? $F{ach_reception_ligne_reclig_famille}.split(":")[0] : $F{ach_reception_ligne_reclig_famille} )]]></variableExpression>
+	</variable>
+	<group name="gie">
+		<groupExpression><![CDATA[$V{gie}]]></groupExpression>
+		<groupHeader>
+			<band height="13">
+				<printWhenExpression><![CDATA[false]]></printWhenExpression>
+				<line>
+					<reportElement x="10" y="1" width="1" height="12"/>
+				</line>
+				<line>
+					<reportElement x="424" y="1" width="1" height="12"/>
+				</line>
+				<line>
+					<reportElement x="117" y="1" width="1" height="12"/>
+				</line>
+				<line>
+					<reportElement x="370" y="1" width="1" height="12"/>
+				</line>
+				<line>
+					<reportElement x="470" y="1" width="1" height="12"/>
+				</line>
+				<line>
+					<reportElement x="547" y="1" width="1" height="12"/>
+				</line>
+				<line>
+					<reportElement x="629" y="1" width="1" height="12"/>
+				</line>
+				<line>
+					<reportElement x="663" y="1" width="1" height="12"/>
+				</line>
+				<line>
+					<reportElement x="10" y="1" width="788" height="1"/>
+				</line>
+				<line>
+					<reportElement x="504" y="1" width="1" height="12"/>
+				</line>
+				<line>
+					<reportElement x="583" y="1" width="1" height="12"/>
+				</line>
+				<line>
+					<reportElement x="244" y="1" width="1" height="12"/>
+				</line>
+				<line>
+					<reportElement x="312" y="1" width="1" height="12"/>
+				</line>
+				<line>
+					<reportElement x="730" y="1" width="1" height="12"/>
+				</line>
+				<line>
+					<reportElement x="797" y="1" width="1" height="12"/>
+				</line>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="15">
+				<line>
+					<reportElement x="10" y="1" width="788" height="1"/>
+					<graphicElement>
+						<pen lineWidth="0.5"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="629" y="0" width="1" height="15"/>
+				</line>
+				<line>
+					<reportElement x="547" y="0" width="1" height="15"/>
+				</line>
+				<line>
+					<reportElement x="117" y="0" width="1" height="15"/>
+				</line>
+				<line>
+					<reportElement x="663" y="0" width="1" height="15"/>
+				</line>
+				<textField evaluationTime="Group" evaluationGroup="gie" isBlankWhenNull="true">
+					<reportElement style="ST1" x="733" y="3" width="60" height="11">
+						<printWhenExpression><![CDATA[$V{totalMarge}!=0]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{totalMarge}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="10" y="0" width="1" height="15"/>
+				</line>
+				<line>
+					<reportElement x="424" y="0" width="1" height="15"/>
+				</line>
+				<line>
+					<reportElement x="470" y="0" width="1" height="15"/>
+				</line>
+				<line>
+					<reportElement x="370" y="0" width="1" height="15"/>
+				</line>
+				<textField evaluationTime="Group" evaluationGroup="gie" isBlankWhenNull="true">
+					<reportElement style="ST1" x="509" y="3" width="35" height="11">
+						<printWhenExpression><![CDATA[$V{totQte}!=0]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{totQte}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="504" y="0" width="1" height="15"/>
+				</line>
+				<line>
+					<reportElement x="583" y="0" width="1" height="15"/>
+				</line>
+				<line>
+					<reportElement x="244" y="0" width="1" height="15"/>
+				</line>
+				<line>
+					<reportElement x="312" y="0" width="1" height="15"/>
+				</line>
+				<line>
+					<reportElement x="730" y="0" width="1" height="15"/>
+				</line>
+				<line>
+					<reportElement x="797" y="0" width="1" height="15"/>
+				</line>
+			</band>
+		</groupFooter>
+	</group>
+	<title>
+		<band height="71" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="822" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="20" width="822" height="23" forecolor="#000000" backcolor="#FFFFFF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="43" width="822" height="27" forecolor="#992F2A" backcolor="#FFFFFF"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="11" y="52" width="62" height="11" forecolor="#000000"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[© B&W 2010 -]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="10" y="25" width="787" height="13" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{societe}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="73" y="52" width="28" height="11" forecolor="#000000"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{version}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="11" y="3" width="786" height="13" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{entete}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy HH.mm.ss">
+				<reportElement x="106" y="52" width="151" height="11" forecolor="#000000"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="601" y="52" width="166" height="11" forecolor="#000000"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Page "+$V{PAGE_NUMBER}+" / "]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="773" y="52" width="23" height="11" forecolor="#000000"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="45" splitType="Stretch">
+			<printWhenExpression><![CDATA[$V{PAGE_NUMBER}>=2]]></printWhenExpression>
+			<rectangle>
+				<reportElement x="0" y="2" width="822" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="22" width="822" height="20" forecolor="#992F2A" backcolor="#FFFFFF"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="11" y="27" width="62" height="11" forecolor="#000000"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[© B&W 2010 - ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="269" y="4" width="529" height="15" forecolor="#000000"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{societe}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="73" y="27" width="28" height="11" forecolor="#000000"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{version}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="11" y="4" width="398" height="15" forecolor="#000000"/>
+				<textElement>
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{entete}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy HH.mm.ss">
+				<reportElement x="106" y="27" width="148" height="11" forecolor="#000000"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="774" y="26" width="25" height="11" forecolor="#000000"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="612" y="26" width="157" height="11" forecolor="#000000"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Page "+$V{PAGE_NUMBER}+" / "]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="43" splitType="Stretch">
+			<staticText>
+				<reportElement x="376" y="18" width="42" height="12"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[N°]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="428" y="18" width="38" height="12"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="18" y="18" width="90" height="12"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Code produit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="585" y="11" width="43" height="24"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[P.TOT Dev.]]></text>
+			</staticText>
+			<line>
+				<reportElement x="10" y="6" width="1" height="37"/>
+			</line>
+			<line>
+				<reportElement x="424" y="6" width="1" height="37"/>
+			</line>
+			<line>
+				<reportElement x="117" y="6" width="1" height="37"/>
+			</line>
+			<line>
+				<reportElement x="470" y="6" width="1" height="37"/>
+			</line>
+			<line>
+				<reportElement x="547" y="6" width="1" height="37"/>
+			</line>
+			<line>
+				<reportElement x="629" y="6" width="1" height="37"/>
+			</line>
+			<line>
+				<reportElement x="663" y="6" width="1" height="37"/>
+			</line>
+			<line>
+				<reportElement x="10" y="6" width="788" height="1"/>
+			</line>
+			<line>
+				<reportElement x="10" y="42" width="788" height="1"/>
+			</line>
+			<line>
+				<reportElement x="370" y="6" width="1" height="37"/>
+			</line>
+			<staticText>
+				<reportElement x="126" y="18" width="110" height="12"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Libellé produit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="507" y="18" width="35" height="12"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Qte]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="736" y="18" width="54" height="12"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[P. TOTAL]]></text>
+			</staticText>
+			<line>
+				<reportElement x="504" y="6" width="1" height="37"/>
+			</line>
+			<staticText>
+				<reportElement x="473" y="18" width="30" height="12"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dép.]]></text>
+			</staticText>
+			<line>
+				<reportElement x="583" y="6" width="1" height="37"/>
+			</line>
+			<staticText>
+				<reportElement x="550" y="10" width="31" height="25"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[P.U Dev.]]></text>
+			</staticText>
+			<line>
+				<reportElement x="244" y="6" width="1" height="37"/>
+			</line>
+			<staticText>
+				<reportElement x="250" y="18" width="59" height="12"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[N° Transit]]></text>
+			</staticText>
+			<line>
+				<reportElement x="312" y="6" width="1" height="37"/>
+			</line>
+			<staticText>
+				<reportElement x="632" y="11" width="30" height="24"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Coef. PRC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="667" y="18" width="60" height="12"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[P.R.C.]]></text>
+			</staticText>
+			<line>
+				<reportElement x="730" y="6" width="1" height="37"/>
+			</line>
+			<line>
+				<reportElement x="797" y="6" width="1" height="37"/>
+			</line>
+			<staticText>
+				<reportElement x="317" y="18" width="47" height="12"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Devise]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="12" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement x="376" y="0" width="42" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{ach_reception_entete_rec_num}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yy" isBlankWhenNull="true">
+				<reportElement x="428" y="0" width="38" height="11"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{ach_reception_entete_rec_date}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="ST1" x="587" y="0" width="39" height="11">
+					<printWhenExpression><![CDATA[$F{ach_reception_ligne_reclig_pt}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{ach_reception_ligne_reclig_pt}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="10" y="0" width="1" height="12"/>
+			</line>
+			<line>
+				<reportElement x="424" y="0" width="1" height="12"/>
+			</line>
+			<line>
+				<reportElement x="117" y="0" width="1" height="12"/>
+			</line>
+			<line>
+				<reportElement x="470" y="0" width="1" height="12"/>
+			</line>
+			<line>
+				<reportElement x="547" y="0" width="1" height="12"/>
+			</line>
+			<line>
+				<reportElement x="629" y="0" width="1" height="12"/>
+			</line>
+			<line>
+				<reportElement x="663" y="0" width="1" height="12"/>
+			</line>
+			<line>
+				<reportElement x="370" y="0" width="1" height="12"/>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement x="317" y="0" width="18" height="10"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{ach_reception_entete_rec_devise}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="509" y="0" width="35" height="11"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{ach_reception_ligne_reclig_qte}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement style="ST1" x="732" y="0" width="60" height="11">
+					<printWhenExpression><![CDATA[$F{ach_reception_ligne_reclig_pt_dev}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{ach_reception_ligne_reclig_pt_dev}]]></textFieldExpression>
+			</textField>
+			<textField pattern="###0.000" isBlankWhenNull="true">
+				<reportElement style="ST1" x="337" y="0" width="27" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{ach_reception_entete_rec_coef_devise}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="504" y="0" width="1" height="12"/>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement x="476" y="0" width="26" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{ach_reception_ligne_reclig_depot}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="583" y="0" width="1" height="12"/>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement x="552" y="0" width="29" height="11"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{ach_reception_ligne_reclig_pu}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="250" y="0" width="59" height="10"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{ach_reception_entete_rec_valo}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="18" y="0" width="90" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{ach_reception_ligne_reclig_code}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="126" y="0" width="110" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{ach_reception_ligne_reclig_libelle}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="244" y="0" width="1" height="12"/>
+			</line>
+			<line>
+				<reportElement x="312" y="0" width="1" height="12"/>
+			</line>
+			<line>
+				<reportElement x="730" y="0" width="1" height="12"/>
+			</line>
+			<line>
+				<reportElement x="797" y="0" width="1" height="12"/>
+			</line>
+			<subreport>
+				<reportElement x="632" y="1" width="30" height="11"/>
+				<subreportParameter name="codeFam">
+					<subreportParameterExpression><![CDATA[$V{codeFamille}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<returnValue subreportVariable="prc" toVariable="prc"/>
+				<subreportExpression class="java.lang.String"><![CDATA[$P{SUBREPORT_DIR} + "calculPrc.jasper"]]></subreportExpression>
+			</subreport>
+			<textField isBlankWhenNull="true">
+				<reportElement style="ST1" x="667" y="0" width="60" height="11">
+					<printWhenExpression><![CDATA[$F{ach_reception_ligne_reclig_pr}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{ach_reception_ligne_reclig_pr}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="26" splitType="Stretch">
+			<line>
+				<reportElement x="424" y="0" width="1" height="3"/>
+			</line>
+			<line>
+				<reportElement x="470" y="0" width="1" height="21"/>
+			</line>
+			<line>
+				<reportElement x="547" y="0" width="1" height="21"/>
+			</line>
+			<line>
+				<reportElement x="10" y="2" width="788" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="468" y="4" width="35" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Totaux]]></text>
+			</staticText>
+			<line>
+				<reportElement x="629" y="0" width="1" height="21"/>
+			</line>
+			<line>
+				<reportElement x="470" y="20" width="327" height="1"/>
+			</line>
+			<line>
+				<reportElement x="10" y="0" width="1" height="3"/>
+			</line>
+			<line>
+				<reportElement x="663" y="0" width="1" height="21"/>
+			</line>
+			<line>
+				<reportElement x="117" y="0" width="1" height="3"/>
+			</line>
+			<textField evaluationTime="Page" isBlankWhenNull="true">
+				<reportElement style="ST1" x="732" y="5" width="60" height="14">
+					<printWhenExpression><![CDATA[$V{margeGene}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{margeGene}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="370" y="0" width="1" height="3"/>
+			</line>
+			<textField evaluationTime="Page" isBlankWhenNull="true">
+				<reportElement style="ST1" x="509" y="5" width="35" height="14">
+					<printWhenExpression><![CDATA[$V{qteGene}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{qteGene}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="504" y="0" width="1" height="21"/>
+			</line>
+			<line>
+				<reportElement x="583" y="0" width="1" height="21"/>
+			</line>
+			<line>
+				<reportElement x="730" y="0" width="1" height="21"/>
+			</line>
+			<line>
+				<reportElement x="797" y="0" width="1" height="21"/>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="26">
+			<rectangle>
+				<reportElement x="0" y="1" width="822" height="24" forecolor="#992F2A" backcolor="#FFFFFF"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="36" y="2" width="160" height="12" forecolor="#000000"/>
+				<textElement>
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Created by Bagwell & Watson]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="13" width="160" height="12" forecolor="#000000"/>
+				<textElement>
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.bagwell-watson.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="318" y="2" width="160" height="12" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Writen by Phoenix SaaS ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="637" y="2" width="160" height="12" forecolor="#000000"/>
+				<textElement textAlignment="Right">
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Support by Planet-e-pegase ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="637" y="13" width="160" height="12" forecolor="#000000"/>
+				<textElement textAlignment="Right">
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.planet-e-pegase.biz ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="318" y="13" width="160" height="12" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.phoenix-saas.com]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

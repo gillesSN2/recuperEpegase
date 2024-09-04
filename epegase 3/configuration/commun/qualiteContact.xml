@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Qualites>
+
+	<qualite>
+		<code>0</code>
+		<nom_FR>Famille</nom_FR>
+                <nom_UK></nom_UK>
+		<nom_SP></nom_SP>
+	</qualite>
+
+	<qualite>
+		<code>1</code>
+		<nom_FR>Ami(e)</nom_FR>
+                <nom_UK></nom_UK>
+		<nom_SP></nom_SP>
+	</qualite>
+
+	<qualite>
+		<code>2</code>
+		<nom_FR>Voisin(e)</nom_FR>
+		<nom_UK></nom_UK>
+		<nom_SP></nom_SP>
+	</qualite>
+
+        <qualite>
+		<code>3</code>
+		<nom_FR>Collègue</nom_FR>
+		<nom_UK></nom_UK>
+		<nom_SP></nom_SP>
+	</qualite>
+
+        <qualite>
+		<code>4</code>
+		<nom_FR>Mèdecin traitant</nom_FR>
+		<nom_UK></nom_UK>
+		<nom_SP></nom_SP>
+	</qualite>
+
+</Qualites>

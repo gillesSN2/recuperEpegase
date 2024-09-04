@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<optionAchats>
+  <nbrJrRelanceDA>0</nbrJrRelanceDA>
+  <nbrJrValidDA>0</nbrJrValidDA>
+  <anal1DA>avec</anal1DA>
+  <anal2DA>parc</anal2DA>
+  <anal3DA>sans</anal3DA>
+  <anal4DA>sans</anal4DA>
+  <gestBudgetDA>0</gestBudgetDA>
+  <gestSitDepSerDA>false</gestSitDepSerDA>
+  <gestRegSectPdvDA>false</gestRegSectPdvDA>
+  <gestActDA>true</gestActDA>
+  <cadFerDocTransDA />
+  <cadFerUserNotRedDA />
+  <cadFerAfterPrintDocDA />
+  <affichInTierFilDA>11</affichInTierFilDA>
+  <affichInGlobViewDA>3</affichInGlobViewDA>
+  <nbrJrRelanceCOT>3</nbrJrRelanceCOT>
+  <nbrJrValidCOT>0</nbrJrValidCOT>
+  <anal1COT>avec</anal1COT>
+  <anal2COT>parc</anal2COT>
+  <anal3COT>sans</anal3COT>
+  <anal4COT>sans</anal4COT>
+  <gestBudgetCOT>0</gestBudgetCOT>
+  <gestSitDepSerCOT>false</gestSitDepSerCOT>
+  <gestRegSectPdvCOT>false</gestRegSectPdvCOT>
+  <gestActCOT>true</gestActCOT>
+  <cadFerDocTransCOT />
+  <cadFerUserNotRedCOT />
+  <cadFerAfterPrintDocCOT />
+  <affichInTierFilCOT>11</affichInTierFilCOT>
+  <affichInGlobViewCOT>3</affichInGlobViewCOT>
+  <nbrJrRelanceCOM>0</nbrJrRelanceCOM>
+  <nbrJrValidCOM>0</nbrJrValidCOM>
+  <anal1COM>avec</anal1COM>
+  <anal2COM>parc</anal2COM>
+  <anal3COM>sans</anal3COM>
+  <anal4COM>sans</anal4COM>
+  <gestBudgetCOM>0</gestBudgetCOM>
+  <gestSitDepSerCOM>false</gestSitDepSerCOM>
+  <gestRegSectPdvCOM>false</gestRegSectPdvCOM>
+  <gestActCOM>true</gestActCOM>
+  <cadFerDocTransCOM />
+  <cadFerUserNotRedCOM />
+  <cadFerAfterPrintDocCOM />
+  <affichInTierFilCOM>11</affichInTierFilCOM>
+  <affichInGlobViewCOM>3</affichInGlobViewCOM>
+  <nbrJrRelanceREC>0</nbrJrRelanceREC>
+  <nbrJrValidREC>0</nbrJrValidREC>
+  <anal1REC>avec</anal1REC>
+  <anal2REC>parc</anal2REC>
+  <anal3REC>sans</anal3REC>
+  <anal4REC>sans</anal4REC>
+  <gestBudgetREC>0</gestBudgetREC>
+  <gestSitDepSerREC>false</gestSitDepSerREC>
+  <gestRegSectPdvREC>false</gestRegSectPdvREC>
+  <gestActREC>true</gestActREC>
+  <cadFerDocTransREC />
+  <cadFerUserNotRedREC />
+  <cadFerAfterPrintDocREC />
+  <affichInTierFilREC>11</affichInTierFilREC>
+  <affichInGlobViewREC>3</affichInGlobViewREC>
+  <nbrJrRelanceFAC>0</nbrJrRelanceFAC>
+  <nbrJrValidFAC>0</nbrJrValidFAC>
+  <anal1FAC>avec</anal1FAC>
+  <anal2FAC>parc</anal2FAC>
+  <anal3FAC>sans</anal3FAC>
+  <anal4FAC>sans</anal4FAC>
+  <gestBudgetFAC>0</gestBudgetFAC>
+  <gestSitDepSerFAC>false</gestSitDepSerFAC>
+  <gestRegSectPdvFAC>false</gestRegSectPdvFAC>
+  <gestActFAC>true</gestActFAC>
+  <cadFerDocTransFAC />
+  <cadFerUserNotRedFAC />
+  <cadFerAfterPrintDocFAC />
+  <affichInTierFilFAC>11</affichInTierFilFAC>
+  <affichInGlobViewFAC>3</affichInGlobViewFAC>
+  <nbrJrRelanceNOTDEB>0</nbrJrRelanceNOTDEB>
+  <nbrJrValidNOTDEB>0</nbrJrValidNOTDEB>
+  <anal1NOTDEB>avec</anal1NOTDEB>
+  <anal2NOTDEB>parc</anal2NOTDEB>
+  <anal3NOTDEB>sans</anal3NOTDEB>
+  <anal4NOTDEB>sans</anal4NOTDEB>
+  <gestBudgetNOTDEB>0</gestBudgetNOTDEB>
+  <gestSitDepSerNOTDEB>false</gestSitDepSerNOTDEB>
+  <gestRegSectPdvNOTDEB>false</gestRegSectPdvNOTDEB>
+  <gestActNOTDEB>true</gestActNOTDEB>
+  <cadFerDocTransNOTDEB />
+  <cadFerUserNotRedNOTDEB />
+  <cadFerAfterPrintDocNOTDEB />
+  <affichInTierFilNOTDEB>11</affichInTierFilNOTDEB>
+  <affichInGlobViewNOTDEB>3</affichInGlobViewNOTDEB>
+  <nbrJrRelanceAVOIR>0</nbrJrRelanceAVOIR>
+  <nbrJrValidAVOIR>0</nbrJrValidAVOIR>
+  <anal1AVOIR>avec</anal1AVOIR>
+  <anal2AVOIR>parc</anal2AVOIR>
+  <anal3AVOIR>sans</anal3AVOIR>
+  <anal4AVOIR>sans</anal4AVOIR>
+  <gestBudgetAVOIR>0</gestBudgetAVOIR>
+  <gestSitDepSerAVOIR>false</gestSitDepSerAVOIR>
+  <gestRegSectPdvAVOIR>false</gestRegSectPdvAVOIR>
+  <gestActAVOIR>true</gestActAVOIR>
+  <cadFerDocTransAVOIR />
+  <cadFerUserNotRedAVOIR />
+  <cadFerAfterPrintDocAVOIR />
+  <affichInTierFilAVOIR>11</affichInTierFilAVOIR>
+  <affichInGlobViewAVOIR>3</affichInGlobViewAVOIR>
+  <nbrJrRelanceRETOUR>0</nbrJrRelanceRETOUR>
+  <nbrJrValidRETOUR>0</nbrJrValidRETOUR>
+  <anal1RETOUR>avec</anal1RETOUR>
+  <anal2RETOUR>parc</anal2RETOUR>
+  <anal3RETOUR>sans</anal3RETOUR>
+  <anal4RETOUR>sans</anal4RETOUR>
+  <gestBudgetRETOUR>0</gestBudgetRETOUR>
+  <gestSitDepSerRETOUR>false</gestSitDepSerRETOUR>
+  <gestRegSectPdvRETOUR>false</gestRegSectPdvRETOUR>
+  <gestActRETOUR>true</gestActRETOUR>
+  <cadFerDocTransRETOUR />
+  <cadFerUserNotRedRETOUR />
+  <cadFerAfterPrintDocRETOUR />
+  <affichInTierFilRETOUR>11</affichInTierFilRETOUR>
+  <affichInGlobViewRETOUR>3</affichInGlobViewRETOUR>
+  <nbrJrRelanceFRA>0</nbrJrRelanceFRA>
+  <nbrJrValidFRA>0</nbrJrValidFRA>
+  <anal1FRA>avec</anal1FRA>
+  <anal2FRA>parc</anal2FRA>
+  <anal3FRA>sans</anal3FRA>
+  <anal4FRA>sans</anal4FRA>
+  <gestBudgetFRA>0</gestBudgetFRA>
+  <gestSitDepSerFRA>false</gestSitDepSerFRA>
+  <gestRegSectPdvFRA>false</gestRegSectPdvFRA>
+  <gestActFRA>true</gestActFRA>
+  <cadFerDocTransFRA />
+  <cadFerUserNotRedFRA />
+  <cadFerAfterPrintDocFRA />
+  <affichInTierFilFRA>11</affichInTierFilFRA>
+  <affichInGlobViewFRA>3</affichInGlobViewFRA>
+  <nbrCtrsProProd>null</nbrCtrsProProd>
+  <nbrCtrsFamProd>null</nbrCtrsFamProd>
+  <modCalcProd />
+  <modValProd>1</modValProd>
+  <calcPrxRev>1</calcPrxRev>
+  <modCalcPrxRev>1</modCalcPrxRev>
+  <modCalcPump>1</modCalcPump>
+  <configBudStks />
+  <configSitDepSerStks />
+  <configRegSecPdvStks />
+  <configanal1Stks />
+  <configanal2Stks />
+  <configanal2Stks />
+  <configanal4Stks />
+  <libelle1>test1</libelle1>
+  <libelle2 />
+  <libelle3 />
+  <libelle4>test4</libelle4>
+  <libelle5 />
+  <libelle6 />
+  <libelle7>test7</libelle7>
+  <libelle8 />
+  <libelle9 />
+  <libelle10>test10</libelle10>
+</optionAchats>
+

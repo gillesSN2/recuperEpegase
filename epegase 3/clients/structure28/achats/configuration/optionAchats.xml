@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<optionAchats>
+  <nbrJrRelanceDA>0</nbrJrRelanceDA>
+  <nbrJrValidDA>0</nbrJrValidDA>
+  <affichInTierFilDA>100</affichInTierFilDA>
+  <affichInGlobViewDA>100</affichInGlobViewDA>
+  <nbrJrRelanceCOT>0</nbrJrRelanceCOT>
+  <nbrJrValidCOT>0</nbrJrValidCOT>
+  <affichInTierFilCOT>100</affichInTierFilCOT>
+  <affichInGlobViewCOT>100</affichInGlobViewCOT>
+  <nbrJrRelanceCOM>0</nbrJrRelanceCOM>
+  <nbrJrValidCOM>0</nbrJrValidCOM>
+  <affichInTierFilCOM>100</affichInTierFilCOM>
+  <affichInGlobViewCOM>100</affichInGlobViewCOM>
+  <affichQtePoidsCOM>0</affichQtePoidsCOM>
+  <nbrJrRelanceREC>0</nbrJrRelanceREC>
+  <nbrJrValidREC>0</nbrJrValidREC>
+  <affichInTierFilREC>100</affichInTierFilREC>
+  <affichInGlobViewREC>100</affichInGlobViewREC>
+  <modeReception>0</modeReception>
+  <affichQtePoidsREC>0</affichQtePoidsREC>
+  <nbrJrRelanceFAC>0</nbrJrRelanceFAC>
+  <nbrJrValidFAC>0</nbrJrValidFAC>
+  <affichInTierFilFAC>100</affichInTierFilFAC>
+  <affichInGlobViewFAC>100</affichInGlobViewFAC>
+  <nbrJrRelanceNOTDEB>0</nbrJrRelanceNOTDEB>
+  <nbrJrValidNOTDEB>0</nbrJrValidNOTDEB>
+  <affichInTierFilNOTDEB>100</affichInTierFilNOTDEB>
+  <affichInGlobViewNOTDEB>100</affichInGlobViewNOTDEB>
+  <nbrJrRelanceAVOIR>0</nbrJrRelanceAVOIR>
+  <nbrJrValidAVOIR>0</nbrJrValidAVOIR>
+  <affichInTierFilAVOIR>100</affichInTierFilAVOIR>
+  <affichInGlobViewAVOIR>100</affichInGlobViewAVOIR>
+  <nbrJrRelanceRETOUR>0</nbrJrRelanceRETOUR>
+  <nbrJrValidRETOUR>0</nbrJrValidRETOUR>
+  <affichInTierFilRETOUR>100</affichInTierFilRETOUR>
+  <affichInGlobViewRETOUR>100</affichInGlobViewRETOUR>
+  <nbrJrRelanceFRA>0</nbrJrRelanceFRA>
+  <nbrJrValidFRA>0</nbrJrValidFRA>
+  <affichInTierFilFRA>100</affichInTierFilFRA>
+  <affichInGlobViewFRA>100</affichInGlobViewFRA>
+  <nbrCtrsProProd>3</nbrCtrsProProd>
+  <nbrCtrsFamProd>2</nbrCtrsFamProd>
+  <modCalcProd>0</modCalcProd>
+  <modCalcPump>1</modCalcPump>
+  <decrmtRabais>1</decrmtRabais>
+  <analAuto>0</analAuto>
+  <nbLigneMax>18</nbLigneMax>
+  <nbDecQte>0</nbDecQte>
+  <nbDecPu>0</nbDecPu>
+  <trfCompta>0</trfCompta>
+  <chargementListe>0</chargementListe>
+  <activiteEnteteLigne>0</activiteEnteteLigne>
+  <descriptifComplementaire>0</descriptifComplementaire>
+  <dateTransformation>0</dateTransformation>
+  <photosProduit>0</photosProduit>
+  <choixStock>0</choixStock>
+  <configBudStks />
+  <configSitDepSerStks />
+  <configRegSecPdvStks />
+  <configanal1Stks />
+  <configanal2Stks />
+  <configanal2Stks />
+  <configanal4Stks />
+  <libelle1 />
+  <libelle2 />
+  <libelle3 />
+  <libelle4 />
+  <libelle5 />
+  <libelle6 />
+  <libelle7 />
+  <libelle8 />
+  <libelle9 />
+  <libelle10 />
+  <serie1 />
+  <serie2 />
+  <serie3 />
+  <serie4 />
+  <serie5 />
+  <serie6 />
+  <serie7 />
+  <serie8 />
+  <serie9 />
+  <serie10 />
+  <serie11 />
+  <serie12 />
+  <serie13 />
+  <serie14 />
+  <serie15 />
+  <serie16 />
+  <serie17 />
+  <serie18 />
+  <serie19 />
+  <serie20 />
+  <zoneRef1>0</zoneRef1>
+  <zoneRef2>1</zoneRef2>
+  <zoneLibelle>0</zoneLibelle>
+  <zoneLibelleSuite>0</zoneLibelleSuite>
+</optionAchats>
+

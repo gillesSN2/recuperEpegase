@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<optionStocks>
+  <affichInGlobViewINV>100</affichInGlobViewINV>
+  <affichInGlobViewBIN>100</affichInGlobViewBIN>
+  <affichInGlobViewBOUT>100</affichInGlobViewBOUT>
+  <affichInGlobViewCES>100</affichInGlobViewCES>
+  <affichInGlobViewPRD>100</affichInGlobViewPRD>
+  <affichInGlobViewREX>100</affichInGlobViewREX>
+  <lib1 />
+  <lib2 />
+  <lib3 />
+  <lib4 />
+  <lib5 />
+  <lib6 />
+  <lib7 />
+  <lib8 />
+  <lib9 />
+  <lib10 />
+  <nbLigneMax>100</nbLigneMax>
+  <stockNegatif>0</stockNegatif>
+  <demandeurRapporteur>0</demandeurRapporteur>
+  <choixStock>0</choixStock>
+</optionStocks>
+

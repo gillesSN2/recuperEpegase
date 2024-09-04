@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<planComptable>
+
+	<compte>
+		<code>101000</code>
+		<lib_FR>Capital</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>1</nature>
+		<ran>0</ran>
+		<racine>101</racine>
+		<libre></libre>
+		<sens>0</sens>
+		<lib_nat>Capital</lib_nat>
+	</compte>
+
+	<compte>
+		<code>111000</code>
+		<lib_FR>Reserve  Legale</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>1</nature>
+		<ran>0</ran>
+		<racine>111</racine>
+		<libre>000</libre>
+		<sens>1</sens>
+		<lib_nat>Capital</lib_nat>
+	</compte>
+
+	<compte>
+		<code>118000</code>
+		<lib_FR>Autres  Reserves</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>1</nature>
+		<ran>0</ran>
+		<racine>118</racine>
+		<libre>000</libre>
+		<sens>1</sens>
+		<lib_nat>Capital</lib_nat>
+	</compte>
+
+	<compte>
+		<code>121000</code>
+		<lib_FR>Report A  Nouveau Crediteur</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>2</nature>
+		<ran>0</ran>
+		<racine>121</racine>
+		<libre>000</libre>
+		<sens>1</sens>
+		<lib_nat>Résultat</lib_nat>
+	</compte>
+
+	<compte>
+		<code>131000</code>
+		<lib_FR>Benefice</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>2</nature>
+		<ran>0</ran>
+		<racine>131</racine>
+		<libre>000</libre>
+		<sens>1</sens>
+		<lib_nat>Résultat</lib_nat>
+	</compte>
+
+	<compte>
+		<code>139000</code>
+		<lib_FR>Perte</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>2</nature>
+		<ran>0</ran>
+		<racine>139</racine>
+		<libre>000</libre>
+		<sens>1</sens>
+		<lib_nat>Résultat</lib_nat>
+	</compte>
+
+	<compte>
+		<code>141500</code>
+		<lib_FR>Subvention</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>1</nature>
+		<ran>0</ran>
+		<racine>1415</racine>
+		<libre></libre>
+		<sens>0</sens>
+		<lib_nat>Capital</lib_nat>
+	</compte>
+
+	<compte>
+		<code>165200</code>
+		<lib_FR>Emprunt</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>1</nature>
+		<ran>0</ran>
+		<racine>1652</racine>
+		<libre></libre>
+		<sens>0</sens>
+		<lib_nat>Capital</lib_nat>
+	</compte>
+
+	<compte>
+		<code>213000</code>
+		<lib_FR>Logiciel</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>213</racine>
+		<libre></libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>223400</code>
+		<lib_FR>Terrain</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2234</racine>
+		<libre></libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>231300</code>
+		<lib_FR>Batiment</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2313</racine>
+		<libre></libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>244100</code>
+		<lib_FR>Materiel De Bureau</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2441</racine>
+		<libre></libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>244200</code>
+		<lib_FR>Ordinateurs Et Accessoires</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2442</racine>
+		<libre></libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>245100</code>
+		<lib_FR>Automobile</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>3</nature>
+		<ran>0</ran>
+		<racine>2451</racine>
+		<libre></libre>
+		<sens>0</sens>
+		<lib_nat>Immobilisations</lib_nat>
+	</compte>
+
+	<compte>
+		<code>401100</code>
+		<lib_FR>Fournisseurs</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>6</nature>
+		<ran>1</ran>
+		<racine>4011</racine>
+		<libre>0000</libre>
+		<sens>0</sens>
+		<lib_nat>Fournisseurs</lib_nat>
+	</compte>
+
+	<compte>
+		<code>411100</code>
+		<lib_FR>Clients</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>7</nature>
+		<ran>1</ran>
+		<racine>4111</racine>
+		<libre>0000</libre>
+		<sens>0</sens>
+		<lib_nat>Clients</lib_nat>
+	</compte>
+
+	<compte>
+		<code>421100</code>
+		<lib_FR>Personnel</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>8</nature>
+		<ran>1</ran>
+		<racine>4211</racine>
+		<libre>0000</libre>
+		<sens>0</sens>
+		<lib_nat>Personnels</lib_nat>
+	</compte>
+
+	<compte>
+		<code>431800</code>
+		<lib_FR>Organismes Sociaux</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>9</nature>
+		<ran>0</ran>
+		<racine>4318</racine>
+		<libre></libre>
+		<sens>0</sens>
+		<lib_nat>Autres Tiers</lib_nat>
+	</compte>
+
+	<compte>
+		<code>441000</code>
+		<lib_FR>Etat Et Collectivites Publiques</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>9</nature>
+		<ran>0</ran>
+		<racine>441</racine>
+		<libre></libre>
+		<sens>0</sens>
+		<lib_nat>Autres Tiers</lib_nat>
+	</compte>
+
+	<compte>
+		<code>461100</code>
+		<lib_FR>Associes Et Groupe</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>9</nature>
+		<ran>0</ran>
+		<racine>4611</racine>
+		<libre></libre>
+		<sens>0</sens>
+		<lib_nat>Autres Tiers</lib_nat>
+	</compte>
+
+	<compte>
+		<code>521100</code>
+		<lib_FR>Banque</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>10</nature>
+		<ran>0</ran>
+		<racine>5211</racine>
+		<libre></libre>
+		<sens>0</sens>
+		<lib_nat>Banques</lib_nat>
+	</compte>
+
+	<compte>
+		<code>571100</code>
+		<lib_FR>Caisse</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>11</nature>
+		<ran>0</ran>
+		<racine>5711</racine>
+		<libre></libre>
+		<sens>0</sens>
+		<lib_nat>Caisses</lib_nat>
+	</compte>
+
+	<compte>
+		<code>601100</code>
+		<lib_FR>Achat Local</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6011</racine>
+		<libre></libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>601200</code>
+		<lib_FR>Achat Dans La Zone</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6012</racine>
+		<libre></libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>601300</code>
+		<lib_FR>Achat Hors Zone</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6013</racine>
+		<libre></libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>604100</code>
+		<lib_FR>Fournitures De Bureau</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6041</racine>
+		<libre></libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>605100</code>
+		<lib_FR>Eau</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6051</racine>
+		<libre></libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>605200</code>
+		<lib_FR>Electricite</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6052</racine>
+		<libre></libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>605300</code>
+		<lib_FR>Carburant</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6053</racine>
+		<libre></libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>608100</code>
+		<lib_FR>Emballages</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6081</racine>
+		<libre></libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>611000</code>
+		<lib_FR>Transport Local</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>611</racine>
+		<libre></libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>612000</code>
+		<lib_FR>Voyage</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>612</racine>
+		<libre></libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>622200</code>
+		<lib_FR>Location</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6222</racine>
+		<libre></libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>624200</code>
+		<lib_FR>Entretien Et Reparation</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6242</racine>
+		<libre></libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>625100</code>
+		<lib_FR>Assurance</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6251</racine>
+		<libre></libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>627100</code>
+		<lib_FR>Publicite</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6271</racine>
+		<libre></libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>628100</code>
+		<lib_FR>Telephone</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6281</racine>
+		<libre></libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>628200</code>
+		<lib_FR>Internet</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6282</racine>
+		<libre></libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>631800</code>
+		<lib_FR>Frais Bancaires</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6318</racine>
+		<libre></libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>632400</code>
+		<lib_FR>Honoraires</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6324</racine>
+		<libre></libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>641100</code>
+		<lib_FR>Impots  Et  Taxes</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6411</racine>
+		<libre></libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>661100</code>
+		<lib_FR>Personnel</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6611</racine>
+		<libre></libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>671100</code>
+		<lib_FR>Interet  Des  Emprunts</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>16</nature>
+		<ran>0</ran>
+		<racine>6711</racine>
+		<libre></libre>
+		<sens>0</sens>
+		<lib_nat>Charges</lib_nat>
+	</compte>
+
+	<compte>
+		<code>701100</code>
+		<lib_FR>Recettes</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<nature>17</nature>
+		<ran>0</ran>
+		<racine>7011</racine>
+		<libre></libre>
+		<sens>0</sens>
+		<lib_nat>Produits</lib_nat>
+	</compte>
+</planComptable>

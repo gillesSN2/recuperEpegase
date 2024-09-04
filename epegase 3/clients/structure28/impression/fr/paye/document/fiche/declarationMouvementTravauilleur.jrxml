@@ -1,0 +1,1631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="23"/>
+	<property name="ireport.y" value="850"/>
+	<parameter name="societe" class="java.lang.String"/>
+	<parameter name="version" class="java.lang.String"/>
+	<parameter name="adresse" class="java.lang.String"/>
+	<parameter name="ville" class="java.lang.String"/>
+	<parameter name="pays" class="java.lang.String"/>
+	<parameter name="logo_1" class="java.lang.String"/>
+	<parameter name="logo_2" class="java.lang.String"/>
+	<parameter name="logo_4" class="java.lang.String"/>
+	<parameter name="telephone_1" class="java.lang.String"/>
+	<parameter name="telephone_2" class="java.lang.String"/>
+	<parameter name="fax" class="java.lang.String"/>
+	<parameter name="site_web" class="java.lang.String"/>
+	<parameter name="mails" class="java.lang.String"/>
+	<parameter name="activite" class="java.lang.String"/>
+	<parameter name="identification_1" class="java.lang.String"/>
+	<parameter name="identification_2" class="java.lang.String"/>
+	<parameter name="identification_3" class="java.lang.String"/>
+	<parameter name="identification_4" class="java.lang.String"/>
+	<parameter name="identification_5" class="java.lang.String"/>
+	<parameter name="identification_6" class="java.lang.String"/>
+	<parameter name="identification_7" class="java.lang.String"/>
+	<parameter name="identification_8" class="java.lang.String"/>
+	<parameter name="identification_9" class="java.lang.String"/>
+	<parameter name="identification_10" class="java.lang.String"/>
+	<parameter name="matricule" class="java.lang.String"/>
+	<queryString language="xPath">
+		<![CDATA[]]>
+	</queryString>
+	<field name="salId" class="java.lang.Long">
+		<fieldDescription><![CDATA[salId]]></fieldDescription>
+	</field>
+	<field name="salDateCreat" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[salDateCreat]]></fieldDescription>
+	</field>
+	<field name="salDateModif" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[salDateModif]]></fieldDescription>
+	</field>
+	<field name="salUserCreat" class="java.lang.Long">
+		<fieldDescription><![CDATA[salUserCreat]]></fieldDescription>
+	</field>
+	<field name="salUserModif" class="java.lang.Long">
+		<fieldDescription><![CDATA[salUserModif]]></fieldDescription>
+	</field>
+	<field name="salMatricule" class="java.lang.String">
+		<fieldDescription><![CDATA[salMatricule]]></fieldDescription>
+	</field>
+	<field name="salPhoto" class="java.lang.String">
+		<fieldDescription><![CDATA[salPhoto]]></fieldDescription>
+	</field>
+	<field name="salNature" class="java.lang.String">
+		<fieldDescription><![CDATA[salNature]]></fieldDescription>
+	</field>
+	<field name="salProtege" class="java.lang.Integer">
+		<fieldDescription><![CDATA[salProtege]]></fieldDescription>
+	</field>
+	<field name="salEtat" class="java.lang.Integer">
+		<fieldDescription><![CDATA[salEtat]]></fieldDescription>
+	</field>
+	<field name="salNom" class="java.lang.String">
+		<fieldDescription><![CDATA[salNom]]></fieldDescription>
+	</field>
+	<field name="salNomJf" class="java.lang.String">
+		<fieldDescription><![CDATA[salNomJf]]></fieldDescription>
+	</field>
+	<field name="salPrenom" class="java.lang.String">
+		<fieldDescription><![CDATA[salPrenom]]></fieldDescription>
+	</field>
+	<field name="salCivilite" class="java.lang.String">
+		<fieldDescription><![CDATA[salCivilite]]></fieldDescription>
+	</field>
+	<field name="salNompays" class="java.lang.String">
+		<fieldDescription><![CDATA[salNompays]]></fieldDescription>
+	</field>
+	<field name="salLangue" class="java.lang.String">
+		<fieldDescription><![CDATA[salLangue]]></fieldDescription>
+	</field>
+	<field name="salFonction" class="java.lang.String">
+		<fieldDescription><![CDATA[salFonction]]></fieldDescription>
+	</field>
+	<field name="salProfession" class="java.lang.String">
+		<fieldDescription><![CDATA[salProfession]]></fieldDescription>
+	</field>
+	<field name="salSite" class="java.lang.String">
+		<fieldDescription><![CDATA[salSite]]></fieldDescription>
+	</field>
+	<field name="salDepartement" class="java.lang.String">
+		<fieldDescription><![CDATA[salDepartement]]></fieldDescription>
+	</field>
+	<field name="salService" class="java.lang.String">
+		<fieldDescription><![CDATA[salService]]></fieldDescription>
+	</field>
+	<field name="salActivite" class="java.lang.String">
+		<fieldDescription><![CDATA[salActivite]]></fieldDescription>
+	</field>
+	<field name="salBudget" class="java.lang.String">
+		<fieldDescription><![CDATA[salBudget]]></fieldDescription>
+	</field>
+	<field name="salParc" class="java.lang.String">
+		<fieldDescription><![CDATA[salParc]]></fieldDescription>
+	</field>
+	<field name="salDateNaissance" class="java.sql.Date">
+		<fieldDescription><![CDATA[salDateNaissance]]></fieldDescription>
+	</field>
+	<field name="salLieuNaissance" class="java.lang.String">
+		<fieldDescription><![CDATA[salLieuNaissance]]></fieldDescription>
+	</field>
+	<field name="salPaysNaissance" class="java.lang.String">
+		<fieldDescription><![CDATA[salPaysNaissance]]></fieldDescription>
+	</field>
+	<field name="salCodeNaissance" class="java.lang.String">
+		<fieldDescription><![CDATA[salCodeNaissance]]></fieldDescription>
+	</field>
+	<field name="salNationnalite" class="java.lang.String">
+		<fieldDescription><![CDATA[salNationnalite]]></fieldDescription>
+	</field>
+	<field name="salEthnie" class="java.lang.String">
+		<fieldDescription><![CDATA[salEthnie]]></fieldDescription>
+	</field>
+	<field name="salAnniversaire" class="java.lang.String">
+		<fieldDescription><![CDATA[salAnniversaire]]></fieldDescription>
+	</field>
+	<field name="salTelBur" class="java.lang.String">
+		<fieldDescription><![CDATA[salTelBur]]></fieldDescription>
+	</field>
+	<field name="salTelDom" class="java.lang.String">
+		<fieldDescription><![CDATA[salTelDom]]></fieldDescription>
+	</field>
+	<field name="salCel1" class="java.lang.String">
+		<fieldDescription><![CDATA[salCel1]]></fieldDescription>
+	</field>
+	<field name="salCel2" class="java.lang.String">
+		<fieldDescription><![CDATA[salCel2]]></fieldDescription>
+	</field>
+	<field name="salCel3" class="java.lang.String">
+		<fieldDescription><![CDATA[salCel3]]></fieldDescription>
+	</field>
+	<field name="salAdresse" class="java.lang.String">
+		<fieldDescription><![CDATA[salAdresse]]></fieldDescription>
+	</field>
+	<field name="salRue" class="java.lang.String">
+		<fieldDescription><![CDATA[salRue]]></fieldDescription>
+	</field>
+	<field name="salLot" class="java.lang.String">
+		<fieldDescription><![CDATA[salLot]]></fieldDescription>
+	</field>
+	<field name="salIlot" class="java.lang.String">
+		<fieldDescription><![CDATA[salIlot]]></fieldDescription>
+	</field>
+	<field name="salBatiment" class="java.lang.String">
+		<fieldDescription><![CDATA[salBatiment]]></fieldDescription>
+	</field>
+	<field name="salPorte" class="java.lang.String">
+		<fieldDescription><![CDATA[salPorte]]></fieldDescription>
+	</field>
+	<field name="salEscalier" class="java.lang.String">
+		<fieldDescription><![CDATA[salEscalier]]></fieldDescription>
+	</field>
+	<field name="salAscensseur" class="java.lang.String">
+		<fieldDescription><![CDATA[salAscensseur]]></fieldDescription>
+	</field>
+	<field name="salEtage" class="java.lang.String">
+		<fieldDescription><![CDATA[salEtage]]></fieldDescription>
+	</field>
+	<field name="salQuartier" class="java.lang.String">
+		<fieldDescription><![CDATA[salQuartier]]></fieldDescription>
+	</field>
+	<field name="salCommune" class="java.lang.String">
+		<fieldDescription><![CDATA[salCommune]]></fieldDescription>
+	</field>
+	<field name="salDeparte" class="java.lang.String">
+		<fieldDescription><![CDATA[salDeparte]]></fieldDescription>
+	</field>
+	<field name="salZone" class="java.lang.String">
+		<fieldDescription><![CDATA[salZone]]></fieldDescription>
+	</field>
+	<field name="salBp" class="java.lang.String">
+		<fieldDescription><![CDATA[salBp]]></fieldDescription>
+	</field>
+	<field name="salVille" class="java.lang.String">
+		<fieldDescription><![CDATA[salVille]]></fieldDescription>
+	</field>
+	<field name="salYahoo" class="java.lang.String">
+		<fieldDescription><![CDATA[salYahoo]]></fieldDescription>
+	</field>
+	<field name="salMsn" class="java.lang.String">
+		<fieldDescription><![CDATA[salMsn]]></fieldDescription>
+	</field>
+	<field name="salSkype" class="java.lang.String">
+		<fieldDescription><![CDATA[salSkype]]></fieldDescription>
+	</field>
+	<field name="salAol" class="java.lang.String">
+		<fieldDescription><![CDATA[salAol]]></fieldDescription>
+	</field>
+	<field name="salMail1" class="java.lang.String">
+		<fieldDescription><![CDATA[salMail1]]></fieldDescription>
+	</field>
+	<field name="salObservation" class="java.lang.String">
+		<fieldDescription><![CDATA[salObservation]]></fieldDescription>
+	</field>
+	<field name="salNumBanque" class="java.lang.String">
+		<fieldDescription><![CDATA[salNumBanque]]></fieldDescription>
+	</field>
+	<field name="salGuichetBanque" class="java.lang.String">
+		<fieldDescription><![CDATA[salGuichetBanque]]></fieldDescription>
+	</field>
+	<field name="salCompteBanque" class="java.lang.String">
+		<fieldDescription><![CDATA[salCompteBanque]]></fieldDescription>
+	</field>
+	<field name="salCleBanque" class="java.lang.String">
+		<fieldDescription><![CDATA[salCleBanque]]></fieldDescription>
+	</field>
+	<field name="salIban" class="java.lang.String">
+		<fieldDescription><![CDATA[salIban]]></fieldDescription>
+	</field>
+	<field name="salSwift" class="java.lang.String">
+		<fieldDescription><![CDATA[salSwift]]></fieldDescription>
+	</field>
+	<field name="salGenre" class="java.lang.Integer">
+		<fieldDescription><![CDATA[salGenre]]></fieldDescription>
+	</field>
+	<field name="salSitFamille" class="java.lang.Integer">
+		<fieldDescription><![CDATA[salSitFamille]]></fieldDescription>
+	</field>
+	<field name="salNbEnfant" class="java.lang.Integer">
+		<fieldDescription><![CDATA[salNbEnfant]]></fieldDescription>
+	</field>
+	<field name="salNbPartFiscal" class="java.lang.Float">
+		<fieldDescription><![CDATA[salNbPartFiscal]]></fieldDescription>
+	</field>
+	<field name="salNbFemme" class="java.lang.Integer">
+		<fieldDescription><![CDATA[salNbFemme]]></fieldDescription>
+	</field>
+	<field name="salNbPartTrimf" class="java.lang.Float">
+		<fieldDescription><![CDATA[salNbPartTrimf]]></fieldDescription>
+	</field>
+	<field name="salNbJourCp" class="java.lang.Float">
+		<fieldDescription><![CDATA[salNbJourCp]]></fieldDescription>
+	</field>
+	<field name="salNbJourTr" class="java.lang.Float">
+		<fieldDescription><![CDATA[salNbJourTr]]></fieldDescription>
+	</field>
+	<field name="salDateMarie" class="java.sql.Date">
+		<fieldDescription><![CDATA[salDateMarie]]></fieldDescription>
+	</field>
+	<field name="salDateDivorce" class="java.sql.Date">
+		<fieldDescription><![CDATA[salDateDivorce]]></fieldDescription>
+	</field>
+	<field name="salDateVeuf" class="java.sql.Date">
+		<fieldDescription><![CDATA[salDateVeuf]]></fieldDescription>
+	</field>
+	<field name="salDateConcubinage" class="java.sql.Date">
+		<fieldDescription><![CDATA[salDateConcubinage]]></fieldDescription>
+	</field>
+	<field name="salDatePacs" class="java.sql.Date">
+		<fieldDescription><![CDATA[salDatePacs]]></fieldDescription>
+	</field>
+	<field name="salConvention" class="java.lang.String">
+		<fieldDescription><![CDATA[salConvention]]></fieldDescription>
+	</field>
+	<field name="salLibConvention" class="java.lang.String">
+		<fieldDescription><![CDATA[salLibConvention]]></fieldDescription>
+	</field>
+	<field name="salCentresImpots" class="java.lang.String">
+		<fieldDescription><![CDATA[salCentresImpots]]></fieldDescription>
+	</field>
+	<field name="salLibCentresImpots" class="java.lang.String">
+		<fieldDescription><![CDATA[salLibCentresImpots]]></fieldDescription>
+	</field>
+	<field name="salClassement" class="java.lang.String">
+		<fieldDescription><![CDATA[salClassement]]></fieldDescription>
+	</field>
+	<field name="salLibClassement" class="java.lang.String">
+		<fieldDescription><![CDATA[salLibClassement]]></fieldDescription>
+	</field>
+	<field name="salNivEmploi" class="java.lang.String">
+		<fieldDescription><![CDATA[salNivEmploi]]></fieldDescription>
+	</field>
+	<field name="salLibNivEmploi" class="java.lang.String">
+		<fieldDescription><![CDATA[salLibNivEmploi]]></fieldDescription>
+	</field>
+	<field name="salGrille" class="java.lang.String">
+		<fieldDescription><![CDATA[salGrille]]></fieldDescription>
+	</field>
+	<field name="salLibGrille" class="java.lang.String">
+		<fieldDescription><![CDATA[salLibGrille]]></fieldDescription>
+	</field>
+	<field name="salDateEntree" class="java.sql.Date">
+		<fieldDescription><![CDATA[salDateEntree]]></fieldDescription>
+	</field>
+	<field name="salDateSortie" class="java.sql.Date">
+		<fieldDescription><![CDATA[salDateSortie]]></fieldDescription>
+	</field>
+	<field name="salMotifSortie" class="java.lang.String">
+		<fieldDescription><![CDATA[salMotifSortie]]></fieldDescription>
+	</field>
+	<field name="salDateImpot" class="java.sql.Date">
+		<fieldDescription><![CDATA[salDateImpot]]></fieldDescription>
+	</field>
+	<field name="salFeuille" class="java.lang.String">
+		<fieldDescription><![CDATA[salFeuille]]></fieldDescription>
+	</field>
+	<field name="salNumCi" class="java.lang.String">
+		<fieldDescription><![CDATA[salNumCi]]></fieldDescription>
+	</field>
+	<field name="salDateCi" class="java.sql.Date">
+		<fieldDescription><![CDATA[salDateCi]]></fieldDescription>
+	</field>
+	<field name="salDelivreCi" class="java.lang.String">
+		<fieldDescription><![CDATA[salDelivreCi]]></fieldDescription>
+	</field>
+	<field name="salLieuCi" class="java.lang.String">
+		<fieldDescription><![CDATA[salLieuCi]]></fieldDescription>
+	</field>
+	<field name="salNumSecu" class="java.lang.String">
+		<fieldDescription><![CDATA[salNumSecu]]></fieldDescription>
+	</field>
+	<field name="salDateSecu" class="java.sql.Date">
+		<fieldDescription><![CDATA[salDateSecu]]></fieldDescription>
+	</field>
+	<field name="salNumRetraite" class="java.lang.String">
+		<fieldDescription><![CDATA[salNumRetraite]]></fieldDescription>
+	</field>
+	<field name="salDateRetraite" class="java.sql.Date">
+		<fieldDescription><![CDATA[salDateRetraite]]></fieldDescription>
+	</field>
+	<field name="salApprobInsp" class="java.lang.String">
+		<fieldDescription><![CDATA[salApprobInsp]]></fieldDescription>
+	</field>
+	<field name="salVisaEnreg" class="java.lang.String">
+		<fieldDescription><![CDATA[salVisaEnreg]]></fieldDescription>
+	</field>
+	<field name="salClasseRecrut" class="java.lang.String">
+		<fieldDescription><![CDATA[salClasseRecrut]]></fieldDescription>
+	</field>
+	<field name="salServiceMil" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[salServiceMil]]></fieldDescription>
+	</field>
+	<field name="salCoprsApp" class="java.lang.String">
+		<fieldDescription><![CDATA[salCoprsApp]]></fieldDescription>
+	</field>
+	<field name="salGrade" class="java.lang.String">
+		<fieldDescription><![CDATA[salGrade]]></fieldDescription>
+	</field>
+	<field name="salDateEntreePays" class="java.sql.Date">
+		<fieldDescription><![CDATA[salDateEntreePays]]></fieldDescription>
+	</field>
+	<field name="salModeReglement" class="java.lang.Integer">
+		<fieldDescription><![CDATA[salModeReglement]]></fieldDescription>
+	</field>
+	<field name="salPere" class="java.lang.String">
+		<fieldDescription><![CDATA[salPere]]></fieldDescription>
+	</field>
+	<field name="salMere" class="java.lang.String">
+		<fieldDescription><![CDATA[salMere]]></fieldDescription>
+	</field>
+	<field name="salCompteNet" class="java.lang.String">
+		<fieldDescription><![CDATA[salCompteNet]]></fieldDescription>
+	</field>
+	<field name="salCompteAcompte" class="java.lang.String">
+		<fieldDescription><![CDATA[salCompteAcompte]]></fieldDescription>
+	</field>
+	<field name="salCompteAvance" class="java.lang.String">
+		<fieldDescription><![CDATA[salCompteAvance]]></fieldDescription>
+	</field>
+	<field name="salCleAnal1" class="java.lang.String">
+		<fieldDescription><![CDATA[salCleAnal1]]></fieldDescription>
+	</field>
+	<field name="salLibCleAnal1" class="java.lang.String">
+		<fieldDescription><![CDATA[salLibCleAnal1]]></fieldDescription>
+	</field>
+	<field name="salCleAnal2" class="java.lang.String">
+		<fieldDescription><![CDATA[salCleAnal2]]></fieldDescription>
+	</field>
+	<field name="salLibCleAnal2" class="java.lang.String">
+		<fieldDescription><![CDATA[salLibCleAnal2]]></fieldDescription>
+	</field>
+	<field name="lib_genre" class="java.lang.String">
+		<fieldDescription><![CDATA[lib_genre]]></fieldDescription>
+	</field>
+	<field name="lib_sitfamille" class="java.lang.String">
+		<fieldDescription><![CDATA[lib_sitfamille]]></fieldDescription>
+	</field>
+	<field name="nomEpouse" class="java.lang.String">
+		<fieldDescription><![CDATA[nomEpouse]]></fieldDescription>
+	</field>
+	<field name="nomEnfant" class="java.lang.String">
+		<fieldDescription><![CDATA[nomEnfant]]></fieldDescription>
+	</field>
+	<field name="lieuContrat" class="java.lang.String">
+		<fieldDescription><![CDATA[lieuContrat]]></fieldDescription>
+	</field>
+	<field name="dateDebutContrat" class="java.sql.Date">
+		<fieldDescription><![CDATA[dateDebutContrat]]></fieldDescription>
+	</field>
+	<field name="dateFinContrat" class="java.sql.Date">
+		<fieldDescription><![CDATA[dateFinContrat]]></fieldDescription>
+	</field>
+	<variable name="serviceMilitaire" class="java.lang.String">
+		<variableExpression><![CDATA[( $F{salServiceMil}.equals("true") ? "Effectué" : "Non effectué" )]]></variableExpression>
+	</variable>
+	<detail>
+		<band height="802" splitType="Stretch">
+			<rectangle>
+				<reportElement x="17" y="8" width="529" height="121"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="431" y="7" width="115" height="111"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="17" y="136" width="529" height="644"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="59" y="20" width="338" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[DECLARATION DE MOUVEMENT DU TRAVAILLEUR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="87" y="48" width="19" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[N°]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="206" y="48" width="62" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[du (date)]]></text>
+			</staticText>
+			<line>
+				<reportElement x="104" y="61" width="100" height="1"/>
+			</line>
+			<line>
+				<reportElement x="268" y="61" width="100" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="59" y="76" width="107" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" isItalic="true" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Références]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="98" width="368" height="25"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="6" isBold="false" isItalic="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Articles 193 (Alinéa 2,3,4) du Code du travail (loi n° 61-34 du 15 juin 1961).
+Arrêté ministériel n° 7301 du 17 mai 1963 déterminant les modalités des déclarations de mouvements de travailleurs
+(J.O., 22 juin, 1963 p. 825)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="436" y="19" width="107" height="40"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8" isBold="false" isItalic="true" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Cachet et raison sociale de l'employeur]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="142" width="306" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[N° d'immatriculation du travailleur au fichier central de la main d'oeuvre]]></text>
+			</staticText>
+			<line>
+				<reportElement x="307" y="168" width="226" height="1"/>
+			</line>
+			<line>
+				<reportElement x="307" y="136" width="1" height="33"/>
+			</line>
+			<line>
+				<reportElement x="322" y="136" width="1" height="33"/>
+			</line>
+			<line>
+				<reportElement x="337" y="153" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement x="352" y="136" width="1" height="33"/>
+			</line>
+			<line>
+				<reportElement x="367" y="153" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement x="382" y="136" width="1" height="33"/>
+			</line>
+			<line>
+				<reportElement x="397" y="153" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement x="412" y="153" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement x="427" y="136" width="1" height="33"/>
+			</line>
+			<line>
+				<reportElement x="442" y="136" width="1" height="33"/>
+			</line>
+			<line>
+				<reportElement x="457" y="153" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement x="472" y="153" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement x="487" y="153" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement x="502" y="153" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement x="517" y="153" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement x="532" y="136" width="1" height="33"/>
+			</line>
+			<staticText>
+				<reportElement x="321" y="171" width="14" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[A]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="336" y="171" width="14" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[B]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="366" y="171" width="14" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[C]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="411" y="171" width="14" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[D]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="441" y="171" width="14" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[E]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="487" y="171" width="14" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[F]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="189" width="177" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[OBJET DE LA PRESENTE DECLARATION]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="205" width="177" height="79"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[- Embauche - Licenciement
+- Expiration normale du contrat
+- Démission - Mutation
+- Changement de catégorie professionnelle
+- Modification du contrat de travail
+- Changement de situation de famille
+- Changement de résidence habituelle
+- Changement d'emploi - Décès]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="299" width="177" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[CONCERNANT LE TRAVAILLEUR :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="303" y="196" width="243" height="18"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="6" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[(Rayer les mentions inutiles et encadrer la mention valables
+à compléter éventuellement dans le blanc ci-dessous)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="303" y="261" width="242" height="24"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Si le travailleur n'a pas encore été immatriculé, la mention
+"immatriculation" devra être portée dans le blanc ci-dessus]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="303" y="220" width="229" height="32"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="29" y="322" width="75" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Nom et prénoms]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="416" y="322" width="28" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Sexe]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="337" width="35" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Né(e) le]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="131" y="337" width="11" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[à]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="276" y="337" width="26" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Pays]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="416" y="337" width="55" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Nationnalité]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="352" width="58" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Fils de (père)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="212" y="352" width="58" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[et de (mère)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="416" y="352" width="71" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Groupe ethnique]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="367" width="77" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Carte d'identité n°]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="276" y="367" width="44" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[délivrée à]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="416" y="367" width="15" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[le]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="382" width="18" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[par]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="397" width="208" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[N° d'immatriculation à la caisse de Sécurité Sociale]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="343" y="397" width="125" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[N° d'immatriculation à l'IPRES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="412" width="175" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Situation de famille (marié, divorcé, veuf)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="276" y="412" width="92" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Nombre d'épouse(s)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="427" width="77" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Nom des épouses]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="442" width="113" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Nombre d'enfants à charge]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="195" y="442" width="113" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Nom des enfants à charge]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="472" width="153" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Date d'entrée dans l'établissement]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="487" width="291" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[N° et date de la déclaration d'embauche effectuée lors de l'engagement]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="502" width="47" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Profession]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="276" y="502" width="117" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Emploi dans l'établissement]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="517" width="93" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Convention collective]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="276" y="517" width="45" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Catégorie]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="532" width="137" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Eventuellement, date du contrat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="547" width="339" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[N° et date du visa d'approbation par l'inspection du Travail et de la Sécurité Sociale]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="577" width="351" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[N° et date du visa d'enregistrement à la section locale du service de la main d'oeuvre]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="607" width="273" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Raison sociale et adresse précise de l'établissement de l'employeur]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="637" width="113" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Activité de l'établissement]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="657" width="113" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Durée du contrat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="672" width="113" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[- à durée déterminée du]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="687" width="113" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[- à durée indéterminée]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="276" y="672" width="26" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[au]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="276" y="687" width="60" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Chantier de]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="707" width="183" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Nom et adresse du précédent employeur]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="722" width="247" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Si le travailleur bénéficie de l'article 107 du Code du Travail:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="737" width="177" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[- Lieu de résidence habituelle du travailleur ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="278" y="737" width="103" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Date entrée dans le pays]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="112" y="322" width="285" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{salNom}.concat(" ").concat(( $F{salPrenom}!=null ? $F{salPrenom} : "" ))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="449" y="322" width="94" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{lib_genre}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="76" y="337" width="50" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{salDateNaissance}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="149" y="337" width="121" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{salLieuNaissance}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="309" y="337" width="101" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{salPaysNaissance}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="474" y="337" width="69" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{salNationnalite}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="88" y="352" width="121" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{salPere}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="276" y="352" width="134" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{salMere}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="491" y="352" width="52" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{salEthnie}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="110" y="367" width="160" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{salNumCi}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="322" y="367" width="88" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{salDelivreCi}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="436" y="367" width="107" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{salDateCi}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="57" y="382" width="486" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{salLieuCi}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="237" y="397" width="98" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{salNumSecu}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="474" y="397" width="69" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{salNumRetraite}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="208" y="412" width="61" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{lib_sitfamille}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="386" y="412" width="61" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Integer"><![CDATA[$F{salNbFemme}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="112" y="427" width="431" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{nomEpouse}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="146" y="442" width="46" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Integer"><![CDATA[$F{salNbEnfant}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="29" y="457" width="514" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{nomEnfant}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="193" y="472" width="75" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{salDateEntree}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="325" y="487" width="75" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="400" y="502" width="143" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{salFonction}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="131" y="517" width="137" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{salLibConvention}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="335" y="517" width="208" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{salGrille}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="29" y="593" width="514" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{salVisaEnreg}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="29" y="562" width="514" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{salApprobInsp}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="103" y="332" width="307" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="444" y="332" width="96" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="66" y="347" width="60" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="143" y="347" width="125" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="303" y="347" width="107" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="470" y="347" width="71" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="88" y="362" width="120" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="271" y="362" width="139" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="487" y="362" width="54" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="106" y="377" width="162" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="320" y="377" width="90" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="431" y="377" width="110" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="48" y="392" width="493" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="237" y="407" width="98" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="468" y="407" width="73" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="371" y="422" width="73" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="204" y="422" width="64" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="107" y="437" width="433" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="142" y="452" width="50" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="308" y="452" width="232" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="29" y="467" width="511" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="173" y="482" width="95" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="318" y="497" width="222" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="394" y="512" width="147" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="76" y="512" width="190" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="122" y="527" width="144" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="322" y="527" width="219" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="168" y="542" width="98" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="30" y="572" width="511" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="30" y="603" width="511" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="30" y="631" width="511" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="142" y="646" width="399" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="29" y="620" width="514" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{adresse}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="323" y="607" width="220" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{societe}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="302" y="617" width="239" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="149" y="636" width="394" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{activite}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="87" y="502" width="178" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{salProfession}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="403" y="737" width="61" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{salDateEntreePays}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="143" y="682" width="122" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="145" y="696" width="121" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="214" y="716" width="326" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="211" y="747" width="54" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="304" y="682" width="238" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="338" y="696" width="203" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="386" y="747" width="155" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="174" y="672" width="61" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{dateDebutContrat}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="327" y="672" width="61" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{dateFinContrat}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="174" y="685" width="61" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{salDateEntree}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="216" y="736" width="50" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{lieuContrat}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="184" y="531" width="61" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{salDateEntree}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<lastPageFooter>
+		<band height="802">
+			<rectangle>
+				<reportElement x="17" y="26" width="529" height="599"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="17" y="625" width="529" height="160"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="29" y="31" width="177" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[STATUT MILITAIRE:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="44" width="113" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[(Rayer les mentions inutiles)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="64" width="113" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[- Classe de recrutement]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="80" width="208" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[- L'intéréssé a-t-il effectué son service militaire ?]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="97" width="208" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[- Armée d'appartenance : terre - mer - air :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="115" width="249" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[- Grade dans la réserve : Officier - Sous-officier - Troupe :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="144" width="292" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[DISPOSITIONS PARTICULIERES CONCERNANT L'ENGAGEMENT :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="157" width="177" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[(auxquelles les parties ont expressément souscrit)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="178" width="208" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[1) - Le salaire du travailleur sera celui fixé pour la]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="315" y="178" width="186" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[eme catégorie de la Convention Collective]]></text>
+			</staticText>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="245" y="178" width="63" height="11"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{salGrille}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="42" y="191" width="137" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{salLibConvention}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="179" y="191" width="257" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[en fonction d'un horaire de travail hebdomadaire de :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="215" width="257" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[heures]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="239" width="257" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Soit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="268" width="208" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[2) ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="311" width="208" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[3) ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="360" width="208" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[4) ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="404" width="208" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[5) ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="68" y="492" width="208" height="11"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8" isBold="false" isItalic="true" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Signature du Travailleur]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="337" y="492" width="208" height="11"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8" isBold="false" isItalic="true" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Signature de l'Entreprise]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="68" y="504" width="208" height="11"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8" isBold="false" isItalic="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[(précédé de la mention manuscrite : pour accord)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="648" width="513" height="113"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans Mono" size="8"/>
+				</textElement>
+				<text><![CDATA[P.S. -N.B. : 1°) La déclaration de mouvement du travailleur est à établir en trois exemplaires dûment signés par l'employeur et le travailleur.
+Un exemplaire est remis au travailleur. Le second est conservé par l'employeur. Le troisième est déposé :
+- dans l'intérieur : à la Section locale du service de la Main d'oeuvre, à l'inspection régionale du Travail et de la Sécurité sociale du ressort :
+- à DAKAR : au bureau central du Service de la Main d'oeuvre.
+  2) L'employeur doit OBLIGATOIREMENT délivrer une ampliation de la déclaration du mouvement au travailleur
+  3) Sont provisoirement exemptés de la déclaration de mouvement :
+        - les travailleurs journaliers effectivement payés tous les jours
+        - les manoeuvres ordinaires, dans toutes les branches d'activités.
+]]></text>
+			</staticText>
+			<line>
+				<reportElement x="152" y="74" width="380" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="245" y="89" width="287" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="245" y="108" width="287" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="278" y="125" width="254" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="103" y="248" width="429" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="154" y="63" width="379" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{salClasseRecrut}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="245" y="97" width="287" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{salCoprsApp}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="278" y="115" width="255" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{salGrade}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="245" y="80" width="287" height="11"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{serviceMilitaire}]]></textFieldExpression>
+			</textField>
+		</band>
+	</lastPageFooter>
+</jasperReport>

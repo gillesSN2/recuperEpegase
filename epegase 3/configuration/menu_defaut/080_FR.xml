@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T080_FR>
+
+	<cat_tiers>
+		<libelle>Propr. Indiv. Location</libelle>
+		<code>1</code>
+	</cat_tiers>
+
+        <cat_tiers>
+		<libelle>Propr. Indiv. Syndic</libelle>
+		<code>1</code>
+	</cat_tiers>
+
+        <cat_tiers>
+		<libelle>Propr. Indiv. Mixte</libelle>
+		<code>1</code>
+	</cat_tiers>
+
+</T080_FR>

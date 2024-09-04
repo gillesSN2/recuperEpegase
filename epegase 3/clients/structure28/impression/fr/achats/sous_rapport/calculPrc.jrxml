@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="calculPrc" language="groovy" pageWidth="30" pageHeight="555" orientation="Landscape" columnWidth="30" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="codeFam" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT
+     ach_familles_produits_achats.`famach_code` AS ach_familles_produits_achats_famach_code,
+     ach_familles_produits_achats.`famach_libelle_fr` AS ach_familles_produits_achats_famach_libelle_fr,
+     ach_familles_produits_achats.`famach_coef_val_defaut` AS ach_familles_produits_achats_famach_coef_val_defaut
+FROM
+     `ach_familles_produits_achats` ach_familles_produits_achats
+WHERE
+     ach_familles_produits_achats.`famach_code` = $P{codeFam}]]>
+	</queryString>
+	<field name="ach_familles_produits_achats_famach_code" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_familles_produits_achats_famach_libelle_fr" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ach_familles_produits_achats_famach_coef_val_defaut" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="prc" class="java.lang.Float">
+		<variableExpression><![CDATA[$F{ach_familles_produits_achats_famach_coef_val_defaut}]]></variableExpression>
+	</variable>
+	<detail>
+		<band height="11">
+			<textField pattern="#,##0.00;-#,##0.00" isBlankWhenNull="true">
+				<reportElement x="0" y="0" width="30" height="11">
+					<printWhenExpression><![CDATA[$V{prc}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Serif" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$V{prc}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<famille>
+  <fournisseurs>
+    <libelle>Local</libelle>
+    <exoTva>false</exoTva>
+    <exoDouane>false</exoDouane>
+    <serie />
+  </fournisseurs>
+  <fournisseurs>
+    <libelle>Import</libelle>
+    <exoTva>true</exoTva>
+    <exoDouane>false</exoDouane>
+    <serie />
+  </fournisseurs>
+</famille>
+

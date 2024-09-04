@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Types>
+  <type>
+    <code>0</code>
+    <nom_FR>Espèces</nom_FR>
+    <etat>1</etat>
+  </type>
+  <type>
+    <code>1</code>
+    <nom_FR>Chèque</nom_FR>
+    <etat>0</etat>
+  </type>
+  <type>
+    <code>2</code>
+    <nom_FR>Virement</nom_FR>
+    <etat>0</etat>
+  </type>
+  <type>
+    <code>3</code>
+    <nom_FR>Traites</nom_FR>
+    <etat>0</etat>
+  </type>
+  <type>
+    <code>4</code>
+    <nom_FR>Carte bancaire</nom_FR>
+    <etat>0</etat>
+  </type>
+  <type>
+    <code>5</code>
+    <nom_FR>Transfert d'argent</nom_FR>
+    <etat>0</etat>
+  </type>
+  <type>
+    <code>6</code>
+    <nom_FR>e-paiement</nom_FR>
+    <etat>0</etat>
+  </type>
+  <type>
+    <code>7</code>
+    <nom_FR>Credoc</nom_FR>
+    <etat>0</etat>
+  </type>
+  <type>
+    <code>8</code>
+    <nom_FR>Factor</nom_FR>
+    <etat>0</etat>
+  </type>
+  <type>
+    <code>9</code>
+    <nom_FR>Compense</nom_FR>
+    <etat>0</etat>
+  </type>
+</Types>
+

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<optionMedical>
+  <gestPharCP>false</gestPharCP>
+  <modelPrintCP />
+  <nbrCaracteresCP>3</nbrCaracteresCP>
+  <prefACP />
+  <prefBCP />
+  <prefCCP />
+  <prefDCP />
+  <numACP />
+  <numBCP />
+  <numCCP />
+  <numDCP />
+  <sufxACP />
+  <sufxBCP />
+  <sufxCCP />
+  <sufxDCP />
+  <modCalCP>0</modCalCP>
+  <formatChonoCP>0</formatChonoCP>
+  <gestBudgetCP>0</gestBudgetCP>
+  <configAnalCP>0</configAnalCP>
+  <configAna2CP>0</configAna2CP>
+  <configAna3CP>0</configAna3CP>
+  <configAna4CP>0</configAna4CP>
+  <affichInTierFilCP>0</affichInTierFilCP>
+  <affichInGlobViewCP>0</affichInGlobViewCP>
+  <gestConsultGenCC>false</gestConsultGenCC>
+  <modelPrintCC />
+  <nbrCaracteresCC>3</nbrCaracteresCC>
+  <prefACC />
+  <prefBCC />
+  <prefCCC />
+  <prefDCC />
+  <numACC />
+  <numBCC />
+  <numCCC />
+  <numDCC />
+  <sufxACC />
+  <sufxBCC />
+  <sufxCCC />
+  <sufxDCC />
+  <modCalCC>0</modCalCC>
+  <formatChonoCC>0</formatChonoCC>
+  <gestBudgetCC>0</gestBudgetCC>
+  <configAnalCC>0</configAnalCC>
+  <configAna2CC>0</configAna2CC>
+  <configAna3CC>0</configAna3CC>
+  <configAna4CC>0</configAna4CC>
+  <affichInTierFilCC>0</affichInTierFilCC>
+  <affichInGlobViewCC>0</affichInGlobViewCC>
+  <gestConsultGenCS>false</gestConsultGenCS>
+  <modelPrintCS>null</modelPrintCS>
+  <nbrCaracteresCS>0</nbrCaracteresCS>
+  <prefACS />
+  <prefBCS />
+  <prefCCS />
+  <prefDCS />
+  <numACS>null</numACS>
+  <numBCS />
+  <numCCS />
+  <numDCS />
+  <sufxACS />
+  <sufxBCS />
+  <sufxCCS />
+  <sufxDCS />
+  <modCalCS />
+  <formatChonoCS />
+  <gestBudgetCS />
+  <configAnalCS />
+  <configAna2CS />
+  <configAna3CS />
+  <configAna4CS />
+  <affichInTierFilCS />
+  <affichInGlobViewCS />
+  <gestOrdonnanceCO>false</gestOrdonnanceCO>
+  <modelPrintCO>null</modelPrintCO>
+  <nbrCaracteresCO>0</nbrCaracteresCO>
+  <prefACO />
+  <prefBCO />
+  <prefCCO />
+  <prefDCO />
+  <numACO>null</numACO>
+  <numBCO />
+  <numCCO />
+  <numDCO />
+  <sufxACO />
+  <sufxBCO />
+  <sufxCCO />
+  <sufxDCO />
+  <modCalCO />
+  <formatChonoCO />
+  <gestBudgetCO />
+  <configAnalCO />
+  <configAna2CO />
+  <configAna3CO />
+  <configAna4CO />
+  <affichInTierFilCO />
+  <affichInGlobViewCO />
+  <gestLaboratoireCL>false</gestLaboratoireCL>
+  <modelPrintCL>null</modelPrintCL>
+  <nbrCaracteresCL>0</nbrCaracteresCL>
+  <prefACL />
+  <prefBCL />
+  <prefCCL />
+  <prefDCL />
+  <numACL>null</numACL>
+  <numBCL />
+  <numCCL />
+  <numDCL />
+  <sufxACL />
+  <sufxBCL />
+  <sufxCCL />
+  <sufxDCL />
+  <modCalCL />
+  <formatChonoCL />
+  <gestBudgetCL />
+  <ConfigAnalCL />
+  <ConfigAna2CL />
+  <ConfigAna3CL />
+  <ConfigAna4CL />
+  <affichInTierFilCL />
+  <affichInGlobViewCL />
+  <gestHospitalisationCH>false</gestHospitalisationCH>
+  <modelPrintCH>null</modelPrintCH>
+  <nbrCaracteresCH>0</nbrCaracteresCH>
+  <prefACH />
+  <prefBCH />
+  <prefCCH />
+  <prefDCH />
+  <numACH>null</numACH>
+  <numBCH />
+  <numCCH />
+  <numDCH />
+  <sufxACH />
+  <sufxBCH />
+  <sufxCCH />
+  <sufxDCH />
+  <modCalCH />
+  <formatChonoCH />
+  <gestBudgetCH />
+  <configAnalCH />
+  <configAna2CH />
+  <configAna3CH />
+  <configAna4CH />
+  <affichInTierFilCH />
+  <affichInGlobViewCH />
+  <nbrCtrsFamOP>0</nbrCtrsFamOP>
+  <nbrCtrsProOP>0</nbrCtrsProOP>
+  <modCalcOP>null</modCalcOP>
+  <codJrnPatientINT />
+  <majJJrnPatientINT />
+  <codJrnTierINT />
+  <majJJrnTierINT />
+  <codJrnReFactINT>null</codJrnReFactINT>
+  <majJJrnReFactINT />
+</optionMedical>
+

@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fonctions>
+
+    <type>
+        <code>???</code>
+        <etat>0</etat>
+        <nom_FR>Sélectionnez une fonction</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Sélectionnez une fonction</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>PDG</code>
+        <etat>0</etat>
+        <nom_FR>Président Directeur Général</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Président Directeur Général</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>DG</code>
+        <etat>0</etat>
+        <nom_FR>Directeur Général</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Directrice Générale</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>DGA</code>
+        <etat>0</etat>
+        <nom_FR>Directeur Général Adjoint</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Directrice Générale Adjointe</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>AS</code>
+        <etat>0</etat>
+        <nom_FR>Assistant de Direction</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Assistante de Direction</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>DF</code>
+        <etat>0</etat>
+        <nom_FR>Directeur Financier</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Directrice Financière</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>AF</code>
+        <etat>0</etat>
+        <nom_FR>Agent Financier</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Agent Financier</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>DAF</code>
+        <etat>0</etat>
+        <nom_FR>Directeur Administratif et Financier</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Directrice Administrative et Financière</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>DAC</code>
+        <etat>0</etat>
+        <nom_FR>Directeur Administratif et Comptable</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Directrice Administrative et Comptable</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>AC</code>
+        <etat>0</etat>
+        <nom_FR>Agent Comptable</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Agent Comptable</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>ASSC</code>
+        <etat>0</etat>
+        <nom_FR>Assistant comptable</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Assistante comptable</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>DRH</code>
+        <etat>0</etat>
+        <nom_FR>Directeur des Ressources Humaines</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Directrice des Ressources Humaines</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>ARH</code>
+        <etat>0</etat>
+        <nom_FR>Agent des Ressources Humaines</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Agent des Ressources Humaines</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>ASSRH</code>
+        <etat>0</etat>
+        <nom_FR>Assistant des Ressources Humaines</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Assistante des Ressources Humaines</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>SEC</code>
+        <etat>0</etat>
+        <nom_FR>Secrétaire</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Secrétaire</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>CG</code>
+        <etat>0</etat>
+        <nom_FR>Contrôleur de Gestion</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Contrôleur de Gestion</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>DSI</code>
+        <etat>0</etat>
+        <nom_FR>Directeur du Système d'Information</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Directrice du Système d'Information</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>AM</code>
+        <etat>0</etat>
+        <nom_FR>Agent de Maintenance</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Agent de Maintenance</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>DTEC</code>
+        <etat>0</etat>
+        <nom_FR>Directeur Technique</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Directrice Technique</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>AT</code>
+        <etat>0</etat>
+        <nom_FR>Agent Technique</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Agent Technique</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>ASST</code>
+        <etat>0</etat>
+        <nom_FR>Assistant Technique</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Assistante Technique</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>DPROD</code>
+        <etat>0</etat>
+        <nom_FR>Directeur de Production</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Directrice de Production</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>APROD</code>
+        <etat>0</etat>
+        <nom_FR>Agent de Production</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Agent de Production</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>ASSPROD</code>
+        <etat>0</etat>
+        <nom_FR>Assistant de Production</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Assistante de Production</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>DENTR</code>
+        <etat>0</etat>
+        <nom_FR>Directeur de l'Entretien</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Directrice de l'Entretien</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>AENTR</code>
+        <etat>0</etat>
+        <nom_FR>Agent Technicien de Surface</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Agent Technicien de Surface</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>DLOG</code>
+        <etat>0</etat>
+        <nom_FR>Directeur Logistique</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Directrice Logistique</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>ALOG</code>
+        <etat>0</etat>
+        <nom_FR>Agent Logistique</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Agent Logistique</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>DTRAN</code>
+        <etat>0</etat>
+        <nom_FR>Directeur des Transports</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Directrice des Transports</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>ACH</code>
+        <etat>0</etat>
+        <nom_FR>Agent Chauffeur</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Agent Chauffeur</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>LIV</code>
+        <etat>0</etat>
+        <nom_FR>Livreur</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Livreur</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>DDEV</code>
+        <etat>0</etat>
+        <nom_FR>Directeur de Développement</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Directrice de Développement</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>ADEV</code>
+        <etat>0</etat>
+        <nom_FR>Agent de Développement</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Agent de Développement</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>ASSDEV</code>
+        <etat>0</etat>
+        <nom_FR>Assistant de Développement</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Assistante de Développement</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>DCOM</code>
+        <etat>0</etat>
+        <nom_FR>Directeur Commercial</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Directrice Commerciale</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>DCOM</code>
+        <etat>0</etat>
+        <nom_FR>Directeur de Clientèle</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Directrice de Clientèle</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>ACMM</code>
+        <etat>0</etat>
+        <nom_FR>Agent Commercial</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Agent Commercial</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>ASSCMM</code>
+        <etat>0</etat>
+        <nom_FR>Assistant Commercial</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Assistante Commercial</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>CHCMM</code>
+        <etat>0</etat>
+        <nom_FR>Chargé de Clientèle</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Chargée de Clientèle</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>DMAR</code>
+        <etat>0</etat>
+        <nom_FR>Directeur Marketing</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Directrice Marketing</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>AMAR</code>
+        <etat>0</etat>
+        <nom_FR>Agent Marketing</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Agent Marketing</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>ASSMAR</code>
+        <etat>0</etat>
+        <nom_FR>Assistant Marketing</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Assistante Marketing</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>DCMU</code>
+        <etat>0</etat>
+        <nom_FR>Directeur de la Communication</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Directrice de la Communication</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>ACMU</code>
+        <etat>0</etat>
+        <nom_FR>Agent de Communication</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Agent de Communication</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>DPUB</code>
+        <etat>0</etat>
+        <nom_FR>Directeur de Publicité</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Directrice de Publicité</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>APUB</code>
+        <etat>0</etat>
+        <nom_FR>Agent de Publicité</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Agent de Publicité</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>ASSPUB</code>
+        <etat>0</etat>
+        <nom_FR>Assistant de Publicité</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Assistante de Publicité</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>DSEC</code>
+        <etat>0</etat>
+        <nom_FR>Directeur de la Sécurité</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Directrice de la Sécurité</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>ASEC</code>
+        <etat>0</etat>
+        <nom_FR>Agent de Sécurité</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Agent de Sécurité</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>AACC</code>
+        <etat>0</etat>
+        <nom_FR>Agent d'Accueil</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>hotesse d'Accueil</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>ASSPUB</code>
+        <etat>0</etat>
+        <nom_FR>Assistant de Publicité</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Assistante de Publicité</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>DPROF</code>
+        <etat>0</etat>
+        <nom_FR>Professeur</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Professeur</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>MEDC</code>
+        <etat>0</etat>
+        <nom_FR>Mèdecin Chef</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Mèdecin Chef</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>MED</code>
+        <etat>0</etat>
+        <nom_FR>Mèdecin</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Mèdecin</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>INFC</code>
+        <etat>0</etat>
+        <nom_FR>Infirmier Chef</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Infirmière Chef</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+    <type>
+        <code>INF</code>
+        <etat>0</etat>
+        <nom_FR>Infirmier</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nom_FR_femme>Infirmière</nom_FR_femme>
+        <nom_UK_femme></nom_UK_femme>
+        <nom_SP_femme></nom_SP_femme>
+    </type>
+
+</fonctions>

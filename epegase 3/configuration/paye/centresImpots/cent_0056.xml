@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<impot>
+
+	<centre>
+		<code>01</code>
+		<lib_FR>ABENGOUROU</lib_FR>
+		<lib_UK>ABENGOUROU</lib_UK>
+		<lib_SP>ABENGOUROU</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>02</code>
+		<lib_FR>ABIDJAN</lib_FR>
+		<lib_UK>ABIDJAN</lib_UK>
+		<lib_SP>ABIDJAN</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>03</code>
+		<lib_FR>BOUAKE</lib_FR>
+		<lib_UK>BOUAKE</lib_UK>
+		<lib_SP>BOUAKE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>04</code>
+		<lib_FR>DABOU</lib_FR>
+		<lib_UK>DABOU</lib_UK>
+		<lib_SP>DABOU</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>05</code>
+		<lib_FR>DALOA</lib_FR>
+		<lib_UK>DALOA</lib_UK>
+		<lib_SP>DALOA</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>06</code>
+		<lib_FR>DIMBOKRO</lib_FR>
+		<lib_UK>DIMBOKRO</lib_UK>
+		<lib_SP>DIMBOKRO</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>07</code>
+		<lib_FR>GAGNOA</lib_FR>
+		<lib_UK>GAGNOA</lib_UK>
+		<lib_SP>GAGNOA</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>08</code>
+		<lib_FR>GUIGLO</lib_FR>
+		<lib_UK>GUIGLO</lib_UK>
+		<lib_SP>GUIGLO</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>09</code>
+		<lib_FR>KORHOGO</lib_FR>
+		<lib_UK>KORHOGO</lib_UK>
+		<lib_SP>KORHOGO</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>10</code>
+		<lib_FR>MAN</lib_FR>
+		<lib_UK>MAN</lib_UK>
+		<lib_SP>MAN</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>11</code>
+		<lib_FR>SAN PEDRO</lib_FR>
+		<lib_UK>SAN PEDRO</lib_UK>
+		<lib_SP>SAN PEDRO</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>12</code>
+		<lib_FR>YAMOUSSOUKRO</lib_FR>
+		<lib_UK>YAMOUSSOUKRO</lib_UK>
+		<lib_SP>YAMOUSSOUKRO</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+</impot>

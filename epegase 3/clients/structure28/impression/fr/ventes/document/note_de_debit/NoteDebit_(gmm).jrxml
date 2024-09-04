@@ -1,0 +1,1114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ndbture" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isFloatColumnFooter="true" whenResourceMissingType="Empty">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="ST1" isDefault="false" pattern="">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{nbDecQte}.equalsIgnoreCase("0"))]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{nbDecQte}.equalsIgnoreCase("1"))]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.0"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{nbDecQte}.equalsIgnoreCase("2"))]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.00"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{nbDecQte}.equalsIgnoreCase("3"))]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.000"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{nbDecQte}.equalsIgnoreCase("4"))]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.0000"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{nbDecQte}.equalsIgnoreCase("5"))]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.00000"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{nbDecQte}.equalsIgnoreCase("6"))]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.000000"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{nbDecQte}.equalsIgnoreCase("7"))]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.0000000"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{nbDecQte}.equalsIgnoreCase("8"))]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.00000000"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{nbDecQte}.equalsIgnoreCase("9"))]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.000000000"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{nbDecQte}.equalsIgnoreCase("10"))]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.0000000000"/>
+		</conditionalStyle>
+	</style>
+	<parameter name="structure" class="java.lang.String"/>
+	<parameter name="requete" class="java.lang.String"/>
+	<parameter name="societe" class="java.lang.String"/>
+	<parameter name="version" class="java.lang.String"/>
+	<parameter name="adresse" class="java.lang.String"/>
+	<parameter name="ville" class="java.lang.String"/>
+	<parameter name="pays" class="java.lang.String"/>
+	<parameter name="logo_1" class="java.lang.String"/>
+	<parameter name="logo_2" class="java.lang.String"/>
+	<parameter name="logo_4" class="java.lang.String"/>
+	<parameter name="telephone_1" class="java.lang.String"/>
+	<parameter name="telephone_2" class="java.lang.String"/>
+	<parameter name="fax" class="java.lang.String"/>
+	<parameter name="site_web" class="java.lang.String"/>
+	<parameter name="mails" class="java.lang.String"/>
+	<parameter name="identification_1" class="java.lang.String"/>
+	<parameter name="identification_2" class="java.lang.String"/>
+	<parameter name="identification_3" class="java.lang.String"/>
+	<parameter name="identification_4" class="java.lang.String"/>
+	<parameter name="identification_5" class="java.lang.String"/>
+	<parameter name="identification_6" class="java.lang.String"/>
+	<parameter name="identification_7" class="java.lang.String"/>
+	<parameter name="identification_8" class="java.lang.String"/>
+	<parameter name="identification_9" class="java.lang.String"/>
+	<parameter name="identification_10" class="java.lang.String"/>
+	<parameter name="banque" class="java.lang.String"/>
+	<parameter name="montant_lettre" class="java.lang.String"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["/usr/local/SUNWappserver/domains/domain1/config/epegase/clients/structure1/impression/fr/ventes/document/devis/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="signe_signature" class="java.lang.String"/>
+	<parameter name="parcChassis" class="java.lang.String"/>
+	<parameter name="annexe1" class="java.lang.String"/>
+	<parameter name="annexe2" class="java.lang.String"/>
+	<parameter name="pageGarde" class="java.lang.String"/>
+	<parameter name="imageFond" class="java.lang.String"/>
+	<parameter name="duplicata" class="java.lang.String"/>
+	<parameter name="nbDecQte" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="ndbligCode" class="java.lang.String">
+		<fieldDescription><![CDATA[ndbligCode]]></fieldDescription>
+	</field>
+	<field name="ndbligCondition" class="java.lang.String">
+		<fieldDescription><![CDATA[ndbligCondition]]></fieldDescription>
+	</field>
+	<field name="ndbligDepot" class="java.lang.String">
+		<fieldDescription><![CDATA[ndbligDepot]]></fieldDescription>
+	</field>
+	<field name="ndbligDevise" class="java.lang.String">
+		<fieldDescription><![CDATA[ndbligDevise]]></fieldDescription>
+	</field>
+	<field name="ndbligDiam" class="java.lang.Float">
+		<fieldDescription><![CDATA[ndbligDiam]]></fieldDescription>
+	</field>
+	<field name="ndbligEchelle" class="java.lang.Integer">
+		<fieldDescription><![CDATA[ndbligEchelle]]></fieldDescription>
+	</field>
+	<field name="ndbligFamille" class="java.lang.String">
+		<fieldDescription><![CDATA[ndbligFamille]]></fieldDescription>
+	</field>
+	<field name="ndbligHaut" class="java.lang.Float">
+		<fieldDescription><![CDATA[ndbligHaut]]></fieldDescription>
+	</field>
+	<field name="ndbligId" class="java.lang.Long">
+		<fieldDescription><![CDATA[ndbligId]]></fieldDescription>
+	</field>
+	<field name="ndbligLarg" class="java.lang.Float">
+		<fieldDescription><![CDATA[ndbligLarg]]></fieldDescription>
+	</field>
+	<field name="ndbligLibelle" class="java.lang.String">
+		<fieldDescription><![CDATA[ndbligLibelle]]></fieldDescription>
+	</field>
+	<field name="ndbligLong" class="java.lang.Float">
+		<fieldDescription><![CDATA[ndbligLong]]></fieldDescription>
+	</field>
+	<field name="ndbligNb" class="java.lang.Float">
+		<fieldDescription><![CDATA[ndbligNb]]></fieldDescription>
+	</field>
+	<field name="ndbligPoidsBrut" class="java.lang.Float">
+		<fieldDescription><![CDATA[ndbligPoidsBrut]]></fieldDescription>
+	</field>
+	<field name="ndbligPoidsNet" class="java.lang.Float">
+		<fieldDescription><![CDATA[ndbligPoidsNet]]></fieldDescription>
+	</field>
+	<field name="ndbligPt" class="java.lang.Double">
+		<fieldDescription><![CDATA[ndbligPt]]></fieldDescription>
+	</field>
+	<field name="ndbligPu" class="java.lang.Double">
+		<fieldDescription><![CDATA[ndbligPu]]></fieldDescription>
+	</field>
+	<field name="ndbligPuRem" class="java.lang.Double">
+		<fieldDescription><![CDATA[ndbligPuRem]]></fieldDescription>
+	</field>
+	<field name="ndbligPuRemTtc" class="java.lang.Double">
+		<fieldDescription><![CDATA[ndbligPuRemTtc]]></fieldDescription>
+	</field>
+	<field name="ndbligPuTtc" class="java.lang.Double">
+		<fieldDescription><![CDATA[ndbligPuTtc]]></fieldDescription>
+	</field>
+	<field name="ndbligPump" class="java.lang.Double">
+		<fieldDescription><![CDATA[ndbligPump]]></fieldDescription>
+	</field>
+	<field name="ndbligQte" class="java.lang.Float">
+		<fieldDescription><![CDATA[ndbligQte]]></fieldDescription>
+	</field>
+	<field name="ndbligQteUtil" class="java.lang.Float">
+		<fieldDescription><![CDATA[ndbligQteUtil]]></fieldDescription>
+	</field>
+	<field name="ndbligRabais" class="java.lang.Double">
+		<fieldDescription><![CDATA[ndbligRabais]]></fieldDescription>
+	</field>
+	<field name="ndbligReference" class="java.lang.String">
+		<fieldDescription><![CDATA[ndbligReference]]></fieldDescription>
+	</field>
+	<field name="ndbligStock" class="java.lang.Integer">
+		<fieldDescription><![CDATA[ndbligStock]]></fieldDescription>
+	</field>
+	<field name="ndbligTauxRemise" class="java.lang.Float">
+		<fieldDescription><![CDATA[ndbligTauxRemise]]></fieldDescription>
+	</field>
+	<field name="ndbligTauxTaxe" class="java.lang.Float">
+		<fieldDescription><![CDATA[ndbligTauxTaxe]]></fieldDescription>
+	</field>
+	<field name="ndbligTaxe" class="java.lang.String">
+		<fieldDescription><![CDATA[ndbligTaxe]]></fieldDescription>
+	</field>
+	<field name="ndbligTc" class="java.lang.Double">
+		<fieldDescription><![CDATA[ndbligTc]]></fieldDescription>
+	</field>
+	<field name="ndbligTtc" class="java.lang.Double">
+		<fieldDescription><![CDATA[ndbligTtc]]></fieldDescription>
+	</field>
+	<field name="ndbligTva" class="java.lang.Double">
+		<fieldDescription><![CDATA[ndbligTva]]></fieldDescription>
+	</field>
+	<field name="ndbligUnite" class="java.lang.String">
+		<fieldDescription><![CDATA[ndbligUnite]]></fieldDescription>
+	</field>
+	<field name="ndbligVolume" class="java.lang.Float">
+		<fieldDescription><![CDATA[ndbligVolume]]></fieldDescription>
+	</field>
+	<field name="ndbActivite" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbActivite]]></fieldDescription>
+	</field>
+	<field name="ndbAnal2" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbAnal2]]></fieldDescription>
+	</field>
+	<field name="ndbAnal4" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbAnal4]]></fieldDescription>
+	</field>
+	<field name="ndbAnnexe1" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbAnnexe1]]></fieldDescription>
+	</field>
+	<field name="ndbAnnexe2" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbAnnexe2]]></fieldDescription>
+	</field>
+	<field name="ndbArrondiReg" class="java.lang.Integer">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbArrondiReg]]></fieldDescription>
+	</field>
+	<field name="ndbBanque" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbBanque]]></fieldDescription>
+	</field>
+	<field name="ndbCat" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbCat]]></fieldDescription>
+	</field>
+	<field name="ndbCivilContact" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbCivilContact]]></fieldDescription>
+	</field>
+	<field name="ndbCivilTiers" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbCivilTiers]]></fieldDescription>
+	</field>
+	<field name="ndbConditionReg" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbConditionReg]]></fieldDescription>
+	</field>
+	<field name="ndbContrat" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbContrat]]></fieldDescription>
+	</field>
+	<field name="ndbDate" class="java.util.Date">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbDate]]></fieldDescription>
+	</field>
+	<field name="ndbDateAnnule" class="java.util.Date">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbDateAnnule]]></fieldDescription>
+	</field>
+	<field name="ndbDateCreat" class="java.util.Date">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbDateCreat]]></fieldDescription>
+	</field>
+	<field name="ndbDateEcheReg" class="java.util.Date">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbDateEcheReg]]></fieldDescription>
+	</field>
+	<field name="ndbDateImp" class="java.util.Date">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbDateImp]]></fieldDescription>
+	</field>
+	<field name="ndbDateLivraison" class="java.util.Date">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbDateLivraison]]></fieldDescription>
+	</field>
+	<field name="ndbDateModif" class="java.util.Date">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbDateModif]]></fieldDescription>
+	</field>
+	<field name="ndbDateRelance" class="java.util.Date">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbDateRelance]]></fieldDescription>
+	</field>
+	<field name="ndbDateTransforme" class="java.util.Date">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbDateTransforme]]></fieldDescription>
+	</field>
+	<field name="ndbDateValide" class="java.util.Date">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbDateValide]]></fieldDescription>
+	</field>
+	<field name="ndbDateValidite" class="java.util.Date">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbDateValidite]]></fieldDescription>
+	</field>
+	<field name="ndbDepartement" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbDepartement]]></fieldDescription>
+	</field>
+	<field name="ndbDevise" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbDevise]]></fieldDescription>
+	</field>
+	<field name="ndbEcheanceReliquat" class="java.util.Date">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbEcheanceReliquat]]></fieldDescription>
+	</field>
+	<field name="ndbEtat" class="java.lang.Integer">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbEtat]]></fieldDescription>
+	</field>
+	<field name="ndbEtatVal" class="java.lang.Integer">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbEtatVal]]></fieldDescription>
+	</field>
+	<field name="ndbExoDouane" class="java.lang.Integer">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbExoDouane]]></fieldDescription>
+	</field>
+	<field name="ndbExoTva" class="java.lang.Integer">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbExoTva]]></fieldDescription>
+	</field>
+	<field name="ndbFactorEtat" class="java.lang.Integer">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbFactorEtat]]></fieldDescription>
+	</field>
+	<field name="ndbFactorId" class="java.lang.Long">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbFactorId]]></fieldDescription>
+	</field>
+	<field name="ndbFactorNom" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbFactorNom]]></fieldDescription>
+	</field>
+	<field name="ndbFormule1" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbFormule1]]></fieldDescription>
+	</field>
+	<field name="ndbFormule2" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbFormule2]]></fieldDescription>
+	</field>
+	<field name="ndbGarde" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbGarde]]></fieldDescription>
+	</field>
+	<field name="ndbGele" class="java.lang.Integer">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbGele]]></fieldDescription>
+	</field>
+	<field name="ndbId" class="java.lang.Long">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbId]]></fieldDescription>
+	</field>
+	<field name="ndbIdContact" class="java.lang.Long">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbIdContact]]></fieldDescription>
+	</field>
+	<field name="ndbIdCreateur" class="java.lang.Long">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbIdCreateur]]></fieldDescription>
+	</field>
+	<field name="ndbIdModif" class="java.lang.Long">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbIdModif]]></fieldDescription>
+	</field>
+	<field name="ndbIdResponsable" class="java.lang.Long">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbIdResponsable]]></fieldDescription>
+	</field>
+	<field name="ndbIncoterm" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbIncoterm]]></fieldDescription>
+	</field>
+	<field name="ndbInfo1" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbInfo1]]></fieldDescription>
+	</field>
+	<field name="ndbInfo10" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbInfo10]]></fieldDescription>
+	</field>
+	<field name="ndbInfo2" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbInfo2]]></fieldDescription>
+	</field>
+	<field name="ndbInfo3" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbInfo3]]></fieldDescription>
+	</field>
+	<field name="ndbInfo4" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbInfo4]]></fieldDescription>
+	</field>
+	<field name="ndbInfo5" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbInfo5]]></fieldDescription>
+	</field>
+	<field name="ndbInfo6" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbInfo6]]></fieldDescription>
+	</field>
+	<field name="ndbInfo7" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbInfo7]]></fieldDescription>
+	</field>
+	<field name="ndbInfo8" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbInfo8]]></fieldDescription>
+	</field>
+	<field name="ndbInfo9" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbInfo9]]></fieldDescription>
+	</field>
+	<field name="ndbInfoLivraison" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbInfoLivraison]]></fieldDescription>
+	</field>
+	<field name="ndbJournalReg" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbJournalReg]]></fieldDescription>
+	</field>
+	<field name="ndbLieuLivraison" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbLieuLivraison]]></fieldDescription>
+	</field>
+	<field name="ndbModeReg" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbModeReg]]></fieldDescription>
+	</field>
+	<field name="ndbModeleImp" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbModeleImp]]></fieldDescription>
+	</field>
+	<field name="ndbMotifAnnule" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbMotifAnnule]]></fieldDescription>
+	</field>
+	<field name="ndbMotifRejetCredit" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbMotifRejetCredit]]></fieldDescription>
+	</field>
+	<field name="ndbNbJourReg" class="java.lang.Integer">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbNbJourReg]]></fieldDescription>
+	</field>
+	<field name="ndbNomContact" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbNomContact]]></fieldDescription>
+	</field>
+	<field name="ndbNomCreateur" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbNomCreateur]]></fieldDescription>
+	</field>
+	<field name="ndbNomModif" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbNomModif]]></fieldDescription>
+	</field>
+	<field name="ndbNomResponsable" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbNomResponsable]]></fieldDescription>
+	</field>
+	<field name="ndbNomTiers" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbNomTiers]]></fieldDescription>
+	</field>
+	<field name="ndbNum" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbNum]]></fieldDescription>
+	</field>
+	<field name="ndbObject" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbObject]]></fieldDescription>
+	</field>
+	<field name="ndbObservation" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbObservation]]></fieldDescription>
+	</field>
+	<field name="ndbPdv" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbPdv]]></fieldDescription>
+	</field>
+	<field name="ndbRegion" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbRegion]]></fieldDescription>
+	</field>
+	<field name="ndbSecteur" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbSecteur]]></fieldDescription>
+	</field>
+	<field name="ndbSerie" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbSerie]]></fieldDescription>
+	</field>
+	<field name="ndbService" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbService]]></fieldDescription>
+	</field>
+	<field name="ndbSite" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbSite]]></fieldDescription>
+	</field>
+	<field name="ndbSolde" class="java.lang.Integer">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbSolde]]></fieldDescription>
+	</field>
+	<field name="ndbTotHt" class="java.lang.Double">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbTotHt]]></fieldDescription>
+	</field>
+	<field name="ndbTotRabais" class="java.lang.Double">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbTotRabais]]></fieldDescription>
+	</field>
+	<field name="ndbTotReglement" class="java.lang.Double">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbTotReglement]]></fieldDescription>
+	</field>
+	<field name="ndbTotRemise" class="java.lang.Double">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbTotRemise]]></fieldDescription>
+	</field>
+	<field name="ndbTotTc" class="java.lang.Double">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbTotTc]]></fieldDescription>
+	</field>
+	<field name="ndbTotTtc" class="java.lang.Double">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbTotTtc]]></fieldDescription>
+	</field>
+	<field name="ndbTotTva" class="java.lang.Double">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbTotTva]]></fieldDescription>
+	</field>
+	<field name="ndbTypeReg" class="java.lang.Integer">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbTypeReg]]></fieldDescription>
+	</field>
+	<field name="ndbTypeTransforme" class="java.lang.Integer">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.ndbTypeTransforme]]></fieldDescription>
+	</field>
+	<field name="tieadresse" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.tiers.tieadresse]]></fieldDescription>
+	</field>
+	<field name="tieascensseur" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.tiers.tieascensseur]]></fieldDescription>
+	</field>
+	<field name="tiebatiment" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.tiers.tiebatiment]]></fieldDescription>
+	</field>
+	<field name="tiebp" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.tiers.tiebp]]></fieldDescription>
+	</field>
+	<field name="tieburtel1" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.tiers.tieburtel1]]></fieldDescription>
+	</field>
+	<field name="tieburtel2" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.tiers.tieburtel2]]></fieldDescription>
+	</field>
+	<field name="tieburtel3" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.tiers.tieburtel3]]></fieldDescription>
+	</field>
+	<field name="tiecategorie" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.tiers.tiecategorie]]></fieldDescription>
+	</field>
+	<field name="tiecivilite" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.tiers.tiecivilite]]></fieldDescription>
+	</field>
+	<field name="tiecompte0" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.tiers.tiecompte0]]></fieldDescription>
+	</field>
+	<field name="tienompays" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.tiers.tienompays]]></fieldDescription>
+	</field>
+	<field name="tieville" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.tiers.tieville]]></fieldDescription>
+	</field>
+	<field name="tienum10" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.tiers.tienum10]]></fieldDescription>
+	</field>
+	<field name="tienum11" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.tiers.tienum11]]></fieldDescription>
+	</field>
+	<field name="tienum12" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.tiers.tienum12]]></fieldDescription>
+	</field>
+	<field name="tieraisonsocialenom" class="java.lang.String">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.tiers.tieraisonsocialenom]]></fieldDescription>
+	</field>
+	<field name="tieid" class="java.lang.Long">
+		<fieldDescription><![CDATA[noteDebitEnteteVentes.tiers.tieid]]></fieldDescription>
+	</field>
+	<variable name="tot_remise" class="java.lang.Float">
+		<variableExpression><![CDATA[$F{ndbTotRabais}+$F{ndbTotRemise}]]></variableExpression>
+	</variable>
+	<variable name="solde" class="java.lang.Float">
+		<variableExpression><![CDATA[$F{ndbTotTtc}-$F{ndbTotReglement}]]></variableExpression>
+	</variable>
+	<variable name="codeTva" class="java.lang.String">
+		<variableExpression><![CDATA[$F{ndbligTaxe}]]></variableExpression>
+	</variable>
+	<variable name="tauxTva" class="java.lang.Float" calculation="Highest">
+		<variableExpression><![CDATA[$F{ndbligTauxTaxe}]]></variableExpression>
+	</variable>
+	<variable name="baseTva" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[$F{ndbligPt}]]></variableExpression>
+	</variable>
+	<variable name="totalTva" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[$F{ndbligTva}]]></variableExpression>
+	</variable>
+	<variable name="modeReglement" class="java.lang.String">
+		<variableExpression><![CDATA[( $F{ndbModeReg}==null ? "" : ( $F{ndbModeReg}.contains(":") ? $F{ndbModeReg}.split(":")[1] : $F{ndbModeReg} ) )]]></variableExpression>
+	</variable>
+	<background>
+		<band height="802">
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="12" y="275" width="1" height="504" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<line>
+				<reportElement x="13" y="779" width="527" height="1"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="92" y="275" width="1" height="504" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="296" y="275" width="1" height="504" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="338" y="275" width="1" height="504" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="405" y="274" width="1" height="504" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="459" y="274" width="1" height="504" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="540" y="275" width="1" height="504" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<image hAlign="Center" onErrorType="Blank">
+				<reportElement x="23" y="29" width="500" height="765"/>
+				<imageExpression class="java.lang.String"><![CDATA[$P{imageFond}]]></imageExpression>
+			</image>
+		</band>
+	</background>
+	<title>
+		<band height="150" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement x="16" y="5" width="521" height="31"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="24" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{societe}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="16" y="39" width="521" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="10" isBold="false" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["SA au capital de 2.500.000.000 fcfa - N° NIF " + $P{identification_1} + " - N° R.C. " + $P{identification_2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="16" y="53" width="521" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="10" isBold="false" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{adresse}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="16" y="67" width="521" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="10" isBold="false" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["B.P. 324 "+ $P{ville}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="16" y="81" width="521" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="10" isBold="false" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Tél. :" + $P{telephone_1} + " - " + $P{telephone_2} + " - Fax : " + $P{fax}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="16" y="95" width="521" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="10" isBold="false" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Adresse E-mail : groupeami@groupeami.com"]]></textFieldExpression>
+			</textField>
+			<image scaleImage="RetainShape" hAlign="Center">
+				<reportElement x="0" y="52" width="117" height="97"/>
+				<imageExpression class="java.lang.String"><![CDATA[$P{logo_1}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="314" y="121" width="222" height="28"/>
+				<textElement>
+					<font fontName="Times New Roman" size="15" isBold="false" pdfFontName="Times-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{ndbNomTiers}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="116" splitType="Stretch">
+			<rectangle>
+				<reportElement mode="Transparent" x="12" y="61" width="80" height="26"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="92" y="61" width="55" height="26"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="147" y="61" width="149" height="26"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="12" y="87" width="80" height="26"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="92" y="87" width="55" height="26"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="147" y="87" width="149" height="26"/>
+			</rectangle>
+			<textField isBlankWhenNull="true">
+				<reportElement x="314" y="1" width="222" height="12"/>
+				<textElement>
+					<font fontName="Times New Roman" size="8" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{tieadresse}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="314" y="13" width="222" height="12"/>
+				<textElement markup="none">
+					<font fontName="Times New Roman" size="8" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{tiebp}.concat($F{tieville})]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="314" y="25" width="222" height="12"/>
+				<textElement>
+					<font fontName="Times New Roman" size="8" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{tieburtel1}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="96" y="94" width="46" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="8" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{ndbDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="17" y="94" width="70" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="8" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{ndbNum}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="13" y="25" width="283" height="18"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="15" isBold="true" pdfFontName="Times-Bold"/>
+				</textElement>
+				<text><![CDATA[Note de débit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="18" y="67" width="69" height="15"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="10" isBold="true" pdfFontName="Times-Bold"/>
+				</textElement>
+				<text><![CDATA[Numéro]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="96" y="67" width="46" height="15"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="10" isBold="true" pdfFontName="Times-Bold"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<textField pattern="">
+				<reportElement x="156" y="94" width="135" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="8" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{ndbNomContact}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="154" y="67" width="137" height="15"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="10" isBold="true" pdfFontName="Times-Bold"/>
+				</textElement>
+				<text><![CDATA[Référence]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="314" y="54" width="222" height="12">
+					<printWhenExpression><![CDATA[$F{tienum10}!=null]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="Times New Roman" size="8" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["N° Attestation : " + $F{tienum10}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="314" y="66" width="222" height="12">
+					<printWhenExpression><![CDATA[$F{tienum11}!=null]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="Times New Roman" size="8" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["N° Quittance : " + $F{tienum11}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="314" y="78" width="222" height="12">
+					<printWhenExpression><![CDATA[$F{tienum12}!=null]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="Times New Roman" size="8" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["N° Patente : " + $F{tienum12}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="314" y="90" width="222" height="12"/>
+				<textElement>
+					<font fontName="Times New Roman" size="8" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["N° Compte client : " + $F{tiecompte0}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="314" y="102" width="222" height="12">
+					<printWhenExpression><![CDATA[$F{ndbActivite}!=null]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="Times New Roman" size="8" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Activité : " + $F{ndbActivite}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="47" splitType="Stretch">
+			<rectangle>
+				<reportElement x="12" y="9" width="528" height="34" backcolor="#FFFFFF"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<line>
+				<reportElement x="12" y="8" width="1" height="39"/>
+			</line>
+			<line>
+				<reportElement x="92" y="9" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="296" y="9" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="338" y="9" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="459" y="9" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="540" y="8" width="1" height="39"/>
+			</line>
+			<line>
+				<reportElement x="12" y="8" width="529" height="1"/>
+			</line>
+			<line>
+				<reportElement x="13" y="42" width="527" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="16" y="17" width="71" height="15" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" isBold="true" pdfFontName="Times-Bold"/>
+				</textElement>
+				<text><![CDATA[Référence]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="98" y="17" width="193" height="15" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" isBold="true" pdfFontName="Times-Bold"/>
+				</textElement>
+				<text><![CDATA[Description]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="301" y="17" width="31" height="15" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" isBold="true" pdfFontName="Times-Bold"/>
+				</textElement>
+				<text><![CDATA[Qte.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="344" y="17" width="53" height="15" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" isBold="true" pdfFontName="Times-Bold"/>
+				</textElement>
+				<text><![CDATA[P.U. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="17" width="59" height="15" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" isBold="true" pdfFontName="Times-Bold"/>
+				</textElement>
+				<text><![CDATA[Prix Total]]></text>
+			</staticText>
+			<line>
+				<reportElement x="405" y="9" width="1" height="38"/>
+			</line>
+			<staticText>
+				<reportElement x="410" y="17" width="46" height="15" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" isBold="true" pdfFontName="Times-Bold"/>
+				</textElement>
+				<text><![CDATA[Remise]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="13">
+			<textField isBlankWhenNull="true">
+				<reportElement x="18" y="1" width="69" height="10"/>
+				<textElement>
+					<font fontName="Times New Roman" size="8" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{ndbligCode}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="100" y="1" width="191" height="10" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Times New Roman" size="8" isStrikeThrough="false" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{ndbligLibelle}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="ST1" x="302" y="1" width="31" height="10">
+					<printWhenExpression><![CDATA[$F{ndbligQte}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="8" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{ndbligQte}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="346" y="1" width="52" height="10">
+					<printWhenExpression><![CDATA[$F{ndbligPuTtc}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="8" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{ndbligPuTtc}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="470" y="1" width="61" height="10">
+					<printWhenExpression><![CDATA[$F{ndbligTtc}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="8" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{ndbligTtc}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="410" y="1" width="46" height="10">
+					<printWhenExpression><![CDATA[$F{ndbligTauxRemise}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="8" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{ndbligTauxRemise}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<lastPageFooter>
+		<band height="127" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="9" width="555" height="118"/>
+				<graphicElement>
+					<pen lineColor="#FFFFFF"/>
+				</graphicElement>
+			</rectangle>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="12" y="8" width="1" height="112" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<line>
+				<reportElement x="12" y="8" width="196" height="1"/>
+			</line>
+			<line>
+				<reportElement x="540" y="8" width="1" height="43"/>
+			</line>
+			<line>
+				<reportElement x="13" y="28" width="195" height="1"/>
+			</line>
+			<line>
+				<reportElement x="12" y="120" width="196" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="231" y="12" width="63" height="12" forecolor="#000000" backcolor="#F5EBEB"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" isBold="true" pdfFontName="Times-Bold"/>
+				</textElement>
+				<text><![CDATA[Total H.T.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="343" y="12" width="59" height="12" forecolor="#000000" backcolor="#F5EBEB"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" isBold="true" pdfFontName="Times-Bold"/>
+				</textElement>
+				<text><![CDATA[Total T.T.C.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="228" y="53" width="312" height="10"/>
+				<textElement textAlignment="Left">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="true" pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[Arrêtée la présente facture à la somme de :]]></text>
+			</staticText>
+			<textField pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="230" y="34" width="63" height="12">
+					<printWhenExpression><![CDATA[$F{ndbTotHt}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="8" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{ndbTotHt}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="341" y="33" width="63" height="12">
+					<printWhenExpression><![CDATA[$F{ndbTotTtc}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="8" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{ndbTotTtc}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="410" y="33" width="46" height="12" forecolor="#000000">
+					<printWhenExpression><![CDATA[$F{ndbTotReglement}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="8" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{ndbTotReglement}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="228" y="65" width="312" height="23"/>
+				<textElement>
+					<font fontName="Times New Roman" size="8" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{montant_lettre}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="465" y="33" width="72" height="12" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="8" isUnderline="true" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{solde}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="46" y="8" width="1" height="84"/>
+			</line>
+			<line>
+				<reportElement x="13" y="91" width="195" height="1"/>
+			</line>
+			<image scaleImage="RetainShape" hAlign="Center">
+				<reportElement x="160" y="35" width="98" height="59"/>
+				<imageExpression class="java.lang.String"><![CDATA[$P{signe_signature}]]></imageExpression>
+			</image>
+			<line>
+				<reportElement x="92" y="8" width="1" height="112"/>
+			</line>
+			<line>
+				<reportElement x="148" y="8" width="1" height="112"/>
+			</line>
+			<line>
+				<reportElement x="207" y="8" width="1" height="112"/>
+			</line>
+			<staticText>
+				<reportElement x="14" y="13" width="31" height="12" forecolor="#000000" backcolor="#F5EBEB"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" isBold="true" pdfFontName="Times-Bold"/>
+				</textElement>
+				<text><![CDATA[Code]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="47" y="13" width="45" height="12" forecolor="#000000" backcolor="#F5EBEB"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" isBold="true" pdfFontName="Times-Bold"/>
+				</textElement>
+				<text><![CDATA[Taux%]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="96" y="13" width="51" height="12" forecolor="#000000" backcolor="#F5EBEB"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" isBold="true" pdfFontName="Times-Bold"/>
+				</textElement>
+				<text><![CDATA[Base]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="151" y="13" width="54" height="12" forecolor="#000000" backcolor="#F5EBEB"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" isBold="true" pdfFontName="Times-Bold"/>
+				</textElement>
+				<text><![CDATA[Montant]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="92" y="100" width="57" height="12" forecolor="#000000" backcolor="#F5EBEB"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" isBold="true" pdfFontName="Times-Bold"/>
+				</textElement>
+				<text><![CDATA[Total taxes]]></text>
+			</staticText>
+			<textField pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="150" y="100" width="55" height="12"/>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="8" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{ndbTotTva}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="208" y="8" width="332" height="1"/>
+			</line>
+			<line>
+				<reportElement x="228" y="28" width="312" height="1"/>
+			</line>
+			<line>
+				<reportElement x="228" y="8" width="1" height="42"/>
+			</line>
+			<line>
+				<reportElement x="228" y="50" width="312" height="1"/>
+			</line>
+			<line>
+				<reportElement x="296" y="8" width="1" height="42"/>
+			</line>
+			<line>
+				<reportElement x="338" y="8" width="1" height="42"/>
+			</line>
+			<line>
+				<reportElement x="405" y="8" width="1" height="42"/>
+			</line>
+			<line>
+				<reportElement x="459" y="8" width="1" height="42"/>
+			</line>
+			<staticText>
+				<reportElement x="301" y="11" width="31" height="15" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" isBold="true" pdfFontName="Times-Bold"/>
+				</textElement>
+				<text><![CDATA[Esc.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="408" y="11" width="48" height="15" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" isBold="true" pdfFontName="Times-Bold"/>
+				</textElement>
+				<text><![CDATA[Acompte]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="465" y="12" width="72" height="12" forecolor="#000000" backcolor="#F5EBEB"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" isBold="true" pdfFontName="Times-Bold"/>
+				</textElement>
+				<text><![CDATA[NET A PAYER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="228" y="91" width="312" height="32"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="false" pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[La facture est exigible à 30 jours après son émission. Passé 75 jours, une majoration de 15% sera automatiquement appliquée. Au delà, un recouvrement par toutes voies de droit interviendra.]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="16" y="100" width="69" height="12"/>
+				<textElement>
+					<font fontName="Times New Roman" size="8" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{modeReglement}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="14" y="34" width="31" height="12"/>
+				<textElement>
+					<font fontName="Times New Roman" size="8" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{codeTva}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="148" y="34" width="55" height="12"/>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="8" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{totalTva}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="96" y="34" width="48" height="12"/>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="8" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{baseTva}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="47" y="34" width="40" height="12"/>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="8" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{tauxTva}]]></textFieldExpression>
+			</textField>
+		</band>
+	</lastPageFooter>
+</jasperReport>

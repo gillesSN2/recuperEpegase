@@ -1153,6 +1153,14 @@ public class FormFamilleProduitsAchats implements Serializable {
 
    }
 
+   /**
+    * Save the families of products purchases.
+    * This method inserts or updates the family of products purchases in the database.
+    * It also updates the associated products in the specified depots if needed.
+    *
+    * @throws HibernateException if a Hibernate error occurs during the database operation
+    * @throws NamingException if a naming error occurs during the database operation
+    */
    public void saveFamilles() throws HibernateException, NamingException {
       this.annule();
       Session var1 = this.utilInitHibernate.getOpenSession(this.baseLog, "FamillesProduitsAchats");
@@ -1161,7 +1169,13 @@ public class FormFamilleProduitsAchats implements Serializable {
       try {
          var2 = var1.beginTransaction();
          this.decoupageCode();
-         if (this.famillesProduitsAchats.getFamachCat() <= 2 && this.famillesProduitsAchats.getFamachStock() == 0 && (this.famillesProduitsAchats.getFamachDepotAch() != null && !this.famillesProduitsAchats.getFamachDepotAch().isEmpty() && this.famillesProduitsAchats.getFamachDepotAch().contains(":") || this.famillesProduitsAchats.getFamachDepotPrd() != null && !this.famillesProduitsAchats.getFamachDepotPrd().isEmpty() && this.famillesProduitsAchats.getFamachDepotPrd().contains(":"))) {
+         if (this.famillesProduitsAchats.getFamachCat() <= 2 && this.famillesProduitsAchats.getFamachStock() == 0 &&
+                 (this.famillesProduitsAchats.getFamachDepotAch() != null
+                         && !this.famillesProduitsAchats.getFamachDepotAch().isEmpty()
+                         && this.famillesProduitsAchats.getFamachDepotAch().contains(":")
+                         || this.famillesProduitsAchats.getFamachDepotPrd() != null
+                         && !this.famillesProduitsAchats.getFamachDepotPrd().isEmpty()
+                         && this.famillesProduitsAchats.getFamachDepotPrd().contains(":"))) {
             this.famillesProduitsAchats.setFamachStock(1);
          } else if (this.famillesProduitsAchats.getFamachCat() == 3) {
             this.famillesProduitsAchats.setFamachStock(0);

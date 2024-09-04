@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collective>
+
+	<convention>
+		<code>COMMERCE</code>
+		<lib_FR>SECTEUR COMMERCE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<heure_mois>173.33</heure_mois>
+		<heure_semaine>0.00</heure_semaine>
+		<date_maj></date_maj>
+		<tranche1>0.00</tranche1>
+		<tranche2>0.00</tranche2>
+		<tranche3>0.00</tranche3>
+		<tranche4>0.00</tranche4>
+		<tranche5>0.00</tranche5>
+		<inactif>0</inactif>
+	</convention>
+</collective>

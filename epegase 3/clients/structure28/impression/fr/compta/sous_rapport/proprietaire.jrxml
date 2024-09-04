@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="proprietaire" language="groovy" pageWidth="175" pageHeight="842" columnWidth="175" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="idUser" class="java.lang.Long">
+		<defaultValueExpression><![CDATA[$F{cmm_users_usr_id}]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     cmm_users.`usr_nom` AS cmm_users_usr_nom,
+     cmm_users.`usr_civilite` AS cmm_users_usr_civilite,
+     cmm_users.`usr_prenom` AS cmm_users_usr_prenom,
+     cmm_users.`usr_patronyme` AS cmm_users_usr_patronyme,
+     cmm_users.`usr_fonction` AS cmm_users_usr_fonction,
+     cmm_users.`usr_id` AS cmm_users_usr_id
+FROM
+     `cmm_users` cmm_users
+WHERE
+     usr_id = $P{idUser}]]>
+	</queryString>
+	<field name="cmm_users_usr_nom" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_users_usr_civilite" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_users_usr_prenom" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_users_usr_patronyme" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_users_usr_fonction" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_users_usr_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<detail>
+		<band height="12" splitType="Stretch">
+			<textField>
+				<reportElement x="1" y="1" width="171" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cmm_users_usr_patronyme}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

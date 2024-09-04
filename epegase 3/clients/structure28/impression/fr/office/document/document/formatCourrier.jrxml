@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="formatCourrier" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="10" bottomMargin="10" isFloatColumnFooter="true">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="2"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="filtre" class="java.lang.String"/>
+	<parameter name="entete" class="java.lang.String"/>
+	<parameter name="requete" class="java.lang.String"/>
+	<parameter name="societe" class="java.lang.String"/>
+	<parameter name="version" class="java.lang.String"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["/usr/local/SUNWappserver/domains/domain1/config/epegase/clients/structure1/impression/fr/office/document/messagerie/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ville" class="java.lang.String"/>
+	<parameter name="structure" class="java.lang.String"/>
+	<parameter name="parcChassis" class="java.lang.String"/>
+	<parameter name="identification_9" class="java.lang.String"/>
+	<parameter name="identification_8" class="java.lang.String"/>
+	<parameter name="imageFond" class="java.lang.String"/>
+	<parameter name="mails" class="java.lang.String"/>
+	<parameter name="site_web" class="java.lang.String"/>
+	<parameter name="identification_4" class="java.lang.String"/>
+	<parameter name="banque" class="java.lang.String"/>
+	<parameter name="pays" class="java.lang.String"/>
+	<parameter name="annexe1" class="java.lang.String"/>
+	<parameter name="telephone_1" class="java.lang.String"/>
+	<parameter name="identification_3" class="java.lang.String"/>
+	<parameter name="telephone_2" class="java.lang.String"/>
+	<parameter name="identification_10" class="java.lang.String"/>
+	<parameter name="montant_lettre" class="java.lang.String"/>
+	<parameter name="identification_6" class="java.lang.String"/>
+	<parameter name="logo_4" class="java.lang.String"/>
+	<parameter name="identification_5" class="java.lang.String"/>
+	<parameter name="signe_signature" class="java.lang.String"/>
+	<parameter name="adresse" class="java.lang.String"/>
+	<parameter name="pageGarde" class="java.lang.String"/>
+	<parameter name="logo_2" class="java.lang.String"/>
+	<parameter name="logo_1" class="java.lang.String"/>
+	<parameter name="identification_7" class="java.lang.String"/>
+	<parameter name="identification_2" class="java.lang.String"/>
+	<parameter name="annexe2" class="java.lang.String"/>
+	<parameter name="fax" class="java.lang.String"/>
+	<parameter name="identification_1" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT
+     cmm_mails.`mai_id` AS cmm_mails_mai_id,
+     cmm_mails.`mai_date_creation` AS cmm_mails_mai_date_creation,
+     cmm_mails.`mai_user_creation` AS cmm_mails_mai_user_creation,
+     cmm_mails.`mai_date_modif` AS cmm_mails_mai_date_modif,
+     cmm_mails.`mai_user_modif` AS cmm_mails_mai_user_modif,
+     cmm_mails.`mai_num` AS cmm_mails_mai_num,
+     cmm_mails.`mai_type` AS cmm_mails_mai_type,
+     cmm_mails.`mai_sens` AS cmm_mails_mai_sens,
+     cmm_mails.`mai_str` AS cmm_mails_mai_str,
+     cmm_mails.`mai_grp` AS cmm_mails_mai_grp,
+     cmm_mails.`mai_usr` AS cmm_mails_mai_usr,
+     cmm_mails.`mai_nos_ref` AS cmm_mails_mai_nos_ref,
+     cmm_mails.`mai_vos_ref` AS cmm_mails_mai_vos_ref,
+     cmm_mails.`mai_priorite` AS cmm_mails_mai_priorite,
+     cmm_mails.`mai_modele` AS cmm_mails_mai_modele,
+     cmm_mails.`mai_objet` AS cmm_mails_mai_objet,
+     cmm_mails.`mai_emetteur` AS cmm_mails_mai_emetteur,
+     cmm_mails.`mai_tiers_id` AS cmm_mails_mai_tiers_id,
+     cmm_mails.`mai_tiers_rs` AS cmm_mails_mai_tiers_rs,
+     cmm_mails.`mai_patient_id` AS cmm_mails_mai_patient_id,
+     cmm_mails.`mai_patient_nom` AS cmm_mails_mai_patient_nom,
+     cmm_mails.`mai_agent_id` AS cmm_mails_mai_agent_id,
+     cmm_mails.`mai_agent_nom` AS cmm_mails_mai_agent_nom,
+     cmm_mails.`mai_destinataire` AS cmm_mails_mai_destinataire,
+     cmm_mails.`mai_cc` AS cmm_mails_mai_cc,
+     cmm_mails.`mai_cci` AS cmm_mails_mai_cci,
+     cmm_mails.`mai_activite` AS cmm_mails_mai_activite,
+     cmm_mails.`mai_pj` AS cmm_mails_mai_pj,
+     cmm_mails.`mai_corps` AS cmm_mails_mai_corps,
+     cmm_mails.`mai_service` AS cmm_mails_mai_service
+FROM
+     `cmm_mails` cmm_mails
+WHERE
+     $P!{requete}]]>
+	</queryString>
+	<field name="cmm_mails_mai_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_mails_mai_date_creation" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_mails_mai_user_creation" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_mails_mai_date_modif" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_mails_mai_user_modif" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_mails_mai_num" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_mails_mai_type" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_mails_mai_sens" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_mails_mai_str" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_mails_mai_grp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_mails_mai_usr" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_mails_mai_nos_ref" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_mails_mai_vos_ref" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_mails_mai_priorite" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_mails_mai_modele" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_mails_mai_objet" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_mails_mai_emetteur" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_mails_mai_tiers_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_mails_mai_tiers_rs" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_mails_mai_patient_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_mails_mai_patient_nom" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_mails_mai_agent_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_mails_mai_agent_nom" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_mails_mai_destinataire" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_mails_mai_cc" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_mails_mai_cci" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_mails_mai_activite" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_mails_mai_pj" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_mails_mai_corps" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_mails_mai_service" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="date_jour" class="java.util.Date">
+		<variableExpression><![CDATA[new java.util.Date()]]></variableExpression>
+	</variable>
+	<background>
+		<band height="802">
+			<image hAlign="Center" vAlign="Middle" onErrorType="Blank">
+				<reportElement x="27" y="108" width="500" height="683"/>
+				<imageExpression class="java.lang.String"><![CDATA[$P{imageFond}]]></imageExpression>
+			</image>
+		</band>
+	</background>
+	<detail>
+		<band height="740" splitType="Stretch">
+			<staticText>
+				<reportElement x="42" y="272" width="87" height="14">
+					<printWhenExpression><![CDATA[$F{cmm_mails_mai_vos_ref}!=null]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[Vos références :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="43" y="290" width="86" height="14">
+					<printWhenExpression><![CDATA[$F{cmm_mails_mai_nos_ref}!=null]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[Nos références :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="42" y="308" width="37" height="14">
+					<printWhenExpression><![CDATA[$F{cmm_mails_mai_objet}!=null]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[Objet : ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="79" y="384" width="374" height="307"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cmm_mails_mai_corps}]]></textFieldExpression>
+			</textField>
+			<subreport>
+				<reportElement x="296" y="133" width="240" height="80"/>
+				<subreportParameter name="idTiers">
+					<subreportParameterExpression><![CDATA[$F{cmm_mails_mai_tiers_id}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression class="java.lang.String"><![CDATA[$P{SUBREPORT_DIR} + "enteteTiers.jasper"]]></subreportExpression>
+			</subreport>
+			<textField isBlankWhenNull="true">
+				<reportElement x="138" y="291" width="381" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cmm_mails_mai_nos_ref}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="137" y="272" width="381" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cmm_mails_mai_vos_ref}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="81" y="308" width="449" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cmm_mails_mai_objet}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="361" y="217" width="238" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cmm_mails_mai_destinataire}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="42" y="138" width="70" height="14">
+					<printWhenExpression><![CDATA[$F{cmm_mails_mai_num}!=null]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[N° Courrier :]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="119" y="138" width="150" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cmm_mails_mai_num}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy" isBlankWhenNull="true">
+				<reportElement x="335" y="234" width="201" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{cmm_mails_mai_date_creation}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="301" y="234" width="34" height="14">
+					<printWhenExpression><![CDATA[$F{cmm_mails_mai_objet}!=null]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[Date :]]></text>
+			</staticText>
+			<image scaleImage="FillFrame" hAlign="Center">
+				<reportElement x="176" y="3" width="212" height="113"/>
+				<imageExpression class="java.lang.String"><![CDATA[$P{logo_1}]]></imageExpression>
+			</image>
+			<componentElement>
+				<reportElement x="21" y="23" width="155" height="60"/>
+				<jr:DataMatrix xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" textPosition="bottom">
+					<jr:codeExpression><![CDATA['B&W' + $F{cmm_mails_mai_num}]]></jr:codeExpression>
+				</jr:DataMatrix>
+			</componentElement>
+			<staticText>
+				<reportElement x="21" y="82" width="108" height="14"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="6" isItalic="true" pdfFontName="Helvetica-Oblique"/>
+				</textElement>
+				<text><![CDATA[(Security control code)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="301" y="217" width="60" height="14">
+					<printWhenExpression><![CDATA[$F{cmm_mails_mai_objet}!=null]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[Adressé à :]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="45">
+			<line>
+				<reportElement x="-1" y="3" width="555" height="1" backcolor="#008100"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Double" lineColor="#008100"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="295" y="31" width="254" height="11"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["N° RCCM : " + $P{identification_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="8" y="32" width="254" height="11">
+					<printWhenExpression><![CDATA[$P{banque}!=null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Banque : " + $P{banque}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="8" y="20" width="254" height="11"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Site web : " + $P{site_web}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="295" y="8" width="254" height="11"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Tél. : " + $P{telephone_1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="295" y="19" width="254" height="11"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["N° NINEA : " + $P{identification_1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="8" y="8" width="254" height="11"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Email : " + $P{mails}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

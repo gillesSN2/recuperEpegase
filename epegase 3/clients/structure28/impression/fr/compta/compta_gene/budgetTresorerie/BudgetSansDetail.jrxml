@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="budgetExp" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isFloatColumnFooter="true">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="79"/>
+	<style name="ST1" isDefault="false" pattern="">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{formatDevise}==0)]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" markup="none" pattern="#,##0.00"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{formatDevise}==1)]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.00"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{formatDevise}==2)]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0" isItalic="false"/>
+		</conditionalStyle>
+	</style>
+	<parameter name="entete" class="java.lang.String"/>
+	<parameter name="filtre" class="java.lang.String"/>
+	<parameter name="societe" class="java.lang.String"/>
+	<parameter name="version" class="java.lang.String"/>
+	<parameter name="requete" class="java.lang.String"/>
+	<parameter name="formatDevise" class="java.lang.Integer"/>
+	<parameter name="Cat" class="java.lang.Integer"/>
+	<queryString language="xPath">
+		<![CDATA[]]>
+	</queryString>
+	<field name="bud09R1Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud09R1Val]]></fieldDescription>
+	</field>
+	<field name="budSens" class="java.lang.Integer">
+		<fieldDescription><![CDATA[budSens]]></fieldDescription>
+	</field>
+	<field name="bud11R3Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud11R3Val]]></fieldDescription>
+	</field>
+	<field name="bud10R4Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud10R4Val]]></fieldDescription>
+	</field>
+	<field name="budLibelleFr" class="java.lang.String">
+		<fieldDescription><![CDATA[budLibelleFr]]></fieldDescription>
+	</field>
+	<field name="budLibelleSp" class="java.lang.String">
+		<fieldDescription><![CDATA[budLibelleSp]]></fieldDescription>
+	</field>
+	<field name="bud06R4Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud06R4Val]]></fieldDescription>
+	</field>
+	<field name="bud01R2Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud01R2Val]]></fieldDescription>
+	</field>
+	<field name="budUtil" class="java.lang.Integer">
+		<fieldDescription><![CDATA[budUtil]]></fieldDescription>
+	</field>
+	<field name="budAnnee" class="java.lang.String">
+		<fieldDescription><![CDATA[budAnnee]]></fieldDescription>
+	</field>
+	<field name="bud10R1Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud10R1Val]]></fieldDescription>
+	</field>
+	<field name="bud03TotVal" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud03TotVal]]></fieldDescription>
+	</field>
+	<field name="bud10R2Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud10R2Val]]></fieldDescription>
+	</field>
+	<field name="bud05R4Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud05R4Val]]></fieldDescription>
+	</field>
+	<field name="bud04R1Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud04R1Val]]></fieldDescription>
+	</field>
+	<field name="bud03R1Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud03R1Val]]></fieldDescription>
+	</field>
+	<field name="bud_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[bud_id]]></fieldDescription>
+	</field>
+	<field name="choixReam" class="java.lang.Integer">
+		<fieldDescription><![CDATA[choixReam]]></fieldDescription>
+	</field>
+	<field name="budUserCreat" class="java.lang.Long">
+		<fieldDescription><![CDATA[budUserCreat]]></fieldDescription>
+	</field>
+	<field name="bud03R4Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud03R4Val]]></fieldDescription>
+	</field>
+	<field name="bud05R3Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud05R3Val]]></fieldDescription>
+	</field>
+	<field name="bud01R3Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud01R3Val]]></fieldDescription>
+	</field>
+	<field name="bud03R3Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud03R3Val]]></fieldDescription>
+	</field>
+	<field name="bud07R2Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud07R2Val]]></fieldDescription>
+	</field>
+	<field name="bud06R2Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud06R2Val]]></fieldDescription>
+	</field>
+	<field name="bud05R1Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud05R1Val]]></fieldDescription>
+	</field>
+	<field name="bud02TotVal" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud02TotVal]]></fieldDescription>
+	</field>
+	<field name="bud01R4Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud01R4Val]]></fieldDescription>
+	</field>
+	<field name="bud07R4Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud07R4Val]]></fieldDescription>
+	</field>
+	<field name="lib_reamenagement" class="java.lang.String">
+		<fieldDescription><![CDATA[lib_reamenagement]]></fieldDescription>
+	</field>
+	<field name="bud05R2Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud05R2Val]]></fieldDescription>
+	</field>
+	<field name="bud11R2Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud11R2Val]]></fieldDescription>
+	</field>
+	<field name="bud02R3Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud02R3Val]]></fieldDescription>
+	</field>
+	<field name="bud09R3Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud09R3Val]]></fieldDescription>
+	</field>
+	<field name="bud12R1Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud12R1Val]]></fieldDescription>
+	</field>
+	<field name="budDateCreat" class="java.util.Date">
+		<fieldDescription><![CDATA[budDateCreat]]></fieldDescription>
+	</field>
+	<field name="bud09R4Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud09R4Val]]></fieldDescription>
+	</field>
+	<field name="bud12R3Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud12R3Val]]></fieldDescription>
+	</field>
+	<field name="bud10R3Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud10R3Val]]></fieldDescription>
+	</field>
+	<field name="budCode" class="java.lang.String">
+		<fieldDescription><![CDATA[budCode]]></fieldDescription>
+	</field>
+	<field name="bud04TotVal" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud04TotVal]]></fieldDescription>
+	</field>
+	<field name="budUserModif" class="java.lang.Long">
+		<fieldDescription><![CDATA[budUserModif]]></fieldDescription>
+	</field>
+	<field name="budDateModif" class="java.util.Date">
+		<fieldDescription><![CDATA[budDateModif]]></fieldDescription>
+	</field>
+	<field name="bud08R4Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud08R4Val]]></fieldDescription>
+	</field>
+	<field name="bud08R3Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud08R3Val]]></fieldDescription>
+	</field>
+	<field name="bud07R1Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud07R1Val]]></fieldDescription>
+	</field>
+	<field name="bud01R1Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud01R1Val]]></fieldDescription>
+	</field>
+	<field name="bud07R3Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud07R3Val]]></fieldDescription>
+	</field>
+	<field name="bud01TotVal" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud01TotVal]]></fieldDescription>
+	</field>
+	<field name="bud11R1Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud11R1Val]]></fieldDescription>
+	</field>
+	<field name="bud09R2Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud09R2Val]]></fieldDescription>
+	</field>
+	<field name="bud08R2Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud08R2Val]]></fieldDescription>
+	</field>
+	<field name="bud12R4Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud12R4Val]]></fieldDescription>
+	</field>
+	<field name="bud06R1Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud06R1Val]]></fieldDescription>
+	</field>
+	<field name="budLibelleUk" class="java.lang.String">
+		<fieldDescription><![CDATA[budLibelleUk]]></fieldDescription>
+	</field>
+	<field name="bud12R2Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud12R2Val]]></fieldDescription>
+	</field>
+	<field name="bud03R2Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud03R2Val]]></fieldDescription>
+	</field>
+	<field name="bud08R1Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud08R1Val]]></fieldDescription>
+	</field>
+	<field name="bud04R4Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud04R4Val]]></fieldDescription>
+	</field>
+	<field name="bud04R3Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud04R3Val]]></fieldDescription>
+	</field>
+	<field name="bud02R1Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud02R1Val]]></fieldDescription>
+	</field>
+	<field name="bud06R3Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud06R3Val]]></fieldDescription>
+	</field>
+	<field name="bud02R4Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud02R4Val]]></fieldDescription>
+	</field>
+	<field name="montant" class="java.lang.Double">
+		<fieldDescription><![CDATA[montant]]></fieldDescription>
+	</field>
+	<field name="bud11R4Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud11R4Val]]></fieldDescription>
+	</field>
+	<field name="bud04R2Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud04R2Val]]></fieldDescription>
+	</field>
+	<field name="bud02R2Val" class="java.lang.Double">
+		<fieldDescription><![CDATA[bud02R2Val]]></fieldDescription>
+	</field>
+	<field name="budProjet" class="java.lang.String">
+		<fieldDescription><![CDATA[budProjet]]></fieldDescription>
+	</field>
+	<variable name="entete" class="java.lang.String"/>
+	<variable name="filtre" class="java.lang.String"/>
+	<variable name="societe" class="java.lang.String"/>
+	<variable name="version" class="java.lang.String"/>
+	<variable name="intitule_compte" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="117" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="802" height="36" forecolor="#000000" backcolor="#FFFFFF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="37" width="802" height="51" forecolor="#999999" backcolor="#FFFFFF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="88" width="802" height="27" forecolor="#992F2A" backcolor="#FFFFFF"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="20" y="97" width="54" height="10" forecolor="#000000"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[© B&W 2010 -]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy HH.mm.ss">
+				<reportElement x="108" y="97" width="151" height="10" forecolor="#000000"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="579" y="97" width="166" height="10" forecolor="#000000"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Page "+$V{PAGE_NUMBER}+"/ "]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="748" y="97" width="23" height="10" forecolor="#000000"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="23" y="7" width="749" height="24" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="18"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{entete}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="22" y="40" width="749" height="20" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{filtre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="21" y="64" width="749" height="20" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{societe}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="75" y="97" width="28" height="11" forecolor="#000000"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{version}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="57" splitType="Stretch">
+			<printWhenExpression><![CDATA[$V{PAGE_NUMBER}!=1]]></printWhenExpression>
+			<rectangle>
+				<reportElement x="0" y="0" width="802" height="32" forecolor="#999999" backcolor="#FFFFFF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="33" width="802" height="23" forecolor="#992F2A" backcolor="#FFFFFF"/>
+			</rectangle>
+			<textField pattern="dd/MM/yyyy HH.mm.ss">
+				<reportElement x="107" y="40" width="148" height="10" forecolor="#000000"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="746" y="40" width="25" height="10" forecolor="#000000"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="591" y="40" width="151" height="10" forecolor="#000000"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Page "+$V{PAGE_NUMBER}+"/ "]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="18" y="40" width="55" height="10" forecolor="#000000"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[© B&W 2010 - ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="483" y="8" width="288" height="15" forecolor="#000000"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{societe}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="18" y="9" width="391" height="15" forecolor="#000000"/>
+				<textElement>
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{entete}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="74" y="40" width="28" height="11" forecolor="#000000"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{version}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="53" splitType="Stretch">
+			<line>
+				<reportElement x="12" y="13" width="1" height="40"/>
+			</line>
+			<line>
+				<reportElement x="83" y="13" width="1" height="40"/>
+			</line>
+			<line>
+				<reportElement x="474" y="13" width="1" height="40"/>
+			</line>
+			<line>
+				<reportElement x="591" y="13" width="1" height="40"/>
+			</line>
+			<line>
+				<reportElement x="785" y="13" width="1" height="40"/>
+			</line>
+			<line>
+				<reportElement x="13" y="12" width="773" height="1"/>
+			</line>
+			<line>
+				<reportElement x="13" y="52" width="773" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="19" y="23" width="58" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[N° compte]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="236" y="24" width="79" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Désignation]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="493" y="24" width="79" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Type budget]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="608" y="24" width="68" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Montant]]></text>
+			</staticText>
+			<line>
+				<reportElement x="689" y="13" width="1" height="40"/>
+			</line>
+			<staticText>
+				<reportElement x="702" y="24" width="68" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Projet]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="18" splitType="Stretch">
+			<line>
+				<reportElement x="12" y="0" width="1" height="18"/>
+			</line>
+			<line>
+				<reportElement x="83" y="0" width="1" height="18"/>
+			</line>
+			<line>
+				<reportElement x="474" y="0" width="1" height="18"/>
+			</line>
+			<line>
+				<reportElement x="591" y="0" width="1" height="18"/>
+			</line>
+			<line>
+				<reportElement x="785" y="0" width="1" height="18"/>
+			</line>
+			<textField pattern="#,##0" isBlankWhenNull="true">
+				<reportElement style="ST1" x="603" y="3" width="76" height="12">
+					<printWhenExpression><![CDATA[$F{montant}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{montant}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="18" y="2" width="59" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{budCode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="92" y="2" width="373" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{budLibelleFr}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="689" y="0" width="1" height="18"/>
+			</line>
+			<textField>
+				<reportElement x="482" y="2" width="101" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{lib_reamenagement}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="698" y="2" width="81" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{budProjet}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="19">
+			<line>
+				<reportElement x="12" y="10" width="774" height="1"/>
+			</line>
+			<line>
+				<reportElement x="12" y="0" width="1" height="10"/>
+			</line>
+			<line>
+				<reportElement x="83" y="0" width="1" height="10"/>
+			</line>
+			<line>
+				<reportElement x="474" y="0" width="1" height="10"/>
+			</line>
+			<line>
+				<reportElement x="591" y="0" width="1" height="10"/>
+			</line>
+			<line>
+				<reportElement x="785" y="0" width="1" height="10"/>
+			</line>
+			<line>
+				<reportElement x="689" y="0" width="1" height="10"/>
+			</line>
+		</band>
+	</columnFooter>
+	<lastPageFooter>
+		<band height="74">
+			<rectangle>
+				<reportElement x="12" y="11" width="774" height="30"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="49" width="802" height="24" forecolor="#992F2A" backcolor="#FFFFFF"/>
+			</rectangle>
+			<line>
+				<reportElement x="474" y="11" width="1" height="30"/>
+			</line>
+			<line>
+				<reportElement x="591" y="11" width="1" height="30"/>
+			</line>
+			<staticText>
+				<reportElement x="281" y="21" width="170" height="11"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total des budgets]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="35" y="61" width="160" height="12" forecolor="#000000"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.bagwell-watson.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="312" y="50" width="160" height="12" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Writen by Phoenix SaaS ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="35" y="50" width="160" height="12" forecolor="#000000"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Created by Bagwell & Watson]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="603" y="61" width="160" height="12" forecolor="#000000"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.planet-e-pegase.biz ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="603" y="50" width="160" height="12" forecolor="#000000"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Support by Planet-e-pegase ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="312" y="61" width="160" height="12" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.phoenix-saas.com]]></text>
+			</staticText>
+			<line>
+				<reportElement x="688" y="11" width="1" height="30"/>
+			</line>
+		</band>
+	</lastPageFooter>
+</jasperReport>

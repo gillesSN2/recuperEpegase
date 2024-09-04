@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<impot>
+
+	<centre>
+		<code>1.01</code>
+		<lib_FR>KAYES : BAFOULABE</lib_FR>
+		<lib_UK>KAYES : BAFOULABE</lib_UK>
+		<lib_SP>KAYES : BAFOULABE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>1.02</code>
+		<lib_FR>KAYES : DIEMA</lib_FR>
+		<lib_UK>KAYES : DIEMA</lib_UK>
+		<lib_SP>KAYES : DIEMA</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>1.03</code>
+		<lib_FR>KAYES : KENIEBA</lib_FR>
+		<lib_UK>KAYES : KENIEBA</lib_UK>
+		<lib_SP>KAYES : KENIEBA</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>1.04</code>
+		<lib_FR>KAYES : COMMUNE</lib_FR>
+		<lib_UK>KAYES : COMMUNE</lib_UK>
+		<lib_SP>KAYES : COMMUNE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>1.05</code>
+		<lib_FR>KAYES : CERCLE</lib_FR>
+		<lib_UK>KAYES : CERCLE</lib_UK>
+		<lib_SP>KAYES : CERCLE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>1.06</code>
+		<lib_FR>KAYES : KITA COMMUNE</lib_FR>
+		<lib_UK>KAYES : KITA COMMUNE</lib_UK>
+		<lib_SP>KAYES : KITA COMMUNE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>1.07</code>
+		<lib_FR>KAYES : KITA CERCLE</lib_FR>
+		<lib_UK>KAYES : KITA CERCLE</lib_UK>
+		<lib_SP>KAYES : KITA CERCLE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>1.08</code>
+		<lib_FR>KAYES : NIORO COMMUNE</lib_FR>
+		<lib_UK>KAYES : NIORO COMMUNE</lib_UK>
+		<lib_SP>KAYES : NIORO COMMUNE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>1.09</code>
+		<lib_FR>KAYES : NIORO CERCLE</lib_FR>
+		<lib_UK>KAYES : NIORO CERCLE</lib_UK>
+		<lib_SP>KAYES : NIORO CERCLE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>1.10</code>
+		<lib_FR>KAYES : YEIMANE</lib_FR>
+		<lib_UK>KAYES : YEIMANE</lib_UK>
+		<lib_SP>KAYES : YEIMANE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>2.01</code>
+		<lib_FR>KOULIKORO : KATI COMMUNE</lib_FR>
+		<lib_UK>KOULIKORO : KATI COMMUNE</lib_UK>
+		<lib_SP>KOULIKORO : KATI COMMUNE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>2.02</code>
+		<lib_FR>KOULIKORO : KATI CERCLE</lib_FR>
+		<lib_UK>KOULIKORO : KATI CERCLE</lib_UK>
+		<lib_SP>KOULIKORO : KATI CERCLE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>2.03</code>
+		<lib_FR>KOULIKORO : DIOILA</lib_FR>
+		<lib_UK>KOULIKORO : DIOILA</lib_UK>
+		<lib_SP>KOULIKORO : DIOILA</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>2.04</code>
+		<lib_FR>KOULIKORO : KANGALA</lib_FR>
+		<lib_UK>KOULIKORO : KANGALA</lib_UK>
+		<lib_SP>KOULIKORO : KANGALA</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>2.05</code>
+		<lib_FR>KOULIKORO : COMMUNE</lib_FR>
+		<lib_UK>KOULIKORO : COMMUNE</lib_UK>
+		<lib_SP>KOULIKORO : COMMUNE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>2.06</code>
+		<lib_FR>KOULIKORO : CERCLE</lib_FR>
+		<lib_UK>KOULIKORO : CERCLE</lib_UK>
+		<lib_SP>KOULIKORO : CERCLE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>2.07</code>
+		<lib_FR>KOULIKORO : BANAMBA</lib_FR>
+		<lib_UK>KOULIKORO : BANAMBA</lib_UK>
+		<lib_SP>KOULIKORO : BANAMBA</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>2.08</code>
+		<lib_FR>KOULIKORO : NARA</lib_FR>
+		<lib_UK>KOULIKORO : NARA</lib_UK>
+		<lib_SP>KOULIKORO : NARA</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>2.09</code>
+		<lib_FR>KOULIKORO : KOLOKANI</lib_FR>
+		<lib_UK>KOULIKORO : KOLOKANI</lib_UK>
+		<lib_SP>KOULIKORO : KOLOKANI</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>3.01</code>
+		<lib_FR>SIKASSO : BOUGOUNI COMMUNE</lib_FR>
+		<lib_UK>SIKASSO : BOUGOUNI COMMUNE</lib_UK>
+		<lib_SP>SIKASSO : BOUGOUNI COMMUNE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>3.02</code>
+		<lib_FR>SIKASSO : BOUGOUNI CERCLE</lib_FR>
+		<lib_UK>SIKASSO : BOUGOUNI CERCLE</lib_UK>
+		<lib_SP>SIKASSO : BOUGOUNI CERCLE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>3.03</code>
+		<lib_FR>SIKASSO : YANFOLILA</lib_FR>
+		<lib_UK>SIKASSO : YANFOLILA</lib_UK>
+		<lib_SP>SIKASSO : YANFOLILA</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>3.04</code>
+		<lib_FR>SIKASSO : KOLONDIELA</lib_FR>
+		<lib_UK>SIKASSO : KOLONDIELA</lib_UK>
+		<lib_SP>SIKASSO : KOLONDIELA</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>3.05</code>
+		<lib_FR>SIKASSO : KOUTIALA COMMUNE</lib_FR>
+		<lib_UK>SIKASSO : KOUTIALA COMMUNE</lib_UK>
+		<lib_SP>SIKASSO : KOUTIALA COMMUNE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>3.06</code>
+		<lib_FR>SIKASSO : KOUTIALA CERCLE</lib_FR>
+		<lib_UK>SIKASSO : KOUTIALA CERCLE</lib_UK>
+		<lib_SP>SIKASSO : KOUTIALA CERCLE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>3.07</code>
+		<lib_FR>SIKASSO : YOROSSO</lib_FR>
+		<lib_UK>SIKASSO : YOROSSO</lib_UK>
+		<lib_SP>SIKASSO : YOROSSO</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>3.08</code>
+		<lib_FR>SIKASSO : COMMUNE</lib_FR>
+		<lib_UK>SIKASSO : COMMUNE</lib_UK>
+		<lib_SP>SIKASSO : COMMUNE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>3.09</code>
+		<lib_FR>SIKASSO : CERCLE</lib_FR>
+		<lib_UK>SIKASSO : CERCLE</lib_UK>
+		<lib_SP>SIKASSO : CERCLE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>3.10</code>
+		<lib_FR>SIKASSO : KADIOLO</lib_FR>
+		<lib_UK>SIKASSO : KADIOLO</lib_UK>
+		<lib_SP>SIKASSO : KADIOLO</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>4.01</code>
+		<lib_FR>SEGOU : BAROUELI</lib_FR>
+		<lib_UK>SEGOU : BAROUELI</lib_UK>
+		<lib_SP>SEGOU : BAROUELI</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>4.02</code>
+		<lib_FR>SEGOU : BLA</lib_FR>
+		<lib_UK>SEGOU : BLA</lib_UK>
+		<lib_SP>SEGOU : BLA</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>4.03</code>
+		<lib_FR>SEGOU : MACINA</lib_FR>
+		<lib_UK>SEGOU : MACINA</lib_UK>
+		<lib_SP>SEGOU : MACINA</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>4.04</code>
+		<lib_FR>SEGOU : NIONO</lib_FR>
+		<lib_UK>SEGOU : NIONO</lib_UK>
+		<lib_SP>SEGOU : NIONO</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>4.05</code>
+		<lib_FR>SEGOU : COMMUNE</lib_FR>
+		<lib_UK>SEGOU : COMMUNE</lib_UK>
+		<lib_SP>SEGOU : COMMUNE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>4.06</code>
+		<lib_FR>SEGOU : CERCLE</lib_FR>
+		<lib_UK>SEGOU : CERCLE</lib_UK>
+		<lib_SP>SEGOU : CERCLE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>4.07</code>
+		<lib_FR>SEGOU : SAN COMMUNE</lib_FR>
+		<lib_UK>SEGOU : SAN COMMUNE</lib_UK>
+		<lib_SP>SEGOU : SAN COMMUNE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>4.08</code>
+		<lib_FR>SEGOU : SAN CERCLE</lib_FR>
+		<lib_UK>SEGOU : SAN CERCLE</lib_UK>
+		<lib_SP>SEGOU : SAN CERCLE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>4.09</code>
+		<lib_FR>SEGOU : TOMINIAN</lib_FR>
+		<lib_UK>SEGOU : TOMINIAN</lib_UK>
+		<lib_SP>SEGOU : TOMINIAN</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>5.01</code>
+		<lib_FR>MOPTI : BADIOAGARA</lib_FR>
+		<lib_UK>MOPTI : BADIOAGARA</lib_UK>
+		<lib_SP>MOPTI : BADIOAGARA</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>5.02</code>
+		<lib_FR>MOPTI : BANKASS</lib_FR>
+		<lib_UK>MOPTI : BANKASS</lib_UK>
+		<lib_SP>MOPTI : BANKASS</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>5.03</code>
+		<lib_FR>MOPTI : KORO</lib_FR>
+		<lib_UK>MOPTI : KORO</lib_UK>
+		<lib_SP>MOPTI : KORO</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>5.04</code>
+		<lib_FR>MOPTI : DJENNE</lib_FR>
+		<lib_UK>MOPTI : DJENNE</lib_UK>
+		<lib_SP>MOPTI : DJENNE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>5.05</code>
+		<lib_FR>MOPTI : DOUENTZA</lib_FR>
+		<lib_UK>MOPTI : DOUENTZA</lib_UK>
+		<lib_SP>MOPTI : DOUENTZA</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>5.06</code>
+		<lib_FR>MOPTI : COMMUNE</lib_FR>
+		<lib_UK>MOPTI : COMMUNE</lib_UK>
+		<lib_SP>MOPTI : COMMUNE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>5.07</code>
+		<lib_FR>MOPTI : CERCLE</lib_FR>
+		<lib_UK>MOPTI : CERCLE</lib_UK>
+		<lib_SP>MOPTI : CERCLE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>5.08</code>
+		<lib_FR>MOPTI : TENENKOU</lib_FR>
+		<lib_UK>MOPTI : TENENKOU</lib_UK>
+		<lib_SP>MOPTI : TENENKOU</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>5.09</code>
+		<lib_FR>MOPTI : YOUVAROU</lib_FR>
+		<lib_UK>MOPTI : YOUVAROU</lib_UK>
+		<lib_SP>MOPTI : YOUVAROU</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>6.01</code>
+		<lib_FR>TOMBOUCTOU : DIRE</lib_FR>
+		<lib_UK>TOMBOUCTOU : DIRE</lib_UK>
+		<lib_SP>TOMBOUCTOU : DIRE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>6.02</code>
+		<lib_FR>TOMBOUCTOU : GOUNDAM</lib_FR>
+		<lib_UK>TOMBOUCTOU : GOUNDAM</lib_UK>
+		<lib_SP>TOMBOUCTOU : GOUNDAM</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>6.03</code>
+		<lib_FR>TOMBOUCTOU : GOURMA RHAROUSS</lib_FR>
+		<lib_UK>TOMBOUCTOU : GOURMA RHAROUSS</lib_UK>
+		<lib_SP>TOMBOUCTOU : GOURMA RHAROUSS</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>6.04</code>
+		<lib_FR>TOMBOUCTOU : NIAFUNKE</lib_FR>
+		<lib_UK>TOMBOUCTOU : NIAFUNKE</lib_UK>
+		<lib_SP>TOMBOUCTOU : NIAFUNKE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>6.05</code>
+		<lib_FR>TOMBOUCTOU : COMMUNE</lib_FR>
+		<lib_UK>TOMBOUCTOU : COMMUNE</lib_UK>
+		<lib_SP>TOMBOUCTOU : COMMUNE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>6.06</code>
+		<lib_FR>TOMBOUCTOU : CERCLE</lib_FR>
+		<lib_UK>TOMBOUCTOU : CERCLE</lib_UK>
+		<lib_SP>TOMBOUCTOU : CERCLE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>7.01</code>
+		<lib_FR>GAO : COMMUNE</lib_FR>
+		<lib_UK>GAO : COMMUNE</lib_UK>
+		<lib_SP>GAO : COMMUNE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>7.02</code>
+		<lib_FR>GAO : CERCLE</lib_FR>
+		<lib_UK>GAO : CERCLE</lib_UK>
+		<lib_SP>GAO : CERCLE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>7.03</code>
+		<lib_FR>GAO : ANSONGO</lib_FR>
+		<lib_UK>GAO : ANSONGO</lib_UK>
+		<lib_SP>GAO : ANSONGO</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>7.04</code>
+		<lib_FR>GAO : KIDAL</lib_FR>
+		<lib_UK>GAO : KIDAL</lib_UK>
+		<lib_SP>GAO : KIDAL</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>7.05</code>
+		<lib_FR>GAO : BOUREM</lib_FR>
+		<lib_UK>GAO : BOUREM</lib_UK>
+		<lib_SP>GAO : BOUREM</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>7.06</code>
+		<lib_FR>GAO : MENAKA</lib_FR>
+		<lib_UK>GAO : MENAKA</lib_UK>
+		<lib_SP>GAO : MENAKA</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>8.01</code>
+		<lib_FR>BAMAKO</lib_FR>
+		<lib_UK>BAMAKO</lib_UK>
+		<lib_SP>BAMAKO</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+</impot>

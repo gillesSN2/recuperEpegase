@@ -78,37 +78,37 @@ public class StaticModePegase implements Serializable {
 
       try {
          SAXBuilder var3 = new SAXBuilder();
-         File var4 = new File(cheminContext + File.separator + "configuration" + File.separator + "update" + File.separator + "version.xml");
-         if (var4.exists()) {
-            FileReader var5 = new FileReader(var4);
+         File versionFile = new File(cheminContext + File.separator + "configuration" + File.separator + "update" + File.separator + "version.xml");
+         if (versionFile.exists()) {
+            FileReader var5 = new FileReader(versionFile);
             Document var6 = var3.build(var5);
-            Element var7 = var6.getRootElement();
-            compil_version = var7.getChildText("numero");
-            compil_date = var7.getChildText("date");
-            internet_actif = Integer.parseInt(var7.getChildText("internet"));
-            osContext = Integer.parseInt(var7.getChildText("os"));
+            Element configurationRoot = var6.getRootElement();
+            compil_version = configurationRoot.getChildText("numero");
+            compil_date = configurationRoot.getChildText("date");
+            internet_actif = Integer.parseInt(configurationRoot.getChildText("internet"));
+            osContext = Integer.parseInt(configurationRoot.getChildText("os"));
             if (osContext != 3) {
-               String var8 = System.getProperty("os.name");
-               if (var8.contains("Linux")) {
+               String osName = System.getProperty("os.name");
+               if (osName.contains("Linux")) {
                   osContext = 0;
-               } else if (var8.contains("Windows")) {
+               } else if (osName.contains("Windows")) {
                   osContext = 1;
-               } else if (var8.contains("Mac")) {
+               } else if (osName.contains("Mac")) {
                   osContext = 2;
                }
             }
 
-            if (var7.getChildText("base") != null && !var7.getChildText("base").isEmpty()) {
-               accesBase = var7.getChildText("base");
+            if (configurationRoot.getChildText("base") != null && !configurationRoot.getChildText("base").isEmpty()) {
+               accesBase = configurationRoot.getChildText("base");
             } else {
                accesBase = "localhost:3306";
             }
 
-            InetAddress var15 = InetAddress.getLocalHost();
-            String var9 = var15.getHostAddress();
-            if (!var9.startsWith("192.") && !var9.startsWith("127.") && !var9.startsWith("10.")) {
+            InetAddress adressServeurUrl = InetAddress.getLocalHost();
+            String ipAddress = adressServeurUrl.getHostAddress();
+            if (!ipAddress.startsWith("192.") && !ipAddress.startsWith("127.") && !ipAddress.startsWith("10.")) {
                localApplication = false;
-               if (var9.equals(ipServeur)) {
+               if (ipAddress.equals(ipServeur)) {
                   accesServeur = "www.e-pegase.biz";
                   urlIp = "https://www.e-pegase.biz";
                   urlHost = "www.e-pegase.biz";
@@ -117,12 +117,12 @@ public class StaticModePegase implements Serializable {
                   boolean var16 = false;
                   String var11 = "";
                   int var17;
-                  if (var7.getChildText("serveur") != null && !var7.getChildText("serveur").isEmpty()) {
-                     String[] var12 = var7.getChildText("serveur").split(":");
+                  if (configurationRoot.getChildText("serveur") != null && !configurationRoot.getChildText("serveur").isEmpty()) {
+                     String[] var12 = configurationRoot.getChildText("serveur").split(":");
                      var11 = var12[0];
                      var17 = Integer.parseInt(var12[1]);
                   } else {
-                     var11 = var9;
+                     var11 = ipAddress;
                      var17 = 8080;
                   }
 
@@ -133,8 +133,8 @@ public class StaticModePegase implements Serializable {
                }
             } else {
                localApplication = true;
-               if (var7.getChildText("serveur") != null && !var7.getChildText("serveur").isEmpty()) {
-                  accesServeur = var7.getChildText("serveur");
+               if (configurationRoot.getChildText("serveur") != null && !configurationRoot.getChildText("serveur").isEmpty()) {
+                  accesServeur = configurationRoot.getChildText("serveur");
                } else {
                   accesServeur = "localhost:8080";
                }
@@ -146,14 +146,14 @@ public class StaticModePegase implements Serializable {
             }
 
             var5.close();
-            System.out.println("************************************ ip : " + var9);
-            if (var9.startsWith("https://")) {
+            System.out.println("************************************ ip : " + ipAddress);
+            if (ipAddress.startsWith("https://")) {
                urlProtocole = "https";
             } else {
                urlProtocole = "http";
             }
 
-            imageStartup = var7.getChildText("imageStartup");
+            imageStartup = configurationRoot.getChildText("imageStartup");
             if (imageStartup == null || imageStartup.isEmpty()) {
                imageStartup = "startup";
             }
@@ -162,7 +162,7 @@ public class StaticModePegase implements Serializable {
                imageStartup = "startup";
             }
 
-            pageAccueil = var7.getChildText("pageAccueil");
+            pageAccueil = configurationRoot.getChildText("pageAccueil");
             if (pageAccueil == null || pageAccueil.isEmpty()) {
                pageAccueil = "1";
             }

@@ -8,7 +8,7 @@ g
 h
 8WebContent/comptabilite/groupe/ListeClesRepartitions.jsp,c\c\cc740f87b81da6e661943127fe1558c565d6d937
 j
-:src/com/epegase/systeme/menu/MenuModuleHorizontalCtrl.java,0\6\06f67b5f619fbf144bf678551e0774192575b21d
+:src/com/epegase/systeme/menu/MenuModuleHorizontalCtrl.java,0/6/06f67b5f619fbf144bf678551e0774192575b21d
 g
 7src/com/epegase/forms/administration/FormChronoFdt.java,b\a\baeab55b900f5d7c10391b6530a559454f3887b2
 s
@@ -16,7 +16,7 @@ Csrc/com/epegase/forms/administration/FormActivitesCommerciales.java,1\f\1f1d37
 T
 $WebContent/WEB-INF/glassfish-web.xml,9\6\96a6a829c95a1a9f0f97f2cce7afcf526e2c7b1e
 N
-WebContent/WEB-INF/sun-web.xml,6\3\632c453701249a23abe6a88798129a027afc7f6c
+WebContent/WEB-INF/sun-web.xml,6/3/632c453701249a23abe6a88798129a027afc7f6c
 ]
 -src/com/epegase/systeme/util/CalculStock.java,8\6\86071392e1c24955d2f79b27ae77e158ca79cfd5
 [
@@ -40,7 +40,7 @@ e
 f
 6src/com/epegase/systeme/classe/ExercicesAchats.hbm.xml,c\1\c17f36ff4ee5a0ee0929f5a9654798843dfad153
 y
-Isrc/com/epegase/systeme/formbakingbeans/FormBakingBeanAdministration.java,5\2\52a2b76169ba7af9cf29a30c53ba0fb60fd43590
+Isrc/com/epegase/systeme/formbakingbeans/FormBakingBeanAdministration.java,5/2/52a2b76169ba7af9cf29a30c53ba0fb60fd43590
 c
 3src/com/epegase/systeme/classe/ExercicesAchats.java,0\c\0c3fa13b961fb223f0340ec8013a9bd01458520a
 b
@@ -74,9 +74,9 @@ b
 ]
 -src/com/epegase/systeme/classe/Groupe.hbm.xml,5\3\537d3859aa488c91a3deb88786b2e2355b50dce6
 Y
-)src/com/epegase/systeme/classe/Users.java,7\c\7cb45fa09b76acff51fe15d01efc6e22dc2e6a7c
+)src/com/epegase/systeme/classe/Users.java,7/c/7cb45fa09b76acff51fe15d01efc6e22dc2e6a7c
 Z
-*src/com/epegase/systeme/classe/Groupe.java,8\d\8d4df8b968743a1447c6e0ee09891a24cfcac04f
+*src/com/epegase/systeme/classe/Groupe.java,8/d/8d4df8b968743a1447c6e0ee09891a24cfcac04f
 j
 :src/com/epegase/systeme/classe/DemandeEnteteAchats.hbm.xml,e\7\e7b7e0d8bf54199dc299b93661531db9c8f70b2e
 g
@@ -84,7 +84,7 @@ g
 h
 8src/com/epegase/systeme/classe/CotationEnteteAchats.java,6\7\67f66950f8a1b9aae37a88591417b7f05de0175e
 ]
--src/com/epegase/systeme/classe/Structure.java,1\8\187fea32227198cfffd09676297053b89cfbfe57
+-src/com/epegase/systeme/classe/Structure.java,1/8/187fea32227198cfffd09676297053b89cfbfe57
 `
 0src/com/epegase/systeme/classe/Structure.hbm.xml,2\c\2c73d8a123267fc2fb2c348c5b51838e7bae76cb
 d
@@ -146,7 +146,7 @@ i
 e
 5src/com/epegase/forms/administration/FormRacines.java,b\f\bf9d1d016a774ce35630f5c5aff397b0da269c6b
 m
-=src/com/epegase/forms/administration/FormStructureEntete.java,a\e\ae57618f8320143d48c65dea593e749fd57e5117
+=src/com/epegase/forms/administration/FormStructureEntete.java,a/e/ae57618f8320143d48c65dea593e749fd57e5117
 l
 <src/com/epegase/forms/administration/FormTiersTechnique.java,4\4\44b88e5718dffcddf7b1e916f230cca9dc9db668
 j
@@ -275,3 +275,129 @@ e
 5src/com/epegase/systeme/dao/CaissesOperationsDao.java,9\6\963652d77ddb9fa04ea9d2d54afdf5f551689957
 o
 ?src/com/epegase/forms/administration/FormCaissesOperations.java,1\b\1bfc660028edf0100cf486dc5cb9821245079c7c
+^
+.src/com/epegase/systeme/control/Connexion.java,8/9/891942a89e03073a617e14465bf73f9332ca061a
+n
+>src/com/epegase/systeme/formbakingbeans/FormBakingEpegase.java,4/4/44f05e07fafd097d91d7d68e00d0c6d69e680bbf
+c
+3src/com/epegase/systeme/util/UtilInitHibernate.java,6/f/6fecf129a4aa62d1184b2ae3b41f3f53c123f591
+D
+WebContent/index.jsp,9/e/9e989567b25a37b382d6c0a7a2b4ae4bb7937d5a
+c
+3src/com/epegase/systeme/classe/StructurePeg.hbm.xml,f/a/fa0f9edc9ca3fed3d4e027f407795f64e9b66c10
+I
+WebContent/menuGauche.jsp,b/e/be39328a41d07934e7779b136d60fbb70bf6756e
+E
+src/hibernate.cfg.xml,5/2/524fbabb9c34b348becff5425aeeaced8e15058f
+Q
+!WebContent/WEB-INF/erreurpage.jsp,2/f/2f3e0955115c21336ca5a9b8dff4b04ae25d8894
+]
+-src/com/epegase/systeme/dao/StructureDao.java,c/d/cd7d93de78a3a5f2f89c60a8f8b08280ec8df09a
+X
+(src/com/epegase/systeme/dao/UserDao.java,1/2/1281cb74a62b6fcc327ee786ceebe7eb77698784
+\
+,src/com/epegase/systeme/classe/UsersPeg.java,b/5/b5e091ebf462cd424a7ff8be96e1e14a50d13bf9
+b
+2src/com/epegase/systeme/util/StaticModePegase.java,a/a/aaee5165406fdef7a674ab0de79f15117e5a053c
+Z
+*src/com/epegase/systeme/dao/GroupeDao.java,3/1/314ff627a5887b00de8fd7ddc8cfb3d89cd6dab4
+]
+-src/com/epegase/systeme/util/MD5Password.java,4/2/424daf9ed3d6acc4008175daf4f4da3f68ba50aa
+]
+-src/com/epegase/systeme/fileUtil/FileRep.java,2/a/2a7e93b6d40cc3eee951cad4e5089fe4026d951f
+Y
+)WebContent/WEB-INF/applicationContext.xml,5/e/5eb0fb95768278879ab0d9ecf36ce498c14732e2
+V
+&epegase 3/src/java/c3p0.properties.xml,0/1/014924f3eddade16ac9d0ba51e60f291c2324289
+T
+$epegase 3/src/java/hibernate.cfg.xml,c/0/c03cc034531ff8299079e08e20f4b4d1a0aa91a6
+]
+-epegase 3/configuration/commun/natureParc.xml,e/d/edf969f386de76099bccbb4c8b252f5848db849a
+Z
+*epegase 3/configuration/commun/modules.xml,8/7/8729e53214ad04dfc9326581b963d29ca6ae56a5
+L
+WebContent/update/index.html,b/e/be03d9e26e895a5113b3b34d2c849a55e24d0a4d
+T
+$WebContent/update/versionServeur.xml,1/b/1b871fe548ee4de36c0c1bc87f1e79195f2176ff
+N
+WebContent/index_connexion.jsp,c/6/c6c8890e9b694fd882e662fbe2f9a889b67cfef2
+S
+#WebContent/WEB-INF/faces-config.xml,8/e/8eb4bda1d492b32a971cb0c5d69750da9cf0fedf
+G
+WebContent/redirect.jsp,6/7/671b5906ff4be901cf4e5bea3554add8ad17b55d
+E
+WebContent/index.html,9/8/98ea0862efe24378132a30e63c5df863b2c480ee
+F
+WebContent/epegase.jsp,d/c/dcfe546dd6eb54466939b6435b7f0f9b551f678c
+G
+WebContent/epegase0.jsp,2/a/2ab8b59464b3f1f4977d01c44913f1005b950be2
+E
+WebContent/reload.jsp,2/f/2f52bd7883204a12cdfeb3deff457bd4afaaf8b9
+C
+WebContent/Vide.jsp,a/2/a29b54cca27b846ed2bf7815ce54d1b35fb2d753
+W
+'WebContent/WEB-INF/erreurExpiration.jsp,4/e/4efbd002a9d242bd79d373e9eb4a283831780666
+T
+$WebContent/WEB-INF/erreurSysteme.jsp,b/4/b4813bfbe9d9d9f41af783aa15f70602f1cb30b1
+X
+(WebContent/WEB-INF/erreurSysteme_old.jsp,f/8/f874e55991fb5fae61479e4417f35dac168d8f64
+M
+WebContent/gestionSubView.jsp,d/3/d34fb09f3a087cc6f19017223da1184dbff9eca3
+J
+WebContent/WEB-INF/web.xml,c/5/c510f2eaee6faa7ce096cfb89f5dcfc359c14265
+S
+#WebContent/erreurIdentification.jsp,0/4/041f54c06b196671bbb533d8a90d71e89079a726
+U
+%WebContent/WEB-INF/cd_client_conf.xml,a/2/a2f615b9578630df4fd1b02cc4d007795271fc5a
+R
+"WebContent/WEB-INF/default-web.xml,7/2/72b9db9e4879da8bd3e59732716c0aa285622846
+d
+4src/com/epegase/forms/administration/FormGroupe.java,0/9/096c843b64221b72d3f129edd48045f72cc6a786
+Z
+*epegase 3/configuration/commun/modules.xsd,b/0/b049e322a940e62257cd92fd5005384878870c96
+Y
+)epegase 3/configuration/commun/langue.xml,c/d/cd4ae6d28bc4b1fbfe79bf5ecbc69a7b876325d2
+c
+3epegase 3/configuration/commun/formesJuridiques.xml,1/f/1f85cfa8b93a447859e85c43722cc69ed9a58151
+\
+,epegase 3/configuration/commun/fonctions.xml,3/c/3c35b4046ffc91dee768e432b381360cd54afef7
+`
+0epegase 3/configuration/commun/appreciations.xml,8/1/8161d90638f4332022d9794cc9faecac148178da
+W
+'epegase 3/configuration/commun/pays.xml,c/a/ca2e88a2b9116e3dcbad2ca6cebce7792f6009ae
+a
+1epegase 3/configuration/commun/qualiteContact.xml,b/9/b982483ff860635ad33ddceb543f393d22833d07
+X
+(epegase 3/configuration/commun/reg_4.xml,2/c/2cea90985b6edc5e4b8f21a60592e35d367e1c4f
+X
+(epegase 3/configuration/commun/reg_5.xml,7/6/769fe7686f7eee7bbb694445d738ae211f3da9f6
+X
+(epegase 3/configuration/commun/reg_6.xml,f/6/f69e66c265946f105c75dfad2522a95e18f8a19c
+^
+.epegase 3/configuration/commun/sourceTiers.xml,7/5/75f4f311ffef7be8fe6e48b4e945573774698e57
+X
+(epegase 3/configuration/commun/Tiers.xml,9/3/9399ab24fc505ffa66e851b3c5a9b2184e672360
+h
+8epegase 3/configuration/fiscalites/SYSCOA/PLC_SYSCOA.xml,9/e/9ec93c6f7e5d246b1c90f75dc9e880a6b96bea6d
+h
+8epegase 3/configuration/fiscalites/CANADA/PLC_CANADA.xml,a/c/ac7c151de60e029cb756c0eb0344ec98574f610f
+f
+6epegase 3/configuration/fiscalites/OHADA/PLC_OHADA.xml,a/3/a3cf305aafce64018b07d290e68bcfc2fb378aee
+f
+6epegase 3/configuration/fiscalites/OHADA/RAC_OHADA.xml,c/c/cc43bb004f661642f334986c0aa6a7109f815afe
+g
+7epegase 3/configuration/immatriculations/immat_0001.xml,9/3/93d0030a0131bca315f6ce7713ad18e0c8fa3d72
+g
+7epegase 3/configuration/immatriculations/immat_0002.xml,4/3/4342a73937e9642a28c334a32f53f2a635d056bd
+`
+0epegase 3/configuration/commercial/Incoterms.xml,7/3/73112378c20b2b17c057733d72a1129e5ab8f416
+a
+1epegase 3/configuration/commercial/medicalCDA.xml,6/7/670bca62e596d63d125109f0c9c76eb59d145f09
+\
+,epegase 3/configuration/devises/AED_2008.xml,1/6/16a6f5c5f82c51e36a8bdf0740486263f73dfcde
+`
+0WebContent/administration/configurationTiers.jsp,e/6/e60646769945ef329eed1db02e98f62556e856bf
+d
+4src/com/epegase/systeme/menu/MenudroitTiersCtrl.java,f/1/f1588df436cf8282715f31e9e93757ebd81d09c3
+c
+3epegase 3/configuration/menu_defaut/30000_00000.xml,8/4/84cd201c43b41c00a6dc085dda8b6c5d794e5f99

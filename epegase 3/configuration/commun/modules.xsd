@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="modules" type="modulesType"/>
+  <xs:complexType name="niveau1Type">
+    <xs:sequence>
+      <xs:element name="libelle1_FR">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Accueil"/>
+            <xs:enumeration value="Office"/>
+            <xs:enumeration value="Gestion des Tiers"/>
+            <xs:enumeration value="Comptabilité"/>
+            <xs:enumeration value="Paye"/>
+            <xs:enumeration value="Achats"/>
+            <xs:enumeration value="Parcs"/>
+            <xs:enumeration value="Suivi Commercial"/>
+            <xs:enumeration value="Caisse"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="libelle1_UK">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Home"/>
+            <xs:enumeration value="Office"/>
+            <xs:enumeration value="Thirds Management"/>
+            <xs:enumeration value="Accountancy"/>
+            <xs:enumeration value="Payroll"/>
+            <xs:enumeration value="Purchases"/>
+            <xs:enumeration value="Vehicles"/>
+            <xs:enumeration value="Commercial follow-up"/>
+            <xs:enumeration value="Caisse"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="libelle1_SP">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Acogida"/>
+            <xs:enumeration value="Office"/>
+            <xs:enumeration value="Gestion de los tercios"/>
+            <xs:enumeration value="Contabilidad"/>
+            <xs:enumeration value="Paga"/>
+            <xs:enumeration value="Comprados"/>
+            <xs:enumeration value="Aparcamientos"/>
+            <xs:enumeration value="Control comercial"/>
+            <xs:enumeration value="Caisse"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="menu1_FR">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Accueil"/>
+            <xs:enumeration value="Office"/>
+            <xs:enumeration value="Tiers"/>
+            <xs:enumeration value=""/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="menu1_UK">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Home"/>
+            <xs:enumeration value="Office"/>
+            <xs:enumeration value="Thirds"/>
+            <xs:enumeration value=""/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="menu1_SP">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Acogida"/>
+            <xs:enumeration value="Office"/>
+            <xs:enumeration value="Tercios"/>
+            <xs:enumeration value=""/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="info1_FR">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Flux RSS, Histoire de Pégase, Norme QC 100."/>
+            <xs:enumeration value="Mes documents, Messagerie, Galerie Photos, Mon Planning, Annuaire."/>
+            <xs:enumeration value="Immatriculation, Modes de règlement, Eléments de facturation, Contacts, Photos, Planning, Rendez-vous, Visites, Courriers, Mails, Notes, Documents commerciaux."/>
+            <xs:enumeration value="Gestion de la comptabilité et des déclarations financières"/>
+            <xs:enumeration value="Gestion de la paye, des éléments RH et du pointage horaire."/>
+            <xs:enumeration value="Gestion des flux IN."/>
+            <xs:enumeration value="Gestion des parcs."/>
+            <xs:enumeration value="Suivi commercial."/>
+            <xs:enumeration value="Gestion des caisses"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="info1_UK">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="RSS Flow, Pegase Story, QC 100 Norm."/>
+            <xs:enumeration value="My documents, Electronic Mails, Gallery Photos, My Planning, Adress book."/>
+            <xs:enumeration value="Registration, Payment Methods, Invoicing elements, Contacts, Photos, Plannings, Appointments, Visits, Mails, Emails, Notes, Commercial documents."/>
+            <xs:enumeration value="Management of accountancy and the financial declarations"/>
+            <xs:enumeration value="Management of pay,HR elements and the Pointing time"/>
+            <xs:enumeration value=""/>
+            <xs:enumeration value="commercial follow-up"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="info1_SP"/>
+      <xs:element name="code1">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="10000"/>
+            <xs:enumeration value="20000"/>
+            <xs:enumeration value="30000"/>
+            <xs:enumeration value="40000"/>
+            <xs:enumeration value="50000"/>
+            <xs:enumeration value="60000"/>
+            <xs:enumeration value="70000"/>
+            <xs:enumeration value="80000"/>
+            <xs:enumeration value="90000"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="type1"/>
+      <xs:element name="valeur1">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="1"/>
+            <xs:enumeration value="0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="modif1">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="0"/>
+            <xs:enumeration value="1"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="desactif1">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="0"/>
+            <xs:enumeration value="1"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="niveau2Type" name="niveau2" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="niveau2Type">
+    <xs:sequence>
+      <xs:element type="xs:string" name="libelle2_FR"/>
+      <xs:element type="xs:string" name="libelle2_UK"/>
+      <xs:element type="xs:string" name="libelle2_SP"/>
+      <xs:element type="xs:string" name="menu2_FR"/>
+      <xs:element type="xs:string" name="menu2_UK"/>
+      <xs:element type="xs:string" name="menu2_SP"/>
+      <xs:element type="xs:string" name="info2_FR"/>
+      <xs:element type="xs:string" name="info2_UK"/>
+      <xs:element type="xs:string" name="info2_SP"/>
+      <xs:element type="xs:string" name="code2"/>
+      <xs:element type="xs:string" name="type2"/>
+      <xs:element type="xs:string" name="valeur2"/>
+      <xs:element type="xs:string" name="modif2"/>
+      <xs:element name="desactif2">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="0"/>
+            <xs:enumeration value="1"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modulesType">
+    <xs:sequence>
+      <xs:element type="niveau1Type" name="niveau1" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

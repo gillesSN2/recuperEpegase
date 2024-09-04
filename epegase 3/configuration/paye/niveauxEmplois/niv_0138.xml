@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<emploi>
+
+	<niveau>
+		<code>01</code>
+		<lib_FR>1 ERE CATEGORIE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<inactif>0</inactif>
+	</niveau>
+
+	<niveau>
+		<code>02</code>
+		<lib_FR>2EME CATEGORIE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<inactif>0</inactif>
+	</niveau>
+
+	<niveau>
+		<code>03</code>
+		<lib_FR>3 EME CATEGORIE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<inactif>0</inactif>
+	</niveau>
+
+	<niveau>
+		<code>04</code>
+		<lib_FR>4 EME CATEGORIE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<inactif>0</inactif>
+	</niveau>
+
+	<niveau>
+		<code>05</code>
+		<lib_FR>5 EME CATEGORIE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<inactif>0</inactif>
+	</niveau>
+
+	<niveau>
+		<code>06</code>
+		<lib_FR>6 EME CATEGORIE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<inactif>0</inactif>
+	</niveau>
+
+	<niveau>
+		<code>07</code>
+		<lib_FR>7 EME CATEGORIE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<inactif>0</inactif>
+	</niveau>
+
+	<niveau>
+		<code>08</code>
+		<lib_FR>8 EME CATEGORIE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<inactif>0</inactif>
+	</niveau>
+
+	<niveau>
+		<code>09</code>
+		<lib_FR>9 EME CATEGORIE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<inactif>0</inactif>
+	</niveau>
+
+	<niveau>
+		<code>10</code>
+		<lib_FR>10 EME CATEGORIE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<inactif>0</inactif>
+	</niveau>
+
+	<niveau>
+		<code>11</code>
+		<lib_FR>11 EME CATEGORIE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<inactif>0</inactif>
+	</niveau>
+
+	<niveau>
+		<code>12</code>
+		<lib_FR>12 EME CATEGORIE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<inactif>0</inactif>
+	</niveau>
+
+	<niveau>
+		<code>13</code>
+		<lib_FR>13 EME CATEGORIE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<inactif>0</inactif>
+	</niveau>
+
+	<niveau>
+		<code>14</code>
+		<lib_FR>14 EME CATEGORIE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<inactif>0</inactif>
+	</niveau>
+
+	<niveau>
+		<code>15</code>
+		<lib_FR>15 EME CATEGORIE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<inactif>0</inactif>
+	</niveau>
+
+	<niveau>
+		<code>16</code>
+		<lib_FR>16 EME CATEGORIE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<inactif>0</inactif>
+	</niveau>
+
+	<niveau>
+		<code>17</code>
+		<lib_FR>17 EME CATEGORIE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<inactif>0</inactif>
+	</niveau>
+
+	<niveau>
+		<code>18</code>
+		<lib_FR>18 EME CATEGORIE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<inactif>0</inactif>
+	</niveau>
+
+	<niveau>
+		<code>19</code>
+		<lib_FR>19 EME CATEGORIE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<inactif>0</inactif>
+	</niveau>
+
+	<niveau>
+		<code>20</code>
+		<lib_FR>20 EME CATEGORIE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<inactif>0</inactif>
+	</niveau>
+</emploi>

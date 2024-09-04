@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<M90000>
+  <lignemenu>
+    <libelle_FR>Opérations de Caisse</libelle_FR>
+    <libelle_UK />
+    <libelle_SP />
+    <pagemenu />
+    <commande>90000:01</commande>
+    <type />
+    <genre />
+    <acc>false</acc>
+    <add>true</add>
+    <dup>true</dup>
+    <maj>true</maj>
+    <sup>true</sup>
+    <imp>true</imp>
+    <clo>true</clo>
+    <trf>true</trf>
+  </lignemenu>
+  <lignemenu>
+    <libelle_FR />
+    <libelle_UK />
+    <libelle_SP />
+    <pagemenu />
+    <commande />
+    <type />
+    <genre />
+    <acc>true</acc>
+    <add>true</add>
+    <dup>true</dup>
+    <maj>true</maj>
+    <sup>true</sup>
+    <imp>true</imp>
+    <clo>true</clo>
+    <trf>true</trf>
+  </lignemenu>
+  <lignemenu>
+    <libelle_FR>Caisses journalières</libelle_FR>
+    <libelle_UK />
+    <libelle_SP />
+    <pagemenu />
+    <commande>90000:10</commande>
+    <type />
+    <genre />
+    <acc>false</acc>
+    <add>true</add>
+    <dup>true</dup>
+    <maj>true</maj>
+    <sup>true</sup>
+    <imp>true</imp>
+    <clo>true</clo>
+    <trf>true</trf>
+  </lignemenu>
+  <lignemenu>
+    <libelle_FR>Caisses mensuelles</libelle_FR>
+    <libelle_UK />
+    <libelle_SP />
+    <pagemenu />
+    <commande>90000:11</commande>
+    <type />
+    <genre />
+    <acc>false</acc>
+    <add>true</add>
+    <dup>true</dup>
+    <maj>true</maj>
+    <sup>true</sup>
+    <imp>true</imp>
+    <clo>true</clo>
+    <trf>true</trf>
+  </lignemenu>
+  <lignemenu>
+    <libelle_FR />
+    <libelle_UK />
+    <libelle_SP />
+    <pagemenu />
+    <commande />
+    <type />
+    <genre />
+    <acc>true</acc>
+    <add>true</add>
+    <dup>true</dup>
+    <maj>true</maj>
+    <sup>true</sup>
+    <imp>true</imp>
+    <clo>true</clo>
+    <trf>true</trf>
+  </lignemenu>
+  <lignemenu>
+    <libelle_FR>Bons de sortie</libelle_FR>
+    <libelle_UK />
+    <libelle_SP />
+    <pagemenu />
+    <commande>90000:02</commande>
+    <type />
+    <genre />
+    <acc>true</acc>
+    <add>true</add>
+    <dup>true</dup>
+    <maj>true</maj>
+    <sup>true</sup>
+    <imp>true</imp>
+    <clo>true</clo>
+    <trf>true</trf>
+  </lignemenu>
+  <lignemenu>
+    <libelle_FR>Bons d'entrée</libelle_FR>
+    <libelle_UK />
+    <libelle_SP />
+    <pagemenu />
+    <commande>90000:03</commande>
+    <type />
+    <genre />
+    <acc>false</acc>
+    <add>true</add>
+    <dup>true</dup>
+    <maj>true</maj>
+    <sup>true</sup>
+    <imp>true</imp>
+    <clo>true</clo>
+    <trf>true</trf>
+  </lignemenu>
+  <lignemenu>
+    <libelle_FR>Virements internes</libelle_FR>
+    <libelle_UK />
+    <libelle_SP />
+    <pagemenu />
+    <commande>90000:04</commande>
+    <type />
+    <genre />
+    <acc>false</acc>
+    <add>true</add>
+    <dup>true</dup>
+    <maj>true</maj>
+    <sup>true</sup>
+    <imp>true</imp>
+    <clo>true</clo>
+    <trf>true</trf>
+  </lignemenu>
+  <lignemenu>
+    <libelle_FR>Traites Domiciliées</libelle_FR>
+    <libelle_UK />
+    <libelle_SP />
+    <pagemenu />
+    <commande>90000:05</commande>
+    <type />
+    <genre />
+    <acc>false</acc>
+    <add>true</add>
+    <dup>true</dup>
+    <maj>true</maj>
+    <sup>true</sup>
+    <imp>true</imp>
+    <clo>true</clo>
+    <trf>true</trf>
+  </lignemenu>
+  <lignemenu>
+    <libelle_FR>Traites en Portefeuille</libelle_FR>
+    <libelle_UK />
+    <libelle_SP />
+    <pagemenu />
+    <commande>90000:06</commande>
+    <type />
+    <genre />
+    <acc>false</acc>
+    <add>true</add>
+    <dup>true</dup>
+    <maj>true</maj>
+    <sup>true</sup>
+    <imp>true</imp>
+    <clo>true</clo>
+    <trf>true</trf>
+  </lignemenu>
+  <lignemenu>
+    <libelle_FR>Traites Entreprise</libelle_FR>
+    <libelle_UK />
+    <libelle_SP />
+    <pagemenu />
+    <commande>90000:07</commande>
+    <type />
+    <genre />
+    <acc>false</acc>
+    <add>true</add>
+    <dup>true</dup>
+    <maj>true</maj>
+    <sup>true</sup>
+    <imp>true</imp>
+    <clo>true</clo>
+    <trf>true</trf>
+  </lignemenu>
+  <lignemenu>
+    <libelle_FR />
+    <libelle_UK />
+    <libelle_SP />
+    <pagemenu />
+    <commande />
+    <type />
+    <genre />
+    <acc>true</acc>
+    <add>true</add>
+    <dup>true</dup>
+    <maj>true</maj>
+    <sup>true</sup>
+    <imp>true</imp>
+    <clo>true</clo>
+    <trf>true</trf>
+  </lignemenu>
+  <lignemenu>
+    <libelle_FR>Impression Trésorerie</libelle_FR>
+    <libelle_UK />
+    <libelle_SP />
+    <pagemenu />
+    <commande>90000:90</commande>
+    <type />
+    <genre />
+    <acc>true</acc>
+    <add>true</add>
+    <dup>true</dup>
+    <maj>true</maj>
+    <sup>true</sup>
+    <imp>true</imp>
+    <clo>true</clo>
+    <trf>true</trf>
+  </lignemenu>
+  <lignemenu>
+    <libelle_FR />
+    <libelle_UK />
+    <libelle_SP />
+    <pagemenu />
+    <commande />
+    <type />
+    <genre />
+    <acc>true</acc>
+    <add>true</add>
+    <dup>true</dup>
+    <maj>true</maj>
+    <sup>true</sup>
+    <imp>true</imp>
+    <clo>true</clo>
+    <trf>true</trf>
+  </lignemenu>
+  <lignemenu>
+    <libelle_FR>Transfert en comptabilité</libelle_FR>
+    <libelle_UK />
+    <libelle_SP />
+    <pagemenu />
+    <commande>90000:98</commande>
+    <type />
+    <genre />
+    <acc>false</acc>
+    <add>true</add>
+    <dup>true</dup>
+    <maj>true</maj>
+    <sup>true</sup>
+    <imp>true</imp>
+    <clo>true</clo>
+    <trf>true</trf>
+  </lignemenu>
+  <lignemenu>
+    <libelle_FR />
+    <libelle_UK />
+    <libelle_SP />
+    <pagemenu />
+    <commande />
+    <type />
+    <genre />
+    <acc>true</acc>
+    <add>true</add>
+    <dup>true</dup>
+    <maj>true</maj>
+    <sup>true</sup>
+    <imp>true</imp>
+    <clo>true</clo>
+    <trf>true</trf>
+  </lignemenu>
+  <lignemenu>
+    <libelle_FR>Sélection exercice</libelle_FR>
+    <libelle_UK />
+    <libelle_SP />
+    <pagemenu />
+    <commande>90000:99</commande>
+    <type />
+    <genre />
+    <acc>false</acc>
+    <add>true</add>
+    <dup>true</dup>
+    <maj>true</maj>
+    <sup>true</sup>
+    <imp>true</imp>
+    <clo>true</clo>
+    <trf>true</trf>
+  </lignemenu>
+</M90000>
+

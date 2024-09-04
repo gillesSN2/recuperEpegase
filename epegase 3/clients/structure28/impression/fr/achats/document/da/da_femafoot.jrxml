@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="demationFournisseur" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="0" isFloatColumnFooter="true">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="1819"/>
+	<parameter name="requete" class="java.lang.String"/>
+	<parameter name="societe" class="java.lang.String"/>
+	<parameter name="version" class="java.lang.String"/>
+	<parameter name="adresse" class="java.lang.String"/>
+	<parameter name="ville" class="java.lang.String"/>
+	<parameter name="pays" class="java.lang.String"/>
+	<parameter name="logo_1" class="java.lang.String"/>
+	<parameter name="logo_2" class="java.lang.String"/>
+	<parameter name="logo_4" class="java.lang.String"/>
+	<parameter name="telephone_1" class="java.lang.String"/>
+	<parameter name="telephone_2" class="java.lang.String"/>
+	<parameter name="fax" class="java.lang.String"/>
+	<parameter name="site_web" class="java.lang.String"/>
+	<parameter name="mails" class="java.lang.String"/>
+	<parameter name="identification_1" class="java.lang.String"/>
+	<parameter name="identification_2" class="java.lang.String"/>
+	<parameter name="identification_3" class="java.lang.String"/>
+	<parameter name="identification_4" class="java.lang.String"/>
+	<parameter name="identification_5" class="java.lang.String"/>
+	<parameter name="identification_6" class="java.lang.String"/>
+	<parameter name="identification_7" class="java.lang.String"/>
+	<parameter name="identification_8" class="java.lang.String"/>
+	<parameter name="identification_9" class="java.lang.String"/>
+	<parameter name="identification_10" class="java.lang.String"/>
+	<parameter name="banque" class="java.lang.String"/>
+	<parameter name="montant_lettre" class="java.lang.String"/>
+	<queryString language="xPath">
+		<![CDATA[]]>
+	</queryString>
+	<field name="demligCode" class="java.lang.String">
+		<fieldDescription><![CDATA[demligCode]]></fieldDescription>
+	</field>
+	<field name="demligCondition" class="java.lang.String">
+		<fieldDescription><![CDATA[demligCondition]]></fieldDescription>
+	</field>
+	<field name="demligDevise" class="java.lang.String">
+		<fieldDescription><![CDATA[demligDevise]]></fieldDescription>
+	</field>
+	<field name="demligDiam" class="java.lang.Float">
+		<fieldDescription><![CDATA[demligDiam]]></fieldDescription>
+	</field>
+	<field name="demligFamille" class="java.lang.String">
+		<fieldDescription><![CDATA[demligFamille]]></fieldDescription>
+	</field>
+	<field name="demligHaut" class="java.lang.Float">
+		<fieldDescription><![CDATA[demligHaut]]></fieldDescription>
+	</field>
+	<field name="demligId" class="java.lang.Long">
+		<fieldDescription><![CDATA[demligId]]></fieldDescription>
+	</field>
+	<field name="demligLarg" class="java.lang.Float">
+		<fieldDescription><![CDATA[demligLarg]]></fieldDescription>
+	</field>
+	<field name="demligLibelle" class="java.lang.String">
+		<fieldDescription><![CDATA[demligLibelle]]></fieldDescription>
+	</field>
+	<field name="demligLong" class="java.lang.Float">
+		<fieldDescription><![CDATA[demligLong]]></fieldDescription>
+	</field>
+	<field name="demligNb" class="java.lang.Float">
+		<fieldDescription><![CDATA[demligNb]]></fieldDescription>
+	</field>
+	<field name="demligPoidsBrut" class="java.lang.Float">
+		<fieldDescription><![CDATA[demligPoidsBrut]]></fieldDescription>
+	</field>
+	<field name="demligPoidsNet" class="java.lang.Float">
+		<fieldDescription><![CDATA[demligPoidsNet]]></fieldDescription>
+	</field>
+	<field name="demligPr" class="java.lang.Double">
+		<fieldDescription><![CDATA[demligPr]]></fieldDescription>
+	</field>
+	<field name="demligPt" class="java.lang.Double">
+		<fieldDescription><![CDATA[demligPt]]></fieldDescription>
+	</field>
+	<field name="demligPu" class="java.lang.Double">
+		<fieldDescription><![CDATA[demligPu]]></fieldDescription>
+	</field>
+	<field name="demligPump" class="java.lang.Double">
+		<fieldDescription><![CDATA[demligPump]]></fieldDescription>
+	</field>
+	<field name="demligQte" class="java.lang.Float">
+		<fieldDescription><![CDATA[demligQte]]></fieldDescription>
+	</field>
+	<field name="demligQteUtil" class="java.lang.Float">
+		<fieldDescription><![CDATA[demligQteUtil]]></fieldDescription>
+	</field>
+	<field name="demligReference" class="java.lang.String">
+		<fieldDescription><![CDATA[demligReference]]></fieldDescription>
+	</field>
+	<field name="demligTauxTaxe" class="java.lang.Float">
+		<fieldDescription><![CDATA[demligTauxTaxe]]></fieldDescription>
+	</field>
+	<field name="demligTaxe" class="java.lang.String">
+		<fieldDescription><![CDATA[demligTaxe]]></fieldDescription>
+	</field>
+	<field name="demligTtc" class="java.lang.Double">
+		<fieldDescription><![CDATA[demligTtc]]></fieldDescription>
+	</field>
+	<field name="demligTva" class="java.lang.Double">
+		<fieldDescription><![CDATA[demligTva]]></fieldDescription>
+	</field>
+	<field name="demligUnite" class="java.lang.String">
+		<fieldDescription><![CDATA[demligUnite]]></fieldDescription>
+	</field>
+	<field name="demligVolume" class="java.lang.Float">
+		<fieldDescription><![CDATA[demligVolume]]></fieldDescription>
+	</field>
+	<field name="demActivite" class="java.lang.String">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demActivite]]></fieldDescription>
+	</field>
+	<field name="demAnal2" class="java.lang.String">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demAnal2]]></fieldDescription>
+	</field>
+	<field name="demAnal4" class="java.lang.String">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demAnal4]]></fieldDescription>
+	</field>
+	<field name="demAnnexe1" class="java.lang.String">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demAnnexe1]]></fieldDescription>
+	</field>
+	<field name="demAnnexe2" class="java.lang.String">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demAnnexe2]]></fieldDescription>
+	</field>
+	<field name="demBudget" class="java.lang.String">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demBudget]]></fieldDescription>
+	</field>
+	<field name="demBudgetDispo" class="java.lang.Double">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demBudgetDispo]]></fieldDescription>
+	</field>
+	<field name="demBudgetDispoMois" class="java.lang.Double">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demBudgetDispoMois]]></fieldDescription>
+	</field>
+	<field name="demBudgetTreso" class="java.lang.Double">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demBudgetTreso]]></fieldDescription>
+	</field>
+	<field name="demBudgetTresoMois" class="java.lang.Double">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demBudgetTresoMois]]></fieldDescription>
+	</field>
+	<field name="demDate" class="java.util.Date">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demDate]]></fieldDescription>
+	</field>
+	<field name="demDateAnnule" class="java.util.Date">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demDateAnnule]]></fieldDescription>
+	</field>
+	<field name="demDateCreat" class="java.util.Date">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demDateCreat]]></fieldDescription>
+	</field>
+	<field name="demDateImp" class="java.util.Date">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demDateImp]]></fieldDescription>
+	</field>
+	<field name="demDateModif" class="java.util.Date">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demDateModif]]></fieldDescription>
+	</field>
+	<field name="demDateRelance" class="java.util.Date">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demDateRelance]]></fieldDescription>
+	</field>
+	<field name="demDateTransforme" class="java.util.Date">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demDateTransforme]]></fieldDescription>
+	</field>
+	<field name="demDateValide" class="java.util.Date">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demDateValide]]></fieldDescription>
+	</field>
+	<field name="demDateValidite" class="java.util.Date">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demDateValidite]]></fieldDescription>
+	</field>
+	<field name="demDepartement" class="java.lang.String">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demDepartement]]></fieldDescription>
+	</field>
+	<field name="demEtat" class="java.lang.Integer">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demEtat]]></fieldDescription>
+	</field>
+	<field name="demEtatVal" class="java.lang.Integer">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demEtatVal]]></fieldDescription>
+	</field>
+	<field name="demFormule1" class="java.lang.String">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demFormule1]]></fieldDescription>
+	</field>
+	<field name="demFormule2" class="java.lang.String">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demFormule2]]></fieldDescription>
+	</field>
+	<field name="demGele" class="java.lang.Integer">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demGele]]></fieldDescription>
+	</field>
+	<field name="demId" class="java.lang.Long">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demId]]></fieldDescription>
+	</field>
+	<field name="demIdCreateur" class="java.lang.Long">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demIdCreateur]]></fieldDescription>
+	</field>
+	<field name="demIdModif" class="java.lang.Long">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demIdModif]]></fieldDescription>
+	</field>
+	<field name="demIdResponsable" class="java.lang.Long">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demIdResponsable]]></fieldDescription>
+	</field>
+	<field name="demInfo1" class="java.lang.String">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demInfo1]]></fieldDescription>
+	</field>
+	<field name="demInfo10" class="java.lang.String">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demInfo10]]></fieldDescription>
+	</field>
+	<field name="demInfo2" class="java.lang.String">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demInfo2]]></fieldDescription>
+	</field>
+	<field name="demInfo3" class="java.lang.String">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demInfo3]]></fieldDescription>
+	</field>
+	<field name="demInfo4" class="java.lang.String">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demInfo4]]></fieldDescription>
+	</field>
+	<field name="demInfo5" class="java.lang.String">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demInfo5]]></fieldDescription>
+	</field>
+	<field name="demInfo6" class="java.lang.String">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demInfo6]]></fieldDescription>
+	</field>
+	<field name="demInfo7" class="java.lang.String">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demInfo7]]></fieldDescription>
+	</field>
+	<field name="demInfo8" class="java.lang.String">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demInfo8]]></fieldDescription>
+	</field>
+	<field name="demInfo9" class="java.lang.String">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demInfo9]]></fieldDescription>
+	</field>
+	<field name="demModeleImp" class="java.lang.String">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demModeleImp]]></fieldDescription>
+	</field>
+	<field name="demMotifAnnule" class="java.lang.String">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demMotifAnnule]]></fieldDescription>
+	</field>
+	<field name="demNomCreateur" class="java.lang.String">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demNomCreateur]]></fieldDescription>
+	</field>
+	<field name="demNomModif" class="java.lang.String">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demNomModif]]></fieldDescription>
+	</field>
+	<field name="demNomResponsable" class="java.lang.String">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demNomResponsable]]></fieldDescription>
+	</field>
+	<field name="demNum" class="java.lang.String">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demNum]]></fieldDescription>
+	</field>
+	<field name="demObject" class="java.lang.String">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demObject]]></fieldDescription>
+	</field>
+	<field name="demObservation" class="java.lang.String">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demObservation]]></fieldDescription>
+	</field>
+	<field name="demPdv" class="java.lang.String">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demPdv]]></fieldDescription>
+	</field>
+	<field name="demRegion" class="java.lang.String">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demRegion]]></fieldDescription>
+	</field>
+	<field name="demSecteur" class="java.lang.String">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demSecteur]]></fieldDescription>
+	</field>
+	<field name="demSerie" class="java.lang.String">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demSerie]]></fieldDescription>
+	</field>
+	<field name="demService" class="java.lang.String">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demService]]></fieldDescription>
+	</field>
+	<field name="demSite" class="java.lang.String">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demSite]]></fieldDescription>
+	</field>
+	<field name="demTotHt" class="java.lang.Double">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demTotHt]]></fieldDescription>
+	</field>
+	<field name="demTotTtc" class="java.lang.Double">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demTotTtc]]></fieldDescription>
+	</field>
+	<field name="demTotTva" class="java.lang.Double">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demTotTva]]></fieldDescription>
+	</field>
+	<field name="demTypeTransforme" class="java.lang.Integer">
+		<fieldDescription><![CDATA[demandeEnteteAchats.demTypeTransforme]]></fieldDescription>
+	</field>
+	<background>
+		<band height="802">
+			<line>
+				<reportElement stretchType="RelativeToTallestObject" x="162" y="262" width="1" height="313" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="540" y="262" width="1" height="371" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<line>
+				<reportElement x="13" y="665" width="528" height="1"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="12" y="262" width="1" height="371" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToTallestObject" x="115" y="262" width="1" height="313" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<image>
+				<reportElement x="17" y="728" width="90" height="64"/>
+				<imageExpression class="java.lang.String"><![CDATA["C:\\Sun\\AppServer\\domains\\domain1\\config\\epegase\\clients\\structure32\\impression\\fr\\achats\\sous_rapport\\ORANGE.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="113" y="728" width="90" height="64"/>
+				<imageExpression class="java.lang.String"><![CDATA["C:\\Sun\\AppServer\\domains\\domain1\\config\\epegase\\clients\\structure32\\impression\\fr\\achats\\sous_rapport\\FMF.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="199" y="728" width="90" height="64"/>
+				<imageExpression class="java.lang.String"><![CDATA["C:\\Sun\\AppServer\\domains\\domain1\\config\\epegase\\clients\\structure32\\impression\\fr\\achats\\sous_rapport\\IFPjpg.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="380" y="728" width="90" height="64"/>
+				<imageExpression class="java.lang.String"><![CDATA["C:\\Sun\\AppServer\\domains\\domain1\\config\\epegase\\clients\\structure32\\impression\\fr\\achats\\sous_rapport\\ERNESS.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="290" y="728" width="90" height="64"/>
+				<imageExpression class="java.lang.String"><![CDATA["C:\\Sun\\AppServer\\domains\\domain1\\config\\epegase\\clients\\structure32\\impression\\fr\\achats\\sous_rapport\\ORANGE.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="469" y="728" width="90" height="64"/>
+				<imageExpression class="java.lang.String"><![CDATA["C:\\Sun\\AppServer\\domains\\domain1\\config\\epegase\\clients\\structure32\\impression\\fr\\achats\\sous_rapport\\ORANGE.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</background>
+	<title>
+		<band height="110" splitType="Stretch">
+			<staticText>
+				<reportElement x="131" y="35" width="401" height="23"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Avenue du Mali- Hamdallaye ACI 2000 - BP. 1020 Bamako]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="147" y="8" width="358" height="25"/>
+				<textElement>
+					<font fontName="Times New Roman" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FEDERATION MALIENNE DE FOOTBALL]]></text>
+			</staticText>
+			<image scaleImage="FillFrame" hAlign="Center" vAlign="Top">
+				<reportElement x="10" y="5" width="101" height="99"/>
+				<imageExpression class="java.lang.String"><![CDATA[$P{logo_1}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="128" y="59" width="392" height="23"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Membre de la FIFA, de la CAF,de L'UFOA et de l'UZOFOOT 2]]></text>
+			</staticText>
+			<line>
+				<reportElement x="180" y="97" width="301" height="1"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="134" splitType="Stretch">
+			<rectangle>
+				<reportElement mode="Transparent" x="12" y="70" width="528" height="28"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="162" y="70" width="175" height="56"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="12" y="98" width="528" height="28"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="12" y="70" width="103" height="56"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="115" y="70" width="47" height="56"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="14" y="46" width="148" height="18"/>
+				<textElement>
+					<font fontName="Arial" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Demande d'achat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="214" y="78" width="95" height="15"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[suivi par]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="124" y="78" width="30" height="15"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="17" y="78" width="94" height="15"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Numéro]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="120" y="104" width="38" height="12"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{demDate}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="167" y="103" width="166" height="12"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{demNomResponsable}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="21" y="103" width="90" height="12"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{demNum}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="339" y="79" width="166" height="15"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Departement]]></text>
+			</staticText>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="339" y="104" width="197" height="12"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{demDepartement}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="47" splitType="Stretch">
+			<line>
+				<reportElement x="12" y="8" width="1" height="39"/>
+			</line>
+			<line>
+				<reportElement x="115" y="9" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="162" y="9" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="540" y="8" width="1" height="39"/>
+			</line>
+			<line>
+				<reportElement x="12" y="8" width="529" height="1"/>
+			</line>
+			<line>
+				<reportElement x="13" y="42" width="527" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="16" y="17" width="97" height="15" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Référence]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="172" y="17" width="360" height="15" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Description]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="127" y="17" width="31" height="15" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Qte.]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="13">
+			<textField isBlankWhenNull="true">
+				<reportElement x="19" y="1" width="77" height="12"/>
+				<textElement>
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{demligCode}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="169" y="1" width="146" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Arial" size="10" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{demligLibelle}]]></textFieldExpression>
+			</textField>
+			<textField pattern="###0" isBlankWhenNull="true">
+				<reportElement x="122" y="1" width="31" height="12">
+					<printWhenExpression><![CDATA[$F{demligQte}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{demligQte}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="389" y="1" width="61" height="12">
+					<printWhenExpression><![CDATA[]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<lastPageFooter>
+		<band height="249" splitType="Stretch">
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="12" y="8" width="1" height="85" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<line>
+				<reportElement x="12" y="2" width="529" height="1"/>
+			</line>
+			<line>
+				<reportElement x="540" y="8" width="1" height="84"/>
+			</line>
+			<staticText>
+				<reportElement x="46" y="33" width="153" height="20"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Le secretaire Général]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="49" y="129" width="390" height="15"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TEL: +(223) 20 23 88 44 / 20 23 88 46   FAX: +(223) 20 22 42 54]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="141" width="553" height="15"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[site web: www.femafoot.ml - e-mail: malifoot@afribone.net.ml - Cpte Bank of Africa N° 015128001-7 -Bamako  Mali]]></text>
+			</staticText>
+		</band>
+	</lastPageFooter>
+</jasperReport>

@@ -1,0 +1,974 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="recu" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isFloatColumnFooter="true">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="428"/>
+	<style name="ST1" isDefault="true" pattern="">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($V{format_devise}==0)]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" markup="none" pattern="#,##0.00"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($V{format_devise}==1)]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.00"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($V{format_devise}==2)]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0" isItalic="false"/>
+		</conditionalStyle>
+	</style>
+	<parameter name="filtre" class="java.lang.String"/>
+	<parameter name="entete" class="java.lang.String"/>
+	<parameter name="requete" class="java.lang.String"/>
+	<parameter name="societe" class="java.lang.String"/>
+	<parameter name="version" class="java.lang.String"/>
+	<parameter name="adresse" class="java.lang.String"/>
+	<parameter name="ville" class="java.lang.String"/>
+	<parameter name="pays" class="java.lang.String"/>
+	<parameter name="logo_1" class="java.lang.String"/>
+	<parameter name="logo_2" class="java.lang.String"/>
+	<parameter name="logo_4" class="java.lang.String"/>
+	<parameter name="telephone_1" class="java.lang.String"/>
+	<parameter name="telephone_2" class="java.lang.String"/>
+	<parameter name="fax" class="java.lang.String"/>
+	<parameter name="site_web" class="java.lang.String"/>
+	<parameter name="mails" class="java.lang.String"/>
+	<parameter name="identification_1" class="java.lang.String"/>
+	<parameter name="identification_2" class="java.lang.String"/>
+	<parameter name="identification_3" class="java.lang.String"/>
+	<parameter name="identification_4" class="java.lang.String"/>
+	<parameter name="identification_5" class="java.lang.String"/>
+	<parameter name="identification_6" class="java.lang.String"/>
+	<parameter name="identification_7" class="java.lang.String"/>
+	<parameter name="identification_8" class="java.lang.String"/>
+	<parameter name="identification_9" class="java.lang.String"/>
+	<parameter name="identification_10" class="java.lang.String"/>
+	<parameter name="banque" class="java.lang.String"/>
+	<parameter name="montant_lettre" class="java.lang.String"/>
+	<parameter name="signe_signature" class="java.lang.String"/>
+	<queryString language="xPath">
+		<![CDATA[]]>
+	</queryString>
+	<field name="sortCle" class="java.lang.String">
+		<fieldDescription><![CDATA[sortCle]]></fieldDescription>
+	</field>
+	<field name="sortDateCreat" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[sortDateCreat]]></fieldDescription>
+	</field>
+	<field name="sortUserCreat" class="java.lang.Long">
+		<fieldDescription><![CDATA[sortUserCreat]]></fieldDescription>
+	</field>
+	<field name="sortDateModif" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[sortDateModif]]></fieldDescription>
+	</field>
+	<field name="sortUserModif" class="java.lang.Long">
+		<fieldDescription><![CDATA[sortUserModif]]></fieldDescription>
+	</field>
+	<field name="sortNature" class="java.lang.Integer">
+		<fieldDescription><![CDATA[sortNature]]></fieldDescription>
+	</field>
+	<field name="sortDate" class="java.util.Date">
+		<fieldDescription><![CDATA[sortDate]]></fieldDescription>
+	</field>
+	<field name="sortNum" class="java.lang.String">
+		<fieldDescription><![CDATA[sortNum]]></fieldDescription>
+	</field>
+	<field name="sortNomResponsable" class="java.lang.String">
+		<fieldDescription><![CDATA[sortNomResponsable]]></fieldDescription>
+	</field>
+	<field name="sortNomTiers" class="java.lang.String">
+		<fieldDescription><![CDATA[sortNomTiers]]></fieldDescription>
+	</field>
+	<field name="sortIdTiers" class="java.lang.Long">
+		<fieldDescription><![CDATA[sortIdTiers]]></fieldDescription>
+	</field>
+	<field name="sortTypeTiers" class="java.lang.Integer">
+		<fieldDescription><![CDATA[sortTypeTiers]]></fieldDescription>
+	</field>
+	<field name="sortDepotTiers" class="java.lang.Integer">
+		<fieldDescription><![CDATA[sortDepotTiers]]></fieldDescription>
+	</field>
+	<field name="sortSerie" class="java.lang.String">
+		<fieldDescription><![CDATA[sortSerie]]></fieldDescription>
+	</field>
+	<field name="sortLibelle" class="java.lang.String">
+		<fieldDescription><![CDATA[sortLibelle]]></fieldDescription>
+	</field>
+	<field name="sortDevise" class="java.lang.String">
+		<fieldDescription><![CDATA[sortDevise]]></fieldDescription>
+	</field>
+	<field name="sortMontant" class="java.lang.Double">
+		<fieldDescription><![CDATA[sortMontant]]></fieldDescription>
+	</field>
+	<field name="sortTypeReg" class="java.lang.Integer">
+		<fieldDescription><![CDATA[sortTypeReg]]></fieldDescription>
+	</field>
+	<field name="sortActivite" class="java.lang.String">
+		<fieldDescription><![CDATA[sortActivite]]></fieldDescription>
+	</field>
+	<field name="sortSite" class="java.lang.String">
+		<fieldDescription><![CDATA[sortSite]]></fieldDescription>
+	</field>
+	<field name="sortDepartement" class="java.lang.String">
+		<fieldDescription><![CDATA[sortDepartement]]></fieldDescription>
+	</field>
+	<field name="sortService" class="java.lang.String">
+		<fieldDescription><![CDATA[sortService]]></fieldDescription>
+	</field>
+	<field name="sortRegion" class="java.lang.String">
+		<fieldDescription><![CDATA[sortRegion]]></fieldDescription>
+	</field>
+	<field name="sortSecteur" class="java.lang.String">
+		<fieldDescription><![CDATA[sortSecteur]]></fieldDescription>
+	</field>
+	<field name="sortPdv" class="java.lang.String">
+		<fieldDescription><![CDATA[sortPdv]]></fieldDescription>
+	</field>
+	<field name="sortBudget" class="java.lang.String">
+		<fieldDescription><![CDATA[sortBudget]]></fieldDescription>
+	</field>
+	<field name="sortBudgetDispo" class="java.lang.Double">
+		<fieldDescription><![CDATA[sortBudgetDispo]]></fieldDescription>
+	</field>
+	<field name="sortBudgetTreso" class="java.lang.Double">
+		<fieldDescription><![CDATA[sortBudgetTreso]]></fieldDescription>
+	</field>
+	<field name="sortBudgetDispoMois" class="java.lang.Double">
+		<fieldDescription><![CDATA[sortBudgetDispoMois]]></fieldDescription>
+	</field>
+	<field name="sortBudgetTresoMois" class="java.lang.Double">
+		<fieldDescription><![CDATA[sortBudgetTresoMois]]></fieldDescription>
+	</field>
+	<field name="sortDossier" class="java.lang.String">
+		<fieldDescription><![CDATA[sortDossier]]></fieldDescription>
+	</field>
+	<field name="sortParc" class="java.lang.String">
+		<fieldDescription><![CDATA[sortParc]]></fieldDescription>
+	</field>
+	<field name="sortEtat" class="java.lang.Integer">
+		<fieldDescription><![CDATA[sortEtat]]></fieldDescription>
+	</field>
+	<field name="sortActif" class="java.lang.Integer">
+		<fieldDescription><![CDATA[sortActif]]></fieldDescription>
+	</field>
+	<field name="sortModeleImp" class="java.lang.String">
+		<fieldDescription><![CDATA[sortModeleImp]]></fieldDescription>
+	</field>
+	<field name="sortDateImpression" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[sortDateImpression]]></fieldDescription>
+	</field>
+	<field name="sortCodeCaiss" class="java.lang.String">
+		<fieldDescription><![CDATA[sortCodeCaiss]]></fieldDescription>
+	</field>
+	<field name="sortLibCaiss" class="java.lang.String">
+		<fieldDescription><![CDATA[sortLibCaiss]]></fieldDescription>
+	</field>
+	<field name="sortCodeBanq" class="java.lang.String">
+		<fieldDescription><![CDATA[sortCodeBanq]]></fieldDescription>
+	</field>
+	<field name="sortLibBanq" class="java.lang.String">
+		<fieldDescription><![CDATA[sortLibBanq]]></fieldDescription>
+	</field>
+	<field name="sortBanqueTireur" class="java.lang.String">
+		<fieldDescription><![CDATA[sortBanqueTireur]]></fieldDescription>
+	</field>
+	<field name="sortNumChqBdx" class="java.lang.String">
+		<fieldDescription><![CDATA[sortNumChqBdx]]></fieldDescription>
+	</field>
+	<field name="sortEtatVal" class="java.lang.Integer">
+		<fieldDescription><![CDATA[sortEtatVal]]></fieldDescription>
+	</field>
+	<field name="sortGele" class="java.lang.Integer">
+		<fieldDescription><![CDATA[sortGele]]></fieldDescription>
+	</field>
+	<field name="sortDateValide" class="java.sql.Date">
+		<fieldDescription><![CDATA[sortDateValide]]></fieldDescription>
+	</field>
+	<field name="sortCle1Repartition" class="java.lang.String">
+		<fieldDescription><![CDATA[sortCle1Repartition]]></fieldDescription>
+	</field>
+	<field name="sortCle2Repartition" class="java.lang.String">
+		<fieldDescription><![CDATA[sortCle2Repartition]]></fieldDescription>
+	</field>
+	<variable name="date_jour" class="java.util.Date">
+		<variableExpression><![CDATA[new java.util.Date()]]></variableExpression>
+	</variable>
+	<variable name="format_devise" class="java.lang.Integer">
+		<variableExpression><![CDATA[( ($F{sortDevise}.equalsIgnoreCase("XOF")||$F{sortDevise}.equalsIgnoreCase("XAF")) ? 2
+    : ( $F{sortDevise}.equalsIgnoreCase("EUR") ? 1 : 0 ) )]]></variableExpression>
+	</variable>
+	<variable name="dateDoc" class="java.lang.String">
+		<variableExpression><![CDATA[$F{sortDate}.getDate()+"/"+($F{sortDate}.getMonth()+1)+"/"+($F{sortDate}.getYear()+1900)]]></variableExpression>
+	</variable>
+	<detail>
+		<band height="802" splitType="Stretch">
+			<line>
+				<reportElement x="16" y="396" width="529" height="1"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<rectangle>
+				<reportElement mode="Opaque" x="70" y="18" width="165" height="35" forecolor="#808080" backcolor="#808080"/>
+				<graphicElement>
+					<pen lineColor="#FFFFFF"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement x="187" y="141" width="280" height="9"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{sortNomTiers}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="137" y="61" width="59" height="13"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{sortDate}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="73" y="18" width="160" height="16" forecolor="#FFFFFF" backcolor="#808080"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tw Cen MT" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SOMANAP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="76" y="34" width="154" height="18" forecolor="#FFFFFF" backcolor="#808080"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[BP:1694-TEL: 20 21 82 44]]></text>
+			</staticText>
+			<line>
+				<reportElement x="65" y="56" width="440" height="1"/>
+			</line>
+			<textField>
+				<reportElement x="238" y="24" width="95" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{sortNum}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="65" y="15" width="440" height="1"/>
+			</line>
+			<line>
+				<reportElement x="65" y="15" width="1" height="361"/>
+			</line>
+			<line>
+				<reportElement x="504" y="15" width="1" height="361"/>
+			</line>
+			<line>
+				<reportElement x="65" y="376" width="440" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="338" y="24" width="128" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FICHE DE PAIEMENT]]></text>
+			</staticText>
+			<line>
+				<reportElement x="65" y="60" width="140" height="1"/>
+			</line>
+			<line>
+				<reportElement x="65" y="75" width="140" height="1"/>
+			</line>
+			<line>
+				<reportElement x="129" y="60" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement x="204" y="60" width="1" height="15"/>
+			</line>
+			<staticText>
+				<reportElement x="74" y="62" width="41" height="13"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="66" y="83" width="75" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[1. Demandeur]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="66" y="96" width="98" height="13" forecolor="#333333"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Nom du demandeur:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="66" y="109" width="98" height="13" forecolor="#333333"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Service]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="66" y="123" width="110" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[2. Ref. du bénéficiaire]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="66" y="140" width="110" height="13" forecolor="#333333"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Nom du bénéficiaire:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="66" y="156" width="110" height="13" forecolor="#333333"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Contact:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="66" y="177" width="110" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[3. Montant:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="66" y="197" width="110" height="13" forecolor="#333333"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Dépense:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="245" y="197" width="84" height="13" forecolor="#333333"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Montant en lettres]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="66" y="226" width="110" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[4. Mode de paiement]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="66" y="240" width="57" height="13" forecolor="#333333"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Especes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="240" width="57" height="13" forecolor="#333333"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Chèque]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="362" y="240" width="57" height="13" forecolor="#333333"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Virement]]></text>
+			</staticText>
+			<line>
+				<reportElement x="213" y="240" width="1" height="13"/>
+			</line>
+			<line>
+				<reportElement x="357" y="240" width="1" height="13"/>
+			</line>
+			<staticText>
+				<reportElement x="66" y="264" width="110" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[5. Motif du paiement]]></text>
+			</staticText>
+			<rectangle radius="3">
+				<reportElement mode="Transparent" x="169" y="96" width="161" height="13"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineColor="#666666"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="3">
+				<reportElement x="169" y="109" width="161" height="13"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineColor="#666666"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="3">
+				<reportElement x="415" y="96" width="65" height="13"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineColor="#666666"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="3">
+				<reportElement x="415" y="109" width="65" height="13"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineColor="#666666"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="3">
+				<reportElement x="415" y="83" width="65" height="13"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineColor="#666666"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="370" y="83" width="45" height="13" forecolor="#333333"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Budget]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="96" width="45" height="13" forecolor="#333333"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[N° Dossier]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="110" width="45" height="13" forecolor="#333333"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Analytique]]></text>
+			</staticText>
+			<line>
+				<reportElement x="365" y="88" width="1" height="30"/>
+			</line>
+			<line>
+				<reportElement x="75" y="92" width="41" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineColor="#666666"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="75" y="132" width="68" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineColor="#666666"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="75" y="186" width="28" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineColor="#666666"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="75" y="235" width="65" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineColor="#666666"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="75" y="273" width="63" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineColor="#666666"/>
+				</graphicElement>
+			</line>
+			<rectangle radius="3">
+				<reportElement x="425" y="240" width="55" height="13"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineColor="#666666"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="3">
+				<reportElement x="278" y="240" width="55" height="13"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineColor="#666666"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="3">
+				<reportElement x="127" y="240" width="55" height="13"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineColor="#666666"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="3">
+				<reportElement x="335" y="191" width="150" height="26"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineColor="#666666"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="3">
+				<reportElement x="185" y="264" width="295" height="26"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineColor="#666666"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="76" y="311" width="75" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Demandeur]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="262" y="311" width="37" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[D.F.C]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="425" y="311" width="42" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[D.G.A]]></text>
+			</staticText>
+			<rectangle radius="3">
+				<reportElement x="426" y="646" width="55" height="13"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineColor="#666666"/>
+				</graphicElement>
+			</rectangle>
+			<line>
+				<reportElement x="66" y="782" width="440" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="371" y="515" width="45" height="13" forecolor="#333333"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Analytique]]></text>
+			</staticText>
+			<rectangle radius="3">
+				<reportElement x="416" y="502" width="65" height="13"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineColor="#666666"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="67" y="529" width="110" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[2. Ref. du bénéficiaire]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="263" y="717" width="37" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[D.F.C]]></text>
+			</staticText>
+			<rectangle radius="3">
+				<reportElement mode="Transparent" x="170" y="502" width="161" height="13"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineColor="#666666"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="3">
+				<reportElement x="186" y="670" width="295" height="26"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineColor="#666666"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="75" y="468" width="41" height="13"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="77" y="717" width="75" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Demandeur]]></text>
+			</staticText>
+			<line>
+				<reportElement x="130" y="466" width="1" height="15"/>
+			</line>
+			<staticText>
+				<reportElement x="67" y="619" width="110" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[4. Mode de paiement]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="67" y="502" width="98" height="13" forecolor="#333333"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Nom du demandeur:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="243" y="603" width="85" height="13" forecolor="#333333"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Montant en lettres]]></text>
+			</staticText>
+			<rectangle radius="3">
+				<reportElement x="416" y="489" width="65" height="13"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineColor="#666666"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="67" y="562" width="110" height="13" forecolor="#333333"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Contact:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="73" y="424" width="160" height="16" forecolor="#FFFFFF" backcolor="#808080"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SO.MA.NAP	]]></text>
+			</staticText>
+			<line>
+				<reportElement x="76" y="592" width="28" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineColor="#666666"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="66" y="462" width="440" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="339" y="430" width="128" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FICHE DE PAIEMENT]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="239" y="430" width="95" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{sortNum}]]></textFieldExpression>
+			</textField>
+			<rectangle radius="3">
+				<reportElement x="331" y="597" width="150" height="26"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineColor="#666666"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="3">
+				<reportElement x="416" y="515" width="65" height="13"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineColor="#666666"/>
+				</graphicElement>
+			</rectangle>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="138" y="467" width="59" height="13"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{sortDate}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="214" y="646" width="1" height="13"/>
+			</line>
+			<staticText>
+				<reportElement x="67" y="489" width="75" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[1. Demandeur]]></text>
+			</staticText>
+			<line>
+				<reportElement x="76" y="498" width="41" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineColor="#666666"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="67" y="546" width="110" height="13" forecolor="#333333"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Nom du bénéficiaire:]]></text>
+			</staticText>
+			<rectangle radius="3">
+				<reportElement x="126" y="646" width="55" height="13"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineColor="#666666"/>
+				</graphicElement>
+			</rectangle>
+			<line>
+				<reportElement x="205" y="466" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement x="76" y="679" width="63" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineColor="#666666"/>
+				</graphicElement>
+			</line>
+			<rectangle radius="3">
+				<reportElement x="170" y="515" width="161" height="13"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineColor="#666666"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Opaque" x="71" y="424" width="165" height="35" forecolor="#808080" backcolor="#808080"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="371" y="489" width="45" height="13" forecolor="#333333"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Budget]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="221" y="646" width="57" height="13" forecolor="#333333"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Chèque]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="363" y="646" width="57" height="13" forecolor="#333333"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Virement]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="426" y="717" width="41" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[D.G.A]]></text>
+			</staticText>
+			<line>
+				<reportElement x="505" y="421" width="1" height="361"/>
+			</line>
+			<staticText>
+				<reportElement x="67" y="646" width="57" height="13" forecolor="#333333"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Especes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="371" y="502" width="45" height="13" forecolor="#333333"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[N° Dossier]]></text>
+			</staticText>
+			<line>
+				<reportElement x="359" y="646" width="1" height="13"/>
+			</line>
+			<staticText>
+				<reportElement x="67" y="583" width="110" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[3. Montant:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="66" y="466" width="140" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="67" y="515" width="98" height="13" forecolor="#333333"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Service]]></text>
+			</staticText>
+			<rectangle radius="3">
+				<reportElement x="279" y="646" width="55" height="13"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineColor="#666666"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="67" y="671" width="110" height="13"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[5. Motif du paiement]]></text>
+			</staticText>
+			<line>
+				<reportElement x="76" y="537" width="65" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineColor="#666666"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="67" y="603" width="85" height="13" forecolor="#333333"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Dépense:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="76" y="627" width="65" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineColor="#666666"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="65" y="422" width="1" height="361"/>
+			</line>
+			<line>
+				<reportElement x="65" y="480" width="140" height="1"/>
+			</line>
+			<line>
+				<reportElement x="65" y="421" width="440" height="1"/>
+			</line>
+			<line>
+				<reportElement x="365" y="494" width="1" height="30"/>
+			</line>
+			<rectangle radius="3">
+				<reportElement x="180" y="545" width="300" height="13"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineColor="#666666"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="3">
+				<reportElement mode="Transparent" x="180" y="139" width="300" height="13"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineColor="#666666"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement x="187" y="547" width="280" height="9"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{sortNomTiers}]]></textFieldExpression>
+			</textField>
+			<rectangle radius="3">
+				<reportElement mode="Transparent" x="178" y="196" width="64" height="13"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineColor="#666666"/>
+				</graphicElement>
+			</rectangle>
+			<textField isBlankWhenNull="true">
+				<reportElement style="ST1" x="169" y="603" width="60" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{sortMontant}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="ST1" x="184" y="197" width="52" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{sortMontant}]]></textFieldExpression>
+			</textField>
+			<rectangle radius="3">
+				<reportElement mode="Transparent" x="167" y="602" width="64" height="11"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineColor="#666666"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement x="191" y="673" width="281" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{sortLibelle}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="193" y="267" width="281" height="20"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{sortLibelle}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="175" y="502" width="142" height="10"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{sortNomResponsable}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="150" y="241" width="7" height="10"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[X]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="152" y="648" width="7" height="10"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[X]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="340" y="196" width="140" height="18"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{montant_lettre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="601" width="140" height="18"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{montant_lettre}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="73" y="426" width="160" height="16" forecolor="#FFFFFF" backcolor="#808080"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tw Cen MT" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SOMANAP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="76" y="440" width="154" height="18" forecolor="#FFFFFF" backcolor="#808080"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[BP:1694-TEL: 20 21 82 44]]></text>
+			</staticText>
+			<textField pattern="">
+				<reportElement x="436" y="471" width="49" height="10"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{sortDevise}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="98" width="143" height="9"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{sortNomResponsable}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="422" y="516" width="57" height="10"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{sortCle1Repartition}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="419" y="110" width="57" height="10"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{sortCle1Repartition}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

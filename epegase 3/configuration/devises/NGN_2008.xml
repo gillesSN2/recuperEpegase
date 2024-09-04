@@ -1,0 +1,939 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NGN>
+
+	<historique>
+		<date>2008/07/17</date>
+		<taux1>0.0053730103</taux1>
+		<taux2>186.1154062220</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/07/18</date>
+		<taux1>0.0053630831</taux1>
+		<taux2>186.4599126520</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/07/19</date>
+		<taux1>0.0053582502</taux1>
+		<taux2>186.6280910320</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/07/20</date>
+		<taux1>0.0053637728</taux1>
+		<taux2>186.4359338520</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/07/21</date>
+		<taux1>0.0053455715</taux1>
+		<taux2>187.7073669900</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/07/22</date>
+		<taux1>0.0053577328</taux1>
+		<taux2>186.6461137500</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/07/23</date>
+		<taux1>0.0054008014</taux1>
+		<taux2>185.1577069910</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/07/24</date>
+		<taux1>0.0054261007</taux1>
+		<taux2>184.2944064750</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/07/25</date>
+		<taux1>0.0054113622</taux1>
+		<taux2>184.7963514580</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/07/26</date>
+		<taux1>0.0054177881</taux1>
+		<taux2>184.5771713980</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/07/27</date>
+		<taux1>0.0054044693</taux1>
+		<taux2>185.3204325000</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/07/28</date>
+		<taux1>0.0053910201</taux1>
+		<taux2>185.4936515890</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/07/29</date>
+		<taux1>0.0054580145</taux1>
+		<taux2>183.2168095850</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/07/30</date>
+		<taux1>0.0054547291</taux1>
+		<taux2>183.3271609590</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/07/31</date>
+		<taux1>0.0054427697</taux1>
+		<taux2>183.7299867050</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/08/01</date>
+		<taux1>0.0054615195</taux1>
+		<taux2>183.9922630800</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/08/02</date>
+		<taux1>0.0054572242</taux1>
+		<taux2>183.2433432230</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/08/03</date>
+		<taux1>0.0054589042</taux1>
+		<taux2>183.1869491920</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/08/04</date>
+		<taux1>0.0054589042</taux1>
+		<taux2>183.1869491920</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/08/06</date>
+		<taux1>0.0055146663</taux1>
+		<taux2>181.3346364850</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/08/07</date>
+		<taux1>0.0055410355</taux1>
+		<taux2>180.4716833210</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/08/08</date>
+		<taux1>0.0056615859</taux1>
+		<taux2>176.6289563280</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/08/09</date>
+		<taux1>0.0056476213</taux1>
+		<taux2>177.6569765800</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/08/10</date>
+		<taux1>0.0056612041</taux1>
+		<taux2>176.6408664190</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/08/11</date>
+		<taux1>0.0056976099</taux1>
+		<taux2>175.5121916130</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/08/12</date>
+		<taux1>0.0057055641</taux1>
+		<taux2>175.2675090420</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/08/13</date>
+		<taux1>0.0056868928</taux1>
+		<taux2>175.8429492680</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/08/14</date>
+		<taux1>0.0057327436</taux1>
+		<taux2>174.4365483180</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/08/15</date>
+		<taux1>0.0057884845</taux1>
+		<taux2>172.7567911740</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/08/16</date>
+		<taux1>0.0057799830</taux1>
+		<taux2>173.1088823600</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/08/17</date>
+		<taux1>0.0057836488</taux1>
+		<taux2>172.9012313920</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/08/18</date>
+		<taux1>0.0057815445</taux1>
+		<taux2>172.9641613800</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/08/19</date>
+		<taux1>0.0057505873</taux1>
+		<taux2>173.8952806920</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/08/20</date>
+		<taux1>0.0057724713</taux1>
+		<taux2>173.2360285880</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/08/21</date>
+		<taux1>0.0057075989</taux1>
+		<taux2>175.2050235240</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/08/22</date>
+		<taux1>0.0057517623</taux1>
+		<taux2>173.8597580540</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/08/23</date>
+		<taux1>0.0057401997</taux1>
+		<taux2>174.2099671840</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/08/24</date>
+		<taux1>0.0057454095</taux1>
+		<taux2>174.5199628400</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/08/25</date>
+		<taux1>0.0057604302</taux1>
+		<taux2>173.5981446000</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/08/26</date>
+		<taux1>0.0057991822</taux1>
+		<taux2>172.4381079430</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/08/27</date>
+		<taux1>0.0057766793</taux1>
+		<taux2>173.1098356290</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/08/28</date>
+		<taux1>0.0057832607</taux1>
+		<taux2>172.9128355720</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/08/29</date>
+		<taux1>0.0058021830</taux1>
+		<taux2>172.3489242240</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/08/30</date>
+		<taux1>0.0057782784</taux1>
+		<taux2>173.6192711100</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/08/31</date>
+		<taux1>0.0057887466</taux1>
+		<taux2>172.7489668280</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/09/01</date>
+		<taux1>0.0058213233</taux1>
+		<taux2>171.7822481670</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/09/02</date>
+		<taux1>0.0058580709</taux1>
+		<taux2>170.7046597280</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/09/03</date>
+		<taux1>0.0058638113</taux1>
+		<taux2>170.5375484180</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/09/04</date>
+		<taux1>0.0059342183</taux1>
+		<taux2>168.5141908230</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/09/05</date>
+		<taux1>0.0059677094</taux1>
+		<taux2>167.5684810610</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/09/07</date>
+		<taux1>0.0059677094</taux1>
+		<taux2>167.5684810610</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/09/08</date>
+		<taux1>0.0060245274</taux1>
+		<taux2>165.9881226680</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/09/09</date>
+		<taux1>0.0060084505</taux1>
+		<taux2>166.4322593860</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/09/10</date>
+		<taux1>0.0060578276</taux1>
+		<taux2>165.7567923600</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/09/11</date>
+		<taux1>0.0060994564</taux1>
+		<taux2>163.9490352020</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/09/12</date>
+		<taux1>0.0059850252</taux1>
+		<taux2>167.8367548100</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/09/13</date>
+		<taux1>0.0060118202</taux1>
+		<taux2>166.3389742280</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/09/14</date>
+		<taux1>0.0059579815</taux1>
+		<taux2>167.8420782690</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/09/15</date>
+		<taux1>0.0059889722</taux1>
+		<taux2>166.9735586490</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/09/16</date>
+		<taux1>0.0060105073</taux1>
+		<taux2>166.3753080360</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/09/17</date>
+		<taux1>0.0059221567</taux1>
+		<taux2>168.8574025240</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/09/18</date>
+		<taux1>0.0059272209</taux1>
+		<taux2>168.7131310660</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/09/19</date>
+		<taux1>0.0058613406</taux1>
+		<taux2>170.6094324180</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/09/20</date>
+		<taux1>0.0058930469</taux1>
+		<taux2>169.6915040180</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/09/21</date>
+		<taux1>0.0058621860</taux1>
+		<taux2>170.5848281810</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/09/22</date>
+		<taux1>0.0057386578</taux1>
+		<taux2>174.2567749910</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/09/23</date>
+		<taux1>0.0057752708</taux1>
+		<taux2>173.1520545170</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/09/24</date>
+		<taux1>0.0058029199</taux1>
+		<taux2>172.3270372660</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/09/25</date>
+		<taux1>0.0058133493</taux1>
+		<taux2>172.1787514300</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/09/26</date>
+		<taux1>0.0058169633</taux1>
+		<taux2>171.9110024290</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/09/27</date>
+		<taux1>0.0058197510</taux1>
+		<taux2>171.8286576330</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/09/28</date>
+		<taux1>0.0058201742</taux1>
+		<taux2>171.8161637850</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/09/29</date>
+		<taux1>0.0058823264</taux1>
+		<taux2>170.7657930000</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/09/30</date>
+		<taux1>0.0060460445</taux1>
+		<taux2>165.3973945110</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/10/01</date>
+		<taux1>0.0060594862</taux1>
+		<taux2>165.3049251300</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/10/02</date>
+		<taux1>0.0061468739</taux1>
+		<taux2>162.6843200430</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/10/03</date>
+		<taux1>0.0061484675</taux1>
+		<taux2>162.6421535180</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/10/04</date>
+		<taux1>0.0061569750</taux1>
+		<taux2>162.4174207380</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/10/05</date>
+		<taux1>0.0062141871</taux1>
+		<taux2>160.9220946740</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/10/06</date>
+		<taux1>0.0063119132</taux1>
+		<taux2>158.4305695550</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/10/07</date>
+		<taux1>0.0062340323</taux1>
+		<taux2>160.4098189450</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/10/08</date>
+		<taux1>0.0062142144</taux1>
+		<taux2>160.9213880490</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/10/09</date>
+		<taux1>0.0062303899</taux1>
+		<taux2>160.5035976340</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/10/10</date>
+		<taux1>0.0063779531</taux1>
+		<taux2>156.7901143150</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/10/11</date>
+		<taux1>0.0062814984</taux1>
+		<taux2>159.1976840880</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/10/12</date>
+		<taux1>0.0062910597</taux1>
+		<taux2>158.9557315860</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/10/13</date>
+		<taux1>0.0062814571</taux1>
+		<taux2>159.1987320770</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/10/14</date>
+		<taux1>0.0062254212</taux1>
+		<taux2>160.6317007420</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/10/15</date>
+		<taux1>0.0062806367</taux1>
+		<taux2>159.2195253790</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/10/16</date>
+		<taux1>0.0063086972</taux1>
+		<taux2>158.5113333430</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/10/17</date>
+		<taux1>0.0063157401</taux1>
+		<taux2>158.3345710090</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/10/18</date>
+		<taux1>0.0063019557</taux1>
+		<taux2>158.6808986020</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/10/19</date>
+		<taux1>0.0063257927</taux1>
+		<taux2>158.8295559900</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/10/20</date>
+		<taux1>0.0063682739</taux1>
+		<taux2>157.2842134800</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/10/21</date>
+		<taux1>0.0064657681</taux1>
+		<taux2>154.6606649450</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/10/22</date>
+		<taux1>0.0065973846</taux1>
+		<taux2>151.5752175070</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/10/23</date>
+		<taux1>0.0065945349</taux1>
+		<taux2>151.6407176690</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/10/24</date>
+		<taux1>0.0067120691</taux1>
+		<taux2>148.9853559350</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/10/25</date>
+		<taux1>0.0066723582</taux1>
+		<taux2>149.8720507690</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/10/26</date>
+		<taux1>0.0067418560</taux1>
+		<taux2>148.3271067200</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/10/27</date>
+		<taux1>0.0067655586</taux1>
+		<taux2>147.8074544640</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/10/28</date>
+		<taux1>0.0067360349</taux1>
+		<taux2>148.4552869980</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/10/29</date>
+		<taux1>0.0066095892</taux1>
+		<taux2>151.2953322890</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/10/30</date>
+		<taux1>0.0065446207</taux1>
+		<taux2>152.7972424970</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/10/31</date>
+		<taux1>0.0066636462</taux1>
+		<taux2>150.6799144200</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/11/01</date>
+		<taux1>0.0066904420</taux1>
+		<taux2>149.4669565600</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/11/02</date>
+		<taux1>0.0066553208</taux1>
+		<taux2>150.2557174380</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/11/03</date>
+		<taux1>0.0067303320</taux1>
+		<taux2>148.5810801310</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/11/04</date>
+		<taux1>0.0065640801</taux1>
+		<taux2>152.3442702100</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/11/05</date>
+		<taux1>0.0065255380</taux1>
+		<taux2>153.2440690770</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/11/06</date>
+		<taux1>0.0066724586</taux1>
+		<taux2>149.8697949880</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/11/07</date>
+		<taux1>0.0066650084</taux1>
+		<taux2>150.3731942400</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/11/08</date>
+		<taux1>0.0066359738</taux1>
+		<taux2>150.6937846880</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/11/09</date>
+		<taux1>0.0066589662</taux1>
+		<taux2>150.1734613680</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/11/10</date>
+		<taux1>0.0066568922</taux1>
+		<taux2>150.2202475030</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/11/11</date>
+		<taux1>0.0067684173</taux1>
+		<taux2>147.7450271290</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/11/12</date>
+		<taux1>0.0067894811</taux1>
+		<taux2>147.2866607910</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/11/23</date>
+		<taux1>0.0067426255</taux1>
+		<taux2>148.3101797384</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/11/24</date>
+		<taux1>0.0065899359</taux1>
+		<taux2>151.7465454402</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/11/25</date>
+		<taux1>0.0065055170</taux1>
+		<taux2>153.7156841339</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/11/26</date>
+		<taux1>0.0065766974</taux1>
+		<taux2>152.5200142220</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/11/27</date>
+		<taux1>0.0064873099</taux1>
+		<taux2>154.1470990410</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/11/28</date>
+		<taux1>0.0066088703</taux1>
+		<taux2>151.3117900603</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/11/29</date>
+		<taux1>0.0065916807</taux1>
+		<taux2>151.7063777237</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/11/30</date>
+		<taux1>0.0065836121</taux1>
+		<taux2>151.8923017817</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/12/01</date>
+		<taux1>0.0064275351</taux1>
+		<taux2>155.5806372429</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/12/02</date>
+		<taux1>0.0062079848</taux1>
+		<taux2>161.8286992410</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/12/03</date>
+		<taux1>0.0062146475</taux1>
+		<taux2>160.9101735050</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/12/04</date>
+		<taux1>0.0062885103</taux1>
+		<taux2>159.2017374400</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/12/05</date>
+		<taux1>0.0063062750</taux1>
+		<taux2>158.5722146653</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/12/06</date>
+		<taux1>0.0063218230</taux1>
+		<taux2>158.1822211415</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/12/07</date>
+		<taux1>0.0062913035</taux1>
+		<taux2>158.9495715532</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/12/08</date>
+		<taux1>0.0059382378</taux1>
+		<taux2>168.4001263486</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/12/09</date>
+		<taux1>0.0059577953</taux1>
+		<taux2>167.8473232341</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/12/10</date>
+		<taux1>0.0058670189</taux1>
+		<taux2>170.4443107276</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/12/11</date>
+		<taux1>0.0055653014</taux1>
+		<taux2>179.6847881309</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/12/12</date>
+		<taux1>0.0055393938</taux1>
+		<taux2>180.5251689915</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/12/13</date>
+		<taux1>0.0055114716</taux1>
+		<taux2>181.4397444953</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/12/14</date>
+		<taux1>0.0055235159</taux1>
+		<taux2>181.4410745070</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/12/15</date>
+		<taux1>0.0054609036</taux1>
+		<taux2>183.1198775546</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/12/16</date>
+		<taux1>0.0053007905</taux1>
+		<taux2>188.6511089974</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/12/17</date>
+		<taux1>0.0052403545</taux1>
+		<taux2>190.8267853508</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/12/18</date>
+		<taux1>0.0052289641</taux1>
+		<taux2>191.2424669719</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/12/19</date>
+		<taux1>0.0054348693</taux1>
+		<taux2>183.9970663967</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/12/20</date>
+		<taux1>0.0053778359</taux1>
+		<taux2>185.9484037423</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/12/21</date>
+		<taux1>0.0054184082</taux1>
+		<taux2>184.5560467429</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/12/22</date>
+		<taux1>0.0051577869</taux1>
+		<taux2>193.8816062454</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/12/23</date>
+		<taux1>0.0051528831</taux1>
+		<taux2>194.6611346320</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/12/24</date>
+		<taux1>0.0051283235</taux1>
+		<taux2>194.9954981174</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/12/25</date>
+		<taux1>0.0050839138</taux1>
+		<taux2>196.6988494706</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/12/26</date>
+		<taux1>0.0052022416</taux1>
+		<taux2>192.2248283530</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/12/27</date>
+		<taux1>0.0052202936</taux1>
+		<taux2>191.5601077098</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/12/28</date>
+		<taux1>0.0052023035</taux1>
+		<taux2>192.2225423979</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/12/29</date>
+		<taux1>0.0051390828</taux1>
+		<taux2>194.5872520227</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/12/30</date>
+		<taux1>0.0052182147</taux1>
+		<taux2>191.6364239567</taux2>
+	</historique>
+
+	<historique>
+		<date>2008/12/31</date>
+		<taux1>0.0052015941</taux1>
+		<taux2>192.2487558768</taux2>
+	</historique>
+</NGN>

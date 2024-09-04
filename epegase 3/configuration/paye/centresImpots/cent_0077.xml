@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<impot>
+
+	<centre>
+		<code>10</code>
+		<lib_FR>LIBREVILLE COMMUNE</lib_FR>
+		<lib_UK>LIBREVILLE COMMUNE</lib_UK>
+		<lib_SP>LIBREVILLE COMMUNE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>11</code>
+		<lib_FR>LIBREVILLE DEPARTEMENT</lib_FR>
+		<lib_UK>LIBREVILLE DEPARTEMENT</lib_UK>
+		<lib_SP>LIBREVILLE DEPARTEMENT</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>12</code>
+		<lib_FR>COCOBEACH</lib_FR>
+		<lib_UK>COCOBEACH</lib_UK>
+		<lib_SP>COCOBEACH</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>13</code>
+		<lib_FR>KANGO</lib_FR>
+		<lib_UK>KANGO</lib_UK>
+		<lib_SP>KANGO</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>15</code>
+		<lib_FR>OWENDO</lib_FR>
+		<lib_UK>OWENDO</lib_UK>
+		<lib_SP>OWENDO</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>17</code>
+		<lib_FR>BOUMANGO</lib_FR>
+		<lib_UK>BOUMANGO</lib_UK>
+		<lib_SP>BOUMANGO</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>18</code>
+		<lib_FR>NGOUONI</lib_FR>
+		<lib_UK>NGOUONI</lib_UK>
+		<lib_SP>NGOUONI</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>19</code>
+		<lib_FR>ONGA</lib_FR>
+		<lib_UK>ONGA</lib_UK>
+		<lib_SP>ONGA</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>20</code>
+		<lib_FR>FRANCEVILLE COMMUNE</lib_FR>
+		<lib_UK>FRANCEVILLE COMMUNE</lib_UK>
+		<lib_SP>FRANCEVILLE COMMUNE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>21</code>
+		<lib_FR>FRANCEVILLE DEPARTEMENT</lib_FR>
+		<lib_UK>FRANCEVILLE DEPARTEMENT</lib_UK>
+		<lib_SP>FRANCEVILLE DEPARTEMENT</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>22</code>
+		<lib_FR>LECONI</lib_FR>
+		<lib_UK>LECONI</lib_UK>
+		<lib_SP>LECONI</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>23</code>
+		<lib_FR>MOANDA DEPARTEMENT</lib_FR>
+		<lib_UK>MOANDA DEPARTEMENT</lib_UK>
+		<lib_SP>MOANDA DEPARTEMENT</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>24</code>
+		<lib_FR>OKONDJA</lib_FR>
+		<lib_UK>OKONDJA</lib_UK>
+		<lib_SP>OKONDJA</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>25</code>
+		<lib_FR>AKIENI</lib_FR>
+		<lib_UK>AKIENI</lib_UK>
+		<lib_SP>AKIENI</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>26</code>
+		<lib_FR>BAKOUBA</lib_FR>
+		<lib_UK>BAKOUBA</lib_UK>
+		<lib_SP>BAKOUBA</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>27</code>
+		<lib_FR>BONGOVILLE</lib_FR>
+		<lib_UK>BONGOVILLE</lib_UK>
+		<lib_SP>BONGOVILLE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>28</code>
+		<lib_FR>MOUNANA COMMUNE</lib_FR>
+		<lib_UK>MOUNANA COMMUNE</lib_UK>
+		<lib_SP>MOUNANA COMMUNE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>29</code>
+		<lib_FR>MOANDA COMMUNE</lib_FR>
+		<lib_UK>MOANDA COMMUNE</lib_UK>
+		<lib_SP>MOANDA COMMUNE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>30</code>
+		<lib_FR>LAMBARENE COMMUNE</lib_FR>
+		<lib_UK>LAMBARENE COMMUNE</lib_UK>
+		<lib_SP>LAMBARENE COMMUNE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>31</code>
+		<lib_FR>LAMBARENE DEPARTEMENT</lib_FR>
+		<lib_UK>LAMBARENE DEPARTEMENT</lib_UK>
+		<lib_SP>LAMBARENE DEPARTEMENT</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>32</code>
+		<lib_FR>NDJOLE</lib_FR>
+		<lib_UK>NDJOLE</lib_UK>
+		<lib_SP>NDJOLE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>39</code>
+		<lib_FR>MOUGALABA</lib_FR>
+		<lib_UK>MOUGALABA</lib_UK>
+		<lib_SP>MOUGALABA</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>40</code>
+		<lib_FR>MOULI COMMUNE</lib_FR>
+		<lib_UK>MOULI COMMUNE</lib_UK>
+		<lib_SP>MOULI COMMUNE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>41</code>
+		<lib_FR>MOUILA DEPARTEMENT</lib_FR>
+		<lib_UK>MOUILA DEPARTEMENT</lib_UK>
+		<lib_SP>MOUILA DEPARTEMENT</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>42</code>
+		<lib_FR>FOUGAMOU DEPARTEMENT</lib_FR>
+		<lib_UK>FOUGAMOU DEPARTEMENT</lib_UK>
+		<lib_SP>FOUGAMOU DEPARTEMENT</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>43</code>
+		<lib_FR>LEBAMBA</lib_FR>
+		<lib_UK>LEBAMBA</lib_UK>
+		<lib_SP>LEBAMBA</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>44</code>
+		<lib_FR>MANDJI</lib_FR>
+		<lib_UK>MANDJI</lib_UK>
+		<lib_SP>MANDJI</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>45</code>
+		<lib_FR>MBIGOU</lib_FR>
+		<lib_UK>MBIGOU</lib_UK>
+		<lib_SP>MBIGOU</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>46</code>
+		<lib_FR>MIMONGO</lib_FR>
+		<lib_UK>MIMONGO</lib_UK>
+		<lib_SP>MIMONGO</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>47</code>
+		<lib_FR>NDENDE</lib_FR>
+		<lib_UK>NDENDE</lib_UK>
+		<lib_SP>NDENDE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>48</code>
+		<lib_FR>MALINGA</lib_FR>
+		<lib_UK>MALINGA</lib_UK>
+		<lib_SP>MALINGA</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>49</code>
+		<lib_FR>FOUGAMOU COMMUNE</lib_FR>
+		<lib_UK>FOUGAMOU COMMUNE</lib_UK>
+		<lib_SP>FOUGAMOU COMMUNE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>50</code>
+		<lib_FR>TCHIBANGA COMMUNE</lib_FR>
+		<lib_UK>TCHIBANGA COMMUNE</lib_UK>
+		<lib_SP>TCHIBANGA COMMUNE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>51</code>
+		<lib_FR>TCHIBANGA DEPARTEMENT</lib_FR>
+		<lib_UK>TCHIBANGA DEPARTEMENT</lib_UK>
+		<lib_SP>TCHIBANGA DEPARTEMENT</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>52</code>
+		<lib_FR>MAYUMBA</lib_FR>
+		<lib_UK>MAYUMBA</lib_UK>
+		<lib_SP>MAYUMBA</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>53</code>
+		<lib_FR>MOABI</lib_FR>
+		<lib_UK>MOABI</lib_UK>
+		<lib_SP>MOABI</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>54</code>
+		<lib_FR>NDINDI</lib_FR>
+		<lib_UK>NDINDI</lib_UK>
+		<lib_SP>NDINDI</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>55</code>
+		<lib_FR>MABANDA</lib_FR>
+		<lib_UK>MABANDA</lib_UK>
+		<lib_SP>MABANDA</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>60</code>
+		<lib_FR>MAKOKOU COMMUNE</lib_FR>
+		<lib_UK>MAKOKOU COMMUNE</lib_UK>
+		<lib_SP>MAKOKOU COMMUNE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>61</code>
+		<lib_FR>MAKOUKOU DEPARTEMENT</lib_FR>
+		<lib_UK>MAKOUKOU DEPARTEMENT</lib_UK>
+		<lib_SP>MAKOUKOU DEPARTEMENT</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>62</code>
+		<lib_FR>BOOUE</lib_FR>
+		<lib_UK>BOOUE</lib_UK>
+		<lib_SP>BOOUE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>63</code>
+		<lib_FR>MEKAMBO</lib_FR>
+		<lib_UK>MEKAMBO</lib_UK>
+		<lib_SP>MEKAMBO</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>64</code>
+		<lib_FR>OVAN</lib_FR>
+		<lib_UK>OVAN</lib_UK>
+		<lib_SP>OVAN</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>70</code>
+		<lib_FR>KOULA MOUTOU COMMUNE</lib_FR>
+		<lib_UK>KOULA MOUTOU COMMUNE</lib_UK>
+		<lib_SP>KOULA MOUTOU COMMUNE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>71</code>
+		<lib_FR>KOULA MOUTOU DEPARTEMENT</lib_FR>
+		<lib_UK>KOULA MOUTOU DEPARTEMENT</lib_UK>
+		<lib_SP>KOULA MOUTOU DEPARTEMENT</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>72</code>
+		<lib_FR>LASTOURVILLE</lib_FR>
+		<lib_UK>LASTOURVILLE</lib_UK>
+		<lib_SP>LASTOURVILLE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>73</code>
+		<lib_FR>PANA</lib_FR>
+		<lib_UK>PANA</lib_UK>
+		<lib_SP>PANA</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>74</code>
+		<lib_FR>IBOUNDJI</lib_FR>
+		<lib_UK>IBOUNDJI</lib_UK>
+		<lib_SP>IBOUNDJI</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>80</code>
+		<lib_FR>PORT GENTIL COMMUNE</lib_FR>
+		<lib_UK>PORT GENTIL COMMUNE</lib_UK>
+		<lib_SP>PORT GENTIL COMMUNE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>81</code>
+		<lib_FR>PORT GENTIL DEPARTEMENT</lib_FR>
+		<lib_UK>PORT GENTIL DEPARTEMENT</lib_UK>
+		<lib_SP>PORT GENTIL DEPARTEMENT</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>82</code>
+		<lib_FR>OMBOUE</lib_FR>
+		<lib_UK>OMBOUE</lib_UK>
+		<lib_SP>OMBOUE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>83</code>
+		<lib_FR>GAMBA</lib_FR>
+		<lib_UK>GAMBA</lib_UK>
+		<lib_SP>GAMBA</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>90</code>
+		<lib_FR>OYEM COMMUNE</lib_FR>
+		<lib_UK>OYEM COMMUNE</lib_UK>
+		<lib_SP>OYEM COMMUNE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>91</code>
+		<lib_FR>OYEM DEPARTEMENT</lib_FR>
+		<lib_UK>OYEM DEPARTEMENT</lib_UK>
+		<lib_SP>OYEM DEPARTEMENT</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>92</code>
+		<lib_FR>BITAM DEPARTEMENT</lib_FR>
+		<lib_UK>BITAM DEPARTEMENT</lib_UK>
+		<lib_SP>BITAM DEPARTEMENT</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>93</code>
+		<lib_FR>MEDOUNEU</lib_FR>
+		<lib_UK>MEDOUNEU</lib_UK>
+		<lib_SP>MEDOUNEU</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>94</code>
+		<lib_FR>MINVOUL</lib_FR>
+		<lib_UK>MINVOUL</lib_UK>
+		<lib_SP>MINVOUL</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>95</code>
+		<lib_FR>MITZIC</lib_FR>
+		<lib_UK>MITZIC</lib_UK>
+		<lib_SP>MITZIC</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+
+	<centre>
+		<code>99</code>
+		<lib_FR>BITAM COMMUNE</lib_FR>
+		<lib_UK>BITAM COMMUNE</lib_UK>
+		<lib_SP>BITAM COMMUNE</lib_SP>
+		<inactif>0</inactif>
+	</centre>
+</impot>

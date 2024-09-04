@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T050_UK>
+
+	<cat_tiers>
+		<libelle>Standar</libelle>
+		<code>1</code>
+	</cat_tiers>
+
+	<cat_tiers>
+		<libelle>Administrative</libelle>
+		<code>2</code>
+	</cat_tiers>
+
+	<cat_tiers>
+		<libelle>Driver</libelle>
+		<code>3</code>
+	</cat_tiers>
+
+	<cat_tiers>
+		<libelle>Commercial</libelle>
+		<code>4</code>
+	</cat_tiers>
+
+	<cat_tiers>
+		<libelle>Teacher</libelle>
+		<code>5</code>
+	</cat_tiers>
+
+	<cat_tiers>
+		<libelle>Medical</libelle>
+		<code>6</code>
+	</cat_tiers>
+
+	<cat_tiers>
+		<libelle>Supervisor</libelle>
+		<code>7</code>
+	</cat_tiers>
+
+	<cat_tiers>
+		<libelle>Assistants</libelle>
+		<code>8</code>
+	</cat_tiers>
+
+	<cat_tiers>
+		<libelle>Teachers</libelle>
+		<code>9</code>
+	</cat_tiers>
+
+	<cat_tiers>
+		<libelle>Professors</libelle>
+		<code>10</code>
+	</cat_tiers>
+
+	<cat_tiers>
+		<libelle> Technical</libelle>
+		<code>11</code>
+	</cat_tiers>
+
+</T050_UK>

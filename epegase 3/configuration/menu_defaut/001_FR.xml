@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T001_FR>
+
+    <cat_tiers>
+        <libelle>Fournisseur</libelle>
+        <code>1</code>
+    </cat_tiers>
+
+    <cat_tiers>
+        <libelle>Assureur</libelle>
+        <code>2</code>
+    </cat_tiers>
+
+    <cat_tiers>
+        <libelle>Avocat</libelle>
+        <code>3</code>
+    </cat_tiers>
+
+    <cat_tiers>
+        <libelle>Notaire</libelle>
+        <code>4</code>
+    </cat_tiers>
+
+    <cat_tiers>
+        <libelle>Magistrat</libelle>
+        <code>5</code>
+    </cat_tiers>
+
+    <cat_tiers>
+        <libelle>Médecin</libelle>
+        <code>6</code>
+    </cat_tiers>
+
+    <cat_tiers>
+        <libelle>Infirmière</libelle>
+        <code>7</code>
+    </cat_tiers>
+
+    <cat_tiers>
+        <libelle>Transitaire</libelle>
+        <code>8</code>
+    </cat_tiers>
+
+    <cat_tiers>
+        <libelle>Transporteur</libelle>
+        <code>9</code>
+    </cat_tiers>
+
+    <!--cat_tiers>
+        <libelle>Propriétaire</libelle>
+        <code>10</code>
+    </cat_tiers-->
+
+    <cat_tiers>
+        <libelle>Administration</libelle>
+        <code>11</code>
+    </cat_tiers>
+
+    <cat_tiers>
+        <libelle>Organisme Social</libelle>
+        <code>12</code>
+    </cat_tiers>
+
+    <cat_tiers>
+        <libelle>Association</libelle>
+        <code>13</code>
+    </cat_tiers>
+
+    <cat_tiers>
+        <libelle>Banque</libelle>
+        <code>14</code>
+    </cat_tiers>
+
+    <cat_tiers>
+        <libelle>Bailleur de fonds</libelle>
+        <code>15</code>
+    </cat_tiers>
+
+    <cat_tiers>
+        <libelle>Factor</libelle>
+        <code>16</code>
+    </cat_tiers>
+
+    <cat_tiers>
+        <libelle>Fournisseur Divers</libelle>
+        <code>99</code>
+    </cat_tiers>
+
+</T001_FR>

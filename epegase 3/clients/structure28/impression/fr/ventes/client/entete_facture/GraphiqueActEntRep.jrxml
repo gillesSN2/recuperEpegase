@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isFloatColumnFooter="true">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="240"/>
+	<parameter name="requete" class="java.lang.String"/>
+	<parameter name="entete" class="java.lang.String"/>
+	<parameter name="filtre" class="java.lang.String"/>
+	<parameter name="societe" class="java.lang.String"/>
+	<parameter name="version" class="java.lang.String"/>
+	<parameter name="formatDevise" class="java.lang.Integer"/>
+	<queryString>
+		<![CDATA[SELECT
+     vte_facture_entete.`fac_object` AS vte_facture_entete_fac_object,
+     vte_facture_entete.`fac_tot_ht` AS vte_facture_entete_fac_tot_ht,
+     cmm_tiers.`tie_sigle` AS cmm_tiers_tie_sigle
+FROM
+     `cmm_tiers` cmm_tiers INNER JOIN `vte_facture_entete` vte_facture_entete ON cmm_tiers.`tie_id` = vte_facture_entete.`tie_id`
+WHERE
+    $P!{requete}]]>
+	</queryString>
+	<field name="vte_facture_entete_fac_object" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_tot_ht" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="objet" class="java.lang.String" resetType="Group" resetGroup="objet">
+		<variableExpression><![CDATA[( $F{vte_facture_entete_fac_object}.contains("accident") ? "Accident"
+    : ( $F{vte_facture_entete_fac_object}.contains("entretien") ? "Entretien"
+          : ($F{vte_facture_entete_fac_object}.contains("vente") ? "Vente" : "Réparation" )))]]></variableExpression>
+	</variable>
+	<variable name="vte_facture_entete_fac_tot_ht_1" class="java.lang.Double" resetType="Group" resetGroup="objet" calculation="Sum">
+		<variableExpression><![CDATA[$F{vte_facture_entete_fac_tot_ht}]]></variableExpression>
+	</variable>
+	<variable name="vte_facture_entete_fac_tot_ht_2" class="java.lang.Double" resetType="Column" calculation="Sum">
+		<variableExpression><![CDATA[$F{vte_facture_entete_fac_tot_ht}]]></variableExpression>
+	</variable>
+	<group name="objet">
+		<groupExpression><![CDATA[$V{objet}]]></groupExpression>
+		<groupFooter>
+			<band height="26">
+				<textField evaluationTime="Group" evaluationGroup="objet">
+					<reportElement x="77" y="6" width="155" height="14"/>
+					<textElement/>
+					<textFieldExpression class="java.lang.String"><![CDATA[$V{objet}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Group" evaluationGroup="objet" pattern="#,##0;-#,##0">
+					<reportElement x="250" y="6" width="156" height="13"/>
+					<textElement textAlignment="Right"/>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{vte_facture_entete_fac_tot_ht_1}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="52" y="0" width="1" height="26"/>
+				</line>
+				<line>
+					<reportElement x="242" y="0" width="1" height="26"/>
+				</line>
+				<line>
+					<reportElement x="498" y="0" width="1" height="26"/>
+				</line>
+				<line>
+					<reportElement x="422" y="0" width="1" height="26"/>
+				</line>
+			</band>
+		</groupFooter>
+	</group>
+	<title>
+		<band height="117" splitType="Stretch">
+			<rectangle>
+				<reportElement x="1" y="1" width="554" height="36" forecolor="#000000" backcolor="#FFFFFF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="1" y="38" width="554" height="51" forecolor="#000000" backcolor="#FFFFFF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="1" y="88" width="554" height="27" forecolor="#992F2A" backcolor="#FFFFFF"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="19" y="97" width="55" height="11" forecolor="#000000"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[© B&W 2010 -]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="17" y="66" width="503" height="20" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{societe}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="74" y="97" width="28" height="11" forecolor="#000000"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{version}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="17" y="42" width="506" height="20" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{filtre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="17" y="9" width="508" height="24" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="18"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{entete}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy HH.mm.ss">
+				<reportElement x="107" y="97" width="151" height="11" forecolor="#000000"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="50">
+			<line>
+				<reportElement x="52" y="15" width="447" height="1"/>
+			</line>
+			<line>
+				<reportElement x="52" y="45" width="447" height="1"/>
+			</line>
+			<line>
+				<reportElement x="52" y="15" width="1" height="35"/>
+			</line>
+			<line>
+				<reportElement x="242" y="15" width="1" height="35"/>
+			</line>
+			<line>
+				<reportElement x="498" y="15" width="1" height="35"/>
+			</line>
+			<line>
+				<reportElement x="422" y="15" width="1" height="35"/>
+			</line>
+			<staticText>
+				<reportElement x="62" y="24" width="171" height="13"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Libellé]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="250" y="24" width="164" height="13"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Valeur]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnFooter>
+		<band height="30">
+			<line>
+				<reportElement x="52" y="25" width="447" height="1"/>
+			</line>
+			<line>
+				<reportElement x="498" y="0" width="1" height="26"/>
+			</line>
+			<line>
+				<reportElement x="242" y="0" width="1" height="26"/>
+			</line>
+			<line>
+				<reportElement x="52" y="0" width="1" height="26"/>
+			</line>
+			<line>
+				<reportElement x="52" y="3" width="447" height="1"/>
+			</line>
+			<line>
+				<reportElement x="422" y="0" width="1" height="26"/>
+			</line>
+			<textField pattern="#,##0;-#,##0">
+				<reportElement x="250" y="8" width="156" height="13"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{vte_facture_entete_fac_tot_ht_2}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="514" splitType="Stretch">
+			<pie3DChart>
+				<chart>
+					<reportElement x="10" y="29" width="539" height="368"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<pieDataset>
+					<keyExpression><![CDATA[$V{objet}]]></keyExpression>
+					<valueExpression><![CDATA[$F{vte_facture_entete_fac_tot_ht}]]></valueExpression>
+				</pieDataset>
+				<pie3DPlot>
+					<plot/>
+					<itemLabel color="#000000" backgroundColor="#FFFFFF"/>
+				</pie3DPlot>
+			</pie3DChart>
+		</band>
+	</pageFooter>
+</jasperReport>

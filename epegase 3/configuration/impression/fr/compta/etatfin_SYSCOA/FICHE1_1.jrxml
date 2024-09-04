@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Fiche1_bnq" language="groovy" pageWidth="245" pageHeight="242" whenNoDataType="BlankPage" columnWidth="245" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" isFloatColumnFooter="true" whenResourceMissingType="Empty">
+	<property name="ireport.zoom" value="3.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="136"/>
+	<parameter name="nb_ligne" class="java.lang.Integer"/>
+	<queryString>
+		<![CDATA[SELECT
+     cmm_contacts.`con_num_banque` AS cmm_contacts_con_num_banque,
+     cmm_contacts.`con_guichet_banque` AS cmm_contacts_con_guichet_banque,
+     cmm_contacts.`con_compte_banque` AS cmm_contacts_con_compte_banque,
+     cmm_tiers.`tie_raison_sociale_nom` AS cmm_tiers_tie_raison_sociale_nom,
+     cmm_tiers.`tie_type` AS cmm_tiers_tie_type,
+     cmm_tiers.`tie_genre` AS cmm_tiers_tie_genre,
+     cmm_tiers.`tie_categorie` AS cmm_tiers_tie_categorie
+FROM
+     `cmm_tiers` cmm_tiers INNER JOIN `cmm_contacts` cmm_contacts ON cmm_tiers.`tie_id` = cmm_contacts.`tie_id`
+WHERE
+     tie_type = 0 and tie_categorie = "Banque"]]>
+	</queryString>
+	<field name="cmm_contacts_con_num_banque" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_guichet_banque" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_contacts_con_compte_banque" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_raison_sociale_nom" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_type" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_genre" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cmm_tiers_tie_categorie" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="b1" class="java.lang.String">
+		<variableExpression><![CDATA[( $V{REPORT_COUNT}== 1 ? $F{cmm_tiers_tie_raison_sociale_nom} : $V{b1})]]></variableExpression>
+	</variable>
+	<variable name="c1" class="java.lang.String">
+		<variableExpression><![CDATA[( $V{REPORT_COUNT}==1 ? $F{cmm_contacts_con_num_banque}+" "+$F{cmm_contacts_con_guichet_banque}+ " "+$F{cmm_contacts_con_compte_banque} : $V{c1})]]></variableExpression>
+	</variable>
+	<variable name="b2" class="java.lang.String">
+		<variableExpression><![CDATA[( $V{REPORT_COUNT}== 2 ? $F{cmm_tiers_tie_raison_sociale_nom} : $V{b2})]]></variableExpression>
+	</variable>
+	<variable name="c2" class="java.lang.String">
+		<variableExpression><![CDATA[( $V{REPORT_COUNT}==2 ? $F{cmm_contacts_con_num_banque}+" "+$F{cmm_contacts_con_guichet_banque}+ " "+$F{cmm_contacts_con_compte_banque} : $V{c2})]]></variableExpression>
+	</variable>
+	<variable name="b3" class="java.lang.String">
+		<variableExpression><![CDATA[( $V{REPORT_COUNT}== 3 ? $F{cmm_tiers_tie_raison_sociale_nom} : $V{b3})]]></variableExpression>
+	</variable>
+	<variable name="c3" class="java.lang.String">
+		<variableExpression><![CDATA[( $V{REPORT_COUNT}==3 ? $F{cmm_contacts_con_num_banque}+" "+$F{cmm_contacts_con_guichet_banque}+ " "+$F{cmm_contacts_con_compte_banque} : $V{c3})]]></variableExpression>
+	</variable>
+	<variable name="b4" class="java.lang.String">
+		<variableExpression><![CDATA[( $V{REPORT_COUNT}== 4 ? $F{cmm_tiers_tie_raison_sociale_nom} : $V{b4})]]></variableExpression>
+	</variable>
+	<variable name="c4" class="java.lang.String">
+		<variableExpression><![CDATA[( $V{REPORT_COUNT}==4 ? $F{cmm_contacts_con_num_banque}+" "+$F{cmm_contacts_con_guichet_banque}+ " "+$F{cmm_contacts_con_compte_banque} : $V{c4})]]></variableExpression>
+	</variable>
+	<variable name="b5" class="java.lang.String">
+		<variableExpression><![CDATA[( $V{REPORT_COUNT}== 5 ? $F{cmm_tiers_tie_raison_sociale_nom} : $V{b5})]]></variableExpression>
+	</variable>
+	<variable name="c5" class="java.lang.String">
+		<variableExpression><![CDATA[( $V{REPORT_COUNT}==5 ? $F{cmm_contacts_con_num_banque}+" "+$F{cmm_contacts_con_guichet_banque}+ " "+$F{cmm_contacts_con_compte_banque} : $V{c5})]]></variableExpression>
+	</variable>
+	<variable name="b6" class="java.lang.String">
+		<variableExpression><![CDATA[( $V{REPORT_COUNT}== 6 ? $F{cmm_tiers_tie_raison_sociale_nom} : $V{b6})]]></variableExpression>
+	</variable>
+	<variable name="c6" class="java.lang.String">
+		<variableExpression><![CDATA[( $V{REPORT_COUNT}==6 ? $F{cmm_contacts_con_num_banque}+" "+$F{cmm_contacts_con_guichet_banque}+ " "+$F{cmm_contacts_con_compte_banque} : $V{c6})]]></variableExpression>
+	</variable>
+	<variable name="b7" class="java.lang.String">
+		<variableExpression><![CDATA[( $V{REPORT_COUNT}== 7 ? $F{cmm_tiers_tie_raison_sociale_nom} : $V{b7})]]></variableExpression>
+	</variable>
+	<variable name="c7" class="java.lang.String">
+		<variableExpression><![CDATA[( $V{REPORT_COUNT}==7 ? $F{cmm_contacts_con_num_banque}+" "+$F{cmm_contacts_con_guichet_banque}+ " "+$F{cmm_contacts_con_compte_banque} : $V{c7})]]></variableExpression>
+	</variable>
+	<variable name="b8" class="java.lang.String">
+		<variableExpression><![CDATA[( $V{REPORT_COUNT}== 8 ? $F{cmm_tiers_tie_raison_sociale_nom} : $V{b8})]]></variableExpression>
+	</variable>
+	<variable name="c8" class="java.lang.String">
+		<variableExpression><![CDATA[( $V{REPORT_COUNT}==8 ? $F{cmm_contacts_con_num_banque}+" "+$F{cmm_contacts_con_guichet_banque}+ " "+$F{cmm_contacts_con_compte_banque} : $V{c8})]]></variableExpression>
+	</variable>
+	<variable name="b9" class="java.lang.String">
+		<variableExpression><![CDATA[( $V{REPORT_COUNT}== 9 ? $F{cmm_tiers_tie_raison_sociale_nom} : $V{b9})]]></variableExpression>
+	</variable>
+	<variable name="c9" class="java.lang.String">
+		<variableExpression><![CDATA[( $V{REPORT_COUNT}==9 ? $F{cmm_contacts_con_num_banque}+" "+$F{cmm_contacts_con_guichet_banque}+ " "+$F{cmm_contacts_con_compte_banque} : $V{c9})]]></variableExpression>
+	</variable>
+	<variable name="b10" class="java.lang.String">
+		<variableExpression><![CDATA[( $V{REPORT_COUNT}== 10 ? $F{cmm_tiers_tie_raison_sociale_nom} : $V{b10})]]></variableExpression>
+	</variable>
+	<variable name="c10" class="java.lang.String">
+		<variableExpression><![CDATA[( $V{REPORT_COUNT}==10 ? $F{cmm_contacts_con_num_banque}+" "+$F{cmm_contacts_con_guichet_banque}+ " "+$F{cmm_contacts_con_compte_banque} : $V{c10})]]></variableExpression>
+	</variable>
+	<columnHeader>
+		<band height="33" splitType="Stretch">
+			<staticText>
+				<reportElement x="13" y="18" width="92" height="11"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Banque]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="131" y="18" width="96" height="11"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Numéro de compte]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="4" width="211" height="11"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Domiciliations Bancaires]]></text>
+			</staticText>
+			<line>
+				<reportElement x="7" y="1" width="234" height="1"/>
+			</line>
+			<line>
+				<reportElement x="8" y="16" width="233" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="8" y="30" width="233" height="1"/>
+			</line>
+			<line>
+				<reportElement x="7" y="2" width="1" height="31"/>
+				<graphicElement>
+					<pen lineWidth="1.0"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="241" y="2" width="1" height="31"/>
+				<graphicElement>
+					<pen lineWidth="1.0"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="110" y="16" width="1" height="17"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnHeader>
+	<lastPageFooter>
+		<band height="157">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="116" y="4" width="121" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{c1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="12" y="4" width="95" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{b1}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="116" y="19" width="121" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{c2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="12" y="19" width="95" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{b2}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="116" y="34" width="121" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{c3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="12" y="34" width="95" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{b3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="12" y="48" width="95" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{b4}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="116" y="48" width="121" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{c4}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="116" y="62" width="121" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{c5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="12" y="62" width="95" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{b5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="12" y="76" width="95" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{b6}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="116" y="76" width="121" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{c6}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="116" y="90" width="121" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{c7}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="12" y="90" width="95" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{b7}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="116" y="104" width="121" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{c8}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="12" y="104" width="95" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{b8}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="116" y="118" width="121" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{c9}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="12" y="118" width="95" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{b9}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="12" y="132" width="95" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{b10}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="116" y="132" width="121" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{c10}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="7" y="16" width="235" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="7" y="0" width="1" height="149"/>
+				<graphicElement>
+					<pen lineWidth="1.0"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="241" y="0" width="1" height="149"/>
+				<graphicElement>
+					<pen lineWidth="1.0"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="110" y="0" width="1" height="149"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="7" y="149" width="235" height="1"/>
+			</line>
+			<line>
+				<reportElement x="7" y="31" width="235" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="7" y="46" width="235" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="7" y="60" width="235" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="7" y="74" width="235" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="7" y="88" width="235" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="7" y="102" width="235" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="7" y="116" width="235" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="7" y="130" width="235" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+		</band>
+	</lastPageFooter>
+</jasperReport>

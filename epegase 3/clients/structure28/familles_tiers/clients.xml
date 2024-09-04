@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<famille>
+  <clients>
+    <libelle>Normal</libelle>
+    <exoTva>false</exoTva>
+    <exoDouane>false</exoDouane>
+    <serie />
+    <taxeSpecial>false</taxeSpecial>
+    <taux>0</taux>
+    <compte />
+  </clients>
+  <clients>
+    <libelle>Export</libelle>
+    <exoTva>true</exoTva>
+    <exoDouane>false</exoDouane>
+    <serie />
+    <taxeSpecial>false</taxeSpecial>
+    <taux>0</taux>
+    <compte />
+  </clients>
+  <clients>
+    <libelle>Administration</libelle>
+    <exoTva>false</exoTva>
+    <exoDouane>false</exoDouane>
+    <serie />
+    <taxeSpecial>false</taxeSpecial>
+    <taux>0</taux>
+    <compte />
+  </clients>
+  <clients>
+    <libelle>200</libelle>
+    <exoTva>false</exoTva>
+    <exoDouane>false</exoDouane>
+    <serie />
+    <taxeSpecial>false</taxeSpecial>
+    <taux>0.0</taux>
+    <compte />
+  </clients>
+  <clients>
+    <libelle>215</libelle>
+    <exoTva>false</exoTva>
+    <exoDouane>false</exoDouane>
+    <serie />
+    <taxeSpecial>false</taxeSpecial>
+    <taux>0.0</taux>
+    <compte />
+  </clients>
+  <clients>
+    <libelle>220</libelle>
+    <exoTva>false</exoTva>
+    <exoDouane>false</exoDouane>
+    <serie />
+    <taxeSpecial>false</taxeSpecial>
+    <taux>0.0</taux>
+    <compte />
+  </clients>
+  <clients>
+    <libelle>225</libelle>
+    <exoTva>false</exoTva>
+    <exoDouane>false</exoDouane>
+    <serie />
+    <taxeSpecial>false</taxeSpecial>
+    <taux>0.0</taux>
+    <compte />
+  </clients>
+  <clients>
+    <libelle>300</libelle>
+    <exoTva>false</exoTva>
+    <exoDouane>false</exoDouane>
+    <serie />
+    <taxeSpecial>false</taxeSpecial>
+    <taux>0.0</taux>
+    <compte />
+  </clients>
+  <clients>
+    <libelle>180</libelle>
+    <exoTva>false</exoTva>
+    <exoDouane>false</exoDouane>
+    <serie />
+    <taxeSpecial>false</taxeSpecial>
+    <taux>0.0</taux>
+    <compte />
+  </clients>
+  <clients>
+    <libelle>20000</libelle>
+    <exoTva>false</exoTva>
+    <exoDouane>false</exoDouane>
+    <serie />
+    <taxeSpecial>false</taxeSpecial>
+    <taux>0</taux>
+    <compte />
+  </clients>
+  <clients>
+    <libelle>17500</libelle>
+    <exoTva>false</exoTva>
+    <exoDouane>false</exoDouane>
+    <serie />
+    <taxeSpecial>false</taxeSpecial>
+    <taux>0</taux>
+    <compte />
+  </clients>
+  <clients>
+    <libelle>18000</libelle>
+    <exoTva>false</exoTva>
+    <exoDouane>false</exoDouane>
+    <serie />
+    <taxeSpecial>false</taxeSpecial>
+    <taux>0</taux>
+    <compte />
+  </clients>
+  <clients>
+    <libelle>19500</libelle>
+    <exoTva>false</exoTva>
+    <exoDouane>false</exoDouane>
+    <serie />
+    <taxeSpecial>false</taxeSpecial>
+    <taux>0.0</taux>
+    <compte />
+  </clients>
+  <clients>
+    <libelle>19300</libelle>
+    <exoTva>false</exoTva>
+    <exoDouane>false</exoDouane>
+    <serie />
+    <taxeSpecial>false</taxeSpecial>
+    <taux>0.0</taux>
+    <compte />
+  </clients>
+  <clients>
+    <libelle>19000</libelle>
+    <exoTva>false</exoTva>
+    <exoDouane>false</exoDouane>
+    <serie />
+    <taxeSpecial>false</taxeSpecial>
+    <taux>0.0</taux>
+    <compte />
+  </clients>
+  <clients>
+    <libelle>190</libelle>
+    <exoTva>false</exoTva>
+    <exoDouane>false</exoDouane>
+    <serie />
+    <taxeSpecial>false</taxeSpecial>
+    <taux>0</taux>
+    <compte />
+  </clients>
+  <clients>
+    <libelle>16750</libelle>
+    <exoTva>false</exoTva>
+    <exoDouane>false</exoDouane>
+    <serie />
+    <taxeSpecial>false</taxeSpecial>
+    <taux>0.0</taux>
+    <compte />
+  </clients>
+  <clients>
+    <libelle>17000</libelle>
+    <exoTva>false</exoTva>
+    <exoDouane>false</exoDouane>
+    <serie />
+    <taxeSpecial>false</taxeSpecial>
+    <taux>0.0</taux>
+    <compte />
+  </clients>
+  <clients>
+    <libelle>175</libelle>
+    <exoTva>false</exoTva>
+    <exoDouane>false</exoDouane>
+    <serie />
+    <taxeSpecial>false</taxeSpecial>
+    <taux>0.0</taux>
+    <compte />
+  </clients>
+  <clients>
+    <libelle>185</libelle>
+    <exoTva>false</exoTva>
+    <exoDouane>false</exoDouane>
+    <serie />
+    <taxeSpecial>false</taxeSpecial>
+    <taux>0.0</taux>
+    <compte />
+  </clients>
+</famille>
+

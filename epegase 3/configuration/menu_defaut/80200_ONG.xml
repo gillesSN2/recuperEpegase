@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<M80000_ONG>
+
+    <ligneonglet>
+        <libelle>Produit (Vente) : Descriptif</libelle>
+        <code>1</code>
+        <acc>true</acc>
+        <add>true</add>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+    </ligneonglet>
+
+    <ligneonglet>
+        <libelle>Produit : Photos</libelle>
+        <code>2</code>
+        <acc>true</acc>
+        <add>true</add>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+    </ligneonglet>
+
+    <ligneonglet>
+        <libelle>Produit : Caractéristiques</libelle>
+        <code>3</code>
+        <acc>true</acc>
+        <add>true</add>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+    </ligneonglet>
+
+    <ligneonglet>
+        <libelle>Produit : Fournisseur</libelle>
+        <code>4</code>
+        <acc>true</acc>
+        <add>true</add>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+    </ligneonglet>
+
+    <ligneonglet>
+        <libelle>Produit : Stock</libelle>
+        <code>5</code>
+        <acc>true</acc>
+        <add>true</add>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+    </ligneonglet>
+
+    <ligneonglet>
+        <libelle>Produit : Tarification</libelle>
+        <code>6</code>
+        <acc>true</acc>
+        <add>true</add>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+    </ligneonglet>
+
+    <ligneonglet>
+        <libelle>Produit : Options achats</libelle>
+        <code>7</code>
+        <acc>true</acc>
+        <add>true</add>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+    </ligneonglet>
+
+    <ligneonglet>
+        <libelle>Produit : Options ventes</libelle>
+        <code>8</code>
+        <acc>true</acc>
+        <add>true</add>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+    </ligneonglet>
+
+    <ligneonglet>
+        <libelle>Produit : Mots clés</libelle>
+        <code>9</code>
+        <acc>true</acc>
+        <add>true</add>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+    </ligneonglet>
+
+    <ligneonglet>
+        <libelle>Produit : Historiques références</libelle>
+        <code>10</code>
+        <acc>true</acc>
+        <add>true</add>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+    </ligneonglet>
+
+    <ligneonglet>
+        <libelle>Produit : Services</libelle>
+        <code>11</code>
+        <acc>true</acc>
+        <add>true</add>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+    </ligneonglet>
+
+    <ligneonglet>
+        <libelle>Produit : Groupes</libelle>
+        <code>12</code>
+        <acc>true</acc>
+        <add>true</add>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+    </ligneonglet>
+
+    <ligneonglet>
+        <libelle>Produit : Prix de Revient</libelle>
+        <code>13</code>
+        <acc>true</acc>
+        <add>true</add>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+    </ligneonglet>
+
+
+    <ligneonglet>
+        <libelle>Document : Descriptif</libelle>
+        <code>51</code>
+        <acc>true</acc>
+        <add>true</add>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+    </ligneonglet>
+
+     <ligneonglet>
+        <libelle>Document : Imputation</libelle>
+        <code>52</code>
+        <acc>true</acc>
+        <add>true</add>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+    </ligneonglet>
+
+     <ligneonglet>
+        <libelle>Document : Complément</libelle>
+        <code>53</code>
+        <acc>true</acc>
+        <add>true</add>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+    </ligneonglet>
+
+     <ligneonglet>
+        <libelle>Document : Règlement</libelle>
+        <code>54</code>
+        <acc>true</acc>
+        <add>true</add>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+    </ligneonglet>
+
+     <ligneonglet>
+        <libelle>Document : Spécial</libelle>
+        <code>55</code>
+        <acc>true</acc>
+        <add>true</add>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+    </ligneonglet>
+
+     <ligneonglet>
+        <libelle>Document : Habilitation</libelle>
+        <code>56</code>
+        <acc>true</acc>
+        <add>true</add>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+    </ligneonglet>
+
+     <ligneonglet>
+        <libelle>Document : Etat</libelle>
+        <code>57</code>
+        <acc>true</acc>
+        <add>true</add>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+    </ligneonglet>
+
+     <ligneonglet>
+        <libelle>Document : Traçabilité</libelle>
+        <code>58</code>
+        <acc>true</acc>
+        <add>true</add>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+    </ligneonglet>
+
+    <ligneonglet>
+        <libelle>Document : Exonération</libelle>
+        <code>59</code>
+        <acc>true</acc>
+        <add>true</add>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+    </ligneonglet>
+
+    <ligneonglet>
+        <libelle>Document : P.R.P.</libelle>
+        <code>60</code>
+        <acc>true</acc>
+        <add>true</add>
+        <maj>true</maj>
+        <sup>true</sup>
+        <imp>true</imp>
+    </ligneonglet>
+
+</M80000_ONG>

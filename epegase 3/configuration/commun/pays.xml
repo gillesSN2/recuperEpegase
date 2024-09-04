@@ -1,0 +1,4791 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listepays>
+
+    <pays>
+        <identification>0001</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>ZO</iso>
+        <drapeau></drapeau>
+        <nom_FR>ACORES</nom_FR>
+        <nom_UK>ACORES</nom_UK>
+        <nom_SP>ACORES</nom_SP>
+        <nationnalite_FR>ACORIENNE</nationnalite_FR>
+        <nationnalite_UK>ACORIENNE</nationnalite_UK>
+        <nationnalite_SP>ACORIENNE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>351</indicatif>
+        <devise>EUR</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0002</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>AF</iso>
+        <drapeau>\flags\Afganistan.png</drapeau>
+        <nom_FR>AFGANISTAN</nom_FR>
+        <nom_UK>Afghanistan</nom_UK>
+        <nom_SP>Afghanistàn</nom_SP>
+        <nationnalite_FR>AFGHANE</nationnalite_FR>
+        <nationnalite_UK>Afghan</nationnalite_UK>
+        <nationnalite_SP>Afgana</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>93</indicatif>
+        <devise>AFN</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0003</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>ZA</iso>
+        <drapeau>\flags\Afrique Du Sud.png</drapeau>
+        <nom_FR>AFRIQUE DU SUD</nom_FR>
+        <nom_UK>SOUTH AFRICA</nom_UK>
+        <nom_SP>AFRICA DEL SUR</nom_SP>
+        <nationnalite_FR>SUD AFRICAINE</nationnalite_FR>
+        <nationnalite_UK>SOUTH AFRICAN</nationnalite_UK>
+        <nationnalite_SP>EL SUR AFRICANO</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>27</indicatif>
+        <devise>ZAR</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0004</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>AX</iso>
+        <drapeau></drapeau>
+        <nom_FR>ALASKA</nom_FR>
+        <nom_UK>ALASKA</nom_UK>
+        <nom_SP>ALASKA</nom_SP>
+        <nationnalite_FR>AMERICAINE</nationnalite_FR>
+        <nationnalite_UK>AMERICAN</nationnalite_UK>
+        <nationnalite_SP>AMERICANA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>190</indicatif>
+        <devise>USD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0005</identification>
+        <langue>SP</langue>
+        <gestion>0</gestion>
+        <iso>AL</iso>
+        <drapeau>\flags\Albanie.png</drapeau>
+        <nom_FR>ALBANIE</nom_FR>
+        <nom_UK>ALBANIA</nom_UK>
+        <nom_SP>ALBANIE</nom_SP>
+        <nationnalite_FR>ALBANAISE</nationnalite_FR>
+        <nationnalite_UK>ALBANIAN</nationnalite_UK>
+        <nationnalite_SP>ALBANESA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>355</indicatif>
+        <devise>ALL</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0006</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>DZ</iso>
+        <drapeau>\flags\Algerie.png</drapeau>
+        <nom_FR>ALGERIE</nom_FR>
+        <nom_UK>ALGERIA</nom_UK>
+        <nom_SP>ARGELIA</nom_SP>
+        <nationnalite_FR>ALGERIENNE</nationnalite_FR>
+        <nationnalite_UK>ALGERIAN</nationnalite_UK>
+        <nationnalite_SP>ARGELINA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>213</indicatif>
+        <devise>DZD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0007</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>DE</iso>
+        <drapeau>\flags\Allemagne.png</drapeau>
+        <nom_FR>ALLEMAGNE</nom_FR>
+        <nom_UK>GERMANY</nom_UK>
+        <nom_SP>ALMANIA</nom_SP>
+        <nationnalite_FR>ALLEMANDE</nationnalite_FR>
+        <nationnalite_UK>GERMAN</nationnalite_UK>
+        <nationnalite_SP>ALEMANA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>49</indicatif>
+        <devise>EUR</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0008</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>AD</iso>
+        <drapeau>\flags\Andorre.png</drapeau>
+        <nom_FR>ANDORRE</nom_FR>
+        <nom_UK>ANDORRA</nom_UK>
+        <nom_SP>ANDORA</nom_SP>
+        <nationnalite_FR>ANDORRIENE</nationnalite_FR>
+        <nationnalite_UK>ANDORRIENE</nationnalite_UK>
+        <nationnalite_SP>ANDORRIENE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>376</indicatif>
+        <devise>EUR</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0009</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>AO</iso>
+        <drapeau>\flags\Angola.png</drapeau>
+        <nom_FR>ANGOLA</nom_FR>
+        <nom_UK>ANGOLA</nom_UK>
+        <nom_SP>ANGOLA</nom_SP>
+        <nationnalite_FR>ANGOLAISE</nationnalite_FR>
+        <nationnalite_UK>ANGOLAN</nationnalite_UK>
+        <nationnalite_SP>ANGOLEn^^A</nationnalite_SP>
+        <zone>COMESA</zone>
+        <fiscalite>OCAM</fiscalite>
+        <indicatif>244</indicatif>
+        <devise>AFN</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0010</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>AI</iso>
+        <drapeau></drapeau>
+        <nom_FR>ANGUILLA</nom_FR>
+        <nom_UK>ANGUILLA</nom_UK>
+        <nom_SP>ANGUILLA</nom_SP>
+        <nationnalite_FR>ANGUILLAIS</nationnalite_FR>
+        <nationnalite_UK>ANGUILLAIS</nationnalite_UK>
+        <nationnalite_SP>ANGUILLAIS</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>126</indicatif>
+        <devise>XCD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0011</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>AG</iso>
+        <drapeau>\flags\Antigua Et Barbuda.png</drapeau>
+        <nom_FR>ANTIGUA ET BARBUDA</nom_FR>
+        <nom_UK>ANTIGUA AND BARBUDA</nom_UK>
+        <nom_SP>ANTIGUA Y BARBUDA</nom_SP>
+        <nationnalite_FR>ANTIGUAIS</nationnalite_FR>
+        <nationnalite_UK>ANTIGUAIS</nationnalite_UK>
+        <nationnalite_SP>ANTIGUAIS</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>126</indicatif>
+        <devise>XCD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0012</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>AN</iso>
+        <drapeau>\flags\Antilles Neerlandaises.png</drapeau>
+        <nom_FR>ANTILLES NEERLANDAISES</nom_FR>
+        <nom_UK>NETHERLANDS ANTILLES</nom_UK>
+        <nom_SP>LAS ANTILLAS NEERLANDAISES</nom_SP>
+        <nationnalite_FR>NEERLANDAIS</nationnalite_FR>
+        <nationnalite_UK>NEERLANDAIS</nationnalite_UK>
+        <nationnalite_SP>NEERLANDAIS</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>599</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0013</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>SA</iso>
+        <drapeau>\flags\Arabie Saoudite.png</drapeau>
+        <nom_FR>ARABIE SAOUDITE</nom_FR>
+        <nom_UK>SAUDI ARABIA</nom_UK>
+        <nom_SP>ARABIA SAUDITA</nom_SP>
+        <nationnalite_FR>SAOUNDIENNE</nationnalite_FR>
+        <nationnalite_UK>SAOUNDIENNE</nationnalite_UK>
+        <nationnalite_SP>SAOUNDIENNE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>966</indicatif>
+        <devise>SAR</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0014</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso></iso>
+        <drapeau></drapeau>
+        <nom_FR>ARCHIPEL DES CHAGOS</nom_FR>
+        <nom_UK>ARCHIPELAGO OF CHAGOS</nom_UK>
+        <nom_SP>ARCHiPiéLAGO DE LOS CHAGOS</nom_SP>
+        <nationnalite_FR>CHAGOSSIENS</nationnalite_FR>
+        <nationnalite_UK>CHAGOSSIENS</nationnalite_UK>
+        <nationnalite_SP>CHAGOSSIENS</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif></indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0015</identification>
+        <langue>SP</langue>
+        <gestion>0</gestion>
+        <iso>AR</iso>
+        <drapeau>\flags\Argentine.png</drapeau>
+        <nom_FR>ARGENTINE</nom_FR>
+        <nom_UK>ARGENTINA</nom_UK>
+        <nom_SP>ARGENTINA</nom_SP>
+        <nationnalite_FR>ARGENTIN</nationnalite_FR>
+        <nationnalite_UK>ARGENTINIAN</nationnalite_UK>
+        <nationnalite_SP>ARGENTINO</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>54</indicatif>
+        <devise>ARS</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0016</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>AM</iso>
+        <drapeau>\flags\Armenie.png</drapeau>
+        <nom_FR>ARMENIE</nom_FR>
+        <nom_UK>AEMENIA</nom_UK>
+        <nom_SP>ARMENIA</nom_SP>
+        <nationnalite_FR>ARMENIENNE</nationnalite_FR>
+        <nationnalite_UK>ARMENIAN</nationnalite_UK>
+        <nationnalite_SP>ARMENIA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>374</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0017</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>AW</iso>
+        <drapeau></drapeau>
+        <nom_FR>ARUBA</nom_FR>
+        <nom_UK>ARUBA</nom_UK>
+        <nom_SP>ARUBA</nom_SP>
+        <nationnalite_FR>ARUBAIS/ARUBAINS</nationnalite_FR>
+        <nationnalite_UK>ARUBAIS</nationnalite_UK>
+        <nationnalite_SP>ARUBAIS</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>297</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0018</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>AC</iso>
+        <drapeau></drapeau>
+        <nom_FR>ASCENSION</nom_FR>
+        <nom_UK>ASCENSION</nom_UK>
+        <nom_SP>ASCENSION</nom_SP>
+        <nationnalite_FR>ASCENSOIS</nationnalite_FR>
+        <nationnalite_UK>ASCENSOIS</nationnalite_UK>
+        <nationnalite_SP>ASCENSOIS</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>247</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0019</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>AU</iso>
+        <drapeau>\flags\Australie.png</drapeau>
+        <nom_FR>AUSTRALIE</nom_FR>
+        <nom_UK>AUSTRALIA</nom_UK>
+        <nom_SP>AUSTRALIA</nom_SP>
+        <nationnalite_FR>AUSTRALIENNE</nationnalite_FR>
+        <nationnalite_UK>AUSTRALIAN</nationnalite_UK>
+        <nationnalite_SP>AUSTRALIANA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>61</indicatif>
+        <devise>AUD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0020</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>AT</iso>
+        <drapeau>\flags\Autriche.png</drapeau>
+        <nom_FR>AUTRICHE</nom_FR>
+        <nom_UK>AUSTRIA</nom_UK>
+        <nom_SP>AUSTRIA</nom_SP>
+        <nationnalite_FR>AUTRICHIENNE</nationnalite_FR>
+        <nationnalite_UK>AUSTRIAN</nationnalite_UK>
+        <nationnalite_SP>AUSTRIACA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>43</indicatif>
+        <devise>EUR</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0021</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>AZ</iso>
+        <drapeau>\flags\Azerbaidjan.png</drapeau>
+        <nom_FR>AZERBAIDJAN</nom_FR>
+        <nom_UK>AZERBAIDJAN</nom_UK>
+        <nom_SP>AZERBAIDJAN</nom_SP>
+        <nationnalite_FR>AZERBADJANAISE</nationnalite_FR>
+        <nationnalite_UK>AZERBADJANAISE</nationnalite_UK>
+        <nationnalite_SP>AZERBADJANAISE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>994</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0022</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>BS</iso>
+        <drapeau>\flags\Bahamas.png</drapeau>
+        <nom_FR>BAHAMAS</nom_FR>
+        <nom_UK>BAHAMAS</nom_UK>
+        <nom_SP>BAHAMAS</nom_SP>
+        <nationnalite_FR>NASSAU</nationnalite_FR>
+        <nationnalite_UK>NASSAU</nationnalite_UK>
+        <nationnalite_SP>NASSAU</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>124</indicatif>
+        <devise>BSD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0023</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>BH</iso>
+        <drapeau>\flags\Bahrein.png</drapeau>
+        <nom_FR>BAHREIN</nom_FR>
+        <nom_UK>BAHRAIN</nom_UK>
+        <nom_SP>BAHRIEN</nom_SP>
+        <nationnalite_FR>BAHREINIEN</nationnalite_FR>
+        <nationnalite_UK>BAHREINIEN</nationnalite_UK>
+        <nationnalite_SP>BAHREINIEN</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>973</indicatif>
+        <devise>BHD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0024</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>BD</iso>
+        <drapeau>\flags\Bangladesh.png</drapeau>
+        <nom_FR>BANGLADESH</nom_FR>
+        <nom_UK>BANGLADESH</nom_UK>
+        <nom_SP>BANGLADESH</nom_SP>
+        <nationnalite_FR>DACCA</nationnalite_FR>
+        <nationnalite_UK>DACCA</nationnalite_UK>
+        <nationnalite_SP>DACCA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>880</indicatif>
+        <devise>BDT</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0025</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>BB</iso>
+        <drapeau>\flags\Barbade.png</drapeau>
+        <nom_FR>BARBADE</nom_FR>
+        <nom_UK>BARBADOS</nom_UK>
+        <nom_SP>BARBADOS</nom_SP>
+        <nationnalite_FR>BRIDGETOWN</nationnalite_FR>
+        <nationnalite_UK>BRIDGETOWN</nationnalite_UK>
+        <nationnalite_SP>BRIDGETOWN</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>124</indicatif>
+        <devise>BBD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0026</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>BY</iso>
+        <drapeau>\flags\Belarus.png</drapeau>
+        <nom_FR>BELARUS</nom_FR>
+        <nom_UK>BELARUS</nom_UK>
+        <nom_SP>BELARUS</nom_SP>
+        <nationnalite_FR>BIELORUSSE</nationnalite_FR>
+        <nationnalite_UK>BIELORUSSE</nationnalite_UK>
+        <nationnalite_SP>BIELORUSSE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>375</indicatif>
+        <devise>BRL</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0027</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>BE</iso>
+        <drapeau>\flags\Belgique.png</drapeau>
+        <nom_FR>BELGIQUE</nom_FR>
+        <nom_UK>BELGIUM</nom_UK>
+        <nom_SP>BÉLGICA</nom_SP>
+        <nationnalite_FR>BELGES</nationnalite_FR>
+        <nationnalite_UK>BELGIANS</nationnalite_UK>
+        <nationnalite_SP>BELGAS</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>32</indicatif>
+        <devise>EUR</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0028</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>BZ</iso>
+        <drapeau>\flags\Belize.png</drapeau>
+        <nom_FR>BELIZE</nom_FR>
+        <nom_UK>BELIZE</nom_UK>
+        <nom_SP>BELIZE</nom_SP>
+        <nationnalite_FR>BELMOPAN</nationnalite_FR>
+        <nationnalite_UK>BELMOPAN</nationnalite_UK>
+        <nationnalite_SP>BELMOPAN</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>501</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0029</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>BJ</iso>
+        <drapeau>\flags\Benin.png</drapeau>
+        <nom_FR>BENIN</nom_FR>
+        <nom_UK>BENIN</nom_UK>
+        <nom_SP>BENIGNO</nom_SP>
+        <nationnalite_FR>BENINOISE</nationnalite_FR>
+        <nationnalite_UK>BENINESE</nationnalite_UK>
+        <nationnalite_SP>BENINOISE</nationnalite_SP>
+        <zone>UEMOA</zone>
+        <fiscalite>SYSCOA</fiscalite>
+        <indicatif>229</indicatif>
+        <devise>XOF</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0030</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>BM</iso>
+        <drapeau></drapeau>
+        <nom_FR>BERMUDES</nom_FR>
+        <nom_UK>BERMUDA</nom_UK>
+        <nom_SP>LAS BERMUDAS</nom_SP>
+        <nationnalite_FR>BERMUDES</nationnalite_FR>
+        <nationnalite_UK>BERMUDA</nationnalite_UK>
+        <nationnalite_SP>LAS BEUMUDES</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>144</indicatif>
+        <devise>BMD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0031</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>BT</iso>
+        <drapeau>\flags\Bhoutan.png</drapeau>
+        <nom_FR>BHOUTAN</nom_FR>
+        <nom_UK>BHOUTAN</nom_UK>
+        <nom_SP>BHOUTAN</nom_SP>
+        <nationnalite_FR>THIMBU</nationnalite_FR>
+        <nationnalite_UK>THIMBU</nationnalite_UK>
+        <nationnalite_SP>THIMBU</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>975</indicatif>
+        <devise>BGN</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0032</identification>
+        <langue>SP</langue>
+        <gestion>0</gestion>
+        <iso>BO</iso>
+        <drapeau>\flags\Bolivie.png</drapeau>
+        <nom_FR>BOLIVIE</nom_FR>
+        <nom_UK>BOLIVIA</nom_UK>
+        <nom_SP>BOLIVIA</nom_SP>
+        <nationnalite_FR>BOLIVIENNE</nationnalite_FR>
+        <nationnalite_UK>BOLIVIAN</nationnalite_UK>
+        <nationnalite_SP>BOLIVIANA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>591</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0033</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>BA</iso>
+        <drapeau>\flags\Bosnie Herzegovine.png</drapeau>
+        <nom_FR>BOSNIE HERZEGOVINE</nom_FR>
+        <nom_UK>BOSNIA HERZEGOVINE</nom_UK>
+        <nom_SP>BOSNIA HERZEGOVINE</nom_SP>
+        <nationnalite_FR>BOSNIEN</nationnalite_FR>
+        <nationnalite_UK>BOSNIEN</nationnalite_UK>
+        <nationnalite_SP>BOSNIEN</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>387</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0034</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>BW</iso>
+        <drapeau>\flags\Botswana.png</drapeau>
+        <nom_FR>BOTSWANA</nom_FR>
+        <nom_UK>BOTSWANA</nom_UK>
+        <nom_SP>BOSTWANA</nom_SP>
+        <nationnalite_FR>GABORONE</nationnalite_FR>
+        <nationnalite_UK>GABORONE</nationnalite_UK>
+        <nationnalite_SP>GABORONE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>267</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0035</identification>
+        <langue>SP</langue>
+        <gestion>0</gestion>
+        <iso>BR</iso>
+        <drapeau>\flags\Bresil.png</drapeau>
+        <nom_FR>BRESIL</nom_FR>
+        <nom_UK>BRAZIL</nom_UK>
+        <nom_SP>BRAZIL</nom_SP>
+        <nationnalite_FR>BRESILIENNE</nationnalite_FR>
+        <nationnalite_UK>BRAZILIAN</nationnalite_UK>
+        <nationnalite_SP>BRAILENA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>55</indicatif>
+        <devise>BRL</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0036</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>BN</iso>
+        <drapeau>\flags\Brunei.png</drapeau>
+        <nom_FR>BRUNEI</nom_FR>
+        <nom_UK>BRUNEI</nom_UK>
+        <nom_SP>BRUNEI</nom_SP>
+        <nationnalite_FR>BRUNÉIEN</nationnalite_FR>
+        <nationnalite_UK>BRUNÉIEN</nationnalite_UK>
+        <nationnalite_SP>BRUNÉIEN</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>673</indicatif>
+        <devise>BMD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0037</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>BG</iso>
+        <drapeau>\flags\Bulgarie.png</drapeau>
+        <nom_FR>BULGARIE</nom_FR>
+        <nom_UK>BULGARIA</nom_UK>
+        <nom_SP>BULGARIA</nom_SP>
+        <nationnalite_FR>BULGARES</nationnalite_FR>
+        <nationnalite_UK>BULGARIANS</nationnalite_UK>
+        <nationnalite_SP>BÙLGAROS</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>359</indicatif>
+        <devise>EUR</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0038</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>BF</iso>
+        <drapeau>\flags\Burkina Faso.png</drapeau>
+        <nom_FR>BURKINA FASO</nom_FR>
+        <nom_UK>BURKINA FASO</nom_UK>
+        <nom_SP>BURKINA FASO</nom_SP>
+        <nationnalite_FR>BURKINABÉ</nationnalite_FR>
+        <nationnalite_UK>OF BURKINA FASO</nationnalite_UK>
+        <nationnalite_SP>BURKINABÉ</nationnalite_SP>
+        <zone>UEMOA</zone>
+        <fiscalite>SYSCOA</fiscalite>
+        <indicatif>226</indicatif>
+        <devise>XOF</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0039</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>BI</iso>
+        <drapeau></drapeau>
+        <nom_FR>BURUNDI</nom_FR>
+        <nom_UK>BURUNDI</nom_UK>
+        <nom_SP>BURUNDI</nom_SP>
+        <nationnalite_FR>BUJUMBURA</nationnalite_FR>
+        <nationnalite_UK>BUJUMBURA</nationnalite_UK>
+        <nationnalite_SP>BUJUMBURA</nationnalite_SP>
+        <zone>COMESA</zone>
+        <fiscalite>OHADA</fiscalite>
+        <indicatif>257</indicatif>
+        <devise>BIF</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0040</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>KH</iso>
+        <drapeau>\flags\Cambodge.png</drapeau>
+        <nom_FR>CAMBODGE</nom_FR>
+        <nom_UK>CAMBODIA</nom_UK>
+        <nom_SP>CAMBOYA</nom_SP>
+        <nationnalite_FR>CAMBODGIENNE</nationnalite_FR>
+        <nationnalite_UK>CAMBODIAN</nationnalite_UK>
+        <nationnalite_SP>CAMBOYANA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>855</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0041</identification>
+        <langue>FR</langue>
+        <gestion>2</gestion>
+        <iso>CM</iso>
+        <drapeau>\flags\Cameroun.png</drapeau>
+        <nom_FR>CAMEROUN</nom_FR>
+        <nom_UK>CAMEROON</nom_UK>
+        <nom_SP>CAMERÙN</nom_SP>
+        <nationnalite_FR>CAMEROUNAISE</nationnalite_FR>
+        <nationnalite_UK>CAMEROONIAN</nationnalite_UK>
+        <nationnalite_SP>CAMEROUNAISE</nationnalite_SP>
+        <zone>CEMAC</zone>
+        <fiscalite>OHADA</fiscalite>
+        <indicatif>237</indicatif>
+        <devise>XAF</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0042</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>CA</iso>
+        <drapeau>\flags\Canada.png</drapeau>
+        <nom_FR>CANADA</nom_FR>
+        <nom_UK>CANADA</nom_UK>
+        <nom_SP>CANADÀ</nom_SP>
+        <nationnalite_FR>CANADIENNE</nationnalite_FR>
+        <nationnalite_UK>CANADIAN</nationnalite_UK>
+        <nationnalite_SP>CANADIENSE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>1</indicatif>
+        <devise>CAD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0043</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>CV</iso>
+        <drapeau>\flags\Cap Vert.png</drapeau>
+        <nom_FR>CAP VERT</nom_FR>
+        <nom_UK>GREEN CAPE</nom_UK>
+        <nom_SP>CABO VERDE</nom_SP>
+        <nationnalite_FR>CAP VERDIENNE</nationnalite_FR>
+        <nationnalite_UK>CAPE VERDIENNE</nationnalite_UK>
+        <nationnalite_SP>CABO VERDIENNE</nationnalite_SP>
+        <zone>UEMOA</zone>
+        <fiscalite>SYSCOA</fiscalite>
+        <indicatif>238</indicatif>
+        <devise>CLP</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0044</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>CF</iso>
+        <drapeau>\flags\Centrafrique.png</drapeau>
+        <nom_FR>CENTRAFRIQUE</nom_FR>
+        <nom_UK>CENTRAL AFRICAN REPUBLIC</nom_UK>
+        <nom_SP>LA REPÙBLICA SUDAFRICANA</nom_SP>
+        <nationnalite_FR>CENTRAFRICAINE</nationnalite_FR>
+        <nationnalite_UK>CENTRAL AFRICAN</nationnalite_UK>
+        <nationnalite_SP>CENTROAFRICANA</nationnalite_SP>
+        <zone>CEMAC</zone>
+        <fiscalite>OHADA</fiscalite>
+        <indicatif>236</indicatif>
+        <devise>XAF</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0045</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>CL</iso>
+        <drapeau>\flags\Chili.png</drapeau>
+        <nom_FR>CHILI</nom_FR>
+        <nom_UK>CHILE</nom_UK>
+        <nom_SP>CHILE</nom_SP>
+        <nationnalite_FR>CHILIENNE</nationnalite_FR>
+        <nationnalite_UK>CHILEAN</nationnalite_UK>
+        <nationnalite_SP>CHILENA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>56</indicatif>
+        <devise>CLP</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0046</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>CN</iso>
+        <drapeau>\flags\Chine.png</drapeau>
+        <nom_FR>CHINE</nom_FR>
+        <nom_UK>CHINA</nom_UK>
+        <nom_SP>CHINA</nom_SP>
+        <nationnalite_FR>CHINOISE</nationnalite_FR>
+        <nationnalite_UK>CHINESE</nationnalite_UK>
+        <nationnalite_SP>CHINA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>86</indicatif>
+        <devise>CNY</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0047</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>CY</iso>
+        <drapeau>\flags\Chypre.png</drapeau>
+        <nom_FR>CHYPRE</nom_FR>
+        <nom_UK>CYPRUS</nom_UK>
+        <nom_SP>CHIPRE</nom_SP>
+        <nationnalite_FR>CHIPRIOTE</nationnalite_FR>
+        <nationnalite_UK>CHIPRIOTE</nationnalite_UK>
+        <nationnalite_SP>CHIPRIOTE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>357</indicatif>
+        <devise>CYP</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0048</identification>
+        <langue>SP</langue>
+        <gestion>0</gestion>
+        <iso>CO</iso>
+        <drapeau>\flags\Colombie.png</drapeau>
+        <nom_FR>COLOMBIE</nom_FR>
+        <nom_UK>COLOMBIA</nom_UK>
+        <nom_SP>COLOMBIA</nom_SP>
+        <nationnalite_FR>COLOMBIENNE</nationnalite_FR>
+        <nationnalite_UK>COLOMBIAN</nationnalite_UK>
+        <nationnalite_SP>COLOMBIANA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>57</indicatif>
+        <devise>COP</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0049</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>KM</iso>
+        <drapeau>\flags\Comores.png</drapeau>
+        <nom_FR>COMORES</nom_FR>
+        <nom_UK>COMOROS</nom_UK>
+        <nom_SP>COMOROS</nom_SP>
+        <nationnalite_FR>COMORIENNE</nationnalite_FR>
+        <nationnalite_UK>COMORAN</nationnalite_UK>
+        <nationnalite_SP>COMORIENNE</nationnalite_SP>
+        <zone>COMESA</zone>
+        <fiscalite>OHADA</fiscalite>
+        <indicatif>269</indicatif>
+        <devise>XAF</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0050</identification>
+        <langue>FR</langue>
+        <gestion>2</gestion>
+        <iso>CG</iso>
+        <drapeau>\flags\Congo Brazaville.png</drapeau>
+        <nom_FR>CONGO BRAZAVILLE</nom_FR>
+        <nom_UK>CONGO BRAZAVILLE</nom_UK>
+        <nom_SP>EL CONGO BRAZAVILLE</nom_SP>
+        <nationnalite_FR>CONGOLAISE</nationnalite_FR>
+        <nationnalite_UK>CONGOLESE</nationnalite_UK>
+        <nationnalite_SP>CONGOLESA</nationnalite_SP>
+        <zone>CEMAC</zone>
+        <fiscalite>OHADA</fiscalite>
+        <indicatif>242</indicatif>
+        <devise>XAF</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0051</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>CD</iso>
+        <drapeau>\flags\Congo Zaire.png</drapeau>
+        <nom_FR>CONGO ZAIRE</nom_FR>
+        <nom_UK>THE DEMOCRATIC REPUBLIC OF THE CONGO</nom_UK>
+        <nom_SP>EL CONGO ZAIRE</nom_SP>
+        <nationnalite_FR>ZAIROISE</nationnalite_FR>
+        <nationnalite_UK>ZAIROISE</nationnalite_UK>
+        <nationnalite_SP>ZAIROISE</nationnalite_SP>
+        <zone>COMESA</zone>
+        <fiscalite>SYSCOA</fiscalite>
+        <indicatif>243</indicatif>
+        <devise>AED</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0052</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>CK</iso>
+        <drapeau></drapeau>
+        <nom_FR>COOK</nom_FR>
+        <nom_UK>COOK</nom_UK>
+        <nom_SP>COO.K.</nom_SP>
+        <nationnalite_FR>INSULAIRE DES COOK</nationnalite_FR>
+        <nationnalite_UK>ISLANDER OF COOK</nationnalite_UK>
+        <nationnalite_SP>ISLENO LOS COO.K.</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>682</indicatif>
+        <devise>NZD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0053</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>KP</iso>
+        <drapeau>\flags\Coree Du Nord.png</drapeau>
+        <nom_FR>COREE DU NORD</nom_FR>
+        <nom_UK>REPUBLIC OF KOREA</nom_UK>
+        <nom_SP>COREA DEL NORTE</nom_SP>
+        <nationnalite_FR>NORD - COREENNE</nationnalite_FR>
+        <nationnalite_UK>NORTH COREENNE</nationnalite_UK>
+        <nationnalite_SP>EL NORTE COREENNE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>850</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0054</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>KR</iso>
+        <drapeau>\flags\Coree Du Sud.png</drapeau>
+        <nom_FR>COREE DU SUD</nom_FR>
+        <nom_UK>SOUTH KOREA</nom_UK>
+        <nom_SP>COREA DEL SUR</nom_SP>
+        <nationnalite_FR>SUD - COREENNE</nationnalite_FR>
+        <nationnalite_UK>SOUTH COREENNE</nationnalite_UK>
+        <nationnalite_SP>EL SUR COREENNE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>82</indicatif>
+        <devise>KRW</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0055</identification>
+        <langue>SP</langue>
+        <gestion>0</gestion>
+        <iso>CR</iso>
+        <drapeau>\flags\Costa Rica.png</drapeau>
+        <nom_FR>COSTA RICA</nom_FR>
+        <nom_UK>COSTA RICA</nom_UK>
+        <nom_SP>COSTA RICA</nom_SP>
+        <nationnalite_FR>COSTARICIENNE</nationnalite_FR>
+        <nationnalite_UK>COSTA RICAN</nationnalite_UK>
+        <nationnalite_SP>COSTARICIENNE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>506</indicatif>
+        <devise>CRC</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0056</identification>
+        <langue>FR</langue>
+        <gestion>2</gestion>
+        <iso>CI</iso>
+        <drapeau>\flags\Cote D'ivoire.png</drapeau>
+        <nom_FR>COTE D'IVOIRE</nom_FR>
+        <nom_UK>IVORY COAST</nom_UK>
+        <nom_SP>COSTA DE MARFIL</nom_SP>
+        <nationnalite_FR>IVOIRIENNE</nationnalite_FR>
+        <nationnalite_UK>OF THE IVORY COAST</nationnalite_UK>
+        <nationnalite_SP>PERSONA DE LA COSTA MARFIL</nationnalite_SP>
+        <zone>UEMOA</zone>
+        <fiscalite>SYSCOA</fiscalite>
+        <indicatif>225</indicatif>
+        <devise>XOF</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0057</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>HR</iso>
+        <drapeau>\flags\Croatie.png</drapeau>
+        <nom_FR>CROATIE</nom_FR>
+        <nom_UK>CROATIA</nom_UK>
+        <nom_SP>CROACIA</nom_SP>
+        <nationnalite_FR>CROATES</nationnalite_FR>
+        <nationnalite_UK>CROATS</nationnalite_UK>
+        <nationnalite_SP>CROATAS</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>385</indicatif>
+        <devise>HRK</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0058</identification>
+        <langue>SP</langue>
+        <gestion>0</gestion>
+        <iso>CU</iso>
+        <drapeau>\flags\Cuba.png</drapeau>
+        <nom_FR>CUBA</nom_FR>
+        <nom_UK>CUBA</nom_UK>
+        <nom_SP>CUBA</nom_SP>
+        <nationnalite_FR>CUBAINE</nationnalite_FR>
+        <nationnalite_UK>CUBAN</nationnalite_UK>
+        <nationnalite_SP>CUBANA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>53</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0059</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>DK</iso>
+        <drapeau>\flags\Danemark.png</drapeau>
+        <nom_FR>DANEMARK</nom_FR>
+        <nom_UK>DENMARK</nom_UK>
+        <nom_SP>DINAMARCA</nom_SP>
+        <nationnalite_FR>DANOISE</nationnalite_FR>
+        <nationnalite_UK>DANE</nationnalite_UK>
+        <nationnalite_SP>DANESA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>45</indicatif>
+        <devise>DKK</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0060</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso></iso>
+        <drapeau></drapeau>
+        <nom_FR>DIEGO GARCIA</nom_FR>
+        <nom_UK>DIEGO GARCIA</nom_UK>
+        <nom_SP>DIEGO GARCIA</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>246</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0061</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>DJ</iso>
+        <drapeau>\flags\Djibouti.png</drapeau>
+        <nom_FR>DJIBOUTI</nom_FR>
+        <nom_UK>DJIBOUTI</nom_UK>
+        <nom_SP>DJIBOUTI</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone>COMESA</zone>
+        <fiscalite></fiscalite>
+        <indicatif>253</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0062</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>DM</iso>
+        <drapeau>\flags\Dominique.png</drapeau>
+        <nom_FR>DOMINIQUE</nom_FR>
+        <nom_UK>DOMINIQUE</nom_UK>
+        <nom_SP>DOMINIQUE</nom_SP>
+        <nationnalite_FR>DOMINICAINE</nationnalite_FR>
+        <nationnalite_UK>DOMINICAINE</nationnalite_UK>
+        <nationnalite_SP>DOMINICAINE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>180</indicatif>
+        <devise>XCD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0063</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>EG</iso>
+        <drapeau>\flags\Egypte.png</drapeau>
+        <nom_FR>EGYPTE</nom_FR>
+        <nom_UK>EGYPT</nom_UK>
+        <nom_SP>EGIPTO</nom_SP>
+        <nationnalite_FR>EGYPTIENNE</nationnalite_FR>
+        <nationnalite_UK>ARMCHAIR</nationnalite_UK>
+        <nationnalite_SP>EGIPCIA</nationnalite_SP>
+        <zone>COMESA</zone>
+        <fiscalite></fiscalite>
+        <indicatif>20</indicatif>
+        <devise>EGP</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0065</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>AE</iso>
+        <drapeau>\flags\Emirats Arabes Unis.png</drapeau>
+        <nom_FR>EMIRATS ARABES UNIS</nom_FR>
+        <nom_UK>UNITED ARAB EMIRATES</nom_UK>
+        <nom_SP>EMIRATOS ERABES UNIDOS</nom_SP>
+        <nationnalite_FR>ARABE</nationnalite_FR>
+        <nationnalite_UK>ARAB</nationnalite_UK>
+        <nationnalite_SP>ARABE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>971</indicatif>
+        <devise>AED</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0066</identification>
+        <langue>SP</langue>
+        <gestion>0</gestion>
+        <iso>EC</iso>
+        <drapeau>\flags\Equateur.png</drapeau>
+        <nom_FR>EQUATEUR</nom_FR>
+        <nom_UK>ECUADOR</nom_UK>
+        <nom_SP>ECUADOR</nom_SP>
+        <nationnalite_FR>EQUATORIENNE</nationnalite_FR>
+        <nationnalite_UK>ECUADORAN</nationnalite_UK>
+        <nationnalite_SP>EQUATORIENNE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>593</indicatif>
+        <devise>USD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0067</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>ER</iso>
+        <drapeau>\flags\Erythree.png</drapeau>
+        <nom_FR>ERYTHREE</nom_FR>
+        <nom_UK>ERYTHRÉE</nom_UK>
+        <nom_SP>VAN</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone>COMESA</zone>
+        <fiscalite>OCAM</fiscalite>
+        <indicatif>291</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0068</identification>
+        <langue>SP</langue>
+        <gestion>0</gestion>
+        <iso>ES</iso>
+        <drapeau>\flags\Espagne.png</drapeau>
+        <nom_FR>ESPAGNE</nom_FR>
+        <nom_UK>SPAIN</nom_UK>
+        <nom_SP>ESPANA</nom_SP>
+        <nationnalite_FR>ESPAGNOLE</nationnalite_FR>
+        <nationnalite_UK>SPANISH</nationnalite_UK>
+        <nationnalite_SP>ESPANOLA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>34</indicatif>
+        <devise>EUR</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0069</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>EE</iso>
+        <drapeau>\flags\Estonie.png</drapeau>
+        <nom_FR>ESTONIE</nom_FR>
+        <nom_UK>ESTONIA</nom_UK>
+        <nom_SP>ESTONIA</nom_SP>
+        <nationnalite_FR>ESTONIENNE</nationnalite_FR>
+        <nationnalite_UK>ESTONIAN</nationnalite_UK>
+        <nationnalite_SP>ESTONIA</nationnalite_SP>
+        <zone>COMESA</zone>
+        <fiscalite></fiscalite>
+        <indicatif>372</indicatif>
+        <devise>EEK</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0070</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>US</iso>
+        <drapeau>\flags\Etats Unis D'amerique.png</drapeau>
+        <nom_FR>ETATS UNIS D'AMERIQUE</nom_FR>
+        <nom_UK>UNITED STATES OF AMERIQUE</nom_UK>
+        <nom_SP>ESTADOS UNIDOS DE AMERIQUE</nom_SP>
+        <nationnalite_FR>AMERICAINE</nationnalite_FR>
+        <nationnalite_UK>AMERICAN</nationnalite_UK>
+        <nationnalite_SP>AMERICANA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>011</indicatif>
+        <devise>USD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0071</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>ET</iso>
+        <drapeau>\flags\Ethiopie.png</drapeau>
+        <nom_FR>ETHIOPIE</nom_FR>
+        <nom_UK>ETHIOPIA</nom_UK>
+        <nom_SP>ETHIOPIA</nom_SP>
+        <nationnalite_FR>ETHIOPIENNE</nationnalite_FR>
+        <nationnalite_UK>ETHIOPIAN</nationnalite_UK>
+        <nationnalite_SP>ETIOPE</nationnalite_SP>
+        <zone>COMESA</zone>
+        <fiscalite>SYSCOA</fiscalite>
+        <indicatif>251</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0073</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>FO</iso>
+        <drapeau></drapeau>
+        <nom_FR>FERAE</nom_FR>
+        <nom_UK>FERAE</nom_UK>
+        <nom_SP>FERAE</nom_SP>
+        <nationnalite_FR>FERAENNE</nationnalite_FR>
+        <nationnalite_UK>FERAENNE</nationnalite_UK>
+        <nationnalite_SP>FERAENNE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>298</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0074</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>FJ</iso>
+        <drapeau>\flags\Fidji.png</drapeau>
+        <nom_FR>FIDJI</nom_FR>
+        <nom_UK>FIJI</nom_UK>
+        <nom_SP>LAS FIDJI</nom_SP>
+        <nationnalite_FR>FIDJIEN</nationnalite_FR>
+        <nationnalite_UK>FIJIAN</nationnalite_UK>
+        <nationnalite_SP>FIDJIEN</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>679</indicatif>
+        <devise>FJD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0075</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>FI</iso>
+        <drapeau>\flags\Finlande.png</drapeau>
+        <nom_FR>FINLANDE</nom_FR>
+        <nom_UK>FINLAND</nom_UK>
+        <nom_SP>FILANDIA</nom_SP>
+        <nationnalite_FR>FINLANDAISE</nationnalite_FR>
+        <nationnalite_UK>FINN</nationnalite_UK>
+        <nationnalite_SP>FINLANDESA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>358</indicatif>
+        <devise>EUR</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0076</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>FR</iso>
+        <drapeau>\flags\France.png</drapeau>
+        <nom_FR>FRANCE</nom_FR>
+        <nom_UK>FRANCE</nom_UK>
+        <nom_SP>FRANCIA</nom_SP>
+        <nationnalite_FR>FRANCAISE</nationnalite_FR>
+        <nationnalite_UK>FRANCAISE</nationnalite_UK>
+        <nationnalite_SP>FRANCAISE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite>PLAN_2005_FR</fiscalite>
+        <indicatif>33</indicatif>
+        <devise>EUR</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0077</identification>
+        <langue>FR</langue>
+        <gestion>2</gestion>
+        <iso>GA</iso>
+        <drapeau>\flags\Gabon.png</drapeau>
+        <nom_FR>GABON</nom_FR>
+        <nom_UK>GABON</nom_UK>
+        <nom_SP>GABON</nom_SP>
+        <nationnalite_FR>GABONAISE</nationnalite_FR>
+        <nationnalite_UK>GABONAISE</nationnalite_UK>
+        <nationnalite_SP>GABONAISE</nationnalite_SP>
+        <zone>CEMAC</zone>
+        <fiscalite>OHADA</fiscalite>
+        <indicatif>241</indicatif>
+        <devise>XAF</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0078</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>GM</iso>
+        <drapeau>\flags\Gambie.png</drapeau>
+        <nom_FR>GAMBIE</nom_FR>
+        <nom_UK>GAMBIA</nom_UK>
+        <nom_SP>GAMBIA</nom_SP>
+        <nationnalite_FR>GAMBIENNE</nationnalite_FR>
+        <nationnalite_UK>GAMBIAN</nationnalite_UK>
+        <nationnalite_SP>GAMBIENNE</nationnalite_SP>
+        <zone>COMESA</zone>
+        <fiscalite>SYSCOA</fiscalite>
+        <indicatif>220</indicatif>
+        <devise>XOF</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0079</identification>
+        <langue>SP</langue>
+        <gestion>0</gestion>
+        <iso>GE</iso>
+        <drapeau>\flags\Georgie.png</drapeau>
+        <nom_FR>GEORGIE</nom_FR>
+        <nom_UK>GEORGIA</nom_UK>
+        <nom_SP>GEORGIE</nom_SP>
+        <nationnalite_FR>GEORGIENNE</nationnalite_FR>
+        <nationnalite_UK>GEORGIENNE</nationnalite_UK>
+        <nationnalite_SP>GEORGIENNE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>995</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0080</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>GH</iso>
+        <drapeau>\flags\Ghana.png</drapeau>
+        <nom_FR>GHANA</nom_FR>
+        <nom_UK>GHANA</nom_UK>
+        <nom_SP>GHANA</nom_SP>
+        <nationnalite_FR>GHANEENNE</nationnalite_FR>
+        <nationnalite_UK>GHANEENNE</nationnalite_UK>
+        <nationnalite_SP>GHANEENNE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>233</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0081</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>GI</iso>
+        <drapeau></drapeau>
+        <nom_FR>GILBRATAR</nom_FR>
+        <nom_UK>GILBRATAR</nom_UK>
+        <nom_SP>GILBRATAR</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>350</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0082</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>GR</iso>
+        <drapeau>\flags\Grece.png</drapeau>
+        <nom_FR>GRECE</nom_FR>
+        <nom_UK>GREECE</nom_UK>
+        <nom_SP>GRECE</nom_SP>
+        <nationnalite_FR>GREQUE</nationnalite_FR>
+        <nationnalite_UK>INTERNAL SERVER ERROR</nationnalite_UK>
+        <nationnalite_SP>GREQUE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>30</indicatif>
+        <devise>EUR</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0083</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>GD</iso>
+        <drapeau>\flags\Grenade.png</drapeau>
+        <nom_FR>GRENADE</nom_FR>
+        <nom_UK>GRENADA</nom_UK>
+        <nom_SP>GRENADA</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>147</indicatif>
+        <devise>XCD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0084</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>GL</iso>
+        <drapeau></drapeau>
+        <nom_FR>GROENLAND</nom_FR>
+        <nom_UK>GREENLAND</nom_UK>
+        <nom_SP>GROENLANDiA</nom_SP>
+        <nationnalite_FR>GROENLANDAIS</nationnalite_FR>
+        <nationnalite_UK>GREENLAND</nationnalite_UK>
+        <nationnalite_SP>GROENLANDESA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>299</indicatif>
+        <devise>DKK</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0085</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>GP</iso>
+        <drapeau></drapeau>
+        <nom_FR>GUADELOUPE</nom_FR>
+        <nom_UK>GUADELOUPE</nom_UK>
+        <nom_SP>GUADELUPE</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>590</indicatif>
+        <devise>EUR</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0086</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>GU</iso>
+        <drapeau></drapeau>
+        <nom_FR>GUAM</nom_FR>
+        <nom_UK>GUAM</nom_UK>
+        <nom_SP>GUAM</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite>CANADA</fiscalite>
+        <indicatif>167</indicatif>
+        <devise>AUD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0087</identification>
+        <langue>SP</langue>
+        <gestion>0</gestion>
+        <iso>GT</iso>
+        <drapeau>\flags\Guatemala.png</drapeau>
+        <nom_FR>GUATEMALA</nom_FR>
+        <nom_UK>GUATEMALA</nom_UK>
+        <nom_SP>GUATEMALA</nom_SP>
+        <nationnalite_FR>GUATEMALTEQUE</nationnalite_FR>
+        <nationnalite_UK>GUATEMALTEQUE</nationnalite_UK>
+        <nationnalite_SP>GUATEMALTEQUE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>502</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0255</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>GG</iso>
+        <drapeau></drapeau>
+        <nom_FR>GUERNESEY</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif></indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0090</identification>
+        <langue>FR</langue>
+        <gestion>2</gestion>
+        <iso>GW</iso>
+        <drapeau>\flags\Guinee Bissau.png</drapeau>
+        <nom_FR>GUINEE BISSAU</nom_FR>
+        <nom_UK>GUINEA BISSAU</nom_UK>
+        <nom_SP>GUINEA BISSAU</nom_SP>
+        <nationnalite_FR>GUINEENNE</nationnalite_FR>
+        <nationnalite_UK>GUINEENNE</nationnalite_UK>
+        <nationnalite_SP>GUINEENNE</nationnalite_SP>
+        <zone>UEMOA</zone>
+        <fiscalite>SYSCOA</fiscalite>
+        <indicatif>224</indicatif>
+        <devise>XOF</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0088</identification>
+        <langue>FR</langue>
+        <gestion>2</gestion>
+        <iso>GQ</iso>
+        <drapeau>\flags\Guinee Equatoriale.png</drapeau>
+        <nom_FR>GUINEE EQUATORIALE</nom_FR>
+        <nom_UK>EQUATORIAL GUINEA</nom_UK>
+        <nom_SP>GUINEA EQUATORIALE</nom_SP>
+        <nationnalite_FR>EQUATO-GUINEENNE</nationnalite_FR>
+        <nationnalite_UK>EQUATO-GUINEENNE</nationnalite_UK>
+        <nationnalite_SP>EQUATO-GUINEENNE</nationnalite_SP>
+        <zone>CEMAC</zone>
+        <fiscalite>OHADA</fiscalite>
+        <indicatif>240</indicatif>
+        <devise>XAF</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0089</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>GN</iso>
+        <drapeau></drapeau>
+        <nom_FR>GUINEE KONAKRI</nom_FR>
+        <nom_UK>GUINEA KONAKRI</nom_UK>
+        <nom_SP>GUINEA KONAKRI</nom_SP>
+        <nationnalite_FR>EQUATO-GUINEENNE</nationnalite_FR>
+        <nationnalite_UK>EQUATO-GUINEENNE</nationnalite_UK>
+        <nationnalite_SP>EQUATO-GUINEENNE</nationnalite_SP>
+        <zone>UEMOA</zone>
+        <fiscalite>OHADA</fiscalite>
+        <indicatif>240</indicatif>
+        <devise>XAF</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0091</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>GY</iso>
+        <drapeau>\flags\Guyana.png</drapeau>
+        <nom_FR>GUYANA</nom_FR>
+        <nom_UK>GUYANA</nom_UK>
+        <nom_SP>GUYANA</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>592</indicatif>
+        <devise>EUR</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0092</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>GF</iso>
+        <drapeau></drapeau>
+        <nom_FR>GUYANNE FRANCAISE</nom_FR>
+        <nom_UK>FRENCH GUIANA</nom_UK>
+        <nom_SP>GUYANNE FRANCÉS</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>594</indicatif>
+        <devise>EUR</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0093</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>HT</iso>
+        <drapeau>\flags\Haiti.png</drapeau>
+        <nom_FR>HAITI</nom_FR>
+        <nom_UK>HAITI</nom_UK>
+        <nom_SP>HAITI</nom_SP>
+        <nationnalite_FR>HAITIENNE</nationnalite_FR>
+        <nationnalite_UK>HAITIENNE</nationnalite_UK>
+        <nationnalite_SP>HAITIENNE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>509</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0094</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso></iso>
+        <drapeau></drapeau>
+        <nom_FR>HAWAII</nom_FR>
+        <nom_UK>HAWAII</nom_UK>
+        <nom_SP>HAWAI</nom_SP>
+        <nationnalite_FR>HAWAIENNE</nationnalite_FR>
+        <nationnalite_UK>HAWAIENNE</nationnalite_UK>
+        <nationnalite_SP>HAWAIENNE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>180</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0096</identification>
+        <langue>SP</langue>
+        <gestion>0</gestion>
+        <iso>HN</iso>
+        <drapeau>\flags\Honduras.png</drapeau>
+        <nom_FR>HONDURAS</nom_FR>
+        <nom_UK>HONDURAS</nom_UK>
+        <nom_SP>HONDURAS</nom_SP>
+        <nationnalite_FR>HONDURIENNE</nationnalite_FR>
+        <nationnalite_UK>HONDURAN</nationnalite_UK>
+        <nationnalite_SP>HONDURENA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>504</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0097</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>HK</iso>
+        <drapeau></drapeau>
+        <nom_FR>HONG KONG</nom_FR>
+        <nom_UK>HONG KONG</nom_UK>
+        <nom_SP>HONG KONG</nom_SP>
+        <nationnalite_FR>HONGKONGAIS</nationnalite_FR>
+        <nationnalite_UK>HONGKONGAIS</nationnalite_UK>
+        <nationnalite_SP>HONGKONGAIS</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>852</indicatif>
+        <devise>HKD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0098</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>HU</iso>
+        <drapeau>\flags\Hongrie.png</drapeau>
+        <nom_FR>HONGRIE</nom_FR>
+        <nom_UK>HUNGARY</nom_UK>
+        <nom_SP>HUNGRIA</nom_SP>
+        <nationnalite_FR>HONGROISE</nationnalite_FR>
+        <nationnalite_UK>HUNGARIAN</nationnalite_UK>
+        <nationnalite_SP>HÙNGARA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>36</indicatif>
+        <devise>HUF</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0256</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>BV</iso>
+        <drapeau></drapeau>
+        <nom_FR>ILE DE BOUVET</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif></indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0243</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>IM</iso>
+        <drapeau></drapeau>
+        <nom_FR>ILE DE MAN</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif></indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0246</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>MP</iso>
+        <drapeau></drapeau>
+        <nom_FR>ILE MARIANE NORD</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif></indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0099</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>MU</iso>
+        <drapeau>\flags\Ile Maurice.png</drapeau>
+        <nom_FR>ILE MAURICE</nom_FR>
+        <nom_UK>ISLAND MAURICE</nom_UK>
+        <nom_SP>ISLA MAURICE</nom_SP>
+        <nationnalite_FR>MAURICIENNE</nationnalite_FR>
+        <nationnalite_UK>MAURICIENNE</nationnalite_UK>
+        <nationnalite_SP>MAURICIENNE</nationnalite_SP>
+        <zone>COMESA</zone>
+        <fiscalite>SYSCOA</fiscalite>
+        <indicatif>230</indicatif>
+        <devise>MUR</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0100</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso></iso>
+        <drapeau></drapeau>
+        <nom_FR>ILES CANARIES</nom_FR>
+        <nom_UK>CANARY ISLANDS</nom_UK>
+        <nom_SP>ISLAS CANARIAS</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif></indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0101</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>KY</iso>
+        <drapeau></drapeau>
+        <nom_FR>ILES CAYMANS</nom_FR>
+        <nom_UK>CAYMANS ILIAC TRACTS</nom_UK>
+        <nom_SP>ISLAS CAYMANS</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>134</indicatif>
+        <devise>KWD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0102</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>FK</iso>
+        <drapeau></drapeau>
+        <nom_FR>ILES FALKLAND</nom_FR>
+        <nom_UK>ILIAC TRACTS FALKLAND</nom_UK>
+        <nom_SP>ISLAS FALKLAND</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>500</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0103</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>UM</iso>
+        <drapeau></drapeau>
+        <nom_FR>ILES MARIANNE</nom_FR>
+        <nom_UK>ILIAC TRACTS MARIANNE</nom_UK>
+        <nom_SP>ISLAS MARIANNE</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>167</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0104</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>MH</iso>
+        <drapeau>\flags\Iles Marshall.png</drapeau>
+        <nom_FR>ILES MARSHALL</nom_FR>
+        <nom_UK>ILIAC TRACTS MARSHAL</nom_UK>
+        <nom_SP>ISLAS MARSHALL</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>692</indicatif>
+        <devise>USD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0198</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>SB</iso>
+        <drapeau>\flags\Iles Salomon.png</drapeau>
+        <nom_FR>ILES SALOMON</nom_FR>
+        <nom_UK>ILIAC TRACTS SALOMON</nom_UK>
+        <nom_SP>ISLAS SALOMON</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>677</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0105</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>IN</iso>
+        <drapeau>\flags\Inde.png</drapeau>
+        <nom_FR>INDE</nom_FR>
+        <nom_UK>INDIA</nom_UK>
+        <nom_SP>LA INDIA</nom_SP>
+        <nationnalite_FR>INDIENNE</nationnalite_FR>
+        <nationnalite_UK>PRINTED CALICO</nationnalite_UK>
+        <nationnalite_SP>INDIA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>91</indicatif>
+        <devise>INR</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0106</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>ID</iso>
+        <drapeau>\flags\Indonesie.png</drapeau>
+        <nom_FR>INDONESIE</nom_FR>
+        <nom_UK>INDONESIA</nom_UK>
+        <nom_SP>INDONESIA</nom_SP>
+        <nationnalite_FR>INDONESIENNE</nationnalite_FR>
+        <nationnalite_UK>INDONESIAN</nationnalite_UK>
+        <nationnalite_SP>INDONESIA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>62</indicatif>
+        <devise>IDR</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0107</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso></iso>
+        <drapeau></drapeau>
+        <nom_FR>INMARSAT ATLANT. EST</nom_FR>
+        <nom_UK>INMARSAT ATLANT. EAST</nom_UK>
+        <nom_SP>INMARSAT ATLANT. ES</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>871</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0108</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso></iso>
+        <drapeau></drapeau>
+        <nom_FR>INMARSAT ATLANT. OUEST</nom_FR>
+        <nom_UK>INMARSAT WEST ATLANT.</nom_UK>
+        <nom_SP>INMARSAT ATLANT. OESTE</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>874</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0109</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso></iso>
+        <drapeau></drapeau>
+        <nom_FR>INMARSAT INDIEN</nom_FR>
+        <nom_UK>INMERSAT INDIAN</nom_UK>
+        <nom_SP>INMERSAT INDICO</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>873</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0110</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso></iso>
+        <drapeau></drapeau>
+        <nom_FR>INMARSAT PACIFIQUE</nom_FR>
+        <nom_UK>INMERSAT PACIFIQUE</nom_UK>
+        <nom_SP>INMERSAT PACIFIQUE</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>872</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0111</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>IQ</iso>
+        <drapeau>\flags\Irak.png</drapeau>
+        <nom_FR>IRAK</nom_FR>
+        <nom_UK>IRAQ</nom_UK>
+        <nom_SP>IRAQ</nom_SP>
+        <nationnalite_FR>IRAKIENNE</nationnalite_FR>
+        <nationnalite_UK>IRAQUI</nationnalite_UK>
+        <nationnalite_SP>IRAQUI</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>964</indicatif>
+        <devise>IQD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0112</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>IR</iso>
+        <drapeau>\flags\Iran.png</drapeau>
+        <nom_FR>IRAN</nom_FR>
+        <nom_UK>ISLAMIC REPUBLIC OF IRAN</nom_UK>
+        <nom_SP>IRAN</nom_SP>
+        <nationnalite_FR>IRANIENNE</nationnalite_FR>
+        <nationnalite_UK>IRANIAN</nationnalite_UK>
+        <nationnalite_SP>IRANI</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>98</indicatif>
+        <devise>IRR</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0113</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>IE</iso>
+        <drapeau>\flags\Irlande.png</drapeau>
+        <nom_FR>IRLANDE</nom_FR>
+        <nom_UK>IRELAND</nom_UK>
+        <nom_SP>IRLANDA</nom_SP>
+        <nationnalite_FR>IRLANDAISE</nationnalite_FR>
+        <nationnalite_UK>IRISH</nationnalite_UK>
+        <nationnalite_SP>IRLANDESA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>353</indicatif>
+        <devise>EUR</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0114</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>IS</iso>
+        <drapeau>\flags\Islande.png</drapeau>
+        <nom_FR>ISLANDE</nom_FR>
+        <nom_UK>ICELAND</nom_UK>
+        <nom_SP>ISLANDIA</nom_SP>
+        <nationnalite_FR>ISLANDAISE</nationnalite_FR>
+        <nationnalite_UK>ICELANDIC</nationnalite_UK>
+        <nationnalite_SP>ISLANDAISA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>354</indicatif>
+        <devise>ISK</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0115</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>IL</iso>
+        <drapeau>\flags\Israel.png</drapeau>
+        <nom_FR>ISRAEL</nom_FR>
+        <nom_UK>ISRAEL</nom_UK>
+        <nom_SP>ISRAEL</nom_SP>
+        <nationnalite_FR>ISRAELIEN</nationnalite_FR>
+        <nationnalite_UK>ISRAELI</nationnalite_UK>
+        <nationnalite_SP>ISRAELI</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>972</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0116</identification>
+        <langue>SP</langue>
+        <gestion>0</gestion>
+        <iso>IT</iso>
+        <drapeau>\flags\Italie.png</drapeau>
+        <nom_FR>ITALIE</nom_FR>
+        <nom_UK>ITALY</nom_UK>
+        <nom_SP>ITALIA</nom_SP>
+        <nationnalite_FR>ITALIENNE</nationnalite_FR>
+        <nationnalite_UK>ITALIAN</nationnalite_UK>
+        <nationnalite_SP>ITALIAN</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>39</indicatif>
+        <devise>EUR</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0117</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>JM</iso>
+        <drapeau>\flags\Jamaique.png</drapeau>
+        <nom_FR>JAMAIQUE</nom_FR>
+        <nom_UK>JAMAICA</nom_UK>
+        <nom_SP>JAMAIQUE</nom_SP>
+        <nationnalite_FR>JAMAIQUAINE</nationnalite_FR>
+        <nationnalite_UK>JAMAIQUAINE</nationnalite_UK>
+        <nationnalite_SP>JAMAIQUAINE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>187</indicatif>
+        <devise>JMD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0118</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>JP</iso>
+        <drapeau>\flags\Japon.png</drapeau>
+        <nom_FR>JAPON</nom_FR>
+        <nom_UK>JAPAN</nom_UK>
+        <nom_SP>JAPON</nom_SP>
+        <nationnalite_FR>JAPONAISE</nationnalite_FR>
+        <nationnalite_UK>JAPONESE</nationnalite_UK>
+        <nationnalite_SP>JAPONESA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>81</indicatif>
+        <devise>JPY</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0252</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>JE</iso>
+        <drapeau></drapeau>
+        <nom_FR>JERSEY</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif></indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0119</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>JO</iso>
+        <drapeau>\flags\Jordanie.png</drapeau>
+        <nom_FR>JORDANIE</nom_FR>
+        <nom_UK>JORDAN</nom_UK>
+        <nom_SP>JORDANIA</nom_SP>
+        <nationnalite_FR>JORDANIENNE</nationnalite_FR>
+        <nationnalite_UK>JORDANIAN</nationnalite_UK>
+        <nationnalite_SP>JORDANA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>962</indicatif>
+        <devise>JOD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0120</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>KZ</iso>
+        <drapeau>\flags\Kazakstan.png</drapeau>
+        <nom_FR>KAZAKSTAN</nom_FR>
+        <nom_UK>KAZAKSTAN</nom_UK>
+        <nom_SP>KAZAKSTAN</nom_SP>
+        <nationnalite_FR>KAZAKH</nationnalite_FR>
+        <nationnalite_UK>KAZAKH</nationnalite_UK>
+        <nationnalite_SP>KAZAKH</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>7</indicatif>
+        <devise>KZT</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0121</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>KE</iso>
+        <drapeau>\flags\Kenya.png</drapeau>
+        <nom_FR>KENYA</nom_FR>
+        <nom_UK>KENYA</nom_UK>
+        <nom_SP>KENYA</nom_SP>
+        <nationnalite_FR>KENYANS</nationnalite_FR>
+        <nationnalite_UK>KENYANS</nationnalite_UK>
+        <nationnalite_SP>KENIANOS</nationnalite_SP>
+        <zone>COMESA</zone>
+        <fiscalite></fiscalite>
+        <indicatif>254</indicatif>
+        <devise>KES</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0122</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>KG</iso>
+        <drapeau>\flags\Kirghizistan.png</drapeau>
+        <nom_FR>KIRGHIZISTAN</nom_FR>
+        <nom_UK>KIRGHIZISTAN</nom_UK>
+        <nom_SP>KIRGHIZISTAN</nom_SP>
+        <nationnalite_FR>KIRGHIZISTANE</nationnalite_FR>
+        <nationnalite_UK>KIRGHIZISTANE</nationnalite_UK>
+        <nationnalite_SP>KIRGHIZISTANE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>996</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0123</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>KI</iso>
+        <drapeau>\flags\Kiribati.png</drapeau>
+        <nom_FR>KIRIBATI</nom_FR>
+        <nom_UK>KIRIBATI</nom_UK>
+        <nom_SP>KIRIBATI</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>686</indicatif>
+        <devise>AUD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0124</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>KW</iso>
+        <drapeau>\flags\Koweit.png</drapeau>
+        <nom_FR>KOWEIT</nom_FR>
+        <nom_UK>KUWAIT</nom_UK>
+        <nom_SP>KUWAIT</nom_SP>
+        <nationnalite_FR>KOWEITIENNE</nationnalite_FR>
+        <nationnalite_UK>KUWAITI</nationnalite_UK>
+        <nationnalite_SP>KOWEITIENNE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>965</indicatif>
+        <devise>KWD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0125</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>LA</iso>
+        <drapeau>\flags\Laos.png</drapeau>
+        <nom_FR>LAOS</nom_FR>
+        <nom_UK>LAO PEOPLE'S DEMOCRATIC REPUBLIC</nom_UK>
+        <nom_SP>LAOS</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>856</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0194</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>VC</iso>
+        <drapeau>\flags\Saint Vincent Et Les Grenadines.png</drapeau>
+        <nom_FR>LES GRENADINES</nom_FR>
+        <nom_UK>THE GRENADINES</nom_UK>
+        <nom_SP>LAS GRENADINAS</nom_SP>
+        <nationnalite_FR>SAINT -VINTENTAIS</nationnalite_FR>
+        <nationnalite_UK>SAINT-VENTENTAIS</nationnalite_UK>
+        <nationnalite_SP>SENTO-VENTENTAIS</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>178</indicatif>
+        <devise>XCD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0126</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>LS</iso>
+        <drapeau>\flags\Lesotho.png</drapeau>
+        <nom_FR>LESOTHO</nom_FR>
+        <nom_UK>LESHOTO</nom_UK>
+        <nom_SP>LESHOTO</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>266</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0127</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>LV</iso>
+        <drapeau>\flags\Lettonie.png</drapeau>
+        <nom_FR>LETTONIE</nom_FR>
+        <nom_UK>LATVIA</nom_UK>
+        <nom_SP>LETONIA</nom_SP>
+        <nationnalite_FR>LETTONE</nationnalite_FR>
+        <nationnalite_UK>LATVIAN</nationnalite_UK>
+        <nationnalite_SP>LETTONE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>371</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0128</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>LB</iso>
+        <drapeau>\flags\Liban.png</drapeau>
+        <nom_FR>LIBAN</nom_FR>
+        <nom_UK>LEBANON</nom_UK>
+        <nom_SP>EL LIBANO</nom_SP>
+        <nationnalite_FR>LIBANAISE</nationnalite_FR>
+        <nationnalite_UK>LEBANESE</nationnalite_UK>
+        <nationnalite_SP>LIBANESA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>961</indicatif>
+        <devise>LBP</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0244</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>LR</iso>
+        <drapeau></drapeau>
+        <nom_FR>LIBERIA</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif></indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0129</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>LY</iso>
+        <drapeau>\flags\Libye.png</drapeau>
+        <nom_FR>LIBYE</nom_FR>
+        <nom_UK>LIBYA</nom_UK>
+        <nom_SP>LIBIA</nom_SP>
+        <nationnalite_FR>LIBYENNE</nationnalite_FR>
+        <nationnalite_UK>LIBYAN</nationnalite_UK>
+        <nationnalite_SP>LIBIA</nationnalite_SP>
+        <zone>COMESA</zone>
+        <fiscalite></fiscalite>
+        <indicatif>218</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0245</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>LI</iso>
+        <drapeau></drapeau>
+        <nom_FR>LIECHTENSTEIN</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif></indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0130</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>LT</iso>
+        <drapeau>\flags\Lituanie.png</drapeau>
+        <nom_FR>LITUANIE</nom_FR>
+        <nom_UK>LITHUANIA</nom_UK>
+        <nom_SP>LITUANIA</nom_SP>
+        <nationnalite_FR>LITUANIENNE</nationnalite_FR>
+        <nationnalite_UK>LITHUANIAN</nationnalite_UK>
+        <nationnalite_SP>LITUANA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>370</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0131</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>LU</iso>
+        <drapeau>\flags\Luxembourg.png</drapeau>
+        <nom_FR>LUXEMBOURG</nom_FR>
+        <nom_UK>LUXEMBOURG</nom_UK>
+        <nom_SP>LUXEMBURGO</nom_SP>
+        <nationnalite_FR>LUXEMBOURGEOISE</nationnalite_FR>
+        <nationnalite_UK>NATIVE OF LUXEMBOURG</nationnalite_UK>
+        <nationnalite_SP>LUXEMBURGUESA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>352</indicatif>
+        <devise>EUR</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0132</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>MO</iso>
+        <drapeau>\flags\Macao.png</drapeau>
+        <nom_FR>MACAO</nom_FR>
+        <nom_UK>MACAO</nom_UK>
+        <nom_SP>MACAO</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>853</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0134</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>MG</iso>
+        <drapeau>\flags\Madagascar.png</drapeau>
+        <nom_FR>MADAGASCAR</nom_FR>
+        <nom_UK>MADAGASCAR</nom_UK>
+        <nom_SP>EL MADAGASCAR</nom_SP>
+        <nationnalite_FR>MALGACHE</nationnalite_FR>
+        <nationnalite_UK>MALAGASY</nationnalite_UK>
+        <nationnalite_SP>MALGACHE</nationnalite_SP>
+        <zone>COMESA</zone>
+        <fiscalite>OHADA</fiscalite>
+        <indicatif>261</indicatif>
+        <devise>XAF</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0135</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>MY</iso>
+        <drapeau>\flags\Malaisie.png</drapeau>
+        <nom_FR>MALAISIE</nom_FR>
+        <nom_UK>MALAYSIA</nom_UK>
+        <nom_SP>MALASIA</nom_SP>
+        <nationnalite_FR>MALAISIENNE</nationnalite_FR>
+        <nationnalite_UK>MALAISIENNE</nationnalite_UK>
+        <nationnalite_SP>MALAISIENNE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>60</indicatif>
+        <devise>MYR</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0136</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>MW</iso>
+        <drapeau>\flags\Malawi.png</drapeau>
+        <nom_FR>MALAWI</nom_FR>
+        <nom_UK>MALAWI</nom_UK>
+        <nom_SP>EL LAGO MALAWI</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone>COMESA</zone>
+        <fiscalite></fiscalite>
+        <indicatif>265</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0137</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>MV</iso>
+        <drapeau>\flags\Maldives.png</drapeau>
+        <nom_FR>MALDIVES</nom_FR>
+        <nom_UK>MALDIVES</nom_UK>
+        <nom_SP>LAS MALDIVAS</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>960</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0138</identification>
+        <langue>FR</langue>
+        <gestion>2</gestion>
+        <iso>ML</iso>
+        <drapeau>\flags\Mali.png</drapeau>
+        <nom_FR>MALI</nom_FR>
+        <nom_UK>MALI</nom_UK>
+        <nom_SP>MALI</nom_SP>
+        <nationnalite_FR>MALIENNE</nationnalite_FR>
+        <nationnalite_UK>MALIAN</nationnalite_UK>
+        <nationnalite_SP>MALI</nationnalite_SP>
+        <zone>UEMOA</zone>
+        <fiscalite>SYSCOA</fiscalite>
+        <indicatif>223</indicatif>
+        <devise>XOF</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0139</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>MT</iso>
+        <drapeau>\flags\Malte Et Gozo.png</drapeau>
+        <nom_FR>MALTE</nom_FR>
+        <nom_UK>MALTE</nom_UK>
+        <nom_SP>MALTE</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>356</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0140</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>MA</iso>
+        <drapeau>\flags\Maroc.png</drapeau>
+        <nom_FR>MAROC</nom_FR>
+        <nom_UK>MOROCCO</nom_UK>
+        <nom_SP>MARRUECOS</nom_SP>
+        <nationnalite_FR>MAROCAINE</nationnalite_FR>
+        <nationnalite_UK>MOROCCAN</nationnalite_UK>
+        <nationnalite_SP>MARROQUI</nationnalite_SP>
+        <zone>UEMOA</zone>
+        <fiscalite></fiscalite>
+        <indicatif>212</indicatif>
+        <devise>MAD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0141</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>MQ</iso>
+        <drapeau></drapeau>
+        <nom_FR>MARTINIQUE</nom_FR>
+        <nom_UK>MARTINIQUE</nom_UK>
+        <nom_SP>LA MARTINICA</nom_SP>
+        <nationnalite_FR>MARTINIQUAISE</nationnalite_FR>
+        <nationnalite_UK>MARTINIQUAISE</nationnalite_UK>
+        <nationnalite_SP>MARTINIQUAISE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>596</indicatif>
+        <devise>EUR</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0142</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>MR</iso>
+        <drapeau>\flags\Mauritanie.png</drapeau>
+        <nom_FR>MAURITANIE</nom_FR>
+        <nom_UK>MAURITANIA</nom_UK>
+        <nom_SP>MAURITANIA</nom_SP>
+        <nationnalite_FR>MAURITANIENNE</nationnalite_FR>
+        <nationnalite_UK>MAURITANIA</nationnalite_UK>
+        <nationnalite_SP>MAURITANA</nationnalite_SP>
+        <zone>UEMOA</zone>
+        <fiscalite></fiscalite>
+        <indicatif>222</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0143</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>YT</iso>
+        <drapeau></drapeau>
+        <nom_FR>MAYOTTE</nom_FR>
+        <nom_UK>MAYOTTE</nom_UK>
+        <nom_SP>EL MAYOTTE</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>269</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0144</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>MX</iso>
+        <drapeau>\flags\Mexique.png</drapeau>
+        <nom_FR>MEXIQUE</nom_FR>
+        <nom_UK>MEXICO</nom_UK>
+        <nom_SP>MÉXICO</nom_SP>
+        <nationnalite_FR>MEXICAINE</nationnalite_FR>
+        <nationnalite_UK>MEXICAN</nationnalite_UK>
+        <nationnalite_SP>MEJICANA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>52</indicatif>
+        <devise>MXN</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0145</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>FM</iso>
+        <drapeau>\flags\Microsenie.png</drapeau>
+        <nom_FR>MICROSENIE</nom_FR>
+        <nom_UK>FEDERATED STATES OF MICRONESIA</nom_UK>
+        <nom_SP>MICROSERIE</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>691</indicatif>
+        <devise>USD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0147</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>MC</iso>
+        <drapeau>\flags\Monaco.png</drapeau>
+        <nom_FR>MONACO</nom_FR>
+        <nom_UK>MONACO</nom_UK>
+        <nom_SP>MONACO</nom_SP>
+        <nationnalite_FR>MONEGASQUE</nationnalite_FR>
+        <nationnalite_UK>MONEGASQUE</nationnalite_UK>
+        <nationnalite_SP>MONEGASQUE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>377</indicatif>
+        <devise>EUR</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0148</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>MN</iso>
+        <drapeau>\flags\Mongolie.png</drapeau>
+        <nom_FR>MONGOLIE</nom_FR>
+        <nom_UK>MONGOLIA</nom_UK>
+        <nom_SP>MONGOLIA</nom_SP>
+        <nationnalite_FR>MONGOLE</nationnalite_FR>
+        <nationnalite_UK>MOGOLIAN</nationnalite_UK>
+        <nationnalite_SP>MONGOL</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>976</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0251</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>ME</iso>
+        <drapeau></drapeau>
+        <nom_FR>MONTENEGRO</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif></indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0149</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>MS</iso>
+        <drapeau></drapeau>
+        <nom_FR>MONTSERRAT</nom_FR>
+        <nom_UK>MONTESERAT</nom_UK>
+        <nom_SP>MONTESERAT</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>166</indicatif>
+        <devise>XCD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0150</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>MZ</iso>
+        <drapeau>\flags\Mozambique.png</drapeau>
+        <nom_FR>MOZAMBIQUE</nom_FR>
+        <nom_UK>MOZAMBIQUE</nom_UK>
+        <nom_SP>MOZAMBIQUE</nom_SP>
+        <nationnalite_FR>MOZAMBICAINE</nationnalite_FR>
+        <nationnalite_UK>MOZAMBICAN</nationnalite_UK>
+        <nationnalite_SP>MOZAMBICAINE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>258</indicatif>
+        <devise>PEN</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0151</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>MM</iso>
+        <drapeau></drapeau>
+        <nom_FR>MYANMAR</nom_FR>
+        <nom_UK>MYANMAR</nom_UK>
+        <nom_SP>MYANMAR</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>95</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0152</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>NA</iso>
+        <drapeau>\flags\Namibie.png</drapeau>
+        <nom_FR>NAMIBIE</nom_FR>
+        <nom_UK>NAMIBIA</nom_UK>
+        <nom_SP>NAMIBIA</nom_SP>
+        <nationnalite_FR>NAMIBIENNE</nationnalite_FR>
+        <nationnalite_UK>NAMIBIAN</nationnalite_UK>
+        <nationnalite_SP>NAMIBIENNE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>264</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0153</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>NR</iso>
+        <drapeau>\flags\Nauru.png</drapeau>
+        <nom_FR>NAURU</nom_FR>
+        <nom_UK>NAURU</nom_UK>
+        <nom_SP>NAURU</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>674</indicatif>
+        <devise>AUD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0154</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>NP</iso>
+        <drapeau>\flags\Nepal.png</drapeau>
+        <nom_FR>NEPAL</nom_FR>
+        <nom_UK>NEPAL</nom_UK>
+        <nom_SP>NEPAL</nom_SP>
+        <nationnalite_FR>NEPALAISE</nationnalite_FR>
+        <nationnalite_UK>NEPALAISE</nationnalite_UK>
+        <nationnalite_SP>NEPALAISE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>977</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0155</identification>
+        <langue>SP</langue>
+        <gestion>0</gestion>
+        <iso>NI</iso>
+        <drapeau>\flags\Nicaragua.png</drapeau>
+        <nom_FR>NICARAGUA</nom_FR>
+        <nom_UK>NICARAGUA</nom_UK>
+        <nom_SP>NICARAGUA</nom_SP>
+        <nationnalite_FR>NICARAGUAYENNE</nationnalite_FR>
+        <nationnalite_UK>NICARAGUAN</nationnalite_UK>
+        <nationnalite_SP>NICARAGUENSE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>505</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0156</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>NE</iso>
+        <drapeau>\flags\Niger.png</drapeau>
+        <nom_FR>NIGER</nom_FR>
+        <nom_UK>NIGER</nom_UK>
+        <nom_SP>NIGER</nom_SP>
+        <nationnalite_FR>NIGERIENNE</nationnalite_FR>
+        <nationnalite_UK>NIGERIENNE</nationnalite_UK>
+        <nationnalite_SP>NIGERIENNE</nationnalite_SP>
+        <zone>UEMOA</zone>
+        <fiscalite>SYSCOA</fiscalite>
+        <indicatif>227</indicatif>
+        <devise>XAF</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0157</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>NG</iso>
+        <drapeau>\flags\Nigeria.png</drapeau>
+        <nom_FR>NIGERIA</nom_FR>
+        <nom_UK>NIGERIA</nom_UK>
+        <nom_SP>NIGERIA</nom_SP>
+        <nationnalite_FR>NIGERIANNE</nationnalite_FR>
+        <nationnalite_UK>NIGERIANNE</nationnalite_UK>
+        <nationnalite_SP>NIGERIANNE</nationnalite_SP>
+        <zone>COMESA</zone>
+        <fiscalite>OCAM</fiscalite>
+        <indicatif>234</indicatif>
+        <devise>NGN</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0247</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>NU</iso>
+        <drapeau></drapeau>
+        <nom_FR>NIUE</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif></indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0158</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>NF</iso>
+        <drapeau></drapeau>
+        <nom_FR>NORFOLK</nom_FR>
+        <nom_UK>NORFOLK</nom_UK>
+        <nom_SP>NORFOLK</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>672</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0159</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>NO</iso>
+        <drapeau>\flags\Norvege.png</drapeau>
+        <nom_FR>NORVEGE</nom_FR>
+        <nom_UK>NORWAY</nom_UK>
+        <nom_SP>NORVEGE</nom_SP>
+        <nationnalite_FR>NORVEGIENNE</nationnalite_FR>
+        <nationnalite_UK>NORVEGIENNE</nationnalite_UK>
+        <nationnalite_SP>NORVEGIENNE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>47</indicatif>
+        <devise>NOK</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0160</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>NC</iso>
+        <drapeau></drapeau>
+        <nom_FR>NOUVELLE CALEDONIE</nom_FR>
+        <nom_UK>NEW CALEDONIA</nom_UK>
+        <nom_SP>NOTICIA CELADONIE</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>687</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0161</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>NZ</iso>
+        <drapeau>\flags\Nouvelle Zelande.png</drapeau>
+        <nom_FR>NOUVELLE ZELANDE</nom_FR>
+        <nom_UK>NEW ZEALAND</nom_UK>
+        <nom_SP>NOTICIA ZELANDE</nom_SP>
+        <nationnalite_FR>NEOZELANDAISE</nationnalite_FR>
+        <nationnalite_UK>NEOZELANDAISE</nationnalite_UK>
+        <nationnalite_SP>NEOZELANDAISE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>64</indicatif>
+        <devise>NZD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0254</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>IO</iso>
+        <drapeau></drapeau>
+        <nom_FR>OCEAN INDIEN BRITANIQUE</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif></indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0162</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso></iso>
+        <drapeau></drapeau>
+        <nom_FR>OCEANIE AMERICAINE</nom_FR>
+        <nom_UK>OCEANIA AMERICAINE</nom_UK>
+        <nom_SP>OCEANIA AMERICAINE</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif></indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0163</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso></iso>
+        <drapeau></drapeau>
+        <nom_FR>OCEANIE NEO-ZELANDE</nom_FR>
+        <nom_UK>OCEANIA NEO-ZELANDE</nom_UK>
+        <nom_SP>OCEANIA NEO-ZELANDE</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif></indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0164</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso></iso>
+        <drapeau></drapeau>
+        <nom_FR>OCEANIE NOUVELLE GUINEE</nom_FR>
+        <nom_UK>NEW OCEANIA GUINEA</nom_UK>
+        <nom_SP>NUEVA OCEANIA GUINEA</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif></indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0165</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>OM</iso>
+        <drapeau>\flags\Oman.png</drapeau>
+        <nom_FR>OMAN</nom_FR>
+        <nom_UK>OMAN</nom_UK>
+        <nom_SP>OMAM</nom_SP>
+        <nationnalite_FR>OMANAISE</nationnalite_FR>
+        <nationnalite_UK>OMANAISE</nationnalite_UK>
+        <nationnalite_SP>OMANAISE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>968</indicatif>
+        <devise>OMR</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0166</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>UG</iso>
+        <drapeau>\flags\Ouganda.png</drapeau>
+        <nom_FR>OUGANDA</nom_FR>
+        <nom_UK>UGANDA</nom_UK>
+        <nom_SP>UGANDA</nom_SP>
+        <nationnalite_FR>OUGANDAISE</nationnalite_FR>
+        <nationnalite_UK>UGANDAN</nationnalite_UK>
+        <nationnalite_SP>UGANDESA</nationnalite_SP>
+        <zone>COMESA</zone>
+        <fiscalite></fiscalite>
+        <indicatif>256</indicatif>
+        <devise>ZAR</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0167</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>UZ</iso>
+        <drapeau>\flags\Ouzbekistan.png</drapeau>
+        <nom_FR>OUZBEKISTAN</nom_FR>
+        <nom_UK>UZBEKISTAN</nom_UK>
+        <nom_SP>OUZBERKISTAN</nom_SP>
+        <nationnalite_FR>OUZBEKS</nationnalite_FR>
+        <nationnalite_UK>UZBEKS</nationnalite_UK>
+        <nationnalite_SP>UZBECOS</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>7</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0168</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>PK</iso>
+        <drapeau>\flags\Pakistan.png</drapeau>
+        <nom_FR>PAKISTAN</nom_FR>
+        <nom_UK>PAKISTAN</nom_UK>
+        <nom_SP>PAKISTAN</nom_SP>
+        <nationnalite_FR>PAKISTANAISE</nationnalite_FR>
+        <nationnalite_UK>PAKISTANI</nationnalite_UK>
+        <nationnalite_SP>PAQUISTANI</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>92</indicatif>
+        <devise>PKR</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0248</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>PW</iso>
+        <drapeau></drapeau>
+        <nom_FR>PALAU</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif></indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0253</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>PS</iso>
+        <drapeau></drapeau>
+        <nom_FR>PALESTINE OCCUPEE</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif></indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0169</identification>
+        <langue>SP</langue>
+        <gestion>0</gestion>
+        <iso>PA</iso>
+        <drapeau>\flags\Panama.png</drapeau>
+        <nom_FR>PANAMA</nom_FR>
+        <nom_UK>PANAMA</nom_UK>
+        <nom_SP>PANAMÀ</nom_SP>
+        <nationnalite_FR>PANAMEENNE</nationnalite_FR>
+        <nationnalite_UK>PANAMEENNE</nationnalite_UK>
+        <nationnalite_SP>PANAMEENNE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>507</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0170</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>PG</iso>
+        <drapeau>\flags\Papouasie Nouvelle Guinee.png</drapeau>
+        <nom_FR>PAPOUASIE</nom_FR>
+        <nom_UK>PAPUA </nom_UK>
+        <nom_SP>PAPUSIA</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>675</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0171</identification>
+        <langue>SP</langue>
+        <gestion>0</gestion>
+        <iso>PY</iso>
+        <drapeau>\flags\Paraguay.png</drapeau>
+        <nom_FR>PARAGUAY</nom_FR>
+        <nom_UK>PARAGUAY</nom_UK>
+        <nom_SP>PARAGUAY</nom_SP>
+        <nationnalite_FR>PARAGUAYENNE</nationnalite_FR>
+        <nationnalite_UK>PARAGUAYAN</nationnalite_UK>
+        <nationnalite_SP>PARAGUAYA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>595</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0172</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>NL</iso>
+        <drapeau>\flags\Pays Bas.png</drapeau>
+        <nom_FR>PAYS BAS</nom_FR>
+        <nom_UK>LOW COUNTRY</nom_UK>
+        <nom_SP>PAIS BAJO</nom_SP>
+        <nationnalite_FR>NEERLANDAISE</nationnalite_FR>
+        <nationnalite_UK>NEERLANDAISE</nationnalite_UK>
+        <nationnalite_SP>NEERLANDAISE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>31</indicatif>
+        <devise>EUR</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0174</identification>
+        <langue>SP</langue>
+        <gestion>0</gestion>
+        <iso>PE</iso>
+        <drapeau>\flags\Perou.png</drapeau>
+        <nom_FR>PEROU</nom_FR>
+        <nom_UK>PERU</nom_UK>
+        <nom_SP>PEROU</nom_SP>
+        <nationnalite_FR>PERUVIENNE</nationnalite_FR>
+        <nationnalite_UK>PERUVIENNE</nationnalite_UK>
+        <nationnalite_SP>PERUVIENNE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>51</indicatif>
+        <devise>PEN</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0175</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>PH</iso>
+        <drapeau>\flags\Philippines.png</drapeau>
+        <nom_FR>PHILIPPINES</nom_FR>
+        <nom_UK>PHILIPPINES</nom_UK>
+        <nom_SP>FILIPINAS</nom_SP>
+        <nationnalite_FR>PHILIPINE</nationnalite_FR>
+        <nationnalite_UK>PHILIPINE</nationnalite_UK>
+        <nationnalite_SP>PHILIPINE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>63</indicatif>
+        <devise>PHP</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0176</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>PN</iso>
+        <drapeau></drapeau>
+        <nom_FR>PITCAIRN</nom_FR>
+        <nom_UK>PITCAIRN</nom_UK>
+        <nom_SP>PITCAIRN</nom_SP>
+        <nationnalite_FR>PITCAIRNAIS</nationnalite_FR>
+        <nationnalite_UK>PITCAIRNAIS</nationnalite_UK>
+        <nationnalite_SP>PITCAIRNAIS</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>672</indicatif>
+        <devise>NZD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0177</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>PL</iso>
+        <drapeau>\flags\Pologne.png</drapeau>
+        <nom_FR>POLOGNE</nom_FR>
+        <nom_UK>POLAND</nom_UK>
+        <nom_SP>POLONIA</nom_SP>
+        <nationnalite_FR>POLONAIS</nationnalite_FR>
+        <nationnalite_UK>POLE</nationnalite_UK>
+        <nationnalite_SP>POLACO</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>48</indicatif>
+        <devise>PLN</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0178</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>PF</iso>
+        <drapeau></drapeau>
+        <nom_FR>POLYNESIE FRANCAISE</nom_FR>
+        <nom_UK>FRENCH POLYNESIA</nom_UK>
+        <nom_SP>POLYNESIE FRANCÈS</nom_SP>
+        <nationnalite_FR>POLYNISIENNE</nationnalite_FR>
+        <nationnalite_UK>POLYNISIENNE</nationnalite_UK>
+        <nationnalite_SP>POLYNISINNE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>689</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0179</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>PT</iso>
+        <drapeau>\flags\Portugal.png</drapeau>
+        <nom_FR>PORTUGAL</nom_FR>
+        <nom_UK>PORTUGAL</nom_UK>
+        <nom_SP>PORTUGAL</nom_SP>
+        <nationnalite_FR>PORTUGAISE</nationnalite_FR>
+        <nationnalite_UK>POTUGUESE</nationnalite_UK>
+        <nationnalite_SP>PORTUGUESA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>351</indicatif>
+        <devise>EUR</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0180</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>PR</iso>
+        <drapeau></drapeau>
+        <nom_FR>PUERTO RICO</nom_FR>
+        <nom_UK>PUERTO RICO</nom_UK>
+        <nom_SP>PUERTO RICO</nom_SP>
+        <nationnalite_FR>PITCAIRNAIS</nationnalite_FR>
+        <nationnalite_UK>PITCAIRNAIS</nationnalite_UK>
+        <nationnalite_SP>PITCAIRNAIS</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>178</indicatif>
+        <devise>USD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0181</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>QA</iso>
+        <drapeau>\flags\Qatar.png</drapeau>
+        <nom_FR>QATAR</nom_FR>
+        <nom_UK>QATAR</nom_UK>
+        <nom_SP>QUATAR</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>974</indicatif>
+        <devise>QAR</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0182</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>AQ</iso>
+        <drapeau></drapeau>
+        <nom_FR>REGION POLAIRES</nom_FR>
+        <nom_UK>REGION POLAR</nom_UK>
+        <nom_SP>REGION POLARES</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif></indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0133</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>MK</iso>
+        <drapeau>\flags\Republique De Macedoine.png</drapeau>
+        <nom_FR>RPB. DE MACEDOINE</nom_FR>
+        <nom_UK>RPB. OF MACEDONIA</nom_UK>
+        <nom_SP>RPB. DE MACEDOINE</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite>PLAN_2005_FR</fiscalite>
+        <indicatif>389</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0146</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>MD</iso>
+        <drapeau>\flags\Republique De Moldavie.png</drapeau>
+        <nom_FR>RPB. DE MOLDAVIE</nom_FR>
+        <nom_UK>RPB. MOLDOVA</nom_UK>
+        <nom_SP>RPB. ALLI MOLDAVIE</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>373</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0185</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>DO</iso>
+        <drapeau>\flags\Republique Dominicaine.png</drapeau>
+        <nom_FR>RPB. DOMINICAINE</nom_FR>
+        <nom_UK>RPB. DOMINICAN</nom_UK>
+        <nom_SP>RPB. DOMINICANA</nom_SP>
+        <nationnalite_FR>DOMINICAINE</nationnalite_FR>
+        <nationnalite_UK>DOMINICAN</nationnalite_UK>
+        <nationnalite_SP>DOMINICANA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>180</indicatif>
+        <devise>DOP</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0183</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>SK</iso>
+        <drapeau>\flags\Republique Slovaque.png</drapeau>
+        <nom_FR>RPB. SLOVAQUE</nom_FR>
+        <nom_UK>SLOVAKIA</nom_UK>
+        <nom_SP>RPB. ESLOVACA</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>421</indicatif>
+        <devise>SKK</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0184</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>CZ</iso>
+        <drapeau>\flags\Republique Tcheque.png</drapeau>
+        <nom_FR>RPB. TCHEQUE</nom_FR>
+        <nom_UK>RPB. TCHEQUE</nom_UK>
+        <nom_SP>RPB. TCHEQUE</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>420</indicatif>
+        <devise>CZK</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0186</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>RE</iso>
+        <drapeau></drapeau>
+        <nom_FR>REUNION</nom_FR>
+        <nom_UK>REUNION</nom_UK>
+        <nom_SP>REUNION</nom_SP>
+        <nationnalite_FR>REUNIONAISE</nationnalite_FR>
+        <nationnalite_UK>REUNIONAISE</nationnalite_UK>
+        <nationnalite_SP>REUNIONAISE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>262</indicatif>
+        <devise>EUR</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0187</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>RO</iso>
+        <drapeau>\flags\Roumanie.png</drapeau>
+        <nom_FR>ROUMANIE</nom_FR>
+        <nom_UK>ROMANIA</nom_UK>
+        <nom_SP>RUMANIA</nom_SP>
+        <nationnalite_FR>ROUMAINE</nationnalite_FR>
+        <nationnalite_UK>ROMANIAN</nationnalite_UK>
+        <nationnalite_SP>RUMANA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>40</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0188</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>GB</iso>
+        <drapeau>\flags\Royaume Uni.png</drapeau>
+        <nom_FR>ROYAUME UNI</nom_FR>
+        <nom_UK>UNITED KINGDOM</nom_UK>
+        <nom_SP>REINO UNIDO</nom_SP>
+        <nationnalite_FR>ANGLAISE</nationnalite_FR>
+        <nationnalite_UK>ENGLISHWOMAN</nationnalite_UK>
+        <nationnalite_SP>INGLESA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>44</indicatif>
+        <devise>GBP</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0189</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>RU</iso>
+        <drapeau>\flags\Russie.png</drapeau>
+        <nom_FR>RUSSIE</nom_FR>
+        <nom_UK>RUSSIAN FEDERATION</nom_UK>
+        <nom_SP>RUSIA</nom_SP>
+        <nationnalite_FR>RUSSE</nationnalite_FR>
+        <nationnalite_UK>RUSSIAN</nationnalite_UK>
+        <nationnalite_SP>RUSO</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>7</indicatif>
+        <devise>RUB</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0190</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>RW</iso>
+        <drapeau>\flags\Rwanda.png</drapeau>
+        <nom_FR>RWANDA</nom_FR>
+        <nom_UK>RWANDA</nom_UK>
+        <nom_SP>RUANDA</nom_SP>
+        <nationnalite_FR>RUANDAISE</nationnalite_FR>
+        <nationnalite_UK>RUANDAN</nationnalite_UK>
+        <nationnalite_SP>RUANDAISE</nationnalite_SP>
+        <zone>COMESA</zone>
+        <fiscalite></fiscalite>
+        <indicatif>250</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0191</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>EH</iso>
+        <drapeau></drapeau>
+        <nom_FR>SAHARA OCCIDENTAL</nom_FR>
+        <nom_UK>WESTYERN SAHARA</nom_UK>
+        <nom_SP>SÀHARA OCCIDENTAL</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif></indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0192</identification>
+        <langue>SP</langue>
+        <gestion>0</gestion>
+        <iso>KN</iso>
+        <drapeau>\flags\Saint Kitts Et Nevis.png</drapeau>
+        <nom_FR>SAINT KITTS ET NEVIS</nom_FR>
+        <nom_UK>SAINT KITTS AND NEVIS</nom_UK>
+        <nom_SP>SANTO KITTS Y NEVIS</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>186</indicatif>
+        <devise>XCD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0193</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>SM</iso>
+        <drapeau>\flags\Saint Marin.png</drapeau>
+        <nom_FR>SAINT MARIN</nom_FR>
+        <nom_UK>SAN MARINO</nom_UK>
+        <nom_SP>SANTO MARINERO</nom_SP>
+        <nationnalite_FR>SAINT MARINAIS</nationnalite_FR>
+        <nationnalite_UK>SAINT MARINADES</nationnalite_UK>
+        <nationnalite_SP>SANTO ESTABA EN ADOBO</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>378</indicatif>
+        <devise>EUR</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0195</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>PM</iso>
+        <drapeau></drapeau>
+        <nom_FR>SAINT PIERRE ET MIQUELON</nom_FR>
+        <nom_UK>SAINT PIERRE AND MIQUELON</nom_UK>
+        <nom_SP>SANTO PIEDRA Y MIQUELON</nom_SP>
+        <nationnalite_FR>GRENADIEN</nationnalite_FR>
+        <nationnalite_UK>GRENADIEN</nationnalite_UK>
+        <nationnalite_SP>GRENADIEN</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>508</indicatif>
+        <devise>EUR</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0196</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>SH</iso>
+        <drapeau></drapeau>
+        <nom_FR>SAINTE HELENE</nom_FR>
+        <nom_UK>HOLY HELEN</nom_UK>
+        <nom_SP>SANTA HÉLÈNE</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>290</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0197</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>LC</iso>
+        <drapeau>\flags\Sainte Lucie.png</drapeau>
+        <nom_FR>SAINTE LUCIE</nom_FR>
+        <nom_UK>SAINT LUCIA</nom_UK>
+        <nom_SP>SANTA LUCIE</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>175</indicatif>
+        <devise>XCD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0199</identification>
+        <langue>SP</langue>
+        <gestion>0</gestion>
+        <iso>SV</iso>
+        <drapeau>\flags\Salvador.png</drapeau>
+        <nom_FR>SALVADOR</nom_FR>
+        <nom_UK>EL SALVADOR</nom_UK>
+        <nom_SP>EL SALVADOR</nom_SP>
+        <nationnalite_FR>SALVADORIENNE</nationnalite_FR>
+        <nationnalite_UK>SALVADORIAN</nationnalite_UK>
+        <nationnalite_SP>SALVADORENÀ</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>508</indicatif>
+        <devise>USD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0250</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>WS</iso>
+        <drapeau></drapeau>
+        <nom_FR>SAMOA</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif></indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0200</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>AS</iso>
+        <drapeau>\flags\Samoa Occidental.png</drapeau>
+        <nom_FR>SAMOA AMERICAINE</nom_FR>
+        <nom_UK>AMERICAN SAMOA</nom_UK>
+        <nom_SP>LA SAMOA AMERICANA</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>685</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0201</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>ST</iso>
+        <drapeau>\flags\Sao Tome Et Principe.png</drapeau>
+        <nom_FR>SAO TOME ET PRINCIPE</nom_FR>
+        <nom_UK>SAO TOME AND PRINCIPE</nom_UK>
+        <nom_SP>SAO TOMO Y PRINCIPIO</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>239</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0202</identification>
+        <langue>FR</langue>
+        <gestion>2</gestion>
+        <iso>SN</iso>
+        <drapeau>\flags\Senegal.png</drapeau>
+        <nom_FR>SENEGAL</nom_FR>
+        <nom_UK>SENEGAL</nom_UK>
+        <nom_SP>SENEGAL</nom_SP>
+        <nationnalite_FR>SENEGALAISE</nationnalite_FR>
+        <nationnalite_UK>SENEGALAISE</nationnalite_UK>
+        <nationnalite_SP>SENEGALAISE</nationnalite_SP>
+        <zone>UEMOA</zone>
+        <fiscalite>SYSCOA</fiscalite>
+        <indicatif>221</indicatif>
+        <devise>XOF</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0203</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>RS</iso>
+        <drapeau>\flags\Serbie Et Montenegro.png</drapeau>
+        <nom_FR>SERBIE ET MONTENEGRO</nom_FR>
+        <nom_UK>SERBIA AND MONTENEGRO</nom_UK>
+        <nom_SP>SERBIA Y MONTENEGRO</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>381</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0204</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>SC</iso>
+        <drapeau>\flags\Seychelles.png</drapeau>
+        <nom_FR>SEYCHELLES</nom_FR>
+        <nom_UK>SEYCHELLES</nom_UK>
+        <nom_SP>LAS SEYCHELLES</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone>COMESA</zone>
+        <fiscalite></fiscalite>
+        <indicatif>248</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0205</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>SL</iso>
+        <drapeau>\flags\Sierra Leone.png</drapeau>
+        <nom_FR>SIERRA LEONE</nom_FR>
+        <nom_UK>SIERRA LEONE</nom_UK>
+        <nom_SP>SIERRA LEONA</nom_SP>
+        <nationnalite_FR>SIERRA LEONAISE</nationnalite_FR>
+        <nationnalite_UK>SIERRA LEONAISE</nationnalite_UK>
+        <nationnalite_SP>SIERRA LEONAISE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>232</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0206</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>SG</iso>
+        <drapeau>\flags\Singapour.png</drapeau>
+        <nom_FR>SINGAPOUR</nom_FR>
+        <nom_UK>SINGAPORE</nom_UK>
+        <nom_SP>SINGAPUR</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>65</indicatif>
+        <devise>SGD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0207</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>SI</iso>
+        <drapeau>\flags\Slovenie.png</drapeau>
+        <nom_FR>SLOVENIE</nom_FR>
+        <nom_UK>SLOVENIA</nom_UK>
+        <nom_SP>SLOVENIE</nom_SP>
+        <nationnalite_FR>SLOVENE</nationnalite_FR>
+        <nationnalite_UK>SLOVENE</nationnalite_UK>
+        <nationnalite_SP>SLOVENE</nationnalite_SP>
+        <zone>UEMOA</zone>
+        <fiscalite></fiscalite>
+        <indicatif>386</indicatif>
+        <devise>EUR</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0208</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>SO</iso>
+        <drapeau>\flags\Somalie.png</drapeau>
+        <nom_FR>SOMALIE</nom_FR>
+        <nom_UK>SOMALIA</nom_UK>
+        <nom_SP>SOMALIA</nom_SP>
+        <nationnalite_FR>SOMALIENNE</nationnalite_FR>
+        <nationnalite_UK>SOMALIA</nationnalite_UK>
+        <nationnalite_SP>SOMALIA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>252</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0209</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>SD</iso>
+        <drapeau>\flags\Soudan.png</drapeau>
+        <nom_FR>SOUDAN</nom_FR>
+        <nom_UK>SUDAN</nom_UK>
+        <nom_SP>SUDÀN</nom_SP>
+        <nationnalite_FR>SOUDANAISE</nationnalite_FR>
+        <nationnalite_UK>SUDANESE</nationnalite_UK>
+        <nationnalite_SP>SUDANESA</nationnalite_SP>
+        <zone>COMESA</zone>
+        <fiscalite>SYSCOA</fiscalite>
+        <indicatif>249</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0210</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>LK</iso>
+        <drapeau>\flags\Sri Lanka.png</drapeau>
+        <nom_FR>SRI LANKA</nom_FR>
+        <nom_UK>SRI LANKA</nom_UK>
+        <nom_SP>SRI LANKA</nom_SP>
+        <nationnalite_FR>CEYLANAISE</nationnalite_FR>
+        <nationnalite_UK>CEYLANAISE</nationnalite_UK>
+        <nationnalite_SP>CEYLANAISE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>94</indicatif>
+        <devise>LKR</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0211</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>SE</iso>
+        <drapeau>\flags\Suede.png</drapeau>
+        <nom_FR>SUEDE</nom_FR>
+        <nom_UK>SWEDEN</nom_UK>
+        <nom_SP></nom_SP>
+        <nationnalite_FR>SUEDOISE</nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>46</indicatif>
+        <devise>SEK</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0212</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>CH</iso>
+        <drapeau>\flags\Suisse.png</drapeau>
+        <nom_FR>SUISSE</nom_FR>
+        <nom_UK>SWITZERLAND</nom_UK>
+        <nom_SP></nom_SP>
+        <nationnalite_FR>SUISSE</nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>41</indicatif>
+        <devise>CHF</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0213</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>SR</iso>
+        <drapeau>\flags\Surinam.png</drapeau>
+        <nom_FR>SURINAM</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nationnalite_FR>SURINAMIENNE</nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone>CEMAC</zone>
+        <fiscalite>OCAM</fiscalite>
+        <indicatif>597</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0214</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>SZ</iso>
+        <drapeau>\flags\Swaziland.png</drapeau>
+        <nom_FR>SWAZILAND</nom_FR>
+        <nom_UK>SWAZILAND</nom_UK>
+        <nom_SP>SWAZILAND</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone>COMESA</zone>
+        <fiscalite></fiscalite>
+        <indicatif>268</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0215</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>SY</iso>
+        <drapeau>\flags\Syrie.png</drapeau>
+        <nom_FR>SYRIE</nom_FR>
+        <nom_UK>SYRIAN ARAB REPUBLIC</nom_UK>
+        <nom_SP>SIRIA</nom_SP>
+        <nationnalite_FR>SYRIENNE</nationnalite_FR>
+        <nationnalite_UK>SYRIAN</nationnalite_UK>
+        <nationnalite_SP>SIRIA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>963</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0216</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>TJ</iso>
+        <drapeau>\flags\Tadjikistan.png</drapeau>
+        <nom_FR>TADJIKISTAN</nom_FR>
+        <nom_UK>TAJIKISTAN</nom_UK>
+        <nom_SP>TADJKISTAN</nom_SP>
+        <nationnalite_FR>TADJIKS</nationnalite_FR>
+        <nationnalite_UK>TADJIKS</nationnalite_UK>
+        <nationnalite_SP>TAYIKES</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>7</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0217</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>TW</iso>
+        <drapeau></drapeau>
+        <nom_FR>TAIWAN</nom_FR>
+        <nom_UK>TAIWAN</nom_UK>
+        <nom_SP>TAIWAN</nom_SP>
+        <nationnalite_FR>TAIWANAISE</nationnalite_FR>
+        <nationnalite_UK>TAIWANESE</nationnalite_UK>
+        <nationnalite_SP>TAIWANAISE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>886</indicatif>
+        <devise>TWD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0218</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>TZ</iso>
+        <drapeau>\flags\Tanzanie.png</drapeau>
+        <nom_FR>TANZANIE</nom_FR>
+        <nom_UK>UNITED REPUBLIC OF TANZANIA</nom_UK>
+        <nom_SP>TANZANIA</nom_SP>
+        <nationnalite_FR>TANZANIENNE</nationnalite_FR>
+        <nationnalite_UK>TANZANIAN</nationnalite_UK>
+        <nationnalite_SP>TANZANA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>255</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0219</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>TD</iso>
+        <drapeau>\flags\Tchad.png</drapeau>
+        <nom_FR>TCHAD</nom_FR>
+        <nom_UK>CHAD</nom_UK>
+        <nom_SP>CHAD</nom_SP>
+        <nationnalite_FR>TCHADIENNE</nationnalite_FR>
+        <nationnalite_UK>CHADIAN</nationnalite_UK>
+        <nationnalite_SP>CHADIANA</nationnalite_SP>
+        <zone>CEMAC</zone>
+        <fiscalite></fiscalite>
+        <indicatif>235</indicatif>
+        <devise>XAF</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0220</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>TF</iso>
+        <drapeau></drapeau>
+        <nom_FR>TERRES AUSTRALES</nom_FR>
+        <nom_UK>EARTH AUSTRAL</nom_UK>
+        <nom_SP>TIERRA AUSTRAL</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>672</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0221</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>TH</iso>
+        <drapeau>\flags\Thailande.png</drapeau>
+        <nom_FR>THAILANDE</nom_FR>
+        <nom_UK>THAILAND</nom_UK>
+        <nom_SP>THAILANDE</nom_SP>
+        <nationnalite_FR>THAILANDAISE</nationnalite_FR>
+        <nationnalite_UK>THAI</nationnalite_UK>
+        <nationnalite_SP>THAILANDAISE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>66</indicatif>
+        <devise>THB</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0222</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>TG</iso>
+        <drapeau>\flags\Togo.png</drapeau>
+        <nom_FR>TOGO</nom_FR>
+        <nom_UK>TOGO</nom_UK>
+        <nom_SP>TOGO</nom_SP>
+        <nationnalite_FR>TOGOLAISE</nationnalite_FR>
+        <nationnalite_UK>TOGOLESE</nationnalite_UK>
+        <nationnalite_SP>TOGOLENO</nationnalite_SP>
+        <zone>UEMOA</zone>
+        <fiscalite>SYSCOA</fiscalite>
+        <indicatif>228</indicatif>
+        <devise>XOF</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0249</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>TK</iso>
+        <drapeau></drapeau>
+        <nom_FR>TOKELAU</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP></nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif></indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0223</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>TO</iso>
+        <drapeau>\flags\Tonga.png</drapeau>
+        <nom_FR>TONGA</nom_FR>
+        <nom_UK>TONGA</nom_UK>
+        <nom_SP>TONGA</nom_SP>
+        <nationnalite_FR>TONGAN</nationnalite_FR>
+        <nationnalite_UK>TONGAN</nationnalite_UK>
+        <nationnalite_SP>TONGAN</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>676</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0224</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>TT</iso>
+        <drapeau>\flags\Trinidad Et Tobago.png</drapeau>
+        <nom_FR>TRINIDAD ET TOBAGO</nom_FR>
+        <nom_UK>TRINIDAD AND TOBAGO</nom_UK>
+        <nom_SP>TRINIDAD Y TABAGO</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>186</indicatif>
+        <devise>TTD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0225</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>TN</iso>
+        <drapeau>\flags\Tunisie.png</drapeau>
+        <nom_FR>TUNISIE</nom_FR>
+        <nom_UK>TUNISIA</nom_UK>
+        <nom_SP>TUNISIA</nom_SP>
+        <nationnalite_FR>TUNISIENNE</nationnalite_FR>
+        <nationnalite_UK>TUNISIAN</nationnalite_UK>
+        <nationnalite_SP>TUNECINA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>216</indicatif>
+        <devise>TND</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0226</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>TM</iso>
+        <drapeau>\flags\Turkmenistan.png</drapeau>
+        <nom_FR>TURKMENISTAN</nom_FR>
+        <nom_UK>TURKMENISTAN</nom_UK>
+        <nom_SP>TURKMENISTAN</nom_SP>
+        <nationnalite_FR>TURKMENE</nationnalite_FR>
+        <nationnalite_UK>TURKMENE</nationnalite_UK>
+        <nationnalite_SP>TURKMENE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>993</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0227</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>TC</iso>
+        <drapeau></drapeau>
+        <nom_FR>TURKS ET CACIOS</nom_FR>
+        <nom_UK>TURKS AND CAICOS ISLANDS</nom_UK>
+        <nom_SP>TURKS Y CACIOS</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>164</indicatif>
+        <devise>USD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0228</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>TR</iso>
+        <drapeau>\flags\Turquie.png</drapeau>
+        <nom_FR>TURQUIE</nom_FR>
+        <nom_UK>TURKEY</nom_UK>
+        <nom_SP>TURQUIA</nom_SP>
+        <nationnalite_FR>TURQUE</nationnalite_FR>
+        <nationnalite_UK>TURKISH</nationnalite_UK>
+        <nationnalite_SP>TURCA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>90</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0229</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>TV</iso>
+        <drapeau>\flags\Tuvalu.png</drapeau>
+        <nom_FR>TUVALU</nom_FR>
+        <nom_UK>TUVALU</nom_UK>
+        <nom_SP>TUVALU</nom_SP>
+        <nationnalite_FR>TUVALUAN</nationnalite_FR>
+        <nationnalite_UK>TUVALUAN</nationnalite_UK>
+        <nationnalite_SP>TUVALUAN</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>688</indicatif>
+        <devise>AUD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0230</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>UA</iso>
+        <drapeau>\flags\Ukraine.png</drapeau>
+        <nom_FR>UKRAINE</nom_FR>
+        <nom_UK>UKRAINE</nom_UK>
+        <nom_SP>UCRANIA</nom_SP>
+        <nationnalite_FR>UKRAINIENNE</nationnalite_FR>
+        <nationnalite_UK>UKRAINIAN</nationnalite_UK>
+        <nationnalite_SP>UCRANIANA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>380</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0231</identification>
+        <langue>SP</langue>
+        <gestion>0</gestion>
+        <iso>UY</iso>
+        <drapeau>\flags\Uruguay.png</drapeau>
+        <nom_FR>URUGUAY</nom_FR>
+        <nom_UK>URUGUAY</nom_UK>
+        <nom_SP>URUGUAY</nom_SP>
+        <nationnalite_FR>URUGUAYENNE</nationnalite_FR>
+        <nationnalite_UK>URUGUAYAN</nationnalite_UK>
+        <nationnalite_SP>URUGUAYA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>598</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0232</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>VU</iso>
+        <drapeau>\flags\Vanuatu.png</drapeau>
+        <nom_FR>VANUATU</nom_FR>
+        <nom_UK>VANUATU</nom_UK>
+        <nom_SP>VANUATU</nom_SP>
+        <nationnalite_FR>NI-VANUATU</nationnalite_FR>
+        <nationnalite_UK>NOR-VANUATU</nationnalite_UK>
+        <nationnalite_SP>NI-VANUATU</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>678</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0233</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>VA</iso>
+        <drapeau>\flags\Vatican.png</drapeau>
+        <nom_FR>VATICAN</nom_FR>
+        <nom_UK>HOLY SEE (VATICAN CITY STATE)</nom_UK>
+        <nom_SP>EL VATICANO</nom_SP>
+        <nationnalite_FR>VATICAN</nationnalite_FR>
+        <nationnalite_UK>VATICAN CITY</nationnalite_UK>
+        <nationnalite_SP>EL VATICANO</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>379</indicatif>
+        <devise>EUR</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0234</identification>
+        <langue>SP</langue>
+        <gestion>0</gestion>
+        <iso>VE</iso>
+        <drapeau>\flags\Venezuela.png</drapeau>
+        <nom_FR>VENEZUELA</nom_FR>
+        <nom_UK>VENEZUELA</nom_UK>
+        <nom_SP>VENEZUELA</nom_SP>
+        <nationnalite_FR>VENEZUELIENNE</nationnalite_FR>
+        <nationnalite_UK>VENEZUELIENNE</nationnalite_UK>
+        <nationnalite_SP>VENEZUELIENNE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>58</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0235</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>VI</iso>
+        <drapeau></drapeau>
+        <nom_FR>VIERGES AMERICAINES</nom_FR>
+        <nom_UK>VIRGIN ISLANDS</nom_UK>
+        <nom_SP>VIRGENES AMERICAINES</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>180</indicatif>
+        <devise>AUD</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0236</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>VG</iso>
+        <drapeau></drapeau>
+        <nom_FR>VIRGIN ISLANDS</nom_FR>
+        <nom_UK>MONTESERRAT</nom_UK>
+        <nom_SP>MONTSERRAT</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>180</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0237</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>VN</iso>
+        <drapeau>\flags\Vietnam.png</drapeau>
+        <nom_FR>VIETNAM</nom_FR>
+        <nom_UK>VIET NAM</nom_UK>
+        <nom_SP>VIETNAM</nom_SP>
+        <nationnalite_FR>VIETNAMIENNE</nationnalite_FR>
+        <nationnalite_UK>VIETNAMESE</nationnalite_UK>
+        <nationnalite_SP>VIETNAMITA</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>84</indicatif>
+        <devise>VND</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0238</identification>
+        <langue></langue>
+        <gestion>0</gestion>
+        <iso>WF</iso>
+        <drapeau></drapeau>
+        <nom_FR>WALLIS ET FUTUNA</nom_FR>
+        <nom_UK>WALLIS AND FUTUNA</nom_UK>
+        <nom_SP>WALLIS Y FUTUNA</nom_SP>
+        <nationnalite_FR></nationnalite_FR>
+        <nationnalite_UK></nationnalite_UK>
+        <nationnalite_SP></nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>681</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0239</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>YE</iso>
+        <drapeau>\flags\Yemen Democratique.png</drapeau>
+        <nom_FR>YEMEN DEMOCRATIQUE</nom_FR>
+        <nom_UK>YEMEN</nom_UK>
+        <nom_SP>YEMEN DEMOCRATIQUE</nom_SP>
+        <nationnalite_FR>YEMENITE</nationnalite_FR>
+        <nationnalite_UK>YEMENITE</nationnalite_UK>
+        <nationnalite_SP>YEMENITE</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>967</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0240</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>YU</iso>
+        <drapeau></drapeau>
+        <nom_FR>YOUGOSLAVIE</nom_FR>
+        <nom_UK>YUGOSLAVIA</nom_UK>
+        <nom_SP>YUGOSLAVIA</nom_SP>
+        <nationnalite_FR>YOUGOSLAVES</nationnalite_FR>
+        <nationnalite_UK>YUGOSLAVS</nationnalite_UK>
+        <nationnalite_SP>YUGOSLAVOS</nationnalite_SP>
+        <zone></zone>
+        <fiscalite></fiscalite>
+        <indicatif>381</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0241</identification>
+        <langue>FR</langue>
+        <gestion>0</gestion>
+        <iso>ZM</iso>
+        <drapeau>\flags\Zambie.png</drapeau>
+        <nom_FR>ZAMBIE</nom_FR>
+        <nom_UK>ZAMBIA</nom_UK>
+        <nom_SP>ZAMBIA</nom_SP>
+        <nationnalite_FR>ZAMBIENNE</nationnalite_FR>
+        <nationnalite_UK>ZAMBIAN</nationnalite_UK>
+        <nationnalite_SP>ZAMBIANA</nationnalite_SP>
+        <zone>COMESA</zone>
+        <fiscalite></fiscalite>
+        <indicatif>260</indicatif>
+        <devise>ZMK</devise>
+        <adresse>0</adresse>
+    </pays>
+
+    <pays>
+        <identification>0242</identification>
+        <langue>UK</langue>
+        <gestion>0</gestion>
+        <iso>ZW</iso>
+        <drapeau>\flags\Zimbabwe.png</drapeau>
+        <nom_FR>ZIMBABWE</nom_FR>
+        <nom_UK></nom_UK>
+        <nom_SP>ZIMBABWE</nom_SP>
+        <nationnalite_FR>ZIMBABWEENNE</nationnalite_FR>
+        <nationnalite_UK>ZIMBABWEENNE</nationnalite_UK>
+        <nationnalite_SP>ZIMBABWEENNE</nationnalite_SP>
+        <zone>COMESA</zone>
+        <fiscalite></fiscalite>
+        <indicatif>263</indicatif>
+        <devise></devise>
+        <adresse>0</adresse>
+    </pays>
+</listepays>

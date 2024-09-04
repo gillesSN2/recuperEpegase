@@ -1,0 +1,1026 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="etatStockLight" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isFloatColumnFooter="true">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="403"/>
+	<style name="ST1" isDefault="false" pattern="">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{formatDevise}==0)]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" markup="none" pattern="#,##0.00"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{formatDevise}==1)]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.00"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{formatDevise}==2)]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0" isItalic="false"/>
+		</conditionalStyle>
+	</style>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\Documents and Settings\\user\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="entete" class="java.lang.String"/>
+	<parameter name="filtre" class="java.lang.String"/>
+	<parameter name="societe" class="java.lang.String"/>
+	<parameter name="version" class="java.lang.String"/>
+	<parameter name="requete" class="java.lang.String"/>
+	<parameter name="formatDevise" class="java.lang.Integer"/>
+	<parameter name="nbst" class="java.lang.Integer"/>
+	<parameter name="dateDeb" class="java.util.Date"/>
+	<parameter name="dateFin" class="java.util.Date"/>
+	<queryString language="xPath">
+		<![CDATA[]]>
+	</queryString>
+	<field name="stk_lib_type" class="java.lang.String">
+		<fieldDescription><![CDATA[stk_lib_type]]></fieldDescription>
+	</field>
+	<field name="stk_type" class="java.lang.Integer">
+		<fieldDescription><![CDATA[stk_type]]></fieldDescription>
+	</field>
+	<field name="stk_etat" class="java.lang.String">
+		<fieldDescription><![CDATA[stk_etat]]></fieldDescription>
+	</field>
+	<field name="stk_code_depot" class="java.lang.String">
+		<fieldDescription><![CDATA[stk_code_depot]]></fieldDescription>
+	</field>
+	<field name="stk_code_produit" class="java.lang.String">
+		<fieldDescription><![CDATA[stk_code_produit]]></fieldDescription>
+	</field>
+	<field name="stk_numero" class="java.lang.String">
+		<fieldDescription><![CDATA[stk_numero]]></fieldDescription>
+	</field>
+	<field name="stk_tiers" class="java.lang.String">
+		<fieldDescription><![CDATA[stk_tiers]]></fieldDescription>
+	</field>
+	<field name="stk_activite" class="java.lang.String">
+		<fieldDescription><![CDATA[stk_activite]]></fieldDescription>
+	</field>
+	<field name="stk_date_mvt" class="java.util.Date">
+		<fieldDescription><![CDATA[stk_date_mvt]]></fieldDescription>
+	</field>
+	<field name="stk_format_devise" class="java.lang.Integer">
+		<fieldDescription><![CDATA[stk_format_devise]]></fieldDescription>
+	</field>
+	<field name="stk_pa" class="java.lang.Double">
+		<fieldDescription><![CDATA[stk_pa]]></fieldDescription>
+	</field>
+	<field name="stk_pv" class="java.lang.Double">
+		<fieldDescription><![CDATA[stk_pv]]></fieldDescription>
+	</field>
+	<field name="stk_pump" class="java.lang.Double">
+		<fieldDescription><![CDATA[stk_pump]]></fieldDescription>
+	</field>
+	<field name="stk_qte_in" class="java.lang.Float">
+		<fieldDescription><![CDATA[stk_qte_in]]></fieldDescription>
+	</field>
+	<field name="stk_qte_out" class="java.lang.Float">
+		<fieldDescription><![CDATA[stk_qte_out]]></fieldDescription>
+	</field>
+	<field name="stk_annee" class="java.lang.Integer">
+		<fieldDescription><![CDATA[stk_annee]]></fieldDescription>
+	</field>
+	<field name="stk_mois" class="java.lang.Integer">
+		<fieldDescription><![CDATA[stk_mois]]></fieldDescription>
+	</field>
+	<field name="stkReference" class="java.lang.String">
+		<fieldDescription><![CDATA[stkReference]]></fieldDescription>
+	</field>
+	<field name="stkLibelle" class="java.lang.String">
+		<fieldDescription><![CDATA[stkLibelle]]></fieldDescription>
+	</field>
+	<field name="stkFamille" class="java.lang.String">
+		<fieldDescription><![CDATA[stkFamille]]></fieldDescription>
+	</field>
+	<field name="stkPt" class="java.lang.Double">
+		<fieldDescription><![CDATA[stkPt]]></fieldDescription>
+	</field>
+	<field name="stkTva" class="java.lang.Double">
+		<fieldDescription><![CDATA[stkTva]]></fieldDescription>
+	</field>
+	<field name="stkTtc" class="java.lang.Double">
+		<fieldDescription><![CDATA[stkTtc]]></fieldDescription>
+	</field>
+	<field name="stkRabais" class="java.lang.Double">
+		<fieldDescription><![CDATA[stkRabais]]></fieldDescription>
+	</field>
+	<sortField name="stkFamille"/>
+	<sortField name="stk_code_produit"/>
+	<variable name="entete" class="java.lang.String"/>
+	<variable name="societe" class="java.lang.String"/>
+	<variable name="filtre" class="java.lang.String"/>
+	<variable name="version" class="java.lang.String"/>
+	<variable name="qteInv_l" class="java.lang.Double" resetType="None">
+		<variableExpression><![CDATA[( (($F{stk_date_mvt}.compareTo($P{dateDeb})<=0) || $F{stk_type}==30) ? $F{stk_qte_in}-$F{stk_qte_out} : 0 )]]></variableExpression>
+	</variable>
+	<variable name="qteIn_l" class="java.lang.Double" resetType="None">
+		<variableExpression><![CDATA[( $F{stk_date_mvt}.after($P{dateDeb}) && ($F{stk_type}==31|| $F{stk_type}==33||$F{stk_type}==34||$F{stk_type}==13||$F{stk_type}==24) ? $F{stk_qte_in} : 0 )]]></variableExpression>
+	</variable>
+	<variable name="qteOut_l" class="java.lang.Double" resetType="None">
+		<variableExpression><![CDATA[( $F{stk_date_mvt}.after($P{dateDeb}) && ($F{stk_type}==32|| $F{stk_type}==33||$F{stk_type}==34||$F{stk_type}==14||$F{stk_type}==23||$F{stk_type}==25) ? $F{stk_qte_out} : 0 )]]></variableExpression>
+	</variable>
+	<variable name="qteFinal_l" class="java.lang.Double" resetType="None">
+		<variableExpression><![CDATA[$V{qteInv}+$V{qteIn}-$V{qteOut}]]></variableExpression>
+	</variable>
+	<variable name="qteInv" class="java.lang.Double" resetType="Group" resetGroup="code" calculation="Sum">
+		<variableExpression><![CDATA[( $F{stk_date_mvt}.before($P{dateDeb}) ? $F{stk_qte_in}-$F{stk_qte_out} : 0 )]]></variableExpression>
+	</variable>
+	<variable name="valInv" class="java.lang.Double" resetType="Group" resetGroup="code" calculation="Sum">
+		<variableExpression><![CDATA[( $F{stk_date_mvt}.before($P{dateDeb}) ? ($F{stk_qte_in}-$F{stk_qte_out})*$F{stk_pump} : 0 )]]></variableExpression>
+	</variable>
+	<variable name="qteIn" class="java.lang.Double" resetType="Group" resetGroup="code" calculation="Sum">
+		<variableExpression><![CDATA[( $F{stk_date_mvt}.after($P{dateDeb}) && ($F{stk_type}==31|| $F{stk_type}==33||$F{stk_type}==34||$F{stk_type}==13||$F{stk_type}==24) ? $F{stk_qte_in} : 0 )]]></variableExpression>
+	</variable>
+	<variable name="valIn" class="java.lang.Double" resetType="Group" resetGroup="code" calculation="Sum">
+		<variableExpression><![CDATA[( $F{stk_date_mvt}.after($P{dateDeb}) && ($F{stk_type}==31|| $F{stk_type}==33||$F{stk_type}==34||$F{stk_type}==13||$F{stk_type}==24) ? $F{stk_qte_in}*$F{stk_pump} : 0 )]]></variableExpression>
+	</variable>
+	<variable name="qteOut" class="java.lang.Double" resetType="Group" resetGroup="code" calculation="Sum">
+		<variableExpression><![CDATA[( $F{stk_date_mvt}.after($P{dateDeb}) && ($F{stk_type}==32|| $F{stk_type}==33||$F{stk_type}==34||$F{stk_type}==14||$F{stk_type}==23||$F{stk_type}==25) ? $F{stk_qte_out} : 0 )]]></variableExpression>
+	</variable>
+	<variable name="valOut" class="java.lang.Double" resetType="Group" resetGroup="code" calculation="Sum">
+		<variableExpression><![CDATA[( $F{stk_date_mvt}.after($P{dateDeb}) && ($F{stk_type}==32|| $F{stk_type}==33||$F{stk_type}==34||$F{stk_type}==14||$F{stk_type}==23||$F{stk_type}==25) ? $F{stk_qte_out}*$F{stk_pump} : 0 )]]></variableExpression>
+	</variable>
+	<variable name="qteFinal" class="java.lang.Double" resetType="Group" resetGroup="code">
+		<variableExpression><![CDATA[$V{qteInv}+$V{qteIn}-$V{qteOut}]]></variableExpression>
+	</variable>
+	<variable name="valFinal" class="java.lang.Double" resetType="Group" resetGroup="code">
+		<variableExpression><![CDATA[$V{valInv}+$V{valIn}-$V{valOut}]]></variableExpression>
+	</variable>
+	<variable name="qteInv_f" class="java.lang.Double" resetType="Group" resetGroup="famille" calculation="Sum">
+		<variableExpression><![CDATA[( $F{stk_date_mvt}.before($P{dateDeb}) ? $F{stk_qte_in}-$F{stk_qte_out} : 0 )]]></variableExpression>
+	</variable>
+	<variable name="valInv_f" class="java.lang.Double" resetType="Group" resetGroup="famille" calculation="Sum">
+		<variableExpression><![CDATA[( $F{stk_date_mvt}.before($P{dateDeb}) ? ($F{stk_qte_in}-$F{stk_qte_out})*$F{stk_pump} : 0 )]]></variableExpression>
+	</variable>
+	<variable name="qteIn_f" class="java.lang.Double" resetType="Group" resetGroup="famille" calculation="Sum">
+		<variableExpression><![CDATA[( $F{stk_date_mvt}.after($P{dateDeb}) && ($F{stk_type}==31|| $F{stk_type}==33||$F{stk_type}==34||$F{stk_type}==13||$F{stk_type}==24) ? $F{stk_qte_in} : 0 )]]></variableExpression>
+	</variable>
+	<variable name="valIn_f" class="java.lang.Double" resetType="Group" resetGroup="famille" calculation="Sum">
+		<variableExpression><![CDATA[( $F{stk_date_mvt}.after($P{dateDeb}) && ($F{stk_type}==31|| $F{stk_type}==33||$F{stk_type}==34||$F{stk_type}==13||$F{stk_type}==24) ? $F{stk_qte_in}*$F{stk_pump} : 0 )]]></variableExpression>
+	</variable>
+	<variable name="qteOut_f" class="java.lang.Double" resetType="Group" resetGroup="famille" calculation="Sum">
+		<variableExpression><![CDATA[( $F{stk_date_mvt}.after($P{dateDeb}) && ($F{stk_type}==32|| $F{stk_type}==33||$F{stk_type}==34||$F{stk_type}==14||$F{stk_type}==23||$F{stk_type}==25) ? $F{stk_qte_out} : 0 )]]></variableExpression>
+	</variable>
+	<variable name="valOut_f" class="java.lang.Double" resetType="Group" resetGroup="famille" calculation="Sum">
+		<variableExpression><![CDATA[( $F{stk_date_mvt}.after($P{dateDeb}) && ($F{stk_type}==32|| $F{stk_type}==33||$F{stk_type}==34||$F{stk_type}==14||$F{stk_type}==23||$F{stk_type}==25) ? $F{stk_qte_out}*$F{stk_pump} : 0 )]]></variableExpression>
+	</variable>
+	<variable name="qteFinal_f" class="java.lang.Double" resetType="Group" resetGroup="famille">
+		<variableExpression><![CDATA[$V{qteInv_f}+$V{qteIn_f}-$V{qteOut_f}]]></variableExpression>
+	</variable>
+	<variable name="valFinal_f" class="java.lang.Double" resetType="Group" resetGroup="famille">
+		<variableExpression><![CDATA[$V{valInv_f}+$V{valIn_f}-$V{valOut_f}]]></variableExpression>
+	</variable>
+	<variable name="qteInv_t" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[( $F{stk_date_mvt}.before($P{dateDeb}) ? $F{stk_qte_in}-$F{stk_qte_out} : 0 )]]></variableExpression>
+	</variable>
+	<variable name="valInv_t" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[( $F{stk_date_mvt}.before($P{dateDeb}) ? ($F{stk_qte_in}-$F{stk_qte_out})*$F{stk_pump} : 0 )]]></variableExpression>
+	</variable>
+	<variable name="qteIn_t" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[( $F{stk_date_mvt}.after($P{dateDeb}) && ($F{stk_type}==31|| $F{stk_type}==33||$F{stk_type}==34||$F{stk_type}==13||$F{stk_type}==24) ? $F{stk_qte_in} : 0 )]]></variableExpression>
+	</variable>
+	<variable name="valIn_t" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[( $F{stk_date_mvt}.after($P{dateDeb}) && ($F{stk_type}==31|| $F{stk_type}==33||$F{stk_type}==34||$F{stk_type}==13||$F{stk_type}==24) ? $F{stk_qte_in}*$F{stk_pump} : 0 )]]></variableExpression>
+	</variable>
+	<variable name="qteOut_t" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[( $F{stk_date_mvt}.after($P{dateDeb}) && ($F{stk_type}==32|| $F{stk_type}==33||$F{stk_type}==34||$F{stk_type}==14||$F{stk_type}==23||$F{stk_type}==25) ? $F{stk_qte_out} : 0 )]]></variableExpression>
+	</variable>
+	<variable name="valOut_t" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[( $F{stk_date_mvt}.after($P{dateDeb}) && ($F{stk_type}==32|| $F{stk_type}==33||$F{stk_type}==34||$F{stk_type}==14||$F{stk_type}==23||$F{stk_type}==25) ? $F{stk_qte_out}*$F{stk_pump} : 0 )]]></variableExpression>
+	</variable>
+	<variable name="qteFinal_t" class="java.lang.Double">
+		<variableExpression><![CDATA[$V{qteInv_t}+$V{qteIn_t}-$V{qteOut_t}]]></variableExpression>
+	</variable>
+	<variable name="valFinal_t" class="java.lang.Double">
+		<variableExpression><![CDATA[$V{valInv_t}+$V{valIn_t}-$V{valOut_t}]]></variableExpression>
+	</variable>
+	<group name="famille" isStartNewPage="true">
+		<groupExpression><![CDATA[$F{stkFamille}]]></groupExpression>
+		<groupHeader>
+			<band height="21">
+				<staticText>
+					<reportElement x="28" y="5" width="39" height="11"/>
+					<textElement textAlignment="Center">
+						<font fontName="DejaVu Sans" size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Famille :
+                    ]]></text>
+				</staticText>
+				<textField evaluationTime="Group" evaluationGroup="famille" isBlankWhenNull="true">
+					<reportElement x="72" y="5" width="183" height="11" printWhenGroupChanges="famille"/>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{stkFamille}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="11" y="1" width="1" height="20"/>
+				</line>
+				<line>
+					<reportElement x="264" y="1" width="1" height="20"/>
+				</line>
+				<line>
+					<reportElement x="785" y="1" width="1" height="20"/>
+				</line>
+				<line>
+					<reportElement x="11" y="1" width="775" height="1"/>
+				</line>
+				<line>
+					<reportElement x="264" y="20" width="522" height="1"/>
+				</line>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="24">
+				<textField evaluationTime="Group" evaluationGroup="famille" isBlankWhenNull="true">
+					<reportElement style="ST1" x="454" y="4" width="64" height="11" printWhenGroupChanges="famille">
+						<printWhenExpression><![CDATA[$V{valIn_f}!=0]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{valIn_f}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Group" evaluationGroup="famille" isBlankWhenNull="true">
+					<reportElement style="ST1" x="398" y="4" width="45" height="11" printWhenGroupChanges="famille">
+						<printWhenExpression><![CDATA[$V{qteIn_f}!=0]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{qteIn_f}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Group" evaluationGroup="famille" isBlankWhenNull="true">
+					<reportElement style="ST1" x="529" y="4" width="45" height="11" printWhenGroupChanges="famille">
+						<printWhenExpression><![CDATA[$V{qteOut_f}!=0]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{qteOut_f}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Group" evaluationGroup="famille" isBlankWhenNull="true">
+					<reportElement style="ST1" x="268" y="4" width="45" height="11" printWhenGroupChanges="famille">
+						<printWhenExpression><![CDATA[$V{qteInv_f}!=0]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{qteInv_f}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Group" evaluationGroup="famille" isBlankWhenNull="true">
+					<reportElement style="ST1" x="323" y="4" width="64" height="11" printWhenGroupChanges="famille">
+						<printWhenExpression><![CDATA[$V{valInv_f}!=0]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{valInv_f}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Group" evaluationGroup="famille" isBlankWhenNull="true">
+					<reportElement style="ST1" x="660" y="4" width="45" height="11" printWhenGroupChanges="famille">
+						<printWhenExpression><![CDATA[$V{qteFinal_f}!=0]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{qteFinal_f}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Group" evaluationGroup="famille" isBlankWhenNull="true">
+					<reportElement style="ST1" x="716" y="4" width="64" height="11" printWhenGroupChanges="famille">
+						<printWhenExpression><![CDATA[$V{valFinal_f}!=0]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{valFinal_f}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Group" evaluationGroup="famille" isBlankWhenNull="true">
+					<reportElement style="ST1" x="586" y="4" width="64" height="11" printWhenGroupChanges="famille">
+						<printWhenExpression><![CDATA[$V{valOut_f}!=0]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{valOut_f}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="11" y="19" width="775" height="1"/>
+				</line>
+				<line>
+					<reportElement x="785" y="0" width="1" height="20"/>
+				</line>
+				<line>
+					<reportElement x="709" y="0" width="1" height="20"/>
+				</line>
+				<line>
+					<reportElement x="11" y="0" width="1" height="20"/>
+				</line>
+				<line>
+					<reportElement x="317" y="-1" width="1" height="20"/>
+				</line>
+				<line>
+					<reportElement x="264" y="-1" width="1" height="20"/>
+				</line>
+				<line>
+					<reportElement x="524" y="-1" width="1" height="20"/>
+				</line>
+				<line>
+					<reportElement x="579" y="-1" width="1" height="20"/>
+				</line>
+				<line>
+					<reportElement x="656" y="0" width="1" height="20"/>
+				</line>
+				<line>
+					<reportElement x="448" y="-1" width="1" height="20"/>
+				</line>
+				<line>
+					<reportElement x="11" y="2" width="775" height="1"/>
+					<graphicElement>
+						<pen lineWidth="0.5"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="392" y="-1" width="1" height="20"/>
+				</line>
+			</band>
+		</groupFooter>
+	</group>
+	<group name="code">
+		<groupExpression><![CDATA[$F{stk_code_produit}]]></groupExpression>
+		<groupHeader>
+			<band height="19">
+				<textField evaluationTime="Group" evaluationGroup="code" isBlankWhenNull="true">
+					<reportElement x="20" y="6" width="83" height="11" printWhenGroupChanges="code"/>
+					<textElement>
+						<font fontName="DejaVu Sans" size="7" isUnderline="true"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{stk_code_produit}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Group" evaluationGroup="code" isBlankWhenNull="true">
+					<reportElement x="106" y="6" width="149" height="11" printWhenGroupChanges="code"/>
+					<textElement>
+						<font fontName="DejaVu Sans" size="7" isUnderline="true"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{stkLibelle}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="11" y="3" width="775" height="1"/>
+					<graphicElement>
+						<pen lineWidth="0.5"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="11" y="0" width="1" height="19"/>
+				</line>
+				<line>
+					<reportElement x="264" y="0" width="1" height="19"/>
+				</line>
+				<line>
+					<reportElement x="317" y="0" width="1" height="19"/>
+				</line>
+				<line>
+					<reportElement x="392" y="0" width="1" height="19"/>
+				</line>
+				<line>
+					<reportElement x="448" y="0" width="1" height="19"/>
+				</line>
+				<line>
+					<reportElement x="524" y="0" width="1" height="19"/>
+				</line>
+				<line>
+					<reportElement x="579" y="0" width="1" height="19"/>
+				</line>
+				<line>
+					<reportElement x="656" y="0" width="1" height="19"/>
+				</line>
+				<line>
+					<reportElement x="709" y="0" width="1" height="19"/>
+				</line>
+				<line>
+					<reportElement x="785" y="0" width="1" height="19"/>
+				</line>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="16">
+				<textField evaluationTime="Group" evaluationGroup="code" isBlankWhenNull="true">
+					<reportElement x="174" y="3" width="81" height="11" printWhenGroupChanges="code"/>
+					<textElement>
+						<font fontName="DejaVu Sans" size="7" isBold="true"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{stk_code_produit}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="11" y="0" width="1" height="16" isPrintWhenDetailOverflows="true"/>
+				</line>
+				<line>
+					<reportElement x="264" y="0" width="1" height="16" isPrintWhenDetailOverflows="true"/>
+				</line>
+				<line>
+					<reportElement x="317" y="0" width="1" height="16" isPrintWhenDetailOverflows="true"/>
+				</line>
+				<line>
+					<reportElement x="392" y="0" width="1" height="16" isPrintWhenDetailOverflows="true"/>
+				</line>
+				<line>
+					<reportElement x="448" y="0" width="1" height="16" isPrintWhenDetailOverflows="true"/>
+				</line>
+				<line>
+					<reportElement x="524" y="0" width="1" height="16" isPrintWhenDetailOverflows="true"/>
+				</line>
+				<line>
+					<reportElement x="579" y="0" width="1" height="16" isPrintWhenDetailOverflows="true"/>
+				</line>
+				<line>
+					<reportElement x="656" y="0" width="1" height="16" isPrintWhenDetailOverflows="true"/>
+				</line>
+				<textField evaluationTime="Group" evaluationGroup="code" isBlankWhenNull="true">
+					<reportElement style="ST1" x="268" y="3" width="45" height="11" printWhenGroupChanges="code">
+						<printWhenExpression><![CDATA[$V{qteInv}!=0]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{qteInv}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Group" evaluationGroup="code" isBlankWhenNull="true">
+					<reportElement style="ST1" x="323" y="3" width="64" height="11" printWhenGroupChanges="code">
+						<printWhenExpression><![CDATA[$V{valInv}!=0]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{valInv}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Group" evaluationGroup="code" isBlankWhenNull="true">
+					<reportElement style="ST1" x="398" y="3" width="45" height="11" printWhenGroupChanges="code">
+						<printWhenExpression><![CDATA[$V{qteIn}!=0]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{qteIn}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Group" evaluationGroup="code" isBlankWhenNull="true">
+					<reportElement style="ST1" x="454" y="3" width="64" height="11" printWhenGroupChanges="code">
+						<printWhenExpression><![CDATA[$V{valIn}!=0]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{valIn}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Group" evaluationGroup="code" isBlankWhenNull="true">
+					<reportElement style="ST1" x="529" y="3" width="45" height="11" printWhenGroupChanges="code">
+						<printWhenExpression><![CDATA[$V{qteOut}!=0]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{qteOut}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Group" evaluationGroup="code" isBlankWhenNull="true">
+					<reportElement style="ST1" x="586" y="3" width="64" height="11" printWhenGroupChanges="code">
+						<printWhenExpression><![CDATA[$V{valOut}!=0]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{valOut}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Group" evaluationGroup="code" isBlankWhenNull="true">
+					<reportElement style="ST1" x="660" y="3" width="45" height="11" printWhenGroupChanges="code">
+						<printWhenExpression><![CDATA[$V{qteFinal}!=0]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{qteFinal}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Group" evaluationGroup="code" isBlankWhenNull="true">
+					<reportElement style="ST1" x="716" y="3" width="64" height="11" printWhenGroupChanges="code">
+						<printWhenExpression><![CDATA[$V{valFinal}!=0]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{valFinal}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="709" y="0" width="1" height="16" isPrintWhenDetailOverflows="true"/>
+				</line>
+				<line>
+					<reportElement x="785" y="0" width="1" height="16" isPrintWhenDetailOverflows="true"/>
+				</line>
+			</band>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="116" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="802" height="36" forecolor="#000000" backcolor="#FFFFFF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="37" width="802" height="51" forecolor="#000000" backcolor="#FFFFFF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="88" width="802" height="27" forecolor="#992F2A" backcolor="#FFFFFF"/>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Transparent" x="20" y="97" width="55" height="11" forecolor="#000000"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[© B&W 2010 -]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy HH.mm.ss">
+				<reportElement mode="Transparent" x="108" y="97" width="151" height="11" forecolor="#000000"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="595" y="98" width="166" height="11" forecolor="#000000"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Page "+$V{PAGE_NUMBER}+" / "]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Transparent" x="762" y="98" width="23" height="11" forecolor="#000000"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="23" y="6" width="763" height="24" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="18"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{entete}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="23" y="41" width="763" height="20" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{filtre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="23" y="65" width="763" height="20" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{societe}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Transparent" x="77" y="97" width="28" height="11" forecolor="#000000"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{version}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="57" splitType="Stretch">
+			<printWhenExpression><![CDATA[$V{PAGE_NUMBER}!=1]]></printWhenExpression>
+			<rectangle>
+				<reportElement x="0" y="0" width="802" height="32" forecolor="#000000" backcolor="#FFFFFF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="32" width="802" height="23" forecolor="#992F2A" backcolor="#FFFFFF"/>
+			</rectangle>
+			<textField pattern="dd/MM/yyyy HH.mm.ss">
+				<reportElement x="107" y="39" width="148" height="11" forecolor="#000000"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="759" y="39" width="25" height="11" forecolor="#000000"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="606" y="39" width="151" height="11" forecolor="#000000"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Page "+$V{PAGE_NUMBER}+" / "]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="18" y="39" width="55" height="11" forecolor="#000000"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[© B&W 2010 -
+                ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="245" y="9" width="540" height="15" forecolor="#000000"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{societe}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="18" y="9" width="391" height="15" forecolor="#000000"/>
+				<textElement>
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{entete}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="74" y="39" width="28" height="11" forecolor="#000000"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{version}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="46" splitType="Stretch">
+			<line>
+				<reportElement x="11" y="16" width="1" height="27"/>
+			</line>
+			<line>
+				<reportElement x="264" y="16" width="1" height="27"/>
+			</line>
+			<line>
+				<reportElement x="317" y="16" width="1" height="27"/>
+			</line>
+			<line>
+				<reportElement x="392" y="16" width="1" height="27"/>
+			</line>
+			<line>
+				<reportElement x="448" y="16" width="1" height="27"/>
+			</line>
+			<line>
+				<reportElement x="524" y="16" width="1" height="27"/>
+			</line>
+			<line>
+				<reportElement x="579" y="16" width="1" height="27"/>
+			</line>
+			<line>
+				<reportElement x="656" y="16" width="1" height="27"/>
+			</line>
+			<line>
+				<reportElement x="11" y="15" width="774" height="1"/>
+			</line>
+			<line>
+				<reportElement x="11" y="42" width="774" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="18" y="23" width="241" height="11"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Produit
+                ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="268" y="18" width="45" height="11"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Initial
+                ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="323" y="23" width="64" height="11"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Valeur initiale]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="398" y="23" width="45" height="11"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Entrée]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="454" y="23" width="64" height="11"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Veleur entrée]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="529" y="23" width="45" height="11"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sortie]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="586" y="23" width="64" height="11"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Valeur sortie]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="660" y="18" width="45" height="11"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Final]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="716" y="23" width="64" height="11"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Valeur finale]]></text>
+			</staticText>
+			<line>
+				<reportElement x="709" y="16" width="1" height="27"/>
+			</line>
+			<line>
+				<reportElement x="785" y="15" width="1" height="28"/>
+			</line>
+			<textField pattern="dd/MM/yy">
+				<reportElement x="268" y="31" width="45" height="9"/>
+				<textElement textAlignment="Center">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$P{dateDeb}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yy">
+				<reportElement x="660" y="31" width="45" height="9"/>
+				<textElement textAlignment="Center">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$P{dateFin}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="13">
+			<textField isBlankWhenNull="true">
+				<reportElement style="ST1" x="269" y="1" width="45" height="11">
+					<printWhenExpression><![CDATA[$V{qteInv_l}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{qteInv_l}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="ST1" x="399" y="1" width="45" height="11" printWhenGroupChanges="code">
+					<printWhenExpression><![CDATA[$V{qteIn_l}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{qteIn_l}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="ST1" x="529" y="1" width="45" height="11">
+					<printWhenExpression><![CDATA[$V{qteOut_l}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{qteOut_l}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="11" y="0" width="1" height="13" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<line>
+				<reportElement x="264" y="0" width="1" height="13" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<line>
+				<reportElement x="317" y="0" width="1" height="13" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<line>
+				<reportElement x="392" y="0" width="1" height="13" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<line>
+				<reportElement x="448" y="0" width="1" height="13" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<line>
+				<reportElement x="524" y="0" width="1" height="13" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<line>
+				<reportElement x="579" y="0" width="1" height="13" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<line>
+				<reportElement x="656" y="0" width="1" height="13" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<line>
+				<reportElement x="709" y="0" width="1" height="13" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<line>
+				<reportElement x="785" y="0" width="1" height="13" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement x="167" y="1" width="28" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{stk_code_depot}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="95" y="1" width="63" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{stk_numero}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yy" isBlankWhenNull="true">
+				<reportElement x="46" y="1" width="42" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{stk_date_mvt}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="204" y="1" width="51" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{stk_pump}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="10"/>
+	</columnFooter>
+	<lastPageFooter>
+		<band height="89">
+			<rectangle>
+				<reportElement x="0" y="64" width="802" height="24" forecolor="#992F2A" backcolor="#FFFFFF"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="35" y="65" width="160" height="12" forecolor="#000000"/>
+				<textElement>
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Created by Bagwell & Watson
+                ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="317" y="65" width="160" height="12" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Writen by Phoenix SaaS
+                ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="606" y="65" width="160" height="12" forecolor="#000000"/>
+				<textElement textAlignment="Right">
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Support by Planet-e-pegase
+                ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="317" y="76" width="160" height="12" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.phoenix-saas.com
+                ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="606" y="76" width="160" height="12" forecolor="#000000"/>
+				<textElement textAlignment="Right">
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.planet-e-pegase.biz
+                ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="35" y="76" width="160" height="12" forecolor="#000000"/>
+				<textElement>
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.bagwell-watson.com
+                ]]></text>
+			</staticText>
+			<textField evaluationTime="Report" isBlankWhenNull="true">
+				<reportElement style="ST1" x="268" y="20" width="45" height="12">
+					<printWhenExpression><![CDATA[$V{qteInv_t}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{qteInv_t}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" isBlankWhenNull="true">
+				<reportElement style="ST1" x="323" y="20" width="64" height="12">
+					<printWhenExpression><![CDATA[$V{valInv_t}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{valInv_t}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" isBlankWhenNull="true">
+				<reportElement style="ST1" x="398" y="20" width="45" height="12">
+					<printWhenExpression><![CDATA[$V{qteIn_t}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{qteIn_t}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" isBlankWhenNull="true">
+				<reportElement style="ST1" x="454" y="20" width="64" height="12">
+					<printWhenExpression><![CDATA[$V{valIn_t}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{valIn_t}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" isBlankWhenNull="true">
+				<reportElement style="ST1" x="529" y="20" width="45" height="12">
+					<printWhenExpression><![CDATA[$V{qteOut_t}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{qteOut_t}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" isBlankWhenNull="true">
+				<reportElement style="ST1" x="586" y="20" width="64" height="12">
+					<printWhenExpression><![CDATA[$V{valOut_t}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{valOut_t}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" isBlankWhenNull="true">
+				<reportElement style="ST1" x="660" y="20" width="45" height="12">
+					<printWhenExpression><![CDATA[$V{qteFinal_t}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{qteFinal_t}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" isBlankWhenNull="true">
+				<reportElement style="ST1" x="716" y="20" width="64" height="12">
+					<printWhenExpression><![CDATA[$V{valFinal_t}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{valFinal_t}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="11" y="12" width="1" height="27"/>
+			</line>
+			<line>
+				<reportElement x="263" y="13" width="1" height="27"/>
+			</line>
+			<line>
+				<reportElement x="316" y="13" width="1" height="27"/>
+			</line>
+			<line>
+				<reportElement x="392" y="13" width="1" height="27"/>
+			</line>
+			<line>
+				<reportElement x="447" y="13" width="1" height="27"/>
+			</line>
+			<line>
+				<reportElement x="523" y="13" width="1" height="27"/>
+			</line>
+			<line>
+				<reportElement x="578" y="13" width="1" height="27"/>
+			</line>
+			<line>
+				<reportElement x="655" y="13" width="1" height="27"/>
+			</line>
+			<line>
+				<reportElement x="11" y="12" width="773" height="1"/>
+			</line>
+			<line>
+				<reportElement x="11" y="39" width="774" height="1"/>
+			</line>
+			<line>
+				<reportElement x="708" y="13" width="1" height="27"/>
+			</line>
+			<line>
+				<reportElement x="784" y="12" width="1" height="27"/>
+			</line>
+		</band>
+	</lastPageFooter>
+</jasperReport>

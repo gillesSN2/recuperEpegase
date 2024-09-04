@@ -1,0 +1,1091 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Facture" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isFloatColumnFooter="true" whenResourceMissingType="Empty">
+	<property name="ireport.zoom" value="3.0"/>
+	<property name="ireport.x" value="866"/>
+	<property name="ireport.y" value="414"/>
+	<parameter name="structure" class="java.lang.String"/>
+	<parameter name="requete" class="java.lang.String"/>
+	<parameter name="societe" class="java.lang.String"/>
+	<parameter name="version" class="java.lang.String"/>
+	<parameter name="adresse" class="java.lang.String"/>
+	<parameter name="ville" class="java.lang.String"/>
+	<parameter name="pays" class="java.lang.String"/>
+	<parameter name="logo_1" class="java.lang.String"/>
+	<parameter name="logo_2" class="java.lang.String"/>
+	<parameter name="logo_4" class="java.lang.String"/>
+	<parameter name="telephone_1" class="java.lang.String"/>
+	<parameter name="telephone_2" class="java.lang.String"/>
+	<parameter name="fax" class="java.lang.String"/>
+	<parameter name="site_web" class="java.lang.String"/>
+	<parameter name="mails" class="java.lang.String"/>
+	<parameter name="identification_1" class="java.lang.String"/>
+	<parameter name="identification_2" class="java.lang.String"/>
+	<parameter name="identification_3" class="java.lang.String"/>
+	<parameter name="identification_4" class="java.lang.String"/>
+	<parameter name="identification_5" class="java.lang.String"/>
+	<parameter name="identification_6" class="java.lang.String"/>
+	<parameter name="identification_7" class="java.lang.String"/>
+	<parameter name="identification_8" class="java.lang.String"/>
+	<parameter name="identification_9" class="java.lang.String"/>
+	<parameter name="identification_10" class="java.lang.String"/>
+	<parameter name="banque" class="java.lang.String"/>
+	<parameter name="montant_lettre" class="java.lang.String"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["/usr/local/SUNWappserver/domains/domain1/config/epegase/clients/structure1/impression/fr/ventes/document/devis/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="signe_signature" class="java.lang.String"/>
+	<parameter name="parcChassis" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="facligCode" class="java.lang.String">
+		<fieldDescription><![CDATA[facligCode]]></fieldDescription>
+	</field>
+	<field name="facligCondition" class="java.lang.String">
+		<fieldDescription><![CDATA[facligCondition]]></fieldDescription>
+	</field>
+	<field name="facligDepot" class="java.lang.String">
+		<fieldDescription><![CDATA[facligDepot]]></fieldDescription>
+	</field>
+	<field name="facligDevise" class="java.lang.String">
+		<fieldDescription><![CDATA[facligDevise]]></fieldDescription>
+	</field>
+	<field name="facligDiam" class="java.lang.Float">
+		<fieldDescription><![CDATA[facligDiam]]></fieldDescription>
+	</field>
+	<field name="facligEchelle" class="java.lang.Integer">
+		<fieldDescription><![CDATA[facligEchelle]]></fieldDescription>
+	</field>
+	<field name="facligFamille" class="java.lang.String">
+		<fieldDescription><![CDATA[facligFamille]]></fieldDescription>
+	</field>
+	<field name="facligHaut" class="java.lang.Float">
+		<fieldDescription><![CDATA[facligHaut]]></fieldDescription>
+	</field>
+	<field name="facligId" class="java.lang.Long">
+		<fieldDescription><![CDATA[facligId]]></fieldDescription>
+	</field>
+	<field name="facligLarg" class="java.lang.Float">
+		<fieldDescription><![CDATA[facligLarg]]></fieldDescription>
+	</field>
+	<field name="facligLibelle" class="java.lang.String">
+		<fieldDescription><![CDATA[facligLibelle]]></fieldDescription>
+	</field>
+	<field name="facligLong" class="java.lang.Float">
+		<fieldDescription><![CDATA[facligLong]]></fieldDescription>
+	</field>
+	<field name="facligNb" class="java.lang.Float">
+		<fieldDescription><![CDATA[facligNb]]></fieldDescription>
+	</field>
+	<field name="facligPoidsBrut" class="java.lang.Float">
+		<fieldDescription><![CDATA[facligPoidsBrut]]></fieldDescription>
+	</field>
+	<field name="facligPoidsNet" class="java.lang.Float">
+		<fieldDescription><![CDATA[facligPoidsNet]]></fieldDescription>
+	</field>
+	<field name="facligPt" class="java.lang.Double">
+		<fieldDescription><![CDATA[facligPt]]></fieldDescription>
+	</field>
+	<field name="facligPu" class="java.lang.Double">
+		<fieldDescription><![CDATA[facligPu]]></fieldDescription>
+	</field>
+	<field name="facligPuRem" class="java.lang.Double">
+		<fieldDescription><![CDATA[facligPuRem]]></fieldDescription>
+	</field>
+	<field name="facligPuRemTtc" class="java.lang.Double">
+		<fieldDescription><![CDATA[facligPuRemTtc]]></fieldDescription>
+	</field>
+	<field name="facligPuTtc" class="java.lang.Double">
+		<fieldDescription><![CDATA[facligPuTtc]]></fieldDescription>
+	</field>
+	<field name="facligPump" class="java.lang.Double">
+		<fieldDescription><![CDATA[facligPump]]></fieldDescription>
+	</field>
+	<field name="facligQte" class="java.lang.Float">
+		<fieldDescription><![CDATA[facligQte]]></fieldDescription>
+	</field>
+	<field name="facligQteUtil" class="java.lang.Float">
+		<fieldDescription><![CDATA[facligQteUtil]]></fieldDescription>
+	</field>
+	<field name="facligRabais" class="java.lang.Double">
+		<fieldDescription><![CDATA[facligRabais]]></fieldDescription>
+	</field>
+	<field name="facligReference" class="java.lang.String">
+		<fieldDescription><![CDATA[facligReference]]></fieldDescription>
+	</field>
+	<field name="facligStock" class="java.lang.Integer">
+		<fieldDescription><![CDATA[facligStock]]></fieldDescription>
+	</field>
+	<field name="facligTauxRemise" class="java.lang.Float">
+		<fieldDescription><![CDATA[facligTauxRemise]]></fieldDescription>
+	</field>
+	<field name="facligTauxTaxe" class="java.lang.Float">
+		<fieldDescription><![CDATA[facligTauxTaxe]]></fieldDescription>
+	</field>
+	<field name="facligTaxe" class="java.lang.String">
+		<fieldDescription><![CDATA[facligTaxe]]></fieldDescription>
+	</field>
+	<field name="facligTc" class="java.lang.Double">
+		<fieldDescription><![CDATA[facligTc]]></fieldDescription>
+	</field>
+	<field name="facligTtc" class="java.lang.Double">
+		<fieldDescription><![CDATA[facligTtc]]></fieldDescription>
+	</field>
+	<field name="facligTva" class="java.lang.Double">
+		<fieldDescription><![CDATA[facligTva]]></fieldDescription>
+	</field>
+	<field name="facligUnite" class="java.lang.String">
+		<fieldDescription><![CDATA[facligUnite]]></fieldDescription>
+	</field>
+	<field name="facligVolume" class="java.lang.Float">
+		<fieldDescription><![CDATA[facligVolume]]></fieldDescription>
+	</field>
+	<field name="facActivite" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facActivite]]></fieldDescription>
+	</field>
+	<field name="facAnal2" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facAnal2]]></fieldDescription>
+	</field>
+	<field name="facAnal4" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facAnal4]]></fieldDescription>
+	</field>
+	<field name="facAnnexe1" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facAnnexe1]]></fieldDescription>
+	</field>
+	<field name="facAnnexe2" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facAnnexe2]]></fieldDescription>
+	</field>
+	<field name="facArrondiReg" class="java.lang.Integer">
+		<fieldDescription><![CDATA[factureEnteteVentes.facArrondiReg]]></fieldDescription>
+	</field>
+	<field name="facBanque" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facBanque]]></fieldDescription>
+	</field>
+	<field name="facCat" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facCat]]></fieldDescription>
+	</field>
+	<field name="facCivilContact" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facCivilContact]]></fieldDescription>
+	</field>
+	<field name="facCivilTiers" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facCivilTiers]]></fieldDescription>
+	</field>
+	<field name="facConditionReg" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facConditionReg]]></fieldDescription>
+	</field>
+	<field name="facContrat" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facContrat]]></fieldDescription>
+	</field>
+	<field name="facDate" class="java.util.Date">
+		<fieldDescription><![CDATA[factureEnteteVentes.facDate]]></fieldDescription>
+	</field>
+	<field name="facDateAnnule" class="java.util.Date">
+		<fieldDescription><![CDATA[factureEnteteVentes.facDateAnnule]]></fieldDescription>
+	</field>
+	<field name="facDateCreat" class="java.util.Date">
+		<fieldDescription><![CDATA[factureEnteteVentes.facDateCreat]]></fieldDescription>
+	</field>
+	<field name="facDateEcheReg" class="java.util.Date">
+		<fieldDescription><![CDATA[factureEnteteVentes.facDateEcheReg]]></fieldDescription>
+	</field>
+	<field name="facDateImp" class="java.util.Date">
+		<fieldDescription><![CDATA[factureEnteteVentes.facDateImp]]></fieldDescription>
+	</field>
+	<field name="facDateLivraison" class="java.util.Date">
+		<fieldDescription><![CDATA[factureEnteteVentes.facDateLivraison]]></fieldDescription>
+	</field>
+	<field name="facDateModif" class="java.util.Date">
+		<fieldDescription><![CDATA[factureEnteteVentes.facDateModif]]></fieldDescription>
+	</field>
+	<field name="facDateRelance" class="java.util.Date">
+		<fieldDescription><![CDATA[factureEnteteVentes.facDateRelance]]></fieldDescription>
+	</field>
+	<field name="facDateTransforme" class="java.util.Date">
+		<fieldDescription><![CDATA[factureEnteteVentes.facDateTransforme]]></fieldDescription>
+	</field>
+	<field name="facDateValide" class="java.util.Date">
+		<fieldDescription><![CDATA[factureEnteteVentes.facDateValide]]></fieldDescription>
+	</field>
+	<field name="facDateValidite" class="java.util.Date">
+		<fieldDescription><![CDATA[factureEnteteVentes.facDateValidite]]></fieldDescription>
+	</field>
+	<field name="facDepartement" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facDepartement]]></fieldDescription>
+	</field>
+	<field name="facDevise" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facDevise]]></fieldDescription>
+	</field>
+	<field name="facEcheanceReliquat" class="java.util.Date">
+		<fieldDescription><![CDATA[factureEnteteVentes.facEcheanceReliquat]]></fieldDescription>
+	</field>
+	<field name="facEtat" class="java.lang.Integer">
+		<fieldDescription><![CDATA[factureEnteteVentes.facEtat]]></fieldDescription>
+	</field>
+	<field name="facEtatVal" class="java.lang.Integer">
+		<fieldDescription><![CDATA[factureEnteteVentes.facEtatVal]]></fieldDescription>
+	</field>
+	<field name="facExoDouane" class="java.lang.Integer">
+		<fieldDescription><![CDATA[factureEnteteVentes.facExoDouane]]></fieldDescription>
+	</field>
+	<field name="facExoTva" class="java.lang.Integer">
+		<fieldDescription><![CDATA[factureEnteteVentes.facExoTva]]></fieldDescription>
+	</field>
+	<field name="facFactorEtat" class="java.lang.Integer">
+		<fieldDescription><![CDATA[factureEnteteVentes.facFactorEtat]]></fieldDescription>
+	</field>
+	<field name="facFactorId" class="java.lang.Long">
+		<fieldDescription><![CDATA[factureEnteteVentes.facFactorId]]></fieldDescription>
+	</field>
+	<field name="facFactorNom" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facFactorNom]]></fieldDescription>
+	</field>
+	<field name="facFormule1" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facFormule1]]></fieldDescription>
+	</field>
+	<field name="facFormule2" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facFormule2]]></fieldDescription>
+	</field>
+	<field name="facGarde" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facGarde]]></fieldDescription>
+	</field>
+	<field name="facGele" class="java.lang.Integer">
+		<fieldDescription><![CDATA[factureEnteteVentes.facGele]]></fieldDescription>
+	</field>
+	<field name="facId" class="java.lang.Long">
+		<fieldDescription><![CDATA[factureEnteteVentes.facId]]></fieldDescription>
+	</field>
+	<field name="facIdContact" class="java.lang.Long">
+		<fieldDescription><![CDATA[factureEnteteVentes.facIdContact]]></fieldDescription>
+	</field>
+	<field name="facIdCreateur" class="java.lang.Long">
+		<fieldDescription><![CDATA[factureEnteteVentes.facIdCreateur]]></fieldDescription>
+	</field>
+	<field name="facIdModif" class="java.lang.Long">
+		<fieldDescription><![CDATA[factureEnteteVentes.facIdModif]]></fieldDescription>
+	</field>
+	<field name="facIdResponsable" class="java.lang.Long">
+		<fieldDescription><![CDATA[factureEnteteVentes.facIdResponsable]]></fieldDescription>
+	</field>
+	<field name="facIncoterm" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facIncoterm]]></fieldDescription>
+	</field>
+	<field name="facInfo1" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facInfo1]]></fieldDescription>
+	</field>
+	<field name="facInfo10" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facInfo10]]></fieldDescription>
+	</field>
+	<field name="facInfo2" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facInfo2]]></fieldDescription>
+	</field>
+	<field name="facInfo3" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facInfo3]]></fieldDescription>
+	</field>
+	<field name="facInfo4" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facInfo4]]></fieldDescription>
+	</field>
+	<field name="facInfo5" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facInfo5]]></fieldDescription>
+	</field>
+	<field name="facInfo6" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facInfo6]]></fieldDescription>
+	</field>
+	<field name="facInfo7" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facInfo7]]></fieldDescription>
+	</field>
+	<field name="facInfo8" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facInfo8]]></fieldDescription>
+	</field>
+	<field name="facInfo9" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facInfo9]]></fieldDescription>
+	</field>
+	<field name="facInfoLivraison" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facInfoLivraison]]></fieldDescription>
+	</field>
+	<field name="facJournalReg" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facJournalReg]]></fieldDescription>
+	</field>
+	<field name="facLieuLivraison" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facLieuLivraison]]></fieldDescription>
+	</field>
+	<field name="facModeReg" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facModeReg]]></fieldDescription>
+	</field>
+	<field name="facModeleImp" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facModeleImp]]></fieldDescription>
+	</field>
+	<field name="facMotifAnnule" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facMotifAnnule]]></fieldDescription>
+	</field>
+	<field name="facMotifRejetCredit" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facMotifRejetCredit]]></fieldDescription>
+	</field>
+	<field name="facNbJourReg" class="java.lang.Integer">
+		<fieldDescription><![CDATA[factureEnteteVentes.facNbJourReg]]></fieldDescription>
+	</field>
+	<field name="facNomContact" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facNomContact]]></fieldDescription>
+	</field>
+	<field name="facNomCreateur" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facNomCreateur]]></fieldDescription>
+	</field>
+	<field name="facNomModif" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facNomModif]]></fieldDescription>
+	</field>
+	<field name="facNomResponsable" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facNomResponsable]]></fieldDescription>
+	</field>
+	<field name="facNomTiers" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facNomTiers]]></fieldDescription>
+	</field>
+	<field name="facNum" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facNum]]></fieldDescription>
+	</field>
+	<field name="facObject" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facObject]]></fieldDescription>
+	</field>
+	<field name="facObservation" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facObservation]]></fieldDescription>
+	</field>
+	<field name="facPdv" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facPdv]]></fieldDescription>
+	</field>
+	<field name="facRegion" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facRegion]]></fieldDescription>
+	</field>
+	<field name="facSecteur" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facSecteur]]></fieldDescription>
+	</field>
+	<field name="facSerie" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facSerie]]></fieldDescription>
+	</field>
+	<field name="facService" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facService]]></fieldDescription>
+	</field>
+	<field name="facSite" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.facSite]]></fieldDescription>
+	</field>
+	<field name="facSolde" class="java.lang.Integer">
+		<fieldDescription><![CDATA[factureEnteteVentes.facSolde]]></fieldDescription>
+	</field>
+	<field name="facTotHt" class="java.lang.Double">
+		<fieldDescription><![CDATA[factureEnteteVentes.facTotHt]]></fieldDescription>
+	</field>
+	<field name="facTotRabais" class="java.lang.Double">
+		<fieldDescription><![CDATA[factureEnteteVentes.facTotRabais]]></fieldDescription>
+	</field>
+	<field name="facTotReglement" class="java.lang.Double">
+		<fieldDescription><![CDATA[factureEnteteVentes.facTotReglement]]></fieldDescription>
+	</field>
+	<field name="facTotRemise" class="java.lang.Double">
+		<fieldDescription><![CDATA[factureEnteteVentes.facTotRemise]]></fieldDescription>
+	</field>
+	<field name="facTotTc" class="java.lang.Double">
+		<fieldDescription><![CDATA[factureEnteteVentes.facTotTc]]></fieldDescription>
+	</field>
+	<field name="facTotTtc" class="java.lang.Double">
+		<fieldDescription><![CDATA[factureEnteteVentes.facTotTtc]]></fieldDescription>
+	</field>
+	<field name="facTotTva" class="java.lang.Double">
+		<fieldDescription><![CDATA[factureEnteteVentes.facTotTva]]></fieldDescription>
+	</field>
+	<field name="facTypeReg" class="java.lang.Integer">
+		<fieldDescription><![CDATA[factureEnteteVentes.facTypeReg]]></fieldDescription>
+	</field>
+	<field name="facTypeTransforme" class="java.lang.Integer">
+		<fieldDescription><![CDATA[factureEnteteVentes.facTypeTransforme]]></fieldDescription>
+	</field>
+	<field name="tieadresse" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.tiers.tieadresse]]></fieldDescription>
+	</field>
+	<field name="tieascensseur" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.tiers.tieascensseur]]></fieldDescription>
+	</field>
+	<field name="tiebatiment" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.tiers.tiebatiment]]></fieldDescription>
+	</field>
+	<field name="tiebp" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.tiers.tiebp]]></fieldDescription>
+	</field>
+	<field name="tieburtel1" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.tiers.tieburtel1]]></fieldDescription>
+	</field>
+	<field name="tieburtel2" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.tiers.tieburtel2]]></fieldDescription>
+	</field>
+	<field name="tieburtel3" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.tiers.tieburtel3]]></fieldDescription>
+	</field>
+	<field name="tiecategorie" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.tiers.tiecategorie]]></fieldDescription>
+	</field>
+	<field name="tiecivilite" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.tiers.tiecivilite]]></fieldDescription>
+	</field>
+	<field name="tiecompte0" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.tiers.tiecompte0]]></fieldDescription>
+	</field>
+	<field name="tienompays" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.tiers.tienompays]]></fieldDescription>
+	</field>
+	<field name="tieville" class="java.lang.String">
+		<fieldDescription><![CDATA[factureEnteteVentes.tiers.tieville]]></fieldDescription>
+	</field>
+	<variable name="tot_remise" class="java.lang.Float">
+		<variableExpression><![CDATA[$F{facTotRabais}+$F{facTotRemise}]]></variableExpression>
+	</variable>
+	<variable name="solde" class="java.lang.Float">
+		<variableExpression><![CDATA[$F{facTotTtc}-$F{facTotReglement}]]></variableExpression>
+	</variable>
+	<title>
+		<band height="110" splitType="Stretch">
+			<image scaleImage="RetainShape" hAlign="Center">
+				<reportElement x="14" y="10" width="129" height="89"/>
+				<imageExpression class="java.lang.String"><![CDATA[$P{logo_1}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="375" y="10" width="85" height="15"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Facture N°]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="463" y="10" width="70" height="15"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{facNum}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="172" y="38" width="364" height="31"/>
+				<textElement>
+					<font fontName="Arial" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{societe}.concat( " S.A.V." )]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="134" splitType="Stretch">
+			<rectangle radius="10">
+				<reportElement mode="Transparent" x="13" y="6" width="267" height="120"/>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement mode="Transparent" x="293" y="6" width="245" height="120"/>
+			</rectangle>
+			<textField>
+				<reportElement x="92" y="29" width="175" height="37"/>
+				<textElement>
+					<font fontName="Arial" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{facNomTiers}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="92" y="82" width="175" height="12"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{tieadresse}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="92" y="95" width="175" height="12"/>
+				<textElement markup="none">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{tiebp}.concat($F{tieville})]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="21" y="30" width="61" height="12"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nom client]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="21" y="82" width="61" height="12"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Adresse]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="21" y="95" width="61" height="12"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[BP, Ville]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="92" y="107" width="175" height="12"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{tieburtel1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="21" y="107" width="61" height="12"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Téléphone]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="303" y="30" width="75" height="12"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="303" y="43" width="75" height="12"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[N° Client]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="303" y="56" width="75" height="12"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Immatriculation]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="303" y="69" width="75" height="12"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[N° Chassis]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="303" y="82" width="75" height="12"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kilométrage]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="303" y="95" width="75" height="12"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Commercial]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="303" y="107" width="75" height="12"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Objet]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="393" y="30" width="120" height="12"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{facDate}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="393" y="43" width="120" height="12"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{tiecompte0}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="393" y="56" width="120" height="12"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{facAnal2}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="393" y="82" width="120" height="12"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{facInfo1}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="393" y="95" width="120" height="12"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{facNomResponsable}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="393" y="108" width="120" height="12"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{facObject}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="92" y="69" width="175" height="12"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{facNomContact}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="21" y="69" width="61" height="12"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Contact]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="116" y="10" width="72" height="12"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Adressée à]]></text>
+			</staticText>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="393" y="69" width="120" height="12"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{parcChassis}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="47" splitType="Stretch">
+			<rectangle>
+				<reportElement x="12" y="9" width="528" height="34" backcolor="#B7D3FD"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<line>
+				<reportElement x="12" y="8" width="1" height="39"/>
+			</line>
+			<line>
+				<reportElement x="115" y="9" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="162" y="9" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="387" y="9" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="459" y="9" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="540" y="8" width="1" height="39"/>
+			</line>
+			<line>
+				<reportElement x="12" y="8" width="529" height="1"/>
+			</line>
+			<line>
+				<reportElement x="13" y="42" width="527" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="16" y="17" width="97" height="15" forecolor="#F3F3FA"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Référence]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="170" y="17" width="207" height="15" forecolor="#F3F3FA"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Description]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="127" y="17" width="31" height="15" forecolor="#F3F3FA"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Qte.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="396" y="17" width="53" height="15" forecolor="#F3F3FA"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[P.U. H.T.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="17" width="59" height="15" forecolor="#F3F3FA"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Prix Total]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="13">
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="12" y="0" width="1" height="13" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToTallestObject" x="115" y="0" width="1" height="13" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToTallestObject" x="162" y="0" width="1" height="13" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="387" y="0" width="1" height="13" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="459" y="0" width="1" height="13" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="540" y="0" width="1" height="13" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement x="18" y="1" width="93" height="10"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{facligCode}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="172" y="1" width="205" height="10" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Arial" size="8" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{facligLibelle}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="125" y="1" width="31" height="10">
+					<printWhenExpression><![CDATA[$F{facligQte}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{facligQte}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="397" y="1" width="52" height="10">
+					<printWhenExpression><![CDATA[$F{facligPu}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{facligPu}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="470" y="1" width="61" height="10">
+					<printWhenExpression><![CDATA[$F{facligPt}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{facligPt}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="16">
+			<line direction="BottomUp">
+				<reportElement stretchType="RelativeToBandHeight" x="115" y="0" width="1" height="10"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement stretchType="RelativeToBandHeight" x="12" y="0" width="1" height="10" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<line>
+				<reportElement x="162" y="0" width="1" height="10"/>
+			</line>
+			<line>
+				<reportElement x="387" y="0" width="1" height="10"/>
+			</line>
+			<line>
+				<reportElement x="459" y="0" width="1" height="10"/>
+			</line>
+			<line>
+				<reportElement x="540" y="0" width="1" height="10"/>
+			</line>
+			<line>
+				<reportElement x="13" y="9" width="527" height="1"/>
+			</line>
+		</band>
+	</columnFooter>
+	<lastPageFooter>
+		<band height="168" splitType="Stretch">
+			<rectangle>
+				<reportElement x="388" y="8" width="71" height="85" backcolor="#B7D3FD"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="12" y="8" width="375" height="21" backcolor="#B7D3FD"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="12" y="8" width="1" height="85" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<line>
+				<reportElement x="387" y="8" width="1" height="84"/>
+			</line>
+			<line>
+				<reportElement x="12" y="8" width="529" height="1"/>
+			</line>
+			<line>
+				<reportElement x="459" y="8" width="1" height="84"/>
+			</line>
+			<line>
+				<reportElement x="540" y="8" width="1" height="84"/>
+			</line>
+			<line>
+				<reportElement x="13" y="28" width="527" height="1"/>
+			</line>
+			<line>
+				<reportElement x="388" y="48" width="153" height="1"/>
+			</line>
+			<line>
+				<reportElement x="388" y="68" width="153" height="1"/>
+			</line>
+			<line>
+				<reportElement x="12" y="92" width="529" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="18" y="11" width="91" height="15" forecolor="#F8F1F1">
+					<printWhenExpression><![CDATA[$F{facTotReglement}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total acompte :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="211" y="11" width="76" height="15" forecolor="#F8F1F1">
+					<printWhenExpression><![CDATA[$F{facTotReglement}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Net à payer]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="393" y="12" width="63" height="12" forecolor="#F7F5F5" backcolor="#F5EBEB"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total H.T.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="389" y="32" width="66" height="12" forecolor="#F7F5F5" backcolor="#F5EBEB">
+					<printWhenExpression><![CDATA[$V{tot_remise}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total remises]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="396" y="52" width="59" height="12" forecolor="#F7F5F5" backcolor="#F5EBEB"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total taxes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="396" y="73" width="59" height="12" forecolor="#F7F5F5" backcolor="#F5EBEB"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total T.T.C.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="30" width="229" height="10"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="8" isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Arrêtée la présente facture à la somme de :]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="14" y="96" width="523" height="12"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{facFormule1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="14" y="110" width="523" height="12"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{facFormule2}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="467" y="12" width="63" height="12">
+					<printWhenExpression><![CDATA[$F{facTotHt}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{facTotHt}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="467" y="32" width="63" height="12">
+					<printWhenExpression><![CDATA[$V{tot_remise}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{tot_remise}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="467" y="52" width="63" height="12">
+					<printWhenExpression><![CDATA[$F{facTotTva}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{facTotTva}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="467" y="73" width="63" height="12">
+					<printWhenExpression><![CDATA[$F{facTotTtc}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{facTotTtc}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="113" y="11" width="63" height="15" forecolor="#F8F1F1">
+					<printWhenExpression><![CDATA[$F{facTotReglement}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{facTotReglement}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="20" y="42" width="229" height="23"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{montant_lettre}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="293" y="11" width="63" height="15" forecolor="#F8F1F1">
+					<printWhenExpression><![CDATA[$F{facTotReglement}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{solde}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="124" width="555" height="1" backcolor="#188EC7"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Double" lineColor="#0F6CF4"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="6" y="128" width="254" height="11"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Email : " + $P{mails}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="6" y="140" width="254" height="11"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Site web : " + $P{site_web}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="293" y="128" width="254" height="11"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Tél. : " + $P{telephone_1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="293" y="151" width="254" height="11"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["N° NINEA : " + $P{identification_1} + "  N° RCCM : " + $P{identification_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="6" y="152" width="254" height="11"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Banque : " + $F{facBanque}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="293" y="139" width="254" height="11"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Fax : " + $P{fax}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="19" y="71" width="55" height="10"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="8" isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Règlement :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="82" y="71" width="166" height="10"/>
+				<textElement textAlignment="Left" markup="none">
+					<font fontName="Arial" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{facModeReg}.concat(" A payer le "+$F{facDateEcheReg})]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="82" y="81" width="46" height="10"/>
+				<textElement textAlignment="Left" markup="none">
+					<font fontName="Arial" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{facLieuLivraison}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="19" y="81" width="55" height="10"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Livraison :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="133" y="81" width="66" height="10"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Valable jusqu'au :]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="200" y="81" width="44" height="10"/>
+				<textElement textAlignment="Left" markup="none">
+					<font fontName="Arial" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{facDateValidite}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="254" y="29" width="1" height="63"/>
+			</line>
+			<line>
+				<reportElement x="13" y="68" width="241" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="263" y="30" width="115" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="8" isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Signature commercial :]]></text>
+			</staticText>
+			<image scaleImage="RetainShape" hAlign="Center">
+				<reportElement x="270" y="35" width="98" height="59"/>
+				<imageExpression class="java.lang.String"><![CDATA[$P{signe_signature}]]></imageExpression>
+			</image>
+		</band>
+	</lastPageFooter>
+</jasperReport>

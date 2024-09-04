@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="BilanActif" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="0.75"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["/usr/local/SUNWappserver/domains/domain1/config/epegase/web/configuration/impression/fr/compta/etatfin_SYSCOA/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="societe" class="java.lang.String"/>
+	<parameter name="requete" class="java.lang.String"/>
+	<parameter name="adresse" class="java.lang.String"/>
+	<parameter name="sigle" class="java.lang.String"/>
+	<parameter name="identification_1" class="java.lang.String"/>
+	<parameter name="exercice" class="java.lang.Long"/>
+	<parameter name="page_init" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="etat_init" class="java.lang.Integer"/>
+	<parameter name="dateDeb" class="java.util.Date"/>
+	<parameter name="dateFin" class="java.util.Date"/>
+	<parameter name="nom_pays" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT
+     cpt_exercices_comptable.`execpt_id` AS cpt_exercices_comptable_execpt_id,
+     cpt_exercices_comptable.`execpt_date_creat` AS cpt_exercices_comptable_execpt_date_creat,
+     cpt_exercices_comptable.`execpt_date_modif` AS cpt_exercices_comptable_execpt_date_modif,
+     cpt_exercices_comptable.`execpt_date_cloture` AS cpt_exercices_comptable_execpt_date_cloture,
+     cpt_exercices_comptable.`execpt_user_creat` AS cpt_exercices_comptable_execpt_user_creat,
+     cpt_exercices_comptable.`execpt_user_cloture` AS cpt_exercices_comptable_execpt_user_cloture,
+     cpt_exercices_comptable.`execpt_user_modif` AS cpt_exercices_comptable_execpt_user_modif,
+     cpt_exercices_comptable.`execpt_date_debut` AS cpt_exercices_comptable_execpt_date_debut,
+     cpt_exercices_comptable.`execpt_date_fin` AS cpt_exercices_comptable_execpt_date_fin,
+     cpt_exercices_comptable.`execpt_etat` AS cpt_exercices_comptable_execpt_etat
+FROM
+     `cpt_exercices_comptable` cpt_exercices_comptable
+WHERE
+     execpt_id = $P{exercice}]]>
+	</queryString>
+	<field name="cpt_exercices_comptable_execpt_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_date_creat" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_date_modif" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_date_cloture" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_user_creat" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_user_cloture" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_user_modif" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_date_debut" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_date_fin" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_etat" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="page_en_cours" class="java.lang.Integer">
+		<variableExpression><![CDATA[$P{page_init}+$V{PAGE_NUMBER}]]></variableExpression>
+		<initialValueExpression><![CDATA[$P{page_init}]]></initialValueExpression>
+	</variable>
+	<variable name="etat_en_cours" class="java.lang.Integer">
+		<variableExpression><![CDATA[$P{etat_init}+$V{PAGE_NUMBER}]]></variableExpression>
+		<initialValueExpression><![CDATA[$P{etat_init}]]></initialValueExpression>
+	</variable>
+	<variable name="duree" class="java.lang.Integer">
+		<variableExpression><![CDATA[$P{dateFin}.getMonth()-$P{dateDeb}.getMonth()+1]]></variableExpression>
+		<initialValueExpression><![CDATA[$P{dateFin}.getMonth()-$P{dateDeb}.getMonth()+1]]></initialValueExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="802" splitType="Prevent">
+			<staticText>
+				<reportElement x="20" y="106" width="512" height="15"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CONDITIONS DE RECEVABILITE]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="219" y="4" width="100" height="14"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["- "+$V{etat_en_cours}+" -"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="20" y="223" width="512" height="15"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Entreprise utilisant des imprimés :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="254" width="512" height="141"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[- N'utiliser que des imprimés normalisés
+
+- Remplir chaque page de façon parfaitement lisible, sans cécalage de lignes
+
+- Ne créer aucune rubrique
+
+- Eviter toute surcharge et donner les explications sur une feuille séparée
+
+- N'utiliser que les codes indiqués dans les tables
+
+- N'utiliser que des imprimés en noir et blanc.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="506" width="512" height="141"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[- Reproduction à l'identique la contexture des imprimés normalisés
+
+- Fournir une liasse comprenant à la fois : la fiche d'identification et renseignement divers et les états financiers correspondant au système comptable
+
+- Ne créer aucune rubrique
+
+- N'utiliser que les codes indiqués dans les tables
+
+- N'utiliser que des imprimés en noir et blanc.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="475" width="512" height="15"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Entreprise produisant les états financiers à l'aide de l'outils informatique :]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+</jasperReport>

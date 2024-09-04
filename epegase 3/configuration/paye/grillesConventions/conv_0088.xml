@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collective>
+
+	<convention>
+		<code>AERIEN</code>
+		<lib_FR>SECTEUR TRANSPORT AERIEN</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<heure_mois>0.00</heure_mois>
+		<heure_semaine>0.00</heure_semaine>
+		<date_maj></date_maj>
+		<tranche1>0.00</tranche1>
+		<tranche2>0.00</tranche2>
+		<tranche3>0.00</tranche3>
+		<tranche4>0.00</tranche4>
+		<tranche5>0.00</tranche5>
+		<inactif>0</inactif>
+	</convention>
+
+	<convention>
+		<code>ASSURANCE</code>
+		<lib_FR>SECTEUR TRAVAIL DES ASSURANCES</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<heure_mois>0.00</heure_mois>
+		<heure_semaine>0.00</heure_semaine>
+		<date_maj></date_maj>
+		<tranche1>0.00</tranche1>
+		<tranche2>0.00</tranche2>
+		<tranche3>0.00</tranche3>
+		<tranche4>0.00</tranche4>
+		<tranche5>0.00</tranche5>
+		<inactif>0</inactif>
+	</convention>
+
+	<convention>
+		<code>BANQUE</code>
+		<lib_FR>SECTEUR BANQUES ET ETABLISSEMENTS FINANCIERS</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<heure_mois>0.00</heure_mois>
+		<heure_semaine>0.00</heure_semaine>
+		<date_maj></date_maj>
+		<tranche1>0.00</tranche1>
+		<tranche2>0.00</tranche2>
+		<tranche3>0.00</tranche3>
+		<tranche4>0.00</tranche4>
+		<tranche5>0.00</tranche5>
+		<inactif>0</inactif>
+	</convention>
+
+	<convention>
+		<code>BATIMENT</code>
+		<lib_FR>SECTEUR BATIMENT ET TRAVAUX PUBLICS</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<heure_mois>0.00</heure_mois>
+		<heure_semaine>0.00</heure_semaine>
+		<date_maj></date_maj>
+		<tranche1>0.00</tranche1>
+		<tranche2>0.00</tranche2>
+		<tranche3>0.00</tranche3>
+		<tranche4>0.00</tranche4>
+		<tranche5>0.00</tranche5>
+		<inactif>0</inactif>
+	</convention>
+
+	<convention>
+		<code>COMMERCE</code>
+		<lib_FR>SECTEUR COMMERCE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<heure_mois>0.00</heure_mois>
+		<heure_semaine>0.00</heure_semaine>
+		<date_maj></date_maj>
+		<tranche1>0.00</tranche1>
+		<tranche2>0.00</tranche2>
+		<tranche3>0.00</tranche3>
+		<tranche4>0.00</tranche4>
+		<tranche5>0.00</tranche5>
+		<inactif>0</inactif>
+	</convention>
+
+	<convention>
+		<code>FORET</code>
+		<lib_FR>SECTEUR EXPLOITATION FORESTIERE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<heure_mois>0.00</heure_mois>
+		<heure_semaine>0.00</heure_semaine>
+		<date_maj></date_maj>
+		<tranche1>0.00</tranche1>
+		<tranche2>0.00</tranche2>
+		<tranche3>0.00</tranche3>
+		<tranche4>0.00</tranche4>
+		<tranche5>0.00</tranche5>
+		<inactif>0</inactif>
+	</convention>
+
+	<convention>
+		<code>INDUSTRIE</code>
+		<lib_FR>SECTEUR INDUSTRIEL</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<heure_mois>0.00</heure_mois>
+		<heure_semaine>0.00</heure_semaine>
+		<date_maj></date_maj>
+		<tranche1>0.00</tranche1>
+		<tranche2>0.00</tranche2>
+		<tranche3>0.00</tranche3>
+		<tranche4>0.00</tranche4>
+		<tranche5>0.00</tranche5>
+		<inactif>0</inactif>
+	</convention>
+
+	<convention>
+		<code>MARITIME</code>
+		<lib_FR>SECTEUR PORTUAIRE, MARITIME ET FLUVIL</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<heure_mois>0.00</heure_mois>
+		<heure_semaine>0.00</heure_semaine>
+		<date_maj></date_maj>
+		<tranche1>0.00</tranche1>
+		<tranche2>0.00</tranche2>
+		<tranche3>0.00</tranche3>
+		<tranche4>0.00</tranche4>
+		<tranche5>0.00</tranche5>
+		<inactif>0</inactif>
+	</convention>
+
+	<convention>
+		<code>MINE</code>
+		<lib_FR>SECTEUR MINIER ET ASSIMILÉS</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<heure_mois>0.00</heure_mois>
+		<heure_semaine>0.00</heure_semaine>
+		<date_maj></date_maj>
+		<tranche1>0.00</tranche1>
+		<tranche2>0.00</tranche2>
+		<tranche3>0.00</tranche3>
+		<tranche4>0.00</tranche4>
+		<tranche5>0.00</tranche5>
+		<inactif>0</inactif>
+	</convention>
+
+	<convention>
+		<code>PETROLE</code>
+		<lib_FR>SECTEUR PETROLIER</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<heure_mois>0.00</heure_mois>
+		<heure_semaine>0.00</heure_semaine>
+		<date_maj></date_maj>
+		<tranche1>0.00</tranche1>
+		<tranche2>0.00</tranche2>
+		<tranche3>0.00</tranche3>
+		<tranche4>0.00</tranche4>
+		<tranche5>0.00</tranche5>
+		<inactif>0</inactif>
+	</convention>
+
+	<convention>
+		<code>RADIO</code>
+		<lib_FR>SECTEUR RADIO DIFFUSION </lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<heure_mois>0.00</heure_mois>
+		<heure_semaine>0.00</heure_semaine>
+		<date_maj></date_maj>
+		<tranche1>0.00</tranche1>
+		<tranche2>0.00</tranche2>
+		<tranche3>0.00</tranche3>
+		<tranche4>0.00</tranche4>
+		<tranche5>0.00</tranche5>
+		<inactif>0</inactif>
+	</convention>
+
+	<convention>
+		<code>RESTAURATION</code>
+		<lib_FR>SECTEUR HOTELLERIE, DEBITS DE BOISSON, RESTAURATION</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<heure_mois>0.00</heure_mois>
+		<heure_semaine>0.00</heure_semaine>
+		<date_maj></date_maj>
+		<tranche1>0.00</tranche1>
+		<tranche2>0.00</tranche2>
+		<tranche3>0.00</tranche3>
+		<tranche4>0.00</tranche4>
+		<tranche5>0.00</tranche5>
+		<inactif>0</inactif>
+	</convention>
+
+	<convention>
+		<code>SCIAGE</code>
+		<lib_FR>SECTEUR SCIAGE ET PLACAGE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<heure_mois>0.00</heure_mois>
+		<heure_semaine>0.00</heure_semaine>
+		<date_maj></date_maj>
+		<tranche1>0.00</tranche1>
+		<tranche2>0.00</tranche2>
+		<tranche3>0.00</tranche3>
+		<tranche4>0.00</tranche4>
+		<tranche5>0.00</tranche5>
+		<inactif>0</inactif>
+	</convention>
+</collective>

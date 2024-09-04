@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T037_UK>
+
+	<cat_tiers>
+		<libelle>Crib</libelle>
+		<code>1</code>
+	</cat_tiers>
+
+	<cat_tiers>
+		<libelle>Primary</libelle>
+		<code>2</code>
+	</cat_tiers>
+
+	<cat_tiers>
+		<libelle>Secondary</libelle>
+		<code>3</code>
+	</cat_tiers>
+
+	<cat_tiers>
+		<libelle>Superior</libelle>
+		<code>4</code>
+	</cat_tiers>
+
+	<cat_tiers>
+		<libelle>Professional</libelle>
+		<code>5</code>
+	</cat_tiers>
+
+</T037_UK>

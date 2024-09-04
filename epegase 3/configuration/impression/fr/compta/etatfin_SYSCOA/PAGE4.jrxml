@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="BilanActif" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["/usr/local/SUNWappserver/domains/domain1/config/epegase/web/configuration/impression/fr/compta/etatfin_SYSCOA/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="societe" class="java.lang.String"/>
+	<parameter name="requete" class="java.lang.String"/>
+	<parameter name="adresse" class="java.lang.String"/>
+	<parameter name="sigle" class="java.lang.String"/>
+	<parameter name="identification_1" class="java.lang.String"/>
+	<parameter name="exercice" class="java.lang.Long"/>
+	<parameter name="page_init" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="etat_init" class="java.lang.Integer"/>
+	<parameter name="dateDeb" class="java.util.Date"/>
+	<parameter name="dateFin" class="java.util.Date"/>
+	<parameter name="nom_pays" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT
+     cpt_exercices_comptable.`execpt_id` AS cpt_exercices_comptable_execpt_id,
+     cpt_exercices_comptable.`execpt_date_creat` AS cpt_exercices_comptable_execpt_date_creat,
+     cpt_exercices_comptable.`execpt_date_modif` AS cpt_exercices_comptable_execpt_date_modif,
+     cpt_exercices_comptable.`execpt_date_cloture` AS cpt_exercices_comptable_execpt_date_cloture,
+     cpt_exercices_comptable.`execpt_user_creat` AS cpt_exercices_comptable_execpt_user_creat,
+     cpt_exercices_comptable.`execpt_user_cloture` AS cpt_exercices_comptable_execpt_user_cloture,
+     cpt_exercices_comptable.`execpt_user_modif` AS cpt_exercices_comptable_execpt_user_modif,
+     cpt_exercices_comptable.`execpt_date_debut` AS cpt_exercices_comptable_execpt_date_debut,
+     cpt_exercices_comptable.`execpt_date_fin` AS cpt_exercices_comptable_execpt_date_fin,
+     cpt_exercices_comptable.`execpt_etat` AS cpt_exercices_comptable_execpt_etat
+FROM
+     `cpt_exercices_comptable` cpt_exercices_comptable
+WHERE
+     execpt_id = $P{exercice}]]>
+	</queryString>
+	<field name="cpt_exercices_comptable_execpt_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_date_creat" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_date_modif" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_date_cloture" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_user_creat" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_user_cloture" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_user_modif" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_date_debut" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_date_fin" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_etat" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="page_en_cours" class="java.lang.Integer">
+		<variableExpression><![CDATA[$P{page_init}+$V{PAGE_NUMBER}]]></variableExpression>
+		<initialValueExpression><![CDATA[$P{page_init}]]></initialValueExpression>
+	</variable>
+	<variable name="etat_en_cours" class="java.lang.Integer">
+		<variableExpression><![CDATA[$P{etat_init}+$V{PAGE_NUMBER}]]></variableExpression>
+		<initialValueExpression><![CDATA[$P{etat_init}]]></initialValueExpression>
+	</variable>
+	<variable name="duree" class="java.lang.Integer">
+		<variableExpression><![CDATA[$P{dateFin}.getMonth()-$P{dateDeb}.getMonth()+1]]></variableExpression>
+		<initialValueExpression><![CDATA[$P{dateFin}.getMonth()-$P{dateDeb}.getMonth()+1]]></initialValueExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="802" splitType="Prevent">
+			<staticText>
+				<reportElement x="20" y="39" width="512" height="15"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[4 - CODES ACTIVITES ECONOMIQUES]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="219" y="4" width="100" height="14"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["- "+$V{etat_en_cours}+" -"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="29" y="87" width="156" height="620"/>
+				<textElement>
+					<font size="6"/>
+				</textElement>
+				<text><![CDATA[001         AGRICULTURE
+001001   Culture Céréalière
+001002   Culture de tubercule et plantains
+001003   Culture des légumes
+001004   Culture des condiments
+001005   Culture de fruits
+001006   Culture d'autres produits de l'agriculture
+               vivrière
+
+002         AGRICULTURE INDUSTRIELLE ET
+               D'EXPORTATION
+002001  Culture de canne à sucre
+002002  Culture d'arachide d'huilerie
+002003  Culture d'arachide de bouche
+002004  Culture de tabac
+002005  Culture de coton
+002006  Culture de blé
+002007  Culture de cacao
+002008  Culture de café
+002009  Culture de banane d'exportation
+002010  Culture d'ananas d'exportation
+002011  Autres cultures industrielles
+
+003        ELEVAGE ET CHASSE
+003001  Elevage bovin
+003002  Elevage ovin, caprin, équin
+003003  Elevage de volailles
+003004  Autres élevages
+003005  Chasse
+
+004        SYLVICULTURE, EXPLOITATION
+              FORESTIERE
+004001  Sylviculture
+004002  Exploitation forestière
+
+005        PECHE ET AQUACULTURE
+005001  Pêche de poissons
+005002  Autres pêches et aquaculture
+
+006        INDUSTRIE EXTRACTIVES
+006001  Extraction d'hydrocarbures
+006002  Extraction d'autres produits
+
+007        PRODUCTION DE VIANDE ET DE
+              POISSONS
+007001  Productions de viandes et de produits à
+              base de viande
+007002  Production de poissons et de produits à
+              base de poissons
+
+008        TRAVAIL DES GRAINS ET FABRICATION
+              DE PRODUITS  AMYLACES
+008001  Travail des graines et fabrications de
+              produits amylacés
+
+009        TRANSFORMATION DU CAFE ET DU
+              CACAO
+009001  Transformation de café
+009002  Transformation du cacao
+
+010        INDUSTRIE OLEAGINEUX
+010001  Huiles brutes et tourteaux
+010002  Autres coprs gras
+
+011        BOULANGERIE, PATISSERIE ET PATES
+011001  Fabrication de pains, de biscuits et de
+              patisserie
+011002  Fabrication de pates alimentaires
+
+012        INDIUSTRIES LAITIERES
+012001  Industries laitières
+
+013        TRANSFORMATION DES FRUITS ET
+              LEGUMES ET FABRICATION D'AUTRES
+              PRODUITS ALIMENTAIRES
+013001  Fabrication de sucre
+013002  Fabrication de produits à base de fruits
+              et légumes
+013003  Fabrication d'autres produits alimentaires
+
+014        INDUSTRIE DES BOISSONS
+014001  Brasserie et malterie
+014002  Fabrication d'autres boissons alcoolisées
+014002  Fabrication de boissons non alcoolisées et
+              d'eaux minérales]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="195" y="87" width="156" height="620"/>
+				<textElement>
+					<font size="6"/>
+				</textElement>
+				<text><![CDATA[015        INDUSTRIE DU TABAC
+015001  Industrie du tabac
+
+016        INDUSTRIE DU TEXTILE ET DE
+              L'HABILLEMENT
+016001  Industries textiles
+016002  Industries de l'habillement
+
+017        INDUSTRIE DU CUIR ET DE LA CHAUSSURE
+017001  Fabrication du cuir et d'article en cuir
+017002  Fabrication de chaussures
+
+018        INDUSTRIE DU BIOIS
+018001  Sciage, rabotage et imprégnation du bois
+018002  Fabrication de panneau en bois
+018003  Fabrication d'article en bois assemblées
+
+019        INDUSTRIE DU PAPIER ET CARTONS,
+              DE L'EDITION ET DE L'IMPRIMERIE
+019001  Industrie du papier et carton
+019002  Edition, imprimerie, reproduction
+
+020        RAFFINAGE DU PETROLE
+020001  Raffinage de pétrole
+
+021        INDUSTRIE CHIMIQUE
+021001  Industries climiques de base
+021002  Fabrication de savons, de détergents et de
+              produits d'entretien
+021003  Fabrication de produits agro-alimentaires
+021004  Industries pharmaceutiques
+021005  Fabrication d'autres produits chimiques
+
+022        INDUSTRIE DU CAHOUTCHOUC ET DES
+              PLASTIQUES
+022001  Fabrication du cahoutchouc naturel
+022002  Industrie du cahoutchouc
+022003  Fabrication de matières plastiques
+
+023        FABRICATION D'AUTRES PRODUITS
+              MINERAUX NON METALLIQUES ET DE
+              MATERIAUX DE CONSTRUCTION
+023001  Industrie du verre
+023002  Fabrication de produits minéraux pour
+              la construction
+023003  Fabrication d'autres produits minéraux non
+              métalliques
+
+024        METALLURGIE ET TRAVAIL DES METAUX
+024001  Métallurgie
+024002  Travail des métaux
+
+025        FABRICATION DE MACHINES
+              D'EQUIPEMENT ET D'APPAREILS
+              ELECTRIQUES
+025001  Fabrication de machines et d'équipements
+025002  Fabrication de machines de bureau
+025003  Fabrication d'appareils électriques
+
+026        FABRICATION D'QUIPEMENT ET
+              D'APPAREILS AUDIOVISUELS ET DE
+              COMMUNICATION, D'INSTRUMENTS
+              MEDICAUX
+026001  Fabrication d'équipements et d'appareils
+              audiovisuels et de communication
+026002  Fabrication d'instruments médicaux,
+              d'optiques et d'horlogerie
+
+027        FABRICATION DE METERIEL DE
+              TRANSPORT
+027001  Fabrication de véhicules routiers
+027002  Fabrication d'autres matériels de transport
+
+028        INDUSTRIES DIVERSES
+028001  Fabrication de meubles
+028002  Industrie diverses
+
+029        PRODUCTION ET DISTRIBUTION D'EAU
+              DE GAZ ET D'ELECTRICITE
+029001  Production transport et distribution
+029002  Captage, Epuration et distribution d'eau
+029003  Production et distribution de gaz
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="360" y="87" width="156" height="620"/>
+				<textElement>
+					<font size="6"/>
+				</textElement>
+				<text><![CDATA[030         CONSTRUCTION
+030001   Préparation de sites et construction
+               d'ouvrage de bâtiments ou génie civil
+030001  Travaux d'installation et de finition
+
+033         HOTELS, RESTAURANTS
+033001  Hôtels
+033002  Bars et restaurants
+
+034        TRANSPORTS ET COMMUNICATION
+034001  Transports ferroviaires
+034002  Transports routiers, transports par
+              conduite
+034003  Transports par eau
+034004  Transports aériens
+034005  Services annexes et auxiliaires de
+              transport
+
+035        POSTES ET TELECOMMUNICATIONS
+035001  Postes
+035002  Télécommunications
+
+036        ACTIVITES FINANCIERES
+036001  Services d'intermédiation financière
+036002  Assurances (sauf sécurité sociale)
+036003  Auxiliaires financières et d'assurances
+
+037        ACTIVITES IMMOBILIERES
+037001  Location de biens immobiliers
+037002  Autres services immobiliers
+
+038        SERVICES AUX ENTREPRISES
+038001  Locationsn sans opérateurs
+038002  Activités informatiques
+038003  Services rendus principalement aux
+              entreprises
+
+039        ADMINISTRATION PUBLIQUE
+039001  Administration Générale, économique et
+              Sociale
+039002  Services de prérogative Publique
+039003  Sécurité sociale obligatoire
+
+040        FORMATION
+040001  Education
+
+041        SANTE
+041001  Activités pour la santé des hommes
+041002  Activités vétérinaires
+041003  Action sociale
+
+042        SERVICES COLLECTIFS, SOCIAUX ET
+              PERSONNELS
+042001  Assainissements, voierie et gestion des
+              déchets
+042002  Activités associatives
+042003  Activités récréatives, culturelles et
+              sportives
+042004  Services Personnels
+042005  Services domestiques
+
+043        SERVICES D'INTERMEDIATION
+              FINANCIERE INDIRECTEMENT MESURE
+043001  Service d'intermédiation financière
+              indirectement mesuré
+
+044        CORRECTION TERRITORIALE
+044001  Correction territoriale]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement mode="Transparent" x="24" y="77" width="165" height="668"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="189" y="77" width="165" height="668"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="354" y="77" width="165" height="668"/>
+			</rectangle>
+		</band>
+	</pageHeader>
+</jasperReport>

@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Facture" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isFloatColumnFooter="true" whenResourceMissingType="Empty">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="384"/>
+	<style name="ST1" isDefault="false" pattern="">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{nbDecQte}.equalsIgnoreCase("0"))]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{nbDecQte}.equalsIgnoreCase("1"))]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.0"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{nbDecQte}.equalsIgnoreCase("2"))]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.00"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{nbDecQte}.equalsIgnoreCase("3"))]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.000"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{nbDecQte}.equalsIgnoreCase("4"))]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.0000"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{nbDecQte}.equalsIgnoreCase("5"))]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.00000"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{nbDecQte}.equalsIgnoreCase("6"))]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.000000"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{nbDecQte}.equalsIgnoreCase("7"))]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.0000000"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{nbDecQte}.equalsIgnoreCase("8"))]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.00000000"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{nbDecQte}.equalsIgnoreCase("9"))]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.000000000"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{nbDecQte}.equalsIgnoreCase("10"))]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.0000000000"/>
+		</conditionalStyle>
+	</style>
+	<parameter name="structure" class="java.lang.String"/>
+	<parameter name="requete" class="java.lang.String"/>
+	<parameter name="societe" class="java.lang.String"/>
+	<parameter name="version" class="java.lang.String"/>
+	<parameter name="adresse" class="java.lang.String"/>
+	<parameter name="ville" class="java.lang.String"/>
+	<parameter name="pays" class="java.lang.String"/>
+	<parameter name="logo_1" class="java.lang.String"/>
+	<parameter name="logo_2" class="java.lang.String"/>
+	<parameter name="logo_4" class="java.lang.String"/>
+	<parameter name="telephone_1" class="java.lang.String"/>
+	<parameter name="telephone_2" class="java.lang.String"/>
+	<parameter name="fax" class="java.lang.String"/>
+	<parameter name="site_web" class="java.lang.String"/>
+	<parameter name="mails" class="java.lang.String"/>
+	<parameter name="signe_mail" class="java.lang.String"/>
+	<parameter name="signe_telephone" class="java.lang.String"/>
+	<parameter name="identification_1" class="java.lang.String"/>
+	<parameter name="identification_2" class="java.lang.String"/>
+	<parameter name="identification_3" class="java.lang.String"/>
+	<parameter name="identification_4" class="java.lang.String"/>
+	<parameter name="identification_5" class="java.lang.String"/>
+	<parameter name="identification_6" class="java.lang.String"/>
+	<parameter name="identification_7" class="java.lang.String"/>
+	<parameter name="identification_8" class="java.lang.String"/>
+	<parameter name="identification_9" class="java.lang.String"/>
+	<parameter name="identification_10" class="java.lang.String"/>
+	<parameter name="banque" class="java.lang.String"/>
+	<parameter name="montant_lettre" class="java.lang.String"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["/usr/local/SUNWappserver/domains/domain1/config/epegase/clients/structure1/impression/fr/ventes/document/devis/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="signe_signature" class="java.lang.String"/>
+	<parameter name="parcChassis" class="java.lang.String"/>
+	<parameter name="annexe1" class="java.lang.String"/>
+	<parameter name="annexe2" class="java.lang.String"/>
+	<parameter name="pageGarde" class="java.lang.String"/>
+	<parameter name="imageFond" class="java.lang.String"/>
+	<parameter name="duplicata" class="java.lang.String"/>
+	<parameter name="nbDecQte" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="chaligCode" class="java.lang.String">
+		<fieldDescription><![CDATA[chaligCode]]></fieldDescription>
+	</field>
+	<field name="chaligCondition" class="java.lang.String">
+		<fieldDescription><![CDATA[chaligCondition]]></fieldDescription>
+	</field>
+	<field name="chaligDepotCharg" class="java.lang.String">
+		<fieldDescription><![CDATA[chaligDepotCharg]]></fieldDescription>
+	</field>
+	<field name="chaligDiam" class="java.lang.Float">
+		<fieldDescription><![CDATA[chaligDiam]]></fieldDescription>
+	</field>
+	<field name="chaligEchelle" class="java.lang.Integer">
+		<fieldDescription><![CDATA[chaligEchelle]]></fieldDescription>
+	</field>
+	<field name="chaligFamille" class="java.lang.String">
+		<fieldDescription><![CDATA[chaligFamille]]></fieldDescription>
+	</field>
+	<field name="chaligHaut" class="java.lang.Float">
+		<fieldDescription><![CDATA[chaligHaut]]></fieldDescription>
+	</field>
+	<field name="chaligId" class="java.lang.Long">
+		<fieldDescription><![CDATA[chaligId]]></fieldDescription>
+	</field>
+	<field name="chaligLarg" class="java.lang.Float">
+		<fieldDescription><![CDATA[chaligLarg]]></fieldDescription>
+	</field>
+	<field name="chaligLibelle" class="java.lang.String">
+		<fieldDescription><![CDATA[chaligLibelle]]></fieldDescription>
+	</field>
+	<field name="chaligLong" class="java.lang.Float">
+		<fieldDescription><![CDATA[chaligLong]]></fieldDescription>
+	</field>
+	<field name="chaligNb" class="java.lang.Float">
+		<fieldDescription><![CDATA[chaligNb]]></fieldDescription>
+	</field>
+	<field name="chaligPoidsBrut" class="java.lang.Float">
+		<fieldDescription><![CDATA[chaligPoidsBrut]]></fieldDescription>
+	</field>
+	<field name="chaligPoidsNet" class="java.lang.Float">
+		<fieldDescription><![CDATA[chaligPoidsNet]]></fieldDescription>
+	</field>
+	<field name="chaligPt" class="java.lang.Double">
+		<fieldDescription><![CDATA[chaligPt]]></fieldDescription>
+	</field>
+	<field name="chaligPu" class="java.lang.Double">
+		<fieldDescription><![CDATA[chaligPu]]></fieldDescription>
+	</field>
+	<field name="chaligPuRem" class="java.lang.Double">
+		<fieldDescription><![CDATA[chaligPuRem]]></fieldDescription>
+	</field>
+	<field name="chaligPuRemTtc" class="java.lang.Double">
+		<fieldDescription><![CDATA[chaligPuRemTtc]]></fieldDescription>
+	</field>
+	<field name="chaligPuTtc" class="java.lang.Double">
+		<fieldDescription><![CDATA[chaligPuTtc]]></fieldDescription>
+	</field>
+	<field name="chaligPump" class="java.lang.Double">
+		<fieldDescription><![CDATA[chaligPump]]></fieldDescription>
+	</field>
+	<field name="chaligQteCharg" class="java.lang.Float">
+		<fieldDescription><![CDATA[chaligQteCharg]]></fieldDescription>
+	</field>
+	<field name="chaligQteUtil" class="java.lang.Float">
+		<fieldDescription><![CDATA[chaligQteUtil]]></fieldDescription>
+	</field>
+	<field name="chaligRabais" class="java.lang.Double">
+		<fieldDescription><![CDATA[chaligRabais]]></fieldDescription>
+	</field>
+	<field name="chaligReference" class="java.lang.String">
+		<fieldDescription><![CDATA[chaligReference]]></fieldDescription>
+	</field>
+	<field name="chaligStock" class="java.lang.Integer">
+		<fieldDescription><![CDATA[chaligStock]]></fieldDescription>
+	</field>
+	<field name="chaligTauxRemise" class="java.lang.Float">
+		<fieldDescription><![CDATA[chaligTauxRemise]]></fieldDescription>
+	</field>
+	<field name="chaligTauxTaxe" class="java.lang.Float">
+		<fieldDescription><![CDATA[chaligTauxTaxe]]></fieldDescription>
+	</field>
+	<field name="chaligTaxe" class="java.lang.String">
+		<fieldDescription><![CDATA[chaligTaxe]]></fieldDescription>
+	</field>
+	<field name="chaligTc" class="java.lang.Double">
+		<fieldDescription><![CDATA[chaligTc]]></fieldDescription>
+	</field>
+	<field name="chaligTtc" class="java.lang.Double">
+		<fieldDescription><![CDATA[chaligTtc]]></fieldDescription>
+	</field>
+	<field name="chaligTva" class="java.lang.Double">
+		<fieldDescription><![CDATA[chaligTva]]></fieldDescription>
+	</field>
+	<field name="chaligUnite" class="java.lang.String">
+		<fieldDescription><![CDATA[chaligUnite]]></fieldDescription>
+	</field>
+	<field name="chaligVolume" class="java.lang.Float">
+		<fieldDescription><![CDATA[chaligVolume]]></fieldDescription>
+	</field>
+	<field name="chamobActivite" class="java.lang.String">
+		<fieldDescription><![CDATA[chargementEntete.chamobActivite]]></fieldDescription>
+	</field>
+	<field name="chamobAnal2" class="java.lang.String">
+		<fieldDescription><![CDATA[chargementEntete.chamobAnal2]]></fieldDescription>
+	</field>
+	<field name="chamobAnal4" class="java.lang.String">
+		<fieldDescription><![CDATA[chargementEntete.chamobAnal4]]></fieldDescription>
+	</field>
+	<field name="chamobCat" class="java.lang.String">
+		<fieldDescription><![CDATA[chargementEntete.chamobCat]]></fieldDescription>
+	</field>
+	<field name="chamobDate" class="java.util.Date">
+		<fieldDescription><![CDATA[chargementEntete.chamobDate]]></fieldDescription>
+	</field>
+	<field name="chamobDateAnnule" class="java.util.Date">
+		<fieldDescription><![CDATA[chargementEntete.chamobDateAnnule]]></fieldDescription>
+	</field>
+	<field name="chamobDateCreat" class="java.util.Date">
+		<fieldDescription><![CDATA[chargementEntete.chamobDateCreat]]></fieldDescription>
+	</field>
+	<field name="chamobDateImp" class="java.util.Date">
+		<fieldDescription><![CDATA[chargementEntete.chamobDateImp]]></fieldDescription>
+	</field>
+	<field name="chamobDateModif" class="java.util.Date">
+		<fieldDescription><![CDATA[chargementEntete.chamobDateModif]]></fieldDescription>
+	</field>
+	<field name="chamobDepartement" class="java.lang.String">
+		<fieldDescription><![CDATA[chargementEntete.chamobDepartement]]></fieldDescription>
+	</field>
+	<field name="chamobEtat" class="java.lang.Integer">
+		<fieldDescription><![CDATA[chargementEntete.chamobEtat]]></fieldDescription>
+	</field>
+	<field name="chamobEtatVal" class="java.lang.Integer">
+		<fieldDescription><![CDATA[chargementEntete.chamobEtatVal]]></fieldDescription>
+	</field>
+	<field name="chamobId" class="java.lang.Long">
+		<fieldDescription><![CDATA[chargementEntete.chamobId]]></fieldDescription>
+	</field>
+	<field name="chamobUserCreat" class="java.lang.Long">
+		<fieldDescription><![CDATA[chargementEntete.chamobUserCreat]]></fieldDescription>
+	</field>
+	<field name="chamobUserModif" class="java.lang.Long">
+		<fieldDescription><![CDATA[chargementEntete.chamobUserModif]]></fieldDescription>
+	</field>
+	<field name="chamobIdResponsable" class="java.lang.Long">
+		<fieldDescription><![CDATA[chargementEntete.chamobIdResponsable]]></fieldDescription>
+	</field>
+	<field name="chamobModeleImp" class="java.lang.String">
+		<fieldDescription><![CDATA[chargementEntete.chamobModeleImp]]></fieldDescription>
+	</field>
+	<field name="chamobMotifAnnule" class="java.lang.String">
+		<fieldDescription><![CDATA[chargementEntete.chamobMotifAnnule]]></fieldDescription>
+	</field>
+	<field name="chamobNomUserModif" class="java.lang.String">
+		<fieldDescription><![CDATA[chargementEntete.chamobNomUserModif]]></fieldDescription>
+	</field>
+	<field name="chamobNomResponsable" class="java.lang.String">
+		<fieldDescription><![CDATA[chargementEntete.chamobNomResponsable]]></fieldDescription>
+	</field>
+	<field name="chamobNum" class="java.lang.String">
+		<fieldDescription><![CDATA[chargementEntete.chamobNum]]></fieldDescription>
+	</field>
+	<field name="chamobObservation" class="java.lang.String">
+		<fieldDescription><![CDATA[chargementEntete.chamobObservation]]></fieldDescription>
+	</field>
+	<field name="chamobPdv" class="java.lang.String">
+		<fieldDescription><![CDATA[chargementEntete.chamobPdv]]></fieldDescription>
+	</field>
+	<field name="chamobRegion" class="java.lang.String">
+		<fieldDescription><![CDATA[chargementEntete.chamobRegion]]></fieldDescription>
+	</field>
+	<field name="chamobSecteur" class="java.lang.String">
+		<fieldDescription><![CDATA[chargementEntete.chamobSecteur]]></fieldDescription>
+	</field>
+	<field name="chamobSerie" class="java.lang.String">
+		<fieldDescription><![CDATA[chargementEntete.chamobSerie]]></fieldDescription>
+	</field>
+	<field name="chamobTotHt" class="java.lang.Double">
+		<fieldDescription><![CDATA[chargementEntete.chamobTotHt]]></fieldDescription>
+	</field>
+	<field name="chamobTotRabais" class="java.lang.Double">
+		<fieldDescription><![CDATA[chargementEntete.chamobTotRabais]]></fieldDescription>
+	</field>
+	<field name="chamobTotReglement" class="java.lang.Double">
+		<fieldDescription><![CDATA[chargementEntete.chamobTotReglement]]></fieldDescription>
+	</field>
+	<field name="chamobTotRemise" class="java.lang.Double">
+		<fieldDescription><![CDATA[chargementEntete.chamobTotRemise]]></fieldDescription>
+	</field>
+	<field name="chamobTotTc" class="java.lang.Double">
+		<fieldDescription><![CDATA[chargementEntete.chamobTotTc]]></fieldDescription>
+	</field>
+	<field name="chamobTotTtc" class="java.lang.Double">
+		<fieldDescription><![CDATA[chargementEntete.chamobTotTtc]]></fieldDescription>
+	</field>
+	<field name="chamobTotTva" class="java.lang.Double">
+		<fieldDescription><![CDATA[chargementEntete.chamobTotTva]]></fieldDescription>
+	</field>
+	<field name="chamobNomCommercial" class="java.lang.String">
+		<fieldDescription><![CDATA[chargementEntete.chamobNomCommercial]]></fieldDescription>
+	</field>
+	<variable name="tot_remise" class="java.lang.Float">
+		<variableExpression><![CDATA[$F{chamobTotRabais}+$F{chamobTotRemise}]]></variableExpression>
+	</variable>
+	<variable name="solde" class="java.lang.Float">
+		<variableExpression><![CDATA[$F{chamobTotTtc}-$F{chamobTotReglement}]]></variableExpression>
+	</variable>
+	<background>
+		<band height="802">
+			<image hAlign="Center" onErrorType="Blank">
+				<reportElement x="36" y="29" width="500" height="765"/>
+				<imageExpression class="java.lang.String"><![CDATA[$P{imageFond}]]></imageExpression>
+			</image>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="12" y="262" width="1" height="536" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="459" y="262" width="1" height="536" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="540" y="262" width="1" height="536" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<staticText>
+				<reportElement x="20" y="143" width="521" height="32" forecolor="#F6A9A8">
+					<printWhenExpression><![CDATA[$P{duplicata}.equals("true")]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[D U P L I C A T A ]]></text>
+			</staticText>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="387" y="262" width="1" height="536" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<line>
+				<reportElement x="13" y="798" width="527" height="1"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="115" y="262" width="1" height="536" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="162" y="262" width="1" height="536" isPrintWhenDetailOverflows="true"/>
+			</line>
+		</band>
+	</background>
+	<pageHeader>
+		<band height="244" splitType="Stretch">
+			<staticText>
+				<reportElement x="303" y="164" width="75" height="12"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Responsable]]></text>
+			</staticText>
+			<rectangle radius="10">
+				<reportElement mode="Transparent" x="293" y="112" width="245" height="120"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="114" y="116" width="72" height="12"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Adressée à]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="393" y="128" width="120" height="20"/>
+				<textElement>
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{chamobDate}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="393" y="164" width="120" height="12"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{chamobNomResponsable}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="99" y="135" width="175" height="26"/>
+				<textElement>
+					<font fontName="Arial" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{chamobNomCommercial}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="303" y="128" width="75" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<rectangle radius="10">
+				<reportElement mode="Transparent" x="13" y="112" width="267" height="120"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="21" y="136" width="71" height="12"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nom commercial]]></text>
+			</staticText>
+			<image scaleImage="FillFrame" hAlign="Center">
+				<reportElement x="12" y="12" width="129" height="80"/>
+				<imageExpression class="java.lang.String"><![CDATA[$P{logo_1}]]></imageExpression>
+			</image>
+			<image scaleImage="FillFrame" hAlign="Center">
+				<reportElement x="402" y="5" width="129" height="62"/>
+				<imageExpression class="java.lang.String"><![CDATA[$P{logo_2}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="141" y="59" width="147" height="33"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Chargement N°]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="293" y="59" width="98" height="33"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="20"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{chamobNum}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="47" splitType="Stretch">
+			<rectangle>
+				<reportElement x="12" y="9" width="528" height="34" backcolor="#5261CD"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<line>
+				<reportElement x="12" y="8" width="1" height="39"/>
+			</line>
+			<line>
+				<reportElement x="115" y="9" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="162" y="9" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="387" y="9" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="459" y="9" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="540" y="8" width="1" height="39"/>
+			</line>
+			<line>
+				<reportElement x="12" y="8" width="529" height="1"/>
+			</line>
+			<line>
+				<reportElement x="13" y="42" width="527" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="16" y="17" width="97" height="15" forecolor="#F3F3FA"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Référence]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="170" y="17" width="207" height="15" forecolor="#F3F3FA"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Description]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="127" y="17" width="31" height="15" forecolor="#F3F3FA"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Qte.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="396" y="17" width="53" height="15" forecolor="#F3F3FA"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[P.U. H.T.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="17" width="59" height="15" forecolor="#F3F3FA"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Prix Total]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="13">
+			<textField isBlankWhenNull="true">
+				<reportElement x="18" y="1" width="93" height="10"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{chaligCode}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="172" y="1" width="205" height="10" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Arial" size="8" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{chaligLibelle}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement style="ST1" x="125" y="1" width="31" height="10">
+					<printWhenExpression><![CDATA[$F{chaligQteCharg}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{chaligQteCharg}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="397" y="1" width="52" height="10">
+					<printWhenExpression><![CDATA[$F{chaligPu}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{chaligPu}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="470" y="1" width="61" height="10">
+					<printWhenExpression><![CDATA[$F{chaligPt}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{chaligPt}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<lastPageFooter>
+		<band height="177" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="8" width="555" height="166"/>
+				<graphicElement>
+					<pen lineColor="#FFFFFF"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="12" y="8" width="375" height="21" backcolor="#5261CD"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="12" y="8" width="1" height="85" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<line>
+				<reportElement x="387" y="8" width="1" height="84"/>
+			</line>
+			<line>
+				<reportElement x="12" y="8" width="529" height="1"/>
+			</line>
+			<line>
+				<reportElement x="459" y="8" width="1" height="84"/>
+			</line>
+			<line>
+				<reportElement x="540" y="8" width="1" height="84"/>
+			</line>
+			<line>
+				<reportElement x="13" y="28" width="527" height="1"/>
+			</line>
+			<line>
+				<reportElement x="388" y="48" width="153" height="1"/>
+			</line>
+			<line>
+				<reportElement x="388" y="68" width="153" height="1"/>
+			</line>
+			<line>
+				<reportElement x="12" y="92" width="529" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="18" y="11" width="91" height="15" forecolor="#F8F1F1">
+					<printWhenExpression><![CDATA[$F{chamobTotReglement}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total acompte :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="211" y="11" width="76" height="15" forecolor="#F8F1F1">
+					<printWhenExpression><![CDATA[$F{chamobTotReglement}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Net à payer]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="389" y="12" width="66" height="12" forecolor="#F7F5F5" backcolor="#F5EBEB"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total H.T.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="389" y="32" width="66" height="12" forecolor="#F7F5F5" backcolor="#F5EBEB">
+					<printWhenExpression><![CDATA[$V{tot_remise}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total remises]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="389" y="52" width="66" height="12" forecolor="#F7F5F5" backcolor="#F5EBEB"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total taxes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="389" y="73" width="66" height="12" forecolor="#F7F5F5" backcolor="#F5EBEB"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total T.T.C.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="30" width="229" height="10"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="8" isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Arrêtée la présente facture à la somme de :]]></text>
+			</staticText>
+			<textField pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="467" y="12" width="63" height="12">
+					<printWhenExpression><![CDATA[$F{chamobTotHt}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{chamobTotHt}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="467" y="32" width="63" height="12">
+					<printWhenExpression><![CDATA[$V{tot_remise}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{tot_remise}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="467" y="52" width="63" height="12">
+					<printWhenExpression><![CDATA[$F{chamobTotTva}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{chamobTotTva}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="467" y="73" width="63" height="12">
+					<printWhenExpression><![CDATA[$F{chamobTotTtc}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{chamobTotTtc}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="113" y="11" width="63" height="15" forecolor="#F8F1F1">
+					<printWhenExpression><![CDATA[$F{chamobTotReglement}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{chamobTotReglement}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="20" y="42" width="229" height="23"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{montant_lettre}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;-#,##0" isBlankWhenNull="true">
+				<reportElement x="293" y="11" width="63" height="15" forecolor="#F8F1F1">
+					<printWhenExpression><![CDATA[$F{chamobTotReglement}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{solde}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="124" width="555" height="1" backcolor="#188EC7"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Double" lineColor="#5261CD"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="6" y="140" width="254" height="11"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Site web : " + $P{site_web}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="293" y="128" width="254" height="11"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Tél. : " + $P{telephone_1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="293" y="151" width="254" height="11"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["N° NINEA : " + $P{identification_1} + "  N° RCCM : " + $P{identification_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="6" y="152" width="254" height="11">
+					<printWhenExpression><![CDATA[$P{banque}!=null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Banque : " + $P{banque}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="293" y="139" width="254" height="11"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Fax : " + $P{fax}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="254" y="29" width="1" height="63"/>
+			</line>
+			<line>
+				<reportElement x="13" y="68" width="241" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="263" y="30" width="115" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="8" isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Signature:]]></text>
+			</staticText>
+			<image scaleImage="RetainShape" hAlign="Center">
+				<reportElement x="270" y="35" width="98" height="59"/>
+				<imageExpression class="java.lang.String"><![CDATA[$P{signe_signature}]]></imageExpression>
+			</image>
+			<rectangle>
+				<reportElement x="388" y="8" width="71" height="85" backcolor="#5261CD"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+		</band>
+	</lastPageFooter>
+</jasperReport>

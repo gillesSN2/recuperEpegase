@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T037_FR>
+
+	<cat_tiers>
+		<libelle>Crèche</libelle>
+		<code>1</code>
+	</cat_tiers>
+
+	<cat_tiers>
+		<libelle>Primaire</libelle>
+		<code>2</code>
+	</cat_tiers>
+
+	<cat_tiers>
+		<libelle>Secondaire</libelle>
+		<code>3</code>
+	</cat_tiers>
+
+	<cat_tiers>
+		<libelle>Supérieur</libelle>
+		<code>4</code>
+	</cat_tiers>
+
+	<cat_tiers>
+		<libelle>Professionnel</libelle>
+		<code>5</code>
+	</cat_tiers>
+
+</T037_FR>

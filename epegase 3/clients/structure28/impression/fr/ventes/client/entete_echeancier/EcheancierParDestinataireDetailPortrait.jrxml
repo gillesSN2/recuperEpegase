@@ -1,0 +1,1384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Echeancier" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isFloatColumnFooter="true">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="240"/>
+	<style name="ST1" isDefault="false" pattern="">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{formatDevise}==0)]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" markup="none" pattern="#,##0.00"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{formatDevise}==1)]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.00"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{formatDevise}==2)]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0" isItalic="false"/>
+		</conditionalStyle>
+	</style>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\Sun\\AppServer\\domains\\domain1\\config\\epegase\\web\\structure4\\impression\\fr\\sous_rapport\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="entete" class="java.lang.String"/>
+	<parameter name="filtre" class="java.lang.String"/>
+	<parameter name="societe" class="java.lang.String"/>
+	<parameter name="version" class="java.lang.String"/>
+	<parameter name="requete" class="java.lang.String"/>
+	<parameter name="sousRapport" class="java.lang.String"/>
+	<parameter name="formatDevise" class="java.lang.Integer"/>
+	<parameter name="nbst" class="java.lang.Integer"/>
+	<parameter name="annexe1" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT
+     vte_facture_entete.`fac_id_createur` AS vte_facture_entete_fac_id_createur,
+     vte_facture_entete.`fac_nom_createur` AS vte_facture_entete_fac_nom_createur,
+     vte_facture_entete.`fac_nom_responsable` AS vte_facture_entete_fac_nom_responsable,
+     vte_facture_entete.`fac_num` AS vte_facture_entete_fac_num,
+     vte_facture_entete.`fac_date` AS vte_facture_entete_fac_date,
+     vte_facture_entete.`fac_id_responsable` AS vte_facture_entete_fac_id_responsable,
+     vte_facture_entete.`fac_nom_tiers` AS vte_facture_entete_fac_nom_tiers,
+     vte_facture_entete.`fac_civil_tiers` AS vte_facture_entete_fac_civil_tiers,
+     vte_facture_entete.`fac_nom_contact` AS vte_facture_entete_fac_nom_contact,
+     vte_facture_entete.`fac_civil_contact` AS vte_facture_entete_fac_civil_contact,
+     vte_facture_entete.`fac_serie` AS vte_facture_entete_fac_serie,
+     vte_facture_entete.`fac_exo_tva` AS vte_facture_entete_fac_exo_tva,
+     vte_facture_entete.`fac_exo_douane` AS vte_facture_entete_fac_exo_douane,
+     vte_facture_entete.`fac_id` AS vte_facture_entete_fac_id,
+     vte_facture_entete.`fac_date_creat` AS vte_facture_entete_fac_date_creat,
+     vte_facture_entete.`fac_date_modif` AS vte_facture_entete_fac_date_modif,
+     vte_facture_entete.`fac_id_modif` AS vte_facture_entete_fac_id_modif,
+     vte_facture_entete.`fac_nom_modif` AS vte_facture_entete_fac_nom_modif,
+     vte_facture_entete.`fac_cat` AS vte_facture_entete_fac_cat,
+     vte_facture_entete.`fac_devise` AS vte_facture_entete_fac_devise,
+     vte_facture_entete.`fac_object` AS vte_facture_entete_fac_object,
+     vte_facture_entete.`fac_observation` AS vte_facture_entete_fac_observation,
+     vte_facture_entete.`fac_budget` AS vte_facture_entete_fac_budget,
+     vte_facture_entete.`fac_tot_ht` AS vte_facture_entete_fac_tot_ht,
+     vte_facture_entete.`fac_tot_remise` AS vte_facture_entete_fac_tot_remise,
+     vte_facture_entete.`fac_tot_rabais` AS vte_facture_entete_fac_tot_rabais,
+     vte_facture_entete.`fac_tot_tva` AS vte_facture_entete_fac_tot_tva,
+     vte_facture_entete.`fac_tot_tc` AS vte_facture_entete_fac_tot_tc,
+     vte_facture_entete.`fac_tot_ttc` AS vte_facture_entete_fac_tot_ttc,
+     vte_facture_entete.`fac_tot_reglement` AS vte_facture_entete_fac_tot_reglement,
+     vte_facture_entete.`fac_solde` AS vte_facture_entete_fac_solde,
+     vte_facture_entete.`fac_banque` AS vte_facture_entete_fac_banque,
+     vte_facture_entete.`fac_type_reg` AS vte_facture_entete_fac_type_reg,
+     vte_facture_entete.`fac_mode_reg` AS vte_facture_entete_fac_mode_reg,
+     vte_facture_entete.`fac_nb_jour_reg` AS vte_facture_entete_fac_nb_jour_reg,
+     vte_facture_entete.`fac_arrondi_reg` AS vte_facture_entete_fac_arrondi_reg,
+     vte_facture_entete.`fac_condition_reg` AS vte_facture_entete_fac_condition_reg,
+     vte_facture_entete.`fac_date_eche_reg` AS vte_facture_entete_fac_date_eche_reg,
+     vte_facture_entete.`fac_journal_reg` AS vte_facture_entete_fac_journal_reg,
+     vte_facture_entete.`fac_activite` AS vte_facture_entete_fac_activite,
+     vte_facture_entete.`fac_site` AS vte_facture_entete_fac_site,
+     vte_facture_entete.`fac_departement` AS vte_facture_entete_fac_departement,
+     vte_facture_entete.`fac_service` AS vte_facture_entete_fac_service,
+     vte_facture_entete.`fac_region` AS vte_facture_entete_fac_region,
+     vte_facture_entete.`fac_secteur` AS vte_facture_entete_fac_secteur,
+     vte_facture_entete.`fac_pdv` AS vte_facture_entete_fac_pdv,
+     vte_facture_entete.`fac_anal2` AS vte_facture_entete_fac_anal2,
+     vte_facture_entete.`fac_anal4` AS vte_facture_entete_fac_anal4,
+     vte_facture_entete.`fac_info1` AS vte_facture_entete_fac_info1,
+     vte_facture_entete.`fac_info2` AS vte_facture_entete_fac_info2,
+     vte_facture_entete.`fac_info3` AS vte_facture_entete_fac_info3,
+     vte_facture_entete.`fac_info4` AS vte_facture_entete_fac_info4,
+     vte_facture_entete.`fac_info5` AS vte_facture_entete_fac_info5,
+     vte_facture_entete.`fac_info6` AS vte_facture_entete_fac_info6,
+     vte_facture_entete.`fac_info7` AS vte_facture_entete_fac_info7,
+     vte_facture_entete.`fac_info8` AS vte_facture_entete_fac_info8,
+     vte_facture_entete.`fac_info9` AS vte_facture_entete_fac_info9,
+     vte_facture_entete.`fac_info10` AS vte_facture_entete_fac_info10,
+     vte_facture_entete.`fac_formule1` AS vte_facture_entete_fac_formule1,
+     vte_facture_entete.`fac_formule2` AS vte_facture_entete_fac_formule2,
+     vte_facture_entete.`fac_annexe1` AS vte_facture_entete_fac_annexe1,
+     vte_facture_entete.`fac_annexe2` AS vte_facture_entete_fac_annexe2,
+     vte_facture_entete.`fac_contrat` AS vte_facture_entete_fac_contrat,
+     vte_facture_entete.`fac_incoterm` AS vte_facture_entete_fac_incoterm,
+     vte_facture_entete.`fac_lieu_livraison` AS vte_facture_entete_fac_lieu_livraison,
+     vte_facture_entete.`fac_date_livraison` AS vte_facture_entete_fac_date_livraison,
+     vte_facture_entete.`fac_info_livraison` AS vte_facture_entete_fac_info_livraison,
+     vte_facture_entete.`fac_date_imp` AS vte_facture_entete_fac_date_imp,
+     vte_facture_entete.`fac_modele_imp` AS vte_facture_entete_fac_modele_imp,
+     vte_facture_entete.`fac_garde` AS vte_facture_entete_fac_garde,
+     vte_facture_entete.`fac_etat_val` AS vte_facture_entete_fac_etat_val,
+     vte_facture_entete.`fac_gele` AS vte_facture_entete_fac_gele,
+     vte_facture_entete.`fac_etat` AS vte_facture_entete_fac_etat,
+     vte_facture_entete.`fac_date_validite` AS vte_facture_entete_fac_date_validite,
+     vte_facture_entete.`fac_date_relance` AS vte_facture_entete_fac_date_relance,
+     vte_facture_entete.`fac_date_valide` AS vte_facture_entete_fac_date_valide,
+     vte_facture_entete.`fac_date_transforme` AS vte_facture_entete_fac_date_transforme,
+     vte_facture_entete.`fac_type_transforme` AS vte_facture_entete_fac_type_transforme,
+     vte_facture_entete.`fac_date_annule` AS vte_facture_entete_fac_date_annule,
+     vte_facture_entete.`fac_motif_annule` AS vte_facture_entete_fac_motif_annule,
+     vte_facture_entete.`fac_motif_exo` AS vte_facture_entete_fac_motif_exo,
+     vte_facture_entete.`fac_num_visa` AS vte_facture_entete_fac_num_visa,
+     vte_facture_entete.`fac_date_visa` AS vte_facture_entete_fac_date_visa,
+     vte_facture_entete.`fac_range_visa` AS vte_facture_entete_fac_range_visa,
+     vte_facture_entete.`fac_factor_nom` AS vte_facture_entete_fac_factor_nom,
+     vte_facture_entete.`fac_factor_id` AS vte_facture_entete_fac_factor_id,
+     vte_facture_entete.`fac_factor_etat` AS vte_facture_entete_fac_factor_etat,
+     vte_facture_entete.`exevte_id` AS vte_facture_entete_exevte_id,
+     vte_facture_entete.`tie_id` AS vte_facture_entete_tie_id,
+     vte_facture_entete.`usr_id` AS vte_facture_entete_usr_id,
+     vte_facture_entete.`fac_id_contact` AS vte_facture_entete_fac_id_contact,
+     vte_facture_entete.`fac_echeance_reliquat` AS vte_facture_entete_fac_echeance_reliquat,
+     vte_facture_entete.`fac_motif_rejet_credit` AS vte_facture_entete_fac_motif_rejet_credit,
+     vte_facture_entete.`fac_date_transfert` AS vte_facture_entete_fac_date_transfert,
+     cmm_tiers.`tie_sigle` AS cmm_tiers_tie_sigle
+FROM
+     `cmm_tiers` cmm_tiers INNER JOIN `vte_facture_entete` vte_facture_entete ON cmm_tiers.`tie_id` = vte_facture_entete.`tie_id`
+WHERE
+    $P!{requete}]]>
+	</queryString>
+	<field name="vte_facture_entete_fac_id_createur" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_nom_createur" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_nom_responsable" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_num" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_date" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_id_responsable" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_nom_tiers" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_civil_tiers" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_nom_contact" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_civil_contact" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_serie" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_exo_tva" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_exo_douane" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_date_creat" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_date_modif" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_id_modif" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_nom_modif" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_cat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_devise" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_object" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_observation" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_budget" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_tot_ht" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_tot_remise" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_tot_rabais" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_tot_tva" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_tot_tc" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_tot_ttc" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_tot_reglement" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_solde" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_banque" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_type_reg" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_mode_reg" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_nb_jour_reg" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_arrondi_reg" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_condition_reg" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_date_eche_reg" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_journal_reg" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_activite" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_site" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_departement" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_service" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_region" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_secteur" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_pdv" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_anal2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_anal4" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_info1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_info2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_info3" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_info4" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_info5" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_info6" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_info7" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_info8" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_info9" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_info10" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_formule1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_formule2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_annexe1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_annexe2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_contrat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_incoterm" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_lieu_livraison" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_date_livraison" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_info_livraison" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_date_imp" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_modele_imp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_garde" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_etat_val" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_gele" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_etat" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_date_validite" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_date_relance" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_date_valide" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_date_transforme" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_type_transforme" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_date_annule" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_motif_annule" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_motif_exo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_num_visa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_date_visa" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_range_visa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_factor_nom" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_factor_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_factor_etat" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_exevte_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_tie_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_usr_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_id_contact" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_echeance_reliquat" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_motif_rejet_credit" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_facture_entete_fac_date_transfert" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<sortField name="vte_facture_entete_fac_nom_contact"/>
+	<sortField name="vte_facture_entete_fac_num"/>
+	<variable name="entete" class="java.lang.String"/>
+	<variable name="societe" class="java.lang.String"/>
+	<variable name="filtre" class="java.lang.String"/>
+	<variable name="version" class="java.lang.String"/>
+	<variable name="lib_etat" class="java.lang.String">
+		<variableExpression><![CDATA[( $F{vte_facture_entete_fac_etat}==0 ?
+    "En cours" :
+    ( $F{vte_facture_entete_fac_etat}==1 ?
+        "Validé" :
+        ( $F{vte_facture_entete_fac_etat}==2 ?
+            "Gelé" :
+            ( $F{vte_facture_entete_fac_etat}==3 ?
+                "Annulé" :
+                ( $F{vte_facture_entete_fac_etat}==4 ?
+                    "Tr.partiel" :
+                    ( $F{vte_facture_entete_fac_etat}==5 ?
+                        "Tr.total" :
+                        "???" ) ) ) ) ) )]]></variableExpression>
+	</variable>
+	<variable name="dateEtat" class="java.util.Date">
+		<variableExpression><![CDATA[(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")).parse($P{annexe1})]]></variableExpression>
+		<initialValueExpression><![CDATA[(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")).parse($P{annexe1})]]></initialValueExpression>
+	</variable>
+	<variable name="diffDate_1" class="java.lang.Integer">
+		<variableExpression><![CDATA[(($F{vte_facture_entete_fac_date_eche_reg}.getTime()-$V{dateEtat}.getTime())/ (1000*60*60*24))]]></variableExpression>
+	</variable>
+	<variable name="mFNEVal" class="java.lang.Double">
+		<variableExpression><![CDATA[( ($V{diffDate_1}>20) ? ($F{vte_facture_entete_fac_tot_ttc}-$F{vte_facture_entete_fac_tot_reglement}) : 0 )]]></variableExpression>
+	</variable>
+	<variable name="mNEVal" class="java.lang.Double">
+		<variableExpression><![CDATA[( ($V{diffDate_1}>=0&&$V{diffDate_1}<=20) ? ($F{vte_facture_entete_fac_tot_ttc}-$F{vte_facture_entete_fac_tot_reglement}) : 0 )]]></variableExpression>
+	</variable>
+	<variable name="m0Val" class="java.lang.Double">
+		<variableExpression><![CDATA[( ($V{diffDate_1}>=-20&&$V{diffDate_1}<0) ? ($F{vte_facture_entete_fac_tot_ttc}-$F{vte_facture_entete_fac_tot_reglement}) : 0 )]]></variableExpression>
+	</variable>
+	<variable name="m30Val" class="java.lang.Double">
+		<variableExpression><![CDATA[( ($V{diffDate_1}>=-30&&$V{diffDate_1}<-20) ? ($F{vte_facture_entete_fac_tot_ttc}-$F{vte_facture_entete_fac_tot_reglement}) : 0 )]]></variableExpression>
+	</variable>
+	<variable name="m60Val" class="java.lang.Double">
+		<variableExpression><![CDATA[( ($V{diffDate_1}>=-60&&$V{diffDate_1}<-30) ? ($F{vte_facture_entete_fac_tot_ttc}-$F{vte_facture_entete_fac_tot_reglement}) : 0 )]]></variableExpression>
+	</variable>
+	<variable name="m90Val" class="java.lang.Double">
+		<variableExpression><![CDATA[( ($V{diffDate_1}>=-90&&$V{diffDate_1}<-60) ? ($F{vte_facture_entete_fac_tot_ttc}-$F{vte_facture_entete_fac_tot_reglement}) : 0 )]]></variableExpression>
+	</variable>
+	<variable name="m120Val" class="java.lang.Double">
+		<variableExpression><![CDATA[( ($V{diffDate_1}<-90) ? ($F{vte_facture_entete_fac_tot_ttc}-$F{vte_facture_entete_fac_tot_reglement}) : 0 )]]></variableExpression>
+	</variable>
+	<variable name="soldeVal" class="java.lang.Double">
+		<variableExpression><![CDATA[$V{mFNEVal}+$V{mNEVal}+$V{m0Val}+$V{m30Val}+$V{m60Val}+$V{m90Val}+$V{m120Val}]]></variableExpression>
+	</variable>
+	<variable name="mFNETot" class="java.lang.Double" resetType="Group" resetGroup="tiers" calculation="Sum">
+		<variableExpression><![CDATA[( ($V{diffDate_1}>20) ? ($F{vte_facture_entete_fac_tot_ttc}-$F{vte_facture_entete_fac_tot_reglement}) : 0 )]]></variableExpression>
+	</variable>
+	<variable name="mNETot" class="java.lang.Double" resetType="Group" resetGroup="tiers" calculation="Sum">
+		<variableExpression><![CDATA[( ($V{diffDate_1}>=0&&$V{diffDate_1}<=20) ? ($F{vte_facture_entete_fac_tot_ttc}-$F{vte_facture_entete_fac_tot_reglement}) : 0 )]]></variableExpression>
+	</variable>
+	<variable name="m0Tot" class="java.lang.Double" resetType="Group" resetGroup="tiers" calculation="Sum">
+		<variableExpression><![CDATA[( ($V{diffDate_1}>=-20&&$V{diffDate_1}<0) ? ($F{vte_facture_entete_fac_tot_ttc}-$F{vte_facture_entete_fac_tot_reglement}) : 0 )]]></variableExpression>
+	</variable>
+	<variable name="m30Tot" class="java.lang.Double" resetType="Group" resetGroup="tiers" calculation="Sum">
+		<variableExpression><![CDATA[( ($V{diffDate_1}>=-30&&$V{diffDate_1}<-20) ? ($F{vte_facture_entete_fac_tot_ttc}-$F{vte_facture_entete_fac_tot_reglement}) : 0 )]]></variableExpression>
+	</variable>
+	<variable name="m60Tot" class="java.lang.Double" resetType="Group" resetGroup="tiers" calculation="Sum">
+		<variableExpression><![CDATA[( ($V{diffDate_1}>=-60&&$V{diffDate_1}<-30) ? ($F{vte_facture_entete_fac_tot_ttc}-$F{vte_facture_entete_fac_tot_reglement}) : 0 )]]></variableExpression>
+	</variable>
+	<variable name="m90Tot" class="java.lang.Double" resetType="Group" resetGroup="tiers" calculation="Sum">
+		<variableExpression><![CDATA[( ($V{diffDate_1}>=-90&&$V{diffDate_1}<-60) ? ($F{vte_facture_entete_fac_tot_ttc}-$F{vte_facture_entete_fac_tot_reglement}) : 0 )]]></variableExpression>
+	</variable>
+	<variable name="m120Tot" class="java.lang.Double" resetType="Group" resetGroup="tiers" calculation="Sum">
+		<variableExpression><![CDATA[( ($V{diffDate_1}<-90) ? ($F{vte_facture_entete_fac_tot_ttc}-$F{vte_facture_entete_fac_tot_reglement}) : 0 )]]></variableExpression>
+	</variable>
+	<variable name="soldeTot" class="java.lang.Double" resetType="None">
+		<variableExpression><![CDATA[$V{mFNETot}+$V{mNETot}+$V{m0Tot}+$V{m30Tot}+$V{m60Tot}+$V{m90Tot}+$V{m120Tot}]]></variableExpression>
+	</variable>
+	<variable name="geneMFNE" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[( ($V{diffDate_1}>20) ? ($F{vte_facture_entete_fac_tot_ttc}-$F{vte_facture_entete_fac_tot_reglement}) : 0 )]]></variableExpression>
+	</variable>
+	<variable name="geneMNE" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[( ($V{diffDate_1}>=0&&$V{diffDate_1}<=20) ? ($F{vte_facture_entete_fac_tot_ttc}-$F{vte_facture_entete_fac_tot_reglement}) : 0 )]]></variableExpression>
+	</variable>
+	<variable name="geneM0" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[( ($V{diffDate_1}>=-20&&$V{diffDate_1}<0) ? ($F{vte_facture_entete_fac_tot_ttc}-$F{vte_facture_entete_fac_tot_reglement}) : 0 )]]></variableExpression>
+	</variable>
+	<variable name="geneM1" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[( ($V{diffDate_1}>=-30&&$V{diffDate_1}<-20) ? ($F{vte_facture_entete_fac_tot_ttc}-$F{vte_facture_entete_fac_tot_reglement}) : 0 )]]></variableExpression>
+	</variable>
+	<variable name="geneM2" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[( ($V{diffDate_1}>=-60&&$V{diffDate_1}<-30) ? ($F{vte_facture_entete_fac_tot_ttc}-$F{vte_facture_entete_fac_tot_reglement}) : 0 )]]></variableExpression>
+	</variable>
+	<variable name="geneM3" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[( ($V{diffDate_1}>=-90&&$V{diffDate_1}<-60) ? ($F{vte_facture_entete_fac_tot_ttc}-$F{vte_facture_entete_fac_tot_reglement}) : 0 )]]></variableExpression>
+	</variable>
+	<variable name="geneM4" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[( ($V{diffDate_1}<-90) ? ($F{vte_facture_entete_fac_tot_ttc}-$F{vte_facture_entete_fac_tot_reglement}) : 0 )]]></variableExpression>
+	</variable>
+	<variable name="geneSolde" class="java.lang.Double" resetType="None">
+		<variableExpression><![CDATA[$V{geneMFNE}+$V{geneMNE}+$V{geneM0}+$V{geneM1}+$V{geneM2}+$V{geneM3}+$V{geneM4}]]></variableExpression>
+	</variable>
+	<group name="tiers">
+		<groupExpression><![CDATA[$F{vte_facture_entete_fac_nom_contact}]]></groupExpression>
+		<groupHeader>
+			<band height="22">
+				<line>
+					<reportElement x="10" y="-1" width="531" height="1"/>
+					<graphicElement>
+						<pen lineWidth="0.25"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="541" y="0" width="1" height="22"/>
+					<graphicElement>
+						<pen lineWidth="0.25"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="385" y="0" width="1" height="22"/>
+					<graphicElement>
+						<pen lineWidth="0.25"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="339" y="0" width="1" height="22"/>
+					<graphicElement>
+						<pen lineWidth="0.25"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="298" y="0" width="1" height="22"/>
+					<graphicElement>
+						<pen lineWidth="0.25"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="260" y="0" width="1" height="22"/>
+					<graphicElement>
+						<pen lineWidth="0.25"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="222" y="10" width="1" height="12"/>
+					<graphicElement>
+						<pen lineWidth="0.25"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="184" y="0" width="1" height="22"/>
+					<graphicElement>
+						<pen lineWidth="0.25"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="10" y="0" width="1" height="22"/>
+					<graphicElement>
+						<pen lineWidth="0.25"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="184" y="9" width="75" height="1"/>
+					<graphicElement>
+						<pen lineWidth="0.25"/>
+					</graphicElement>
+				</line>
+				<textField>
+					<reportElement x="28" y="2" width="148" height="11"/>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{vte_facture_entete_fac_nom_contact}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="189" y="9" width="30" height="11"/>
+					<textElement textAlignment="Center">
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ + 20 j.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="223" y="9" width="30" height="11"/>
+					<textElement textAlignment="Center" markup="none">
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[20 j.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="260" y="3" width="38" height="13"/>
+					<textElement textAlignment="Center" markup="none">
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[0 à 20]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="300" y="3" width="38" height="13"/>
+					<textElement textAlignment="Center" markup="none">
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[20 à 30]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="343" y="3" width="38" height="13"/>
+					<textElement textAlignment="Center" markup="none">
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[30 à 60]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="389" y="3" width="38" height="13"/>
+					<textElement textAlignment="Center" markup="none">
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[60 à 90]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="434" y="3" width="38" height="13"/>
+					<textElement textAlignment="Center" markup="none">
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[+90]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="488" y="3" width="38" height="13"/>
+					<textElement textAlignment="Center">
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Total]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="188" y="1" width="68" height="9"/>
+					<textElement textAlignment="Center">
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Non échue]]></text>
+				</staticText>
+				<line>
+					<reportElement x="429" y="0" width="1" height="22"/>
+					<graphicElement>
+						<pen lineWidth="0.25"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="476" y="0" width="1" height="22"/>
+					<graphicElement>
+						<pen lineWidth="0.25"/>
+					</graphicElement>
+				</line>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="24">
+				<staticText>
+					<reportElement x="29" y="6" width="132" height="15"/>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Sous total destinataire]]></text>
+				</staticText>
+				<textField evaluationTime="Group" evaluationGroup="tiers" isBlankWhenNull="true">
+					<reportElement style="ST1" x="261" y="6" width="37" height="11" forecolor="#000000">
+						<printWhenExpression><![CDATA[$V{m0Tot}!=0]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="6"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{m0Tot}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Group" evaluationGroup="tiers" isBlankWhenNull="true">
+					<reportElement style="ST1" x="299" y="6" width="40" height="11" forecolor="#000000">
+						<printWhenExpression><![CDATA[$V{m30Tot}!=0]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="6"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{m30Tot}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Group" evaluationGroup="tiers" isBlankWhenNull="true">
+					<reportElement style="ST1" x="340" y="6" width="44" height="11" forecolor="#000000">
+						<printWhenExpression><![CDATA[$V{m60Tot}!=0]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="6"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{m60Tot}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Group" evaluationGroup="tiers" isBlankWhenNull="true">
+					<reportElement style="ST1" x="386" y="6" width="42" height="11" forecolor="#000000">
+						<printWhenExpression><![CDATA[$V{m90Tot}!=0]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="6"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{m90Tot}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Group" evaluationGroup="tiers" isBlankWhenNull="true">
+					<reportElement style="ST1" x="431" y="6" width="44" height="11" forecolor="#000000">
+						<printWhenExpression><![CDATA[$V{m120Tot}!=0]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="6"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{m120Tot}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Group" evaluationGroup="tiers" isBlankWhenNull="true">
+					<reportElement style="ST1" x="481" y="6" width="58" height="11" forecolor="#000000">
+						<printWhenExpression><![CDATA[$V{soldeTot}!=0]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="6"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{soldeTot}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Group" evaluationGroup="tiers" isBlankWhenNull="true">
+					<reportElement style="ST1" x="223" y="6" width="32" height="11" forecolor="#000000">
+						<printWhenExpression><![CDATA[$V{mNETot}!=0]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="6"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{mNETot}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Group" evaluationGroup="tiers" isBlankWhenNull="true">
+					<reportElement style="ST1" x="185" y="6" width="37" height="11" forecolor="#000000">
+						<printWhenExpression><![CDATA[$V{mFNETot}!=0]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="6"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{mFNETot}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="10" y="0" width="1" height="24"/>
+					<graphicElement>
+						<pen lineWidth="0.25"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="184" y="0" width="1" height="24"/>
+					<graphicElement>
+						<pen lineWidth="0.25"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="222" y="0" width="1" height="24"/>
+					<graphicElement>
+						<pen lineWidth="0.25"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="260" y="0" width="1" height="24"/>
+					<graphicElement>
+						<pen lineWidth="0.25"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="298" y="0" width="1" height="24"/>
+					<graphicElement>
+						<pen lineWidth="0.25"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="339" y="0" width="1" height="24"/>
+					<graphicElement>
+						<pen lineWidth="0.25"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="385" y="0" width="1" height="24"/>
+					<graphicElement>
+						<pen lineWidth="0.25"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="429" y="0" width="1" height="24"/>
+					<graphicElement>
+						<pen lineWidth="0.25"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="476" y="0" width="1" height="24"/>
+					<graphicElement>
+						<pen lineWidth="0.25"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="541" y="0" width="1" height="24"/>
+					<graphicElement>
+						<pen lineWidth="0.25"/>
+					</graphicElement>
+				</line>
+				<rectangle>
+					<reportElement mode="Transparent" x="10" y="0" width="532" height="24" forecolor="#000000" backcolor="#FFFFFF"/>
+					<graphicElement>
+						<pen lineWidth="0.25"/>
+					</graphicElement>
+				</rectangle>
+			</band>
+		</groupFooter>
+	</group>
+	<title>
+		<band height="116" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="36" forecolor="#000000" backcolor="#000000"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="87" width="555" height="27" forecolor="#992F2A" backcolor="#992F2A"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="36" width="555" height="51" forecolor="#999999" backcolor="#999999"/>
+			</rectangle>
+			<textField evaluationTime="Report">
+				<reportElement x="515" y="96" width="23" height="11" forecolor="#FFFFFF"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="24" y="40" width="518" height="20" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{filtre}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="19" y="96" width="56" height="11" forecolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[© B&W 2010 -]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="76" y="96" width="28" height="11" forecolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{version}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="361" y="96" width="151" height="11" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Page "+$V{PAGE_NUMBER}+" / "]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy HH.mm.ss">
+				<reportElement x="107" y="96" width="151" height="11" forecolor="#FFFFFF"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="24" y="63" width="518" height="20" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{societe}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="24" y="5" width="518" height="24" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans" size="18"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{entete}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="58" splitType="Stretch">
+			<printWhenExpression><![CDATA[$V{PAGE_NUMBER}!=1]]></printWhenExpression>
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="32" forecolor="#999999" backcolor="#999999"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="33" width="555" height="23" forecolor="#992F2A" backcolor="#992F2A"/>
+			</rectangle>
+			<textField evaluationTime="Report">
+				<reportElement mode="Transparent" x="502" y="39" width="25" height="11" forecolor="#FFFFFF"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy HH.mm.ss">
+				<reportElement x="109" y="38" width="148" height="11" forecolor="#FFFFFF"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="78" y="38" width="28" height="11" forecolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{version}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="21" y="38" width="55" height="11" forecolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[© B&W 2010 - ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="308" y="8" width="229" height="15" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{societe}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="19" y="8" width="287" height="15" forecolor="#FFFFFF"/>
+				<textElement markup="none">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{entete}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="348" y="39" width="151" height="11" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Page "+$V{PAGE_NUMBER}+" / "]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="49" splitType="Stretch">
+			<staticText>
+				<reportElement x="13" y="23" width="42" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="6" isBold="true"/>
+				</textElement>
+				<text><![CDATA[N° Facture]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="66" y="23" width="38" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="6" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="488" y="23" width="38" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="6" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="298" y="23" width="38" height="13"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans" size="6" isBold="true"/>
+				</textElement>
+				<text><![CDATA[20 à 30]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="343" y="23" width="38" height="13"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans" size="6" isBold="true"/>
+				</textElement>
+				<text><![CDATA[30 à 60]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="388" y="23" width="38" height="13"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans" size="6" isBold="true"/>
+				</textElement>
+				<text><![CDATA[60 à 90]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="432" y="23" width="38" height="13"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans" size="6" isBold="true"/>
+				</textElement>
+				<text><![CDATA[+90]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="113" y="23" width="38" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="6" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Eché.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="225" y="30" width="30" height="13"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans" size="6" isBold="true"/>
+				</textElement>
+				<text><![CDATA[20 j.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="258" y="23" width="38" height="13"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans" size="6" isBold="true"/>
+				</textElement>
+				<text><![CDATA[0 à 20]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="24" width="20" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="6" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NbJ.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="187" y="12" width="68" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Non échue]]></text>
+			</staticText>
+			<line>
+				<reportElement x="10" y="10" width="531" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="10" y="10" width="1" height="38"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="260" y="10" width="1" height="38"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="298" y="10" width="1" height="38"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="339" y="10" width="1" height="38"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="385" y="10" width="1" height="38"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="429" y="10" width="1" height="38"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="476" y="10" width="1" height="38"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="541" y="10" width="1" height="38"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="222" y="27" width="1" height="22"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="185" y="26" width="75" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="184" y="10" width="1" height="38"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="57" y="10" width="1" height="38"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="107" y="10" width="1" height="38"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="156" y="10" width="1" height="38"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="188" y="30" width="30" height="13"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans" size="6" isBold="true"/>
+				</textElement>
+				<text><![CDATA[+20 j.]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="18">
+			<textField isBlankWhenNull="true">
+				<reportElement x="16" y="2" width="38" height="14"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="6" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{vte_facture_entete_fac_num}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yy" isBlankWhenNull="true">
+				<reportElement x="65" y="2" width="38" height="14"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="6" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{vte_facture_entete_fac_date}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="ST1" x="257" y="2" width="38" height="15">
+					<printWhenExpression><![CDATA[$V{m0Val}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="6"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{m0Val}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="ST1" x="298" y="2" width="41" height="15">
+					<printWhenExpression><![CDATA[$V{m30Val}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="6"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{m30Val}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="ST1" x="342" y="2" width="42" height="15">
+					<printWhenExpression><![CDATA[$V{m60Val}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="6"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{m60Val}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="ST1" x="388" y="2" width="40" height="15">
+					<printWhenExpression><![CDATA[$V{m90Val}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="6"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{m90Val}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="ST1" x="432" y="2" width="40" height="15">
+					<printWhenExpression><![CDATA[$V{m120Val}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="6"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{m120Val}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="ST1" x="481" y="2" width="58" height="15">
+					<printWhenExpression><![CDATA[$V{soldeVal}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="6"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{soldeVal}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yy" isBlankWhenNull="true">
+				<reportElement x="116" y="2" width="38" height="14"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="6" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{vte_facture_entete_fac_date_eche_reg}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="ST1" x="187" y="2" width="32" height="14">
+					<printWhenExpression><![CDATA[$V{mFNEVal}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="6" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{mFNEVal}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="ST1" x="223" y="2" width="30" height="15">
+					<printWhenExpression><![CDATA[$V{mNEVal}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="6"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{mNEVal}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="ST1" x="161" y="2" width="20" height="15"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="6"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{diffDate_1}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="10" y="0" width="1" height="18"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="184" y="0" width="1" height="18"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="222" y="0" width="1" height="18"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="260" y="0" width="1" height="18"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="298" y="0" width="1" height="18"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="339" y="0" width="1" height="18"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="385" y="0" width="1" height="18"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="429" y="0" width="1" height="18"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="476" y="0" width="1" height="18"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="541" y="0" width="1" height="18"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="10" y="0" width="531" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="16"/>
+	</columnFooter>
+	<lastPageFooter>
+		<band height="72">
+			<staticText>
+				<reportElement x="16" y="18" width="124" height="15"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total échéancier]]></text>
+			</staticText>
+			<textField evaluationTime="Report" isBlankWhenNull="true">
+				<reportElement style="ST1" x="261" y="18" width="38" height="15">
+					<printWhenExpression><![CDATA[$V{geneM0}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="6"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{geneM0}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" isBlankWhenNull="true">
+				<reportElement style="ST1" x="300" y="18" width="38" height="15">
+					<printWhenExpression><![CDATA[$V{geneM1}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="6"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{geneM1}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" isBlankWhenNull="true">
+				<reportElement style="ST1" x="342" y="18" width="38" height="15">
+					<printWhenExpression><![CDATA[$V{geneM2}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="6"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{geneM2}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" isBlankWhenNull="true">
+				<reportElement style="ST1" x="388" y="18" width="38" height="15">
+					<printWhenExpression><![CDATA[$V{geneM3}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="6"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{geneM3}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" isBlankWhenNull="true">
+				<reportElement style="ST1" x="433" y="18" width="38" height="15">
+					<printWhenExpression><![CDATA[$V{geneM4}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="6"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{geneM4}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" isBlankWhenNull="true">
+				<reportElement style="ST1" x="478" y="18" width="61" height="15">
+					<printWhenExpression><![CDATA[$V{geneSolde}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="6"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{geneSolde}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" isBlankWhenNull="true">
+				<reportElement style="ST1" x="223" y="18" width="38" height="15">
+					<printWhenExpression><![CDATA[$V{geneMNE}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="6"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{geneMNE}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" isBlankWhenNull="true">
+				<reportElement style="ST1" x="184" y="18" width="38" height="15">
+					<printWhenExpression><![CDATA[$V{geneMFNE}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="6"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{geneMFNE}]]></textFieldExpression>
+			</textField>
+		</band>
+	</lastPageFooter>
+</jasperReport>

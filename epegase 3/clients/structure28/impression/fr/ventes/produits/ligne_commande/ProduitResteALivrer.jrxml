@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ListeCommande" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isFloatColumnFooter="true">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="266"/>
+	<property name="ireport.y" value="288"/>
+	<style name="ST1" isDefault="false" pattern="">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{formatDevise}==0)]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" markup="none" pattern="#,##0.00"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{formatDevise}==1)]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.00"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{formatDevise}==2)]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0" isItalic="false"/>
+		</conditionalStyle>
+	</style>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\Documents and Settings\\user\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="entete" class="java.lang.String"/>
+	<parameter name="filtre" class="java.lang.String"/>
+	<parameter name="societe" class="java.lang.String"/>
+	<parameter name="version" class="java.lang.String"/>
+	<parameter name="requete" class="java.lang.String"/>
+	<parameter name="formatDevise" class="java.lang.Integer"/>
+	<queryString>
+		<![CDATA[SELECT
+     vte_bcommande_ligne.`bcmlig_id` AS vte_bcommande_ligne_bcmlig_id,
+     vte_bcommande_ligne.`bcmlig_id_dvs` AS vte_bcommande_ligne_bcmlig_id_dvs,
+     vte_bcommande_ligne.`bcmlig_code` AS vte_bcommande_ligne_bcmlig_code,
+     vte_bcommande_ligne.`bcmlig_famille` AS vte_bcommande_ligne_bcmlig_famille,
+     vte_bcommande_ligne.`bcmlig_libelle` AS vte_bcommande_ligne_bcmlig_libelle,
+     vte_bcommande_ligne.`bcmlig_reference` AS vte_bcommande_ligne_bcmlig_reference,
+     vte_bcommande_ligne.`bcmlig_taxe` AS vte_bcommande_ligne_bcmlig_taxe,
+     vte_bcommande_ligne.`bcmlig_taux_taxe` AS vte_bcommande_ligne_bcmlig_taux_taxe,
+     vte_bcommande_ligne.`bcmlig_unite` AS vte_bcommande_ligne_bcmlig_unite,
+     vte_bcommande_ligne.`bcmlig_condition` AS vte_bcommande_ligne_bcmlig_condition,
+     vte_bcommande_ligne.`bcmlig_description` AS vte_bcommande_ligne_bcmlig_description,
+     vte_bcommande_ligne.`bcmlig_echelle` AS vte_bcommande_ligne_bcmlig_echelle,
+     vte_bcommande_ligne.`bcmlig_qte` AS vte_bcommande_ligne_bcmlig_qte,
+     vte_bcommande_ligne.`bcmlig_long` AS vte_bcommande_ligne_bcmlig_long,
+     vte_bcommande_ligne.`bcmlig_larg` AS vte_bcommande_ligne_bcmlig_larg,
+     vte_bcommande_ligne.`bcmlig_haut` AS vte_bcommande_ligne_bcmlig_haut,
+     vte_bcommande_ligne.`bcmlig_diam` AS vte_bcommande_ligne_bcmlig_diam,
+     vte_bcommande_ligne.`bcmlig_nb` AS vte_bcommande_ligne_bcmlig_nb,
+     vte_bcommande_ligne.`bcmlig_poidsNet` AS vte_bcommande_ligne_bcmlig_poidsNet,
+     vte_bcommande_ligne.`bcmlig_poidsBrut` AS vte_bcommande_ligne_bcmlig_poidsBrut,
+     vte_bcommande_ligne.`bcmlig_volume` AS vte_bcommande_ligne_bcmlig_volume,
+     vte_bcommande_ligne.`bcmlig_depot` AS vte_bcommande_ligne_bcmlig_depot,
+     vte_bcommande_ligne.`bcmlig_stock` AS vte_bcommande_ligne_bcmlig_stock,
+     vte_bcommande_ligne.`bcmlig_qte_util` AS vte_bcommande_ligne_bcmlig_qte_util,
+     vte_bcommande_ligne.`bcmlig_qte_stock` AS vte_bcommande_ligne_bcmlig_qte_stock,
+     vte_bcommande_ligne.`bcmlig_devise` AS vte_bcommande_ligne_bcmlig_devise,
+     vte_bcommande_ligne.`bcmlig_pu` AS vte_bcommande_ligne_bcmlig_pu,
+     vte_bcommande_ligne.`bcmlig_taux_remise` AS vte_bcommande_ligne_bcmlig_taux_remise,
+     vte_bcommande_ligne.`bcmlig_rabais` AS vte_bcommande_ligne_bcmlig_rabais,
+     vte_bcommande_ligne.`bcmlig_pu_rem` AS vte_bcommande_ligne_bcmlig_pu_rem,
+     vte_bcommande_ligne.`bcmlig_pu_ttc` AS vte_bcommande_ligne_bcmlig_pu_ttc,
+     vte_bcommande_ligne.`bcmlig_pu_rem_ttc` AS vte_bcommande_ligne_bcmlig_pu_rem_ttc,
+     vte_bcommande_ligne.`bcmlig_pt` AS vte_bcommande_ligne_bcmlig_pt,
+     vte_bcommande_ligne.`bcmlig_tva` AS vte_bcommande_ligne_bcmlig_tva,
+     vte_bcommande_ligne.`bcmlig_tc` AS vte_bcommande_ligne_bcmlig_tc,
+     vte_bcommande_ligne.`bcmlig_ttc` AS vte_bcommande_ligne_bcmlig_ttc,
+     vte_bcommande_ligne.`bcmlig_pump` AS vte_bcommande_ligne_bcmlig_pump,
+     vte_bcommande_ligne.`bcm_id` AS vte_bcommande_ligne_bcm_id,
+     vte_bcommande_ligne.`bcmlig_ordre` AS vte_bcommande_ligne_bcmlig_ordre,
+     vte_bcommande_ligne.`bcmlig_complement` AS vte_bcommande_ligne_bcmlig_complement,
+     vte_bcommande_ligne.`bcmlig_qte_livree` AS vte_bcommande_ligne_bcmlig_qte_livree,
+     vte_bcommande_entete.`bcm_nom_responsable` AS vte_bcommande_entete_bcm_nom_responsable,
+     vte_bcommande_entete.`bcm_nom_tiers` AS vte_bcommande_entete_bcm_nom_tiers,
+     vte_bcommande_entete.`bcm_nom_contact` AS vte_bcommande_entete_bcm_nom_contact,
+     vte_bcommande_entete.`bcm_num` AS vte_bcommande_entete_bcm_num,
+     vte_bcommande_entete.`bcm_date` AS vte_bcommande_entete_bcm_date
+FROM
+     `vte_bcommande_entete` vte_bcommande_entete INNER JOIN `vte_bcommande_ligne` vte_bcommande_ligne ON vte_bcommande_entete.`bcm_id` = vte_bcommande_ligne.`bcm_id`
+WHERE
+    $P!{requete}]]>
+	</queryString>
+	<field name="vte_bcommande_ligne_bcmlig_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_ligne_bcmlig_id_dvs" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_ligne_bcmlig_code" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_ligne_bcmlig_famille" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_ligne_bcmlig_libelle" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_ligne_bcmlig_reference" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_ligne_bcmlig_taxe" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_ligne_bcmlig_taux_taxe" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_ligne_bcmlig_unite" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_ligne_bcmlig_condition" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_ligne_bcmlig_description" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_ligne_bcmlig_echelle" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_ligne_bcmlig_qte" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_ligne_bcmlig_long" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_ligne_bcmlig_larg" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_ligne_bcmlig_haut" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_ligne_bcmlig_diam" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_ligne_bcmlig_nb" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_ligne_bcmlig_poidsNet" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_ligne_bcmlig_poidsBrut" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_ligne_bcmlig_volume" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_ligne_bcmlig_depot" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_ligne_bcmlig_stock" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_ligne_bcmlig_qte_util" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_ligne_bcmlig_qte_stock" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_ligne_bcmlig_devise" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_ligne_bcmlig_pu" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_ligne_bcmlig_taux_remise" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_ligne_bcmlig_rabais" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_ligne_bcmlig_pu_rem" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_ligne_bcmlig_pu_ttc" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_ligne_bcmlig_pu_rem_ttc" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_ligne_bcmlig_pt" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_ligne_bcmlig_tva" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_ligne_bcmlig_tc" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_ligne_bcmlig_ttc" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_ligne_bcmlig_pump" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_ligne_bcm_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_ligne_bcmlig_ordre" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_ligne_bcmlig_complement" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_ligne_bcmlig_qte_livree" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_entete_bcm_nom_responsable" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_entete_bcm_nom_tiers" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_entete_bcm_nom_contact" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_entete_bcm_num" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_bcommande_entete_bcm_date" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<sortField name="vte_bcommande_ligne_bcmlig_code"/>
+	<sortField name="vte_bcommande_entete_bcm_date"/>
+	<sortField name="vte_bcommande_entete_bcm_num"/>
+	<variable name="totQte" class="java.lang.Float" resetType="Group" resetGroup="prod" calculation="Sum">
+		<variableExpression><![CDATA[$F{vte_bcommande_ligne_bcmlig_qte}]]></variableExpression>
+	</variable>
+	<variable name="totQteLivre" class="java.lang.Float" resetType="Group" resetGroup="prod" calculation="Sum">
+		<variableExpression><![CDATA[$F{vte_bcommande_ligne_bcmlig_qte_livree}]]></variableExpression>
+	</variable>
+	<variable name="totQteReste" class="java.lang.Float" resetType="Group" resetGroup="prod" calculation="Sum">
+		<variableExpression><![CDATA[$F{vte_bcommande_ligne_bcmlig_qte}-$F{vte_bcommande_ligne_bcmlig_qte_livree}]]></variableExpression>
+	</variable>
+	<variable name="qteGene" class="java.lang.Float" resetType="Page" calculation="Sum">
+		<variableExpression><![CDATA[$F{vte_bcommande_ligne_bcmlig_qte}]]></variableExpression>
+	</variable>
+	<variable name="qteGeneLivree" class="java.lang.Float" resetType="Page" calculation="Sum">
+		<variableExpression><![CDATA[$F{vte_bcommande_ligne_bcmlig_qte_livree}]]></variableExpression>
+	</variable>
+	<variable name="qteGeneReste" class="java.lang.Float" resetType="Page" calculation="Sum">
+		<variableExpression><![CDATA[$F{vte_bcommande_ligne_bcmlig_qte}-$F{vte_bcommande_ligne_bcmlig_qte_livree}]]></variableExpression>
+	</variable>
+	<group name="prod">
+		<groupExpression><![CDATA[$F{vte_bcommande_ligne_bcmlig_code}]]></groupExpression>
+		<groupFooter>
+			<band height="13">
+				<line>
+					<reportElement x="327" y="0" width="1" height="13"/>
+				</line>
+				<line>
+					<reportElement x="117" y="0" width="1" height="13"/>
+				</line>
+				<line>
+					<reportElement x="533" y="0" width="1" height="13"/>
+				</line>
+				<textField evaluationTime="Group" evaluationGroup="prod" isBlankWhenNull="true">
+					<reportElement style="ST1" x="398" y="1" width="62" height="11">
+						<printWhenExpression><![CDATA[$V{totQteLivre}!=0]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Float"><![CDATA[$V{totQteLivre}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="10" y="0" width="1" height="13"/>
+				</line>
+				<line>
+					<reportElement x="395" y="0" width="1" height="13"/>
+				</line>
+				<textField evaluationTime="Group" evaluationGroup="prod" isBlankWhenNull="true">
+					<reportElement style="ST1" x="330" y="1" width="62" height="11">
+						<printWhenExpression><![CDATA[$V{totQte}!=0]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Float"><![CDATA[$V{totQte}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="21" y="1" width="88" height="11"/>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{vte_bcommande_ligne_bcmlig_code}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="128" y="1" width="192" height="11"/>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{vte_bcommande_ligne_bcmlig_libelle}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="463" y="0" width="1" height="13"/>
+				</line>
+				<textField evaluationTime="Group" evaluationGroup="prod" isBlankWhenNull="true">
+					<reportElement style="ST1" x="467" y="1" width="62" height="11">
+						<printWhenExpression><![CDATA[$V{totQteReste}!=0]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Float"><![CDATA[$V{totQteReste}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupFooter>
+	</group>
+	<title>
+		<band height="116" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="36" forecolor="#000000" backcolor="#FFFFFF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="37" width="555" height="51" forecolor="#000000" backcolor="#FFFFFF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="87" width="555" height="27" forecolor="#992F2A" backcolor="#FFFFFF"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="18" y="96" width="55" height="11" forecolor="#000000"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[© B&W 2010 -]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="16" y="65" width="517" height="20" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{societe}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="73" y="96" width="28" height="11" forecolor="#000000"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{version}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="16" y="41" width="518" height="20" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{filtre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="16" y="8" width="518" height="24" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="18"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{entete}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy HH.mm.ss">
+				<reportElement x="106" y="96" width="151" height="11" forecolor="#000000"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="344" y="96" width="166" height="11" forecolor="#000000"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Page "+$V{PAGE_NUMBER}+" / "]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="512" y="96" width="23" height="11" forecolor="#000000"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="59" splitType="Stretch">
+			<printWhenExpression><![CDATA[$V{PAGE_NUMBER}>=2]]></printWhenExpression>
+			<rectangle>
+				<reportElement x="0" y="2" width="555" height="32" forecolor="#000000" backcolor="#FFFFFF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="34" width="555" height="23" forecolor="#992F2A" backcolor="#FFFFFF"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="18" y="42" width="55" height="11" forecolor="#000000"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[© B&W 2010 - ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="240" y="11" width="294" height="15" forecolor="#000000"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{societe}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="73" y="42" width="28" height="11" forecolor="#000000"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{version}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="16" y="11" width="393" height="15" forecolor="#000000"/>
+				<textElement>
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{entete}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy HH.mm.ss">
+				<reportElement x="106" y="42" width="148" height="11" forecolor="#000000"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="512" y="41" width="25" height="11" forecolor="#000000"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="354" y="41" width="157" height="11" forecolor="#000000"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Page "+$V{PAGE_NUMBER}+" / "]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="72" splitType="Stretch">
+			<staticText>
+				<reportElement x="18" y="39" width="90" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Code produit]]></text>
+			</staticText>
+			<line>
+				<reportElement x="10" y="27" width="1" height="45"/>
+			</line>
+			<line>
+				<reportElement x="117" y="27" width="1" height="45"/>
+			</line>
+			<line>
+				<reportElement x="395" y="27" width="1" height="45"/>
+			</line>
+			<line>
+				<reportElement x="533" y="27" width="1" height="45"/>
+			</line>
+			<line>
+				<reportElement x="10" y="27" width="523" height="1"/>
+			</line>
+			<line>
+				<reportElement x="10" y="58" width="523" height="1"/>
+			</line>
+			<line>
+				<reportElement x="327" y="27" width="1" height="45"/>
+			</line>
+			<staticText>
+				<reportElement x="128" y="39" width="196" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Libellé produit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="39" width="62" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Qte Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="398" y="39" width="62" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Livré]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="467" y="39" width="62" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Reste]]></text>
+			</staticText>
+			<line>
+				<reportElement x="463" y="27" width="1" height="45"/>
+			</line>
+		</band>
+	</columnHeader>
+	<columnFooter>
+		<band height="51" splitType="Stretch">
+			<line>
+				<reportElement x="395" y="0" width="1" height="36"/>
+			</line>
+			<line>
+				<reportElement x="10" y="10" width="523" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="276" y="18" width="35" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Totaux]]></text>
+			</staticText>
+			<line>
+				<reportElement x="328" y="36" width="206" height="1"/>
+			</line>
+			<line>
+				<reportElement x="10" y="0" width="1" height="10"/>
+			</line>
+			<line>
+				<reportElement x="533" y="0" width="1" height="36"/>
+			</line>
+			<line>
+				<reportElement x="117" y="0" width="1" height="10"/>
+			</line>
+			<textField evaluationTime="Page" isBlankWhenNull="true">
+				<reportElement style="ST1" x="398" y="17" width="62" height="14">
+					<printWhenExpression><![CDATA[$V{qteGeneLivree}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$V{qteGeneLivree}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="327" y="0" width="1" height="37"/>
+			</line>
+			<textField evaluationTime="Page" isBlankWhenNull="true">
+				<reportElement style="ST1" x="330" y="17" width="62" height="14">
+					<printWhenExpression><![CDATA[$V{qteGene}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$V{qteGene}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="463" y="0" width="1" height="36"/>
+			</line>
+			<textField evaluationTime="Page" isBlankWhenNull="true">
+				<reportElement style="ST1" x="467" y="17" width="62" height="14">
+					<printWhenExpression><![CDATA[$V{qteGeneReste}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$V{qteGeneReste}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="26">
+			<rectangle>
+				<reportElement x="0" y="1" width="555" height="24" forecolor="#992F2A" backcolor="#FFFFFF"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="20" y="2" width="160" height="12" forecolor="#000000"/>
+				<textElement>
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Created by Bagwell & Watson]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="13" width="160" height="12" forecolor="#000000"/>
+				<textElement>
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.bagwell-watson.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="194" y="2" width="160" height="12" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Writen by Phoenix SaaS ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="372" y="2" width="160" height="12" forecolor="#000000"/>
+				<textElement textAlignment="Right">
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Support by Planet-e-pegase ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="372" y="13" width="160" height="12" forecolor="#000000"/>
+				<textElement textAlignment="Right">
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.planet-e-pegase.biz ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="194" y="13" width="160" height="12" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.phoenix-saas.com]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

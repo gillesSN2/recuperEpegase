@@ -82,11 +82,11 @@ public class FormBakingEpegase extends HttpServlet implements Serializable {
    }
 
    public String connection() throws Exception {
-      String var1 = "home";
+      String pageToRedirect = "home";
 
       try {
-         String var2 = this.connexion.connection(this.menuModuleHorizontalCtrl.isRw());
-         if (var2.equals("connexion")) {
+         String retourConnexion = this.connexion.connection(this.menuModuleHorizontalCtrl.isRw());
+         if (retourConnexion.equals("connexion")) {
             if (this.connexion.getBaseData() != null && !this.connexion.getBaseData().isEmpty()) {
                if (this.connexion.getStructurelog() != null) {
                   Session var3 = this.utilInitHibernate.getOpenSession(this.connexion.getBaseData(), "Accueil");
@@ -124,48 +124,48 @@ public class FormBakingEpegase extends HttpServlet implements Serializable {
                      this.utilJob.RepetAction();
                   }
 
-                  var1 = "connexion";
+                  pageToRedirect = "connexion";
                } else {
                   if (sessionUser != null) {
                      sessionUser.invalidate();
                   }
 
-                  var1 = "home";
-                  StaticModePegase.setReponseFinale(var1);
+                  pageToRedirect = "home";
+                  StaticModePegase.setReponseFinale(pageToRedirect);
                }
             } else {
                if (sessionUser != null) {
                   sessionUser.invalidate();
                }
 
-               var1 = "home";
-               StaticModePegase.setReponseFinale(var1);
+               pageToRedirect = "home";
+               StaticModePegase.setReponseFinale(pageToRedirect);
             }
-         } else if (!var2.equals("public")) {
+         } else if (!retourConnexion.equals("public")) {
             if (sessionUser != null) {
                sessionUser.invalidate();
             }
 
-            var1 = "home";
-            StaticModePegase.setReponseFinale(var2);
+            pageToRedirect = "home";
+            StaticModePegase.setReponseFinale(retourConnexion);
          }
       } catch (Exception var7) {
          if (sessionUser != null) {
             sessionUser.invalidate();
          }
 
-         var1 = "home";
-         StaticModePegase.setReponseFinale(var1);
+         pageToRedirect = "home";
+         StaticModePegase.setReponseFinale(pageToRedirect);
          throw var7;
       } finally {
          ;
       }
 
-      if (!var1.equals("connexion") && !var1.equals("public")) {
-         var1 = "erreur";
+      if (!pageToRedirect.equals("connexion") && !pageToRedirect.equals("public")) {
+         pageToRedirect = "erreur";
       }
 
-      return var1;
+      return pageToRedirect;
    }
 
    public void deconnection() throws Exception {

@@ -1,0 +1,1067 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ListeBL" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isFloatColumnFooter="true">
+	<property name="ireport.zoom" value="5.0"/>
+	<property name="ireport.x" value="1457"/>
+	<property name="ireport.y" value="1358"/>
+	<style name="ST1" isDefault="false" pattern="">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{formatDevise}==0)]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" markup="none" pattern="#,##0.00"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{formatDevise}==1)]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0.00"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($P{formatDevise}==2)]]></conditionExpression>
+			<style isDefault="false" style="ST1" forecolor="#000000" pattern="#,##0" isItalic="false"/>
+		</conditionalStyle>
+	</style>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\Documents and Settings\\user\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="entete" class="java.lang.String"/>
+	<parameter name="filtre" class="java.lang.String"/>
+	<parameter name="societe" class="java.lang.String"/>
+	<parameter name="version" class="java.lang.String"/>
+	<parameter name="requete" class="java.lang.String"/>
+	<parameter name="formatDevise" class="java.lang.Integer"/>
+	<queryString>
+		<![CDATA[SELECT
+     vte_blivraison_ligne.`blvlig_id` AS vte_blivraison_ligne_blvlig_id,
+     vte_blivraison_ligne.`blvlig_id_dvs` AS vte_blivraison_ligne_blvlig_id_dvs,
+     vte_blivraison_ligne.`blvlig_id_bcm` AS vte_blivraison_ligne_blvlig_id_bcm,
+     vte_blivraison_ligne.`blvlig_code` AS vte_blivraison_ligne_blvlig_code,
+     vte_blivraison_ligne.`blvlig_famille` AS vte_blivraison_ligne_blvlig_famille,
+     vte_blivraison_ligne.`blvlig_libelle` AS vte_blivraison_ligne_blvlig_libelle,
+     vte_blivraison_ligne.`blvlig_reference` AS vte_blivraison_ligne_blvlig_reference,
+     vte_blivraison_ligne.`blvlig_taxe` AS vte_blivraison_ligne_blvlig_taxe,
+     vte_blivraison_ligne.`blvlig_taux_taxe` AS vte_blivraison_ligne_blvlig_taux_taxe,
+     vte_blivraison_ligne.`blvlig_unite` AS vte_blivraison_ligne_blvlig_unite,
+     vte_blivraison_ligne.`blvlig_condition` AS vte_blivraison_ligne_blvlig_condition,
+     vte_blivraison_ligne.`blvlig_description` AS vte_blivraison_ligne_blvlig_description,
+     vte_blivraison_ligne.`blvlig_depot` AS vte_blivraison_ligne_blvlig_depot,
+     vte_blivraison_ligne.`blvlig_depot_cmd` AS vte_blivraison_ligne_blvlig_depot_cmd,
+     vte_blivraison_ligne.`blvlig_qte_stock` AS vte_blivraison_ligne_blvlig_qte_stock,
+     vte_blivraison_ligne.`blvlig_stock` AS vte_blivraison_ligne_blvlig_stock,
+     vte_blivraison_ligne.`blvlig_echelle` AS vte_blivraison_ligne_blvlig_echelle,
+     vte_blivraison_ligne.`blvlig_qte` AS vte_blivraison_ligne_blvlig_qte,
+     vte_blivraison_ligne.`blvlig_long` AS vte_blivraison_ligne_blvlig_long,
+     vte_blivraison_ligne.`blvlig_larg` AS vte_blivraison_ligne_blvlig_larg,
+     vte_blivraison_ligne.`blvlig_haut` AS vte_blivraison_ligne_blvlig_haut,
+     vte_blivraison_ligne.`blvlig_diam` AS vte_blivraison_ligne_blvlig_diam,
+     vte_blivraison_ligne.`blvlig_nb` AS vte_blivraison_ligne_blvlig_nb,
+     vte_blivraison_ligne.`blvlig_poidsNet` AS vte_blivraison_ligne_blvlig_poidsNet,
+     vte_blivraison_ligne.`blvlig_poidsBrut` AS vte_blivraison_ligne_blvlig_poidsBrut,
+     vte_blivraison_ligne.`blvlig_volume` AS vte_blivraison_ligne_blvlig_volume,
+     vte_blivraison_ligne.`blvlig_qte_util` AS vte_blivraison_ligne_blvlig_qte_util,
+     vte_blivraison_ligne.`blvlig_qte_util_stock` AS vte_blivraison_ligne_blvlig_qte_util_stock,
+     vte_blivraison_ligne.`blvlig_lot` AS vte_blivraison_ligne_blvlig_lot,
+     vte_blivraison_ligne.`blvlig_num_serie` AS vte_blivraison_ligne_blvlig_num_serie,
+     vte_blivraison_ligne.`blvlig_devise` AS vte_blivraison_ligne_blvlig_devise,
+     vte_blivraison_ligne.`blvlig_pu` AS vte_blivraison_ligne_blvlig_pu,
+     vte_blivraison_ligne.`blvlig_taux_remise` AS vte_blivraison_ligne_blvlig_taux_remise,
+     vte_blivraison_ligne.`blvlig_rabais` AS vte_blivraison_ligne_blvlig_rabais,
+     vte_blivraison_ligne.`blvlig_pu_rem` AS vte_blivraison_ligne_blvlig_pu_rem,
+     vte_blivraison_ligne.`blvlig_pu_ttc` AS vte_blivraison_ligne_blvlig_pu_ttc,
+     vte_blivraison_ligne.`blvlig_pu_rem_ttc` AS vte_blivraison_ligne_blvlig_pu_rem_ttc,
+     vte_blivraison_ligne.`blvlig_pt` AS vte_blivraison_ligne_blvlig_pt,
+     vte_blivraison_ligne.`blvlig_tva` AS vte_blivraison_ligne_blvlig_tva,
+     vte_blivraison_ligne.`blvlig_tc` AS vte_blivraison_ligne_blvlig_tc,
+     vte_blivraison_ligne.`blvlig_ttc` AS vte_blivraison_ligne_blvlig_ttc,
+     vte_blivraison_ligne.`blvlig_pump` AS vte_blivraison_ligne_blvlig_pump,
+     vte_blivraison_ligne.`blv_id` AS vte_blivraison_ligne_blv_id,
+     vte_blivraison_ligne.`blvlig_ordre` AS vte_blivraison_ligne_blvlig_ordre,
+     vte_blivraison_ligne.`blvlig_complement` AS vte_blivraison_ligne_blvlig_complement,
+     vte_blivraison_ligne.`blvlig_generique` AS vte_blivraison_ligne_blvlig_generique,
+     vte_blivraison_entete.`blv_id` AS vte_blivraison_entete_blv_id,
+     vte_blivraison_entete.`blv_date_creat` AS vte_blivraison_entete_blv_date_creat,
+     vte_blivraison_entete.`blv_date_modif` AS vte_blivraison_entete_blv_date_modif,
+     vte_blivraison_entete.`blv_id_createur` AS vte_blivraison_entete_blv_id_createur,
+     vte_blivraison_entete.`blv_nom_createur` AS vte_blivraison_entete_blv_nom_createur,
+     vte_blivraison_entete.`blv_id_modif` AS vte_blivraison_entete_blv_id_modif,
+     vte_blivraison_entete.`blv_nom_modif` AS vte_blivraison_entete_blv_nom_modif,
+     vte_blivraison_entete.`blv_maj` AS vte_blivraison_entete_blv_maj,
+     vte_blivraison_entete.`blv_date` AS vte_blivraison_entete_blv_date,
+     vte_blivraison_entete.`blv_num` AS vte_blivraison_entete_blv_num,
+     vte_blivraison_entete.`blv_nom_responsable` AS vte_blivraison_entete_blv_nom_responsable,
+     vte_blivraison_entete.`blv_id_responsable` AS vte_blivraison_entete_blv_id_responsable,
+     vte_blivraison_entete.`blv_nom_tiers` AS vte_blivraison_entete_blv_nom_tiers,
+     vte_blivraison_entete.`blv_civil_tiers` AS vte_blivraison_entete_blv_civil_tiers,
+     vte_blivraison_entete.`blv_id_contact` AS vte_blivraison_entete_blv_id_contact,
+     vte_blivraison_entete.`blv_nom_contact` AS vte_blivraison_entete_blv_nom_contact,
+     vte_blivraison_entete.`blv_civil_contact` AS vte_blivraison_entete_blv_civil_contact,
+     vte_blivraison_entete.`blv_serie` AS vte_blivraison_entete_blv_serie,
+     vte_blivraison_entete.`blv_exo_tva` AS vte_blivraison_entete_blv_exo_tva,
+     vte_blivraison_entete.`blv_exo_douane` AS vte_blivraison_entete_blv_exo_douane,
+     vte_blivraison_entete.`blv_cat` AS vte_blivraison_entete_blv_cat,
+     vte_blivraison_entete.`blv_devise` AS vte_blivraison_entete_blv_devise,
+     vte_blivraison_entete.`blv_object` AS vte_blivraison_entete_blv_object,
+     vte_blivraison_entete.`blv_observation` AS vte_blivraison_entete_blv_observation,
+     vte_blivraison_entete.`blv_budget` AS vte_blivraison_entete_blv_budget,
+     vte_blivraison_entete.`blv_tot_ht` AS vte_blivraison_entete_blv_tot_ht,
+     vte_blivraison_entete.`blv_tot_remise` AS vte_blivraison_entete_blv_tot_remise,
+     vte_blivraison_entete.`blv_tot_rabais` AS vte_blivraison_entete_blv_tot_rabais,
+     vte_blivraison_entete.`blv_tot_tva` AS vte_blivraison_entete_blv_tot_tva,
+     vte_blivraison_entete.`blv_tot_tc` AS vte_blivraison_entete_blv_tot_tc,
+     vte_blivraison_entete.`blv_tot_ttc` AS vte_blivraison_entete_blv_tot_ttc,
+     vte_blivraison_entete.`blv_tot_reglement` AS vte_blivraison_entete_blv_tot_reglement,
+     vte_blivraison_entete.`blv_solde` AS vte_blivraison_entete_blv_solde,
+     vte_blivraison_entete.`blv_banque` AS vte_blivraison_entete_blv_banque,
+     vte_blivraison_entete.`blv_type_reg` AS vte_blivraison_entete_blv_type_reg,
+     vte_blivraison_entete.`blv_mode_reg` AS vte_blivraison_entete_blv_mode_reg,
+     vte_blivraison_entete.`blv_nb_jour_reg` AS vte_blivraison_entete_blv_nb_jour_reg,
+     vte_blivraison_entete.`blv_arrondi_reg` AS vte_blivraison_entete_blv_arrondi_reg,
+     vte_blivraison_entete.`blv_condition_reg` AS vte_blivraison_entete_blv_condition_reg,
+     vte_blivraison_entete.`blv_date_eche_reg` AS vte_blivraison_entete_blv_date_eche_reg,
+     vte_blivraison_entete.`blv_journal_reg` AS vte_blivraison_entete_blv_journal_reg,
+     vte_blivraison_entete.`blv_activite` AS vte_blivraison_entete_blv_activite,
+     vte_blivraison_entete.`blv_site` AS vte_blivraison_entete_blv_site,
+     vte_blivraison_entete.`blv_departement` AS vte_blivraison_entete_blv_departement,
+     vte_blivraison_entete.`blv_service` AS vte_blivraison_entete_blv_service,
+     vte_blivraison_entete.`blv_region` AS vte_blivraison_entete_blv_region,
+     vte_blivraison_entete.`blv_secteur` AS vte_blivraison_entete_blv_secteur,
+     vte_blivraison_entete.`blv_pdv` AS vte_blivraison_entete_blv_pdv,
+     vte_blivraison_entete.`blv_anal2` AS vte_blivraison_entete_blv_anal2,
+     vte_blivraison_entete.`blv_anal4` AS vte_blivraison_entete_blv_anal4,
+     vte_blivraison_entete.`blv_info1` AS vte_blivraison_entete_blv_info1,
+     vte_blivraison_entete.`blv_info2` AS vte_blivraison_entete_blv_info2,
+     vte_blivraison_entete.`blv_info3` AS vte_blivraison_entete_blv_info3,
+     vte_blivraison_entete.`blv_info4` AS vte_blivraison_entete_blv_info4,
+     vte_blivraison_entete.`blv_info5` AS vte_blivraison_entete_blv_info5,
+     vte_blivraison_entete.`blv_info6` AS vte_blivraison_entete_blv_info6,
+     vte_blivraison_entete.`blv_info7` AS vte_blivraison_entete_blv_info7,
+     vte_blivraison_entete.`blv_info8` AS vte_blivraison_entete_blv_info8,
+     vte_blivraison_entete.`blv_info9` AS vte_blivraison_entete_blv_info9,
+     vte_blivraison_entete.`blv_info10` AS vte_blivraison_entete_blv_info10,
+     vte_blivraison_entete.`blv_formule1` AS vte_blivraison_entete_blv_formule1,
+     vte_blivraison_entete.`blv_formule2` AS vte_blivraison_entete_blv_formule2,
+     vte_blivraison_entete.`blv_annexe1` AS vte_blivraison_entete_blv_annexe1,
+     vte_blivraison_entete.`blv_annexe2` AS vte_blivraison_entete_blv_annexe2,
+     vte_blivraison_entete.`blv_contrat` AS vte_blivraison_entete_blv_contrat,
+     vte_blivraison_entete.`blv_incoterm` AS vte_blivraison_entete_blv_incoterm,
+     vte_blivraison_entete.`blv_lieu_livraison` AS vte_blivraison_entete_blv_lieu_livraison,
+     vte_blivraison_entete.`blv_date_livraison` AS vte_blivraison_entete_blv_date_livraison,
+     vte_blivraison_entete.`blv_info_livraison` AS vte_blivraison_entete_blv_info_livraison,
+     vte_blivraison_entete.`blv_date_imp` AS vte_blivraison_entete_blv_date_imp,
+     vte_blivraison_entete.`blv_modele_imp` AS vte_blivraison_entete_blv_modele_imp,
+     vte_blivraison_entete.`blv_garde` AS vte_blivraison_entete_blv_garde,
+     vte_blivraison_entete.`blv_etat_val` AS vte_blivraison_entete_blv_etat_val,
+     vte_blivraison_entete.`blv_gele` AS vte_blivraison_entete_blv_gele,
+     vte_blivraison_entete.`blv_etat` AS vte_blivraison_entete_blv_etat,
+     vte_blivraison_entete.`blv_date_validite` AS vte_blivraison_entete_blv_date_validite,
+     vte_blivraison_entete.`blv_date_relance` AS vte_blivraison_entete_blv_date_relance,
+     vte_blivraison_entete.`blv_date_valide` AS vte_blivraison_entete_blv_date_valide,
+     vte_blivraison_entete.`blv_date_transforme` AS vte_blivraison_entete_blv_date_transforme,
+     vte_blivraison_entete.`blv_type_transforme` AS vte_blivraison_entete_blv_type_transforme,
+     vte_blivraison_entete.`blv_date_annule` AS vte_blivraison_entete_blv_date_annule,
+     vte_blivraison_entete.`blv_motif_annule` AS vte_blivraison_entete_blv_motif_annule,
+     vte_blivraison_entete.`blv_date_facture` AS vte_blivraison_entete_blv_date_facture,
+     vte_blivraison_entete.`blv_factor_nom` AS vte_blivraison_entete_blv_factor_nom,
+     vte_blivraison_entete.`blv_factor_id` AS vte_blivraison_entete_blv_factor_id,
+     vte_blivraison_entete.`blv_factor_etat` AS vte_blivraison_entete_blv_factor_etat,
+     vte_blivraison_entete.`exevte_id` AS vte_blivraison_entete_exevte_id,
+     vte_blivraison_entete.`tie_id` AS vte_blivraison_entete_tie_id,
+     vte_blivraison_entete.`usr_id` AS vte_blivraison_entete_usr_id,
+     vte_blivraison_entete.`blv_nom_equipe` AS vte_blivraison_entete_blv_nom_equipe,
+     vte_blivraison_entete.`blv_id_equipe` AS vte_blivraison_entete_blv_id_equipe,
+     vte_blivraison_entete.`blv_nom_commercial` AS vte_blivraison_entete_blv_nom_commercial,
+     vte_blivraison_entete.`blv_id_commercial` AS vte_blivraison_entete_blv_id_commercial,
+     vte_blivraison_entete.`blv_taux_tc` AS vte_blivraison_entete_blv_taux_tc,
+     vte_blivraison_entete.`blv_livree_etat` AS vte_blivraison_entete_blv_livree_etat,
+     vte_blivraison_entete.`blv_divers_tiers` AS vte_blivraison_entete_blv_divers_tiers,
+     vte_blivraison_entete.`blv_divers_nom` AS vte_blivraison_entete_blv_divers_nom,
+     vte_blivraison_entete.`blv_divers_adresse` AS vte_blivraison_entete_blv_divers_adresse,
+     vte_blivraison_entete.`blv_divers_ville` AS vte_blivraison_entete_blv_divers_ville,
+     vte_blivraison_entete.`blv_divers_tel` AS vte_blivraison_entete_blv_divers_tel,
+     vte_blivraison_entete.`blv_divers_mail` AS vte_blivraison_entete_blv_divers_mail,
+     vte_blivraison_entete.`blv_memo_num_facture` AS vte_blivraison_entete_blv_memo_num_facture,
+     vte_blivraison_entete.`blvo_num_facture` AS vte_blivraison_entete_blvo_num_facture
+FROM
+     `vte_blivraison_entete` vte_blivraison_entete INNER JOIN `vte_blivraison_ligne` vte_blivraison_ligne ON vte_blivraison_entete.`blv_id` = vte_blivraison_ligne.`blv_id`
+WHERE
+    $P!{requete}]]>
+	</queryString>
+	<field name="vte_blivraison_ligne_blvlig_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_id_dvs" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_id_bcm" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_code" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_famille" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_libelle" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_reference" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_taxe" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_taux_taxe" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_unite" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_condition" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_description" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_depot" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_depot_cmd" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_qte_stock" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_stock" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_echelle" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_qte" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_long" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_larg" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_haut" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_diam" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_nb" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_poidsNet" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_poidsBrut" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_volume" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_qte_util" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_qte_util_stock" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_lot" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_num_serie" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_devise" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_pu" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_taux_remise" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_rabais" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_pu_rem" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_pu_ttc" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_pu_rem_ttc" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_pt" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_tva" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_tc" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_ttc" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_pump" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blv_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_ordre" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_complement" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_ligne_blvlig_generique" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_date_creat" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_date_modif" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_id_createur" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_nom_createur" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_id_modif" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_nom_modif" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_maj" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_date" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_num" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_nom_responsable" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_id_responsable" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_nom_tiers" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_civil_tiers" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_id_contact" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_nom_contact" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_civil_contact" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_serie" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_exo_tva" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_exo_douane" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_cat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_devise" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_object" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_observation" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_budget" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_tot_ht" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_tot_remise" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_tot_rabais" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_tot_tva" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_tot_tc" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_tot_ttc" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_tot_reglement" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_solde" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_banque" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_type_reg" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_mode_reg" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_nb_jour_reg" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_arrondi_reg" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_condition_reg" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_date_eche_reg" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_journal_reg" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_activite" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_site" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_departement" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_service" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_region" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_secteur" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_pdv" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_anal2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_anal4" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_info1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_info2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_info3" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_info4" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_info5" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_info6" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_info7" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_info8" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_info9" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_info10" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_formule1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_formule2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_annexe1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_annexe2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_contrat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_incoterm" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_lieu_livraison" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_date_livraison" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_info_livraison" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_date_imp" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_modele_imp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_garde" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_etat_val" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_gele" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_etat" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_date_validite" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_date_relance" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_date_valide" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_date_transforme" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_type_transforme" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_date_annule" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_motif_annule" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_date_facture" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_factor_nom" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_factor_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_factor_etat" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_exevte_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_tie_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_usr_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_nom_equipe" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_id_equipe" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_nom_commercial" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_id_commercial" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_taux_tc" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_livree_etat" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_divers_tiers" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_divers_nom" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_divers_adresse" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_divers_ville" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_divers_tel" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_divers_mail" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blv_memo_num_facture" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vte_blivraison_entete_blvo_num_facture" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<sortField name="vte_blivraison_entete_blv_nom_responsable"/>
+	<sortField name="vte_blivraison_ligne_blvlig_code"/>
+	<sortField name="vte_blivraison_entete_blv_num"/>
+	<variable name="totauxHT" class="java.lang.Double" resetType="Group" resetGroup="prod" calculation="Sum">
+		<variableExpression><![CDATA[$F{vte_blivraison_ligne_blvlig_pt}]]></variableExpression>
+	</variable>
+	<variable name="totauxResponsable" class="java.lang.Double" resetType="Group" resetGroup="responsable" calculation="Sum">
+		<variableExpression><![CDATA[$F{vte_blivraison_ligne_blvlig_pt}]]></variableExpression>
+	</variable>
+	<variable name="totalProd" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[$F{vte_blivraison_ligne_blvlig_pt}]]></variableExpression>
+	</variable>
+	<variable name="totQte" class="java.lang.Float" resetType="Group" resetGroup="prod" calculation="Sum">
+		<variableExpression><![CDATA[$F{vte_blivraison_ligne_blvlig_qte}]]></variableExpression>
+	</variable>
+	<variable name="totQteResponsable" class="java.lang.Float" resetType="Group" resetGroup="responsable" calculation="Sum">
+		<variableExpression><![CDATA[$F{vte_blivraison_ligne_blvlig_qte}]]></variableExpression>
+	</variable>
+	<variable name="qteGene" class="java.lang.Float" calculation="Sum">
+		<variableExpression><![CDATA[$F{vte_blivraison_ligne_blvlig_qte}]]></variableExpression>
+	</variable>
+	<group name="responsable">
+		<groupExpression><![CDATA[$F{vte_blivraison_entete_blv_nom_responsable}]]></groupExpression>
+		<groupFooter>
+			<band height="22">
+				<textField isStretchWithOverflow="true" evaluationTime="Group" evaluationGroup="prod" isBlankWhenNull="true">
+					<reportElement x="221" y="6" width="161" height="11"/>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{vte_blivraison_entete_blv_nom_responsable}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="10" y="0" width="1" height="22"/>
+				</line>
+				<line>
+					<reportElement x="130" y="0" width="1" height="22"/>
+				</line>
+				<line>
+					<reportElement x="213" y="0" width="1" height="22"/>
+				</line>
+				<line>
+					<reportElement x="390" y="0" width="1" height="22"/>
+				</line>
+				<line>
+					<reportElement x="442" y="0" width="1" height="22"/>
+				</line>
+				<line>
+					<reportElement x="542" y="0" width="1" height="22"/>
+				</line>
+				<textField evaluationTime="Group" evaluationGroup="responsable" isBlankWhenNull="true">
+					<reportElement style="ST1" x="397" y="6" width="39" height="11">
+						<printWhenExpression><![CDATA[$V{totQteResponsable}!=0]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{totQteResponsable}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Group" evaluationGroup="responsable" isBlankWhenNull="true">
+					<reportElement style="ST1" x="448" y="6" width="82" height="11">
+						<printWhenExpression><![CDATA[$V{totauxResponsable}!=0]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{totauxResponsable}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="214" y="20" width="329" height="1"/>
+				</line>
+				<line>
+					<reportElement x="214" y="2" width="329" height="1"/>
+				</line>
+			</band>
+		</groupFooter>
+	</group>
+	<group name="prod">
+		<groupExpression><![CDATA[$F{vte_blivraison_ligne_blvlig_code}]]></groupExpression>
+		<groupFooter>
+			<band height="13">
+				<textField evaluationTime="Group" evaluationGroup="prod" isBlankWhenNull="true">
+					<reportElement style="ST1" x="448" y="1" width="82" height="11">
+						<printWhenExpression><![CDATA[$V{totauxHT}!=0]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{totauxHT}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="542" y="0" width="1" height="13"/>
+				</line>
+				<line>
+					<reportElement x="442" y="0" width="1" height="13"/>
+				</line>
+				<textField evaluationTime="Group" evaluationGroup="prod" isBlankWhenNull="true">
+					<reportElement style="ST1" x="397" y="1" width="39" height="11">
+						<printWhenExpression><![CDATA[$V{totQte}!=0]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="DejaVu Sans" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{totQte}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="390" y="0" width="1" height="13"/>
+				</line>
+				<textField evaluationTime="Group" evaluationGroup="prod" isBlankWhenNull="true">
+					<reportElement x="221" y="1" width="161" height="11"/>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{vte_blivraison_ligne_blvlig_libelle}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Group" evaluationGroup="prod" isBlankWhenNull="true">
+					<reportElement x="138" y="1" width="73" height="11"/>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{vte_blivraison_ligne_blvlig_code}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="213" y="0" width="1" height="13"/>
+				</line>
+				<line>
+					<reportElement x="130" y="0" width="1" height="13"/>
+				</line>
+				<textField isStretchWithOverflow="true" evaluationTime="Group" evaluationGroup="prod" isBlankWhenNull="true">
+					<reportElement x="20" y="1" width="99" height="11"/>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{vte_blivraison_entete_blv_nom_responsable}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="10" y="0" width="1" height="13"/>
+				</line>
+			</band>
+		</groupFooter>
+	</group>
+	<title>
+		<band height="116" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="36" forecolor="#000000" backcolor="#FFFFFF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="37" width="555" height="51" forecolor="#000000" backcolor="#FFFFFF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="87" width="555" height="27" forecolor="#992F2A" backcolor="#FFFFFF"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="18" y="96" width="55" height="11" forecolor="#000000"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[© B&W 2010 -]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="19" y="65" width="513" height="20" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{societe}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="73" y="96" width="28" height="11" forecolor="#000000"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{version}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="19" y="41" width="514" height="20" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{filtre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="19" y="8" width="514" height="24" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="18"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{entete}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy HH.mm.ss">
+				<reportElement x="106" y="96" width="151" height="11" forecolor="#000000"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="339" y="96" width="166" height="11" forecolor="#000000"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Page "+$V{PAGE_NUMBER}+" / "]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="507" y="96" width="23" height="11" forecolor="#000000"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="59" splitType="Stretch">
+			<printWhenExpression><![CDATA[$V{PAGE_NUMBER}>=2]]></printWhenExpression>
+			<rectangle>
+				<reportElement x="0" y="2" width="555" height="32" forecolor="#000000" backcolor="#FFFFFF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="34" width="555" height="23" forecolor="#992F2A" backcolor="#FFFFFF"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="18" y="42" width="55" height="11" forecolor="#000000"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<text><![CDATA[© B&W 2010 - ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="235" y="11" width="294" height="15" forecolor="#000000"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{societe}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="73" y="42" width="28" height="11" forecolor="#000000"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{version}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="16" y="11" width="393" height="15" forecolor="#000000"/>
+				<textElement>
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{entete}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy HH.mm.ss">
+				<reportElement x="106" y="42" width="148" height="11" forecolor="#000000"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="507" y="41" width="25" height="11" forecolor="#000000"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="349" y="41" width="157" height="11" forecolor="#000000"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Page "+$V{PAGE_NUMBER}+" / "]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="72" splitType="Stretch">
+			<staticText>
+				<reportElement x="135" y="39" width="75" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Code produit]]></text>
+			</staticText>
+			<line>
+				<reportElement x="10" y="27" width="1" height="45"/>
+			</line>
+			<line>
+				<reportElement x="130" y="27" width="1" height="45"/>
+			</line>
+			<line>
+				<reportElement x="442" y="27" width="1" height="45"/>
+			</line>
+			<line>
+				<reportElement x="542" y="27" width="1" height="45"/>
+			</line>
+			<line>
+				<reportElement x="10" y="27" width="533" height="1"/>
+			</line>
+			<line>
+				<reportElement x="10" y="58" width="533" height="1"/>
+			</line>
+			<line>
+				<reportElement x="390" y="27" width="1" height="45"/>
+			</line>
+			<line>
+				<reportElement x="213" y="27" width="1" height="45"/>
+			</line>
+			<staticText>
+				<reportElement x="221" y="39" width="161" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Libellé produit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="397" y="39" width="40" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Qte]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="447" y="39" width="89" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total H.T.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="17" y="39" width="100" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Agent]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<columnFooter>
+		<band height="51" splitType="Stretch">
+			<line>
+				<reportElement x="442" y="0" width="1" height="36"/>
+			</line>
+			<line>
+				<reportElement x="10" y="10" width="533" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="340" y="18" width="35" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Totaux]]></text>
+			</staticText>
+			<line>
+				<reportElement x="390" y="36" width="153" height="1"/>
+			</line>
+			<line>
+				<reportElement x="10" y="0" width="1" height="10"/>
+			</line>
+			<line>
+				<reportElement x="542" y="0" width="1" height="36"/>
+			</line>
+			<line>
+				<reportElement x="130" y="0" width="1" height="10"/>
+			</line>
+			<textField evaluationTime="Page" isBlankWhenNull="true">
+				<reportElement style="ST1" x="448" y="17" width="82" height="14">
+					<printWhenExpression><![CDATA[$V{totalProd}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{totalProd}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="213" y="0" width="1" height="10"/>
+			</line>
+			<line>
+				<reportElement x="390" y="0" width="1" height="37"/>
+			</line>
+			<textField evaluationTime="Page" isBlankWhenNull="true">
+				<reportElement style="ST1" x="397" y="17" width="39" height="14">
+					<printWhenExpression><![CDATA[$V{qteGene}!=0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{qteGene}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="26">
+			<rectangle>
+				<reportElement x="0" y="1" width="555" height="24" forecolor="#992F2A" backcolor="#FFFFFF"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="19" y="2" width="160" height="12" forecolor="#000000"/>
+				<textElement>
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Created by Bagwell & Watson]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="13" width="160" height="12" forecolor="#000000"/>
+				<textElement>
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.bagwell-watson.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="198" y="2" width="160" height="12" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Writen by Phoenix SaaS ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="379" y="2" width="160" height="12" forecolor="#000000"/>
+				<textElement textAlignment="Right">
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Support by Planet-e-pegase ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="379" y="13" width="160" height="12" forecolor="#000000"/>
+				<textElement textAlignment="Right">
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.planet-e-pegase.biz ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="198" y="13" width="160" height="12" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[http://www.phoenix-saas.com]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

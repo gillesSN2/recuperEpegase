@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : NaturesFamillesProduitsMedical.xml
+    Created on : 30 juillet 2010, 9:23
+    Author     : Samb
+    Description:
+        Purpose of the document follows.
+-->
+
+<naturesFamillesProduits>
+
+	<type>
+		<code>1101</code>
+		<etat>0</etat>
+		<nom_FR>Séjour</nom_FR>
+		<nom_UK></nom_UK>
+		<nom_SP></nom_SP>
+	</type>
+
+	<type>
+		<code>1104</code>
+		<etat>0</etat>
+		<nom_FR>Actes et Examens</nom_FR>
+		<nom_UK></nom_UK>
+		<nom_SP></nom_SP>
+	</type>
+
+	<type>
+		<code>1105</code>
+		<etat>0</etat>
+		<nom_FR>Pharmacie</nom_FR>
+		<nom_UK></nom_UK>
+		<nom_SP></nom_SP>
+	</type>
+
+	<type>
+		<code>1106</code>
+		<etat>0</etat>
+		<nom_FR>Laboratoire</nom_FR>
+		<nom_UK></nom_UK>
+		<nom_SP></nom_SP>
+	</type>
+
+	<type>
+		<code>1107</code>
+		<etat>0</etat>
+		<nom_FR>Autres prestations</nom_FR>
+		<nom_UK></nom_UK>
+		<nom_SP></nom_SP>
+	</type>
+</naturesFamillesProduits>

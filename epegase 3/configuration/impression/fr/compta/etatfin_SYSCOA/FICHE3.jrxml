@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Fiche3" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" whenResourceMissingType="Empty">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="808"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["/usr/local/SUNWappserver/domains/domain1/config/epegase/web/configuration/impression/fr/compta/etatfin_SYSCOA/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="societe" class="java.lang.String"/>
+	<parameter name="requete" class="java.lang.String"/>
+	<parameter name="adresse" class="java.lang.String"/>
+	<parameter name="sigle" class="java.lang.String"/>
+	<parameter name="identification_1" class="java.lang.String"/>
+	<parameter name="identification_2" class="java.lang.String"/>
+	<parameter name="identification_3" class="java.lang.String"/>
+	<parameter name="identification_4" class="java.lang.String"/>
+	<parameter name="identification_5" class="java.lang.String"/>
+	<parameter name="identification_6" class="java.lang.String"/>
+	<parameter name="identification_7" class="java.lang.String"/>
+	<parameter name="exercice" class="java.lang.Long"/>
+	<parameter name="page_init" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="etat_init" class="java.lang.Integer"/>
+	<parameter name="dateDeb" class="java.util.Date"/>
+	<parameter name="dateFin" class="java.util.Date"/>
+	<parameter name="telephone_1" class="java.lang.String"/>
+	<parameter name="fax" class="java.lang.String"/>
+	<parameter name="boite_postale" class="java.lang.String"/>
+	<parameter name="ville" class="java.lang.String"/>
+	<parameter name="forme_juridique" class="java.lang.String"/>
+	<parameter name="code_pays" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT
+     cpt_exercices_comptable.`execpt_id` AS cpt_exercices_comptable_execpt_id,
+     cpt_exercices_comptable.`execpt_date_creat` AS cpt_exercices_comptable_execpt_date_creat,
+     cpt_exercices_comptable.`execpt_date_modif` AS cpt_exercices_comptable_execpt_date_modif,
+     cpt_exercices_comptable.`execpt_date_cloture` AS cpt_exercices_comptable_execpt_date_cloture,
+     cpt_exercices_comptable.`execpt_user_creat` AS cpt_exercices_comptable_execpt_user_creat,
+     cpt_exercices_comptable.`execpt_user_cloture` AS cpt_exercices_comptable_execpt_user_cloture,
+     cpt_exercices_comptable.`execpt_user_modif` AS cpt_exercices_comptable_execpt_user_modif,
+     cpt_exercices_comptable.`execpt_date_debut` AS cpt_exercices_comptable_execpt_date_debut,
+     cpt_exercices_comptable.`execpt_date_fin` AS cpt_exercices_comptable_execpt_date_fin,
+     cpt_exercices_comptable.`execpt_etat` AS cpt_exercices_comptable_execpt_etat,
+     cpt_exercices_comptable.`execpt_et_date_debut` AS cpt_exercices_comptable_execpt_et_date_debut,
+     cpt_exercices_comptable.`execpt_et_date_fin` AS cpt_exercices_comptable_execpt_et_date_fin,
+     cpt_exercices_comptable.`execpt_jrx_sit` AS cpt_exercices_comptable_execpt_jrx_sit,
+     cpt_exercices_comptable.`execpt_jrx_rsv` AS cpt_exercices_comptable_execpt_jrx_rsv,
+     cpt_exercices_comptable.`execpt_date_creation_entreprise` AS cpt_exercices_comptable_execpt_date_creation_entreprise,
+     cpt_exercices_comptable.`execpt_annee_activite_pays` AS cpt_exercices_comptable_execpt_annee_activite_pays,
+     cpt_exercices_comptable.`execpt_nb_etablissement_pays` AS cpt_exercices_comptable_execpt_nb_etablissement_pays,
+     cpt_exercices_comptable.`execpt_nb_etablissement_hors` AS cpt_exercices_comptable_execpt_nb_etablissement_hors,
+     cpt_exercices_comptable.`execpt_date_arret_compte` AS cpt_exercices_comptable_execpt_date_arret_compte,
+     cpt_exercices_comptable.`execpt_code_activite` AS cpt_exercices_comptable_execpt_code_activite,
+     cpt_exercices_comptable.`execpt_lib_activite` AS cpt_exercices_comptable_execpt_lib_activite,
+     cpt_exercices_comptable.`execpt_agrement` AS cpt_exercices_comptable_execpt_agrement,
+     cpt_exercices_comptable.`execpt_date_agrement` AS cpt_exercices_comptable_execpt_date_agrement,
+     cpt_exercices_comptable.`execpt_duree_agrement` AS cpt_exercices_comptable_execpt_duree_agrement,
+     cpt_exercices_comptable.`execpt_convention` AS cpt_exercices_comptable_execpt_convention,
+     cpt_exercices_comptable.`execpt_type_entreprise` AS cpt_exercices_comptable_execpt_type_entreprise,
+     cpt_exercices_comptable.`execpt_regime` AS cpt_exercices_comptable_execpt_regime,
+     cpt_exercices_comptable.`execpt_centre_impot` AS cpt_exercices_comptable_execpt_centre_impot,
+     cpt_exercices_comptable.`execpt_inscription` AS cpt_exercices_comptable_execpt_inscription,
+     cpt_exercices_comptable.`execpt_analytique` AS cpt_exercices_comptable_execpt_analytique,
+     cpt_exercices_comptable.`execpt_nom_comptable` AS cpt_exercices_comptable_execpt_nom_comptable,
+     cpt_exercices_comptable.`execpt_adresse_comptable` AS cpt_exercices_comptable_execpt_adresse_comptable,
+     cpt_exercices_comptable.`execpt_ville_comptable` AS cpt_exercices_comptable_execpt_ville_comptable,
+     cpt_exercices_comptable.`execpt_telephone_comptable` AS cpt_exercices_comptable_execpt_telephone_comptable,
+     cpt_exercices_comptable.`execpt_nom_contact` AS cpt_exercices_comptable_execpt_nom_contact,
+     cpt_exercices_comptable.`execpt_adresse_contact` AS cpt_exercices_comptable_execpt_adresse_contact,
+     cpt_exercices_comptable.`execpt_ville_contact` AS cpt_exercices_comptable_execpt_ville_contact,
+     cpt_exercices_comptable.`execpt_telephone_contact` AS cpt_exercices_comptable_execpt_telephone_contact,
+     cpt_exercices_comptable.`execpt_nom_cabinet` AS cpt_exercices_comptable_execpt_nom_cabinet,
+     cpt_exercices_comptable.`execpt_adresse_cabinet` AS cpt_exercices_comptable_execpt_adresse_cabinet,
+     cpt_exercices_comptable.`execpt_ville_cabinet` AS cpt_exercices_comptable_execpt_ville_cabinet,
+     cpt_exercices_comptable.`execpt_telephone_cabinet` AS cpt_exercices_comptable_execpt_telephone_cabinet,
+     cpt_exercices_comptable.`execpt_nom_commissaire` AS cpt_exercices_comptable_execpt_nom_commissaire,
+     cpt_exercices_comptable.`execpt_adresse_commissaire` AS cpt_exercices_comptable_execpt_adresse_commissaire,
+     cpt_exercices_comptable.`execpt_ville_commissaire` AS cpt_exercices_comptable_execpt_ville_commissaire,
+     cpt_exercices_comptable.`execpt_telephone_commissaire` AS cpt_exercices_comptable_execpt_telephone_commissaire,
+     cpt_exercices_comptable.`execpt_nom_signataire` AS cpt_exercices_comptable_execpt_nom_signataire,
+     cpt_exercices_comptable.`execpt_qua_signataire` AS cpt_exercices_comptable_execpt_qua_signataire,
+     cpt_exercices_comptable.`execpt_date_clot_prec` AS cpt_exercices_comptable_execpt_date_clot_prec,
+     cpt_exercices_comptable.`execpt_duree_prec` AS cpt_exercices_comptable_execpt_duree_prec,
+     cpt_exercices_comptable.`execpt_qua_contact` AS cpt_exercices_comptable_execpt_qua_contact,
+     cpt_exercices_comptable.`execpt_ctrl_publique` AS cpt_exercices_comptable_execpt_ctrl_publique,
+     cpt_exercices_comptable.`execpt_ctrl_prive_loc` AS cpt_exercices_comptable_execpt_ctrl_prive_loc,
+     cpt_exercices_comptable.`execpt_ctrl_prive_etr` AS cpt_exercices_comptable_execpt_ctrl_prive_etr,
+     cpt_exercices_comptable.`execpt_cap_production` AS cpt_exercices_comptable_execpt_cap_production,
+     cpt_exercices_comptable.`execpt_salarie_comptable` AS cpt_exercices_comptable_execpt_salarie_comptable,
+     cpt_exercices_comptable.`execpt_efcna` AS cpt_exercices_comptable_execpt_efcna,
+     cpt_exercices_comptable.`execpt_efcr` AS cpt_exercices_comptable_execpt_efcr,
+     cpt_exercices_comptable.`execpt_efcar` AS cpt_exercices_comptable_execpt_efcar,
+     cpt_exercices_comptable.`execpt_efasr` AS cpt_exercices_comptable_execpt_efasr,
+     cpt_exercices_comptable.`execpt_efana` AS cpt_exercices_comptable_execpt_efana,
+     cpt_exercices_comptable.`execpt_efanap` AS cpt_exercices_comptable_execpt_efanap,
+     cpt_exercices_comptable.`execpt_efaap` AS cpt_exercices_comptable_execpt_efaap
+FROM
+     `cpt_exercices_comptable` cpt_exercices_comptable
+WHERE
+     execpt_id = $P{exercice}]]>
+	</queryString>
+	<field name="cpt_exercices_comptable_execpt_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_date_creat" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_date_modif" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_date_cloture" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_user_creat" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_user_cloture" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_user_modif" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_date_debut" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_date_fin" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_etat" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_et_date_debut" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_et_date_fin" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_jrx_sit" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_jrx_rsv" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_date_creation_entreprise" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_annee_activite_pays" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_nb_etablissement_pays" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_nb_etablissement_hors" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_date_arret_compte" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_code_activite" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_lib_activite" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_agrement" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_date_agrement" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_duree_agrement" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_convention" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_type_entreprise" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_regime" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_centre_impot" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_inscription" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_analytique" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_nom_comptable" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_adresse_comptable" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_ville_comptable" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_telephone_comptable" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_nom_contact" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_adresse_contact" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_ville_contact" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_telephone_contact" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_nom_cabinet" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_adresse_cabinet" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_ville_cabinet" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_telephone_cabinet" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_nom_commissaire" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_adresse_commissaire" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_ville_commissaire" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_telephone_commissaire" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_nom_signataire" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_qua_signataire" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_date_clot_prec" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_duree_prec" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_qua_contact" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_ctrl_publique" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_ctrl_prive_loc" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_ctrl_prive_etr" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_cap_production" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_salarie_comptable" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_efcna" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_efcr" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_efcar" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_efasr" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_efana" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_efanap" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpt_exercices_comptable_execpt_efaap" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="page_en_cours" class="java.lang.Integer">
+		<variableExpression><![CDATA[$P{page_init}+$V{PAGE_NUMBER}]]></variableExpression>
+		<initialValueExpression><![CDATA[$P{page_init}]]></initialValueExpression>
+	</variable>
+	<variable name="etat_en_cours" class="java.lang.Integer">
+		<variableExpression><![CDATA[$P{etat_init}+$V{PAGE_NUMBER}]]></variableExpression>
+		<initialValueExpression><![CDATA[$P{etat_init}]]></initialValueExpression>
+	</variable>
+	<variable name="duree" class="java.lang.Integer">
+		<variableExpression><![CDATA[$P{dateFin}.getMonth()-$P{dateDeb}.getMonth()+1]]></variableExpression>
+		<initialValueExpression><![CDATA[$P{dateFin}.getMonth()-$P{dateDeb}.getMonth()+1]]></initialValueExpression>
+	</variable>
+	<variable name="f_jur" class="java.lang.String">
+		<variableExpression><![CDATA[( $F{cpt_exercices_comptable_execpt_agrement}.isEmpty() ?  "0" : "1" ) + ( $P{forme_juridique}.equalsIgnoreCase("SA PUBLIQUE") ?  "0"
+    :  ( $P{forme_juridique}.equalsIgnoreCase("SA") ?  "1"
+        :  ( $P{forme_juridique}.equalsIgnoreCase("SARL") ?  "2"
+            :  ( $P{forme_juridique}.equalsIgnoreCase("SCS") ?  "3"
+                 :   ( $P{forme_juridique}.equalsIgnoreCase("SNC") ?  "4"
+                      :  ( $P{forme_juridique}.equalsIgnoreCase("SP") ?  "5"
+                           :   ( $P{forme_juridique}.equalsIgnoreCase("GIE") ?  "6"
+                                 : ( $P{forme_juridique}.equalsIgnoreCase("ASSOCIATION") ?   "7"
+                                      :  "8" ))))))))]]></variableExpression>
+	</variable>
+	<variable name="pays_social" class="java.lang.String">
+		<variableExpression><![CDATA[( $P{code_pays}.equalsIgnoreCase("0029") ? "01" :
+    ( $P{code_pays}.equalsIgnoreCase("0038") ? "02" :
+        ( $P{code_pays}.equalsIgnoreCase("0056") ? "03" :
+            ( $P{code_pays}.equalsIgnoreCase("0090") ? "04" :
+                ( $P{code_pays}.equalsIgnoreCase("0138") ? "05" :
+                    ( $P{code_pays}.equalsIgnoreCase("0156") ? "06" :
+                         ( $P{code_pays}.equalsIgnoreCase("0202") ? "07" :
+                             ( $P{code_pays}.equalsIgnoreCase("0222") ? "08" :
+                                 ( $P{code_pays}.equalsIgnoreCase("0076") ? "23" :
+                                     ( $P{code_pays}.equalsIgnoreCase("0070") ? "40" :
+                                         ( $P{code_pays}.equalsIgnoreCase("0042") ? "41" :
+
+ "99" )))))))))))]]></variableExpression>
+	</variable>
+	<variable name="d1" class="java.lang.String"/>
+	<variable name="d2" class="java.lang.String"/>
+	<variable name="d3" class="java.lang.String"/>
+	<variable name="d4" class="java.lang.String"/>
+	<variable name="d5" class="java.lang.String"/>
+	<variable name="d6" class="java.lang.String"/>
+	<variable name="d7" class="java.lang.String"/>
+	<variable name="d8" class="java.lang.String"/>
+	<variable name="c1" class="java.lang.String"/>
+	<variable name="c2" class="java.lang.String"/>
+	<variable name="c3" class="java.lang.String"/>
+	<variable name="c4" class="java.lang.String"/>
+	<variable name="c5" class="java.lang.String"/>
+	<variable name="c6" class="java.lang.String"/>
+	<variable name="c7" class="java.lang.String"/>
+	<variable name="c8" class="java.lang.String"/>
+	<variable name="m1" class="java.lang.Double"/>
+	<variable name="m2" class="java.lang.Double"/>
+	<variable name="m3" class="java.lang.Double"/>
+	<variable name="m4" class="java.lang.Double"/>
+	<variable name="m5" class="java.lang.Double"/>
+	<variable name="m6" class="java.lang.Double"/>
+	<variable name="m7" class="java.lang.Double"/>
+	<variable name="m8" class="java.lang.Double"/>
+	<variable name="m9" class="java.lang.Double"/>
+	<variable name="p1" class="java.lang.Float"/>
+	<variable name="p2" class="java.lang.Float"/>
+	<variable name="p3" class="java.lang.Float"/>
+	<variable name="p4" class="java.lang.Float"/>
+	<variable name="p5" class="java.lang.Float"/>
+	<variable name="p6" class="java.lang.Float"/>
+	<variable name="p7" class="java.lang.Float"/>
+	<variable name="p8" class="java.lang.Float"/>
+	<variable name="p9" class="java.lang.Float"/>
+	<variable name="tot1" class="java.lang.Double">
+		<variableExpression><![CDATA[$V{m1}+$V{m2}+$V{m3}+$V{m4}+$V{m5}+$V{m6}+$V{m7}+$V{m8}+$V{m9}]]></variableExpression>
+	</variable>
+	<variable name="tot2" class="java.lang.Float">
+		<variableExpression><![CDATA[$V{p1}+$V{p2}+$V{p3}+$V{p4}+$V{p5}+$V{p6}+$V{p7}+$V{p8}+$V{p9}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="119" splitType="Prevent">
+			<staticText>
+				<reportElement x="9" y="95" width="115" height="11"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[N° identification fiscale :]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="131" y="95" width="89" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{identification_1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="417" y="95" width="91" height="11"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Durée (en mois) :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="238" y="95" width="85" height="11"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Exercice clos le :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="79" width="50" height="11"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Adresse :]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="56" y="80" width="488" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{adresse}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="49" width="206" height="11"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[DENOMINATION SOCIALE DE L'ENTREPRISE :]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="217" y="50" width="325" height="27"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{societe}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="83" y="64" width="133" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{sigle}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="9" y="63" width="67" height="11"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Sigle usuel :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="481" y="10" width="57" height="15"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[FIRD]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement mode="Transparent" x="470" y="4" width="75" height="39"/>
+			</rectangle>
+			<textField>
+				<reportElement x="219" y="4" width="100" height="14"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["- "+$V{etat_en_cours}+" -"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Transparent" x="481" y="28" width="58" height="10" forecolor="#0D0909"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[PAGE 3/3]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="327" y="95" width="78" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$P{dateFin}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="512" y="95" width="32" height="11"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Integer"><![CDATA[$V{duree}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="508" y="108" width="34" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="324" y="108" width="85" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="125" y="108" width="95" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="50" y="92" width="492" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="80" y="76" width="136" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="158">
+			<subreport>
+				<reportElement x="3" y="4" width="550" height="150"/>
+				<subreportParameter name="fax"/>
+				<subreportParameter name="adresse"/>
+				<subreportParameter name="requete"/>
+				<subreportParameter name="dateFin"/>
+				<subreportParameter name="ville"/>
+				<subreportParameter name="page_init"/>
+				<subreportParameter name="SUBREPORT_DIR"/>
+				<subreportParameter name="telephone_1"/>
+				<subreportParameter name="etat_init"/>
+				<subreportParameter name="boite_postale"/>
+				<subreportParameter name="identification_2"/>
+				<subreportParameter name="sigle"/>
+				<subreportParameter name="exercice">
+					<subreportParameterExpression><![CDATA[$P{exercice}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="dateDeb"/>
+				<subreportParameter name="identification_1"/>
+				<subreportParameter name="societe"/>
+				<subreportParameter name="identification_4"/>
+				<subreportParameter name="identification_3"/>
+				<subreportParameter name="identification_6"/>
+				<subreportParameter name="identification_5"/>
+				<subreportParameter name="identification_7"/>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression class="java.lang.String"><![CDATA[$P{SUBREPORT_DIR} + "FICHE3_1.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="207">
+			<subreport>
+				<reportElement x="4" y="3" width="550" height="194"/>
+				<subreportParameter name="fax"/>
+				<subreportParameter name="adresse"/>
+				<subreportParameter name="requete"/>
+				<subreportParameter name="dateFin"/>
+				<subreportParameter name="ville"/>
+				<subreportParameter name="page_init"/>
+				<subreportParameter name="telephone_1"/>
+				<subreportParameter name="SUBREPORT_DIR"/>
+				<subreportParameter name="etat_init"/>
+				<subreportParameter name="boite_postale"/>
+				<subreportParameter name="sigle"/>
+				<subreportParameter name="identification_2"/>
+				<subreportParameter name="exercice">
+					<subreportParameterExpression><![CDATA[$P{exercice}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="identification_1"/>
+				<subreportParameter name="dateDeb"/>
+				<subreportParameter name="identification_4"/>
+				<subreportParameter name="societe"/>
+				<subreportParameter name="identification_3"/>
+				<subreportParameter name="identification_6"/>
+				<subreportParameter name="identification_5"/>
+				<subreportParameter name="identification_7"/>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression class="java.lang.String"><![CDATA[$P{SUBREPORT_DIR} + "FICHE3_2.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="109">
+			<subreport>
+				<reportElement x="4" y="4" width="550" height="100"/>
+				<subreportParameter name="fax"/>
+				<subreportParameter name="adresse"/>
+				<subreportParameter name="requete"/>
+				<subreportParameter name="dateFin"/>
+				<subreportParameter name="ville"/>
+				<subreportParameter name="page_init"/>
+				<subreportParameter name="SUBREPORT_DIR"/>
+				<subreportParameter name="telephone_1"/>
+				<subreportParameter name="etat_init"/>
+				<subreportParameter name="boite_postale"/>
+				<subreportParameter name="identification_2"/>
+				<subreportParameter name="sigle"/>
+				<subreportParameter name="exercice">
+					<subreportParameterExpression><![CDATA[$P{exercice}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="dateDeb"/>
+				<subreportParameter name="identification_1"/>
+				<subreportParameter name="societe"/>
+				<subreportParameter name="identification_4"/>
+				<subreportParameter name="identification_3"/>
+				<subreportParameter name="identification_6"/>
+				<subreportParameter name="identification_5"/>
+				<subreportParameter name="identification_7"/>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression class="java.lang.String"><![CDATA[$P{SUBREPORT_DIR} + "FICHE3_3.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="108">
+			<subreport>
+				<reportElement x="4" y="5" width="550" height="100"/>
+				<subreportParameter name="fax"/>
+				<subreportParameter name="adresse"/>
+				<subreportParameter name="requete"/>
+				<subreportParameter name="dateFin"/>
+				<subreportParameter name="ville"/>
+				<subreportParameter name="page_init"/>
+				<subreportParameter name="telephone_1"/>
+				<subreportParameter name="SUBREPORT_DIR"/>
+				<subreportParameter name="etat_init"/>
+				<subreportParameter name="boite_postale"/>
+				<subreportParameter name="sigle"/>
+				<subreportParameter name="identification_2"/>
+				<subreportParameter name="exercice">
+					<subreportParameterExpression><![CDATA[$P{exercice}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="identification_1"/>
+				<subreportParameter name="dateDeb"/>
+				<subreportParameter name="identification_4"/>
+				<subreportParameter name="societe"/>
+				<subreportParameter name="identification_3"/>
+				<subreportParameter name="identification_6"/>
+				<subreportParameter name="identification_5"/>
+				<subreportParameter name="identification_7"/>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression class="java.lang.String"><![CDATA[$P{SUBREPORT_DIR} + "FICHE3_4.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+</jasperReport>

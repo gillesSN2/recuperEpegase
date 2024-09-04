@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grille_convent>
+
+	<grille>
+		<code>2C1E</code>
+		<lib_FR>2CLASSE 1ER ECHELON</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<val_mois>126109</val_mois>
+		<val_heure>727.566</val_heure>
+		<niveau></niveau>
+		<rendement>0.0</rendement>
+		<responsabilite>0.0</responsabilite>
+		<fonction>0.0</fonction>
+		<caisse>0.0</caisse>
+		<transport>0.0</transport>
+		<telephone>0.0</telephone>
+		<logement>0.0</logement>
+		<eau>0.0</eau>
+		<electricite>0.0</electricite>
+	</grille>
+
+	<grille>
+		<code>2C2E</code>
+		<lib_FR>2CLASSE 2EME ECHELON</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<val_mois>158942</val_mois>
+		<val_heure>916.991</val_heure>
+		<niveau></niveau>
+		<rendement>0.0</rendement>
+		<responsabilite>0.0</responsabilite>
+		<fonction>0.0</fonction>
+		<caisse>0.0</caisse>
+		<transport>0.0</transport>
+		<telephone>0.0</telephone>
+		<logement>0.0</logement>
+		<eau>0.0</eau>
+		<electricite>0.0</electricite>
+	</grille>
+
+	<grille>
+		<code>1C1E</code>
+		<lib_FR>1CLASSE 1ER ECHELON</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<val_mois>182411</val_mois>
+		<val_heure>1052.391</val_heure>
+		<niveau></niveau>
+		<rendement>0.0</rendement>
+		<responsabilite>0.0</responsabilite>
+		<fonction>0.0</fonction>
+		<caisse>0.0</caisse>
+		<transport>0.0</transport>
+		<telephone>0.0</telephone>
+		<logement>0.0</logement>
+		<eau>0.0</eau>
+		<electricite>0.0</electricite>
+	</grille>
+
+	<grille>
+		<code>1C2E</code>
+		<lib_FR>1CLASSE 2EME ECHELON</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<val_mois>201089</val_mois>
+		<val_heure>1160.151</val_heure>
+		<niveau></niveau>
+		<rendement>0.0</rendement>
+		<responsabilite>0.0</responsabilite>
+		<fonction>0.0</fonction>
+		<caisse>0.0</caisse>
+		<transport>0.0</transport>
+		<telephone>0.0</telephone>
+		<logement>0.0</logement>
+		<eau>0.0</eau>
+		<electricite>0.0</electricite>
+	</grille>
+
+	<grille>
+		<code>P2C1E</code>
+		<lib_FR>PRINCIPAL 2CLASSE 1ER ECHELON</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<val_mois>212085</val_mois>
+		<val_heure>1223.591</val_heure>
+		<niveau></niveau>
+		<rendement>0.0</rendement>
+		<responsabilite>0.0</responsabilite>
+		<fonction>0.0</fonction>
+		<caisse>0.0</caisse>
+		<transport>0.0</transport>
+		<telephone>0.0</telephone>
+		<logement>0.0</logement>
+		<eau>0.0</eau>
+		<electricite>0.0</electricite>
+	</grille>
+
+	<grille>
+		<code>P2C2E</code>
+		<lib_FR>PRINCIPAL 2CLASSE 2EME ECHELON</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<val_mois>228329</val_mois>
+		<val_heure>1317.308</val_heure>
+		<niveau></niveau>
+		<rendement>0.0</rendement>
+		<responsabilite>0.0</responsabilite>
+		<fonction>0.0</fonction>
+		<caisse>0.0</caisse>
+		<transport>0.0</transport>
+		<telephone>0.0</telephone>
+		<logement>0.0</logement>
+		<eau>0.0</eau>
+		<electricite>0.0</electricite>
+	</grille>
+
+	<grille>
+		<code>P1C1E</code>
+		<lib_FR>PRINCIPAL 1CLASSE 1ER ECHELON</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<val_mois>249402</val_mois>
+		<val_heure>1438.885</val_heure>
+		<niveau></niveau>
+		<rendement>0.0</rendement>
+		<responsabilite>0.0</responsabilite>
+		<fonction>0.0</fonction>
+		<caisse>0.0</caisse>
+		<transport>0.0</transport>
+		<telephone>0.0</telephone>
+		<logement>0.0</logement>
+		<eau>0.0</eau>
+		<electricite>0.0</electricite>
+	</grille>
+
+	<grille>
+		<code>P1C2E</code>
+		<lib_FR>PRINCIPAL 1CLASSE 2EME ECHELON</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<val_mois>265432</val_mois>
+		<val_heure>1531.368</val_heure>
+		<niveau></niveau>
+		<rendement>0.0</rendement>
+		<responsabilite>0.0</responsabilite>
+		<fonction>0.0</fonction>
+		<caisse>0.0</caisse>
+		<transport>0.0</transport>
+		<telephone>0.0</telephone>
+		<logement>0.0</logement>
+		<eau>0.0</eau>
+		<electricite>0.0</electricite>
+	</grille>
+
+	<grille>
+		<code>PEXP</code>
+		<lib_FR>PRINCIPAL CLASSE EXCEPTIONNELLE</lib_FR>
+		<lib_UK></lib_UK>
+		<lib_SP></lib_SP>
+		<val_mois>274393</val_mois>
+		<val_heure>1583.067</val_heure>
+		<niveau></niveau>
+		<rendement>0.0</rendement>
+		<responsabilite>0.0</responsabilite>
+		<fonction>0.0</fonction>
+		<caisse>0.0</caisse>
+		<transport>0.0</transport>
+		<telephone>0.0</telephone>
+		<logement>0.0</logement>
+		<eau>0.0</eau>
+		<electricite>0.0</electricite>
+	</grille>
+</grille_convent>

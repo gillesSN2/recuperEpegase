@@ -598,7 +598,10 @@ public class FormTiers implements Serializable {
          this.typeTiers = Integer.parseInt(this.ligneMenu.getType());
       }
 
-      if (!"001".equals(this.ligneMenu.getGenre()) && !"011".equals(this.ligneMenu.getGenre()) && !"021".equals(this.ligneMenu.getGenre()) && !"023".equals(this.ligneMenu.getGenre()) && !"031".equals(this.ligneMenu.getGenre()) && !"071".equals(this.ligneMenu.getGenre()) && !"081".equals(this.ligneMenu.getGenre())) {
+      if (!"001".equals(this.ligneMenu.getGenre()) && !"011".equals(this.ligneMenu.getGenre())
+              && !"021".equals(this.ligneMenu.getGenre()) && !"023".equals(this.ligneMenu.getGenre())
+              && !"031".equals(this.ligneMenu.getGenre()) && !"071".equals(this.ligneMenu.getGenre())
+              && !"081".equals(this.ligneMenu.getGenre())) {
          this.choixGenre = true;
       } else {
          this.choixGenre = false;
@@ -624,7 +627,12 @@ public class FormTiers implements Serializable {
       this.medicalExist = false;
       this.fondationExist = false;
       this.mefExist = false;
-      if (this.typeVente == 801 || this.typeVente == 802 || this.typeVente == 803 || this.typeVente == 804 || this.typeVente == 805 || this.typeVente == 806 || this.typeVente == 807 || this.typeVente == 810 || this.typeVente == 815 || this.typeVente == 816) {
+      if (this.typeVente == 801 || this.typeVente == 802
+              || this.typeVente == 803 || this.typeVente == 804
+              || this.typeVente == 805 || this.typeVente == 806
+              || this.typeVente == 807 || this.typeVente == 810
+              || this.typeVente == 815 || this.typeVente == 816) {
+
          this.venteExist = true;
          if (this.typeVente == 803) {
             this.fondationExist = true;
@@ -668,7 +676,8 @@ public class FormTiers implements Serializable {
             if (this.ligneMenu.getType().equals(this.formRecherche.getTiers().getTietype())) {
                this.lesTiers.add(this.formRecherche.getTiers());
             }
-         } else if (this.ligneMenu.getType().equals(this.formRecherche.getTiers().getTietype()) && this.ligneMenu.getGenre().equals(this.formRecherche.getTiers().getTiegenre())) {
+         } else if (this.ligneMenu.getType().equals(this.formRecherche.getTiers().getTietype())
+                 && this.ligneMenu.getGenre().equals(this.formRecherche.getTiers().getTiegenre())) {
             this.lesTiers.add(this.formRecherche.getTiers());
          }
       }
@@ -1560,6 +1569,7 @@ public class FormTiers implements Serializable {
       }
 
       var1 = var1 + "and tieetat=" + this.inpInactif;
+
       if (this.compteLitige == 1) {
          var1 = var1 + " and tiesurveille=1";
       } else if (this.compteLitige == 2) {
@@ -3232,7 +3242,19 @@ public class FormTiers implements Serializable {
 
    public void calculeImmatriculation() throws JDOMException, IOException, ParseException {
       String var1 = "";
-      if (this.newtiers.getTiegenre() != null && !this.newtiers.getTiegenre().isEmpty() && (this.newtiers.getTiegenre().equalsIgnoreCase("000") || this.newtiers.getTiegenre().equalsIgnoreCase("010") || this.newtiers.getTiegenre().equalsIgnoreCase("020") || this.newtiers.getTiegenre().equalsIgnoreCase("022") || this.newtiers.getTiegenre().equalsIgnoreCase("024") || this.newtiers.getTiegenre().equalsIgnoreCase("030") || this.newtiers.getTiegenre().equalsIgnoreCase("032") || this.newtiers.getTiegenre().equalsIgnoreCase("034") || this.newtiers.getTiegenre().equalsIgnoreCase("035") || this.newtiers.getTiegenre().equalsIgnoreCase("070") || this.newtiers.getTiegenre().equalsIgnoreCase("080") || this.newtiers.getTiegenre().equalsIgnoreCase("099"))) {
+      if (this.newtiers.getTiegenre() != null && !this.newtiers.getTiegenre().isEmpty()
+              && (this.newtiers.getTiegenre().equalsIgnoreCase("000")
+              || this.newtiers.getTiegenre().equalsIgnoreCase("010")
+              || this.newtiers.getTiegenre().equalsIgnoreCase("020")
+              || this.newtiers.getTiegenre().equalsIgnoreCase("022")
+              || this.newtiers.getTiegenre().equalsIgnoreCase("024")
+              || this.newtiers.getTiegenre().equalsIgnoreCase("030")
+              || this.newtiers.getTiegenre().equalsIgnoreCase("032")
+              || this.newtiers.getTiegenre().equalsIgnoreCase("034")
+              || this.newtiers.getTiegenre().equalsIgnoreCase("035")
+              || this.newtiers.getTiegenre().equalsIgnoreCase("070")
+              || this.newtiers.getTiegenre().equalsIgnoreCase("080")
+              || this.newtiers.getTiegenre().equalsIgnoreCase("099"))) {
          var1 = "pphysique";
       } else {
          var1 = "pmoral";
